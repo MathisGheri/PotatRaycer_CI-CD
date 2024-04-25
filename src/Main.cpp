@@ -24,8 +24,14 @@ vec3 color(const ray& r, hitable *world, int depth)
     }
 }
 
-int main()
+int main(int argc, char **argv)
 {
+    if (argc >= 2 && (strcmp(argv[1], "-h") == 0 || strcmp(argv[1], "-potat") == 0)) {
+        printf("./raytracer --help\nUSAGE: ./raytracer <SCENE_FILE>\nSCENE_FILE: scene configuration\n");
+        exit(0);
+    } else if (argc > 2) {
+        exit(84);
+    }
     int width = 1440;
     int height = 720;
     int ns = 100;
