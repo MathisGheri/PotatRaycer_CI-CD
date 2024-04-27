@@ -4,7 +4,7 @@
 #include <math.h>
 #include <stdlib.h>
 #include <iostream>
-
+//i'm a fairy and i want to clean this code but it's too long and i have a headache and i want to eat
 class vec3 {
 public:
 	vec3() {}
@@ -52,7 +52,6 @@ inline void vec3::make_unit_vector() {
  float k = 1.0 / sqrt(e[0]*e[0] + e[1]*e[1] + e[2]*e[2]);
  e[0] *= k; e[1] *= k; e[2] *= k;
 }
-
 inline vec3 operator+(const vec3 &v1, const vec3 &v2) {
  return vec3(v1.e[0]+v2.e[0],v1.e[1]+v2.e[1],v1.e[2]+v2.e[2]);
 }
