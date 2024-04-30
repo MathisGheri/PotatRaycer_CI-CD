@@ -6,9 +6,12 @@
 */
 
 #include <iostream>
+#include <vector>
+
 #include "../Camera/Camera.hpp"
 #include "../Light/Light.hpp"
-#include "../Primitives/Light.hpp"
+#include "../Primitives/IHitable.hpp"
+//#include "../Primitives/" //shere etc
 
 #ifndef SCENE_HPP_
 #define SCENE_HPP_
@@ -19,16 +22,16 @@ class Scene {
         ~Scene();
         void setLight(Light *l);
         void setCamera(Camera *c);
-        void addObject(Hitable *obj); //juste mettre dans le tableau
+        void addObject(IHitable *obj); //juste mettre dans le tableau
         // mettre des consts
-        std::vector<Hitable *> getObjects(void);
+        std::vector<IHitable *> getObjects(void);
         Light *getLight(void);
         Camera *getCamera(void);
     protected:
     private:
         Light *light;
         Camera *camera;
-        std::vector<Hitable *> Objects; // tableau de Hitable
+        std::vector<IHitable *> Objects; // tableau de Hitable
 };
 
 #endif /* !SCENE_HPP_ */

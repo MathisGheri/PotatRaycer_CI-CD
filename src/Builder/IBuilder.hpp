@@ -5,15 +5,17 @@
 ** IBuilder
 */
 
+#include "../Primitives/IHitable.hpp"
+
 #ifndef IBUILDER_HPP_
 #define IBUILDER_HPP_
 
 class IBuilder {
     public:
-        ~IBuilder() = 0;
+        ~IBuilder();
         virtual void createLight() = 0; //implement better with return value
         virtual void createCamera() = 0; //implement better with return value
-        virtual void createObject(Hitable *object) = 0;
+        virtual void createObject(IHitable *object) = 0;
         virtual void getScene() = 0;
 };
 

@@ -16,7 +16,7 @@ class SceneBuilder : public IBuilder {
         ~SceneBuilder();
         void createLight() override final; //implement better with return value
         void createCamera() override final; //implement better with return value
-        void createObject(Hitable *object) override final;
+        void createObject(IHitable *object) override final;
         //SceneBuilder addObject();
         void getScene() override final;
     private:
