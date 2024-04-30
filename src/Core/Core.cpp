@@ -19,9 +19,10 @@ void Core::loadConfigFromFile(std::string filename)
 void Core::assembleScene(/*tableau de la config*/)
 {
     SceneBuilder *sceneBuilder = new SceneBuilder();
+    //faire un appel à parsing
     //mettre la cam
     //mettre la light
-    //mettre les objects
+    //mettre les objects//primitives//hitables
     //iterate through the list
     this->scene = sceneBuilder->getScene();
 }
@@ -32,7 +33,7 @@ void Core::generatePPM()
     //add all the mat
 }
 
-void Core::getScene()
+Scene *Core::getScene()
 {
     return this->scene;
 }

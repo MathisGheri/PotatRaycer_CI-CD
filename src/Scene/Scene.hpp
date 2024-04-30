@@ -6,7 +6,9 @@
 */
 
 #include <iostream>
-#include "Camera.h"
+#include "../Camera/Camera.hpp"
+#include "../Light/Light.hpp"
+#include "../Primitives/Light.hpp"
 
 #ifndef SCENE_HPP_
 #define SCENE_HPP_
