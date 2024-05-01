@@ -12,7 +12,7 @@
 
 class IBuilder {
     public:
-        ~IBuilder();
+        virtual ~IBuilder();
         virtual void createLight() = 0; //implement better with return value
         virtual void createCamera() = 0; //implement better with return value
         virtual void createObject(IHitable *object) = 0;

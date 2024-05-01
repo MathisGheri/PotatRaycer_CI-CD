@@ -29,8 +29,8 @@ class Vec3 {
         inline float operator[](int i) const;
         inline float& operator[](int i);
 
-        //inline std::istream& operator>>(std::istream &is, vec3 &t);
-        //inline std::ostream& Vec3::operator<<(std::ostream &os, vec3 &t);
+        //inline std::istream& operator>>(std::istream &is, Vec3 &t);
+        //inline std::ostream& Vec3::operator<<(std::ostream &os, Vec3 &t);
         
         inline Vec3& operator+=(const Vec3 &v2);
         inline Vec3& operator-=(const Vec3 &v2);

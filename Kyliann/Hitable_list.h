@@ -7,13 +7,13 @@ class hitable_list: public hitable {
 public:
     hitable_list() {}
     hitable_list(hitable **l, int n) {list = l; list_size = n;}
-    virtual bool hit(const ray& r, float t_min, float t_max, hit_record& rec) const;
+    virtual bool hit(const Ray& r, float t_min, float t_max, hit_record_t& rec) const;
     hitable **list; int list_size;
 };
 
 //calcul
-bool hitable_list::hit(const ray& r, float t_min, float t_max, hit_record& rec) const {
-    hit_record temp_rec;
+bool hitable_list::hit(const Ray& r, float t_min, float t_max, hit_record_t& rec) const {
+    hit_record_t temp_rec;
     bool hit_anything = false;
     double closest_so_far = t_max;
 

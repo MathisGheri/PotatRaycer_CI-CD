@@ -8,7 +8,7 @@
 #include "Sphere.hpp"
 
 //see what we do with material
-Sphere::Sphere(vec3 cen, float r, IMaterial *m) //fix la class material 
+Sphere::Sphere(Vec3 cen, float r, IMaterial *m) //fix la class material 
 {
     this->center = cen;
     this->radius = r;
@@ -22,9 +22,9 @@ Sphere::~Sphere()
     delete(this->mat_ptr);
 }
 
-bool Sphere::hit(const ray& r, float t_min, float t_max, hit_record& rec) const
+bool Sphere::hit(const Ray& r, float t_min, float t_max, hit_record_t& rec) const
 {
-	vec3 oc = r.origin() - center;
+	Vec3 oc = r.origin() - center;
 	float a = dot(r.direction(),r.direction());
 	float b = dot(oc, r.direction());
 	float c = dot(oc, oc) - radius*radius;

@@ -16,7 +16,7 @@ class IMaterial {
     public:
         IMaterial();
         ~IMaterial();
-        virtual bool scatter(const Ray& r_in, const hit_record_t &rec, Vec3& attenuation, Ray& scattered) const = 0;
+        virtual bool scatter(const Ray& r_in, const hit_record_t_t &rec, Vec3& attenuation, Ray& scattered) const = 0;
 };
 
 #endif /* !IMATERIAL_HPP_ */

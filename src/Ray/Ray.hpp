@@ -7,8 +7,8 @@
 
 #include "../Vec3/Vec3.hpp"
 
-#ifndef RAY_HPP_
-#define RAY_HPP_
+#ifndef Ray_HPP_
+#define Ray_HPP_
 
 class Ray {
     public:
@@ -23,4 +23,4 @@ class Ray {
         Vec3 B;
 };
 
-#endif /* !RAY_HPP_ */
+#endif /* !Ray_HPP_ */

@@ -17,11 +17,11 @@
 
 class Sphere : public IHitable {
     public:
-        Sphere(vec3 cen, float r, IMaterial*m);
+        Sphere(Vec3 cen, float r, IMaterial*m);
         ~Sphere();
-        bool hit(const ray& r, float t_min, float t_max, hit_record& rec) const;
+        bool hit(const Ray& r, float t_min, float t_max, hit_record_t& rec) const;
     private:
-        vec3 center;
+        Vec3 center;
         float radius;
         IMaterial *mat_ptr;
 };

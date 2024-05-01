@@ -15,7 +15,7 @@ Lambertian::~Lambertian()
 {
 }
 
-bool Lambertian::scatter(const Ray& r_in, const hit_record_t &rec, Vec3& attenuation, Ray& scattered) const {
+bool Lambertian::scatter(const Ray& r_in, const hit_record_t_t &rec, Vec3& attenuation, Ray& scattered) const {
     Vec3 target = rec.p + rec.normal + random_in_unit_sphere();
     scattered = Ray(rec.p, target - rec.p);
     attenuation = albedo;

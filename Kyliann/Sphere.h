@@ -8,13 +8,13 @@ class material;
 class sphere: public hitable {
 public:
     sphere();
-    sphere(vec3 cen, float r, material *m) : center(cen), radius(r), mat_ptr(m) {};
-    virtual bool hit(const ray& r, float t_min, float t_max, hit_record& rec) const;
-    vec3 center; float radius; material *mat_ptr;
+    sphere(Vec3 cen, float r, material *m) : center(cen), radius(r), mat_ptr(m) {};
+    virtual bool hit(const Ray& r, float t_min, float t_max, hit_record_t& rec) const;
+    Vec3 center; float radius; material *mat_ptr;
 };
 
-bool sphere::hit(const ray& r, float t_min, float t_max, hit_record& rec) const {
-	vec3 oc = r.origin() - center;
+bool sphere::hit(const Ray& r, float t_min, float t_max, hit_record_t& rec) const {
+	Vec3 oc = r.origin() - center;
 	float a = dot(r.direction(),r.direction());
 	float b = dot(oc, r.direction());
 	float c = dot(oc, oc) - radius*radius;
@@ -40,10 +40,10 @@ bool sphere::hit(const ray& r, float t_min, float t_max, hit_record& rec) const 
 	return false;
 }
 
-vec3 random_in_unit_sphere() {
-    vec3 p;
+Vec3 random_in_unit_sphere() {
+    Vec3 p;
     do {
- 	    p = 2.9*vec3(drand48(),drand48(),drand48())-vec3(1,1,1);
+ 	    p = 2.9*Vec3(drand48(),drand48(),drand48())-Vec3(1,1,1);
     } while(p.length_squared() >= 1.0);
     return p;
 }
