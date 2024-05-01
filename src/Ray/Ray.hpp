@@ -5,10 +5,10 @@
 ** Ray
 */
 
-#pragma once
 #include "../Vec3/Vec3.hpp"
+#include "struct.h"
 
-#ifndef Ray_HPP_
+#ifndef Ray_HPP_ 
 #define Ray_HPP_
 
 class Ray {

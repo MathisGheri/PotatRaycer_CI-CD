@@ -19,12 +19,12 @@ class Vec3 {
         Vec3(float e0, float e1, float e2);
         ~Vec3();
 
-        inline float x() const {return e[0];}
-        inline float y() const {return e[1];}
-        inline float z() const {return e[2];}
-        inline float r() const {return e[0];}
-        inline float g() const {return e[1];}
-        inline float b() const {return e[2];}
+        inline float x() const;
+        inline float y() const;
+        inline float z() const;
+        inline float r() const;
+        inline float g() const;
+        inline float b() const;
         
         inline const Vec3& operator+() const;
         inline Vec3 operator-() const;

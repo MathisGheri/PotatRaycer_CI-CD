@@ -58,10 +58,13 @@ inline Vec3 Vec3::operator-() const
 {
     return Vec3(-e[0],-e[1],-e[2]);
 }
+
+//bug compil
 inline float Vec3::operator[](int i) const
 {
     return e[i];
 }
+
 inline float& Vec3::operator[](int i)
 {
     return e[i];
@@ -112,6 +115,7 @@ inline Vec3& Vec3::operator/=(const double t)
     return *this *= 1 / t;
 }
 
+//bug compil
 inline float Vec3::length() const
 {
 	return sqrt(e[0]*e[0] + e[1]*e[1] + e[2]*e[2]);

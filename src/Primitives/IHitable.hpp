@@ -8,16 +8,10 @@
 #pragma once
 #include "../Ray/Ray.hpp"
 #include "../Materials/IMaterial.hpp"
+#include "struct.h"
 
 #ifndef IHITABLE_HPP_
 #define IHITABLE_HPP_
-
-typedef struct hit_record_s {
-	float t;
-	Vec3 p;
-	Vec3 normal;
-	IMaterial *mat_ptr;
-} hit_record_t;
 
 class IHitable {
     public:

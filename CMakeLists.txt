@@ -10,8 +10,8 @@ project(raytracer LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-file(GLOB SRC
-    "src/Main.cpp"
+file(GLOB_RECURSE SRC
+    "src/*.cpp"
 )
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR})
@@ -38,6 +38,7 @@ target_include_directories(raytracer PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Materials/Metal
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Primitives
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Primitives/Sphere
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/Primitives/Plane
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Ray
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Scene
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Vec3

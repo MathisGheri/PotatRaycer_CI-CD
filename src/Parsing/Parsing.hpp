@@ -8,12 +8,10 @@
 #ifndef PARSING_HPP_
 #define PARSING_HPP_
 
-#pragma once
 #include <libconfig.h++>
 #include <map>
 #include <string>
 #include <tuple>
-#include <iostream>
 #include <vector>
 
 struct vec3 {
