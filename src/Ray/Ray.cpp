@@ -15,6 +15,12 @@ Ray::~Ray()
 {
 }
 
+Ray::Ray(const Vec3 &a, const Vec3 &b)
+{
+    this->A = a;
+    this->B = b;
+}
+
 Vec3 Ray::origin() const
 {
     return A;

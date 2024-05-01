@@ -6,6 +6,8 @@
 */
 
 #include "Camera.hpp"
+#include "Ray.hpp"
+#include "Physics.hpp"
 
 Camera::Camera(Vec3 lookfrom, Vec3 lookat, Vec3 vup, float vfov, float aspect, float aperture, float focus_dist)
 {

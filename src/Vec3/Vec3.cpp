@@ -18,59 +18,59 @@ Vec3::Vec3(float e0, float e1, float e2)
 
 Vec3::~Vec3() {}
 
-inline float Vec3::x() const
+float Vec3::x() const
 {
 	return e[0];
 }
 
-inline float Vec3::y() const
+float Vec3::y() const
 {
 	return e[1];
 }
 
-inline float Vec3::z() const
+float Vec3::z() const
 {
 	return e[2];
 }
 
-inline float Vec3::r() const
+float Vec3::r() const
 {
 	return e[0];
 }
 
-inline float Vec3::g() const
+float Vec3::g() const
 {
 	return e[1];
 }
 
-inline float Vec3::b() const
+float Vec3::b() const
 {
 	return e[2];
 }
 
 /*Operators*/
-inline const Vec3& Vec3::operator+() const
+const Vec3& Vec3::operator+() const
 {
     return *this;
 }
        
-inline Vec3 Vec3::operator-() const
+Vec3 Vec3::operator-() const
 {
     return Vec3(-e[0],-e[1],-e[2]);
 }
 
 //bug compil
-inline float Vec3::operator[](int i) const
+// float Vec3::operator[](int i) const
+// {
+//     return e[i];
+// }
+
+float& Vec3::operator[](int i)
 {
     return e[i];
 }
 
-inline float& Vec3::operator[](int i)
-{
-    return e[i];
-}
-
-inline Vec3& Vec3::operator+=(const Vec3 &v)
+Vec3& Vec3::operator+=(const Vec3 &v)
 {
 	e[0] += v.e[0];
 	e[1] += v.e[1];
@@ -78,7 +78,7 @@ inline Vec3& Vec3::operator+=(const Vec3 &v)
 	return *this;
 }
 
-inline Vec3& Vec3::operator-=(const Vec3 &v)
+Vec3& Vec3::operator-=(const Vec3 &v)
 {
 	e[0] -= v.e[0];
 	e[1] -= v.e[1];
@@ -86,7 +86,7 @@ inline Vec3& Vec3::operator-=(const Vec3 &v)
 	return *this;
 }
 
-inline Vec3& Vec3::operator*=(const Vec3 &v)
+Vec3& Vec3::operator*=(const Vec3 &v)
 {
 	e[0] *= v.e[0];
 	e[1] *= v.e[1];
@@ -94,7 +94,7 @@ inline Vec3& Vec3::operator*=(const Vec3 &v)
 	return *this;
 }
 
-inline Vec3& Vec3::operator/=(const Vec3 &v)
+Vec3& Vec3::operator/=(const Vec3 &v)
 {
 	e[0] /= v.e[0];
 	e[1] /= v.e[1];
@@ -102,7 +102,7 @@ inline Vec3& Vec3::operator/=(const Vec3 &v)
 	return *this;
 }
 
-inline Vec3& Vec3::operator*=(const float t)
+Vec3& Vec3::operator*=(const float t)
 {
 	e[0] *= t;
 	e[1] *= t;
@@ -110,23 +110,23 @@ inline Vec3& Vec3::operator*=(const float t)
 	return *this;
 }
 
-inline Vec3& Vec3::operator/=(const double t)
+Vec3& Vec3::operator/=(const double t)
 {
     return *this *= 1 / t;
 }
 
 //bug compil
-inline float Vec3::length() const
-{
-	return sqrt(e[0]*e[0] + e[1]*e[1] + e[2]*e[2]);
-}
+// float Vec3::length() const
+// {
+// 	return sqrt(e[0]*e[0] + e[1]*e[1] + e[2]*e[2]);
+// }
 
-inline float Vec3::length_squared() const
+float Vec3::length_squared() const
 {
 	return e[0]*e[0] + e[1]*e[1] + e[2]*e[2];
 }
 
-inline void Vec3::make_unit_vector()
+void Vec3::make_unit_vector()
 {
 	float k = 1.0 / sqrt(e[0] * e[0] + e[1] * e[1] + e[2] * e[2]);
 	e[0] *= k;

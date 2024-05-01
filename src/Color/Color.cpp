@@ -10,7 +10,7 @@
 #include "../Primitives/IHitable.hpp"
 #include "../Calculus/Physics.hpp"
 
-Vec3 color(const Ray& r, hitable *world, int depth)
+Vec3 color(const Ray& r, IHitable *world, int depth)
 {
     hit_record_t rec;
     if (world->hit(r, 0.001, MAXFLOAT, rec)) {

@@ -73,29 +73,31 @@ void SceneBuilder::createLight(std::map<std::string, std::tuple<float, float, fl
 void SceneBuilder::createObjects(std::vector<Primitive> primitives)
 {
     for (const auto& prim : primitives) {
-        Vec3 point1(prim.points[0].x(), prim.points[0].y(), prim.points[0].z());
-        Vec3 point2(prim.points[1].x(), prim.points[1].y(), prim.points[1].z());
+        /****Material creation****/
+        Vec3 materialVec(prim.material.vec.x, prim.material.vec.y, prim.material.vec.z);
         std::unique_ptr<IMaterial> material;
         if (prim.material.type == "metal") {
-            Vec3 albedo(prim.material.vec.x(), prim.material.vec.y(), prim.material.vec.z());
-            material = std::make_unique<Metal>(albedo, prim.material.fuzz);
+            material = std::make_unique<Metal>(materialVec, prim.material.fuzz);
         } else if (prim.material.type == "lambertian") {
-            Vec3 albedo(prim.material.vec.x(), prim.material.vec.y(), prim.material.vec.z());
-            material = std::make_unique<Lambertian>(albedo);
+            material = std::make_unique<Lambertian>(materialVec);
         } else if (prim.material.type == "dielectric") {
             material = std::make_unique<Dielectric>(prim.material.ref_idx);
         }
-
+        /****Primitive creation****/
         if (prim.type == "sphere") {
-            std::unique_ptr<IHitable> object = std::make_unique<Sphere>(point1, point2.x(), std::move(material));  // Ensure x() is called
+            Vec3 center(prim.points[0].x, prim.points[0].y, prim.points[0].z);
+            float radius = prim.points[1].x;
+            std::unique_ptr<IHitable> object = std::make_unique<Sphere>(center, radius, std::move(material));
             scene->addObject(std::move(object));
         } else if (prim.type == "plane") {
+            Vec3 point1(prim.points[0].x, prim.points[0].y, prim.points[0].z);
+            Vec3 point2(prim.points[1].x, prim.points[1].y, prim.points[1].z);
             std::unique_ptr<IHitable> object = std::make_unique<Plane>(point1, point2, material.release());
             scene->addObject(std::move(object));
         }
     }
 }
-//U WANT ME TO ADD SOE
+
 Scene *SceneBuilder::getScene()
 {
     return this->scene;
