@@ -38,6 +38,7 @@ class Vec3 {
         //std::ostream& Vec3::operator<<(std::ostream &os, Vec3 &t);
         
         Vec3& operator+=(const Vec3 &v2);
+		Vec3& operator+(const Vec3 &v1, const Vec3 &v2);
         Vec3& operator-=(const Vec3 &v2);
         Vec3& operator*=(const Vec3 &v2);
         Vec3& operator/=(const Vec3 &v2);
