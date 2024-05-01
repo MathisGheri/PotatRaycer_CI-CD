@@ -4,6 +4,7 @@
 #include <math.h>
 #include <stdlib.h>
 #include <iostream>
+//i'm a fairy and i want to clean this code but it's too long and i have a headache and i want to eat
 class vec3 {
 public:
 	vec3() {}

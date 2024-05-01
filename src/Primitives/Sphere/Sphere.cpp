@@ -8,7 +8,7 @@
 #include "Sphere.hpp"
 
 //see what we do with material
-Sphere::Sphere(vec3 cen, float r, material *m) //fix la class material 
+Sphere::Sphere(vec3 cen, float r, IMaterial *m) //fix la class material 
 {
     this->center = cen;
     this->radius = r;
