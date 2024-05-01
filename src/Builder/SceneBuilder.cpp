@@ -16,6 +16,7 @@ SceneBuilder::SceneBuilder()
 
 SceneBuilder::~SceneBuilder()
 {
+    //delete(this->scene);
     //delete light/camera etc
 }
 
@@ -23,22 +24,24 @@ void SceneBuilder::createLight()
 {
     Light *light = new Light();
     scene->setLight(light);
+    //delete light
 }
 
 void SceneBuilder::createCamera()
 {
-    Camera *camera = new Camera();
-    scene->setCamera(camera); 
+    Camera *camera = new Camera(); //good argument
+    scene->setCamera(camera);
+    //delete camera ?
 }
 
-void SceneBuilder::createObject(Hitable *object) //on sait pas encore ce qu'on va avoir
+void SceneBuilder::createObject(IHitable *object) //on sait pas encore ce qu'on va avoir
 {
-    //créér
-    Hitable *object = createObj(); //envoyer les données
+    //créér + loop ptet faire gaffe à si on a un getSphere ou un getPlan etc..
+    IHitable *object = createObj(); //envoyer les données pour vérifier quel primitives c'est
     scene->addObject(object);    
 }
 
-void SceneBuilder::getScene()
+Scene *SceneBuilder::getScene()
 {
-    return scene;
+    return this->scene;
 }

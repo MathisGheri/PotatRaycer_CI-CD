@@ -11,14 +11,14 @@
 #include "../Camera/Camera.hpp"
 #include "../Light/Light.hpp"
 #include "../Primitives/IHitable.hpp"
-//#include "../Primitives/" //shere etc
+//#include "../Primitives/" //sphere etc
 
 #ifndef SCENE_HPP_
 #define SCENE_HPP_
-
+//pedro pedro pedro
 class Scene {
     public:
-        Scene(); //mettre light etc.. à nullptdr
+        Scene();
         ~Scene();
         void setLight(Light *l);
         void setCamera(Camera *c);
@@ -27,7 +27,6 @@ class Scene {
         std::vector<IHitable *> getObjects(void);
         Light *getLight(void);
         Camera *getCamera(void);
-    protected:
     private:
         Light *light;
         Camera *camera;

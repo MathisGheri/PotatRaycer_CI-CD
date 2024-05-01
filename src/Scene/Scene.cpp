@@ -17,8 +17,7 @@ Scene::~Scene()
 {
     delete(this->camera);
     delete(this->light);
-    
-    //vider le tableau
+    this->Objects.clear();
 }
 
 void Scene::setLight(Light *l)

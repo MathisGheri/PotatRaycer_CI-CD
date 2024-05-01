@@ -6,6 +6,10 @@
 */
 
 #include "IBuilder.hpp"
+#include "../Scene/Scene.hpp"
+#include "../Camera/Camera.hpp"
+#include "../Light/Light.hpp"
+#include "../Primitives/IHitable.hpp"
 
 #ifndef SCENEBUILDER_HPP_
 #define SCENEBUILDER_HPP_
@@ -18,7 +22,7 @@ class SceneBuilder : public IBuilder {
         void createCamera() override final; //implement better with return value
         void createObject(IHitable *object) override final;
         //SceneBuilder addObject();
-        void getScene() override final;
+        Scene *getScene() override final;
     private:
         Scene *scene;
 };
