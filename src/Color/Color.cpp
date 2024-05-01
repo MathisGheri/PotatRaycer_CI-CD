@@ -12,7 +12,7 @@
 
 Vec3 color(const Ray& r, hitable *world, int depth)
 {
-    hit_record_t_t rec;
+    hit_record_t rec;
     if (world->hit(r, 0.001, MAXFLOAT, rec)) {
         Ray scattered;
         Vec3 attenuation;

@@ -7,18 +7,20 @@
 
 #include "Core.hpp"
 
-Core::Core(){} //put la scene to nullptr
+Core::Core()
+{
+    this->scene = nullptr;
+}
 
 Core::~Core(){}
 
-void Core::loadConfigFromFile(std::string filename)
+void Core::assembleScene(const std::string &filename)
 {
-    //load from the file
-}
-
-void Core::assembleScene(/*tableau de la config*/)
-{
-    SceneBuilder *sceneBuilder = new SceneBuilder();
+    SceneBuilder sceneBuilder();
+    Parsing parser(filename);
+    sceneBuilder.createCamera(parser.GetCamera());
+    sceneBuilder.createLight(parser.getLights());
+    sceneBuilder.createObjects(parser.getPrimitives());
     //faire un appel à parsing
     //mettre la cam
     //mettre la light
@@ -30,7 +32,6 @@ void Core::assembleScene(/*tableau de la config*/)
 void Core::generatePPM()
 {
     //calcul
-    //add all the mat
 }
 
 Scene *Core::getScene()

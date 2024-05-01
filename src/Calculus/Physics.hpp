@@ -38,13 +38,19 @@ class Physics {
             r0 = r0 * r0;
             return r0 + (1-r0) * pow((1 - cosine),5);
         }
-            protected:
-            private:
-        };
 
         inline float dot(const Vec3 &v1, const Vec3 &v2)
         {
             return v1[0] * v2[0] + v1[1] * v2[1] + v1[2] * v2[2];
         }
+
+        Vec3 random_in_unit_disk() {
+            Vec3 p;
+            do {
+                p = 2.0*Vec3(drand48(),drand48(),0.0) - Vec3(1,1,0);
+            } while(dot(p,p)>=1.0);
+            return p;
+        }
+};
 
 #endif /* !PHYSICS_HPP_ */

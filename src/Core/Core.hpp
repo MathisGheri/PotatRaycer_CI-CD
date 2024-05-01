@@ -7,6 +7,7 @@
 #include <iostream>
 #include "../Builder/SceneBuilder.hpp"
 #include "../Scene/Scene.hpp"
+#include "../Parsing/Parsing.hpp"
 
 #ifndef CORE_HPP_
 #define CORE_HPP_
@@ -15,8 +16,7 @@ class Core {
     public:
         Core();
         ~Core();
-        void loadConfigFromFile(std::string filename);
-        void assembleScene(/*tableau de la config*/);
+        void assembleScene(const std::string &filename);
         void generatePPM();
         Scene *getScene();
     private:

@@ -7,6 +7,8 @@
 
 #include "Vec3.hpp"
 
+Vec3::Vec3() : e{0.0f, 0.0f, 0.0f} {}
+
 Vec3::Vec3(float e0, float e1, float e2)
 {
     e[0] = e0;
@@ -14,7 +16,7 @@ Vec3::Vec3(float e0, float e1, float e2)
     e[2] = e2;
 }
 
-Vec3::~Vec3() { }
+Vec3::~Vec3() {}
 
 inline float Vec3::x() const
 {

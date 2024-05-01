@@ -15,7 +15,7 @@ Dielectric::~Dielectric()
 {
 }
 
-bool Dielectric::scatter(const Ray& r_in, const hit_record_t_t &rec, Vec3& attenuation, Ray& scattered) const
+bool Dielectric::scatter(const Ray& r_in, const hit_record_t &rec, Vec3& attenuation, Ray& scattered) const
 {
     Vec3 outward_normal;
     Vec3 reflected = reflect(r_in.direction(), rec.normal);
