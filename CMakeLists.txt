@@ -12,6 +12,20 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 file(GLOB SRC
    "src/*.cpp"
+   "src/Builder/*.cpp"
+   "src/Camera/*.cpp"
+   "src/Color/*.cpp"
+   "src/Core/*.cpp"
+   "src/Light/*.cpp"
+   "src/Material/Dielectric/*.cpp"
+   "src/Material/Lambertian/*.cpp"
+   "src/Material/Metal/*.cpp"
+   "src/Parsing/*.cpp"
+   "src/Primitives/Plan/*.cpp"
+   "src/Primitives/Sphere/*.cpp"
+   "src/Ray/*.cpp"
+   "src/Scene/*.cpp"
+   "src/Vec3/*.cpp"
 )
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR})
@@ -35,8 +49,10 @@ target_include_directories(raytracer PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Materials/Lambertian
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Materials/Lambertian
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Materials/Metal
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/Parsing
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Primitives
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Primitives/Sphere
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/Primitives/Plane
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Ray
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Scene
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Vec3

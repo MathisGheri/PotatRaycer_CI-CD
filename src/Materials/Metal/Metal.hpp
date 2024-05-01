@@ -6,8 +6,6 @@
 */
 
 #include "../IMaterial.hpp"
-#include "../Vec3/Vec3.hpp"
-#include "../Ray/Ray.hpp"
 
 #ifndef METAL_HPP_
 #define METAL_HPP_

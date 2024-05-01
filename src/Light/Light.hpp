@@ -18,3 +18,4 @@ class Light {
 };
 
 #endif /* !LIGHT_HPP_ */
+
