@@ -5,6 +5,7 @@
 ** Vec3
 */
 
+#pragma once
 #include <math.h>
 #include <stdlib.h>
 #include <iostream>

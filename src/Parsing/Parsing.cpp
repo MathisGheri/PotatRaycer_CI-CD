@@ -6,7 +6,6 @@
 */
 
 #include "Parsing.hpp"
-#include "Vec3.h"
 
 Parsing::Parsing(const std::string &file) : _filePath(file)
 {

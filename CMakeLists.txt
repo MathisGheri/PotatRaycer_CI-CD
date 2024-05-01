@@ -11,7 +11,7 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 file(GLOB SRC
-   "src/*.cpp"
+    "src/Main.cpp"
 )
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR})
@@ -29,6 +29,7 @@ target_include_directories(raytracer PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Camera
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Color
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Core
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/Parsing
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Light
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Materials
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Materials/Dielectric

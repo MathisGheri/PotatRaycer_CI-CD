@@ -5,6 +5,7 @@
 ** IBuilder
 */
 
+#pragma once
 #include "../Primitives/IHitable.hpp"
 
 #ifndef IBUILDER_HPP_

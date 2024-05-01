@@ -5,6 +5,7 @@
 ** Physics
 */
 
+#pragma once
 #include <math.h>
 #include "../Vec3/Vec3.hpp"
 

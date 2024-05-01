@@ -5,6 +5,7 @@
 ** IHitable
 */
 
+#pragma once
 #include "../Ray/Ray.hpp"
 #include "../Materials/IMaterial.hpp"
 

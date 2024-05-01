@@ -8,7 +8,8 @@
 #ifndef CAMERAH
 #define CAMERAH
 
-#include "Ray.h"
+#pragma once
+#include "Ray.hpp"
 
 class Camera {
 public:

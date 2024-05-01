@@ -4,6 +4,8 @@
 ** File description:
 ** Core
 */
+
+#pragma once
 #include <iostream>
 #include "../Builder/SceneBuilder.hpp"
 #include "../Scene/Scene.hpp"

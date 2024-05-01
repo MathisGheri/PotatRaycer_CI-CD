@@ -5,6 +5,7 @@
 ** SceneBuilder
 */
 
+#pragma once
 #include "IBuilder.hpp"
 #include "../Scene/Scene.hpp"
 #include "../Camera/Camera.hpp"

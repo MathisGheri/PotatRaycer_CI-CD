@@ -5,6 +5,7 @@
 ** Sphere
 */
 
+#pragma once
 #include <iostream>
 #include "../Camera/Camera.hpp"
 #include "../Light/Light.hpp"

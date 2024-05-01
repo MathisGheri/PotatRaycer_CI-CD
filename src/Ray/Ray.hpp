@@ -5,6 +5,7 @@
 ** Ray
 */
 
+#pragma once
 #include "../Vec3/Vec3.hpp"
 
 #ifndef Ray_HPP_

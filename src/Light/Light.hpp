@@ -8,6 +8,8 @@
 #ifndef LIGHT_HPP_
 #define LIGHT_HPP_
 
+#pragma once
+
 class Light {
     public:
         Light();

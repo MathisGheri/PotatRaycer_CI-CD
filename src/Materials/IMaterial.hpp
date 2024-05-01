@@ -5,6 +5,7 @@
 ** IMaterial
 */
 
+#pragma once
 #include "../Primitives/IHitable.hpp"
 #include "../Vec3/Vec3.hpp"
 #include "../Ray/Ray.hpp"

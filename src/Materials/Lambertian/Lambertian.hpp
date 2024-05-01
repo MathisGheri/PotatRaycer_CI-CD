@@ -5,6 +5,7 @@
 ** Lambertian
 */
 
+#pragma once
 #include "../IMaterial.hpp"
 
 #ifndef LAMBERTIAN_HPP_
