@@ -16,16 +16,16 @@ Parsing::Parsing(const std::string &file) : _filePath(file)
     parsePrimitives(root["primitives"]["spheres"], "sphere");
     parseLights(root["light"]);
     parseCamera(root["camera"]);
-    // for (auto &p : _primitives) {
-    //     std::cout << "Primitive: " << p.type << std::endl;
-    //     std::cout << "Points: " << p.points[0].x << " " << p.points[0].y << " " << p.points[0].z << std::endl;
-    //     std::cout << "Points: " << p.points[1].x << " " << p.points[1].y << " " << p.points[1].z << std::endl;
-    //     std::cout << "Material: " << p.material.type << std::endl;
-    //     std::cout << "Vec: " << p.material.vec.x << " " << p.material.vec.y << " " << p.material.vec.z << std::endl;
-    //     std::cout << "Fuzz: " << p.material.fuzz << std::endl;
-    //     std::cout << "Ref_idx: " << p.material.ref_idx << std::endl;
-    //     printf("\n");
-    // }
+    for (auto &p : _primitives) {
+        std::cout << "Primitive: " << p.type << std::endl;
+        std::cout << "Points: " << p.points[0].x << " " << p.points[0].y << " " << p.points[0].z << std::endl;
+        std::cout << "Points: " << p.points[1].x << " " << p.points[1].y << " " << p.points[1].z << std::endl;
+        std::cout << "Material: " << p.material.type << std::endl;
+        std::cout << "Vec: " << p.material.vec.x << " " << p.material.vec.y << " " << p.material.vec.z << std::endl;
+        std::cout << "Fuzz: " << p.material.fuzz << std::endl;
+        std::cout << "Ref_idx: " << p.material.ref_idx << std::endl;
+        printf("\n");
+    }
 }
 
 /**
@@ -62,8 +62,10 @@ void Parsing::parsePrimitives(libconfig::Setting& setting, const std::string& ty
         mat["vec"].lookupValue("x", p.material.vec.x);
         mat["vec"].lookupValue("y", p.material.vec.y);
         mat["vec"].lookupValue("z", p.material.vec.z);
-        mat.lookupValue("fuzz", p.material.fuzz);
-        mat.lookupValue("ref_idx", p.material.ref_idx);
+        if (p.material.type == "metal")
+            mat["fuzz"].lookupValue("x", p.material.fuzz);
+        if (p.material.type == "dielectric")
+            mat["ref_idx"].lookupValue("x", p.material.ref_idx);
         _primitives.push_back(p);
     }
 }
