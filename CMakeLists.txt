@@ -5,7 +5,7 @@
 #
 
 cmake_minimum_required(VERSION 3.14)
-project(Raytracer LANGUAGES CXX)
+project(raytracer LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -15,14 +15,14 @@ file(GLOB SRC
 )
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR})
-add_executable(Raytracer ${SRC})
+add_executable(raytracer ${SRC})
 
-# set_target_properties(Raytracer PROPERTIES
+# set_target_properties(raytracer PROPERTIES
 #     LIBRARY_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/lib
 #     PREFIX ""
 # )
 
-target_include_directories(Raytracer PRIVATE
+target_include_directories(raytracer PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/src
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Builder
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Calculus
@@ -30,8 +30,16 @@ target_include_directories(Raytracer PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Color
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Core
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Light
-    ${CMAKE_CURRENT_SOURCE_DIR}/src/
-    ${CMAKE_CURRENT_SOURCE_DIR}/src/
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/Materials
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/Materials/Dielectric
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/Materials/Lambertian
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/Materials/Lambertian
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/Materials/Metal
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/Primitives
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/Primitives/Sphere
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/Ray
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/Scene
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/Vec3
 )
 
 find_package(SFML 2.5 COMPONENTS graphics window system REQUIRED)
