@@ -15,37 +15,35 @@ Scene::Scene()
 
 Scene::~Scene()
 {
-    delete(this->camera);
-    delete(this->light);
     this->Objects.clear();
 }
 
-void Scene::setLight(Light *l)
+void Scene::setLight(std::unique_ptr<Light> l)
 {
-    this->light = l;
+    this->light = std::move(l);
 }
 
-void Scene::setCamera(Camera *c)
+void Scene::setCamera(std::unique_ptr<Camera> c)
 {
-    this->camera = c;
+    this->camera = std::move(c);
 }
 
-void Scene::addObject(IHitable *obj)
+void Scene::addObject(std::unique_ptr<IHitable> obj)
 {
-    this->Objects.push_back(obj);
+    Objects.push_back(std::move(obj));
 }
 
-std::vector<IHitable *> Scene::getObjects(void)
+std::vector<std::unique_ptr<IHitable>>& Scene::getObjects(void)
 {
     return this->Objects;
 }
 
 Light *Scene::getLight(void)
 {
-    return this->light;
+    return this->light.get();
 }
 
 Camera *Scene::getCamera(void)
 {
-    return this->camera;
+    return this->camera.get();
 }

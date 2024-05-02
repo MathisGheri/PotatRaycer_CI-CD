@@ -5,6 +5,7 @@
 ** Dielectric
 */
 
+#pragma once
 #include "../IMaterial.hpp"
 #include "../Vec3/Vec3.hpp"
 #include "../Ray/Ray.hpp"

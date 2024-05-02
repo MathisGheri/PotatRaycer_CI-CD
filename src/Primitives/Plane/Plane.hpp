@@ -5,7 +5,7 @@
 ** Plane
 */
 
-
+#pragma once
 #include "../../Materials/IMaterial.hpp"
 #include "../Primitives/IHitable.hpp"
 #include "../../Vec3/Vec3.hpp"

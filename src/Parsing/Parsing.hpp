@@ -8,26 +8,27 @@
 #ifndef PARSING_HPP_
 #define PARSING_HPP_
 
+#include <iostream>
 #include <libconfig.h++>
 #include <map>
 #include <string>
 #include <tuple>
 #include <vector>
 
-struct Vec3 {
+struct vec3 {
     float x, y, z;
 };
 
 struct Material {
     std::string type;
-    Vec3 vec;
+    vec3 vec;
     float fuzz;
     float ref_idx;
 };
 
 struct Primitive {
     std::string type;
-    Vec3 points[2];
+    vec3 points[2];
     Material material;
 };
 

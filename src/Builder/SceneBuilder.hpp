@@ -5,12 +5,19 @@
 ** SceneBuilder
 */
 
+#pragma once
 #include "IBuilder.hpp"
-#include "../Scene/Scene.hpp"
 #include "../Camera/Camera.hpp"
 #include "../Light/Light.hpp"
 #include "../Primitives/IHitable.hpp"
-#include "../Parsing/Parsing.hpp"
+#include "Metal.hpp"
+#include "Lambertian.hpp"
+#include "Dielectric.hpp"
+#include "Sphere.hpp"
+#include "Plane.hpp"
+#include <memory>
+#include <iostream>
+#include <utility>
 
 #ifndef SCENEBUILDER_HPP_
 #define SCENEBUILDER_HPP_

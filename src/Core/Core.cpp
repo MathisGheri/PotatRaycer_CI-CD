@@ -16,7 +16,7 @@ Core::~Core(){}
 
 void Core::assembleScene(const std::string &filename)
 {
-    SceneBuilder sceneBuilder();
+    SceneBuilder sceneBuilder;
     Parsing parser(filename);
     sceneBuilder.createCamera(parser.GetCamera());
     sceneBuilder.createLight(parser.getLights());
@@ -26,7 +26,7 @@ void Core::assembleScene(const std::string &filename)
     //mettre la light
     //mettre les objects//primitives//hitables
     //iterate through the list
-    this->scene = sceneBuilder->getScene();
+    this->scene = sceneBuilder.getScene();
 }
 
 void Core::generatePPM()
