@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD
+CMAKE_SOURCE_DIR = /home/suika/Epitech/PotatRaycer_CI-CD
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/build
+CMAKE_BINARY_DIR = /home/suika/Epitech/PotatRaycer_CI-CD/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/build/CMakeFiles /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/suika/Epitech/PotatRaycer_CI-CD/build/CMakeFiles /home/suika/Epitech/PotatRaycer_CI-CD/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/suika/Epitech/PotatRaycer_CI-CD/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -248,6 +248,30 @@ src/Light/Light.s: src/Light/Light.cpp.s
 src/Light/Light.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracer.dir/build.make CMakeFiles/raytracer.dir/src/Light/Light.cpp.s
 .PHONY : src/Light/Light.cpp.s
+
+src/Logger/SingletonLogger.o: src/Logger/SingletonLogger.cpp.o
+.PHONY : src/Logger/SingletonLogger.o
+
+# target to build an object file
+src/Logger/SingletonLogger.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracer.dir/build.make CMakeFiles/raytracer.dir/src/Logger/SingletonLogger.cpp.o
+.PHONY : src/Logger/SingletonLogger.cpp.o
+
+src/Logger/SingletonLogger.i: src/Logger/SingletonLogger.cpp.i
+.PHONY : src/Logger/SingletonLogger.i
+
+# target to preprocess a source file
+src/Logger/SingletonLogger.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracer.dir/build.make CMakeFiles/raytracer.dir/src/Logger/SingletonLogger.cpp.i
+.PHONY : src/Logger/SingletonLogger.cpp.i
+
+src/Logger/SingletonLogger.s: src/Logger/SingletonLogger.cpp.s
+.PHONY : src/Logger/SingletonLogger.s
+
+# target to generate assembly for a file
+src/Logger/SingletonLogger.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracer.dir/build.make CMakeFiles/raytracer.dir/src/Logger/SingletonLogger.cpp.s
+.PHONY : src/Logger/SingletonLogger.cpp.s
 
 src/Main.o: src/Main.cpp.o
 .PHONY : src/Main.o
@@ -489,6 +513,9 @@ help:
 	@echo "... src/Light/Light.o"
 	@echo "... src/Light/Light.i"
 	@echo "... src/Light/Light.s"
+	@echo "... src/Logger/SingletonLogger.o"
+	@echo "... src/Logger/SingletonLogger.i"
+	@echo "... src/Logger/SingletonLogger.s"
 	@echo "... src/Main.o"
 	@echo "... src/Main.i"
 	@echo "... src/Main.s"

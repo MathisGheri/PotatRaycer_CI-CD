@@ -26,7 +26,6 @@ Parsing::Parsing(const std::string &file) : _filePath(file)
         std::cout << "\tRef_idx: " << p.material.ref_idx << std::endl;
         printf("\n");
     }
-
 }
 
 /**

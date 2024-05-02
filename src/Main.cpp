@@ -7,7 +7,6 @@
 
 #include "include.hpp"
 #include "Core.hpp"
-#include "Logger.hpp"
 #include "SingletonLogger.hpp"
 #include "Exception.hpp"
 

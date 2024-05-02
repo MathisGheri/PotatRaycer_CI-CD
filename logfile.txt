@@ -1,2 +1,2 @@
-[2024-05-02 21:48:38] INFO: Application started
-[2024-05-02 21:52:00] INFO: Application started
+[2024-05-02 22:47:01] INFO: Application started
+[2024-05-02 22:47:01] INFO: Core Created

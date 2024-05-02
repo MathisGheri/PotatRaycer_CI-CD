@@ -11,9 +11,16 @@
 #define LOGGER_HPP_
 
 #include "include.hpp"
-#include "IObserver.hpp"
 
-class Logger : public IObserver {
+enum LogLevel {
+    DEBUG,
+    INFO,
+    WARNING,
+    ERROR,
+    CRITICAL
+};
+
+class Logger {
 private:
     std::ofstream logFile;
     std::string levelToString(LogLevel level)
@@ -36,9 +43,6 @@ public:
     }
     ~Logger() {
         logFile.close();
-    }
-    void update(LogLevel level, const std::string& message) override {
-        log(level, message);
     }
     void log(LogLevel level, const std::string& message) {
         std::time_t now = std::time(0);

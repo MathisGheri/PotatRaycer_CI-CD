@@ -8,11 +8,14 @@
 #include "Core.hpp"
 #include "SceneBuilder.hpp"
 #include "Parsing.hpp"
+#include "SingletonLogger.hpp"
 
 Core::Core()
 {
     this->scene = nullptr;
     std::cout<<"Log: Core was created."<< std::endl;
+    Logger* logger = LoggerSingleton::getInstance();
+    logger->log(INFO, "Core Created");
 }
 
 Core::~Core(){}

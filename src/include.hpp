@@ -23,13 +23,6 @@
 #include <ctime>
 #include <exception>
 
-enum LogLevel {
-    DEBUG,
-    INFO,
-    WARNING,
-    ERROR,
-    CRITICAL
-};
 /*
 #pragma once
 #include "IBuilder.hpp"

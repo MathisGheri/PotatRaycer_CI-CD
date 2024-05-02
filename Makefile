@@ -11,7 +11,9 @@ all:
 run: all
 	./raytracer config.cfg
 
-re: clean all
+re: clean
+	rm -rf build
+	@mkdir -p build && cd build && cmake .. && make && cd ..
 
 clean: 
-	cd build && make clean
+	@cd build && make clean

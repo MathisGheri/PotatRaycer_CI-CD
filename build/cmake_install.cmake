@@ -1,4 +1,4 @@
-# Install script for directory: /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD
+# Install script for directory: /home/suika/Epitech/PotatRaycer_CI-CD
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/suika/Epitech/PotatRaycer_CI-CD/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/raytracer"
-  "/home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/raytracer.pdb"
+  "/home/suika/Epitech/PotatRaycer_CI-CD/raytracer"
+  "/home/suika/Epitech/PotatRaycer_CI-CD/raytracer.pdb"
   "CMakeFiles/raytracer.dir/src/Builder/SceneBuilder.cpp.o"
   "CMakeFiles/raytracer.dir/src/Builder/SceneBuilder.cpp.o.d"
   "CMakeFiles/raytracer.dir/src/Camera/Camera.cpp.o"
@@ -11,6 +11,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/raytracer.dir/src/Core/Core.cpp.o.d"
   "CMakeFiles/raytracer.dir/src/Light/Light.cpp.o"
   "CMakeFiles/raytracer.dir/src/Light/Light.cpp.o.d"
+  "CMakeFiles/raytracer.dir/src/Logger/SingletonLogger.cpp.o"
+  "CMakeFiles/raytracer.dir/src/Logger/SingletonLogger.cpp.o.d"
   "CMakeFiles/raytracer.dir/src/Main.cpp.o"
   "CMakeFiles/raytracer.dir/src/Main.cpp.o.d"
   "CMakeFiles/raytracer.dir/src/Materials/Dielectric/Dielectric.cpp.o"

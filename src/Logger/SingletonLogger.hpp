@@ -13,27 +13,16 @@
 #include "Logger.hpp"
 
 class LoggerSingleton {
-private:
-    static Logger* instance;
-    LoggerSingleton() {}
+    private:
+        static Logger* instance;
+        LoggerSingleton() {}
 
-public:
-    LoggerSingleton(const LoggerSingleton&) = delete;
-    LoggerSingleton& operator=(const LoggerSingleton&) = delete;
+    public:
+        LoggerSingleton(const LoggerSingleton&) = delete;
+        LoggerSingleton& operator=(const LoggerSingleton&) = delete;
 
-    static Logger* getInstance() {
-        if (instance == nullptr) {
-            instance = new Logger("logfile.txt");
-        }
-        return instance;
-    }
-
-    static void destroyInstance() {
-        delete instance;
-        instance = nullptr;
-    }
+        static Logger* getInstance();
+        static void destroyInstance();
 };
-
-Logger* LoggerSingleton::instance = nullptr;
 
 #endif /* !SINGLETONLOGGER_HPP_ */

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD
+CMAKE_SOURCE_DIR = /home/suika/Epitech/PotatRaycer_CI-CD
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/build
+CMAKE_BINARY_DIR = /home/suika/Epitech/PotatRaycer_CI-CD/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/raytracer.dir/depend.make
@@ -70,200 +70,214 @@ include CMakeFiles/raytracer.dir/progress.make
 include CMakeFiles/raytracer.dir/flags.make
 
 CMakeFiles/raytracer.dir/src/Builder/SceneBuilder.cpp.o: CMakeFiles/raytracer.dir/flags.make
-CMakeFiles/raytracer.dir/src/Builder/SceneBuilder.cpp.o: /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Builder/SceneBuilder.cpp
+CMakeFiles/raytracer.dir/src/Builder/SceneBuilder.cpp.o: /home/suika/Epitech/PotatRaycer_CI-CD/src/Builder/SceneBuilder.cpp
 CMakeFiles/raytracer.dir/src/Builder/SceneBuilder.cpp.o: CMakeFiles/raytracer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/raytracer.dir/src/Builder/SceneBuilder.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/raytracer.dir/src/Builder/SceneBuilder.cpp.o -MF CMakeFiles/raytracer.dir/src/Builder/SceneBuilder.cpp.o.d -o CMakeFiles/raytracer.dir/src/Builder/SceneBuilder.cpp.o -c /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Builder/SceneBuilder.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suika/Epitech/PotatRaycer_CI-CD/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/raytracer.dir/src/Builder/SceneBuilder.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/raytracer.dir/src/Builder/SceneBuilder.cpp.o -MF CMakeFiles/raytracer.dir/src/Builder/SceneBuilder.cpp.o.d -o CMakeFiles/raytracer.dir/src/Builder/SceneBuilder.cpp.o -c /home/suika/Epitech/PotatRaycer_CI-CD/src/Builder/SceneBuilder.cpp
 
 CMakeFiles/raytracer.dir/src/Builder/SceneBuilder.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/raytracer.dir/src/Builder/SceneBuilder.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Builder/SceneBuilder.cpp > CMakeFiles/raytracer.dir/src/Builder/SceneBuilder.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suika/Epitech/PotatRaycer_CI-CD/src/Builder/SceneBuilder.cpp > CMakeFiles/raytracer.dir/src/Builder/SceneBuilder.cpp.i
 
 CMakeFiles/raytracer.dir/src/Builder/SceneBuilder.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/raytracer.dir/src/Builder/SceneBuilder.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Builder/SceneBuilder.cpp -o CMakeFiles/raytracer.dir/src/Builder/SceneBuilder.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suika/Epitech/PotatRaycer_CI-CD/src/Builder/SceneBuilder.cpp -o CMakeFiles/raytracer.dir/src/Builder/SceneBuilder.cpp.s
 
 CMakeFiles/raytracer.dir/src/Camera/Camera.cpp.o: CMakeFiles/raytracer.dir/flags.make
-CMakeFiles/raytracer.dir/src/Camera/Camera.cpp.o: /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Camera/Camera.cpp
+CMakeFiles/raytracer.dir/src/Camera/Camera.cpp.o: /home/suika/Epitech/PotatRaycer_CI-CD/src/Camera/Camera.cpp
 CMakeFiles/raytracer.dir/src/Camera/Camera.cpp.o: CMakeFiles/raytracer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/raytracer.dir/src/Camera/Camera.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/raytracer.dir/src/Camera/Camera.cpp.o -MF CMakeFiles/raytracer.dir/src/Camera/Camera.cpp.o.d -o CMakeFiles/raytracer.dir/src/Camera/Camera.cpp.o -c /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Camera/Camera.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suika/Epitech/PotatRaycer_CI-CD/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/raytracer.dir/src/Camera/Camera.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/raytracer.dir/src/Camera/Camera.cpp.o -MF CMakeFiles/raytracer.dir/src/Camera/Camera.cpp.o.d -o CMakeFiles/raytracer.dir/src/Camera/Camera.cpp.o -c /home/suika/Epitech/PotatRaycer_CI-CD/src/Camera/Camera.cpp
 
 CMakeFiles/raytracer.dir/src/Camera/Camera.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/raytracer.dir/src/Camera/Camera.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Camera/Camera.cpp > CMakeFiles/raytracer.dir/src/Camera/Camera.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suika/Epitech/PotatRaycer_CI-CD/src/Camera/Camera.cpp > CMakeFiles/raytracer.dir/src/Camera/Camera.cpp.i
 
 CMakeFiles/raytracer.dir/src/Camera/Camera.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/raytracer.dir/src/Camera/Camera.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Camera/Camera.cpp -o CMakeFiles/raytracer.dir/src/Camera/Camera.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suika/Epitech/PotatRaycer_CI-CD/src/Camera/Camera.cpp -o CMakeFiles/raytracer.dir/src/Camera/Camera.cpp.s
 
 CMakeFiles/raytracer.dir/src/Color/Color.cpp.o: CMakeFiles/raytracer.dir/flags.make
-CMakeFiles/raytracer.dir/src/Color/Color.cpp.o: /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Color/Color.cpp
+CMakeFiles/raytracer.dir/src/Color/Color.cpp.o: /home/suika/Epitech/PotatRaycer_CI-CD/src/Color/Color.cpp
 CMakeFiles/raytracer.dir/src/Color/Color.cpp.o: CMakeFiles/raytracer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/raytracer.dir/src/Color/Color.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/raytracer.dir/src/Color/Color.cpp.o -MF CMakeFiles/raytracer.dir/src/Color/Color.cpp.o.d -o CMakeFiles/raytracer.dir/src/Color/Color.cpp.o -c /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Color/Color.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suika/Epitech/PotatRaycer_CI-CD/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/raytracer.dir/src/Color/Color.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/raytracer.dir/src/Color/Color.cpp.o -MF CMakeFiles/raytracer.dir/src/Color/Color.cpp.o.d -o CMakeFiles/raytracer.dir/src/Color/Color.cpp.o -c /home/suika/Epitech/PotatRaycer_CI-CD/src/Color/Color.cpp
 
 CMakeFiles/raytracer.dir/src/Color/Color.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/raytracer.dir/src/Color/Color.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Color/Color.cpp > CMakeFiles/raytracer.dir/src/Color/Color.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suika/Epitech/PotatRaycer_CI-CD/src/Color/Color.cpp > CMakeFiles/raytracer.dir/src/Color/Color.cpp.i
 
 CMakeFiles/raytracer.dir/src/Color/Color.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/raytracer.dir/src/Color/Color.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Color/Color.cpp -o CMakeFiles/raytracer.dir/src/Color/Color.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suika/Epitech/PotatRaycer_CI-CD/src/Color/Color.cpp -o CMakeFiles/raytracer.dir/src/Color/Color.cpp.s
 
 CMakeFiles/raytracer.dir/src/Core/Core.cpp.o: CMakeFiles/raytracer.dir/flags.make
-CMakeFiles/raytracer.dir/src/Core/Core.cpp.o: /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Core/Core.cpp
+CMakeFiles/raytracer.dir/src/Core/Core.cpp.o: /home/suika/Epitech/PotatRaycer_CI-CD/src/Core/Core.cpp
 CMakeFiles/raytracer.dir/src/Core/Core.cpp.o: CMakeFiles/raytracer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/raytracer.dir/src/Core/Core.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/raytracer.dir/src/Core/Core.cpp.o -MF CMakeFiles/raytracer.dir/src/Core/Core.cpp.o.d -o CMakeFiles/raytracer.dir/src/Core/Core.cpp.o -c /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Core/Core.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suika/Epitech/PotatRaycer_CI-CD/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/raytracer.dir/src/Core/Core.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/raytracer.dir/src/Core/Core.cpp.o -MF CMakeFiles/raytracer.dir/src/Core/Core.cpp.o.d -o CMakeFiles/raytracer.dir/src/Core/Core.cpp.o -c /home/suika/Epitech/PotatRaycer_CI-CD/src/Core/Core.cpp
 
 CMakeFiles/raytracer.dir/src/Core/Core.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/raytracer.dir/src/Core/Core.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Core/Core.cpp > CMakeFiles/raytracer.dir/src/Core/Core.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suika/Epitech/PotatRaycer_CI-CD/src/Core/Core.cpp > CMakeFiles/raytracer.dir/src/Core/Core.cpp.i
 
 CMakeFiles/raytracer.dir/src/Core/Core.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/raytracer.dir/src/Core/Core.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Core/Core.cpp -o CMakeFiles/raytracer.dir/src/Core/Core.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suika/Epitech/PotatRaycer_CI-CD/src/Core/Core.cpp -o CMakeFiles/raytracer.dir/src/Core/Core.cpp.s
 
 CMakeFiles/raytracer.dir/src/Light/Light.cpp.o: CMakeFiles/raytracer.dir/flags.make
-CMakeFiles/raytracer.dir/src/Light/Light.cpp.o: /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Light/Light.cpp
+CMakeFiles/raytracer.dir/src/Light/Light.cpp.o: /home/suika/Epitech/PotatRaycer_CI-CD/src/Light/Light.cpp
 CMakeFiles/raytracer.dir/src/Light/Light.cpp.o: CMakeFiles/raytracer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/raytracer.dir/src/Light/Light.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/raytracer.dir/src/Light/Light.cpp.o -MF CMakeFiles/raytracer.dir/src/Light/Light.cpp.o.d -o CMakeFiles/raytracer.dir/src/Light/Light.cpp.o -c /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Light/Light.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suika/Epitech/PotatRaycer_CI-CD/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/raytracer.dir/src/Light/Light.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/raytracer.dir/src/Light/Light.cpp.o -MF CMakeFiles/raytracer.dir/src/Light/Light.cpp.o.d -o CMakeFiles/raytracer.dir/src/Light/Light.cpp.o -c /home/suika/Epitech/PotatRaycer_CI-CD/src/Light/Light.cpp
 
 CMakeFiles/raytracer.dir/src/Light/Light.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/raytracer.dir/src/Light/Light.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Light/Light.cpp > CMakeFiles/raytracer.dir/src/Light/Light.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suika/Epitech/PotatRaycer_CI-CD/src/Light/Light.cpp > CMakeFiles/raytracer.dir/src/Light/Light.cpp.i
 
 CMakeFiles/raytracer.dir/src/Light/Light.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/raytracer.dir/src/Light/Light.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Light/Light.cpp -o CMakeFiles/raytracer.dir/src/Light/Light.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suika/Epitech/PotatRaycer_CI-CD/src/Light/Light.cpp -o CMakeFiles/raytracer.dir/src/Light/Light.cpp.s
+
+CMakeFiles/raytracer.dir/src/Logger/SingletonLogger.cpp.o: CMakeFiles/raytracer.dir/flags.make
+CMakeFiles/raytracer.dir/src/Logger/SingletonLogger.cpp.o: /home/suika/Epitech/PotatRaycer_CI-CD/src/Logger/SingletonLogger.cpp
+CMakeFiles/raytracer.dir/src/Logger/SingletonLogger.cpp.o: CMakeFiles/raytracer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suika/Epitech/PotatRaycer_CI-CD/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/raytracer.dir/src/Logger/SingletonLogger.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/raytracer.dir/src/Logger/SingletonLogger.cpp.o -MF CMakeFiles/raytracer.dir/src/Logger/SingletonLogger.cpp.o.d -o CMakeFiles/raytracer.dir/src/Logger/SingletonLogger.cpp.o -c /home/suika/Epitech/PotatRaycer_CI-CD/src/Logger/SingletonLogger.cpp
+
+CMakeFiles/raytracer.dir/src/Logger/SingletonLogger.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/raytracer.dir/src/Logger/SingletonLogger.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suika/Epitech/PotatRaycer_CI-CD/src/Logger/SingletonLogger.cpp > CMakeFiles/raytracer.dir/src/Logger/SingletonLogger.cpp.i
+
+CMakeFiles/raytracer.dir/src/Logger/SingletonLogger.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/raytracer.dir/src/Logger/SingletonLogger.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suika/Epitech/PotatRaycer_CI-CD/src/Logger/SingletonLogger.cpp -o CMakeFiles/raytracer.dir/src/Logger/SingletonLogger.cpp.s
 
 CMakeFiles/raytracer.dir/src/Main.cpp.o: CMakeFiles/raytracer.dir/flags.make
-CMakeFiles/raytracer.dir/src/Main.cpp.o: /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Main.cpp
+CMakeFiles/raytracer.dir/src/Main.cpp.o: /home/suika/Epitech/PotatRaycer_CI-CD/src/Main.cpp
 CMakeFiles/raytracer.dir/src/Main.cpp.o: CMakeFiles/raytracer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/raytracer.dir/src/Main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/raytracer.dir/src/Main.cpp.o -MF CMakeFiles/raytracer.dir/src/Main.cpp.o.d -o CMakeFiles/raytracer.dir/src/Main.cpp.o -c /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suika/Epitech/PotatRaycer_CI-CD/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/raytracer.dir/src/Main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/raytracer.dir/src/Main.cpp.o -MF CMakeFiles/raytracer.dir/src/Main.cpp.o.d -o CMakeFiles/raytracer.dir/src/Main.cpp.o -c /home/suika/Epitech/PotatRaycer_CI-CD/src/Main.cpp
 
 CMakeFiles/raytracer.dir/src/Main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/raytracer.dir/src/Main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Main.cpp > CMakeFiles/raytracer.dir/src/Main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suika/Epitech/PotatRaycer_CI-CD/src/Main.cpp > CMakeFiles/raytracer.dir/src/Main.cpp.i
 
 CMakeFiles/raytracer.dir/src/Main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/raytracer.dir/src/Main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Main.cpp -o CMakeFiles/raytracer.dir/src/Main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suika/Epitech/PotatRaycer_CI-CD/src/Main.cpp -o CMakeFiles/raytracer.dir/src/Main.cpp.s
 
 CMakeFiles/raytracer.dir/src/Materials/Dielectric/Dielectric.cpp.o: CMakeFiles/raytracer.dir/flags.make
-CMakeFiles/raytracer.dir/src/Materials/Dielectric/Dielectric.cpp.o: /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Materials/Dielectric/Dielectric.cpp
+CMakeFiles/raytracer.dir/src/Materials/Dielectric/Dielectric.cpp.o: /home/suika/Epitech/PotatRaycer_CI-CD/src/Materials/Dielectric/Dielectric.cpp
 CMakeFiles/raytracer.dir/src/Materials/Dielectric/Dielectric.cpp.o: CMakeFiles/raytracer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/raytracer.dir/src/Materials/Dielectric/Dielectric.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/raytracer.dir/src/Materials/Dielectric/Dielectric.cpp.o -MF CMakeFiles/raytracer.dir/src/Materials/Dielectric/Dielectric.cpp.o.d -o CMakeFiles/raytracer.dir/src/Materials/Dielectric/Dielectric.cpp.o -c /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Materials/Dielectric/Dielectric.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suika/Epitech/PotatRaycer_CI-CD/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/raytracer.dir/src/Materials/Dielectric/Dielectric.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/raytracer.dir/src/Materials/Dielectric/Dielectric.cpp.o -MF CMakeFiles/raytracer.dir/src/Materials/Dielectric/Dielectric.cpp.o.d -o CMakeFiles/raytracer.dir/src/Materials/Dielectric/Dielectric.cpp.o -c /home/suika/Epitech/PotatRaycer_CI-CD/src/Materials/Dielectric/Dielectric.cpp
 
 CMakeFiles/raytracer.dir/src/Materials/Dielectric/Dielectric.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/raytracer.dir/src/Materials/Dielectric/Dielectric.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Materials/Dielectric/Dielectric.cpp > CMakeFiles/raytracer.dir/src/Materials/Dielectric/Dielectric.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suika/Epitech/PotatRaycer_CI-CD/src/Materials/Dielectric/Dielectric.cpp > CMakeFiles/raytracer.dir/src/Materials/Dielectric/Dielectric.cpp.i
 
 CMakeFiles/raytracer.dir/src/Materials/Dielectric/Dielectric.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/raytracer.dir/src/Materials/Dielectric/Dielectric.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Materials/Dielectric/Dielectric.cpp -o CMakeFiles/raytracer.dir/src/Materials/Dielectric/Dielectric.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suika/Epitech/PotatRaycer_CI-CD/src/Materials/Dielectric/Dielectric.cpp -o CMakeFiles/raytracer.dir/src/Materials/Dielectric/Dielectric.cpp.s
 
 CMakeFiles/raytracer.dir/src/Materials/Lambertian/Lambertian.cpp.o: CMakeFiles/raytracer.dir/flags.make
-CMakeFiles/raytracer.dir/src/Materials/Lambertian/Lambertian.cpp.o: /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Materials/Lambertian/Lambertian.cpp
+CMakeFiles/raytracer.dir/src/Materials/Lambertian/Lambertian.cpp.o: /home/suika/Epitech/PotatRaycer_CI-CD/src/Materials/Lambertian/Lambertian.cpp
 CMakeFiles/raytracer.dir/src/Materials/Lambertian/Lambertian.cpp.o: CMakeFiles/raytracer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/raytracer.dir/src/Materials/Lambertian/Lambertian.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/raytracer.dir/src/Materials/Lambertian/Lambertian.cpp.o -MF CMakeFiles/raytracer.dir/src/Materials/Lambertian/Lambertian.cpp.o.d -o CMakeFiles/raytracer.dir/src/Materials/Lambertian/Lambertian.cpp.o -c /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Materials/Lambertian/Lambertian.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suika/Epitech/PotatRaycer_CI-CD/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/raytracer.dir/src/Materials/Lambertian/Lambertian.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/raytracer.dir/src/Materials/Lambertian/Lambertian.cpp.o -MF CMakeFiles/raytracer.dir/src/Materials/Lambertian/Lambertian.cpp.o.d -o CMakeFiles/raytracer.dir/src/Materials/Lambertian/Lambertian.cpp.o -c /home/suika/Epitech/PotatRaycer_CI-CD/src/Materials/Lambertian/Lambertian.cpp
 
 CMakeFiles/raytracer.dir/src/Materials/Lambertian/Lambertian.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/raytracer.dir/src/Materials/Lambertian/Lambertian.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Materials/Lambertian/Lambertian.cpp > CMakeFiles/raytracer.dir/src/Materials/Lambertian/Lambertian.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suika/Epitech/PotatRaycer_CI-CD/src/Materials/Lambertian/Lambertian.cpp > CMakeFiles/raytracer.dir/src/Materials/Lambertian/Lambertian.cpp.i
 
 CMakeFiles/raytracer.dir/src/Materials/Lambertian/Lambertian.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/raytracer.dir/src/Materials/Lambertian/Lambertian.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Materials/Lambertian/Lambertian.cpp -o CMakeFiles/raytracer.dir/src/Materials/Lambertian/Lambertian.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suika/Epitech/PotatRaycer_CI-CD/src/Materials/Lambertian/Lambertian.cpp -o CMakeFiles/raytracer.dir/src/Materials/Lambertian/Lambertian.cpp.s
 
 CMakeFiles/raytracer.dir/src/Materials/Metal/Metal.cpp.o: CMakeFiles/raytracer.dir/flags.make
-CMakeFiles/raytracer.dir/src/Materials/Metal/Metal.cpp.o: /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Materials/Metal/Metal.cpp
+CMakeFiles/raytracer.dir/src/Materials/Metal/Metal.cpp.o: /home/suika/Epitech/PotatRaycer_CI-CD/src/Materials/Metal/Metal.cpp
 CMakeFiles/raytracer.dir/src/Materials/Metal/Metal.cpp.o: CMakeFiles/raytracer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/raytracer.dir/src/Materials/Metal/Metal.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/raytracer.dir/src/Materials/Metal/Metal.cpp.o -MF CMakeFiles/raytracer.dir/src/Materials/Metal/Metal.cpp.o.d -o CMakeFiles/raytracer.dir/src/Materials/Metal/Metal.cpp.o -c /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Materials/Metal/Metal.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suika/Epitech/PotatRaycer_CI-CD/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/raytracer.dir/src/Materials/Metal/Metal.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/raytracer.dir/src/Materials/Metal/Metal.cpp.o -MF CMakeFiles/raytracer.dir/src/Materials/Metal/Metal.cpp.o.d -o CMakeFiles/raytracer.dir/src/Materials/Metal/Metal.cpp.o -c /home/suika/Epitech/PotatRaycer_CI-CD/src/Materials/Metal/Metal.cpp
 
 CMakeFiles/raytracer.dir/src/Materials/Metal/Metal.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/raytracer.dir/src/Materials/Metal/Metal.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Materials/Metal/Metal.cpp > CMakeFiles/raytracer.dir/src/Materials/Metal/Metal.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suika/Epitech/PotatRaycer_CI-CD/src/Materials/Metal/Metal.cpp > CMakeFiles/raytracer.dir/src/Materials/Metal/Metal.cpp.i
 
 CMakeFiles/raytracer.dir/src/Materials/Metal/Metal.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/raytracer.dir/src/Materials/Metal/Metal.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Materials/Metal/Metal.cpp -o CMakeFiles/raytracer.dir/src/Materials/Metal/Metal.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suika/Epitech/PotatRaycer_CI-CD/src/Materials/Metal/Metal.cpp -o CMakeFiles/raytracer.dir/src/Materials/Metal/Metal.cpp.s
 
 CMakeFiles/raytracer.dir/src/Parsing/Parsing.cpp.o: CMakeFiles/raytracer.dir/flags.make
-CMakeFiles/raytracer.dir/src/Parsing/Parsing.cpp.o: /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Parsing/Parsing.cpp
+CMakeFiles/raytracer.dir/src/Parsing/Parsing.cpp.o: /home/suika/Epitech/PotatRaycer_CI-CD/src/Parsing/Parsing.cpp
 CMakeFiles/raytracer.dir/src/Parsing/Parsing.cpp.o: CMakeFiles/raytracer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/raytracer.dir/src/Parsing/Parsing.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/raytracer.dir/src/Parsing/Parsing.cpp.o -MF CMakeFiles/raytracer.dir/src/Parsing/Parsing.cpp.o.d -o CMakeFiles/raytracer.dir/src/Parsing/Parsing.cpp.o -c /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Parsing/Parsing.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suika/Epitech/PotatRaycer_CI-CD/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/raytracer.dir/src/Parsing/Parsing.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/raytracer.dir/src/Parsing/Parsing.cpp.o -MF CMakeFiles/raytracer.dir/src/Parsing/Parsing.cpp.o.d -o CMakeFiles/raytracer.dir/src/Parsing/Parsing.cpp.o -c /home/suika/Epitech/PotatRaycer_CI-CD/src/Parsing/Parsing.cpp
 
 CMakeFiles/raytracer.dir/src/Parsing/Parsing.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/raytracer.dir/src/Parsing/Parsing.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Parsing/Parsing.cpp > CMakeFiles/raytracer.dir/src/Parsing/Parsing.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suika/Epitech/PotatRaycer_CI-CD/src/Parsing/Parsing.cpp > CMakeFiles/raytracer.dir/src/Parsing/Parsing.cpp.i
 
 CMakeFiles/raytracer.dir/src/Parsing/Parsing.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/raytracer.dir/src/Parsing/Parsing.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Parsing/Parsing.cpp -o CMakeFiles/raytracer.dir/src/Parsing/Parsing.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suika/Epitech/PotatRaycer_CI-CD/src/Parsing/Parsing.cpp -o CMakeFiles/raytracer.dir/src/Parsing/Parsing.cpp.s
 
 CMakeFiles/raytracer.dir/src/Primitives/Plane/Plane.cpp.o: CMakeFiles/raytracer.dir/flags.make
-CMakeFiles/raytracer.dir/src/Primitives/Plane/Plane.cpp.o: /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Primitives/Plane/Plane.cpp
+CMakeFiles/raytracer.dir/src/Primitives/Plane/Plane.cpp.o: /home/suika/Epitech/PotatRaycer_CI-CD/src/Primitives/Plane/Plane.cpp
 CMakeFiles/raytracer.dir/src/Primitives/Plane/Plane.cpp.o: CMakeFiles/raytracer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/raytracer.dir/src/Primitives/Plane/Plane.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/raytracer.dir/src/Primitives/Plane/Plane.cpp.o -MF CMakeFiles/raytracer.dir/src/Primitives/Plane/Plane.cpp.o.d -o CMakeFiles/raytracer.dir/src/Primitives/Plane/Plane.cpp.o -c /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Primitives/Plane/Plane.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suika/Epitech/PotatRaycer_CI-CD/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/raytracer.dir/src/Primitives/Plane/Plane.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/raytracer.dir/src/Primitives/Plane/Plane.cpp.o -MF CMakeFiles/raytracer.dir/src/Primitives/Plane/Plane.cpp.o.d -o CMakeFiles/raytracer.dir/src/Primitives/Plane/Plane.cpp.o -c /home/suika/Epitech/PotatRaycer_CI-CD/src/Primitives/Plane/Plane.cpp
 
 CMakeFiles/raytracer.dir/src/Primitives/Plane/Plane.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/raytracer.dir/src/Primitives/Plane/Plane.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Primitives/Plane/Plane.cpp > CMakeFiles/raytracer.dir/src/Primitives/Plane/Plane.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suika/Epitech/PotatRaycer_CI-CD/src/Primitives/Plane/Plane.cpp > CMakeFiles/raytracer.dir/src/Primitives/Plane/Plane.cpp.i
 
 CMakeFiles/raytracer.dir/src/Primitives/Plane/Plane.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/raytracer.dir/src/Primitives/Plane/Plane.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Primitives/Plane/Plane.cpp -o CMakeFiles/raytracer.dir/src/Primitives/Plane/Plane.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suika/Epitech/PotatRaycer_CI-CD/src/Primitives/Plane/Plane.cpp -o CMakeFiles/raytracer.dir/src/Primitives/Plane/Plane.cpp.s
 
 CMakeFiles/raytracer.dir/src/Primitives/Sphere/Sphere.cpp.o: CMakeFiles/raytracer.dir/flags.make
-CMakeFiles/raytracer.dir/src/Primitives/Sphere/Sphere.cpp.o: /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Primitives/Sphere/Sphere.cpp
+CMakeFiles/raytracer.dir/src/Primitives/Sphere/Sphere.cpp.o: /home/suika/Epitech/PotatRaycer_CI-CD/src/Primitives/Sphere/Sphere.cpp
 CMakeFiles/raytracer.dir/src/Primitives/Sphere/Sphere.cpp.o: CMakeFiles/raytracer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/raytracer.dir/src/Primitives/Sphere/Sphere.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/raytracer.dir/src/Primitives/Sphere/Sphere.cpp.o -MF CMakeFiles/raytracer.dir/src/Primitives/Sphere/Sphere.cpp.o.d -o CMakeFiles/raytracer.dir/src/Primitives/Sphere/Sphere.cpp.o -c /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Primitives/Sphere/Sphere.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suika/Epitech/PotatRaycer_CI-CD/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/raytracer.dir/src/Primitives/Sphere/Sphere.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/raytracer.dir/src/Primitives/Sphere/Sphere.cpp.o -MF CMakeFiles/raytracer.dir/src/Primitives/Sphere/Sphere.cpp.o.d -o CMakeFiles/raytracer.dir/src/Primitives/Sphere/Sphere.cpp.o -c /home/suika/Epitech/PotatRaycer_CI-CD/src/Primitives/Sphere/Sphere.cpp
 
 CMakeFiles/raytracer.dir/src/Primitives/Sphere/Sphere.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/raytracer.dir/src/Primitives/Sphere/Sphere.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Primitives/Sphere/Sphere.cpp > CMakeFiles/raytracer.dir/src/Primitives/Sphere/Sphere.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suika/Epitech/PotatRaycer_CI-CD/src/Primitives/Sphere/Sphere.cpp > CMakeFiles/raytracer.dir/src/Primitives/Sphere/Sphere.cpp.i
 
 CMakeFiles/raytracer.dir/src/Primitives/Sphere/Sphere.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/raytracer.dir/src/Primitives/Sphere/Sphere.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Primitives/Sphere/Sphere.cpp -o CMakeFiles/raytracer.dir/src/Primitives/Sphere/Sphere.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suika/Epitech/PotatRaycer_CI-CD/src/Primitives/Sphere/Sphere.cpp -o CMakeFiles/raytracer.dir/src/Primitives/Sphere/Sphere.cpp.s
 
 CMakeFiles/raytracer.dir/src/Ray/Ray.cpp.o: CMakeFiles/raytracer.dir/flags.make
-CMakeFiles/raytracer.dir/src/Ray/Ray.cpp.o: /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Ray/Ray.cpp
+CMakeFiles/raytracer.dir/src/Ray/Ray.cpp.o: /home/suika/Epitech/PotatRaycer_CI-CD/src/Ray/Ray.cpp
 CMakeFiles/raytracer.dir/src/Ray/Ray.cpp.o: CMakeFiles/raytracer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/raytracer.dir/src/Ray/Ray.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/raytracer.dir/src/Ray/Ray.cpp.o -MF CMakeFiles/raytracer.dir/src/Ray/Ray.cpp.o.d -o CMakeFiles/raytracer.dir/src/Ray/Ray.cpp.o -c /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Ray/Ray.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suika/Epitech/PotatRaycer_CI-CD/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/raytracer.dir/src/Ray/Ray.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/raytracer.dir/src/Ray/Ray.cpp.o -MF CMakeFiles/raytracer.dir/src/Ray/Ray.cpp.o.d -o CMakeFiles/raytracer.dir/src/Ray/Ray.cpp.o -c /home/suika/Epitech/PotatRaycer_CI-CD/src/Ray/Ray.cpp
 
 CMakeFiles/raytracer.dir/src/Ray/Ray.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/raytracer.dir/src/Ray/Ray.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Ray/Ray.cpp > CMakeFiles/raytracer.dir/src/Ray/Ray.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suika/Epitech/PotatRaycer_CI-CD/src/Ray/Ray.cpp > CMakeFiles/raytracer.dir/src/Ray/Ray.cpp.i
 
 CMakeFiles/raytracer.dir/src/Ray/Ray.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/raytracer.dir/src/Ray/Ray.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Ray/Ray.cpp -o CMakeFiles/raytracer.dir/src/Ray/Ray.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suika/Epitech/PotatRaycer_CI-CD/src/Ray/Ray.cpp -o CMakeFiles/raytracer.dir/src/Ray/Ray.cpp.s
 
 CMakeFiles/raytracer.dir/src/Scene/Scene.cpp.o: CMakeFiles/raytracer.dir/flags.make
-CMakeFiles/raytracer.dir/src/Scene/Scene.cpp.o: /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Scene/Scene.cpp
+CMakeFiles/raytracer.dir/src/Scene/Scene.cpp.o: /home/suika/Epitech/PotatRaycer_CI-CD/src/Scene/Scene.cpp
 CMakeFiles/raytracer.dir/src/Scene/Scene.cpp.o: CMakeFiles/raytracer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/raytracer.dir/src/Scene/Scene.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/raytracer.dir/src/Scene/Scene.cpp.o -MF CMakeFiles/raytracer.dir/src/Scene/Scene.cpp.o.d -o CMakeFiles/raytracer.dir/src/Scene/Scene.cpp.o -c /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Scene/Scene.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suika/Epitech/PotatRaycer_CI-CD/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/raytracer.dir/src/Scene/Scene.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/raytracer.dir/src/Scene/Scene.cpp.o -MF CMakeFiles/raytracer.dir/src/Scene/Scene.cpp.o.d -o CMakeFiles/raytracer.dir/src/Scene/Scene.cpp.o -c /home/suika/Epitech/PotatRaycer_CI-CD/src/Scene/Scene.cpp
 
 CMakeFiles/raytracer.dir/src/Scene/Scene.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/raytracer.dir/src/Scene/Scene.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Scene/Scene.cpp > CMakeFiles/raytracer.dir/src/Scene/Scene.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suika/Epitech/PotatRaycer_CI-CD/src/Scene/Scene.cpp > CMakeFiles/raytracer.dir/src/Scene/Scene.cpp.i
 
 CMakeFiles/raytracer.dir/src/Scene/Scene.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/raytracer.dir/src/Scene/Scene.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Scene/Scene.cpp -o CMakeFiles/raytracer.dir/src/Scene/Scene.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suika/Epitech/PotatRaycer_CI-CD/src/Scene/Scene.cpp -o CMakeFiles/raytracer.dir/src/Scene/Scene.cpp.s
 
 # Object files for target raytracer
 raytracer_OBJECTS = \
@@ -272,6 +286,7 @@ raytracer_OBJECTS = \
 "CMakeFiles/raytracer.dir/src/Color/Color.cpp.o" \
 "CMakeFiles/raytracer.dir/src/Core/Core.cpp.o" \
 "CMakeFiles/raytracer.dir/src/Light/Light.cpp.o" \
+"CMakeFiles/raytracer.dir/src/Logger/SingletonLogger.cpp.o" \
 "CMakeFiles/raytracer.dir/src/Main.cpp.o" \
 "CMakeFiles/raytracer.dir/src/Materials/Dielectric/Dielectric.cpp.o" \
 "CMakeFiles/raytracer.dir/src/Materials/Lambertian/Lambertian.cpp.o" \
@@ -285,27 +300,28 @@ raytracer_OBJECTS = \
 # External object files for target raytracer
 raytracer_EXTERNAL_OBJECTS =
 
-/home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/raytracer: CMakeFiles/raytracer.dir/src/Builder/SceneBuilder.cpp.o
-/home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/raytracer: CMakeFiles/raytracer.dir/src/Camera/Camera.cpp.o
-/home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/raytracer: CMakeFiles/raytracer.dir/src/Color/Color.cpp.o
-/home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/raytracer: CMakeFiles/raytracer.dir/src/Core/Core.cpp.o
-/home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/raytracer: CMakeFiles/raytracer.dir/src/Light/Light.cpp.o
-/home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/raytracer: CMakeFiles/raytracer.dir/src/Main.cpp.o
-/home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/raytracer: CMakeFiles/raytracer.dir/src/Materials/Dielectric/Dielectric.cpp.o
-/home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/raytracer: CMakeFiles/raytracer.dir/src/Materials/Lambertian/Lambertian.cpp.o
-/home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/raytracer: CMakeFiles/raytracer.dir/src/Materials/Metal/Metal.cpp.o
-/home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/raytracer: CMakeFiles/raytracer.dir/src/Parsing/Parsing.cpp.o
-/home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/raytracer: CMakeFiles/raytracer.dir/src/Primitives/Plane/Plane.cpp.o
-/home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/raytracer: CMakeFiles/raytracer.dir/src/Primitives/Sphere/Sphere.cpp.o
-/home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/raytracer: CMakeFiles/raytracer.dir/src/Ray/Ray.cpp.o
-/home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/raytracer: CMakeFiles/raytracer.dir/src/Scene/Scene.cpp.o
-/home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/raytracer: CMakeFiles/raytracer.dir/build.make
-/home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/raytracer: CMakeFiles/raytracer.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/raytracer"
+/home/suika/Epitech/PotatRaycer_CI-CD/raytracer: CMakeFiles/raytracer.dir/src/Builder/SceneBuilder.cpp.o
+/home/suika/Epitech/PotatRaycer_CI-CD/raytracer: CMakeFiles/raytracer.dir/src/Camera/Camera.cpp.o
+/home/suika/Epitech/PotatRaycer_CI-CD/raytracer: CMakeFiles/raytracer.dir/src/Color/Color.cpp.o
+/home/suika/Epitech/PotatRaycer_CI-CD/raytracer: CMakeFiles/raytracer.dir/src/Core/Core.cpp.o
+/home/suika/Epitech/PotatRaycer_CI-CD/raytracer: CMakeFiles/raytracer.dir/src/Light/Light.cpp.o
+/home/suika/Epitech/PotatRaycer_CI-CD/raytracer: CMakeFiles/raytracer.dir/src/Logger/SingletonLogger.cpp.o
+/home/suika/Epitech/PotatRaycer_CI-CD/raytracer: CMakeFiles/raytracer.dir/src/Main.cpp.o
+/home/suika/Epitech/PotatRaycer_CI-CD/raytracer: CMakeFiles/raytracer.dir/src/Materials/Dielectric/Dielectric.cpp.o
+/home/suika/Epitech/PotatRaycer_CI-CD/raytracer: CMakeFiles/raytracer.dir/src/Materials/Lambertian/Lambertian.cpp.o
+/home/suika/Epitech/PotatRaycer_CI-CD/raytracer: CMakeFiles/raytracer.dir/src/Materials/Metal/Metal.cpp.o
+/home/suika/Epitech/PotatRaycer_CI-CD/raytracer: CMakeFiles/raytracer.dir/src/Parsing/Parsing.cpp.o
+/home/suika/Epitech/PotatRaycer_CI-CD/raytracer: CMakeFiles/raytracer.dir/src/Primitives/Plane/Plane.cpp.o
+/home/suika/Epitech/PotatRaycer_CI-CD/raytracer: CMakeFiles/raytracer.dir/src/Primitives/Sphere/Sphere.cpp.o
+/home/suika/Epitech/PotatRaycer_CI-CD/raytracer: CMakeFiles/raytracer.dir/src/Ray/Ray.cpp.o
+/home/suika/Epitech/PotatRaycer_CI-CD/raytracer: CMakeFiles/raytracer.dir/src/Scene/Scene.cpp.o
+/home/suika/Epitech/PotatRaycer_CI-CD/raytracer: CMakeFiles/raytracer.dir/build.make
+/home/suika/Epitech/PotatRaycer_CI-CD/raytracer: CMakeFiles/raytracer.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/suika/Epitech/PotatRaycer_CI-CD/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable /home/suika/Epitech/PotatRaycer_CI-CD/raytracer"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/raytracer.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/raytracer.dir/build: /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/raytracer
+CMakeFiles/raytracer.dir/build: /home/suika/Epitech/PotatRaycer_CI-CD/raytracer
 .PHONY : CMakeFiles/raytracer.dir/build
 
 CMakeFiles/raytracer.dir/clean:
@@ -313,6 +329,6 @@ CMakeFiles/raytracer.dir/clean:
 .PHONY : CMakeFiles/raytracer.dir/clean
 
 CMakeFiles/raytracer.dir/depend:
-	cd /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/build /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/build /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/build/CMakeFiles/raytracer.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/suika/Epitech/PotatRaycer_CI-CD/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/suika/Epitech/PotatRaycer_CI-CD /home/suika/Epitech/PotatRaycer_CI-CD /home/suika/Epitech/PotatRaycer_CI-CD/build /home/suika/Epitech/PotatRaycer_CI-CD/build /home/suika/Epitech/PotatRaycer_CI-CD/build/CMakeFiles/raytracer.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/raytracer.dir/depend
 
