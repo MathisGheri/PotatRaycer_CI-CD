@@ -5,10 +5,10 @@
 ** Metal
 */
 
-#include "../IMaterial.hpp"
-
 #ifndef METAL_HPP_
 #define METAL_HPP_
+
+#include "IMaterial.hpp"
 
 class Metal : public IMaterial {
     public:

@@ -4,14 +4,12 @@
 ** File description:
 ** Light
 */
-
-#include "Vec3.hpp"
-#include "Physics.hpp"
+#pragma once
 
 #ifndef LIGHT_HPP_
 #define LIGHT_HPP_
 
-#pragma once
+#include "Vec3.hpp"
 
 class Light {
     public:

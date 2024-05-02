@@ -36,7 +36,6 @@ target_include_directories(raytracer PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Materials
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Materials/Dielectric
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Materials/Lambertian
-    ${CMAKE_CURRENT_SOURCE_DIR}/src/Materials/Lambertian
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Materials/Metal
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Parsing
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Primitives

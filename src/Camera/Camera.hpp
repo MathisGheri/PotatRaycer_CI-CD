@@ -5,11 +5,12 @@
 ** Camera
 */
 #pragma once
-#include "Ray.hpp"
-//#include "Vec3.hpp"
 
 #ifndef CAMERA_HPP_
 #define CAMERA_HPP_
+
+#include "Vec3.hpp"
+#include "Ray.hpp"
 
 class Camera {
 	public:

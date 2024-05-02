@@ -5,11 +5,7 @@
 ** Color
 */
 
-#include "../Vec3/Vec3.hpp"
-#include "../Ray/Ray.hpp"
-#include "../Primitives/IHitable.hpp"
-#include "../Calculus/Physics.hpp"
-
+/*pb*//*
 Vec3 color(const Ray& r, IHitable *world, int depth)
 {
     hit_record_t rec;
@@ -26,4 +22,4 @@ Vec3 color(const Ray& r, IHitable *world, int depth)
         float t = 0.5 * (unit_dir.y() + 1.0);
         return (1.0 - t) * Vec3(1.0, 1.0, 1.0) + t * Vec3(0.5, 0.7, 1.0);
     }
-}
+}*/

@@ -4,21 +4,17 @@
 ** File description:
 ** Scene
 */
-
 #pragma once
-#include <iostream>
-#include <vector>
-#include <memory>
-#include <utility>
-
-#include "../Camera/Camera.hpp"
-#include "../Light/Light.hpp"
-#include "../Primitives/IHitable.hpp"
-//#include "../Primitives/" //sphere etc
 
 #ifndef SCENE_HPP_
 #define SCENE_HPP_
 //pedro pedro pedro
+
+#include "Light.hpp"
+#include "Camera.hpp"
+#include "IHitable.hpp"
+#include "include.hpp"
+
 class Scene {
     public:
         Scene();

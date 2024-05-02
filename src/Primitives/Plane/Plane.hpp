@@ -4,14 +4,14 @@
 ** File description:
 ** Plane
 */
-
 #pragma once
-#include "../../Materials/IMaterial.hpp"
-#include "../Primitives/IHitable.hpp"
-#include "../../Vec3/Vec3.hpp"
 
 #ifndef PLANE_HPP_
 #define PLANE_HPP_
+
+#include "IHitable.hpp"
+#include "include.hpp"
+#include "struct.h"
 
 class Plane : public IHitable{
     public:

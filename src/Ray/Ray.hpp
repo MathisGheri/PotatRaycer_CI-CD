@@ -5,10 +5,12 @@
 ** Ray
 */
 
-#include "struct.h"
+#pragma once
 
 #ifndef Ray_HPP_ 
 #define Ray_HPP_
+
+#include "Vec3.hpp"
 
 class Ray {
     public:

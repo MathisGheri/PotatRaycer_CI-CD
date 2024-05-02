@@ -5,11 +5,10 @@
 ** Lambertian
 */
 
-#pragma once
-#include "../IMaterial.hpp"
-
 #ifndef LAMBERTIAN_HPP_
 #define LAMBERTIAN_HPP_
+
+#include "IMaterial.hpp"
 
 class Lambertian : public IMaterial {
     public:

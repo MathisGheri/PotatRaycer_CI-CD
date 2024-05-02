@@ -4,14 +4,14 @@
 ** File description:
 ** IHitable
 */
-
 #pragma once
-#include "../Ray/Ray.hpp"
-#include "../Materials/IMaterial.hpp"
-#include "struct.h"
 
 #ifndef IHITABLE_HPP_
 #define IHITABLE_HPP_
+
+#include "Ray.hpp"
+#include "Vec3.hpp"
+#include "struct.h"
 
 class IHitable {
     public:

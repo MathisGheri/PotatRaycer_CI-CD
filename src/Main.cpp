@@ -4,10 +4,9 @@
 ** File description:
 ** Main
 */
-#include "Parsing.hpp"
+
+#include "include.hpp"
 #include "Core.hpp"
-#include <iostream>
-#include <string.h>
 
 int main(int argc, char **argv)
 {

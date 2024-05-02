@@ -5,13 +5,10 @@
 ** Dielectric
 */
 
-#pragma once
-#include "../IMaterial.hpp"
-#include "../Vec3/Vec3.hpp"
-#include "../Ray/Ray.hpp"
-
 #ifndef DIELECTRIC_HPP_
 #define DIELECTRIC_HPP_
+
+#include "IMaterial.hpp"
 
 class Dielectric : public IMaterial {
     public:

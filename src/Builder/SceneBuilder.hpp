@@ -4,23 +4,13 @@
 ** File description:
 ** SceneBuilder
 */
-
 #pragma once
-#include "IBuilder.hpp"
-#include "../Camera/Camera.hpp"
-#include "../Light/Light.hpp"
-#include "../Primitives/IHitable.hpp"
-#include "Metal.hpp"
-#include "Lambertian.hpp"
-#include "Dielectric.hpp"
-#include "Sphere.hpp"
-#include "Plane.hpp"
-#include <memory>
-#include <iostream>
-#include <utility>
 
 #ifndef SCENEBUILDER_HPP_
 #define SCENEBUILDER_HPP_
+
+#include "../include.hpp"
+#include "IBuilder.hpp"
 
 class SceneBuilder : public IBuilder {
     public:

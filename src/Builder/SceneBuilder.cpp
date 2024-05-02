@@ -6,6 +6,17 @@
 */
 
 #include "SceneBuilder.hpp"
+#include "Vec3.hpp"
+#include "Light.hpp"
+#include "Camera.hpp"
+#include "IHitable.hpp"
+#include "Sphere.hpp"
+#include "Plane.hpp"
+#include "IMaterial.hpp"
+/*pb*/
+#include "Metal.hpp"
+#include "Lambertian.hpp"
+#include "Dielectric.hpp"
 
 SceneBuilder::SceneBuilder()
 {
@@ -47,8 +58,6 @@ void SceneBuilder::createCamera(std::map<std::string,std::tuple<float,float,floa
     scene->setCamera(std::move(camera));
     //delete camera ?
 }
-
-
 
 void SceneBuilder::createLight(std::map<std::string, std::tuple<float, float, float>> lightParams)
 {

@@ -4,5 +4,3 @@
 ** File description:
 ** Vec3
 */
-
-#include "Vec3.hpp"

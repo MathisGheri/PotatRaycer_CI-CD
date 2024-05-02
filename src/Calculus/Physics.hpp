@@ -5,12 +5,9 @@
 ** Physics
 */
 
-#pragma once
-#include <math.h>
-
-
 #ifndef PHYSICS_HPP_
 #define PHYSICS_HPP_
+
 
 
 /*******************Out of Scope*******************/

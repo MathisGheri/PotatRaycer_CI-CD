@@ -8,12 +8,7 @@
 #ifndef PARSING_HPP_
 #define PARSING_HPP_
 
-#include <iostream>
-#include <libconfig.h++>
-#include <map>
-#include <string>
-#include <tuple>
-#include <vector>
+#include "../include.hpp"
 
 struct vec3 {
     float x, y, z;

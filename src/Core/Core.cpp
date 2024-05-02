@@ -6,6 +6,8 @@
 */
 
 #include "Core.hpp"
+#include "SceneBuilder.hpp"
+#include "Parsing.hpp"
 
 Core::Core()
 {

@@ -4,15 +4,13 @@
 ** File description:
 ** Core
 */
-
 #pragma once
-#include <iostream>
-#include "../Builder/SceneBuilder.hpp"
-#include "../Scene/Scene.hpp"
-#include "../Parsing/Parsing.hpp"
 
 #ifndef CORE_HPP_
 #define CORE_HPP_
+
+#include "include.hpp"
+#include "Scene.hpp"
 
 class Core {
     public:

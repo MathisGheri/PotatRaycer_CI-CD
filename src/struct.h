@@ -5,9 +5,6 @@
 ** struct
 */
 
-#include "IMaterial.hpp"
-#include "Vec3.hpp"
-
 #ifndef STRUCT_H_
 #define STRUCT_H_
 

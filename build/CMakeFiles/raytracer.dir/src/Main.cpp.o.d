@@ -1,7 +1,7 @@
 CMakeFiles/raytracer.dir/src/Main.cpp.o: \
  /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Main.cpp \
  /usr/include/stdc-predef.h \
- /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Parsing/Parsing.hpp \
+ /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/include.hpp \
  /usr/include/c++/12/iostream \
  /usr/include/c++/12/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/bits/wordsize.h \
@@ -128,27 +128,8 @@ CMakeFiles/raytracer.dir/src/Main.cpp.o: \
  /usr/include/c++/12/bits/locale_facets.tcc \
  /usr/include/c++/12/bits/basic_ios.tcc \
  /usr/include/c++/12/bits/ostream.tcc /usr/include/c++/12/istream \
- /usr/include/c++/12/bits/istream.tcc /usr/include/libconfig.h++ \
- /usr/include/c++/12/map /usr/include/c++/12/bits/stl_tree.h \
- /usr/include/c++/12/ext/aligned_buffer.h \
- /usr/include/c++/12/bits/node_handle.h \
- /usr/include/c++/12/bits/stl_map.h /usr/include/c++/12/tuple \
- /usr/include/c++/12/bits/uses_allocator.h \
- /usr/include/c++/12/bits/stl_multimap.h \
- /usr/include/c++/12/bits/erase_if.h /usr/include/c++/12/vector \
- /usr/include/c++/12/bits/stl_uninitialized.h \
- /usr/include/c++/12/bits/stl_vector.h \
- /usr/include/c++/12/bits/stl_bvector.h \
- /usr/include/c++/12/bits/vector.tcc \
- /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Core/Core.hpp \
- /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Core/../Builder/SceneBuilder.hpp \
- /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Core/../Builder/IBuilder.hpp \
- /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Core/../Builder/../Primitives/IHitable.hpp \
- /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Core/../Builder/../Primitives/../Ray/Ray.hpp \
- /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/struct.h \
- /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Materials/IMaterial.hpp \
- /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Calculus/Physics.hpp \
- /usr/include/c++/12/math.h /usr/include/c++/12/cmath /usr/include/math.h \
+ /usr/include/c++/12/bits/istream.tcc /usr/include/c++/12/math.h \
+ /usr/include/c++/12/cmath /usr/include/math.h \
  /usr/include/bits/math-vector.h /usr/include/bits/libm-simd-decl-stubs.h \
  /usr/include/bits/flt-eval-method.h /usr/include/bits/fp-logb.h \
  /usr/include/bits/fp-fast.h \
@@ -166,18 +147,18 @@ CMakeFiles/raytracer.dir/src/Main.cpp.o: \
  /usr/include/c++/12/tr1/modified_bessel_func.tcc \
  /usr/include/c++/12/tr1/poly_hermite.tcc \
  /usr/include/c++/12/tr1/poly_laguerre.tcc \
- /usr/include/c++/12/tr1/riemann_zeta.tcc \
- /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Materials/../Ray/Ray.hpp \
- /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Vec3/Vec3.hpp \
- /usr/include/c++/12/stdlib.h \
- /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Core/../Builder/../Scene/Scene.hpp \
- /usr/include/c++/12/memory /usr/include/c++/12/bits/stl_tempbuf.h \
+ /usr/include/c++/12/tr1/riemann_zeta.tcc /usr/include/string.h \
+ /usr/include/strings.h /usr/include/c++/12/memory \
+ /usr/include/c++/12/bits/stl_uninitialized.h \
+ /usr/include/c++/12/bits/stl_tempbuf.h \
  /usr/include/c++/12/bits/stl_raw_storage_iter.h \
  /usr/include/c++/12/bits/align.h /usr/include/c++/12/bit \
- /usr/include/c++/12/bits/unique_ptr.h \
+ /usr/include/c++/12/bits/uses_allocator.h \
+ /usr/include/c++/12/bits/unique_ptr.h /usr/include/c++/12/tuple \
  /usr/include/c++/12/bits/shared_ptr.h \
  /usr/include/c++/12/bits/shared_ptr_base.h \
  /usr/include/c++/12/bits/allocated_ptr.h \
+ /usr/include/c++/12/ext/aligned_buffer.h \
  /usr/include/c++/12/ext/concurrence.h \
  /usr/include/c++/12/bits/shared_ptr_atomic.h \
  /usr/include/c++/12/bits/atomic_base.h \
@@ -185,16 +166,21 @@ CMakeFiles/raytracer.dir/src/Main.cpp.o: \
  /usr/include/c++/12/backward/auto_ptr.h \
  /usr/include/c++/12/pstl/glue_memory_defs.h \
  /usr/include/c++/12/pstl/execution_defs.h /usr/include/c++/12/utility \
- /usr/include/c++/12/bits/stl_relops.h \
- /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Core/../Builder/../Scene/../Camera/Camera.hpp \
+ /usr/include/c++/12/bits/stl_relops.h /usr/include/c++/12/vector \
+ /usr/include/c++/12/bits/stl_vector.h \
+ /usr/include/c++/12/bits/stl_bvector.h \
+ /usr/include/c++/12/bits/vector.tcc /usr/include/c++/12/map \
+ /usr/include/c++/12/bits/stl_tree.h \
+ /usr/include/c++/12/bits/node_handle.h \
+ /usr/include/c++/12/bits/stl_map.h \
+ /usr/include/c++/12/bits/stl_multimap.h \
+ /usr/include/c++/12/bits/erase_if.h /usr/include/libconfig.h++ \
+ /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Core/Core.hpp \
+ /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/include.hpp \
+ /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Scene/Scene.hpp \
+ /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Light/Light.hpp \
+ /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Vec3/Vec3.hpp \
+ /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Camera/Camera.hpp \
  /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Ray/Ray.hpp \
- /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Core/../Builder/../Scene/../Light/Light.hpp \
- /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Core/../Builder/../Parsing/Parsing.hpp \
- /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Materials/Metal/Metal.hpp \
- /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Materials/Lambertian/Lambertian.hpp \
- /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Materials/Dielectric/Dielectric.hpp \
- /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Builder/../Ray/Ray.hpp \
- /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Primitives/Sphere/Sphere.hpp \
- /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Primitives/Plane/Plane.hpp \
- /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Core/../Parsing/Parsing.hpp \
- /usr/include/string.h /usr/include/strings.h
+ /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Primitives/IHitable.hpp \
+ /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/struct.h

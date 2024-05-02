@@ -5,19 +5,20 @@
 ** IBuilder
 */
 
-#pragma once
-#include "../Primitives/IHitable.hpp"
-#include "../Scene/Scene.hpp"
-#include "../Parsing/Parsing.hpp"
-
 #ifndef IBUILDER_HPP_
 #define IBUILDER_HPP_
 
+#pragma once
+#include "../include.hpp"
+#include "Scene.hpp"
+#include "Camera.hpp"
+#include "Parsing.hpp"
+
 class IBuilder {
     public:
-        virtual ~IBuilder();
-        virtual void createLight(std::map<std::string,std::tuple<float,float,float>>) = 0; //implement better with return value
+        virtual ~IBuilder() = default;
         virtual void createCamera(std::map<std::string,std::tuple<float,float,float>>) = 0; //implement better with return value
+        virtual void createLight(std::map<std::string,std::tuple<float,float,float>>) = 0; //implement better with return value
         virtual void createObjects(std::vector<Primitive>) = 0;
         virtual Scene *getScene() = 0;
 };

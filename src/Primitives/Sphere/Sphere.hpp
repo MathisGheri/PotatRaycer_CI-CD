@@ -4,18 +4,14 @@
 ** File description:
 ** Sphere
 */
-
 #pragma once
-#include <iostream>
-#include <memory>
-#include "../Camera/Camera.hpp"
-#include "../Light/Light.hpp"
-#include "../Primitives/IHitable.hpp"
-#include "../../Vec3/Vec3.hpp"
-#include "../../Materials/IMaterial.hpp"
 
 #ifndef SPHERE_HPP_
 #define SPHERE_HPP_
+
+#include "include.hpp"
+#include "IHitable.hpp"
+#include "IMaterial.hpp"
 
 class Sphere : public IHitable {
     public:
