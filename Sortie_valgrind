@@ -1,0 +1,28 @@
+Primitive: plane
+Points: 0 0 0
+Points: 0 0 -1
+Material: lambertian
+Vec: 0.5 0.5 0.5
+Fuzz: 0
+Ref_idx: 0
+
+Primitive: plane
+Points: 0 0 0
+Points: 0 0 -1
+Material: metal
+Vec: 0.5 0.5 0.5
+Fuzz: 0
+Ref_idx: 0
+
+Primitive: sphere
+Points: 0 0 -1
+Points: 1 0 0
+Material: metal
+Vec: 0.1 0.2 0.5
+Fuzz: 0
+Ref_idx: 0
+
+LOG: Camera created with 3 3 2|0 0 -1|20|2|2|0
+AFTER Camera
+AFTER Light
+AFTER OBJCTS

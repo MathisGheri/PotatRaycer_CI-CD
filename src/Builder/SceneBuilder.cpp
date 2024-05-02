@@ -20,8 +20,6 @@
 
 SceneBuilder::SceneBuilder()
 {
-    if (scene != nullptr)
-            delete scene;
     scene = new Scene();
 }
 

@@ -21,8 +21,11 @@ void Core::assembleScene(const std::string &filename)
     SceneBuilder sceneBuilder;
     Parsing parser(filename);
     sceneBuilder.createCamera(parser.GetCamera());
+    printf("AFTER Camera\n");
     sceneBuilder.createLight(parser.getLights());
+    printf("AFTER Light\n");
     sceneBuilder.createObjects(parser.getPrimitives());
+    printf("AFTER OBJCTS\n");
     //faire un appel à parsing
     //mettre la cam
     //mettre la light
