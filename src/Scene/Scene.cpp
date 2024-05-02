@@ -9,7 +9,8 @@
 
 Scene::Scene()
 {
-    
+    this->camera = nullptr;
+    this->light = nullptr;
 }
 
 Scene::~Scene()

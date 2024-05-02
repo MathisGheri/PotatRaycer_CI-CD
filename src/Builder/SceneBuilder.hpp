@@ -22,7 +22,7 @@ class SceneBuilder : public IBuilder {
         //SceneBuilder addObject();
         Scene *getScene() override final;
     private:
-        Scene *scene;
+        Scene *scene = nullptr;
 };
 
 #endif /* !SCENEBUILDER_HPP_ */
