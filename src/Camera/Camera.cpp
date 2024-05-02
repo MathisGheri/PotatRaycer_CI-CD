@@ -21,10 +21,11 @@ Camera::Camera(Vec3 lookfrom, Vec3 lookat, Vec3 vup, float vfov, float aspect, f
  	lower_left_corner = origin - half_width * focus_dist * u - half_height * focus_dist * v - focus_dist * w;
 	horizontal = 2*half_width * u * focus_dist;
 	vertical = 2 * half_height * v * focus_dist;
+
 	std::cout << "LOG: Camera created with lookfrom = " << lookfrom << ", lookat = " << lookat << ", vfov = " << vfov << ", aspect = " << aspect << ", aperture = " << aperture << ", focus_dist = " << focus_dist << "." << std::endl;
 }
 
-Camera::~Camera(){}
+Camera::~Camera() {}
 
 Ray Camera::get_Ray(float s, float t)
 {

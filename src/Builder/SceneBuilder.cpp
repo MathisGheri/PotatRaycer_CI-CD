@@ -13,7 +13,6 @@
 #include "Sphere.hpp"
 #include "Plane.hpp"
 #include "IMaterial.hpp"
-/*pb*/
 #include "Metal.hpp"
 #include "Lambertian.hpp"
 #include "Dielectric.hpp"
@@ -24,14 +23,9 @@ SceneBuilder::SceneBuilder()
         delete(scene);
     scene = new Scene();
     std::cout<<"Log: SceneBuilder was created."<< std::endl;
-
 }
 
-SceneBuilder::~SceneBuilder()
-{
-    //delete(this->scene);
-    //delete light/camera etc
-}
+SceneBuilder::~SceneBuilder() {}
 
 void SceneBuilder::createCamera(std::map<std::string,std::tuple<float,float,float>> camParams)
 {
@@ -58,7 +52,6 @@ void SceneBuilder::createCamera(std::map<std::string,std::tuple<float,float,floa
 
     std::unique_ptr<Camera> camera = std::make_unique<Camera>(lookfrom, lookat, vup, vfov, aspect, aperture, focus_dist);
     scene->setCamera(std::move(camera));
-    //delete camera ?
 }
 
 void SceneBuilder::createLight(std::map<std::string, std::tuple<float, float, float>> lightParams)
@@ -84,7 +77,7 @@ void SceneBuilder::createLight(std::map<std::string, std::tuple<float, float, fl
 void SceneBuilder::createObjects(std::vector<Primitive> primitives)
 {
     for (const auto& prim : primitives) {
-        /****Material creation****/
+        /* Material creation */
         Vec3 materialVec(prim.material.vec.x, prim.material.vec.y, prim.material.vec.z);
         std::unique_ptr<IMaterial> material;
         if (prim.material.type == "metal") {
@@ -94,7 +87,7 @@ void SceneBuilder::createObjects(std::vector<Primitive> primitives)
         } else if (prim.material.type == "dielectric") {
             material = std::make_unique<Dielectric>(prim.material.ref_idx);
         }
-        /****Primitive creation****/
+        /* Primitive creation */
         if (prim.type == "sphere") {
             Vec3 center(prim.points[0].x, prim.points[0].y, prim.points[0].z);
             float radius = prim.points[1].x;
