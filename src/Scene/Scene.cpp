@@ -11,6 +11,7 @@ Scene::Scene()
 {
     this->camera = nullptr;
     this->light = nullptr;
+    std::cout << "LOG: Scene was created." << std::endl;
 }
 
 Scene::~Scene()

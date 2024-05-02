@@ -7,12 +7,10 @@
 
 #include "Plane.hpp"
 
-Plane::Plane()
+Plane::Plane(Vec3 p, Vec3 n, IMaterial *m) : point(p), normal(n), mat_ptr(m)
 {
-    
-}
-
-Plane::Plane(Vec3 p, Vec3 n, IMaterial *m) : point(p), normal(n), mat_ptr(m) {};
+    std::cout << "LOG: Plane was created with these params. p = " << p << ", n = " << n << ", and mat" << m << " ." << std::endl;
+};
 
 Plane::~Plane()
 {

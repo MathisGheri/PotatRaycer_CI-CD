@@ -9,6 +9,8 @@
 
 Lambertian::Lambertian(const Vec3 &a) : albedo(a)
 {
+    std::cout << "LOG: Lambertian created with a = " << a << "." << std::endl;
+
 }
 
 Lambertian::~Lambertian()

@@ -7,7 +7,10 @@
 
 #include "Light.hpp"
 
-Light::Light(const Vec3& pos, float intensity) : position(pos), intensity(intensity) {}
+Light::Light(const Vec3& pos, float intensity) : position(pos), intensity(intensity)
+{
+    std::cout<<"Log: Light was created with parameters pos = " << pos << ", i = " << intensity << "." <<std::endl;
+}
 
 Light::~Light()
 {

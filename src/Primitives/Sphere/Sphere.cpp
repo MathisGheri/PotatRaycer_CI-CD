@@ -8,7 +8,10 @@
 #include "Sphere.hpp"
 
 //see what we do with material
-Sphere::Sphere(Vec3 cen, float r, std::unique_ptr<IMaterial> m) : center(cen), radius(r), mat_ptr(std::move(m)) {}
+Sphere::Sphere(Vec3 cen, float r, std::unique_ptr<IMaterial> m) : center(cen), radius(r), mat_ptr(std::move(m))
+{
+    std::cout << "LOG: Sphere was created with these params. cen = " << cen << ", r = " << r << ", and material" << std::endl;
+}
 
 Sphere::~Sphere() {}
 

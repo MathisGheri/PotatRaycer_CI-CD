@@ -12,8 +12,15 @@
 
 class Vec3 {
 public:
-	Vec3() {}
-	Vec3(float e0, float e1, float e2) {e[0]=e0;e[1]=e1;e[2]=e2;}
+	Vec3()
+	{
+		std::cout << "LOG: Vec3 was created without params" << std::endl;
+	}
+	Vec3(float e0, float e1, float e2)
+	{
+		e[0]=e0;e[1]=e1;e[2]=e2;
+		std::cout << "LOG: Vec3 was created with theses params. x = " << e0 << ", y = " << e1 << ", z = " << e2 << "." << std::endl;
+	}
 	
 	inline float x() const {return e[0];}
 	inline float y() const {return e[1];}
@@ -43,14 +50,16 @@ public:
 	float e[3];
 };
 
-inline std::istream& operator>>(std::istream &is, Vec3 &t) {
- is >> t.e[0] >> t.e[1] >> t.e[2];
- return is;
+inline std::istream& operator>>(std::istream &is, Vec3 &t)
+{
+    is >> t.e[0] >> t.e[1] >> t.e[2];
+    return is;
 }
 
-inline std::ostream& operator<<(std::ostream &os, Vec3 &t) {
- os << t.e[0] << " " << t.e[1] << " " << t.e[2];
- return os;
+inline std::ostream& operator<<(std::ostream &os, const Vec3 &t)
+{
+ 	os << t.e[0] << " " << t.e[1] << " " << t.e[2];
+ 	return os;
 }
 
 inline void Vec3::make_unit_vector() {

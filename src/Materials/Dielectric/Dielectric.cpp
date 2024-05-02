@@ -9,12 +9,13 @@
 
 Dielectric::Dielectric(float ri) : ref_idx(ri)
 {
+    std::cout << "LOG: Dielectric created with this parameter: ri = " << ri << "." << std::endl;
+
 }
 
 Dielectric::~Dielectric()
 {
 }
-
 bool Dielectric::scatter(const Ray& r_in, const hit_record_t &rec, Vec3& attenuation, Ray& scattered) const
 {
     Vec3 outward_normal;

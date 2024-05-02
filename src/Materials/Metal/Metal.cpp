@@ -13,6 +13,9 @@ Metal::Metal(const Vec3& a, const float f) : albedo(a)
         fuzz = f;
     else
         fuzz = 1;
+    
+    std::cout << "LOG: Camera created with these parameters: a = " << a << ", f = " << f << "." << std::endl;
+
 }
 
 Metal::~Metal()

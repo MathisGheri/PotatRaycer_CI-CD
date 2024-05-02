@@ -9,6 +9,7 @@
 
 Parsing::Parsing(const std::string &file) : _filePath(file)
 {
+    std::cout << "LOG: Parsing created. Config file = " << file << ".\n" << std::endl;
     _cfg.readFile(_filePath.c_str());
     libconfig::Setting &root = _cfg.getRoot();
     parsePrimitives(root["primitives"]["planes"], "plane");
@@ -16,15 +17,16 @@ Parsing::Parsing(const std::string &file) : _filePath(file)
     parseLights(root["light"]);
     parseCamera(root["camera"]);
     for (auto &p : _primitives) {
-        std::cout << "Primitive: " << p.type << std::endl;
-        std::cout << "Points: " << p.points[0].x << " " << p.points[0].y << " " << p.points[0].z << std::endl;
-        std::cout << "Points: " << p.points[1].x << " " << p.points[1].y << " " << p.points[1].z << std::endl;
-        std::cout << "Material: " << p.material.type << std::endl;
-        std::cout << "Vec: " << p.material.vec.x << " " << p.material.vec.y << " " << p.material.vec.z << std::endl;
-        std::cout << "Fuzz: " << p.material.fuzz << std::endl;
-        std::cout << "Ref_idx: " << p.material.ref_idx << std::endl;
+        std::cout << "\tPrimitive: " << p.type << std::endl;
+        std::cout << "\tPoints: " << p.points[0].x << " " << p.points[0].y << " " << p.points[0].z << std::endl;
+        std::cout << "\tPoints: " << p.points[1].x << " " << p.points[1].y << " " << p.points[1].z << std::endl;
+        std::cout << "\tMaterial: " << p.material.type << std::endl;
+        std::cout << "\tVec: " << p.material.vec.x << " " << p.material.vec.y << " " << p.material.vec.z << std::endl;
+        std::cout << "\tFuzz: " << p.material.fuzz << std::endl;
+        std::cout << "\tRef_idx: " << p.material.ref_idx << std::endl;
         printf("\n");
     }
+
 }
 
 /**

@@ -23,6 +23,8 @@ SceneBuilder::SceneBuilder()
     if (scene != nullptr)
         delete(scene);
     scene = new Scene();
+    std::cout<<"Log: SceneBuilder was created."<< std::endl;
+
 }
 
 SceneBuilder::~SceneBuilder()

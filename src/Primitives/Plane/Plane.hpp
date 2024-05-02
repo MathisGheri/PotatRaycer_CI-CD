@@ -15,7 +15,6 @@
 
 class Plane : public IHitable{
     public:
-        Plane();
         Plane(Vec3 p, Vec3 n, IMaterial *m);
         ~Plane();
         bool hit(const Ray& r, float t_min, float t_max, hit_record_t &rec) const override final;
