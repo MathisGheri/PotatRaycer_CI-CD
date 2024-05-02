@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/suika/Epitech/PotatRaycer_CI-CD/raytracer"
-  "/home/suika/Epitech/PotatRaycer_CI-CD/raytracer.pdb"
+  "/home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/raytracer"
+  "/home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/raytracer.pdb"
   "CMakeFiles/raytracer.dir/src/Builder/SceneBuilder.cpp.o"
   "CMakeFiles/raytracer.dir/src/Builder/SceneBuilder.cpp.o.d"
   "CMakeFiles/raytracer.dir/src/Camera/Camera.cpp.o"

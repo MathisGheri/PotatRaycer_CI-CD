@@ -1,7 +1,7 @@
 CMakeFiles/raytracer.dir/src/Main.cpp.o: \
- /home/suika/Epitech/PotatRaycer_CI-CD/src/Main.cpp \
+ /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Main.cpp \
  /usr/include/stdc-predef.h \
- /home/suika/Epitech/PotatRaycer_CI-CD/src/Parsing/Parsing.hpp \
+ /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Parsing/Parsing.hpp \
  /usr/include/c++/12/iostream \
  /usr/include/c++/12/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/bits/wordsize.h \
@@ -140,12 +140,12 @@ CMakeFiles/raytracer.dir/src/Main.cpp.o: \
  /usr/include/c++/12/bits/stl_vector.h \
  /usr/include/c++/12/bits/stl_bvector.h \
  /usr/include/c++/12/bits/vector.tcc \
- /home/suika/Epitech/PotatRaycer_CI-CD/src/Core/Core.hpp \
- /home/suika/Epitech/PotatRaycer_CI-CD/src/Core/../Builder/SceneBuilder.hpp \
- /home/suika/Epitech/PotatRaycer_CI-CD/src/Core/../Builder/IBuilder.hpp \
- /home/suika/Epitech/PotatRaycer_CI-CD/src/Core/../Builder/../Primitives/IHitable.hpp \
- /home/suika/Epitech/PotatRaycer_CI-CD/src/Core/../Builder/../Primitives/../Ray/Ray.hpp \
- /home/suika/Epitech/PotatRaycer_CI-CD/src/Core/../Builder/../Primitives/../Ray/../Vec3/Vec3.hpp \
+ /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Core/Core.hpp \
+ /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Core/../Builder/SceneBuilder.hpp \
+ /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Core/../Builder/IBuilder.hpp \
+ /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Core/../Builder/../Primitives/IHitable.hpp \
+ /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Core/../Builder/../Primitives/../Ray/Ray.hpp \
+ /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Core/../Builder/../Primitives/../Ray/../Vec3/Vec3.hpp \
  /usr/include/c++/12/math.h /usr/include/c++/12/cmath /usr/include/math.h \
  /usr/include/bits/math-vector.h /usr/include/bits/libm-simd-decl-stubs.h \
  /usr/include/bits/flt-eval-method.h /usr/include/bits/fp-logb.h \
@@ -165,11 +165,11 @@ CMakeFiles/raytracer.dir/src/Main.cpp.o: \
  /usr/include/c++/12/tr1/poly_hermite.tcc \
  /usr/include/c++/12/tr1/poly_laguerre.tcc \
  /usr/include/c++/12/tr1/riemann_zeta.tcc /usr/include/c++/12/stdlib.h \
- /home/suika/Epitech/PotatRaycer_CI-CD/src/struct.h \
- /home/suika/Epitech/PotatRaycer_CI-CD/src/Materials/IMaterial.hpp \
- /home/suika/Epitech/PotatRaycer_CI-CD/src/Calculus/Physics.hpp \
- /home/suika/Epitech/PotatRaycer_CI-CD/src/Materials/../Ray/Ray.hpp \
- /home/suika/Epitech/PotatRaycer_CI-CD/src/Core/../Builder/../Scene/Scene.hpp \
+ /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/struct.h \
+ /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Materials/IMaterial.hpp \
+ /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Calculus/Physics.hpp \
+ /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Materials/../Ray/Ray.hpp \
+ /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Core/../Builder/../Scene/Scene.hpp \
  /usr/include/c++/12/memory /usr/include/c++/12/bits/stl_tempbuf.h \
  /usr/include/c++/12/bits/stl_raw_storage_iter.h \
  /usr/include/c++/12/bits/align.h /usr/include/c++/12/bit \
@@ -185,15 +185,15 @@ CMakeFiles/raytracer.dir/src/Main.cpp.o: \
  /usr/include/c++/12/pstl/glue_memory_defs.h \
  /usr/include/c++/12/pstl/execution_defs.h /usr/include/c++/12/utility \
  /usr/include/c++/12/bits/stl_relops.h \
- /home/suika/Epitech/PotatRaycer_CI-CD/src/Core/../Builder/../Scene/../Camera/Camera.hpp \
- /home/suika/Epitech/PotatRaycer_CI-CD/src/Ray/Ray.hpp \
- /home/suika/Epitech/PotatRaycer_CI-CD/src/Core/../Builder/../Scene/../Light/Light.hpp \
- /home/suika/Epitech/PotatRaycer_CI-CD/src/Core/../Builder/../Parsing/Parsing.hpp \
- /home/suika/Epitech/PotatRaycer_CI-CD/src/Materials/Metal/Metal.hpp \
- /home/suika/Epitech/PotatRaycer_CI-CD/src/Materials/Lambertian/Lambertian.hpp \
- /home/suika/Epitech/PotatRaycer_CI-CD/src/Materials/Dielectric/Dielectric.hpp \
- /home/suika/Epitech/PotatRaycer_CI-CD/src/Builder/../Ray/Ray.hpp \
- /home/suika/Epitech/PotatRaycer_CI-CD/src/Primitives/Sphere/Sphere.hpp \
- /home/suika/Epitech/PotatRaycer_CI-CD/src/Primitives/Plane/Plane.hpp \
- /home/suika/Epitech/PotatRaycer_CI-CD/src/Core/../Parsing/Parsing.hpp \
+ /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Core/../Builder/../Scene/../Camera/Camera.hpp \
+ /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Ray/Ray.hpp \
+ /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Core/../Builder/../Scene/../Light/Light.hpp \
+ /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Core/../Builder/../Parsing/Parsing.hpp \
+ /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Materials/Metal/Metal.hpp \
+ /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Materials/Lambertian/Lambertian.hpp \
+ /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Materials/Dielectric/Dielectric.hpp \
+ /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Builder/../Ray/Ray.hpp \
+ /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Primitives/Sphere/Sphere.hpp \
+ /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Primitives/Plane/Plane.hpp \
+ /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Core/../Parsing/Parsing.hpp \
  /usr/include/string.h /usr/include/strings.h

@@ -6,6 +6,7 @@
 */
 
 #include "Vec3.hpp"
+#include "Physics.hpp"
 
 #ifndef LIGHT_HPP_
 #define LIGHT_HPP_
