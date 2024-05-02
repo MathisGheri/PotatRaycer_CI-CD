@@ -465,30 +465,6 @@ src/Scene/Scene.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracer.dir/build.make CMakeFiles/raytracer.dir/src/Scene/Scene.cpp.s
 .PHONY : src/Scene/Scene.cpp.s
 
-src/Vec3/Vec3.o: src/Vec3/Vec3.cpp.o
-.PHONY : src/Vec3/Vec3.o
-
-# target to build an object file
-src/Vec3/Vec3.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracer.dir/build.make CMakeFiles/raytracer.dir/src/Vec3/Vec3.cpp.o
-.PHONY : src/Vec3/Vec3.cpp.o
-
-src/Vec3/Vec3.i: src/Vec3/Vec3.cpp.i
-.PHONY : src/Vec3/Vec3.i
-
-# target to preprocess a source file
-src/Vec3/Vec3.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracer.dir/build.make CMakeFiles/raytracer.dir/src/Vec3/Vec3.cpp.i
-.PHONY : src/Vec3/Vec3.cpp.i
-
-src/Vec3/Vec3.s: src/Vec3/Vec3.cpp.s
-.PHONY : src/Vec3/Vec3.s
-
-# target to generate assembly for a file
-src/Vec3/Vec3.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracer.dir/build.make CMakeFiles/raytracer.dir/src/Vec3/Vec3.cpp.s
-.PHONY : src/Vec3/Vec3.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -540,9 +516,6 @@ help:
 	@echo "... src/Scene/Scene.o"
 	@echo "... src/Scene/Scene.i"
 	@echo "... src/Scene/Scene.s"
-	@echo "... src/Vec3/Vec3.o"
-	@echo "... src/Vec3/Vec3.i"
-	@echo "... src/Vec3/Vec3.s"
 .PHONY : help
 
 

@@ -22,7 +22,7 @@ SceneBuilder::SceneBuilder()
     if (scene != nullptr)
         delete(scene);
     scene = new Scene();
-    std::cout<<"Log: SceneBuilder was created."<< std::endl;
+    //LoggerSingleton::getInstance()->log(INFO, "SomeComponent instance created");
 }
 
 SceneBuilder::~SceneBuilder() {}

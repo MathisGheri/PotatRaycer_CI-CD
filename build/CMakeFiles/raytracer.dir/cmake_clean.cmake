@@ -29,8 +29,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/raytracer.dir/src/Ray/Ray.cpp.o.d"
   "CMakeFiles/raytracer.dir/src/Scene/Scene.cpp.o"
   "CMakeFiles/raytracer.dir/src/Scene/Scene.cpp.o.d"
-  "CMakeFiles/raytracer.dir/src/Vec3/Vec3.cpp.o"
-  "CMakeFiles/raytracer.dir/src/Vec3/Vec3.cpp.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

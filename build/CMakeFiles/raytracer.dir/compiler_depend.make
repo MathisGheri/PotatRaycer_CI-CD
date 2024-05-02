@@ -247,6 +247,17 @@ CMakeFiles/raytracer.dir/src/Builder/SceneBuilder.cpp.o: /home/Camille/delivery/
   /usr/include/c++/12/bits/stl_multimap.h \
   /usr/include/c++/12/bits/erase_if.h \
   /usr/include/libconfig.h++ \
+  /usr/include/c++/12/list \
+  /usr/include/c++/12/bits/stl_list.h \
+  /usr/include/c++/12/bits/list.tcc \
+  /usr/include/c++/12/fstream \
+  /usr/include/c++/12/bits/codecvt.h \
+  /usr/include/c++/12/x86_64-redhat-linux/bits/basic_file.h \
+  /usr/include/c++/12/x86_64-redhat-linux/bits/c++io.h \
+  /usr/include/c++/12/bits/fstream.tcc \
+  /usr/include/c++/12/sstream \
+  /usr/include/c++/12/bits/sstream.tcc \
+  /usr/include/c++/12/ctime \
   /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Builder/IBuilder.hpp \
   /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Scene/Scene.hpp \
   /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Light/Light.hpp \
@@ -512,6 +523,17 @@ CMakeFiles/raytracer.dir/src/Camera/Camera.cpp.o: /home/Camille/delivery/SEMESTE
   /usr/include/c++/12/bits/stl_multimap.h \
   /usr/include/c++/12/bits/erase_if.h \
   /usr/include/libconfig.h++ \
+  /usr/include/c++/12/list \
+  /usr/include/c++/12/bits/stl_list.h \
+  /usr/include/c++/12/bits/list.tcc \
+  /usr/include/c++/12/fstream \
+  /usr/include/c++/12/bits/codecvt.h \
+  /usr/include/c++/12/x86_64-redhat-linux/bits/basic_file.h \
+  /usr/include/c++/12/x86_64-redhat-linux/bits/c++io.h \
+  /usr/include/c++/12/bits/fstream.tcc \
+  /usr/include/c++/12/sstream \
+  /usr/include/c++/12/bits/sstream.tcc \
+  /usr/include/c++/12/ctime \
   /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Ray/Ray.hpp
 
 CMakeFiles/raytracer.dir/src/Color/Color.cpp.o: /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Color/Color.cpp \
@@ -763,6 +785,17 @@ CMakeFiles/raytracer.dir/src/Core/Core.cpp.o: /home/Camille/delivery/SEMESTER_4/
   /usr/include/c++/12/bits/stl_multimap.h \
   /usr/include/c++/12/bits/erase_if.h \
   /usr/include/libconfig.h++ \
+  /usr/include/c++/12/list \
+  /usr/include/c++/12/bits/stl_list.h \
+  /usr/include/c++/12/bits/list.tcc \
+  /usr/include/c++/12/fstream \
+  /usr/include/c++/12/bits/codecvt.h \
+  /usr/include/c++/12/x86_64-redhat-linux/bits/basic_file.h \
+  /usr/include/c++/12/x86_64-redhat-linux/bits/c++io.h \
+  /usr/include/c++/12/bits/fstream.tcc \
+  /usr/include/c++/12/sstream \
+  /usr/include/c++/12/bits/sstream.tcc \
+  /usr/include/c++/12/ctime \
   /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Scene/Scene.hpp \
   /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Light/Light.hpp \
   /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Vec3/Vec3.hpp \
@@ -1022,7 +1055,18 @@ CMakeFiles/raytracer.dir/src/Light/Light.cpp.o: /home/Camille/delivery/SEMESTER_
   /usr/include/c++/12/bits/stl_map.h \
   /usr/include/c++/12/bits/stl_multimap.h \
   /usr/include/c++/12/bits/erase_if.h \
-  /usr/include/libconfig.h++
+  /usr/include/libconfig.h++ \
+  /usr/include/c++/12/list \
+  /usr/include/c++/12/bits/stl_list.h \
+  /usr/include/c++/12/bits/list.tcc \
+  /usr/include/c++/12/fstream \
+  /usr/include/c++/12/bits/codecvt.h \
+  /usr/include/c++/12/x86_64-redhat-linux/bits/basic_file.h \
+  /usr/include/c++/12/x86_64-redhat-linux/bits/c++io.h \
+  /usr/include/c++/12/bits/fstream.tcc \
+  /usr/include/c++/12/sstream \
+  /usr/include/c++/12/bits/sstream.tcc \
+  /usr/include/c++/12/ctime
 
 CMakeFiles/raytracer.dir/src/Main.cpp.o: /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Main.cpp \
   /usr/include/stdc-predef.h \
@@ -1269,6 +1313,17 @@ CMakeFiles/raytracer.dir/src/Main.cpp.o: /home/Camille/delivery/SEMESTER_4/OOP/P
   /usr/include/c++/12/bits/stl_multimap.h \
   /usr/include/c++/12/bits/erase_if.h \
   /usr/include/libconfig.h++ \
+  /usr/include/c++/12/list \
+  /usr/include/c++/12/bits/stl_list.h \
+  /usr/include/c++/12/bits/list.tcc \
+  /usr/include/c++/12/fstream \
+  /usr/include/c++/12/bits/codecvt.h \
+  /usr/include/c++/12/x86_64-redhat-linux/bits/basic_file.h \
+  /usr/include/c++/12/x86_64-redhat-linux/bits/c++io.h \
+  /usr/include/c++/12/bits/fstream.tcc \
+  /usr/include/c++/12/sstream \
+  /usr/include/c++/12/bits/sstream.tcc \
+  /usr/include/c++/12/ctime \
   /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Core/Core.hpp \
   /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/include.hpp \
   /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Scene/Scene.hpp \
@@ -1277,7 +1332,11 @@ CMakeFiles/raytracer.dir/src/Main.cpp.o: /home/Camille/delivery/SEMESTER_4/OOP/P
   /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Camera/Camera.hpp \
   /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Ray/Ray.hpp \
   /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Primitives/IHitable.hpp \
-  /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/struct.h
+  /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/struct.h \
+  /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Logger/Logger.hpp \
+  /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Observer/IObserver.hpp \
+  /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Logger/SingletonLogger.hpp \
+  /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Exceptions/Exception.hpp
 
 CMakeFiles/raytracer.dir/src/Materials/Dielectric/Dielectric.cpp.o: /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Materials/Dielectric/Dielectric.cpp \
   /usr/include/stdc-predef.h \
@@ -1527,6 +1586,17 @@ CMakeFiles/raytracer.dir/src/Materials/Dielectric/Dielectric.cpp.o: /home/Camill
   /usr/include/c++/12/bits/stl_multimap.h \
   /usr/include/c++/12/bits/erase_if.h \
   /usr/include/libconfig.h++ \
+  /usr/include/c++/12/list \
+  /usr/include/c++/12/bits/stl_list.h \
+  /usr/include/c++/12/bits/list.tcc \
+  /usr/include/c++/12/fstream \
+  /usr/include/c++/12/bits/codecvt.h \
+  /usr/include/c++/12/x86_64-redhat-linux/bits/basic_file.h \
+  /usr/include/c++/12/x86_64-redhat-linux/bits/c++io.h \
+  /usr/include/c++/12/bits/fstream.tcc \
+  /usr/include/c++/12/sstream \
+  /usr/include/c++/12/bits/sstream.tcc \
+  /usr/include/c++/12/ctime \
   /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Ray/Ray.hpp \
   /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/struct.h
 
@@ -1778,6 +1848,17 @@ CMakeFiles/raytracer.dir/src/Materials/Lambertian/Lambertian.cpp.o: /home/Camill
   /usr/include/c++/12/bits/stl_multimap.h \
   /usr/include/c++/12/bits/erase_if.h \
   /usr/include/libconfig.h++ \
+  /usr/include/c++/12/list \
+  /usr/include/c++/12/bits/stl_list.h \
+  /usr/include/c++/12/bits/list.tcc \
+  /usr/include/c++/12/fstream \
+  /usr/include/c++/12/bits/codecvt.h \
+  /usr/include/c++/12/x86_64-redhat-linux/bits/basic_file.h \
+  /usr/include/c++/12/x86_64-redhat-linux/bits/c++io.h \
+  /usr/include/c++/12/bits/fstream.tcc \
+  /usr/include/c++/12/sstream \
+  /usr/include/c++/12/bits/sstream.tcc \
+  /usr/include/c++/12/ctime \
   /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Ray/Ray.hpp \
   /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/struct.h
 
@@ -2029,6 +2110,17 @@ CMakeFiles/raytracer.dir/src/Materials/Metal/Metal.cpp.o: /home/Camille/delivery
   /usr/include/c++/12/bits/stl_multimap.h \
   /usr/include/c++/12/bits/erase_if.h \
   /usr/include/libconfig.h++ \
+  /usr/include/c++/12/list \
+  /usr/include/c++/12/bits/stl_list.h \
+  /usr/include/c++/12/bits/list.tcc \
+  /usr/include/c++/12/fstream \
+  /usr/include/c++/12/bits/codecvt.h \
+  /usr/include/c++/12/x86_64-redhat-linux/bits/basic_file.h \
+  /usr/include/c++/12/x86_64-redhat-linux/bits/c++io.h \
+  /usr/include/c++/12/bits/fstream.tcc \
+  /usr/include/c++/12/sstream \
+  /usr/include/c++/12/bits/sstream.tcc \
+  /usr/include/c++/12/ctime \
   /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Ray/Ray.hpp \
   /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/struct.h
 
@@ -2277,7 +2369,18 @@ CMakeFiles/raytracer.dir/src/Parsing/Parsing.cpp.o: /home/Camille/delivery/SEMES
   /usr/include/c++/12/bits/stl_map.h \
   /usr/include/c++/12/bits/stl_multimap.h \
   /usr/include/c++/12/bits/erase_if.h \
-  /usr/include/libconfig.h++
+  /usr/include/libconfig.h++ \
+  /usr/include/c++/12/list \
+  /usr/include/c++/12/bits/stl_list.h \
+  /usr/include/c++/12/bits/list.tcc \
+  /usr/include/c++/12/fstream \
+  /usr/include/c++/12/bits/codecvt.h \
+  /usr/include/c++/12/x86_64-redhat-linux/bits/basic_file.h \
+  /usr/include/c++/12/x86_64-redhat-linux/bits/c++io.h \
+  /usr/include/c++/12/bits/fstream.tcc \
+  /usr/include/c++/12/sstream \
+  /usr/include/c++/12/bits/sstream.tcc \
+  /usr/include/c++/12/ctime
 
 CMakeFiles/raytracer.dir/src/Primitives/Plane/Plane.cpp.o: /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Primitives/Plane/Plane.cpp \
   /usr/include/stdc-predef.h \
@@ -2528,6 +2631,17 @@ CMakeFiles/raytracer.dir/src/Primitives/Plane/Plane.cpp.o: /home/Camille/deliver
   /usr/include/c++/12/bits/stl_multimap.h \
   /usr/include/c++/12/bits/erase_if.h \
   /usr/include/libconfig.h++ \
+  /usr/include/c++/12/list \
+  /usr/include/c++/12/bits/stl_list.h \
+  /usr/include/c++/12/bits/list.tcc \
+  /usr/include/c++/12/fstream \
+  /usr/include/c++/12/bits/codecvt.h \
+  /usr/include/c++/12/x86_64-redhat-linux/bits/basic_file.h \
+  /usr/include/c++/12/x86_64-redhat-linux/bits/c++io.h \
+  /usr/include/c++/12/bits/fstream.tcc \
+  /usr/include/c++/12/sstream \
+  /usr/include/c++/12/bits/sstream.tcc \
+  /usr/include/c++/12/ctime \
   /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/struct.h
 
 CMakeFiles/raytracer.dir/src/Primitives/Sphere/Sphere.cpp.o: /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Primitives/Sphere/Sphere.cpp \
@@ -2776,6 +2890,17 @@ CMakeFiles/raytracer.dir/src/Primitives/Sphere/Sphere.cpp.o: /home/Camille/deliv
   /usr/include/c++/12/bits/stl_multimap.h \
   /usr/include/c++/12/bits/erase_if.h \
   /usr/include/libconfig.h++ \
+  /usr/include/c++/12/list \
+  /usr/include/c++/12/bits/stl_list.h \
+  /usr/include/c++/12/bits/list.tcc \
+  /usr/include/c++/12/fstream \
+  /usr/include/c++/12/bits/codecvt.h \
+  /usr/include/c++/12/x86_64-redhat-linux/bits/basic_file.h \
+  /usr/include/c++/12/x86_64-redhat-linux/bits/c++io.h \
+  /usr/include/c++/12/bits/fstream.tcc \
+  /usr/include/c++/12/sstream \
+  /usr/include/c++/12/bits/sstream.tcc \
+  /usr/include/c++/12/ctime \
   /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Primitives/IHitable.hpp \
   /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Ray/Ray.hpp \
   /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Vec3/Vec3.hpp \
@@ -3028,7 +3153,18 @@ CMakeFiles/raytracer.dir/src/Ray/Ray.cpp.o: /home/Camille/delivery/SEMESTER_4/OO
   /usr/include/c++/12/bits/stl_map.h \
   /usr/include/c++/12/bits/stl_multimap.h \
   /usr/include/c++/12/bits/erase_if.h \
-  /usr/include/libconfig.h++
+  /usr/include/libconfig.h++ \
+  /usr/include/c++/12/list \
+  /usr/include/c++/12/bits/stl_list.h \
+  /usr/include/c++/12/bits/list.tcc \
+  /usr/include/c++/12/fstream \
+  /usr/include/c++/12/bits/codecvt.h \
+  /usr/include/c++/12/x86_64-redhat-linux/bits/basic_file.h \
+  /usr/include/c++/12/x86_64-redhat-linux/bits/c++io.h \
+  /usr/include/c++/12/bits/fstream.tcc \
+  /usr/include/c++/12/sstream \
+  /usr/include/c++/12/bits/sstream.tcc \
+  /usr/include/c++/12/ctime
 
 CMakeFiles/raytracer.dir/src/Scene/Scene.cpp.o: /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Scene/Scene.cpp \
   /usr/include/stdc-predef.h \
@@ -3278,22 +3414,32 @@ CMakeFiles/raytracer.dir/src/Scene/Scene.cpp.o: /home/Camille/delivery/SEMESTER_
   /usr/include/c++/12/bits/stl_multimap.h \
   /usr/include/c++/12/bits/erase_if.h \
   /usr/include/libconfig.h++ \
+  /usr/include/c++/12/list \
+  /usr/include/c++/12/bits/stl_list.h \
+  /usr/include/c++/12/bits/list.tcc \
+  /usr/include/c++/12/fstream \
+  /usr/include/c++/12/bits/codecvt.h \
+  /usr/include/c++/12/x86_64-redhat-linux/bits/basic_file.h \
+  /usr/include/c++/12/x86_64-redhat-linux/bits/c++io.h \
+  /usr/include/c++/12/bits/fstream.tcc \
+  /usr/include/c++/12/sstream \
+  /usr/include/c++/12/bits/sstream.tcc \
+  /usr/include/c++/12/ctime \
   /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Camera/Camera.hpp \
   /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Ray/Ray.hpp \
   /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Primitives/IHitable.hpp \
   /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/struct.h
 
-CMakeFiles/raytracer.dir/src/Vec3/Vec3.cpp.o: /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Vec3/Vec3.cpp \
-  /usr/include/stdc-predef.h
-
-
-/home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Vec3/Vec3.cpp:
 
 /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Scene/Scene.cpp:
 
 /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Primitives/Sphere/Sphere.cpp:
 
 /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Primitives/Plane/Plane.cpp:
+
+/home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Logger/SingletonLogger.hpp:
+
+/home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Observer/IObserver.hpp:
 
 /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Main.cpp:
 
@@ -3306,6 +3452,24 @@ CMakeFiles/raytracer.dir/src/Vec3/Vec3.cpp.o: /home/Camille/delivery/SEMESTER_4/
 /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Camera/Camera.cpp:
 
 /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Materials/Dielectric/Dielectric.hpp:
+
+/home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Materials/IMaterial.hpp:
+
+/home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Primitives/Sphere/Sphere.hpp:
+
+/home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/struct.h:
+
+/home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Primitives/IHitable.hpp:
+
+/home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Ray/Ray.hpp:
+
+/home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Vec3/Vec3.hpp:
+
+/home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Light/Light.hpp:
+
+/home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Scene/Scene.hpp:
+
+/home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Builder/IBuilder.hpp:
 
 /usr/include/c++/12/bits/range_access.h:
 
@@ -3341,11 +3505,17 @@ CMakeFiles/raytracer.dir/src/Vec3/Vec3.cpp.o: /home/Camille/delivery/SEMESTER_4/
 
 /usr/include/c++/12/bits/cxxabi_forced.h:
 
+/home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Exceptions/Exception.hpp:
+
 /usr/include/bits/struct_mutex.h:
 
 /usr/include/bits/thread-shared-types.h:
 
 /usr/include/c++/12/cstdlib:
+
+/home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Parsing/Parsing.hpp:
+
+/usr/include/bits/types/timer_t.h:
 
 /usr/include/bits/atomic_wide_counter.h:
 
@@ -3363,9 +3533,9 @@ CMakeFiles/raytracer.dir/src/Vec3/Vec3.cpp.o: /home/Camille/delivery/SEMESTER_4/
 
 /usr/include/bits/types/struct_timespec.h:
 
-/usr/include/c++/12/bits/ptr_traits.h:
+/usr/include/c++/12/bits/list.tcc:
 
-/home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Ray/Ray.hpp:
+/usr/include/c++/12/bits/ptr_traits.h:
 
 /usr/include/bits/struct_rwlock.h:
 
@@ -3378,6 +3548,8 @@ CMakeFiles/raytracer.dir/src/Vec3/Vec3.cpp.o: /home/Camille/delivery/SEMESTER_4/
 /usr/include/c++/12/bits/concept_check.h:
 
 /usr/include/gnu/stubs-64.h:
+
+/usr/include/c++/12/bits/sstream.tcc:
 
 /usr/include/bits/endianness.h:
 
@@ -3432,6 +3604,8 @@ CMakeFiles/raytracer.dir/src/Vec3/Vec3.cpp.o: /home/Camille/delivery/SEMESTER_4/
 /usr/include/bits/types/struct_sched_param.h:
 
 /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Builder/SceneBuilder.cpp:
+
+/usr/include/c++/12/bits/fstream.tcc:
 
 /usr/include/bits/libc-header-start.h:
 
@@ -3499,6 +3673,8 @@ CMakeFiles/raytracer.dir/src/Vec3/Vec3.cpp.o: /home/Camille/delivery/SEMESTER_4/
 
 /usr/include/c++/12/bits/shared_ptr_base.h:
 
+/home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Logger/Logger.hpp:
+
 /usr/include/c++/12/iostream:
 
 /usr/include/c++/12/backward/auto_ptr.h:
@@ -3545,19 +3721,19 @@ CMakeFiles/raytracer.dir/src/Vec3/Vec3.cpp.o: /home/Camille/delivery/SEMESTER_4/
 
 /usr/include/c++/12/iosfwd:
 
+/home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Camera/Camera.hpp:
+
 /usr/include/c++/12/bits/memoryfwd.h:
 
 /usr/include/c++/12/bits/stl_pair.h:
 
-/home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Camera/Camera.hpp:
-
 /usr/include/c++/12/x86_64-redhat-linux/bits/cpu_defines.h:
-
-/home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Scene/Scene.hpp:
 
 /usr/include/bits/long-double.h:
 
 /home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/include.hpp:
+
+/usr/include/c++/12/x86_64-redhat-linux/bits/c++io.h:
 
 /usr/include/c++/12/math.h:
 
@@ -3580,8 +3756,6 @@ CMakeFiles/raytracer.dir/src/Vec3/Vec3.cpp.o: /home/Camille/delivery/SEMESTER_4/
 /usr/include/c++/12/bits/std_abs.h:
 
 /usr/include/c++/12/x86_64-redhat-linux/bits/error_constants.h:
-
-/home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Materials/IMaterial.hpp:
 
 /usr/include/bits/typesizes.h:
 
@@ -3677,15 +3851,13 @@ CMakeFiles/raytracer.dir/src/Vec3/Vec3.cpp.o: /home/Camille/delivery/SEMESTER_4/
 
 /usr/include/c++/12/ext/concurrence.h:
 
+/usr/include/c++/12/bits/stl_list.h:
+
 /usr/include/bits/byteswap.h:
 
 /usr/include/bits/uintn-identity.h:
 
 /usr/include/sys/select.h:
-
-/usr/include/c++/12/bits/cpp_type_traits.h:
-
-/usr/include/bits/select.h:
 
 /usr/include/bits/types/sigset_t.h:
 
@@ -3702,8 +3874,6 @@ CMakeFiles/raytracer.dir/src/Vec3/Vec3.cpp.o: /home/Camille/delivery/SEMESTER_4/
 /usr/include/bits/types/cookie_io_functions_t.h:
 
 /usr/include/linux/errno.h:
-
-/home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Vec3/Vec3.hpp:
 
 /usr/include/bits/stdint-uintn.h:
 
@@ -3724,8 +3894,6 @@ CMakeFiles/raytracer.dir/src/Vec3/Vec3.cpp.o: /home/Camille/delivery/SEMESTER_4/
 /usr/include/c++/12/streambuf:
 
 /usr/include/c++/12/bits/streambuf.tcc:
-
-/usr/include/c++/12/bits/basic_ios.h:
 
 /usr/include/c++/12/pstl/execution_defs.h:
 
@@ -3748,6 +3916,8 @@ CMakeFiles/raytracer.dir/src/Vec3/Vec3.cpp.o: /home/Camille/delivery/SEMESTER_4/
 /usr/include/c++/12/tr1/riemann_zeta.tcc:
 
 /usr/include/c++/12/bits/basic_ios.tcc:
+
+/usr/include/c++/12/ctime:
 
 /usr/include/bits/math-vector.h:
 
@@ -3825,16 +3995,18 @@ CMakeFiles/raytracer.dir/src/Vec3/Vec3.cpp.o: /home/Camille/delivery/SEMESTER_4/
 
 /usr/include/c++/12/bits/erase_if.h:
 
-/home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Builder/IBuilder.hpp:
+/usr/include/c++/12/list:
 
-/home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Light/Light.hpp:
+/usr/include/c++/12/fstream:
 
-/home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Primitives/IHitable.hpp:
+/usr/include/c++/12/bits/cpp_type_traits.h:
 
-/home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/struct.h:
+/usr/include/bits/select.h:
 
-/usr/include/bits/types/timer_t.h:
+/usr/include/c++/12/bits/codecvt.h:
 
-/home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Parsing/Parsing.hpp:
+/usr/include/c++/12/x86_64-redhat-linux/bits/basic_file.h:
 
-/home/Camille/delivery/SEMESTER_4/OOP/PotatRaycer_CI-CD/src/Primitives/Sphere/Sphere.hpp:
+/usr/include/c++/12/bits/basic_ios.h:
+
+/usr/include/c++/12/sstream:
