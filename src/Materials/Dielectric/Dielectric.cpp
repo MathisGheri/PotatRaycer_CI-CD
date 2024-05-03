@@ -6,11 +6,14 @@
 */
 
 #include "Dielectric.hpp"
+#include "SingletonLogger.hpp"
 
 Dielectric::Dielectric(float ri) : ref_idx(ri)
 {
-    std::cout << "LOG: Dielectric created with this parameter: ri = " << ri << "." << std::endl;
-
+    Logger *logger = LoggerSingleton::getInstance();
+	std::ostringstream msg;
+    msg << "LOG: Dielectric created with this parameter: ri = " << ri << ".";
+	logger->log(INFO, msg.str());
 }
 
 Dielectric::~Dielectric()

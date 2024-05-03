@@ -9,7 +9,10 @@
 
 Ray::Ray()
 {
-    std::cout << "LOG: Ray was created without params" << std::endl;
+    Logger *logger = LoggerSingleton::getInstance();
+	std::ostringstream msg;
+    msg << "LOG: Ray created without params.";
+	logger->log(DEBUG, msg.str());
 }
 
 Ray::~Ray()
@@ -20,7 +23,10 @@ Ray::Ray(const Vec3 &a, const Vec3 &b)
 {
     this->A = a;
     this->B = b;
-    std::cout << "LOG: Ray was created with these params. a = " << a << ", b = " << b << std::endl;
+    Logger *logger = LoggerSingleton::getInstance();
+	std::ostringstream msg;
+    msg << "LOG: Ray created with these params. a = " << a << ", b = " << b << ".";
+	logger->log(INFO, msg.str());
 }
 
 Vec3 Ray::origin() const

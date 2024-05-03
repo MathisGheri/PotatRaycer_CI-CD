@@ -9,19 +9,24 @@
 #define Vec3_HPP_
 
 #include "include.hpp"
+#include "SingletonLogger.hpp"
 
 class Vec3 {
 public:
 	Vec3()
 	{
-		std::cout << "LOG: Vec3 was created without params" << std::endl;
+		Logger* logger = LoggerSingleton::getInstance();
+		logger->log(DEBUG, "Vec3 created without params.");
 	}
 	Vec3(float e0, float e1, float e2)
 	{
-		e[0]=e0;e[1]=e1;e[2]=e2;
-		std::cout << "LOG: Vec3 was created with theses params. x = " << e0 << ", y = " << e1 << ", z = " << e2 << "." << std::endl;
+		e[0] = e0; e[1] = e1; e[2] = e2;
+
+		std::ostringstream msg;
+		msg << "Vec3 created with these params. x = " << e0 << ", y = " << e1 << ", z = " << e2 << ".";
+		Logger* logger = LoggerSingleton::getInstance();
+		logger->log(INFO, msg.str());
 	}
-	
 	inline float x() const {return e[0];}
 	inline float y() const {return e[1];}
 	inline float z() const {return e[2];}

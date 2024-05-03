@@ -1,2 +1,198 @@
-[2024-05-02 22:47:01] INFO: Application started
-[2024-05-02 22:47:01] INFO: Core Created
+[2024-05-03 09:02:02] INFO: Application started.
+[2024-05-03 09:02:02] INFO: Core Created.
+[2024-05-03 09:02:02] INFO: LOG: Scene created.
+[2024-05-03 09:02:02] INFO: SceneBuilder created.
+[2024-05-03 09:02:02] INFO: LOG: Parsing created. Config file = config.cfg.
+[2024-05-03 09:02:02] DEBUG: Parsing done.
+[2024-05-03 09:02:02] DEBUG: Vec3 created without params.
+[2024-05-03 09:02:02] DEBUG: Vec3 created without params.
+[2024-05-03 09:02:02] DEBUG: Vec3 created without params.
+[2024-05-03 09:02:02] INFO: Vec3 created with these params. x = 3, y = 3, z = 2.
+[2024-05-03 09:02:02] INFO: Vec3 created with these params. x = 0, y = 0, z = -1.
+[2024-05-03 09:02:02] INFO: Vec3 created with these params. x = 0, y = 1, z = 0.
+[2024-05-03 09:02:02] DEBUG: Vec3 created without params.
+[2024-05-03 09:02:02] DEBUG: Vec3 created without params.
+[2024-05-03 09:02:02] DEBUG: Vec3 created without params.
+[2024-05-03 09:02:02] DEBUG: Vec3 created without params.
+[2024-05-03 09:02:02] DEBUG: Vec3 created without params.
+[2024-05-03 09:02:02] DEBUG: Vec3 created without params.
+[2024-05-03 09:02:02] DEBUG: Vec3 created without params.
+[2024-05-03 09:02:02] INFO: Vec3 created with these params. x = 3, y = 3, z = 3.
+[2024-05-03 09:02:02] INFO: Vec3 created with these params. x = 0.57735, y = 0.57735, z = 0.57735.
+[2024-05-03 09:02:02] INFO: Vec3 created with these params. x = 0.57735, y = -0, z = -0.57735.
+[2024-05-03 09:02:02] INFO: Vec3 created with these params. x = 0.707107, y = -0, z = -0.707107.
+[2024-05-03 09:02:02] INFO: Vec3 created with these params. x = -0.408248, y = 0.816497, z = -0.408248.
+[2024-05-03 09:02:02] INFO: Vec3 created with these params. x = 0, y = 0, z = 0.
+[2024-05-03 09:02:02] INFO: Vec3 created with these params. x = -0, y = 0, z = -0.
+[2024-05-03 09:02:02] INFO: Vec3 created with these params. x = 0, y = -0, z = -0.
+[2024-05-03 09:02:02] INFO: Vec3 created with these params. x = 3, y = 3, z = 2.
+[2024-05-03 09:02:02] INFO: Vec3 created with these params. x = 3, y = 3, z = 2.
+[2024-05-03 09:02:02] INFO: Vec3 created with these params. x = 3, y = 3, z = 2.
+[2024-05-03 09:02:02] INFO: Vec3 created with these params. x = 0.498728, y = -0, z = -0.498728.
+[2024-05-03 09:02:02] INFO: Vec3 created with these params. x = 0, y = -0, z = -0.
+[2024-05-03 09:02:02] INFO: Vec3 created with these params. x = -0.14397, y = 0.287941, z = -0.14397.
+[2024-05-03 09:02:02] INFO: Vec3 created with these params. x = -0, y = 0, z = -0.
+[2024-05-03 09:02:02] INFO: Camera created with lookfrom = 3 3 2, lookat = 0 0 -1, vfov = 20, aspect = 2, aperture = 2, focus_dist = 0.
+[2024-05-03 09:02:02] DEBUG: Camera created.
+[2024-05-03 09:02:02] DEBUG: Vec3 created without params.
+[2024-05-03 09:02:02] INFO: Vec3 created with these params. x = 0, y = 0, z = 0.
+[2024-05-03 09:02:02] INFO: Log: Light created with parameters pos = 0 0 0, i = 1.
+[2024-05-03 09:02:02] DEBUG: Light created.
+[2024-05-03 09:02:02] INFO: Vec3 created with these params. x = 0.5, y = 0.5, z = 0.5.
+[2024-05-03 09:02:02] INFO: LOG: Lambertian created with a = 0.5 0.5 0.5.
+[2024-05-03 09:02:02] INFO: Vec3 created with these params. x = 0, y = 0, z = 0.
+[2024-05-03 09:02:02] INFO: Vec3 created with these params. x = 0, y = 0, z = -1.
+[2024-05-03 09:02:02] INFO: LOG: Plane created with these params. p = 0 0 0, n = 0 0 -1, and mat0x978670.
+[2024-05-03 09:02:02] INFO: Vec3 created with these params. x = 0.5, y = 0.5, z = 0.5.
+[2024-05-03 09:02:02] INFO: LOG: Metal created with these parameters: a = 0.5 0.5 0.5, f = 0.
+[2024-05-03 09:02:02] INFO: Vec3 created with these params. x = 0, y = 0, z = 0.
+[2024-05-03 09:02:02] INFO: Vec3 created with these params. x = 0, y = 0, z = -1.
+[2024-05-03 09:02:02] INFO: LOG: Plane created with these params. p = 0 0 0, n = 0 0 -1, and mat0x9786b0.
+[2024-05-03 09:02:02] INFO: Vec3 created with these params. x = 0.1, y = 0.2, z = 0.5.
+[2024-05-03 09:02:02] INFO: LOG: Metal created with these parameters: a = 0.1 0.2 0.5, f = 0.
+[2024-05-03 09:02:02] INFO: Vec3 created with these params. x = 0, y = 0, z = -1.
+[2024-05-03 09:02:02] INFO: LOG: Sphere created with these params. cen = 0 0 -1, r = 1, and material (find a way to print it).
+[2024-05-03 09:02:02] DEBUG: Primitives Created.
+[2024-05-03 09:02:02] INFO: Application Stopped.
+
+
+[2024-05-03 09:02:05] INFO: Application started.
+[2024-05-03 09:02:05] INFO: Core Created.
+[2024-05-03 09:02:05] INFO: LOG: Scene created.
+[2024-05-03 09:02:05] INFO: SceneBuilder created.
+[2024-05-03 09:02:05] INFO: LOG: Parsing created. Config file = config.cfg.
+[2024-05-03 09:02:05] DEBUG: Parsing done.
+[2024-05-03 09:02:05] DEBUG: Vec3 created without params.
+[2024-05-03 09:02:05] DEBUG: Vec3 created without params.
+[2024-05-03 09:02:05] DEBUG: Vec3 created without params.
+[2024-05-03 09:02:05] INFO: Vec3 created with these params. x = 3, y = 3, z = 2.
+[2024-05-03 09:02:05] INFO: Vec3 created with these params. x = 0, y = 0, z = -1.
+[2024-05-03 09:02:05] INFO: Vec3 created with these params. x = 0, y = 1, z = 0.
+[2024-05-03 09:02:05] DEBUG: Vec3 created without params.
+[2024-05-03 09:02:05] DEBUG: Vec3 created without params.
+[2024-05-03 09:02:05] DEBUG: Vec3 created without params.
+[2024-05-03 09:02:05] DEBUG: Vec3 created without params.
+[2024-05-03 09:02:05] DEBUG: Vec3 created without params.
+[2024-05-03 09:02:05] DEBUG: Vec3 created without params.
+[2024-05-03 09:02:05] DEBUG: Vec3 created without params.
+[2024-05-03 09:02:05] INFO: Vec3 created with these params. x = 3, y = 3, z = 3.
+[2024-05-03 09:02:05] INFO: Vec3 created with these params. x = 0.57735, y = 0.57735, z = 0.57735.
+[2024-05-03 09:02:05] INFO: Vec3 created with these params. x = 0.57735, y = -0, z = -0.57735.
+[2024-05-03 09:02:05] INFO: Vec3 created with these params. x = 0.707107, y = -0, z = -0.707107.
+[2024-05-03 09:02:05] INFO: Vec3 created with these params. x = -0.408248, y = 0.816497, z = -0.408248.
+[2024-05-03 09:02:05] INFO: Vec3 created with these params. x = 0, y = 0, z = 0.
+[2024-05-03 09:02:05] INFO: Vec3 created with these params. x = -0, y = 0, z = -0.
+[2024-05-03 09:02:05] INFO: Vec3 created with these params. x = 0, y = -0, z = -0.
+[2024-05-03 09:02:05] INFO: Vec3 created with these params. x = 3, y = 3, z = 2.
+[2024-05-03 09:02:05] INFO: Vec3 created with these params. x = 3, y = 3, z = 2.
+[2024-05-03 09:02:05] INFO: Vec3 created with these params. x = 3, y = 3, z = 2.
+[2024-05-03 09:02:05] INFO: Vec3 created with these params. x = 0.498728, y = -0, z = -0.498728.
+[2024-05-03 09:02:05] INFO: Vec3 created with these params. x = 0, y = -0, z = -0.
+[2024-05-03 09:02:05] INFO: Vec3 created with these params. x = -0.14397, y = 0.287941, z = -0.14397.
+[2024-05-03 09:02:05] INFO: Vec3 created with these params. x = -0, y = 0, z = -0.
+[2024-05-03 09:02:05] INFO: Camera created with lookfrom = 3 3 2, lookat = 0 0 -1, vfov = 20, aspect = 2, aperture = 2, focus_dist = 0.
+[2024-05-03 09:02:05] DEBUG: Camera created.
+[2024-05-03 09:02:05] DEBUG: Vec3 created without params.
+[2024-05-03 09:02:05] INFO: Vec3 created with these params. x = 0, y = 0, z = 0.
+[2024-05-03 09:02:05] INFO: Log: Light created with parameters pos = 0 0 0, i = 1.
+[2024-05-03 09:02:05] DEBUG: Light created.
+[2024-05-03 09:02:05] INFO: Vec3 created with these params. x = 0.5, y = 0.5, z = 0.5.
+[2024-05-03 09:02:05] INFO: LOG: Lambertian created with a = 0.5 0.5 0.5.
+[2024-05-03 09:02:05] INFO: Vec3 created with these params. x = 0, y = 0, z = 0.
+[2024-05-03 09:02:05] INFO: Vec3 created with these params. x = 0, y = 0, z = -1.
+[2024-05-03 09:02:05] INFO: LOG: Plane created with these params. p = 0 0 0, n = 0 0 -1, and mat0x9ad670.
+[2024-05-03 09:02:05] INFO: Vec3 created with these params. x = 0.5, y = 0.5, z = 0.5.
+[2024-05-03 09:02:05] INFO: LOG: Metal created with these parameters: a = 0.5 0.5 0.5, f = 0.
+[2024-05-03 09:02:05] INFO: Vec3 created with these params. x = 0, y = 0, z = 0.
+[2024-05-03 09:02:05] INFO: Vec3 created with these params. x = 0, y = 0, z = -1.
+[2024-05-03 09:02:05] INFO: LOG: Plane created with these params. p = 0 0 0, n = 0 0 -1, and mat0x9ad6b0.
+[2024-05-03 09:02:05] INFO: Vec3 created with these params. x = 0.1, y = 0.2, z = 0.5.
+[2024-05-03 09:02:05] INFO: LOG: Metal created with these parameters: a = 0.1 0.2 0.5, f = 0.
+[2024-05-03 09:02:05] INFO: Vec3 created with these params. x = 0, y = 0, z = -1.
+[2024-05-03 09:02:05] INFO: LOG: Sphere created with these params. cen = 0 0 -1, r = 1, and material (find a way to print it).
+[2024-05-03 09:02:05] DEBUG: Primitives Created.
+[2024-05-03 09:02:05] INFO: Application Stopped.
+
+
+[2024-05-03 09:20:57] INFO: Application started.
+[2024-05-03 09:20:57] INFO: Core Created.
+[2024-05-03 09:20:57] INFO: LOG: Scene created.
+[2024-05-03 09:20:57] INFO: SceneBuilder created.
+[2024-05-03 09:20:57] INFO: LOG: Parsing created. Config file = config.cfg.
+[2024-05-03 09:21:16] INFO: Application started.
+[2024-05-03 09:21:16] INFO: Core Created.
+[2024-05-03 09:21:16] INFO: LOG: Scene created.
+[2024-05-03 09:21:16] INFO: SceneBuilder created.
+[2024-05-03 09:21:16] INFO: LOG: Parsing created. Config file = config.cfg.
+[2024-05-03 09:31:22] INFO: Application started.
+[2024-05-03 09:31:22] INFO: Core Created.
+[2024-05-03 09:31:22] INFO: LOG: Scene created.
+[2024-05-03 09:31:22] INFO: SceneBuilder created.
+[2024-05-03 09:31:22] INFO: LOG: Parsing created. Config file = config.cfg.
+[2024-05-03 09:31:35] INFO: Application started.
+[2024-05-03 09:31:35] INFO: Core Created.
+[2024-05-03 09:31:35] INFO: LOG: Scene created.
+[2024-05-03 09:31:35] INFO: SceneBuilder created.
+[2024-05-03 09:31:35] INFO: LOG: Parsing created. Config file = config.cfg.
+[2024-05-03 09:33:24] INFO: Application started.
+[2024-05-03 09:33:24] INFO: Core Created.
+[2024-05-03 09:33:24] INFO: LOG: Scene created.
+[2024-05-03 09:33:24] INFO: SceneBuilder created.
+[2024-05-03 09:33:24] INFO: LOG: Parsing created. Config file = config.cfg.
+[2024-05-03 09:33:49] INFO: Application started.
+[2024-05-03 09:33:49] INFO: Core Created.
+[2024-05-03 09:33:49] INFO: LOG: Scene created.
+[2024-05-03 09:33:49] INFO: SceneBuilder created.
+[2024-05-03 09:33:49] INFO: LOG: Parsing created. Config file = config.cfg.
+[2024-05-03 09:33:49] DEBUG: Parsing done.
+[2024-05-03 09:33:49] DEBUG: Vec3 created without params.
+[2024-05-03 09:33:49] DEBUG: Vec3 created without params.
+[2024-05-03 09:33:49] DEBUG: Vec3 created without params.
+[2024-05-03 09:33:49] INFO: Vec3 created with these params. x = 3, y = 3, z = 2.
+[2024-05-03 09:33:49] INFO: Vec3 created with these params. x = 0, y = 0, z = -1.
+[2024-05-03 09:33:49] INFO: Vec3 created with these params. x = 0, y = 1, z = 0.
+[2024-05-03 09:33:49] DEBUG: Vec3 created without params.
+[2024-05-03 09:33:49] DEBUG: Vec3 created without params.
+[2024-05-03 09:33:49] DEBUG: Vec3 created without params.
+[2024-05-03 09:33:49] DEBUG: Vec3 created without params.
+[2024-05-03 09:33:49] DEBUG: Vec3 created without params.
+[2024-05-03 09:33:49] DEBUG: Vec3 created without params.
+[2024-05-03 09:33:49] DEBUG: Vec3 created without params.
+[2024-05-03 09:33:49] INFO: Vec3 created with these params. x = 3, y = 3, z = 3.
+[2024-05-03 09:33:49] INFO: Vec3 created with these params. x = 0.57735, y = 0.57735, z = 0.57735.
+[2024-05-03 09:33:49] INFO: Vec3 created with these params. x = 0.57735, y = -0, z = -0.57735.
+[2024-05-03 09:33:49] INFO: Vec3 created with these params. x = 0.707107, y = -0, z = -0.707107.
+[2024-05-03 09:33:49] INFO: Vec3 created with these params. x = -0.408248, y = 0.816497, z = -0.408248.
+[2024-05-03 09:33:49] INFO: Vec3 created with these params. x = 0, y = 0, z = 0.
+[2024-05-03 09:33:49] INFO: Vec3 created with these params. x = -0, y = 0, z = -0.
+[2024-05-03 09:33:49] INFO: Vec3 created with these params. x = 0, y = -0, z = -0.
+[2024-05-03 09:33:49] INFO: Vec3 created with these params. x = 3, y = 3, z = 2.
+[2024-05-03 09:33:49] INFO: Vec3 created with these params. x = 3, y = 3, z = 2.
+[2024-05-03 09:33:49] INFO: Vec3 created with these params. x = 3, y = 3, z = 2.
+[2024-05-03 09:33:49] INFO: Vec3 created with these params. x = 0.498728, y = -0, z = -0.498728.
+[2024-05-03 09:33:49] INFO: Vec3 created with these params. x = 0, y = -0, z = -0.
+[2024-05-03 09:33:49] INFO: Vec3 created with these params. x = -0.14397, y = 0.287941, z = -0.14397.
+[2024-05-03 09:33:49] INFO: Vec3 created with these params. x = -0, y = 0, z = -0.
+[2024-05-03 09:33:49] INFO: Camera created with lookfrom = 3 3 2, lookat = 0 0 -1, vfov = 20, aspect = 2, aperture = 2, focus_dist = 0.
+[2024-05-03 09:33:49] DEBUG: Camera created.
+[2024-05-03 09:33:49] DEBUG: Vec3 created without params.
+[2024-05-03 09:33:49] INFO: Vec3 created with these params. x = 0, y = 0, z = 0.
+[2024-05-03 09:33:49] INFO: Log: Light created with parameters pos = 0 0 0, i = 1.
+[2024-05-03 09:33:49] DEBUG: Light created.
+[2024-05-03 09:33:49] INFO: Vec3 created with these params. x = 0.5, y = 0.5, z = 0.5.
+[2024-05-03 09:33:49] INFO: LOG: Lambertian created with a = 0.5 0.5 0.5.
+[2024-05-03 09:33:49] INFO: Vec3 created with these params. x = 0, y = 0, z = 0.
+[2024-05-03 09:33:49] INFO: Vec3 created with these params. x = 0, y = 0, z = -1.
+[2024-05-03 09:33:49] INFO: LOG: Plane created with these params. p = 0 0 0, n = 0 0 -1, and mat0xccf140.
+[2024-05-03 09:33:49] INFO: Vec3 created with these params. x = 0.5, y = 0.5, z = 0.5.
+[2024-05-03 09:33:49] INFO: LOG: Metal created with these parameters: a = 0.5 0.5 0.5, f = 0.
+[2024-05-03 09:33:49] INFO: Vec3 created with these params. x = 0, y = 0, z = 0.
+[2024-05-03 09:33:49] INFO: Vec3 created with these params. x = 0, y = 0, z = -1.
+[2024-05-03 09:33:49] INFO: LOG: Plane created with these params. p = 0 0 0, n = 0 0 -1, and mat0xccf180.
+[2024-05-03 09:33:49] INFO: Vec3 created with these params. x = 0.1, y = 0.2, z = 0.5.
+[2024-05-03 09:33:49] INFO: LOG: Metal created with these parameters: a = 0.1 0.2 0.5, f = 0.
+[2024-05-03 09:33:49] INFO: Vec3 created with these params. x = 0, y = 0, z = -1.
+[2024-05-03 09:33:49] INFO: LOG: Sphere created with these params. cen = 0 0 -1, r = 1, and material (find a way to print it).
+[2024-05-03 09:33:49] DEBUG: Primitives Created.
+[2024-05-03 09:33:49] INFO: Application Stopped.
+

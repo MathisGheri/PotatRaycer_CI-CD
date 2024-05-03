@@ -263,6 +263,8 @@ CMakeFiles/raytracer.dir/src/Builder/SceneBuilder.cpp.o: /home/suika/Epitech/Pot
   /home/suika/Epitech/PotatRaycer_CI-CD/src/Light/Light.hpp \
   /home/suika/Epitech/PotatRaycer_CI-CD/src/Vec3/Vec3.hpp \
   /home/suika/Epitech/PotatRaycer_CI-CD/src/include.hpp \
+  /home/suika/Epitech/PotatRaycer_CI-CD/src/Logger/SingletonLogger.hpp \
+  /home/suika/Epitech/PotatRaycer_CI-CD/src/Logger/Logger.hpp \
   /home/suika/Epitech/PotatRaycer_CI-CD/src/Camera/Camera.hpp \
   /home/suika/Epitech/PotatRaycer_CI-CD/src/Ray/Ray.hpp \
   /home/suika/Epitech/PotatRaycer_CI-CD/src/Primitives/IHitable.hpp \
@@ -274,7 +276,8 @@ CMakeFiles/raytracer.dir/src/Builder/SceneBuilder.cpp.o: /home/suika/Epitech/Pot
   /home/suika/Epitech/PotatRaycer_CI-CD/src/Primitives/Plane/Plane.hpp \
   /home/suika/Epitech/PotatRaycer_CI-CD/src/Materials/Metal/Metal.hpp \
   /home/suika/Epitech/PotatRaycer_CI-CD/src/Materials/Lambertian/Lambertian.hpp \
-  /home/suika/Epitech/PotatRaycer_CI-CD/src/Materials/Dielectric/Dielectric.hpp
+  /home/suika/Epitech/PotatRaycer_CI-CD/src/Materials/Dielectric/Dielectric.hpp \
+  /home/suika/Epitech/PotatRaycer_CI-CD/src/Exceptions/Exception.hpp
 
 CMakeFiles/raytracer.dir/src/Camera/Camera.cpp.o: /home/suika/Epitech/PotatRaycer_CI-CD/src/Camera/Camera.cpp \
   /usr/include/stdc-predef.h \
@@ -534,6 +537,8 @@ CMakeFiles/raytracer.dir/src/Camera/Camera.cpp.o: /home/suika/Epitech/PotatRayce
   /usr/include/c++/12/sstream \
   /usr/include/c++/12/bits/sstream.tcc \
   /usr/include/c++/12/ctime \
+  /home/suika/Epitech/PotatRaycer_CI-CD/src/Logger/SingletonLogger.hpp \
+  /home/suika/Epitech/PotatRaycer_CI-CD/src/Logger/Logger.hpp \
   /home/suika/Epitech/PotatRaycer_CI-CD/src/Ray/Ray.hpp
 
 CMakeFiles/raytracer.dir/src/Color/Color.cpp.o: /home/suika/Epitech/PotatRaycer_CI-CD/src/Color/Color.cpp \
@@ -799,6 +804,8 @@ CMakeFiles/raytracer.dir/src/Core/Core.cpp.o: /home/suika/Epitech/PotatRaycer_CI
   /home/suika/Epitech/PotatRaycer_CI-CD/src/Scene/Scene.hpp \
   /home/suika/Epitech/PotatRaycer_CI-CD/src/Light/Light.hpp \
   /home/suika/Epitech/PotatRaycer_CI-CD/src/Vec3/Vec3.hpp \
+  /home/suika/Epitech/PotatRaycer_CI-CD/src/Logger/SingletonLogger.hpp \
+  /home/suika/Epitech/PotatRaycer_CI-CD/src/Logger/Logger.hpp \
   /home/suika/Epitech/PotatRaycer_CI-CD/src/Camera/Camera.hpp \
   /home/suika/Epitech/PotatRaycer_CI-CD/src/Ray/Ray.hpp \
   /home/suika/Epitech/PotatRaycer_CI-CD/src/Primitives/IHitable.hpp \
@@ -807,9 +814,7 @@ CMakeFiles/raytracer.dir/src/Core/Core.cpp.o: /home/suika/Epitech/PotatRaycer_CI
   /home/suika/Epitech/PotatRaycer_CI-CD/src/include.hpp \
   /home/suika/Epitech/PotatRaycer_CI-CD/src/Builder/IBuilder.hpp \
   /home/suika/Epitech/PotatRaycer_CI-CD/src/Parsing/Parsing.hpp \
-  /home/suika/Epitech/PotatRaycer_CI-CD/src/include.hpp \
-  /home/suika/Epitech/PotatRaycer_CI-CD/src/Logger/SingletonLogger.hpp \
-  /home/suika/Epitech/PotatRaycer_CI-CD/src/Logger/Logger.hpp
+  /home/suika/Epitech/PotatRaycer_CI-CD/src/include.hpp
 
 CMakeFiles/raytracer.dir/src/Light/Light.cpp.o: /home/suika/Epitech/PotatRaycer_CI-CD/src/Light/Light.cpp \
   /usr/include/stdc-predef.h \
@@ -1068,7 +1073,9 @@ CMakeFiles/raytracer.dir/src/Light/Light.cpp.o: /home/suika/Epitech/PotatRaycer_
   /usr/include/c++/12/bits/fstream.tcc \
   /usr/include/c++/12/sstream \
   /usr/include/c++/12/bits/sstream.tcc \
-  /usr/include/c++/12/ctime
+  /usr/include/c++/12/ctime \
+  /home/suika/Epitech/PotatRaycer_CI-CD/src/Logger/SingletonLogger.hpp \
+  /home/suika/Epitech/PotatRaycer_CI-CD/src/Logger/Logger.hpp
 
 CMakeFiles/raytracer.dir/src/Logger/SingletonLogger.cpp.o: /home/suika/Epitech/PotatRaycer_CI-CD/src/Logger/SingletonLogger.cpp \
   /usr/include/stdc-predef.h \
@@ -1590,12 +1597,12 @@ CMakeFiles/raytracer.dir/src/Main.cpp.o: /home/suika/Epitech/PotatRaycer_CI-CD/s
   /home/suika/Epitech/PotatRaycer_CI-CD/src/Scene/Scene.hpp \
   /home/suika/Epitech/PotatRaycer_CI-CD/src/Light/Light.hpp \
   /home/suika/Epitech/PotatRaycer_CI-CD/src/Vec3/Vec3.hpp \
+  /home/suika/Epitech/PotatRaycer_CI-CD/src/Logger/SingletonLogger.hpp \
+  /home/suika/Epitech/PotatRaycer_CI-CD/src/Logger/Logger.hpp \
   /home/suika/Epitech/PotatRaycer_CI-CD/src/Camera/Camera.hpp \
   /home/suika/Epitech/PotatRaycer_CI-CD/src/Ray/Ray.hpp \
   /home/suika/Epitech/PotatRaycer_CI-CD/src/Primitives/IHitable.hpp \
   /home/suika/Epitech/PotatRaycer_CI-CD/src/struct.h \
-  /home/suika/Epitech/PotatRaycer_CI-CD/src/Logger/SingletonLogger.hpp \
-  /home/suika/Epitech/PotatRaycer_CI-CD/src/Logger/Logger.hpp \
   /home/suika/Epitech/PotatRaycer_CI-CD/src/Exceptions/Exception.hpp
 
 CMakeFiles/raytracer.dir/src/Materials/Dielectric/Dielectric.cpp.o: /home/suika/Epitech/PotatRaycer_CI-CD/src/Materials/Dielectric/Dielectric.cpp \
@@ -1857,6 +1864,8 @@ CMakeFiles/raytracer.dir/src/Materials/Dielectric/Dielectric.cpp.o: /home/suika/
   /usr/include/c++/12/sstream \
   /usr/include/c++/12/bits/sstream.tcc \
   /usr/include/c++/12/ctime \
+  /home/suika/Epitech/PotatRaycer_CI-CD/src/Logger/SingletonLogger.hpp \
+  /home/suika/Epitech/PotatRaycer_CI-CD/src/Logger/Logger.hpp \
   /home/suika/Epitech/PotatRaycer_CI-CD/src/Ray/Ray.hpp \
   /home/suika/Epitech/PotatRaycer_CI-CD/src/struct.h
 
@@ -2119,6 +2128,8 @@ CMakeFiles/raytracer.dir/src/Materials/Lambertian/Lambertian.cpp.o: /home/suika/
   /usr/include/c++/12/sstream \
   /usr/include/c++/12/bits/sstream.tcc \
   /usr/include/c++/12/ctime \
+  /home/suika/Epitech/PotatRaycer_CI-CD/src/Logger/SingletonLogger.hpp \
+  /home/suika/Epitech/PotatRaycer_CI-CD/src/Logger/Logger.hpp \
   /home/suika/Epitech/PotatRaycer_CI-CD/src/Ray/Ray.hpp \
   /home/suika/Epitech/PotatRaycer_CI-CD/src/struct.h
 
@@ -2381,6 +2392,8 @@ CMakeFiles/raytracer.dir/src/Materials/Metal/Metal.cpp.o: /home/suika/Epitech/Po
   /usr/include/c++/12/sstream \
   /usr/include/c++/12/bits/sstream.tcc \
   /usr/include/c++/12/ctime \
+  /home/suika/Epitech/PotatRaycer_CI-CD/src/Logger/SingletonLogger.hpp \
+  /home/suika/Epitech/PotatRaycer_CI-CD/src/Logger/Logger.hpp \
   /home/suika/Epitech/PotatRaycer_CI-CD/src/Ray/Ray.hpp \
   /home/suika/Epitech/PotatRaycer_CI-CD/src/struct.h
 
@@ -2640,7 +2653,10 @@ CMakeFiles/raytracer.dir/src/Parsing/Parsing.cpp.o: /home/suika/Epitech/PotatRay
   /usr/include/c++/12/bits/fstream.tcc \
   /usr/include/c++/12/sstream \
   /usr/include/c++/12/bits/sstream.tcc \
-  /usr/include/c++/12/ctime
+  /usr/include/c++/12/ctime \
+  /home/suika/Epitech/PotatRaycer_CI-CD/src/Logger/SingletonLogger.hpp \
+  /home/suika/Epitech/PotatRaycer_CI-CD/src/Logger/Logger.hpp \
+  /home/suika/Epitech/PotatRaycer_CI-CD/src/include.hpp
 
 CMakeFiles/raytracer.dir/src/Primitives/Plane/Plane.cpp.o: /home/suika/Epitech/PotatRaycer_CI-CD/src/Primitives/Plane/Plane.cpp \
   /usr/include/stdc-predef.h \
@@ -2902,6 +2918,8 @@ CMakeFiles/raytracer.dir/src/Primitives/Plane/Plane.cpp.o: /home/suika/Epitech/P
   /usr/include/c++/12/sstream \
   /usr/include/c++/12/bits/sstream.tcc \
   /usr/include/c++/12/ctime \
+  /home/suika/Epitech/PotatRaycer_CI-CD/src/Logger/SingletonLogger.hpp \
+  /home/suika/Epitech/PotatRaycer_CI-CD/src/Logger/Logger.hpp \
   /home/suika/Epitech/PotatRaycer_CI-CD/src/struct.h
 
 CMakeFiles/raytracer.dir/src/Primitives/Sphere/Sphere.cpp.o: /home/suika/Epitech/PotatRaycer_CI-CD/src/Primitives/Sphere/Sphere.cpp \
@@ -3164,6 +3182,8 @@ CMakeFiles/raytracer.dir/src/Primitives/Sphere/Sphere.cpp.o: /home/suika/Epitech
   /home/suika/Epitech/PotatRaycer_CI-CD/src/Primitives/IHitable.hpp \
   /home/suika/Epitech/PotatRaycer_CI-CD/src/Ray/Ray.hpp \
   /home/suika/Epitech/PotatRaycer_CI-CD/src/Vec3/Vec3.hpp \
+  /home/suika/Epitech/PotatRaycer_CI-CD/src/Logger/SingletonLogger.hpp \
+  /home/suika/Epitech/PotatRaycer_CI-CD/src/Logger/Logger.hpp \
   /home/suika/Epitech/PotatRaycer_CI-CD/src/struct.h \
   /home/suika/Epitech/PotatRaycer_CI-CD/src/Materials/IMaterial.hpp
 
@@ -3424,7 +3444,9 @@ CMakeFiles/raytracer.dir/src/Ray/Ray.cpp.o: /home/suika/Epitech/PotatRaycer_CI-C
   /usr/include/c++/12/bits/fstream.tcc \
   /usr/include/c++/12/sstream \
   /usr/include/c++/12/bits/sstream.tcc \
-  /usr/include/c++/12/ctime
+  /usr/include/c++/12/ctime \
+  /home/suika/Epitech/PotatRaycer_CI-CD/src/Logger/SingletonLogger.hpp \
+  /home/suika/Epitech/PotatRaycer_CI-CD/src/Logger/Logger.hpp
 
 CMakeFiles/raytracer.dir/src/Scene/Scene.cpp.o: /home/suika/Epitech/PotatRaycer_CI-CD/src/Scene/Scene.cpp \
   /usr/include/stdc-predef.h \
@@ -3685,6 +3707,8 @@ CMakeFiles/raytracer.dir/src/Scene/Scene.cpp.o: /home/suika/Epitech/PotatRaycer_
   /usr/include/c++/12/sstream \
   /usr/include/c++/12/bits/sstream.tcc \
   /usr/include/c++/12/ctime \
+  /home/suika/Epitech/PotatRaycer_CI-CD/src/Logger/SingletonLogger.hpp \
+  /home/suika/Epitech/PotatRaycer_CI-CD/src/Logger/Logger.hpp \
   /home/suika/Epitech/PotatRaycer_CI-CD/src/Camera/Camera.hpp \
   /home/suika/Epitech/PotatRaycer_CI-CD/src/Ray/Ray.hpp \
   /home/suika/Epitech/PotatRaycer_CI-CD/src/Primitives/IHitable.hpp \
@@ -3701,10 +3725,6 @@ CMakeFiles/raytracer.dir/src/Scene/Scene.cpp.o: /home/suika/Epitech/PotatRaycer_
 
 /home/suika/Epitech/PotatRaycer_CI-CD/src/Light/Light.cpp:
 
-/home/suika/Epitech/PotatRaycer_CI-CD/src/Logger/Logger.hpp:
-
-/home/suika/Epitech/PotatRaycer_CI-CD/src/Logger/SingletonLogger.hpp:
-
 /home/suika/Epitech/PotatRaycer_CI-CD/src/Core/Core.hpp:
 
 /home/suika/Epitech/PotatRaycer_CI-CD/src/Color/Color.cpp:
@@ -3720,6 +3740,10 @@ CMakeFiles/raytracer.dir/src/Scene/Scene.cpp.o: /home/suika/Epitech/PotatRaycer_
 /home/suika/Epitech/PotatRaycer_CI-CD/src/Ray/Ray.hpp:
 
 /home/suika/Epitech/PotatRaycer_CI-CD/src/Camera/Camera.hpp:
+
+/home/suika/Epitech/PotatRaycer_CI-CD/src/Logger/Logger.hpp:
+
+/home/suika/Epitech/PotatRaycer_CI-CD/src/Logger/SingletonLogger.hpp:
 
 /home/suika/Epitech/PotatRaycer_CI-CD/src/Builder/IBuilder.hpp:
 

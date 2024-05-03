@@ -16,13 +16,16 @@
 #include "Metal.hpp"
 #include "Lambertian.hpp"
 #include "Dielectric.hpp"
+#include "SingletonLogger.hpp"
+#include "Exception.hpp"
 
 SceneBuilder::SceneBuilder()
 {
     if (scene != nullptr)
         delete(scene);
     scene = new Scene();
-    //LoggerSingleton::getInstance()->log(INFO, "SomeComponent instance created");
+    Logger* logger = LoggerSingleton::getInstance();
+    logger->log(INFO, "SceneBuilder created.");
 }
 
 SceneBuilder::~SceneBuilder() {}
@@ -46,7 +49,7 @@ void SceneBuilder::createCamera(std::map<std::string,std::tuple<float,float,floa
         aperture = std::get<0>(camParams["aperture"]);
         focus_dist = std::get<0>(camParams["focus_dist"]);
     } catch (const std::exception &e) {
-        std::cerr << e.what() << '\n';
+        throw("Camera parameters not found.", Level::MIDDLE);
         exit(84);
     }
 
@@ -57,17 +60,14 @@ void SceneBuilder::createCamera(std::map<std::string,std::tuple<float,float,floa
 void SceneBuilder::createLight(std::map<std::string, std::tuple<float, float, float>> lightParams)
 {
     Vec3 pos;
-    float intensity;
+    float intensity; //modifier ce try catch
     try {
         pos = Vec3(std::get<0>(lightParams.at("position")),
                    std::get<1>(lightParams.at("position")),
                    std::get<2>(lightParams.at("position")));
         intensity = std::get<0>(lightParams.at("intensity"));
-    } catch (const std::out_of_range& e) {
-        std::cerr << "Light parameter not found: " << e.what() << '\n';
-        exit(84);
     } catch (const std::exception& e) {
-        std::cerr << "Error: " << e.what() << '\n';
+        throw("Light parameters not found.", Level::MIDDLE);
         exit(84);
     }
     std::unique_ptr<Light> light = std::make_unique<Light>(pos, intensity);
