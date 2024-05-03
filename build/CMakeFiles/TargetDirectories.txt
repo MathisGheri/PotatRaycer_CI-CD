@@ -1,3 +1,0 @@
-/home/suika/Epitech/PotatRaycer_CI-CD/build/CMakeFiles/raytracer.dir
-/home/suika/Epitech/PotatRaycer_CI-CD/build/CMakeFiles/edit_cache.dir
-/home/suika/Epitech/PotatRaycer_CI-CD/build/CMakeFiles/rebuild_cache.dir
