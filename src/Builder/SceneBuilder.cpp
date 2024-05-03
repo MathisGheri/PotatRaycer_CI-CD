@@ -18,23 +18,22 @@
 #include "Sphere.hpp"
 #include "Plane.hpp"
 #include "IMaterial.hpp"
-/*pb*/
 #include "Metal.hpp"
 #include "Lambertian.hpp"
 #include "Dielectric.hpp"
+#include "SingletonLogger.hpp"
+#include "Exception.hpp"
 
 SceneBuilder::SceneBuilder()
 {
     if (scene != nullptr)
         delete(scene);
     scene = new Scene();
+    Logger* logger = LoggerSingleton::getInstance();
+    logger->log(INFO, "SceneBuilder created.");
 }
 
-SceneBuilder::~SceneBuilder()
-{
-    //delete(this->scene);
-    //delete light/camera etc
-}
+SceneBuilder::~SceneBuilder() {}
 
 void SceneBuilder::createCamera(std::map<std::string,std::tuple<float,float,float>> camParams)
 {
@@ -55,29 +54,25 @@ void SceneBuilder::createCamera(std::map<std::string,std::tuple<float,float,floa
         aperture = std::get<0>(camParams["aperture"]);
         focus_dist = std::get<0>(camParams["focus_dist"]);
     } catch (const std::exception &e) {
-        std::cerr << e.what() << '\n';
+        throw("Camera parameters not found.", Level::MIDDLE);
         exit(84);
     }
 
     std::unique_ptr<Camera> camera = std::make_unique<Camera>(lookfrom, lookat, vup, vfov, aspect, aperture, focus_dist);
     scene->setCamera(std::move(camera));
-    //delete camera ?
 }
 
 void SceneBuilder::createLight(std::map<std::string, std::tuple<float, float, float>> lightParams)
 {
     Vec3 pos;
-    float intensity;
+    float intensity; //modifier ce try catch
     try {
         pos = Vec3(std::get<0>(lightParams.at("position")),
                    std::get<1>(lightParams.at("position")),
                    std::get<2>(lightParams.at("position")));
         intensity = std::get<0>(lightParams.at("intensity"));
-    } catch (const std::out_of_range& e) {
-        std::cerr << "Light parameter not found: " << e.what() << '\n';
-        exit(84);
     } catch (const std::exception& e) {
-        std::cerr << "Error: " << e.what() << '\n';
+        throw("Light parameters not found.", Level::MIDDLE);
         exit(84);
     }
     std::unique_ptr<Light> light = std::make_unique<Light>(pos, intensity);
@@ -87,7 +82,7 @@ void SceneBuilder::createLight(std::map<std::string, std::tuple<float, float, fl
 void SceneBuilder::createObjects(std::vector<Primitive> primitives)
 {
     for (const auto& prim : primitives) {
-        /****Material creation****/
+        /* Material creation */
         Vec3 materialVec(prim.material.vec.x, prim.material.vec.y, prim.material.vec.z);
         std::unique_ptr<IMaterial> material;
         if (prim.material.type == "metal") {
@@ -97,7 +92,7 @@ void SceneBuilder::createObjects(std::vector<Primitive> primitives)
         } else if (prim.material.type == "dielectric") {
             material = std::make_unique<Dielectric>(prim.material.ref_idx);
         }
-        /****Primitive creation****/
+        /* Primitive creation */
         if (prim.type == "sphere") {
             Vec3 center(prim.points[0].x, prim.points[0].y, prim.points[0].z);
             float radius = prim.points[1].x;

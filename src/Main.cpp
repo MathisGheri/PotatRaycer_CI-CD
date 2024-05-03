@@ -7,6 +7,8 @@
 
 #include "include.hpp"
 #include "Core.hpp"
+#include "SingletonLogger.hpp"
+#include "Exception.hpp"
 
 int main(int argc, char **argv)
 {
@@ -18,7 +20,9 @@ int main(int argc, char **argv)
         exit(84);
     }
     /**********************/
+    Logger* logger = LoggerSingleton::getInstance();
     try {
+        logger->log(INFO, "Application started.");
         const std::string &file = argv[1];
         Core core;
         core.assembleScene(file);
@@ -27,10 +31,23 @@ int main(int argc, char **argv)
         //Scene
         //Calcul
         //Rendu
-    } catch (const std::exception &e) {
-        std::cerr << e.what() << '\n';
+    } catch (const Exception& e) {
+        std::cout << "Exception captured: " << e.what() << ". With Level: ";
+        switch (e.getLevel()) {
+            case Level::LOW:
+                std::cout << "low";
+                break;
+            case Level::MIDDLE:
+                std::cout << "middle";
+                break;
+            case Level::HIGH:
+                std::cout << "HIGH";
+                break;
+        }
+        std::cout << std::endl;
         //free destroy delete etc..
         return 84;
     }
+    logger->log(INFO, "Application Stopped.\n");
     return 0;
 }

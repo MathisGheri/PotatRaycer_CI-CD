@@ -1,5 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classIHitable.html" title=" " alt="" coords="5,31,72,57"/>
-<area shape="rect" id="node2" href="$classPlane.html" title=" " alt="" coords="124,5,179,32"/>
-<area shape="rect" id="node3" href="$classSphere.html" title=" " alt="" coords="120,56,183,83"/>
+<area shape="rect" id="node1" href="$classIBuilder.html" title="Interface for the builder pattern to construct scene components." alt="" coords="5,5,72,32"/>
+<area shape="rect" id="node2" href="$classSceneBuilder.html" title="Concrete implementation of the IBuilder interface for constructing scenes." alt="" coords="120,5,219,32"/>
 </map>

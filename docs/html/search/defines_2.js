@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['light_5fhpp_5f_355',['LIGHT_HPP_',['../Light_8hpp.html#a8d975e5ff6dc669a68f0dc6ae27ac7df',1,'Light.hpp']]]
+  ['ihitable_5fhpp_5f_425',['IHITABLE_HPP_',['../IHitable_8hpp.html#a9845ac1fe508713b3f824f9eb0bd70bd',1,'IHitable.hpp']]],
+  ['imaterial_5fhpp_5f_426',['IMATERIAL_HPP_',['../IMaterial_8hpp.html#a3f94a3607e174714e9433e58d5aeb254',1,'IMaterial.hpp']]]
 ];

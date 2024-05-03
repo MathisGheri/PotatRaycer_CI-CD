@@ -6,15 +6,19 @@
 */
 
 #include "Dielectric.hpp"
+#include "SingletonLogger.hpp"
 
 Dielectric::Dielectric(float ri) : ref_idx(ri)
 {
+    Logger *logger = LoggerSingleton::getInstance();
+	std::ostringstream msg;
+    msg << "LOG: Dielectric created with this parameter: ri = " << ri << ".";
+	logger->log(INFO, msg.str());
 }
 
 Dielectric::~Dielectric()
 {
 }
-
 bool Dielectric::scatter(const Ray& r_in, const hit_record_t &rec, Vec3& attenuation, Ray& scattered) const
 {
     Vec3 outward_normal;

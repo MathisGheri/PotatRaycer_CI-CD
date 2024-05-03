@@ -6,13 +6,15 @@
 */
 
 #include "Plane.hpp"
+#include "SingletonLogger.hpp"
 
-Plane::Plane()
+Plane::Plane(Vec3 p, Vec3 n, IMaterial *m) : point(p), normal(n), mat_ptr(m)
 {
-    
-}
-
-Plane::Plane(Vec3 p, Vec3 n, IMaterial *m) : point(p), normal(n), mat_ptr(m) {};
+    Logger *logger = LoggerSingleton::getInstance();
+	std::ostringstream msg;
+    msg << "LOG: Plane created with these params. p = " << p << ", n = " << n << ", and mat" << m << ".";
+	logger->log(INFO, msg.str());
+};
 
 Plane::~Plane()
 {

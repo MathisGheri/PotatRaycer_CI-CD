@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['main_2ecpp_208',['Main.cpp',['../Main_8cpp.html',1,'']]],
-  ['main_5fpage_2emd_209',['main_page.md',['../main__page_8md.html',1,'']]],
-  ['metal_2ecpp_210',['Metal.cpp',['../Metal_8cpp.html',1,'']]],
-  ['metal_2ehpp_211',['Metal.hpp',['../Metal_8hpp.html',1,'']]]
+  ['lambertian_2ecpp_246',['Lambertian.cpp',['../Lambertian_8cpp.html',1,'']]],
+  ['lambertian_2ehpp_247',['Lambertian.hpp',['../Lambertian_8hpp.html',1,'']]],
+  ['light_2ecpp_248',['Light.cpp',['../Light_8cpp.html',1,'']]],
+  ['light_2ehpp_249',['Light.hpp',['../Light_8hpp.html',1,'']]],
+  ['logger_2ehpp_250',['Logger.hpp',['../Logger_8hpp.html',1,'']]]
 ];

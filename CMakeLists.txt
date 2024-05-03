@@ -19,11 +19,6 @@ file(GLOB_RECURSE SRC
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR})
 add_executable(raytracer ${SRC})
 
-# set_target_properties(raytracer PROPERTIES
-#     LIBRARY_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/lib
-#     PREFIX ""
-# )
-
 target_include_directories(raytracer PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/src
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Builder
@@ -44,6 +39,9 @@ target_include_directories(raytracer PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Ray
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Scene
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Vec3
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/Observer
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/Logger
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/Exceptions
 )
 
 find_package(SFML 2.5 COMPONENTS graphics window system REQUIRED)

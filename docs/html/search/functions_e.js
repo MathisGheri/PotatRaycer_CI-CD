@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['x_294',['x',['../classVec3.html#a2036e8ba73a1f4eb34cec27e66274cac',1,'Vec3']]]
+  ['unit_5fvector_345',['unit_vector',['../Vec3_8hpp.html#a288c446d78e98483daf812cfb32d2f21',1,'Vec3.hpp']]]
 ];

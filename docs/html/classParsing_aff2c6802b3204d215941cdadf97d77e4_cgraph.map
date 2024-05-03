@@ -1,6 +1,9 @@
 <map id="Parsing::Parsing" name="Parsing::Parsing">
-<area shape="rect" id="node1" title=" " alt="" coords="5,56,124,83"/>
-<area shape="rect" id="node2" href="$classParsing.html#a4d3b19100818f4cbde291f91a5b4d117" title=" " alt="" coords="178,5,330,32"/>
-<area shape="rect" id="node3" href="$classParsing.html#a0f5be128288789100d5ed85b36023f79" title=" " alt="" coords="183,56,325,83"/>
-<area shape="rect" id="node4" href="$classParsing.html#aa3336c05be6cece06abb7760795ea4aa" title="Parse the primitive settings from the config file." alt="" coords="172,107,336,133"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,107,124,133"/>
+<area shape="rect" id="node2" href="$classLoggerSingleton.html#a9722cb20d2fe85dc683a0e35fd1d2f67" title=" " alt="" coords="172,5,363,32"/>
+<area shape="rect" id="node3" href="$classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2" title=" " alt="" coords="224,56,311,83"/>
+<area shape="rect" id="node5" href="$classParsing.html#a4d3b19100818f4cbde291f91a5b4d117" title=" " alt="" coords="191,107,343,133"/>
+<area shape="rect" id="node6" href="$classParsing.html#a0f5be128288789100d5ed85b36023f79" title=" " alt="" coords="197,157,338,184"/>
+<area shape="rect" id="node7" href="$classParsing.html#aa3336c05be6cece06abb7760795ea4aa" title="Parse the primitive settings from the config file." alt="" coords="185,208,349,235"/>
+<area shape="rect" id="node4" href="$classLogger.html#acfb794ab842c63396ad1c6a771f43483" title=" " alt="" coords="411,56,555,83"/>
 </map>

@@ -80,12 +80,17 @@ $(function() {
 <code>#include &lt;map&gt;</code><br />
 <code>#include &lt;tuple&gt;</code><br />
 <code>#include &lt;libconfig.h++&gt;</code><br />
+<code>#include &lt;list&gt;</code><br />
+<code>#include &lt;fstream&gt;</code><br />
+<code>#include &lt;sstream&gt;</code><br />
+<code>#include &lt;ctime&gt;</code><br />
+<code>#include &lt;exception&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for include.hpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="include_8hpp__incl.png" border="0" usemap="#asrc_2include_8hpp" alt=""/></div>
 <map name="asrc_2include_8hpp" id="asrc_2include_8hpp">
-<area shape="rect" title=" " alt="" coords="343,5,454,32"/>
+<area shape="rect" title=" " alt="" coords="537,5,647,32"/>
 <area shape="rect" title=" " alt="" coords="5,80,77,107"/>
 <area shape="rect" title=" " alt="" coords="102,80,165,107"/>
 <area shape="rect" title=" " alt="" coords="189,80,254,107"/>
@@ -95,6 +100,11 @@ Include dependency graph for include.hpp:</div>
 <area shape="rect" title=" " alt="" coords="533,80,579,107"/>
 <area shape="rect" title=" " alt="" coords="604,80,655,107"/>
 <area shape="rect" title=" " alt="" coords="679,80,777,107"/>
+<area shape="rect" title=" " alt="" coords="801,80,839,107"/>
+<area shape="rect" title=" " alt="" coords="864,80,931,107"/>
+<area shape="rect" title=" " alt="" coords="955,80,1024,107"/>
+<area shape="rect" title=" " alt="" coords="1049,80,1103,107"/>
+<area shape="rect" title=" " alt="" coords="1127,80,1206,107"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -102,36 +112,40 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="include_8hpp__dep__incl.png" border="0" usemap="#asrc_2include_8hppdep" alt=""/></div>
 <map name="asrc_2include_8hppdep" id="asrc_2include_8hppdep">
-<area shape="rect" title=" " alt="" coords="424,5,534,32"/>
-<area shape="rect" href="IBuilder_8hpp.html" title="Interface for Builders used in the PotatRaycer project." alt="" coords="466,401,623,427"/>
-<area shape="rect" href="SceneBuilder_8hpp.html" title="Builder class for constructing scenes." alt="" coords="442,490,633,517"/>
-<area shape="rect" href="Core_8hpp.html" title=" " alt="" coords="210,401,340,427"/>
-<area shape="rect" href="Main_8cpp.html" title=" " alt="" coords="317,490,414,517"/>
-<area shape="rect" href="Parsing_8hpp.html" title=" " alt="" coords="52,311,213,338"/>
-<area shape="rect" href="Plane_8hpp.html" title=" " alt="" coords="1054,304,1192,345"/>
-<area shape="rect" href="Sphere_8hpp.html" title=" " alt="" coords="1922,483,2068,524"/>
-<area shape="rect" href="Scene_8hpp.html" title=" " alt="" coords="807,311,954,338"/>
-<area shape="rect" href="Vec3_8hpp.html" title=" " alt="" coords="1039,80,1170,107"/>
-<area shape="rect" href="SceneBuilder_8cpp.html" title="Implementation of the builder class to create scenes." alt="" coords="1178,579,1369,606"/>
-<area shape="rect" href="Core_8cpp.html" title=" " alt="" coords="210,579,340,606"/>
-<area shape="rect" href="Parsing_8cpp.html" title=" " alt="" coords="25,401,186,427"/>
-<area shape="rect" href="Plane_8cpp.html" title=" " alt="" coords="1028,393,1167,435"/>
-<area shape="rect" href="Sphere_8cpp.html" title=" " alt="" coords="1922,572,2068,613"/>
-<area shape="rect" href="Scene_8cpp.html" title=" " alt="" coords="807,401,954,427"/>
-<area shape="rect" href="Camera_8hpp.html" title=" " alt="" coords="680,229,846,256"/>
-<area shape="rect" href="Light_8hpp.html" title=" " alt="" coords="1370,229,1500,256"/>
-<area shape="rect" href="IMaterial_8hpp.html" title=" " alt="" coords="1434,401,1610,427"/>
-<area shape="rect" href="IHitable_8hpp.html" title=" " alt="" coords="1170,229,1346,256"/>
-<area shape="rect" href="Ray_8hpp.html" title=" " alt="" coords="1044,155,1164,181"/>
-<area shape="rect" href="Camera_8cpp.html" title=" " alt="" coords="567,311,732,338"/>
-<area shape="rect" href="Light_8cpp.html" title=" " alt="" coords="1394,311,1524,338"/>
-<area shape="rect" href="Dielectric_8hpp.html" title=" " alt="" coords="1741,483,1897,524"/>
-<area shape="rect" href="Lambertian_8hpp.html" title=" " alt="" coords="1394,483,1559,524"/>
-<area shape="rect" href="Metal_8hpp.html" title=" " alt="" coords="1583,483,1716,524"/>
-<area shape="rect" href="Dielectric_8cpp.html" title=" " alt="" coords="1741,572,1897,613"/>
-<area shape="rect" href="Lambertian_8cpp.html" title=" " alt="" coords="1394,572,1559,613"/>
-<area shape="rect" href="Metal_8cpp.html" title=" " alt="" coords="1583,572,1716,613"/>
-<area shape="rect" href="Ray_8cpp.html" title=" " alt="" coords="1026,229,1146,256"/>
+<area shape="rect" title=" " alt="" coords="462,5,573,32"/>
+<area shape="rect" href="IBuilder_8hpp.html" title="Interface for Builders used in the PotatRaycer project." alt="" coords="380,550,537,577"/>
+<area shape="rect" href="SceneBuilder_8hpp.html" title="Builder class for constructing scenes." alt="" coords="347,632,538,659"/>
+<area shape="rect" href="Core_8hpp.html" title=" " alt="" coords="23,550,153,577"/>
+<area shape="rect" href="Main_8cpp.html" title=" " alt="" coords="149,632,246,659"/>
+<area shape="rect" href="Exception_8hpp.html" title=" " alt="" coords="733,550,929,577"/>
+<area shape="rect" href="Logger_8hpp.html" title=" " alt="" coords="874,80,1025,107"/>
+<area shape="rect" href="Scene_8hpp.html" title=" " alt="" coords="561,461,708,487"/>
+<area shape="rect" href="Vec3_8hpp.html" title=" " alt="" coords="1789,229,1920,256"/>
+<area shape="rect" href="Sphere_8hpp.html" title=" " alt="" coords="2076,453,2223,495"/>
+<area shape="rect" href="Plane_8hpp.html" title=" " alt="" coords="2348,453,2487,495"/>
+<area shape="rect" href="Parsing_8hpp.html" title=" " alt="" coords="267,155,429,181"/>
+<area shape="rect" href="SceneBuilder_8cpp.html" title="Implementation of the builder class to create scenes." alt="" coords="1545,707,1735,733"/>
+<area shape="rect" href="Core_8cpp.html" title=" " alt="" coords="130,707,259,733"/>
+<area shape="rect" href="Light_8cpp.html" title=" " alt="" coords="885,379,1014,405"/>
+<area shape="rect" href="SingletonLogger_8hpp.html" title=" " alt="" coords="1107,155,1312,181"/>
+<area shape="rect" href="Camera_8hpp.html" title=" " alt="" coords="1191,379,1356,405"/>
+<area shape="rect" href="Scene_8cpp.html" title=" " alt="" coords="561,550,708,577"/>
+<area shape="rect" href="SingletonLogger_8cpp.html" title=" " alt="" coords="1037,229,1243,256"/>
+<area shape="rect" href="Dielectric_8cpp.html" title=" " alt="" coords="1678,543,1834,584"/>
+<area shape="rect" href="Lambertian_8cpp.html" title=" " alt="" coords="1437,543,1603,584"/>
+<area shape="rect" href="Metal_8cpp.html" title=" " alt="" coords="1168,543,1301,584"/>
+<area shape="rect" href="Parsing_8cpp.html" title=" " alt="" coords="547,229,709,256"/>
+<area shape="rect" href="Plane_8cpp.html" title=" " alt="" coords="2297,543,2436,584"/>
+<area shape="rect" href="Sphere_8cpp.html" title=" " alt="" coords="2025,543,2172,584"/>
+<area shape="rect" href="Camera_8cpp.html" title=" " alt="" coords="1156,461,1321,487"/>
+<area shape="rect" href="Light_8hpp.html" title=" " alt="" coords="987,304,1117,331"/>
+<area shape="rect" href="IMaterial_8hpp.html" title=" " alt="" coords="1652,379,1828,405"/>
+<area shape="rect" href="IHitable_8hpp.html" title=" " alt="" coords="2047,379,2223,405"/>
+<area shape="rect" href="Ray_8hpp.html" title=" " alt="" coords="1840,304,1960,331"/>
+<area shape="rect" href="Dielectric_8hpp.html" title=" " alt="" coords="1794,453,1950,495"/>
+<area shape="rect" href="Lambertian_8hpp.html" title=" " alt="" coords="1553,453,1719,495"/>
+<area shape="rect" href="Metal_8hpp.html" title=" " alt="" coords="1345,453,1479,495"/>
+<area shape="rect" href="Ray_8cpp.html" title=" " alt="" coords="1903,379,2023,405"/>
 </map>
 </div>
 </div>

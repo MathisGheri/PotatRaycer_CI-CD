@@ -11,6 +11,7 @@
 
 #include "Vec3.hpp"
 #include "Ray.hpp"
+#include "SingletonLogger.hpp"
 
 class Camera {
 	public:

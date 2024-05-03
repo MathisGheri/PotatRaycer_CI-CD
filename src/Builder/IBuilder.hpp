@@ -33,7 +33,7 @@
 */
 
 class IBuilder {
-    public:
+        public:
         /**
         * @brief Virtual destructor.
         */

@@ -6,8 +6,15 @@
 */
 
 #include "Light.hpp"
+#include "Logger.hpp"
 
-Light::Light(const Vec3& pos, float intensity) : position(pos), intensity(intensity) {}
+Light::Light(const Vec3& pos, float intensity) : position(pos), intensity(intensity)
+{
+    Logger *logger = LoggerSingleton::getInstance();
+	std::ostringstream msg;
+    msg << "Log: Light created with parameters pos = " << pos << ", i = " << intensity << ".";
+	logger->log(INFO, msg.str());
+}
 
 Light::~Light()
 {

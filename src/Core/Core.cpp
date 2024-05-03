@@ -8,29 +8,29 @@
 #include "Core.hpp"
 #include "SceneBuilder.hpp"
 #include "Parsing.hpp"
+#include "SingletonLogger.hpp"
 
 Core::Core()
 {
     this->scene = nullptr;
+    Logger* logger = LoggerSingleton::getInstance();
+    logger->log(INFO, "Core Created.");
 }
 
 Core::~Core(){}
 
 void Core::assembleScene(const std::string &filename)
 {
+    Logger* logger = LoggerSingleton::getInstance();
     SceneBuilder sceneBuilder;
     Parsing parser(filename);
+    logger->log(DEBUG, "Parsing done.");
     sceneBuilder.createCamera(parser.GetCamera());
-    printf("AFTER Camera\n");
+    logger->log(DEBUG, "Camera created.");
     sceneBuilder.createLight(parser.getLights());
-    printf("AFTER Light\n");
+    logger->log(DEBUG, "Light created.");
     sceneBuilder.createObjects(parser.getPrimitives());
-    printf("AFTER OBJCTS\n");
-    //faire un appel à parsing
-    //mettre la cam
-    //mettre la light
-    //mettre les objects//primitives//hitables
-    //iterate through the list
+    logger->log(DEBUG, "Primitives Created.");
     this->scene = sceneBuilder.getScene();
 }
 

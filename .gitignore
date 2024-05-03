@@ -5,3 +5,6 @@
 build
 Raytracer
 cmake-build-debug
+
+Makefile
+raytracer

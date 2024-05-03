@@ -126,8 +126,29 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="Ray_8cpp_source.html#l00010">10</a> of file <a class="el" href="Ray_8cpp_source.html">Ray.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;}</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="code" href="classLogger.html">Logger</a> *logger = <a class="code" href="classLoggerSingleton.html#a9722cb20d2fe85dc683a0e35fd1d2f67">LoggerSingleton::getInstance</a>();</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    std::ostringstream msg;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    msg &lt;&lt; <span class="stringliteral">&quot;LOG: Ray created without params.&quot;</span>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    logger-&gt;<a class="code" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f">DEBUG</a>, msg.str());</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;}</div>
+<div class="ttc" id="aLogger_8hpp_html_aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f"><div class="ttname"><a href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f">DEBUG</a></div><div class="ttdeci">@ DEBUG</div><div class="ttdef"><b>Definition:</b> <a href="Logger_8hpp_source.html#l00016">Logger.hpp:16</a></div></div>
+<div class="ttc" id="aclassLoggerSingleton_html_a9722cb20d2fe85dc683a0e35fd1d2f67"><div class="ttname"><a href="classLoggerSingleton.html#a9722cb20d2fe85dc683a0e35fd1d2f67">LoggerSingleton::getInstance</a></div><div class="ttdeci">static Logger * getInstance()</div><div class="ttdef"><b>Definition:</b> <a href="SingletonLogger_8cpp_source.html#l00012">SingletonLogger.cpp:12</a></div></div>
+<div class="ttc" id="aclassLogger_html"><div class="ttname"><a href="classLogger.html">Logger</a></div><div class="ttdef"><b>Definition:</b> <a href="Logger_8hpp_source.html#l00023">Logger.hpp:23</a></div></div>
+<div class="ttc" id="aclassLogger_html_a3d3f0801eeaf39b33a906ea8569c19b2"><div class="ttname"><a href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">Logger::log</a></div><div class="ttdeci">void log(LogLevel level, const std::string &amp;message)</div><div class="ttdef"><b>Definition:</b> <a href="Logger_8hpp_source.html#l00047">Logger.hpp:47</a></div></div>
 </div><!-- fragment -->
+<p class="reference">References <a class="el" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f">DEBUG</a>, <a class="el" href="classLoggerSingleton.html#a9722cb20d2fe85dc683a0e35fd1d2f67">LoggerSingleton::getInstance()</a>, and <a class="el" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">Logger::log()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classRay_a2e3d2c29f2df4ab3da10da79d4acb852_cgraph.png" border="0" usemap="#aclassRay_a2e3d2c29f2df4ab3da10da79d4acb852_cgraph" alt=""/></div>
+<map name="aclassRay_a2e3d2c29f2df4ab3da10da79d4acb852_cgraph" id="aclassRay_a2e3d2c29f2df4ab3da10da79d4acb852_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,84,57"/>
+<area shape="rect" href="classLoggerSingleton.html#a9722cb20d2fe85dc683a0e35fd1d2f67" title=" " alt="" coords="132,5,323,32"/>
+<area shape="rect" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2" title=" " alt="" coords="184,56,271,83"/>
+<area shape="rect" href="classLogger.html#acfb794ab842c63396ad1c6a771f43483" title=" " alt="" coords="371,56,515,83"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a8b0e575ce5df046c0c7615c32a96a46f"></a>
@@ -145,9 +166,9 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Ray_8cpp_source.html#l00014">14</a> of file <a class="el" href="Ray_8cpp_source.html">Ray.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="Ray_8cpp_source.html#l00018">18</a> of file <a class="el" href="Ray_8cpp_source.html">Ray.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -177,15 +198,31 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Ray_8cpp_source.html#l00018">18</a> of file <a class="el" href="Ray_8cpp_source.html">Ray.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    this-&gt;<a class="code" href="classRay.html#ac4047465a11f7fde8fa680957bba5728">A</a> = a;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    this-&gt;<a class="code" href="classRay.html#a314f09df7e9cd6b07c43d79ec8326d2c">B</a> = b;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="Ray_8cpp_source.html#l00022">22</a> of file <a class="el" href="Ray_8cpp_source.html">Ray.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    this-&gt;<a class="code" href="classRay.html#ac4047465a11f7fde8fa680957bba5728">A</a> = a;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    this-&gt;<a class="code" href="classRay.html#a314f09df7e9cd6b07c43d79ec8326d2c">B</a> = b;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="classLogger.html">Logger</a> *logger = <a class="code" href="classLoggerSingleton.html#a9722cb20d2fe85dc683a0e35fd1d2f67">LoggerSingleton::getInstance</a>();</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    std::ostringstream msg;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    msg &lt;&lt; <span class="stringliteral">&quot;LOG: Ray created with these params. a = &quot;</span> &lt;&lt; a &lt;&lt; <span class="stringliteral">&quot;, b = &quot;</span> &lt;&lt; b &lt;&lt; <span class="stringliteral">&quot;.&quot;</span>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    logger-&gt;<a class="code" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a748005382152808a72b1a9177d9dc806">INFO</a>, msg.str());</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div>
+<div class="ttc" id="aLogger_8hpp_html_aca1fd1d8935433e6ba2e3918214e07f9a748005382152808a72b1a9177d9dc806"><div class="ttname"><a href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a748005382152808a72b1a9177d9dc806">INFO</a></div><div class="ttdeci">@ INFO</div><div class="ttdef"><b>Definition:</b> <a href="Logger_8hpp_source.html#l00017">Logger.hpp:17</a></div></div>
 <div class="ttc" id="aclassRay_html_a314f09df7e9cd6b07c43d79ec8326d2c"><div class="ttname"><a href="classRay.html#a314f09df7e9cd6b07c43d79ec8326d2c">Ray::B</a></div><div class="ttdeci">Vec3 B</div><div class="ttdef"><b>Definition:</b> <a href="Ray_8hpp_source.html#l00026">Ray.hpp:26</a></div></div>
 <div class="ttc" id="aclassRay_html_ac4047465a11f7fde8fa680957bba5728"><div class="ttname"><a href="classRay.html#ac4047465a11f7fde8fa680957bba5728">Ray::A</a></div><div class="ttdeci">Vec3 A</div><div class="ttdef"><b>Definition:</b> <a href="Ray_8hpp_source.html#l00025">Ray.hpp:25</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="classRay.html#ac4047465a11f7fde8fa680957bba5728">A</a>, and <a class="el" href="classRay.html#a314f09df7e9cd6b07c43d79ec8326d2c">B</a>.</p>
+<p class="reference">References <a class="el" href="classRay.html#ac4047465a11f7fde8fa680957bba5728">A</a>, <a class="el" href="classRay.html#a314f09df7e9cd6b07c43d79ec8326d2c">B</a>, <a class="el" href="classLoggerSingleton.html#a9722cb20d2fe85dc683a0e35fd1d2f67">LoggerSingleton::getInstance()</a>, <a class="el" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a748005382152808a72b1a9177d9dc806">INFO</a>, and <a class="el" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">Logger::log()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classRay_a3d735b75e24d7085ae480474c1daf54b_cgraph.png" border="0" usemap="#aclassRay_a3d735b75e24d7085ae480474c1daf54b_cgraph" alt=""/></div>
+<map name="aclassRay_a3d735b75e24d7085ae480474c1daf54b_cgraph" id="aclassRay_a3d735b75e24d7085ae480474c1daf54b_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,84,57"/>
+<area shape="rect" href="classLoggerSingleton.html#a9722cb20d2fe85dc683a0e35fd1d2f67" title=" " alt="" coords="132,5,323,32"/>
+<area shape="rect" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2" title=" " alt="" coords="184,56,271,83"/>
+<area shape="rect" href="classLogger.html#acfb794ab842c63396ad1c6a771f43483" title=" " alt="" coords="371,56,515,83"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -205,10 +242,10 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Ray_8cpp_source.html#l00029">29</a> of file <a class="el" href="Ray_8cpp_source.html">Ray.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classRay.html#a314f09df7e9cd6b07c43d79ec8326d2c">B</a>;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="Ray_8cpp_source.html#l00037">37</a> of file <a class="el" href="Ray_8cpp_source.html">Ray.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classRay.html#a314f09df7e9cd6b07c43d79ec8326d2c">B</a>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="classRay.html#a314f09df7e9cd6b07c43d79ec8326d2c">B</a>.</p>
 
@@ -243,10 +280,10 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Ray_8cpp_source.html#l00024">24</a> of file <a class="el" href="Ray_8cpp_source.html">Ray.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classRay.html#ac4047465a11f7fde8fa680957bba5728">A</a>;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="Ray_8cpp_source.html#l00032">32</a> of file <a class="el" href="Ray_8cpp_source.html">Ray.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classRay.html#ac4047465a11f7fde8fa680957bba5728">A</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="classRay.html#ac4047465a11f7fde8fa680957bba5728">A</a>.</p>
 
@@ -280,10 +317,10 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Ray_8cpp_source.html#l00034">34</a> of file <a class="el" href="Ray_8cpp_source.html">Ray.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classRay.html#ac4047465a11f7fde8fa680957bba5728">A</a> + t * <a class="code" href="classRay.html#a314f09df7e9cd6b07c43d79ec8326d2c">B</a>; <span class="comment">//va falloir implémenter cette op</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="Ray_8cpp_source.html#l00042">42</a> of file <a class="el" href="Ray_8cpp_source.html">Ray.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classRay.html#ac4047465a11f7fde8fa680957bba5728">A</a> + t * <a class="code" href="classRay.html#a314f09df7e9cd6b07c43d79ec8326d2c">B</a>; <span class="comment">//va falloir implémenter cette op</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="classRay.html#ac4047465a11f7fde8fa680957bba5728">A</a>, and <a class="el" href="classRay.html#a314f09df7e9cd6b07c43d79ec8326d2c">B</a>.</p>
 

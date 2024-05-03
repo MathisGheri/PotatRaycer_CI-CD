@@ -121,15 +121,34 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Scene_8cpp_source.html#l00010">10</a> of file <a class="el" href="Scene_8cpp_source.html">Scene.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    this-&gt;<a class="code" href="classScene.html#a01a5fb63e810c9ccb301239c2aa0cfa6">camera</a> = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    this-&gt;<a class="code" href="classScene.html#a7a525dc7392fc8e293db0b05f03b0c88">light</a> = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="Scene_8cpp_source.html#l00011">11</a> of file <a class="el" href="Scene_8cpp_source.html">Scene.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    this-&gt;<a class="code" href="classScene.html#a01a5fb63e810c9ccb301239c2aa0cfa6">camera</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    this-&gt;<a class="code" href="classScene.html#a7a525dc7392fc8e293db0b05f03b0c88">light</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="classLogger.html">Logger</a> *logger = <a class="code" href="classLoggerSingleton.html#a9722cb20d2fe85dc683a0e35fd1d2f67">LoggerSingleton::getInstance</a>();</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    std::ostringstream msg;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    msg &lt;&lt; <span class="stringliteral">&quot;LOG: Scene created.&quot;</span>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    logger-&gt;<a class="code" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a748005382152808a72b1a9177d9dc806">INFO</a>, msg.str());</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}</div>
+<div class="ttc" id="aLogger_8hpp_html_aca1fd1d8935433e6ba2e3918214e07f9a748005382152808a72b1a9177d9dc806"><div class="ttname"><a href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a748005382152808a72b1a9177d9dc806">INFO</a></div><div class="ttdeci">@ INFO</div><div class="ttdef"><b>Definition:</b> <a href="Logger_8hpp_source.html#l00017">Logger.hpp:17</a></div></div>
+<div class="ttc" id="aclassLoggerSingleton_html_a9722cb20d2fe85dc683a0e35fd1d2f67"><div class="ttname"><a href="classLoggerSingleton.html#a9722cb20d2fe85dc683a0e35fd1d2f67">LoggerSingleton::getInstance</a></div><div class="ttdeci">static Logger * getInstance()</div><div class="ttdef"><b>Definition:</b> <a href="SingletonLogger_8cpp_source.html#l00012">SingletonLogger.cpp:12</a></div></div>
+<div class="ttc" id="aclassLogger_html"><div class="ttname"><a href="classLogger.html">Logger</a></div><div class="ttdef"><b>Definition:</b> <a href="Logger_8hpp_source.html#l00023">Logger.hpp:23</a></div></div>
+<div class="ttc" id="aclassLogger_html_a3d3f0801eeaf39b33a906ea8569c19b2"><div class="ttname"><a href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">Logger::log</a></div><div class="ttdeci">void log(LogLevel level, const std::string &amp;message)</div><div class="ttdef"><b>Definition:</b> <a href="Logger_8hpp_source.html#l00047">Logger.hpp:47</a></div></div>
 <div class="ttc" id="aclassScene_html_a01a5fb63e810c9ccb301239c2aa0cfa6"><div class="ttname"><a href="classScene.html#a01a5fb63e810c9ccb301239c2aa0cfa6">Scene::camera</a></div><div class="ttdeci">std::unique_ptr&lt; Camera &gt; camera</div><div class="ttdef"><b>Definition:</b> <a href="Scene_8hpp_source.html#l00031">Scene.hpp:31</a></div></div>
 <div class="ttc" id="aclassScene_html_a7a525dc7392fc8e293db0b05f03b0c88"><div class="ttname"><a href="classScene.html#a7a525dc7392fc8e293db0b05f03b0c88">Scene::light</a></div><div class="ttdeci">std::unique_ptr&lt; Light &gt; light</div><div class="ttdef"><b>Definition:</b> <a href="Scene_8hpp_source.html#l00030">Scene.hpp:30</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="classScene.html#a01a5fb63e810c9ccb301239c2aa0cfa6">camera</a>, and <a class="el" href="classScene.html#a7a525dc7392fc8e293db0b05f03b0c88">light</a>.</p>
+<p class="reference">References <a class="el" href="classScene.html#a01a5fb63e810c9ccb301239c2aa0cfa6">camera</a>, <a class="el" href="classLoggerSingleton.html#a9722cb20d2fe85dc683a0e35fd1d2f67">LoggerSingleton::getInstance()</a>, <a class="el" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a748005382152808a72b1a9177d9dc806">INFO</a>, <a class="el" href="classScene.html#a7a525dc7392fc8e293db0b05f03b0c88">light</a>, and <a class="el" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">Logger::log()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classScene_ad10176d75a9cc0da56626f682d083507_cgraph.png" border="0" usemap="#aclassScene_ad10176d75a9cc0da56626f682d083507_cgraph" alt=""/></div>
+<map name="aclassScene_ad10176d75a9cc0da56626f682d083507_cgraph" id="aclassScene_ad10176d75a9cc0da56626f682d083507_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,109,57"/>
+<area shape="rect" href="classLoggerSingleton.html#a9722cb20d2fe85dc683a0e35fd1d2f67" title=" " alt="" coords="157,5,348,32"/>
+<area shape="rect" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2" title=" " alt="" coords="209,56,296,83"/>
+<area shape="rect" href="classLogger.html#acfb794ab842c63396ad1c6a771f43483" title=" " alt="" coords="396,56,540,83"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -148,10 +167,10 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Scene_8cpp_source.html#l00016">16</a> of file <a class="el" href="Scene_8cpp_source.html">Scene.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    this-&gt;<a class="code" href="classScene.html#a188d725a2c0e4d604678150b2bb325b5">Objects</a>.clear();</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="Scene_8cpp_source.html#l00021">21</a> of file <a class="el" href="Scene_8cpp_source.html">Scene.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    this-&gt;<a class="code" href="classScene.html#a188d725a2c0e4d604678150b2bb325b5">Objects</a>.clear();</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div>
 <div class="ttc" id="aclassScene_html_a188d725a2c0e4d604678150b2bb325b5"><div class="ttname"><a href="classScene.html#a188d725a2c0e4d604678150b2bb325b5">Scene::Objects</a></div><div class="ttdeci">std::vector&lt; std::unique_ptr&lt; IHitable &gt; &gt; Objects</div><div class="ttdef"><b>Definition:</b> <a href="Scene_8hpp_source.html#l00032">Scene.hpp:32</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="classScene.html#a188d725a2c0e4d604678150b2bb325b5">Objects</a>.</p>
@@ -175,10 +194,10 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Scene_8cpp_source.html#l00031">31</a> of file <a class="el" href="Scene_8cpp_source.html">Scene.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="classScene.html#a188d725a2c0e4d604678150b2bb325b5">Objects</a>.push_back(std::move(obj));</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="Scene_8cpp_source.html#l00036">36</a> of file <a class="el" href="Scene_8cpp_source.html">Scene.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="classScene.html#a188d725a2c0e4d604678150b2bb325b5">Objects</a>.push_back(std::move(obj));</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="classScene.html#a188d725a2c0e4d604678150b2bb325b5">Objects</a>.</p>
 
@@ -213,10 +232,10 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Scene_8cpp_source.html#l00046">46</a> of file <a class="el" href="Scene_8cpp_source.html">Scene.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;{</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="classScene.html#a01a5fb63e810c9ccb301239c2aa0cfa6">camera</a>.get();</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="Scene_8cpp_source.html#l00051">51</a> of file <a class="el" href="Scene_8cpp_source.html">Scene.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;{</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="classScene.html#a01a5fb63e810c9ccb301239c2aa0cfa6">camera</a>.get();</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="classScene.html#a01a5fb63e810c9ccb301239c2aa0cfa6">camera</a>.</p>
 
@@ -238,10 +257,10 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Scene_8cpp_source.html#l00041">41</a> of file <a class="el" href="Scene_8cpp_source.html">Scene.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="classScene.html#a7a525dc7392fc8e293db0b05f03b0c88">light</a>.get();</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="Scene_8cpp_source.html#l00046">46</a> of file <a class="el" href="Scene_8cpp_source.html">Scene.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;{</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="classScene.html#a7a525dc7392fc8e293db0b05f03b0c88">light</a>.get();</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="classScene.html#a7a525dc7392fc8e293db0b05f03b0c88">light</a>.</p>
 
@@ -263,10 +282,10 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Scene_8cpp_source.html#l00036">36</a> of file <a class="el" href="Scene_8cpp_source.html">Scene.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="classScene.html#a188d725a2c0e4d604678150b2bb325b5">Objects</a>;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="Scene_8cpp_source.html#l00041">41</a> of file <a class="el" href="Scene_8cpp_source.html">Scene.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="classScene.html#a188d725a2c0e4d604678150b2bb325b5">Objects</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="classScene.html#a188d725a2c0e4d604678150b2bb325b5">Objects</a>.</p>
 
@@ -288,10 +307,10 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Scene_8cpp_source.html#l00026">26</a> of file <a class="el" href="Scene_8cpp_source.html">Scene.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    this-&gt;<a class="code" href="classScene.html#a01a5fb63e810c9ccb301239c2aa0cfa6">camera</a> = std::move(c);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="Scene_8cpp_source.html#l00031">31</a> of file <a class="el" href="Scene_8cpp_source.html">Scene.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    this-&gt;<a class="code" href="classScene.html#a01a5fb63e810c9ccb301239c2aa0cfa6">camera</a> = std::move(c);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="classScene.html#a01a5fb63e810c9ccb301239c2aa0cfa6">camera</a>.</p>
 
@@ -326,10 +345,10 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Scene_8cpp_source.html#l00021">21</a> of file <a class="el" href="Scene_8cpp_source.html">Scene.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    this-&gt;<a class="code" href="classScene.html#a7a525dc7392fc8e293db0b05f03b0c88">light</a> = std::move(l);</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="Scene_8cpp_source.html#l00026">26</a> of file <a class="el" href="Scene_8cpp_source.html">Scene.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    this-&gt;<a class="code" href="classScene.html#a7a525dc7392fc8e293db0b05f03b0c88">light</a> = std::move(l);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="classScene.html#a7a525dc7392fc8e293db0b05f03b0c88">light</a>.</p>
 

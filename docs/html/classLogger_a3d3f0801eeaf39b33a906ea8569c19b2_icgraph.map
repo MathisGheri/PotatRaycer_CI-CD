@@ -1,0 +1,19 @@
+<map id="Logger::log" name="Logger::log">
+<area shape="rect" id="node1" title=" " alt="" coords="396,360,483,387"/>
+<area shape="rect" id="node2" href="$classCore.html#a8c45134f4e917fb1e2aa2848697f376f" title=" " alt="" coords="181,5,331,32"/>
+<area shape="rect" id="node3" href="$Main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="35,31,86,57"/>
+<area shape="rect" id="node4" href="$classCamera.html#a2434c4e126f5bb6b38426b4e3e8c7cc1" title=" " alt="" coords="195,107,317,133"/>
+<area shape="rect" id="node5" href="$classCore.html#a14e63188e0aa7c4a6f72d5501384d1f9" title=" " alt="" coords="213,157,299,184"/>
+<area shape="rect" id="node6" href="$classDielectric.html#a04d2540e21be3247f2861ced18e0a611" title=" " alt="" coords="186,208,326,235"/>
+<area shape="rect" id="node7" href="$classLambertian.html#a8348aa9c4f806adf1ba768929468f4af" title=" " alt="" coords="177,259,335,285"/>
+<area shape="rect" id="node8" href="$classLight.html#a6a284ddff9d8416f89f3695964b2abbe" title=" " alt="" coords="213,309,299,336"/>
+<area shape="rect" id="node9" href="$classMetal.html#acafc3db8b6ef83991cb0cebfb557ec5f" title=" " alt="" coords="209,360,303,387"/>
+<area shape="rect" id="node10" href="$classParsing.html#aff2c6802b3204d215941cdadf97d77e4" title=" " alt="" coords="197,411,315,437"/>
+<area shape="rect" id="node11" href="$classPlane.html#a98f5833bc7148dbe48f74b65b5151f20" title=" " alt="" coords="208,461,304,488"/>
+<area shape="rect" id="node12" href="$classRay.html#a2e3d2c29f2df4ab3da10da79d4acb852" title=" " alt="" coords="217,512,295,539"/>
+<area shape="rect" id="node13" href="$classScene.html#ad10176d75a9cc0da56626f682d083507" title=" " alt="" coords="204,563,308,589"/>
+<area shape="rect" id="node14" href="$classSceneBuilder.html#a91be5ca7f12e7493ed45333d55d3aaae" title=" " alt="" coords="164,613,348,640"/>
+<area shape="rect" id="node15" href="$classSphere.html#a5bdb84d3ef6df709d5c77ed1ab2d2078" title=" " alt="" coords="200,664,312,691"/>
+<area shape="rect" id="node16" href="$classVec3.html#aae7a1ffaa1108a30c281da216d1cd312" title=" " alt="" coords="212,715,300,741"/>
+<area shape="rect" id="node17" href="$classVec3.html#ab05753413af282b8cbd879c334c8e5aa" title=" " alt="" coords="5,715,116,741"/>
+</map>

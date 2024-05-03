@@ -120,13 +120,30 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Core_8cpp_source.html#l00012">12</a> of file <a class="el" href="Core_8cpp_source.html">Core.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    this-&gt;<a class="code" href="classCore.html#a4ac7e310ed0820b56e86cb4f54f32ade">scene</a> = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="Core_8cpp_source.html#l00013">13</a> of file <a class="el" href="Core_8cpp_source.html">Core.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    this-&gt;<a class="code" href="classCore.html#a4ac7e310ed0820b56e86cb4f54f32ade">scene</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="classLogger.html">Logger</a>* logger = <a class="code" href="classLoggerSingleton.html#a9722cb20d2fe85dc683a0e35fd1d2f67">LoggerSingleton::getInstance</a>();</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    logger-&gt;<a class="code" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a748005382152808a72b1a9177d9dc806">INFO</a>, <span class="stringliteral">&quot;Core Created.&quot;</span>);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}</div>
+<div class="ttc" id="aLogger_8hpp_html_aca1fd1d8935433e6ba2e3918214e07f9a748005382152808a72b1a9177d9dc806"><div class="ttname"><a href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a748005382152808a72b1a9177d9dc806">INFO</a></div><div class="ttdeci">@ INFO</div><div class="ttdef"><b>Definition:</b> <a href="Logger_8hpp_source.html#l00017">Logger.hpp:17</a></div></div>
 <div class="ttc" id="aclassCore_html_a4ac7e310ed0820b56e86cb4f54f32ade"><div class="ttname"><a href="classCore.html#a4ac7e310ed0820b56e86cb4f54f32ade">Core::scene</a></div><div class="ttdeci">Scene * scene</div><div class="ttdef"><b>Definition:</b> <a href="Core_8hpp_source.html#l00023">Core.hpp:23</a></div></div>
+<div class="ttc" id="aclassLoggerSingleton_html_a9722cb20d2fe85dc683a0e35fd1d2f67"><div class="ttname"><a href="classLoggerSingleton.html#a9722cb20d2fe85dc683a0e35fd1d2f67">LoggerSingleton::getInstance</a></div><div class="ttdeci">static Logger * getInstance()</div><div class="ttdef"><b>Definition:</b> <a href="SingletonLogger_8cpp_source.html#l00012">SingletonLogger.cpp:12</a></div></div>
+<div class="ttc" id="aclassLogger_html"><div class="ttname"><a href="classLogger.html">Logger</a></div><div class="ttdef"><b>Definition:</b> <a href="Logger_8hpp_source.html#l00023">Logger.hpp:23</a></div></div>
+<div class="ttc" id="aclassLogger_html_a3d3f0801eeaf39b33a906ea8569c19b2"><div class="ttname"><a href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">Logger::log</a></div><div class="ttdeci">void log(LogLevel level, const std::string &amp;message)</div><div class="ttdef"><b>Definition:</b> <a href="Logger_8hpp_source.html#l00047">Logger.hpp:47</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="classCore.html#a4ac7e310ed0820b56e86cb4f54f32ade">scene</a>.</p>
+<p class="reference">References <a class="el" href="classLoggerSingleton.html#a9722cb20d2fe85dc683a0e35fd1d2f67">LoggerSingleton::getInstance()</a>, <a class="el" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a748005382152808a72b1a9177d9dc806">INFO</a>, <a class="el" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">Logger::log()</a>, and <a class="el" href="classCore.html#a4ac7e310ed0820b56e86cb4f54f32ade">scene</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classCore_a14e63188e0aa7c4a6f72d5501384d1f9_cgraph.png" border="0" usemap="#aclassCore_a14e63188e0aa7c4a6f72d5501384d1f9_cgraph" alt=""/></div>
+<map name="aclassCore_a14e63188e0aa7c4a6f72d5501384d1f9_cgraph" id="aclassCore_a14e63188e0aa7c4a6f72d5501384d1f9_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,92,57"/>
+<area shape="rect" href="classLoggerSingleton.html#a9722cb20d2fe85dc683a0e35fd1d2f67" title=" " alt="" coords="140,5,331,32"/>
+<area shape="rect" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2" title=" " alt="" coords="192,56,279,83"/>
+<area shape="rect" href="classLogger.html#acfb794ab842c63396ad1c6a771f43483" title=" " alt="" coords="379,56,523,83"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -145,8 +162,8 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Core_8cpp_source.html#l00017">17</a> of file <a class="el" href="Core_8cpp_source.html">Core.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{}</div>
+<p class="definition">Definition at line <a class="el" href="Core_8cpp_source.html#l00020">20</a> of file <a class="el" href="Core_8cpp_source.html">Core.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -167,31 +184,29 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Core_8cpp_source.html#l00019">19</a> of file <a class="el" href="Core_8cpp_source.html">Core.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="classSceneBuilder.html">SceneBuilder</a> sceneBuilder;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="classParsing.html">Parsing</a> parser(filename);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    sceneBuilder.<a class="code" href="classSceneBuilder.html#a858400b8fa979ff12e72cbb0924dacf8">createCamera</a>(parser.GetCamera());</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    printf(<span class="stringliteral">&quot;AFTER Camera\n&quot;</span>);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    sceneBuilder.<a class="code" href="classSceneBuilder.html#adc5c6aa9cc749216e534c2c6254ed0ec">createLight</a>(parser.getLights());</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    printf(<span class="stringliteral">&quot;AFTER Light\n&quot;</span>);</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    sceneBuilder.<a class="code" href="classSceneBuilder.html#ac43fa095e624d4816f1eb41806d2dc14">createObjects</a>(parser.getPrimitives());</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    printf(<span class="stringliteral">&quot;AFTER OBJCTS\n&quot;</span>);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="comment">//faire un appel à parsing</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="comment">//mettre la cam</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="comment">//mettre la light</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="comment">//mettre les objects//primitives//hitables</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="comment">//iterate through the list</span></div>
+<p class="definition">Definition at line <a class="el" href="Core_8cpp_source.html#l00022">22</a> of file <a class="el" href="Core_8cpp_source.html">Core.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="classLogger.html">Logger</a>* logger = <a class="code" href="classLoggerSingleton.html#a9722cb20d2fe85dc683a0e35fd1d2f67">LoggerSingleton::getInstance</a>();</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="classSceneBuilder.html">SceneBuilder</a> sceneBuilder;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="classParsing.html">Parsing</a> parser(filename);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    logger-&gt;<a class="code" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f">DEBUG</a>, <span class="stringliteral">&quot;Parsing done.&quot;</span>);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    sceneBuilder.<a class="code" href="classSceneBuilder.html#a858400b8fa979ff12e72cbb0924dacf8">createCamera</a>(parser.GetCamera());</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    logger-&gt;<a class="code" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f">DEBUG</a>, <span class="stringliteral">&quot;Camera created.&quot;</span>);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    sceneBuilder.<a class="code" href="classSceneBuilder.html#adc5c6aa9cc749216e534c2c6254ed0ec">createLight</a>(parser.getLights());</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    logger-&gt;<a class="code" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f">DEBUG</a>, <span class="stringliteral">&quot;Light created.&quot;</span>);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    sceneBuilder.<a class="code" href="classSceneBuilder.html#ac43fa095e624d4816f1eb41806d2dc14">createObjects</a>(parser.getPrimitives());</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    logger-&gt;<a class="code" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f">DEBUG</a>, <span class="stringliteral">&quot;Primitives Created.&quot;</span>);</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    this-&gt;<a class="code" href="classCore.html#a4ac7e310ed0820b56e86cb4f54f32ade">scene</a> = sceneBuilder.<a class="code" href="classSceneBuilder.html#a076b7c82d43073e35a7a218d95e774fd">getScene</a>();</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}</div>
+<div class="ttc" id="aLogger_8hpp_html_aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f"><div class="ttname"><a href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f">DEBUG</a></div><div class="ttdeci">@ DEBUG</div><div class="ttdef"><b>Definition:</b> <a href="Logger_8hpp_source.html#l00016">Logger.hpp:16</a></div></div>
 <div class="ttc" id="aclassParsing_html"><div class="ttname"><a href="classParsing.html">Parsing</a></div><div class="ttdef"><b>Definition:</b> <a href="Parsing_8hpp_source.html#l00030">Parsing.hpp:30</a></div></div>
 <div class="ttc" id="aclassSceneBuilder_html"><div class="ttname"><a href="classSceneBuilder.html">SceneBuilder</a></div><div class="ttdoc">Concrete implementation of the IBuilder interface for constructing scenes.</div><div class="ttdef"><b>Definition:</b> <a href="SceneBuilder_8hpp_source.html#l00034">SceneBuilder.hpp:34</a></div></div>
-<div class="ttc" id="aclassSceneBuilder_html_a076b7c82d43073e35a7a218d95e774fd"><div class="ttname"><a href="classSceneBuilder.html#a076b7c82d43073e35a7a218d95e774fd">SceneBuilder::getScene</a></div><div class="ttdeci">Scene * getScene() override final</div><div class="ttdoc">Retrieve the constructed scene.</div><div class="ttdef"><b>Definition:</b> <a href="SceneBuilder_8cpp_source.html#l00115">SceneBuilder.cpp:115</a></div></div>
-<div class="ttc" id="aclassSceneBuilder_html_a858400b8fa979ff12e72cbb0924dacf8"><div class="ttname"><a href="classSceneBuilder.html#a858400b8fa979ff12e72cbb0924dacf8">SceneBuilder::createCamera</a></div><div class="ttdeci">void createCamera(std::map&lt; std::string, std::tuple&lt; float, float, float &gt;&gt;) override final</div><div class="ttdoc">Create a camera in the scene.</div><div class="ttdef"><b>Definition:</b> <a href="SceneBuilder_8cpp_source.html#l00039">SceneBuilder.cpp:39</a></div></div>
-<div class="ttc" id="aclassSceneBuilder_html_ac43fa095e624d4816f1eb41806d2dc14"><div class="ttname"><a href="classSceneBuilder.html#ac43fa095e624d4816f1eb41806d2dc14">SceneBuilder::createObjects</a></div><div class="ttdeci">void createObjects(std::vector&lt; Primitive &gt;) override final</div><div class="ttdoc">Create primitive objects in the scene.</div><div class="ttdef"><b>Definition:</b> <a href="SceneBuilder_8cpp_source.html#l00087">SceneBuilder.cpp:87</a></div></div>
-<div class="ttc" id="aclassSceneBuilder_html_adc5c6aa9cc749216e534c2c6254ed0ec"><div class="ttname"><a href="classSceneBuilder.html#adc5c6aa9cc749216e534c2c6254ed0ec">SceneBuilder::createLight</a></div><div class="ttdeci">void createLight(std::map&lt; std::string, std::tuple&lt; float, float, float &gt;&gt;) override final</div><div class="ttdoc">Create a light in the scene.</div><div class="ttdef"><b>Definition:</b> <a href="SceneBuilder_8cpp_source.html#l00067">SceneBuilder.cpp:67</a></div></div>
+<div class="ttc" id="aclassSceneBuilder_html_a076b7c82d43073e35a7a218d95e774fd"><div class="ttname"><a href="classSceneBuilder.html#a076b7c82d43073e35a7a218d95e774fd">SceneBuilder::getScene</a></div><div class="ttdeci">Scene * getScene() override final</div><div class="ttdoc">Retrieve the constructed scene.</div><div class="ttdef"><b>Definition:</b> <a href="SceneBuilder_8cpp_source.html#l00110">SceneBuilder.cpp:110</a></div></div>
+<div class="ttc" id="aclassSceneBuilder_html_a858400b8fa979ff12e72cbb0924dacf8"><div class="ttname"><a href="classSceneBuilder.html#a858400b8fa979ff12e72cbb0924dacf8">SceneBuilder::createCamera</a></div><div class="ttdeci">void createCamera(std::map&lt; std::string, std::tuple&lt; float, float, float &gt;&gt;) override final</div><div class="ttdoc">Create a camera in the scene.</div><div class="ttdef"><b>Definition:</b> <a href="SceneBuilder_8cpp_source.html#l00038">SceneBuilder.cpp:38</a></div></div>
+<div class="ttc" id="aclassSceneBuilder_html_ac43fa095e624d4816f1eb41806d2dc14"><div class="ttname"><a href="classSceneBuilder.html#ac43fa095e624d4816f1eb41806d2dc14">SceneBuilder::createObjects</a></div><div class="ttdeci">void createObjects(std::vector&lt; Primitive &gt;) override final</div><div class="ttdoc">Create primitive objects in the scene.</div><div class="ttdef"><b>Definition:</b> <a href="SceneBuilder_8cpp_source.html#l00082">SceneBuilder.cpp:82</a></div></div>
+<div class="ttc" id="aclassSceneBuilder_html_adc5c6aa9cc749216e534c2c6254ed0ec"><div class="ttname"><a href="classSceneBuilder.html#adc5c6aa9cc749216e534c2c6254ed0ec">SceneBuilder::createLight</a></div><div class="ttdeci">void createLight(std::map&lt; std::string, std::tuple&lt; float, float, float &gt;&gt;) override final</div><div class="ttdoc">Create a light in the scene.</div><div class="ttdef"><b>Definition:</b> <a href="SceneBuilder_8cpp_source.html#l00065">SceneBuilder.cpp:65</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="classSceneBuilder.html#a858400b8fa979ff12e72cbb0924dacf8">SceneBuilder::createCamera()</a>, <a class="el" href="classSceneBuilder.html#adc5c6aa9cc749216e534c2c6254ed0ec">SceneBuilder::createLight()</a>, <a class="el" href="classSceneBuilder.html#ac43fa095e624d4816f1eb41806d2dc14">SceneBuilder::createObjects()</a>, <a class="el" href="classParsing.html#a24ca4a26190d71a0f8d48d0f62aa2ea1">Parsing::GetCamera()</a>, <a class="el" href="classParsing.html#a335f29c631ee21a0401cf538b0dfb0aa">Parsing::getLights()</a>, <a class="el" href="classParsing.html#aa299c9cc408f2506f776a927ccef8ab1">Parsing::getPrimitives()</a>, <a class="el" href="classSceneBuilder.html#a076b7c82d43073e35a7a218d95e774fd">SceneBuilder::getScene()</a>, and <a class="el" href="classCore.html#a4ac7e310ed0820b56e86cb4f54f32ade">scene</a>.</p>
+<p class="reference">References <a class="el" href="classSceneBuilder.html#a858400b8fa979ff12e72cbb0924dacf8">SceneBuilder::createCamera()</a>, <a class="el" href="classSceneBuilder.html#adc5c6aa9cc749216e534c2c6254ed0ec">SceneBuilder::createLight()</a>, <a class="el" href="classSceneBuilder.html#ac43fa095e624d4816f1eb41806d2dc14">SceneBuilder::createObjects()</a>, <a class="el" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f">DEBUG</a>, <a class="el" href="classParsing.html#a24ca4a26190d71a0f8d48d0f62aa2ea1">Parsing::GetCamera()</a>, <a class="el" href="classLoggerSingleton.html#a9722cb20d2fe85dc683a0e35fd1d2f67">LoggerSingleton::getInstance()</a>, <a class="el" href="classParsing.html#a335f29c631ee21a0401cf538b0dfb0aa">Parsing::getLights()</a>, <a class="el" href="classParsing.html#aa299c9cc408f2506f776a927ccef8ab1">Parsing::getPrimitives()</a>, <a class="el" href="classSceneBuilder.html#a076b7c82d43073e35a7a218d95e774fd">SceneBuilder::getScene()</a>, <a class="el" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">Logger::log()</a>, and <a class="el" href="classCore.html#a4ac7e310ed0820b56e86cb4f54f32ade">scene</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="Main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627">main()</a>.</p>
 <div class="dynheader">
@@ -199,17 +214,20 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classCore_a8c45134f4e917fb1e2aa2848697f376f_cgraph.png" border="0" usemap="#aclassCore_a8c45134f4e917fb1e2aa2848697f376f_cgraph" alt=""/></div>
 <map name="aclassCore_a8c45134f4e917fb1e2aa2848697f376f_cgraph" id="aclassCore_a8c45134f4e917fb1e2aa2848697f376f_cgraph">
-<area shape="rect" title=" " alt="" coords="5,157,156,184"/>
-<area shape="rect" href="classSceneBuilder.html#a858400b8fa979ff12e72cbb0924dacf8" title="Create a camera in the scene." alt="" coords="204,5,393,32"/>
-<area shape="rect" href="classSceneBuilder.html#adc5c6aa9cc749216e534c2c6254ed0ec" title="Create a light in the scene." alt="" coords="213,56,384,83"/>
+<area shape="rect" title=" " alt="" coords="5,208,156,235"/>
+<area shape="rect" href="classSceneBuilder.html#a858400b8fa979ff12e72cbb0924dacf8" title="Create a camera in the scene." alt="" coords="205,5,394,32"/>
+<area shape="rect" href="classSceneBuilder.html#adc5c6aa9cc749216e534c2c6254ed0ec" title="Create a light in the scene." alt="" coords="214,56,385,83"/>
 <area shape="rect" href="classSceneBuilder.html#ac43fa095e624d4816f1eb41806d2dc14" title="Create primitive objects in the scene." alt="" coords="205,107,393,133"/>
-<area shape="rect" href="classParsing.html#a24ca4a26190d71a0f8d48d0f62aa2ea1" title=" " alt="" coords="228,157,369,184"/>
-<area shape="rect" href="classParsing.html#a335f29c631ee21a0401cf538b0dfb0aa" title=" " alt="" coords="235,208,362,235"/>
-<area shape="rect" href="classParsing.html#aa299c9cc408f2506f776a927ccef8ab1" title=" " alt="" coords="223,259,374,285"/>
-<area shape="rect" href="classSceneBuilder.html#a076b7c82d43073e35a7a218d95e774fd" title="Retrieve the constructed scene." alt="" coords="217,309,380,336"/>
-<area shape="rect" href="classScene.html#af50135deb7bc899e0aef1bcc7130e4ce" title=" " alt="" coords="441,5,572,32"/>
-<area shape="rect" href="classScene.html#a42865b2699674efede1e2234feacd0dd" title=" " alt="" coords="450,56,563,83"/>
-<area shape="rect" href="classScene.html#aff2a0ad4c04e56496c65847ffb8654d7" title=" " alt="" coords="443,107,570,133"/>
+<area shape="rect" href="classParsing.html#a24ca4a26190d71a0f8d48d0f62aa2ea1" title=" " alt="" coords="229,157,370,184"/>
+<area shape="rect" href="classLoggerSingleton.html#a9722cb20d2fe85dc683a0e35fd1d2f67" title=" " alt="" coords="204,208,395,235"/>
+<area shape="rect" href="classParsing.html#a335f29c631ee21a0401cf538b0dfb0aa" title=" " alt="" coords="236,259,363,285"/>
+<area shape="rect" href="classParsing.html#aa299c9cc408f2506f776a927ccef8ab1" title=" " alt="" coords="224,309,375,336"/>
+<area shape="rect" href="classSceneBuilder.html#a076b7c82d43073e35a7a218d95e774fd" title="Retrieve the constructed scene." alt="" coords="218,360,381,387"/>
+<area shape="rect" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2" title=" " alt="" coords="256,411,343,437"/>
+<area shape="rect" href="classScene.html#af50135deb7bc899e0aef1bcc7130e4ce" title=" " alt="" coords="449,5,580,32"/>
+<area shape="rect" href="classScene.html#a42865b2699674efede1e2234feacd0dd" title=" " alt="" coords="458,56,571,83"/>
+<area shape="rect" href="classScene.html#aff2a0ad4c04e56496c65847ffb8654d7" title=" " alt="" coords="451,107,578,133"/>
+<area shape="rect" href="classLogger.html#acfb794ab842c63396ad1c6a771f43483" title=" " alt="" coords="443,411,587,437"/>
 </map>
 </div>
 <div class="dynheader">
