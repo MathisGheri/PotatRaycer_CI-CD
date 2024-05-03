@@ -44,6 +44,9 @@ target_include_directories(raytracer PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Ray
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Scene
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Vec3
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/Observer
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/Logger
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/Exceptions
 )
 
 find_package(SFML 2.5 COMPONENTS graphics window system REQUIRED)

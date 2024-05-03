@@ -6,11 +6,14 @@
 */
 
 #include "Sphere.hpp"
+#include "SingletonLogger.hpp"
 
-//see what we do with material
 Sphere::Sphere(Vec3 cen, float r, std::unique_ptr<IMaterial> m) : center(cen), radius(r), mat_ptr(std::move(m))
 {
-    std::cout << "LOG: Sphere was created with these params. cen = " << cen << ", r = " << r << ", and material" << std::endl;
+    Logger *logger = LoggerSingleton::getInstance();
+	std::ostringstream msg;
+    msg << "LOG: Sphere created with these params. cen = " << cen << ", r = " << r << ", and material (find a way to print it).";
+	logger->log(INFO, msg.str());
 }
 
 Sphere::~Sphere() {}
@@ -43,4 +46,3 @@ bool Sphere::hit(const Ray& r, float t_min, float t_max, hit_record_t& rec) cons
     }
     return false;
 }
-

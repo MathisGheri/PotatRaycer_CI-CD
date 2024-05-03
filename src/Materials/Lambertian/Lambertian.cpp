@@ -6,11 +6,14 @@
 */
 
 #include "Lambertian.hpp"
+#include "SingletonLogger.hpp"
 
 Lambertian::Lambertian(const Vec3 &a) : albedo(a)
 {
-    std::cout << "LOG: Lambertian created with a = " << a << "." << std::endl;
-
+    Logger *logger = LoggerSingleton::getInstance();
+	std::ostringstream msg;
+    msg << "LOG: Lambertian created with a = " << a << ".";
+	logger->log(INFO, msg.str());
 }
 
 Lambertian::~Lambertian()
