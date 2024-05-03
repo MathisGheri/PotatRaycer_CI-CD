@@ -6,12 +6,16 @@
 */
 
 #include "Scene.hpp"
+#include "SingletonLogger.hpp"
 
 Scene::Scene()
 {
     this->camera = nullptr;
     this->light = nullptr;
-    std::cout << "LOG: Scene was created." << std::endl;
+    Logger *logger = LoggerSingleton::getInstance();
+	std::ostringstream msg;
+    msg << "LOG: Scene created.";
+	logger->log(INFO, msg.str());
 }
 
 Scene::~Scene()

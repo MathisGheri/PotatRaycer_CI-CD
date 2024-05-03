@@ -6,10 +6,14 @@
 */
 
 #include "Parsing.hpp"
+#include "SingletonLogger.hpp"
 
 Parsing::Parsing(const std::string &file) : _filePath(file)
 {
-    std::cout << "LOG: Parsing created. Config file = " << file << ".\n" << std::endl;
+    Logger *logger = LoggerSingleton::getInstance();
+	std::ostringstream msg;
+    msg << "LOG: Parsing created. Config file = " << file << ".";
+	logger->log(INFO, msg.str());
     _cfg.readFile(_filePath.c_str());
     libconfig::Setting &root = _cfg.getRoot();
     parsePrimitives(root["primitives"]["planes"], "plane");
@@ -26,7 +30,6 @@ Parsing::Parsing(const std::string &file) : _filePath(file)
         std::cout << "\tRef_idx: " << p.material.ref_idx << std::endl;
         printf("\n");
     }
-
 }
 
 /**
