@@ -24,7 +24,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PotatRaycer
    </div>
-   <div id="projectbrief">A simple raytracer written in C++</div>
+   <div id="projectbrief">A simple raytracer in c++</div>
   </td>
  </tr>
  </tbody>
@@ -70,31 +70,215 @@ $(function() {
 <div class="title">IBuilder Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Interface for the builder pattern to construct scene components.  
+ <a href="classIBuilder.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="IBuilder_8hpp_source.html">IBuilder.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for IBuilder:</div>
 <div class="dyncontent">
- <div class="center">
-  <img src="classIBuilder.png" usemap="#IBuilder_map" alt=""/>
-  <map id="IBuilder_map" name="IBuilder_map">
-<area href="classSceneBuilder.html" alt="SceneBuilder" shape="rect" coords="0,56,88,80"/>
-  </map>
-</div></div>
+<div class="center"><img src="classIBuilder__inherit__graph.png" border="0" usemap="#aIBuilder_inherit__map" alt="Inheritance graph"/></div>
+<map name="aIBuilder_inherit__map" id="aIBuilder_inherit__map">
+<area shape="rect" title="Interface for the builder pattern to construct scene components." alt="" coords="21,5,88,32"/>
+<area shape="rect" href="classSceneBuilder.html" title="Concrete implementation of the IBuilder interface for constructing scenes." alt="" coords="5,80,104,107"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a86328b8427326fac899a9e1b8ab2be9f"><td class="memItemLeft" align="right" valign="top"><a id="a86328b8427326fac899a9e1b8ab2be9f"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>createCamera</b> (std::map&lt; std::string, std::tuple&lt; float, float, float &gt;&gt;)=0</td></tr>
-<tr class="separator:a86328b8427326fac899a9e1b8ab2be9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a99d716bc6b01c310bdadbbde452070"><td class="memItemLeft" align="right" valign="top"><a id="a7a99d716bc6b01c310bdadbbde452070"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>createLight</b> (std::map&lt; std::string, std::tuple&lt; float, float, float &gt;&gt;)=0</td></tr>
-<tr class="separator:a7a99d716bc6b01c310bdadbbde452070"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07c6fee8d88eaea7df6a874e57fb1b87"><td class="memItemLeft" align="right" valign="top"><a id="a07c6fee8d88eaea7df6a874e57fb1b87"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>createObjects</b> (std::vector&lt; <a class="el" href="structPrimitive.html">Primitive</a> &gt;)=0</td></tr>
-<tr class="separator:a07c6fee8d88eaea7df6a874e57fb1b87"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3f81f4d1bedad5a56c34d4c1af18c93"><td class="memItemLeft" align="right" valign="top"><a id="ad3f81f4d1bedad5a56c34d4c1af18c93"></a>
-virtual <a class="el" href="classScene.html">Scene</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getScene</b> ()=0</td></tr>
+<tr class="memitem:a60781824daeb712214f9c5cbd996b760"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIBuilder.html#a60781824daeb712214f9c5cbd996b760">~IBuilder</a> ()=default</td></tr>
+<tr class="memdesc:a60781824daeb712214f9c5cbd996b760"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor.  <a href="classIBuilder.html#a60781824daeb712214f9c5cbd996b760">More...</a><br /></td></tr>
+<tr class="separator:a60781824daeb712214f9c5cbd996b760"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2483e7360143df0f12b8f6b70c16d052"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIBuilder.html#a2483e7360143df0f12b8f6b70c16d052">createCamera</a> (std::map&lt; std::string, std::tuple&lt; float, float, float &gt;&gt; map)=0</td></tr>
+<tr class="memdesc:a2483e7360143df0f12b8f6b70c16d052"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a camera in the scene.  <a href="classIBuilder.html#a2483e7360143df0f12b8f6b70c16d052">More...</a><br /></td></tr>
+<tr class="separator:a2483e7360143df0f12b8f6b70c16d052"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4f329260da7f7dbfbfe05756fce756c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIBuilder.html#af4f329260da7f7dbfbfe05756fce756c">createLight</a> (std::map&lt; std::string, std::tuple&lt; float, float, float &gt;&gt; light)=0</td></tr>
+<tr class="memdesc:af4f329260da7f7dbfbfe05756fce756c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a light in the scene.  <a href="classIBuilder.html#af4f329260da7f7dbfbfe05756fce756c">More...</a><br /></td></tr>
+<tr class="separator:af4f329260da7f7dbfbfe05756fce756c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94b25088f4e98df374a138a502333b6f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIBuilder.html#a94b25088f4e98df374a138a502333b6f">createObjects</a> (std::vector&lt; <a class="el" href="structPrimitive.html">Primitive</a> &gt; primitive)=0</td></tr>
+<tr class="memdesc:a94b25088f4e98df374a138a502333b6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create primitive objects in the scene.  <a href="classIBuilder.html#a94b25088f4e98df374a138a502333b6f">More...</a><br /></td></tr>
+<tr class="separator:a94b25088f4e98df374a138a502333b6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3f81f4d1bedad5a56c34d4c1af18c93"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classScene.html">Scene</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIBuilder.html#ad3f81f4d1bedad5a56c34d4c1af18c93">getScene</a> ()=0</td></tr>
+<tr class="memdesc:ad3f81f4d1bedad5a56c34d4c1af18c93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the constructed scene.  <a href="classIBuilder.html#ad3f81f4d1bedad5a56c34d4c1af18c93">More...</a><br /></td></tr>
 <tr class="separator:ad3f81f4d1bedad5a56c34d4c1af18c93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Interface for the builder pattern to construct scene components. </p>
+<p>This interface declares methods for creating cameras, lights, and other primitive objects within a scene. It also provides a method to retrieve the constructed scene. </p>
+
+<p class="definition">Definition at line <a class="el" href="IBuilder_8hpp_source.html#l00035">35</a> of file <a class="el" href="IBuilder_8hpp_source.html">IBuilder.hpp</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a60781824daeb712214f9c5cbd996b760"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60781824daeb712214f9c5cbd996b760">&#9670;&nbsp;</a></span>~IBuilder()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual IBuilder::~IBuilder </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Virtual destructor. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a2483e7360143df0f12b8f6b70c16d052"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2483e7360143df0f12b8f6b70c16d052">&#9670;&nbsp;</a></span>createCamera()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void IBuilder::createCamera </td>
+          <td>(</td>
+          <td class="paramtype">std::map&lt; std::string, std::tuple&lt; float, float, float &gt;&gt;&#160;</td>
+          <td class="paramname"><em>map</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create a camera in the scene. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">map</td><td>from string identifiers to tuples representing the camera specifications. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>This function does not return a value but configures the scene with a new camera. </dd></dl>
+
+<p>Implemented in <a class="el" href="classSceneBuilder.html#a858400b8fa979ff12e72cbb0924dacf8">SceneBuilder</a>.</p>
+
+</div>
+</div>
+<a id="af4f329260da7f7dbfbfe05756fce756c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4f329260da7f7dbfbfe05756fce756c">&#9670;&nbsp;</a></span>createLight()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void IBuilder::createLight </td>
+          <td>(</td>
+          <td class="paramtype">std::map&lt; std::string, std::tuple&lt; float, float, float &gt;&gt;&#160;</td>
+          <td class="paramname"><em>light</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create a light in the scene. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">light</td><td>Map from string identifiers to tuples representing the light specifications. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>This function does not return a value but adds a light to the scene. </dd></dl>
+
+<p>Implemented in <a class="el" href="classSceneBuilder.html#adc5c6aa9cc749216e534c2c6254ed0ec">SceneBuilder</a>.</p>
+
+</div>
+</div>
+<a id="a94b25088f4e98df374a138a502333b6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94b25088f4e98df374a138a502333b6f">&#9670;&nbsp;</a></span>createObjects()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void IBuilder::createObjects </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="structPrimitive.html">Primitive</a> &gt;&#160;</td>
+          <td class="paramname"><em>primitive</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create primitive objects in the scene. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">primitive</td><td>A vector of <a class="el" href="structPrimitive.html">Primitive</a> objects to be added to the scene. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>This function does not return a value but populates the scene with primitives. </dd></dl>
+
+<p>Implemented in <a class="el" href="classSceneBuilder.html#ac43fa095e624d4816f1eb41806d2dc14">SceneBuilder</a>.</p>
+
+</div>
+</div>
+<a id="ad3f81f4d1bedad5a56c34d4c1af18c93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3f81f4d1bedad5a56c34d4c1af18c93">&#9670;&nbsp;</a></span>getScene()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classScene.html">Scene</a>* IBuilder::getScene </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Retrieve the constructed scene. </p>
+<dl class="section note"><dt>Note</dt><dd>This function does not require any parameters since it allow user to get informations. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to the constructed <a class="el" href="classScene.html">Scene</a>. </dd></dl>
+
+<p>Implemented in <a class="el" href="classSceneBuilder.html#a076b7c82d43073e35a7a218d95e774fd">SceneBuilder</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>src/Builder/<a class="el" href="IBuilder_8hpp_source.html">IBuilder.hpp</a></li>
 </ul>

@@ -24,7 +24,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PotatRaycer
    </div>
-   <div id="projectbrief">A simple raytracer written in C++</div>
+   <div id="projectbrief">A simple raytracer in c++</div>
   </td>
  </tr>
  </tbody>
@@ -65,33 +65,260 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classMetal-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Metal Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="Metal_8hpp_source.html">Metal.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for Metal:</div>
 <div class="dyncontent">
- <div class="center">
-  <img src="classMetal.png" usemap="#Metal_map" alt=""/>
-  <map id="Metal_map" name="Metal_map">
-<area href="classIMaterial.html" alt="IMaterial" shape="rect" coords="0,0,61,24"/>
-  </map>
-</div></div>
+<div class="center"><img src="classMetal__inherit__graph.png" border="0" usemap="#aMetal_inherit__map" alt="Inheritance graph"/></div>
+<map name="aMetal_inherit__map" id="aMetal_inherit__map">
+<area shape="rect" title=" " alt="" coords="14,80,69,107"/>
+<area shape="rect" href="classIMaterial.html" title=" " alt="" coords="5,5,77,32"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for Metal:</div>
+<div class="dyncontent">
+<div class="center"><img src="classMetal__coll__graph.png" border="0" usemap="#aMetal_coll__map" alt="Collaboration graph"/></div>
+<map name="aMetal_coll__map" id="aMetal_coll__map">
+<area shape="rect" title=" " alt="" coords="57,95,111,121"/>
+<area shape="rect" href="classIMaterial.html" title=" " alt="" coords="5,5,77,32"/>
+<area shape="rect" href="classVec3.html" title=" " alt="" coords="101,5,152,32"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:acafc3db8b6ef83991cb0cebfb557ec5f"><td class="memItemLeft" align="right" valign="top"><a id="acafc3db8b6ef83991cb0cebfb557ec5f"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Metal</b> (const <a class="el" href="classVec3.html">Vec3</a> &amp;a, const float f)</td></tr>
+<tr class="memitem:acafc3db8b6ef83991cb0cebfb557ec5f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMetal.html#acafc3db8b6ef83991cb0cebfb557ec5f">Metal</a> (const <a class="el" href="classVec3.html">Vec3</a> &amp;a, const float f)</td></tr>
 <tr class="separator:acafc3db8b6ef83991cb0cebfb557ec5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa27170d3925a4856d86e35888de1cd4"><td class="memItemLeft" align="right" valign="top"><a id="afa27170d3925a4856d86e35888de1cd4"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>scatter</b> (const <a class="el" href="classRay.html">Ray</a> &amp;r_in, const <a class="el" href="structhit__record__s.html">hit_record_t</a> &amp;rec, <a class="el" href="classVec3.html">Vec3</a> &amp;attenuation, <a class="el" href="classRay.html">Ray</a> &amp;scattered) const override final</td></tr>
+<tr class="memitem:a920bace7a5ac67060ac5b3435c045fe6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMetal.html#a920bace7a5ac67060ac5b3435c045fe6">~Metal</a> ()</td></tr>
+<tr class="separator:a920bace7a5ac67060ac5b3435c045fe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa27170d3925a4856d86e35888de1cd4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMetal.html#afa27170d3925a4856d86e35888de1cd4">scatter</a> (const <a class="el" href="classRay.html">Ray</a> &amp;r_in, const <a class="el" href="struct_8h.html#aaf145a045b8acf3bedf3be121d64e390">hit_record_t</a> &amp;rec, <a class="el" href="classVec3.html">Vec3</a> &amp;attenuation, <a class="el" href="classRay.html">Ray</a> &amp;scattered) const override final</td></tr>
 <tr class="separator:afa27170d3925a4856d86e35888de1cd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classIMaterial"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classIMaterial')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classIMaterial.html">IMaterial</a></td></tr>
+<tr class="memitem:a43ad960a33ef87b199c1d8b28c364130 inherit pub_methods_classIMaterial"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIMaterial.html#a43ad960a33ef87b199c1d8b28c364130">~IMaterial</a> ()=default</td></tr>
+<tr class="separator:a43ad960a33ef87b199c1d8b28c364130 inherit pub_methods_classIMaterial"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a6d0a3477b755870e7a8040aca1108e91"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVec3.html">Vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMetal.html#a6d0a3477b755870e7a8040aca1108e91">albedo</a></td></tr>
+<tr class="separator:a6d0a3477b755870e7a8040aca1108e91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec7d10011f0d6b8737aefa0386cd36d8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMetal.html#aec7d10011f0d6b8737aefa0386cd36d8">fuzz</a></td></tr>
+<tr class="separator:aec7d10011f0d6b8737aefa0386cd36d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="Metal_8hpp_source.html#l00013">13</a> of file <a class="el" href="Metal_8hpp_source.html">Metal.hpp</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="acafc3db8b6ef83991cb0cebfb557ec5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acafc3db8b6ef83991cb0cebfb557ec5f">&#9670;&nbsp;</a></span>Metal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Metal::Metal </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classVec3.html">Vec3</a> &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float&#160;</td>
+          <td class="paramname"><em>f</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Metal_8cpp_source.html#l00010">10</a> of file <a class="el" href="Metal_8cpp_source.html">Metal.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;                                         : <a class="code" href="classMetal.html#a6d0a3477b755870e7a8040aca1108e91">albedo</a>(a)</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keywordflow">if</span> (f &lt; 1)</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <a class="code" href="classMetal.html#aec7d10011f0d6b8737aefa0386cd36d8">fuzz</a> = f;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <a class="code" href="classMetal.html#aec7d10011f0d6b8737aefa0386cd36d8">fuzz</a> = 1;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;}</div>
+<div class="ttc" id="aclassMetal_html_a6d0a3477b755870e7a8040aca1108e91"><div class="ttname"><a href="classMetal.html#a6d0a3477b755870e7a8040aca1108e91">Metal::albedo</a></div><div class="ttdeci">Vec3 albedo</div><div class="ttdef"><b>Definition:</b> <a href="Metal_8hpp_source.html#l00019">Metal.hpp:19</a></div></div>
+<div class="ttc" id="aclassMetal_html_aec7d10011f0d6b8737aefa0386cd36d8"><div class="ttname"><a href="classMetal.html#aec7d10011f0d6b8737aefa0386cd36d8">Metal::fuzz</a></div><div class="ttdeci">int fuzz</div><div class="ttdef"><b>Definition:</b> <a href="Metal_8hpp_source.html#l00020">Metal.hpp:20</a></div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="classMetal.html#aec7d10011f0d6b8737aefa0386cd36d8">fuzz</a>.</p>
+
+</div>
+</div>
+<a id="a920bace7a5ac67060ac5b3435c045fe6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a920bace7a5ac67060ac5b3435c045fe6">&#9670;&nbsp;</a></span>~Metal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Metal::~Metal </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Metal_8cpp_source.html#l00018">18</a> of file <a class="el" href="Metal_8cpp_source.html">Metal.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="afa27170d3925a4856d86e35888de1cd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa27170d3925a4856d86e35888de1cd4">&#9670;&nbsp;</a></span>scatter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Metal::scatter </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classRay.html">Ray</a> &amp;&#160;</td>
+          <td class="paramname"><em>r_in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_8h.html#aaf145a045b8acf3bedf3be121d64e390">hit_record_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>rec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classVec3.html">Vec3</a> &amp;&#160;</td>
+          <td class="paramname"><em>attenuation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classRay.html">Ray</a> &amp;&#160;</td>
+          <td class="paramname"><em>scattered</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">final</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classIMaterial.html#aec296356d2f6fa1e6cbbfef2da07d447">IMaterial</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="Metal_8cpp_source.html#l00022">22</a> of file <a class="el" href="Metal_8cpp_source.html">Metal.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="classVec3.html">Vec3</a> reflected = <a class="code" href="Vec3_8hpp.html#a43e74e58464123290e65b93de83ebe0e">reflect</a>(<a class="code" href="Vec3_8hpp.html#a288c446d78e98483daf812cfb32d2f21">unit_vector</a>(r_in.<a class="code" href="classRay.html#a725a907d4c9b65c55930a3e4f5d01d48">direction</a>()), rec.<a class="code" href="structhit__record__s.html#ae99ba2937e47036237f994111276cb1d">normal</a>);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    scattered = <a class="code" href="classRay.html">Ray</a>(rec.<a class="code" href="structhit__record__s.html#aac284cd2782011cb2e6e7197ab607e1f">p</a>, reflected + <a class="code" href="classMetal.html#aec7d10011f0d6b8737aefa0386cd36d8">fuzz</a> * <a class="code" href="Vec3_8hpp.html#ac27c4dfd3b914900ee1bf2306b3913b9">random_in_unit_sphere</a>());</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    attenuation = <a class="code" href="classMetal.html#a6d0a3477b755870e7a8040aca1108e91">albedo</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordflow">return</span> (<a class="code" href="Vec3_8hpp.html#a45f8afb934d90c5445ad67d3b2156563">dot</a>(scattered.<a class="code" href="classRay.html#a725a907d4c9b65c55930a3e4f5d01d48">direction</a>(), rec.<a class="code" href="structhit__record__s.html#ae99ba2937e47036237f994111276cb1d">normal</a>) &gt; 0);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div>
+<div class="ttc" id="aVec3_8hpp_html_a288c446d78e98483daf812cfb32d2f21"><div class="ttname"><a href="Vec3_8hpp.html#a288c446d78e98483daf812cfb32d2f21">unit_vector</a></div><div class="ttdeci">Vec3 unit_vector(Vec3 v)</div><div class="ttdef"><b>Definition:</b> <a href="Vec3_8hpp_source.html#l00126">Vec3.hpp:126</a></div></div>
+<div class="ttc" id="aVec3_8hpp_html_a43e74e58464123290e65b93de83ebe0e"><div class="ttname"><a href="Vec3_8hpp.html#a43e74e58464123290e65b93de83ebe0e">reflect</a></div><div class="ttdeci">Vec3 reflect(const Vec3 &amp;v, const Vec3 &amp;n)</div><div class="ttdef"><b>Definition:</b> <a href="Vec3_8hpp_source.html#l00130">Vec3.hpp:130</a></div></div>
+<div class="ttc" id="aVec3_8hpp_html_a45f8afb934d90c5445ad67d3b2156563"><div class="ttname"><a href="Vec3_8hpp.html#a45f8afb934d90c5445ad67d3b2156563">dot</a></div><div class="ttdeci">float dot(const Vec3 &amp;v1, const Vec3 &amp;v2)</div><div class="ttdef"><b>Definition:</b> <a href="Vec3_8hpp_source.html#l00085">Vec3.hpp:85</a></div></div>
+<div class="ttc" id="aVec3_8hpp_html_ac27c4dfd3b914900ee1bf2306b3913b9"><div class="ttname"><a href="Vec3_8hpp.html#ac27c4dfd3b914900ee1bf2306b3913b9">random_in_unit_sphere</a></div><div class="ttdeci">Vec3 random_in_unit_sphere()</div><div class="ttdef"><b>Definition:</b> <a href="Vec3_8hpp_source.html#l00151">Vec3.hpp:151</a></div></div>
+<div class="ttc" id="aclassRay_html"><div class="ttname"><a href="classRay.html">Ray</a></div><div class="ttdef"><b>Definition:</b> <a href="Ray_8hpp_source.html#l00015">Ray.hpp:15</a></div></div>
+<div class="ttc" id="aclassRay_html_a725a907d4c9b65c55930a3e4f5d01d48"><div class="ttname"><a href="classRay.html#a725a907d4c9b65c55930a3e4f5d01d48">Ray::direction</a></div><div class="ttdeci">Vec3 direction() const</div><div class="ttdef"><b>Definition:</b> <a href="Ray_8cpp_source.html#l00029">Ray.cpp:29</a></div></div>
+<div class="ttc" id="aclassVec3_html"><div class="ttname"><a href="classVec3.html">Vec3</a></div><div class="ttdef"><b>Definition:</b> <a href="Vec3_8hpp_source.html#l00013">Vec3.hpp:13</a></div></div>
+<div class="ttc" id="astructhit__record__s_html_aac284cd2782011cb2e6e7197ab607e1f"><div class="ttname"><a href="structhit__record__s.html#aac284cd2782011cb2e6e7197ab607e1f">hit_record_s::p</a></div><div class="ttdeci">Vec3 p</div><div class="ttdef"><b>Definition:</b> <a href="struct_8h_source.html#l00015">struct.h:15</a></div></div>
+<div class="ttc" id="astructhit__record__s_html_ae99ba2937e47036237f994111276cb1d"><div class="ttname"><a href="structhit__record__s.html#ae99ba2937e47036237f994111276cb1d">hit_record_s::normal</a></div><div class="ttdeci">Vec3 normal</div><div class="ttdef"><b>Definition:</b> <a href="struct_8h_source.html#l00016">struct.h:16</a></div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="classMetal.html#a6d0a3477b755870e7a8040aca1108e91">albedo</a>, <a class="el" href="classRay.html#a725a907d4c9b65c55930a3e4f5d01d48">Ray::direction()</a>, <a class="el" href="Vec3_8hpp.html#a45f8afb934d90c5445ad67d3b2156563">dot()</a>, <a class="el" href="classMetal.html#aec7d10011f0d6b8737aefa0386cd36d8">fuzz</a>, <a class="el" href="structhit__record__s.html#ae99ba2937e47036237f994111276cb1d">hit_record_s::normal</a>, <a class="el" href="structhit__record__s.html#aac284cd2782011cb2e6e7197ab607e1f">hit_record_s::p</a>, <a class="el" href="Vec3_8hpp.html#ac27c4dfd3b914900ee1bf2306b3913b9">random_in_unit_sphere()</a>, <a class="el" href="Vec3_8hpp.html#a43e74e58464123290e65b93de83ebe0e">reflect()</a>, and <a class="el" href="Vec3_8hpp.html#a288c446d78e98483daf812cfb32d2f21">unit_vector()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classMetal_afa27170d3925a4856d86e35888de1cd4_cgraph.png" border="0" usemap="#aclassMetal_afa27170d3925a4856d86e35888de1cd4_cgraph" alt=""/></div>
+<map name="aclassMetal_afa27170d3925a4856d86e35888de1cd4_cgraph" id="aclassMetal_afa27170d3925a4856d86e35888de1cd4_cgraph">
+<area shape="rect" title=" " alt="" coords="5,107,108,133"/>
+<area shape="rect" href="classRay.html#a725a907d4c9b65c55930a3e4f5d01d48" title=" " alt="" coords="183,5,285,32"/>
+<area shape="rect" href="Vec3_8hpp.html#a45f8afb934d90c5445ad67d3b2156563" title=" " alt="" coords="413,81,453,108"/>
+<area shape="rect" href="Vec3_8hpp.html#ac27c4dfd3b914900ee1bf2306b3913b9" title=" " alt="" coords="156,157,312,184"/>
+<area shape="rect" href="Vec3_8hpp.html#a43e74e58464123290e65b93de83ebe0e" title=" " alt="" coords="205,107,263,133"/>
+<area shape="rect" href="Vec3_8hpp.html#a288c446d78e98483daf812cfb32d2f21" title=" " alt="" coords="191,208,277,235"/>
+<area shape="rect" href="classVec3.html#a52729ddfe43ef4c9d01def60c4622c92" title=" " alt="" coords="360,157,507,184"/>
+<area shape="rect" href="classVec3.html#a54be9143adb871a478ea3de19ca23f3b" title=" " alt="" coords="386,208,481,235"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a6d0a3477b755870e7a8040aca1108e91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d0a3477b755870e7a8040aca1108e91">&#9670;&nbsp;</a></span>albedo</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classVec3.html">Vec3</a> Metal::albedo</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Metal_8hpp_source.html#l00019">19</a> of file <a class="el" href="Metal_8hpp_source.html">Metal.hpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="classMetal.html#afa27170d3925a4856d86e35888de1cd4">scatter()</a>.</p>
+
+</div>
+</div>
+<a id="aec7d10011f0d6b8737aefa0386cd36d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec7d10011f0d6b8737aefa0386cd36d8">&#9670;&nbsp;</a></span>fuzz</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Metal::fuzz</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Metal_8hpp_source.html#l00020">20</a> of file <a class="el" href="Metal_8hpp_source.html">Metal.hpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="classMetal.html#acafc3db8b6ef83991cb0cebfb557ec5f">Metal()</a>, and <a class="el" href="classMetal.html#afa27170d3925a4856d86e35888de1cd4">scatter()</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>src/Materials/Metal/<a class="el" href="Metal_8hpp_source.html">Metal.hpp</a></li>
-<li>src/Materials/Metal/Metal.cpp</li>
+<li>src/Materials/Metal/<a class="el" href="Metal_8cpp_source.html">Metal.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

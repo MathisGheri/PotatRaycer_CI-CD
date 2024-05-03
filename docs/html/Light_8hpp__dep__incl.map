@@ -1,0 +1,12 @@
+<map id="src/Light/Light.hpp" name="src/Light/Light.hpp">
+<area shape="rect" id="node1" title=" " alt="" coords="107,5,236,32"/>
+<area shape="rect" id="node2" href="$SceneBuilder_8cpp.html" title="Implementation of the builder class to create scenes." alt="" coords="5,304,196,331"/>
+<area shape="rect" id="node3" href="$Light_8cpp.html" title=" " alt="" coords="107,80,236,107"/>
+<area shape="rect" id="node4" href="$Scene_8hpp.html" title=" " alt="" coords="265,80,411,107"/>
+<area shape="rect" id="node5" href="$IBuilder_8hpp.html" title="Interface for Builders used in the PotatRaycer project." alt="" coords="105,155,262,181"/>
+<area shape="rect" id="node8" href="$Core_8hpp.html" title=" " alt="" coords="287,155,416,181"/>
+<area shape="rect" id="node10" href="$Scene_8cpp.html" title=" " alt="" coords="441,155,587,181"/>
+<area shape="rect" id="node6" href="$SceneBuilder_8hpp.html" title="Builder class for constructing scenes." alt="" coords="97,229,288,256"/>
+<area shape="rect" id="node7" href="$Core_8cpp.html" title=" " alt="" coords="240,304,369,331"/>
+<area shape="rect" id="node9" href="$Main_8cpp.html" title=" " alt="" coords="364,229,461,256"/>
+</map>

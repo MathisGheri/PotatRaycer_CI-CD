@@ -24,7 +24,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PotatRaycer
    </div>
-   <div id="projectbrief">A simple raytracer written in C++</div>
+   <div id="projectbrief">A simple raytracer in c++</div>
   </td>
  </tr>
  </tbody>
@@ -70,14 +70,19 @@ $(function() {
 
 <p>This is the complete list of members for <a class="el" href="classParsing.html">Parsing</a>, including all inherited members.</p>
 <table class="directory">
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>GetCamera</b>() (defined in <a class="el" href="classParsing.html">Parsing</a>)</td><td class="entry"><a class="el" href="classParsing.html">Parsing</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>getLights</b>() (defined in <a class="el" href="classParsing.html">Parsing</a>)</td><td class="entry"><a class="el" href="classParsing.html">Parsing</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>getPrimitives</b>() (defined in <a class="el" href="classParsing.html">Parsing</a>)</td><td class="entry"><a class="el" href="classParsing.html">Parsing</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>parseCamera</b>(libconfig::Setting &amp;setting) (defined in <a class="el" href="classParsing.html">Parsing</a>)</td><td class="entry"><a class="el" href="classParsing.html">Parsing</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>parseLights</b>(libconfig::Setting &amp;setting) (defined in <a class="el" href="classParsing.html">Parsing</a>)</td><td class="entry"><a class="el" href="classParsing.html">Parsing</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classParsing.html#aa3336c05be6cece06abb7760795ea4aa">parsePrimitives</a>(libconfig::Setting &amp;setting, const std::string &amp;type)</td><td class="entry"><a class="el" href="classParsing.html">Parsing</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>Parsing</b>(const std::string &amp;file) (defined in <a class="el" href="classParsing.html">Parsing</a>)</td><td class="entry"><a class="el" href="classParsing.html">Parsing</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>~Parsing</b>() (defined in <a class="el" href="classParsing.html">Parsing</a>)</td><td class="entry"><a class="el" href="classParsing.html">Parsing</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classParsing.html#a64a91adfbb9ea98881c342873fdfd488">_camera</a></td><td class="entry"><a class="el" href="classParsing.html">Parsing</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classParsing.html#ac10badc57d51576be95ccacc8ecea5f6">_cfg</a></td><td class="entry"><a class="el" href="classParsing.html">Parsing</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classParsing.html#a73967203f5001fb32627a330d954e2b5">_filePath</a></td><td class="entry"><a class="el" href="classParsing.html">Parsing</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classParsing.html#abb0a8425d79167d24a5cb7aa8a8eee8a">_light</a></td><td class="entry"><a class="el" href="classParsing.html">Parsing</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classParsing.html#a23a289ceac61a47d123f9edc01507a96">_primitives</a></td><td class="entry"><a class="el" href="classParsing.html">Parsing</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classParsing.html#a24ca4a26190d71a0f8d48d0f62aa2ea1">GetCamera</a>()</td><td class="entry"><a class="el" href="classParsing.html">Parsing</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classParsing.html#a335f29c631ee21a0401cf538b0dfb0aa">getLights</a>()</td><td class="entry"><a class="el" href="classParsing.html">Parsing</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classParsing.html#aa299c9cc408f2506f776a927ccef8ab1">getPrimitives</a>()</td><td class="entry"><a class="el" href="classParsing.html">Parsing</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classParsing.html#a4d3b19100818f4cbde291f91a5b4d117">parseCamera</a>(libconfig::Setting &amp;setting)</td><td class="entry"><a class="el" href="classParsing.html">Parsing</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classParsing.html#a0f5be128288789100d5ed85b36023f79">parseLights</a>(libconfig::Setting &amp;setting)</td><td class="entry"><a class="el" href="classParsing.html">Parsing</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classParsing.html#aa3336c05be6cece06abb7760795ea4aa">parsePrimitives</a>(libconfig::Setting &amp;setting, const std::string &amp;type)</td><td class="entry"><a class="el" href="classParsing.html">Parsing</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classParsing.html#aff2c6802b3204d215941cdadf97d77e4">Parsing</a>(const std::string &amp;file)</td><td class="entry"><a class="el" href="classParsing.html">Parsing</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classParsing.html#aa8177a741578150b599a9153e44da384">~Parsing</a>()</td><td class="entry"><a class="el" href="classParsing.html">Parsing</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

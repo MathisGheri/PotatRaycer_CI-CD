@@ -24,7 +24,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PotatRaycer
    </div>
-   <div id="projectbrief">A simple raytracer written in C++</div>
+   <div id="projectbrief">A simple raytracer in c++</div>
   </td>
  </tr>
  </tbody>
@@ -71,7 +71,7 @@ $(function() {
 <div class="title">Sphere.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<a href="Sphere_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">** EPITECH PROJECT, 2024</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">** PotatRaycer_CI-CD</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">** File description:</span></div>
@@ -80,29 +80,38 @@ $(function() {
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef SPHERE_HPP_</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#define SPHERE_HPP_</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="Sphere_8hpp.html#a2fc9f387b3937f5312f7addec294996a">   10</a></span>&#160;<span class="preprocessor">#define SPHERE_HPP_</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;include.hpp&quot;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;IHitable.hpp&quot;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;IMaterial.hpp&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="include_8hpp.html">include.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="IHitable_8hpp.html">IHitable.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="IMaterial_8hpp.html">IMaterial.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
 <div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classSphere.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="classSphere.html">Sphere</a> : <span class="keyword">public</span> <a class="code" href="classIHitable.html">IHitable</a> {</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <a class="code" href="classSphere.html">Sphere</a>(<a class="code" href="classVec3.html">Vec3</a> cen, <span class="keywordtype">float</span> r, std::unique_ptr&lt;IMaterial&gt; m);</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        ~<a class="code" href="classSphere.html">Sphere</a>();</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keywordtype">bool</span> hit(<span class="keyword">const</span> <a class="code" href="classRay.html">Ray</a>&amp; r, <span class="keywordtype">float</span> t_min, <span class="keywordtype">float</span> t_max, <a class="code" href="structhit__record__s.html">hit_record_t</a>&amp; rec) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <a class="code" href="classSphere.html#a5bdb84d3ef6df709d5c77ed1ab2d2078">Sphere</a>(<a class="code" href="classVec3.html">Vec3</a> cen, <span class="keywordtype">float</span> r, std::unique_ptr&lt;IMaterial&gt; m);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <a class="code" href="classSphere.html#a569c071e50a3e11f678630ee1a17737e">~Sphere</a>();</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classSphere.html#ada19fc64131c5549dc6edffe4e4123ed">hit</a>(<span class="keyword">const</span> <a class="code" href="classRay.html">Ray</a>&amp; r, <span class="keywordtype">float</span> t_min, <span class="keywordtype">float</span> t_max, <a class="code" href="structhit__record__s.html">hit_record_t</a>&amp; rec) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <a class="code" href="classVec3.html">Vec3</a> center;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keywordtype">float</span> radius;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        std::unique_ptr&lt;IMaterial&gt; mat_ptr;</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classSphere.html#a561c182ccacf07313c1ef3a9a1a7c379">   22</a></span>&#160;        <a class="code" href="classVec3.html">Vec3</a> <a class="code" href="classSphere.html#a561c182ccacf07313c1ef3a9a1a7c379">center</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classSphere.html#ae6f42f0da6679a2f0b4a22681ccccf38">   23</a></span>&#160;        <span class="keywordtype">float</span> <a class="code" href="classSphere.html#ae6f42f0da6679a2f0b4a22681ccccf38">radius</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classSphere.html#af97ff69b75b7e54b74e1a0acc4c09d3b">   24</a></span>&#160;        std::unique_ptr&lt;IMaterial&gt; <a class="code" href="classSphere.html#af97ff69b75b7e54b74e1a0acc4c09d3b">mat_ptr</a>;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;};</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !SPHERE_HPP_ */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="aclassIHitable_html"><div class="ttname"><a href="classIHitable.html">IHitable</a></div><div class="ttdef"><b>Definition:</b> IHitable.hpp:16</div></div>
-<div class="ttc" id="aclassRay_html"><div class="ttname"><a href="classRay.html">Ray</a></div><div class="ttdef"><b>Definition:</b> Ray.hpp:15</div></div>
-<div class="ttc" id="aclassSphere_html"><div class="ttname"><a href="classSphere.html">Sphere</a></div><div class="ttdef"><b>Definition:</b> Sphere.hpp:16</div></div>
-<div class="ttc" id="aclassVec3_html"><div class="ttname"><a href="classVec3.html">Vec3</a></div><div class="ttdef"><b>Definition:</b> Vec3.hpp:13</div></div>
-<div class="ttc" id="astructhit__record__s_html"><div class="ttname"><a href="structhit__record__s.html">hit_record_s</a></div><div class="ttdef"><b>Definition:</b> struct.h:13</div></div>
+<div class="ttc" id="aIHitable_8hpp_html"><div class="ttname"><a href="IHitable_8hpp.html">IHitable.hpp</a></div></div>
+<div class="ttc" id="aIMaterial_8hpp_html"><div class="ttname"><a href="IMaterial_8hpp.html">IMaterial.hpp</a></div></div>
+<div class="ttc" id="aclassIHitable_html"><div class="ttname"><a href="classIHitable.html">IHitable</a></div><div class="ttdef"><b>Definition:</b> <a href="IHitable_8hpp_source.html#l00016">IHitable.hpp:16</a></div></div>
+<div class="ttc" id="aclassRay_html"><div class="ttname"><a href="classRay.html">Ray</a></div><div class="ttdef"><b>Definition:</b> <a href="Ray_8hpp_source.html#l00015">Ray.hpp:15</a></div></div>
+<div class="ttc" id="aclassSphere_html"><div class="ttname"><a href="classSphere.html">Sphere</a></div><div class="ttdef"><b>Definition:</b> <a href="Sphere_8hpp_source.html#l00016">Sphere.hpp:16</a></div></div>
+<div class="ttc" id="aclassSphere_html_a561c182ccacf07313c1ef3a9a1a7c379"><div class="ttname"><a href="classSphere.html#a561c182ccacf07313c1ef3a9a1a7c379">Sphere::center</a></div><div class="ttdeci">Vec3 center</div><div class="ttdef"><b>Definition:</b> <a href="Sphere_8hpp_source.html#l00022">Sphere.hpp:22</a></div></div>
+<div class="ttc" id="aclassSphere_html_a569c071e50a3e11f678630ee1a17737e"><div class="ttname"><a href="classSphere.html#a569c071e50a3e11f678630ee1a17737e">Sphere::~Sphere</a></div><div class="ttdeci">~Sphere()</div><div class="ttdef"><b>Definition:</b> <a href="Sphere_8cpp_source.html#l00013">Sphere.cpp:13</a></div></div>
+<div class="ttc" id="aclassSphere_html_a5bdb84d3ef6df709d5c77ed1ab2d2078"><div class="ttname"><a href="classSphere.html#a5bdb84d3ef6df709d5c77ed1ab2d2078">Sphere::Sphere</a></div><div class="ttdeci">Sphere(Vec3 cen, float r, std::unique_ptr&lt; IMaterial &gt; m)</div><div class="ttdef"><b>Definition:</b> <a href="Sphere_8cpp_source.html#l00011">Sphere.cpp:11</a></div></div>
+<div class="ttc" id="aclassSphere_html_ada19fc64131c5549dc6edffe4e4123ed"><div class="ttname"><a href="classSphere.html#ada19fc64131c5549dc6edffe4e4123ed">Sphere::hit</a></div><div class="ttdeci">bool hit(const Ray &amp;r, float t_min, float t_max, hit_record_t &amp;rec) const</div><div class="ttdef"><b>Definition:</b> <a href="Sphere_8cpp_source.html#l00015">Sphere.cpp:15</a></div></div>
+<div class="ttc" id="aclassSphere_html_ae6f42f0da6679a2f0b4a22681ccccf38"><div class="ttname"><a href="classSphere.html#ae6f42f0da6679a2f0b4a22681ccccf38">Sphere::radius</a></div><div class="ttdeci">float radius</div><div class="ttdef"><b>Definition:</b> <a href="Sphere_8hpp_source.html#l00023">Sphere.hpp:23</a></div></div>
+<div class="ttc" id="aclassSphere_html_af97ff69b75b7e54b74e1a0acc4c09d3b"><div class="ttname"><a href="classSphere.html#af97ff69b75b7e54b74e1a0acc4c09d3b">Sphere::mat_ptr</a></div><div class="ttdeci">std::unique_ptr&lt; IMaterial &gt; mat_ptr</div><div class="ttdef"><b>Definition:</b> <a href="Sphere_8hpp_source.html#l00024">Sphere.hpp:24</a></div></div>
+<div class="ttc" id="aclassVec3_html"><div class="ttname"><a href="classVec3.html">Vec3</a></div><div class="ttdef"><b>Definition:</b> <a href="Vec3_8hpp_source.html#l00013">Vec3.hpp:13</a></div></div>
+<div class="ttc" id="ainclude_8hpp_html"><div class="ttname"><a href="include_8hpp.html">include.hpp</a></div></div>
+<div class="ttc" id="astructhit__record__s_html"><div class="ttname"><a href="structhit__record__s.html">hit_record_s</a></div><div class="ttdef"><b>Definition:</b> <a href="struct_8h_source.html#l00013">struct.h:13</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

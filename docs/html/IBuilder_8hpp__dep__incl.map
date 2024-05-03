@@ -1,0 +1,6 @@
+<map id="src/Builder/IBuilder.hpp" name="src/Builder/IBuilder.hpp">
+<area shape="rect" id="node1" title="Interface for Builders used in the PotatRaycer project." alt="" coords="114,5,271,32"/>
+<area shape="rect" id="node2" href="$SceneBuilder_8hpp.html" title="Builder class for constructing scenes." alt="" coords="97,80,288,107"/>
+<area shape="rect" id="node3" href="$SceneBuilder_8cpp.html" title="Implementation of the builder class to create scenes." alt="" coords="5,155,196,181"/>
+<area shape="rect" id="node4" href="$Core_8cpp.html" title=" " alt="" coords="220,155,349,181"/>
+</map>

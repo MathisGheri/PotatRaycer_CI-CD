@@ -24,7 +24,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PotatRaycer
    </div>
-   <div id="projectbrief">A simple raytracer written in C++</div>
+   <div id="projectbrief">A simple raytracer in c++</div>
   </td>
  </tr>
  </tbody>
@@ -65,37 +65,379 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classParsing-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Parsing Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="Parsing_8hpp_source.html">Parsing.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aff2c6802b3204d215941cdadf97d77e4"><td class="memItemLeft" align="right" valign="top"><a id="aff2c6802b3204d215941cdadf97d77e4"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Parsing</b> (const std::string &amp;file)</td></tr>
+<tr class="memitem:aff2c6802b3204d215941cdadf97d77e4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParsing.html#aff2c6802b3204d215941cdadf97d77e4">Parsing</a> (const std::string &amp;file)</td></tr>
 <tr class="separator:aff2c6802b3204d215941cdadf97d77e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24ca4a26190d71a0f8d48d0f62aa2ea1"><td class="memItemLeft" align="right" valign="top"><a id="a24ca4a26190d71a0f8d48d0f62aa2ea1"></a>
-std::map&lt; std::string, std::tuple&lt; float, float, float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetCamera</b> ()</td></tr>
+<tr class="memitem:aa8177a741578150b599a9153e44da384"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParsing.html#aa8177a741578150b599a9153e44da384">~Parsing</a> ()</td></tr>
+<tr class="separator:aa8177a741578150b599a9153e44da384"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24ca4a26190d71a0f8d48d0f62aa2ea1"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, std::tuple&lt; float, float, float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParsing.html#a24ca4a26190d71a0f8d48d0f62aa2ea1">GetCamera</a> ()</td></tr>
 <tr class="separator:a24ca4a26190d71a0f8d48d0f62aa2ea1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa299c9cc408f2506f776a927ccef8ab1"><td class="memItemLeft" align="right" valign="top"><a id="aa299c9cc408f2506f776a927ccef8ab1"></a>
-std::vector&lt; <a class="el" href="structPrimitive.html">Primitive</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getPrimitives</b> ()</td></tr>
+<tr class="memitem:aa299c9cc408f2506f776a927ccef8ab1"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structPrimitive.html">Primitive</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParsing.html#aa299c9cc408f2506f776a927ccef8ab1">getPrimitives</a> ()</td></tr>
 <tr class="separator:aa299c9cc408f2506f776a927ccef8ab1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a335f29c631ee21a0401cf538b0dfb0aa"><td class="memItemLeft" align="right" valign="top"><a id="a335f29c631ee21a0401cf538b0dfb0aa"></a>
-std::map&lt; std::string, std::tuple&lt; float, float, float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getLights</b> ()</td></tr>
+<tr class="memitem:a335f29c631ee21a0401cf538b0dfb0aa"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, std::tuple&lt; float, float, float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParsing.html#a335f29c631ee21a0401cf538b0dfb0aa">getLights</a> ()</td></tr>
 <tr class="separator:a335f29c631ee21a0401cf538b0dfb0aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f5be128288789100d5ed85b36023f79"><td class="memItemLeft" align="right" valign="top"><a id="a0f5be128288789100d5ed85b36023f79"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>parseLights</b> (libconfig::Setting &amp;setting)</td></tr>
+<tr class="memitem:a0f5be128288789100d5ed85b36023f79"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParsing.html#a0f5be128288789100d5ed85b36023f79">parseLights</a> (libconfig::Setting &amp;setting)</td></tr>
 <tr class="separator:a0f5be128288789100d5ed85b36023f79"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d3b19100818f4cbde291f91a5b4d117"><td class="memItemLeft" align="right" valign="top"><a id="a4d3b19100818f4cbde291f91a5b4d117"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>parseCamera</b> (libconfig::Setting &amp;setting)</td></tr>
+<tr class="memitem:a4d3b19100818f4cbde291f91a5b4d117"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParsing.html#a4d3b19100818f4cbde291f91a5b4d117">parseCamera</a> (libconfig::Setting &amp;setting)</td></tr>
 <tr class="separator:a4d3b19100818f4cbde291f91a5b4d117"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3336c05be6cece06abb7760795ea4aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParsing.html#aa3336c05be6cece06abb7760795ea4aa">parsePrimitives</a> (libconfig::Setting &amp;setting, const std::string &amp;type)</td></tr>
 <tr class="memdesc:aa3336c05be6cece06abb7760795ea4aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse the primitive settings from the config file.  <a href="classParsing.html#aa3336c05be6cece06abb7760795ea4aa">More...</a><br /></td></tr>
 <tr class="separator:aa3336c05be6cece06abb7760795ea4aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a73967203f5001fb32627a330d954e2b5"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParsing.html#a73967203f5001fb32627a330d954e2b5">_filePath</a></td></tr>
+<tr class="separator:a73967203f5001fb32627a330d954e2b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac10badc57d51576be95ccacc8ecea5f6"><td class="memItemLeft" align="right" valign="top">libconfig::Config&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParsing.html#ac10badc57d51576be95ccacc8ecea5f6">_cfg</a></td></tr>
+<tr class="separator:ac10badc57d51576be95ccacc8ecea5f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb0a8425d79167d24a5cb7aa8a8eee8a"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, std::tuple&lt; float, float, float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParsing.html#abb0a8425d79167d24a5cb7aa8a8eee8a">_light</a></td></tr>
+<tr class="separator:abb0a8425d79167d24a5cb7aa8a8eee8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64a91adfbb9ea98881c342873fdfd488"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, std::tuple&lt; float, float, float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParsing.html#a64a91adfbb9ea98881c342873fdfd488">_camera</a></td></tr>
+<tr class="separator:a64a91adfbb9ea98881c342873fdfd488"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23a289ceac61a47d123f9edc01507a96"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structPrimitive.html">Primitive</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParsing.html#a23a289ceac61a47d123f9edc01507a96">_primitives</a></td></tr>
+<tr class="separator:a23a289ceac61a47d123f9edc01507a96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="Parsing_8hpp_source.html#l00030">30</a> of file <a class="el" href="Parsing_8hpp_source.html">Parsing.hpp</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="aff2c6802b3204d215941cdadf97d77e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff2c6802b3204d215941cdadf97d77e4">&#9670;&nbsp;</a></span>Parsing()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Parsing::Parsing </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>file</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Parsing_8cpp_source.html#l00010">10</a> of file <a class="el" href="Parsing_8cpp_source.html">Parsing.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;                                      : <a class="code" href="classParsing.html#a73967203f5001fb32627a330d954e2b5">_filePath</a>(file)</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="code" href="classParsing.html#ac10badc57d51576be95ccacc8ecea5f6">_cfg</a>.readFile(<a class="code" href="classParsing.html#a73967203f5001fb32627a330d954e2b5">_filePath</a>.c_str());</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    libconfig::Setting &amp;root = <a class="code" href="classParsing.html#ac10badc57d51576be95ccacc8ecea5f6">_cfg</a>.getRoot();</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="classParsing.html#aa3336c05be6cece06abb7760795ea4aa">parsePrimitives</a>(root[<span class="stringliteral">&quot;primitives&quot;</span>][<span class="stringliteral">&quot;planes&quot;</span>], <span class="stringliteral">&quot;plane&quot;</span>);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="classParsing.html#aa3336c05be6cece06abb7760795ea4aa">parsePrimitives</a>(root[<span class="stringliteral">&quot;primitives&quot;</span>][<span class="stringliteral">&quot;spheres&quot;</span>], <span class="stringliteral">&quot;sphere&quot;</span>);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="classParsing.html#a0f5be128288789100d5ed85b36023f79">parseLights</a>(root[<span class="stringliteral">&quot;light&quot;</span>]);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="classParsing.html#a4d3b19100818f4cbde291f91a5b4d117">parseCamera</a>(root[<span class="stringliteral">&quot;camera&quot;</span>]);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;p : <a class="code" href="classParsing.html#a23a289ceac61a47d123f9edc01507a96">_primitives</a>) {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;Primitive: &quot;</span> &lt;&lt; p.type &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;Points: &quot;</span> &lt;&lt; p.points[0].x &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; p.points[0].y &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; p.points[0].z &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;Points: &quot;</span> &lt;&lt; p.points[1].x &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; p.points[1].y &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; p.points[1].z &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;Material: &quot;</span> &lt;&lt; p.material.type &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;Vec: &quot;</span> &lt;&lt; p.material.vec.x &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; p.material.vec.y &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; p.material.vec.z &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;Fuzz: &quot;</span> &lt;&lt; p.material.fuzz &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;Ref_idx: &quot;</span> &lt;&lt; p.material.ref_idx &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        printf(<span class="stringliteral">&quot;\n&quot;</span>);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    }</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div>
+<div class="ttc" id="aclassParsing_html_a0f5be128288789100d5ed85b36023f79"><div class="ttname"><a href="classParsing.html#a0f5be128288789100d5ed85b36023f79">Parsing::parseLights</a></div><div class="ttdeci">void parseLights(libconfig::Setting &amp;setting)</div><div class="ttdef"><b>Definition:</b> <a href="Parsing_8cpp_source.html#l00072">Parsing.cpp:72</a></div></div>
+<div class="ttc" id="aclassParsing_html_a23a289ceac61a47d123f9edc01507a96"><div class="ttname"><a href="classParsing.html#a23a289ceac61a47d123f9edc01507a96">Parsing::_primitives</a></div><div class="ttdeci">std::vector&lt; Primitive &gt; _primitives</div><div class="ttdef"><b>Definition:</b> <a href="Parsing_8hpp_source.html#l00056">Parsing.hpp:56</a></div></div>
+<div class="ttc" id="aclassParsing_html_a4d3b19100818f4cbde291f91a5b4d117"><div class="ttname"><a href="classParsing.html#a4d3b19100818f4cbde291f91a5b4d117">Parsing::parseCamera</a></div><div class="ttdeci">void parseCamera(libconfig::Setting &amp;setting)</div><div class="ttdef"><b>Definition:</b> <a href="Parsing_8cpp_source.html#l00086">Parsing.cpp:86</a></div></div>
+<div class="ttc" id="aclassParsing_html_a73967203f5001fb32627a330d954e2b5"><div class="ttname"><a href="classParsing.html#a73967203f5001fb32627a330d954e2b5">Parsing::_filePath</a></div><div class="ttdeci">const std::string &amp; _filePath</div><div class="ttdef"><b>Definition:</b> <a href="Parsing_8hpp_source.html#l00052">Parsing.hpp:52</a></div></div>
+<div class="ttc" id="aclassParsing_html_aa3336c05be6cece06abb7760795ea4aa"><div class="ttname"><a href="classParsing.html#aa3336c05be6cece06abb7760795ea4aa">Parsing::parsePrimitives</a></div><div class="ttdeci">void parsePrimitives(libconfig::Setting &amp;setting, const std::string &amp;type)</div><div class="ttdoc">Parse the primitive settings from the config file.</div><div class="ttdef"><b>Definition:</b> <a href="Parsing_8cpp_source.html#l00038">Parsing.cpp:38</a></div></div>
+<div class="ttc" id="aclassParsing_html_ac10badc57d51576be95ccacc8ecea5f6"><div class="ttname"><a href="classParsing.html#ac10badc57d51576be95ccacc8ecea5f6">Parsing::_cfg</a></div><div class="ttdeci">libconfig::Config _cfg</div><div class="ttdef"><b>Definition:</b> <a href="Parsing_8hpp_source.html#l00053">Parsing.hpp:53</a></div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="classParsing.html#ac10badc57d51576be95ccacc8ecea5f6">_cfg</a>, <a class="el" href="classParsing.html#a73967203f5001fb32627a330d954e2b5">_filePath</a>, <a class="el" href="classParsing.html#a23a289ceac61a47d123f9edc01507a96">_primitives</a>, <a class="el" href="classParsing.html#a4d3b19100818f4cbde291f91a5b4d117">parseCamera()</a>, <a class="el" href="classParsing.html#a0f5be128288789100d5ed85b36023f79">parseLights()</a>, and <a class="el" href="classParsing.html#aa3336c05be6cece06abb7760795ea4aa">parsePrimitives()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classParsing_aff2c6802b3204d215941cdadf97d77e4_cgraph.png" border="0" usemap="#aclassParsing_aff2c6802b3204d215941cdadf97d77e4_cgraph" alt=""/></div>
+<map name="aclassParsing_aff2c6802b3204d215941cdadf97d77e4_cgraph" id="aclassParsing_aff2c6802b3204d215941cdadf97d77e4_cgraph">
+<area shape="rect" title=" " alt="" coords="5,56,124,83"/>
+<area shape="rect" href="classParsing.html#a4d3b19100818f4cbde291f91a5b4d117" title=" " alt="" coords="178,5,330,32"/>
+<area shape="rect" href="classParsing.html#a0f5be128288789100d5ed85b36023f79" title=" " alt="" coords="183,56,325,83"/>
+<area shape="rect" href="classParsing.html#aa3336c05be6cece06abb7760795ea4aa" title="Parse the primitive settings from the config file." alt="" coords="172,107,336,133"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa8177a741578150b599a9153e44da384"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8177a741578150b599a9153e44da384">&#9670;&nbsp;</a></span>~Parsing()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Parsing::~Parsing </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Parsing_8hpp_source.html#l00033">33</a> of file <a class="el" href="Parsing_8hpp_source.html">Parsing.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{}</div>
+</div><!-- fragment -->
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a24ca4a26190d71a0f8d48d0f62aa2ea1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24ca4a26190d71a0f8d48d0f62aa2ea1">&#9670;&nbsp;</a></span>GetCamera()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;std::string, std::tuple&lt;float, float, float&gt; &gt; Parsing::GetCamera </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Parsing_8hpp_source.html#l00034">34</a> of file <a class="el" href="Parsing_8hpp_source.html">Parsing.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classParsing.html#a64a91adfbb9ea98881c342873fdfd488">_camera</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        }</div>
+<div class="ttc" id="aclassParsing_html_a64a91adfbb9ea98881c342873fdfd488"><div class="ttname"><a href="classParsing.html#a64a91adfbb9ea98881c342873fdfd488">Parsing::_camera</a></div><div class="ttdeci">std::map&lt; std::string, std::tuple&lt; float, float, float &gt; &gt; _camera</div><div class="ttdef"><b>Definition:</b> <a href="Parsing_8hpp_source.html#l00055">Parsing.hpp:55</a></div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="classParsing.html#a64a91adfbb9ea98881c342873fdfd488">_camera</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="classCore.html#a8c45134f4e917fb1e2aa2848697f376f">Core::assembleScene()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classParsing_a24ca4a26190d71a0f8d48d0f62aa2ea1_icgraph.png" border="0" usemap="#aclassParsing_a24ca4a26190d71a0f8d48d0f62aa2ea1_icgraph" alt=""/></div>
+<map name="aclassParsing_a24ca4a26190d71a0f8d48d0f62aa2ea1_icgraph" id="aclassParsing_a24ca4a26190d71a0f8d48d0f62aa2ea1_icgraph">
+<area shape="rect" title=" " alt="" coords="303,5,444,32"/>
+<area shape="rect" href="classCore.html#a8c45134f4e917fb1e2aa2848697f376f" title=" " alt="" coords="104,5,255,32"/>
+<area shape="rect" href="Main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,5,56,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a335f29c631ee21a0401cf538b0dfb0aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a335f29c631ee21a0401cf538b0dfb0aa">&#9670;&nbsp;</a></span>getLights()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;std::string, std::tuple&lt;float, float, float&gt; &gt; Parsing::getLights </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Parsing_8hpp_source.html#l00042">42</a> of file <a class="el" href="Parsing_8hpp_source.html">Parsing.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classParsing.html#abb0a8425d79167d24a5cb7aa8a8eee8a">_light</a>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        }</div>
+<div class="ttc" id="aclassParsing_html_abb0a8425d79167d24a5cb7aa8a8eee8a"><div class="ttname"><a href="classParsing.html#abb0a8425d79167d24a5cb7aa8a8eee8a">Parsing::_light</a></div><div class="ttdeci">std::map&lt; std::string, std::tuple&lt; float, float, float &gt; &gt; _light</div><div class="ttdef"><b>Definition:</b> <a href="Parsing_8hpp_source.html#l00054">Parsing.hpp:54</a></div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="classParsing.html#abb0a8425d79167d24a5cb7aa8a8eee8a">_light</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="classCore.html#a8c45134f4e917fb1e2aa2848697f376f">Core::assembleScene()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classParsing_a335f29c631ee21a0401cf538b0dfb0aa_icgraph.png" border="0" usemap="#aclassParsing_a335f29c631ee21a0401cf538b0dfb0aa_icgraph" alt=""/></div>
+<map name="aclassParsing_a335f29c631ee21a0401cf538b0dfb0aa_icgraph" id="aclassParsing_a335f29c631ee21a0401cf538b0dfb0aa_icgraph">
+<area shape="rect" title=" " alt="" coords="303,5,429,32"/>
+<area shape="rect" href="classCore.html#a8c45134f4e917fb1e2aa2848697f376f" title=" " alt="" coords="104,5,255,32"/>
+<area shape="rect" href="Main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,5,56,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa299c9cc408f2506f776a927ccef8ab1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa299c9cc408f2506f776a927ccef8ab1">&#9670;&nbsp;</a></span>getPrimitives()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="structPrimitive.html">Primitive</a>&gt; Parsing::getPrimitives </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Parsing_8hpp_source.html#l00038">38</a> of file <a class="el" href="Parsing_8hpp_source.html">Parsing.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classParsing.html#a23a289ceac61a47d123f9edc01507a96">_primitives</a>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        }</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="classParsing.html#a23a289ceac61a47d123f9edc01507a96">_primitives</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="classCore.html#a8c45134f4e917fb1e2aa2848697f376f">Core::assembleScene()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classParsing_aa299c9cc408f2506f776a927ccef8ab1_icgraph.png" border="0" usemap="#aclassParsing_aa299c9cc408f2506f776a927ccef8ab1_icgraph" alt=""/></div>
+<map name="aclassParsing_aa299c9cc408f2506f776a927ccef8ab1_icgraph" id="aclassParsing_aa299c9cc408f2506f776a927ccef8ab1_icgraph">
+<area shape="rect" title=" " alt="" coords="303,5,453,32"/>
+<area shape="rect" href="classCore.html#a8c45134f4e917fb1e2aa2848697f376f" title=" " alt="" coords="104,5,255,32"/>
+<area shape="rect" href="Main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,5,56,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4d3b19100818f4cbde291f91a5b4d117"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d3b19100818f4cbde291f91a5b4d117">&#9670;&nbsp;</a></span>parseCamera()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Parsing::parseCamera </td>
+          <td>(</td>
+          <td class="paramtype">libconfig::Setting &amp;&#160;</td>
+          <td class="paramname"><em>setting</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Parsing_8cpp_source.html#l00086">86</a> of file <a class="el" href="Parsing_8cpp_source.html">Parsing.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;{</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordtype">float</span> lf_x = camera[<span class="stringliteral">&quot;lookfrom&quot;</span>][<span class="stringliteral">&quot;x&quot;</span>];</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">float</span> lf_y = camera[<span class="stringliteral">&quot;lookfrom&quot;</span>][<span class="stringliteral">&quot;y&quot;</span>];</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordtype">float</span> lf_z = camera[<span class="stringliteral">&quot;lookfrom&quot;</span>][<span class="stringliteral">&quot;z&quot;</span>];</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordtype">float</span> la_x = camera[<span class="stringliteral">&quot;lookat&quot;</span>][<span class="stringliteral">&quot;x&quot;</span>];</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordtype">float</span> la_y = camera[<span class="stringliteral">&quot;lookat&quot;</span>][<span class="stringliteral">&quot;y&quot;</span>];</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordtype">float</span> la_z = camera[<span class="stringliteral">&quot;lookat&quot;</span>][<span class="stringliteral">&quot;z&quot;</span>];</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordtype">float</span> vup_x = camera[<span class="stringliteral">&quot;vup&quot;</span>][<span class="stringliteral">&quot;x&quot;</span>];</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordtype">float</span> vup_y = camera[<span class="stringliteral">&quot;vup&quot;</span>][<span class="stringliteral">&quot;y&quot;</span>];</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">float</span> vup_z = camera[<span class="stringliteral">&quot;vup&quot;</span>][<span class="stringliteral">&quot;z&quot;</span>];</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordtype">float</span> vfov = camera[<span class="stringliteral">&quot;vfov&quot;</span>][<span class="stringliteral">&quot;x&quot;</span>];</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">float</span> width = camera[<span class="stringliteral">&quot;width&quot;</span>][<span class="stringliteral">&quot;x&quot;</span>];</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordtype">float</span> height = camera[<span class="stringliteral">&quot;height&quot;</span>][<span class="stringliteral">&quot;x&quot;</span>];</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordtype">float</span> aspect = width / height;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordtype">float</span> aperture = camera[<span class="stringliteral">&quot;aperture&quot;</span>][<span class="stringliteral">&quot;x&quot;</span>];</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <a class="code" href="classParsing.html#a64a91adfbb9ea98881c342873fdfd488">_camera</a> = {</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        {<span class="stringliteral">&quot;lookfrom&quot;</span>, std::make_tuple(lf_x, lf_y, lf_z)},</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        {<span class="stringliteral">&quot;lookat&quot;</span>, std::make_tuple(la_x, la_y, la_z)},</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        {<span class="stringliteral">&quot;vup&quot;</span>, std::make_tuple(vup_x, vup_y, vup_z)},</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        {<span class="stringliteral">&quot;vfov&quot;</span>, std::make_tuple(vfov, 0, 0)},</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        {<span class="stringliteral">&quot;aspect&quot;</span>, std::make_tuple(aspect, 0, 0)},</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        {<span class="stringliteral">&quot;aperture&quot;</span>, std::make_tuple(aperture, 0, 0)}</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    };</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;}</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="classParsing.html#a64a91adfbb9ea98881c342873fdfd488">_camera</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="classParsing.html#aff2c6802b3204d215941cdadf97d77e4">Parsing()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classParsing_a4d3b19100818f4cbde291f91a5b4d117_icgraph.png" border="0" usemap="#aclassParsing_a4d3b19100818f4cbde291f91a5b4d117_icgraph" alt=""/></div>
+<map name="aclassParsing_a4d3b19100818f4cbde291f91a5b4d117_icgraph" id="aclassParsing_a4d3b19100818f4cbde291f91a5b4d117_icgraph">
+<area shape="rect" title=" " alt="" coords="172,5,324,32"/>
+<area shape="rect" href="classParsing.html#aff2c6802b3204d215941cdadf97d77e4" title=" " alt="" coords="5,5,124,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0f5be128288789100d5ed85b36023f79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f5be128288789100d5ed85b36023f79">&#9670;&nbsp;</a></span>parseLights()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Parsing::parseLights </td>
+          <td>(</td>
+          <td class="paramtype">libconfig::Setting &amp;&#160;</td>
+          <td class="paramname"><em>setting</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Parsing_8cpp_source.html#l00072">72</a> of file <a class="el" href="Parsing_8cpp_source.html">Parsing.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;{</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">float</span> l_x = light[<span class="stringliteral">&quot;position&quot;</span>][<span class="stringliteral">&quot;x&quot;</span>];</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">float</span> l_y = light[<span class="stringliteral">&quot;position&quot;</span>][<span class="stringliteral">&quot;y&quot;</span>];</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">float</span> l_z = light[<span class="stringliteral">&quot;position&quot;</span>][<span class="stringliteral">&quot;z&quot;</span>];</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">float</span> intensity = light[<span class="stringliteral">&quot;intensity&quot;</span>][<span class="stringliteral">&quot;x&quot;</span>];</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <a class="code" href="classParsing.html#abb0a8425d79167d24a5cb7aa8a8eee8a">_light</a> = {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        {<span class="stringliteral">&quot;position&quot;</span>, std::make_tuple(l_x, l_y, l_z)},</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        {<span class="stringliteral">&quot;intensity&quot;</span>, std::make_tuple(intensity, 0, 0)}</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    };</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="classParsing.html#abb0a8425d79167d24a5cb7aa8a8eee8a">_light</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="classParsing.html#aff2c6802b3204d215941cdadf97d77e4">Parsing()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classParsing_a0f5be128288789100d5ed85b36023f79_icgraph.png" border="0" usemap="#aclassParsing_a0f5be128288789100d5ed85b36023f79_icgraph" alt=""/></div>
+<map name="aclassParsing_a0f5be128288789100d5ed85b36023f79_icgraph" id="aclassParsing_a0f5be128288789100d5ed85b36023f79_icgraph">
+<area shape="rect" title=" " alt="" coords="172,5,313,32"/>
+<area shape="rect" href="classParsing.html#aff2c6802b3204d215941cdadf97d77e4" title=" " alt="" coords="5,5,124,32"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="aa3336c05be6cece06abb7760795ea4aa"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa3336c05be6cece06abb7760795ea4aa">&#9670;&nbsp;</a></span>parsePrimitives()</h2>
 
@@ -132,11 +474,200 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>parseCamera</b> (libc
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Description de ce que retourne la fonction. </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="Parsing_8cpp_source.html#l00038">38</a> of file <a class="el" href="Parsing_8cpp_source.html">Parsing.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; setting.getLength(); ++i) {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <a class="code" href="structPrimitive.html">Primitive</a> p;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        p.<a class="code" href="structPrimitive.html#ae6fd23d8e8b9e1e3876c269f820d5aa2">type</a> = type;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        libconfig::Setting &amp;primitive = setting[i];</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordflow">if</span> (type == <span class="stringliteral">&quot;plane&quot;</span>) {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            primitive[<span class="stringliteral">&quot;first&quot;</span>].lookupValue(<span class="stringliteral">&quot;x&quot;</span>, p.<a class="code" href="structPrimitive.html#aa6696369bc5d3c40f15e750401f964ff">points</a>[0].<a class="code" href="structvec3.html#a4ee2cfd5c2698031a47ab7f898d8d47b">x</a>);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            primitive[<span class="stringliteral">&quot;first&quot;</span>].lookupValue(<span class="stringliteral">&quot;y&quot;</span>, p.<a class="code" href="structPrimitive.html#aa6696369bc5d3c40f15e750401f964ff">points</a>[0].<a class="code" href="structvec3.html#a891379795a14c80936cde4170239a138">y</a>);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            primitive[<span class="stringliteral">&quot;first&quot;</span>].lookupValue(<span class="stringliteral">&quot;z&quot;</span>, p.<a class="code" href="structPrimitive.html#aa6696369bc5d3c40f15e750401f964ff">points</a>[0].<a class="code" href="structvec3.html#aa76213efcc5d656cc14b71db80a92162">z</a>);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            primitive[<span class="stringliteral">&quot;second&quot;</span>].lookupValue(<span class="stringliteral">&quot;x&quot;</span>, p.<a class="code" href="structPrimitive.html#aa6696369bc5d3c40f15e750401f964ff">points</a>[1].<a class="code" href="structvec3.html#a4ee2cfd5c2698031a47ab7f898d8d47b">x</a>);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            primitive[<span class="stringliteral">&quot;second&quot;</span>].lookupValue(<span class="stringliteral">&quot;y&quot;</span>, p.<a class="code" href="structPrimitive.html#aa6696369bc5d3c40f15e750401f964ff">points</a>[1].<a class="code" href="structvec3.html#a891379795a14c80936cde4170239a138">y</a>);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            primitive[<span class="stringliteral">&quot;second&quot;</span>].lookupValue(<span class="stringliteral">&quot;z&quot;</span>, p.<a class="code" href="structPrimitive.html#aa6696369bc5d3c40f15e750401f964ff">points</a>[1].<a class="code" href="structvec3.html#aa76213efcc5d656cc14b71db80a92162">z</a>);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (type == <span class="stringliteral">&quot;sphere&quot;</span>) {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            primitive[<span class="stringliteral">&quot;center&quot;</span>].lookupValue(<span class="stringliteral">&quot;x&quot;</span>, p.<a class="code" href="structPrimitive.html#aa6696369bc5d3c40f15e750401f964ff">points</a>[0].<a class="code" href="structvec3.html#a4ee2cfd5c2698031a47ab7f898d8d47b">x</a>);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            primitive[<span class="stringliteral">&quot;center&quot;</span>].lookupValue(<span class="stringliteral">&quot;y&quot;</span>, p.<a class="code" href="structPrimitive.html#aa6696369bc5d3c40f15e750401f964ff">points</a>[0].<a class="code" href="structvec3.html#a891379795a14c80936cde4170239a138">y</a>);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            primitive[<span class="stringliteral">&quot;center&quot;</span>].lookupValue(<span class="stringliteral">&quot;z&quot;</span>, p.<a class="code" href="structPrimitive.html#aa6696369bc5d3c40f15e750401f964ff">points</a>[0].<a class="code" href="structvec3.html#aa76213efcc5d656cc14b71db80a92162">z</a>);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            primitive[<span class="stringliteral">&quot;radius&quot;</span>].lookupValue(<span class="stringliteral">&quot;x&quot;</span>, p.<a class="code" href="structPrimitive.html#aa6696369bc5d3c40f15e750401f964ff">points</a>[1].<a class="code" href="structvec3.html#a4ee2cfd5c2698031a47ab7f898d8d47b">x</a>);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            primitive[<span class="stringliteral">&quot;radius&quot;</span>].lookupValue(<span class="stringliteral">&quot;y&quot;</span>, p.<a class="code" href="structPrimitive.html#aa6696369bc5d3c40f15e750401f964ff">points</a>[1].<a class="code" href="structvec3.html#a891379795a14c80936cde4170239a138">y</a>);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            primitive[<span class="stringliteral">&quot;radius&quot;</span>].lookupValue(<span class="stringliteral">&quot;z&quot;</span>, p.<a class="code" href="structPrimitive.html#aa6696369bc5d3c40f15e750401f964ff">points</a>[1].<a class="code" href="structvec3.html#aa76213efcc5d656cc14b71db80a92162">z</a>);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        libconfig::Setting&amp; mat = primitive[<span class="stringliteral">&quot;material&quot;</span>];</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        mat.lookupValue(<span class="stringliteral">&quot;type&quot;</span>, p.<a class="code" href="structPrimitive.html#a48f8a9cd62efbe65c101877fd886b74c">material</a>.<a class="code" href="structMaterial.html#a97efb5b3df1f11c422a82ab94535060a">type</a>);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        mat[<span class="stringliteral">&quot;vec&quot;</span>].lookupValue(<span class="stringliteral">&quot;x&quot;</span>, p.<a class="code" href="structPrimitive.html#a48f8a9cd62efbe65c101877fd886b74c">material</a>.<a class="code" href="structMaterial.html#a6098f8aa6c0e4b87131d872b8bf80d02">vec</a>.<a class="code" href="structvec3.html#a4ee2cfd5c2698031a47ab7f898d8d47b">x</a>);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        mat[<span class="stringliteral">&quot;vec&quot;</span>].lookupValue(<span class="stringliteral">&quot;y&quot;</span>, p.<a class="code" href="structPrimitive.html#a48f8a9cd62efbe65c101877fd886b74c">material</a>.<a class="code" href="structMaterial.html#a6098f8aa6c0e4b87131d872b8bf80d02">vec</a>.<a class="code" href="structvec3.html#a891379795a14c80936cde4170239a138">y</a>);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        mat[<span class="stringliteral">&quot;vec&quot;</span>].lookupValue(<span class="stringliteral">&quot;z&quot;</span>, p.<a class="code" href="structPrimitive.html#a48f8a9cd62efbe65c101877fd886b74c">material</a>.<a class="code" href="structMaterial.html#a6098f8aa6c0e4b87131d872b8bf80d02">vec</a>.<a class="code" href="structvec3.html#aa76213efcc5d656cc14b71db80a92162">z</a>);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordflow">if</span> (p.<a class="code" href="structPrimitive.html#a48f8a9cd62efbe65c101877fd886b74c">material</a>.<a class="code" href="structMaterial.html#a97efb5b3df1f11c422a82ab94535060a">type</a> == <span class="stringliteral">&quot;metal&quot;</span>)</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            mat[<span class="stringliteral">&quot;fuzz&quot;</span>].lookupValue(<span class="stringliteral">&quot;x&quot;</span>, p.<a class="code" href="structPrimitive.html#a48f8a9cd62efbe65c101877fd886b74c">material</a>.<a class="code" href="structMaterial.html#ad36f80852a33b4e7771a006c04eb2783">fuzz</a>);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordflow">if</span> (p.<a class="code" href="structPrimitive.html#a48f8a9cd62efbe65c101877fd886b74c">material</a>.<a class="code" href="structMaterial.html#a97efb5b3df1f11c422a82ab94535060a">type</a> == <span class="stringliteral">&quot;dielectric&quot;</span>)</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            mat[<span class="stringliteral">&quot;ref_idx&quot;</span>].lookupValue(<span class="stringliteral">&quot;x&quot;</span>, p.<a class="code" href="structPrimitive.html#a48f8a9cd62efbe65c101877fd886b74c">material</a>.<a class="code" href="structMaterial.html#ac5f4cf0536ae22ec466f301fa2caeb61">ref_idx</a>);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <a class="code" href="classParsing.html#a23a289ceac61a47d123f9edc01507a96">_primitives</a>.push_back(p);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    }</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div>
+<div class="ttc" id="astructMaterial_html_a6098f8aa6c0e4b87131d872b8bf80d02"><div class="ttname"><a href="structMaterial.html#a6098f8aa6c0e4b87131d872b8bf80d02">Material::vec</a></div><div class="ttdeci">vec3 vec</div><div class="ttdef"><b>Definition:</b> <a href="Parsing_8hpp_source.html#l00019">Parsing.hpp:19</a></div></div>
+<div class="ttc" id="astructMaterial_html_a97efb5b3df1f11c422a82ab94535060a"><div class="ttname"><a href="structMaterial.html#a97efb5b3df1f11c422a82ab94535060a">Material::type</a></div><div class="ttdeci">std::string type</div><div class="ttdef"><b>Definition:</b> <a href="Parsing_8hpp_source.html#l00018">Parsing.hpp:18</a></div></div>
+<div class="ttc" id="astructMaterial_html_ac5f4cf0536ae22ec466f301fa2caeb61"><div class="ttname"><a href="structMaterial.html#ac5f4cf0536ae22ec466f301fa2caeb61">Material::ref_idx</a></div><div class="ttdeci">float ref_idx</div><div class="ttdef"><b>Definition:</b> <a href="Parsing_8hpp_source.html#l00021">Parsing.hpp:21</a></div></div>
+<div class="ttc" id="astructMaterial_html_ad36f80852a33b4e7771a006c04eb2783"><div class="ttname"><a href="structMaterial.html#ad36f80852a33b4e7771a006c04eb2783">Material::fuzz</a></div><div class="ttdeci">float fuzz</div><div class="ttdef"><b>Definition:</b> <a href="Parsing_8hpp_source.html#l00020">Parsing.hpp:20</a></div></div>
+<div class="ttc" id="astructPrimitive_html"><div class="ttname"><a href="structPrimitive.html">Primitive</a></div><div class="ttdef"><b>Definition:</b> <a href="Parsing_8hpp_source.html#l00024">Parsing.hpp:24</a></div></div>
+<div class="ttc" id="astructPrimitive_html_a48f8a9cd62efbe65c101877fd886b74c"><div class="ttname"><a href="structPrimitive.html#a48f8a9cd62efbe65c101877fd886b74c">Primitive::material</a></div><div class="ttdeci">Material material</div><div class="ttdef"><b>Definition:</b> <a href="Parsing_8hpp_source.html#l00027">Parsing.hpp:27</a></div></div>
+<div class="ttc" id="astructPrimitive_html_aa6696369bc5d3c40f15e750401f964ff"><div class="ttname"><a href="structPrimitive.html#aa6696369bc5d3c40f15e750401f964ff">Primitive::points</a></div><div class="ttdeci">vec3 points[2]</div><div class="ttdef"><b>Definition:</b> <a href="Parsing_8hpp_source.html#l00026">Parsing.hpp:26</a></div></div>
+<div class="ttc" id="astructPrimitive_html_ae6fd23d8e8b9e1e3876c269f820d5aa2"><div class="ttname"><a href="structPrimitive.html#ae6fd23d8e8b9e1e3876c269f820d5aa2">Primitive::type</a></div><div class="ttdeci">std::string type</div><div class="ttdef"><b>Definition:</b> <a href="Parsing_8hpp_source.html#l00025">Parsing.hpp:25</a></div></div>
+<div class="ttc" id="astructvec3_html_a4ee2cfd5c2698031a47ab7f898d8d47b"><div class="ttname"><a href="structvec3.html#a4ee2cfd5c2698031a47ab7f898d8d47b">vec3::x</a></div><div class="ttdeci">float x</div><div class="ttdef"><b>Definition:</b> <a href="Parsing_8hpp_source.html#l00014">Parsing.hpp:14</a></div></div>
+<div class="ttc" id="astructvec3_html_a891379795a14c80936cde4170239a138"><div class="ttname"><a href="structvec3.html#a891379795a14c80936cde4170239a138">vec3::y</a></div><div class="ttdeci">float y</div><div class="ttdef"><b>Definition:</b> <a href="Parsing_8hpp_source.html#l00014">Parsing.hpp:14</a></div></div>
+<div class="ttc" id="astructvec3_html_aa76213efcc5d656cc14b71db80a92162"><div class="ttname"><a href="structvec3.html#aa76213efcc5d656cc14b71db80a92162">vec3::z</a></div><div class="ttdeci">float z</div><div class="ttdef"><b>Definition:</b> <a href="Parsing_8hpp_source.html#l00014">Parsing.hpp:14</a></div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="classParsing.html#a23a289ceac61a47d123f9edc01507a96">_primitives</a>, <a class="el" href="structMaterial.html#ad36f80852a33b4e7771a006c04eb2783">Material::fuzz</a>, <a class="el" href="structPrimitive.html#a48f8a9cd62efbe65c101877fd886b74c">Primitive::material</a>, <a class="el" href="structPrimitive.html#aa6696369bc5d3c40f15e750401f964ff">Primitive::points</a>, <a class="el" href="structMaterial.html#ac5f4cf0536ae22ec466f301fa2caeb61">Material::ref_idx</a>, <a class="el" href="structMaterial.html#a97efb5b3df1f11c422a82ab94535060a">Material::type</a>, <a class="el" href="structPrimitive.html#ae6fd23d8e8b9e1e3876c269f820d5aa2">Primitive::type</a>, <a class="el" href="structMaterial.html#a6098f8aa6c0e4b87131d872b8bf80d02">Material::vec</a>, <a class="el" href="structvec3.html#a4ee2cfd5c2698031a47ab7f898d8d47b">vec3::x</a>, <a class="el" href="structvec3.html#a891379795a14c80936cde4170239a138">vec3::y</a>, and <a class="el" href="structvec3.html#aa76213efcc5d656cc14b71db80a92162">vec3::z</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="classParsing.html#aff2c6802b3204d215941cdadf97d77e4">Parsing()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classParsing_aa3336c05be6cece06abb7760795ea4aa_icgraph.png" border="0" usemap="#aclassParsing_aa3336c05be6cece06abb7760795ea4aa_icgraph" alt=""/></div>
+<map name="aclassParsing_aa3336c05be6cece06abb7760795ea4aa_icgraph" id="aclassParsing_aa3336c05be6cece06abb7760795ea4aa_icgraph">
+<area shape="rect" title="Parse the primitive settings from the config file." alt="" coords="172,5,336,32"/>
+<area shape="rect" href="classParsing.html#aff2c6802b3204d215941cdadf97d77e4" title=" " alt="" coords="5,5,124,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a64a91adfbb9ea98881c342873fdfd488"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64a91adfbb9ea98881c342873fdfd488">&#9670;&nbsp;</a></span>_camera</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;std::string, std::tuple&lt;float, float, float&gt; &gt; Parsing::_camera</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Parsing_8hpp_source.html#l00055">55</a> of file <a class="el" href="Parsing_8hpp_source.html">Parsing.hpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="classParsing.html#a24ca4a26190d71a0f8d48d0f62aa2ea1">GetCamera()</a>, and <a class="el" href="classParsing.html#a4d3b19100818f4cbde291f91a5b4d117">parseCamera()</a>.</p>
+
+</div>
+</div>
+<a id="ac10badc57d51576be95ccacc8ecea5f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac10badc57d51576be95ccacc8ecea5f6">&#9670;&nbsp;</a></span>_cfg</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">libconfig::Config Parsing::_cfg</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Parsing_8hpp_source.html#l00053">53</a> of file <a class="el" href="Parsing_8hpp_source.html">Parsing.hpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="classParsing.html#aff2c6802b3204d215941cdadf97d77e4">Parsing()</a>.</p>
+
+</div>
+</div>
+<a id="a73967203f5001fb32627a330d954e2b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73967203f5001fb32627a330d954e2b5">&#9670;&nbsp;</a></span>_filePath</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string&amp; Parsing::_filePath</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Parsing_8hpp_source.html#l00052">52</a> of file <a class="el" href="Parsing_8hpp_source.html">Parsing.hpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="classParsing.html#aff2c6802b3204d215941cdadf97d77e4">Parsing()</a>.</p>
+
+</div>
+</div>
+<a id="abb0a8425d79167d24a5cb7aa8a8eee8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb0a8425d79167d24a5cb7aa8a8eee8a">&#9670;&nbsp;</a></span>_light</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;std::string, std::tuple&lt;float, float, float&gt; &gt; Parsing::_light</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Parsing_8hpp_source.html#l00054">54</a> of file <a class="el" href="Parsing_8hpp_source.html">Parsing.hpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="classParsing.html#a335f29c631ee21a0401cf538b0dfb0aa">getLights()</a>, and <a class="el" href="classParsing.html#a0f5be128288789100d5ed85b36023f79">parseLights()</a>.</p>
+
+</div>
+</div>
+<a id="a23a289ceac61a47d123f9edc01507a96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23a289ceac61a47d123f9edc01507a96">&#9670;&nbsp;</a></span>_primitives</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="structPrimitive.html">Primitive</a>&gt; Parsing::_primitives</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Parsing_8hpp_source.html#l00056">56</a> of file <a class="el" href="Parsing_8hpp_source.html">Parsing.hpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="classParsing.html#aa299c9cc408f2506f776a927ccef8ab1">getPrimitives()</a>, <a class="el" href="classParsing.html#aa3336c05be6cece06abb7760795ea4aa">parsePrimitives()</a>, and <a class="el" href="classParsing.html#aff2c6802b3204d215941cdadf97d77e4">Parsing()</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>src/Parsing/<a class="el" href="Parsing_8hpp_source.html">Parsing.hpp</a></li>
-<li>src/Parsing/Parsing.cpp</li>
+<li>src/Parsing/<a class="el" href="Parsing_8cpp_source.html">Parsing.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

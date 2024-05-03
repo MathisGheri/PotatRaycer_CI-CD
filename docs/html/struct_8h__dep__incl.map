@@ -1,0 +1,23 @@
+<map id="src/struct.h" name="src/struct.h">
+<area shape="rect" id="node1" title=" " alt="" coords="719,5,807,32"/>
+<area shape="rect" id="node2" href="$IMaterial_8hpp.html" title=" " alt="" coords="406,251,582,278"/>
+<area shape="rect" id="node12" href="$IHitable_8hpp.html" title=" " alt="" coords="675,80,851,107"/>
+<area shape="rect" id="node13" href="$Plane_8hpp.html" title=" " alt="" coords="810,155,949,196"/>
+<area shape="rect" id="node3" href="$SceneBuilder_8cpp.html" title="Implementation of the builder class to create scenes." alt="" coords="533,430,724,457"/>
+<area shape="rect" id="node4" href="$Dielectric_8hpp.html" title=" " alt="" coords="5,333,161,375"/>
+<area shape="rect" id="node6" href="$Lambertian_8hpp.html" title=" " alt="" coords="186,333,351,375"/>
+<area shape="rect" id="node8" href="$Metal_8hpp.html" title=" " alt="" coords="375,333,509,375"/>
+<area shape="rect" id="node10" href="$Sphere_8hpp.html" title=" " alt="" coords="583,333,730,375"/>
+<area shape="rect" id="node5" href="$Dielectric_8cpp.html" title=" " alt="" coords="5,423,161,464"/>
+<area shape="rect" id="node7" href="$Lambertian_8cpp.html" title=" " alt="" coords="186,423,351,464"/>
+<area shape="rect" id="node9" href="$Metal_8cpp.html" title=" " alt="" coords="375,423,509,464"/>
+<area shape="rect" id="node11" href="$Sphere_8cpp.html" title=" " alt="" coords="749,423,895,464"/>
+<area shape="rect" id="node15" href="$Scene_8hpp.html" title=" " alt="" coords="1107,162,1254,189"/>
+<area shape="rect" id="node14" href="$Plane_8cpp.html" title=" " alt="" coords="855,244,994,285"/>
+<area shape="rect" id="node16" href="$IBuilder_8hpp.html" title="Interface for Builders used in the PotatRaycer project." alt="" coords="1018,251,1175,278"/>
+<area shape="rect" id="node19" href="$Core_8hpp.html" title=" " alt="" coords="1200,251,1329,278"/>
+<area shape="rect" id="node21" href="$Scene_8cpp.html" title=" " alt="" coords="1354,251,1501,278"/>
+<area shape="rect" id="node17" href="$SceneBuilder_8hpp.html" title="Builder class for constructing scenes." alt="" coords="976,341,1167,367"/>
+<area shape="rect" id="node18" href="$Core_8cpp.html" title=" " alt="" coords="1073,430,1203,457"/>
+<area shape="rect" id="node20" href="$Main_8cpp.html" title=" " alt="" coords="1243,341,1340,367"/>
+</map>

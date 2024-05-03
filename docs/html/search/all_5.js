@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['material_9',['Material',['../structMaterial.html',1,'']]],
-  ['metal_10',['Metal',['../classMetal.html',1,'']]]
+  ['e_32',['e',['../classVec3.html#a1b3ca5fb648ed6dbc8cd82fa154f9657',1,'Vec3']]]
 ];

@@ -24,7 +24,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PotatRaycer
    </div>
-   <div id="projectbrief">A simple raytracer written in C++</div>
+   <div id="projectbrief">A simple raytracer in c++</div>
   </td>
  </tr>
  </tbody>
@@ -70,23 +70,78 @@ $(function() {
 <div class="title">IHitable Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="IHitable_8hpp_source.html">IHitable.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for IHitable:</div>
 <div class="dyncontent">
- <div class="center">
-  <img src="classIHitable.png" usemap="#IHitable_map" alt=""/>
-  <map id="IHitable_map" name="IHitable_map">
-<area href="classPlane.html" alt="Plane" shape="rect" coords="0,56,54,80"/>
-<area href="classSphere.html" alt="Sphere" shape="rect" coords="64,56,118,80"/>
-  </map>
-</div></div>
+<div class="center"><img src="classIHitable__inherit__graph.png" border="0" usemap="#aIHitable_inherit__map" alt="Inheritance graph"/></div>
+<map name="aIHitable_inherit__map" id="aIHitable_inherit__map">
+<area shape="rect" title=" " alt="" coords="41,5,107,32"/>
+<area shape="rect" href="classPlane.html" title=" " alt="" coords="5,80,60,107"/>
+<area shape="rect" href="classSphere.html" title=" " alt="" coords="84,80,147,107"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af3d1a57560db315edd6e140b68e1cd9e"><td class="memItemLeft" align="right" valign="top"><a id="af3d1a57560db315edd6e140b68e1cd9e"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>hit</b> (const <a class="el" href="classRay.html">Ray</a> &amp;r, float t_min, float t_max, <a class="el" href="structhit__record__s.html">hit_record_t</a> &amp;rec) const =0</td></tr>
+<tr class="memitem:af3d1a57560db315edd6e140b68e1cd9e"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIHitable.html#af3d1a57560db315edd6e140b68e1cd9e">hit</a> (const <a class="el" href="classRay.html">Ray</a> &amp;r, float t_min, float t_max, <a class="el" href="struct_8h.html#aaf145a045b8acf3bedf3be121d64e390">hit_record_t</a> &amp;rec) const =0</td></tr>
 <tr class="separator:af3d1a57560db315edd6e140b68e1cd9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="IHitable_8hpp_source.html#l00016">16</a> of file <a class="el" href="IHitable_8hpp_source.html">IHitable.hpp</a>.</p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="af3d1a57560db315edd6e140b68e1cd9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3d1a57560db315edd6e140b68e1cd9e">&#9670;&nbsp;</a></span>hit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool IHitable::hit </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classRay.html">Ray</a> &amp;&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>t_min</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>t_max</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_8h.html#aaf145a045b8acf3bedf3be121d64e390">hit_record_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>rec</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classPlane.html#afa5a29728b158729621e08a673dd9d26">Plane</a>, and <a class="el" href="classSphere.html#ada19fc64131c5549dc6edffe4e4123ed">Sphere</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>src/Primitives/<a class="el" href="IHitable_8hpp_source.html">IHitable.hpp</a></li>
 </ul>

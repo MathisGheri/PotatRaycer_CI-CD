@@ -1,0 +1,8 @@
+<map id="src/Parsing/Parsing.hpp" name="src/Parsing/Parsing.hpp">
+<area shape="rect" id="node1" title=" " alt="" coords="204,5,365,32"/>
+<area shape="rect" id="node2" href="$IBuilder_8hpp.html" title="Interface for Builders used in the PotatRaycer project." alt="" coords="82,80,239,107"/>
+<area shape="rect" id="node5" href="$Core_8cpp.html" title=" " alt="" coords="220,229,349,256"/>
+<area shape="rect" id="node6" href="$Parsing_8cpp.html" title=" " alt="" coords="323,80,484,107"/>
+<area shape="rect" id="node3" href="$SceneBuilder_8hpp.html" title="Builder class for constructing scenes." alt="" coords="56,155,247,181"/>
+<area shape="rect" id="node4" href="$SceneBuilder_8cpp.html" title="Implementation of the builder class to create scenes." alt="" coords="5,229,196,256"/>
+</map>

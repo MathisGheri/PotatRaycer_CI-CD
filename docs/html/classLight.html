@@ -24,7 +24,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PotatRaycer
    </div>
-   <div id="projectbrief">A simple raytracer written in C++</div>
+   <div id="projectbrief">A simple raytracer in c++</div>
   </td>
  </tr>
  </tbody>
@@ -65,30 +65,243 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classLight-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Light Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="Light_8hpp_source.html">Light.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for Light:</div>
+<div class="dyncontent">
+<div class="center"><img src="classLight__coll__graph.png" border="0" usemap="#aLight_coll__map" alt="Collaboration graph"/></div>
+<map name="aLight_coll__map" id="aLight_coll__map">
+<area shape="rect" title=" " alt="" coords="5,95,56,121"/>
+<area shape="rect" href="classVec3.html" title=" " alt="" coords="5,5,56,32"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6a284ddff9d8416f89f3695964b2abbe"><td class="memItemLeft" align="right" valign="top"><a id="a6a284ddff9d8416f89f3695964b2abbe"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Light</b> (const <a class="el" href="classVec3.html">Vec3</a> &amp;pos, float intensity)</td></tr>
+<tr class="memitem:a6a284ddff9d8416f89f3695964b2abbe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLight.html#a6a284ddff9d8416f89f3695964b2abbe">Light</a> (const <a class="el" href="classVec3.html">Vec3</a> &amp;pos, float <a class="el" href="classLight.html#a1071eaa556f4bb2a9345fdfba7e6f220">intensity</a>)</td></tr>
 <tr class="separator:a6a284ddff9d8416f89f3695964b2abbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8da620ced80e8b8ff2f689d94ba83d1"><td class="memItemLeft" align="right" valign="top"><a id="ac8da620ced80e8b8ff2f689d94ba83d1"></a>
-<a class="el" href="classVec3.html">Vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getPosition</b> () const</td></tr>
+<tr class="memitem:ad0e59fad13bb6cfadc25b2c477e9ddc7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLight.html#ad0e59fad13bb6cfadc25b2c477e9ddc7">~Light</a> ()</td></tr>
+<tr class="separator:ad0e59fad13bb6cfadc25b2c477e9ddc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8da620ced80e8b8ff2f689d94ba83d1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVec3.html">Vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLight.html#ac8da620ced80e8b8ff2f689d94ba83d1">getPosition</a> () const</td></tr>
 <tr class="separator:ac8da620ced80e8b8ff2f689d94ba83d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68adeebbc8b6806213a0a7454251bb02"><td class="memItemLeft" align="right" valign="top"><a id="a68adeebbc8b6806213a0a7454251bb02"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>getIntensity</b> () const</td></tr>
+<tr class="memitem:a68adeebbc8b6806213a0a7454251bb02"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLight.html#a68adeebbc8b6806213a0a7454251bb02">getIntensity</a> () const</td></tr>
 <tr class="separator:a68adeebbc8b6806213a0a7454251bb02"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1b6f563eab8f1c7d552e73e78a22686"><td class="memItemLeft" align="right" valign="top"><a id="ad1b6f563eab8f1c7d552e73e78a22686"></a>
-<a class="el" href="classVec3.html">Vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><b>calculateLightDirection</b> (const <a class="el" href="classVec3.html">Vec3</a> &amp;point) const</td></tr>
+<tr class="memitem:ad1b6f563eab8f1c7d552e73e78a22686"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVec3.html">Vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLight.html#ad1b6f563eab8f1c7d552e73e78a22686">calculateLightDirection</a> (const <a class="el" href="classVec3.html">Vec3</a> &amp;point) const</td></tr>
 <tr class="separator:ad1b6f563eab8f1c7d552e73e78a22686"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a6e8f7d2f1e8e8367763265abd6ce0947"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVec3.html">Vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLight.html#a6e8f7d2f1e8e8367763265abd6ce0947">position</a></td></tr>
+<tr class="separator:a6e8f7d2f1e8e8367763265abd6ce0947"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1071eaa556f4bb2a9345fdfba7e6f220"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLight.html#a1071eaa556f4bb2a9345fdfba7e6f220">intensity</a></td></tr>
+<tr class="separator:a1071eaa556f4bb2a9345fdfba7e6f220"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="Light_8hpp_source.html#l00014">14</a> of file <a class="el" href="Light_8hpp_source.html">Light.hpp</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a6a284ddff9d8416f89f3695964b2abbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a284ddff9d8416f89f3695964b2abbe">&#9670;&nbsp;</a></span>Light()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Light::Light </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classVec3.html">Vec3</a> &amp;&#160;</td>
+          <td class="paramname"><em>pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>intensity</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Light_8cpp_source.html#l00010">10</a> of file <a class="el" href="Light_8cpp_source.html">Light.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;: <a class="code" href="classLight.html#a6e8f7d2f1e8e8367763265abd6ce0947">position</a>(pos), <a class="code" href="classLight.html#a1071eaa556f4bb2a9345fdfba7e6f220">intensity</a>(<a class="code" href="classLight.html#a1071eaa556f4bb2a9345fdfba7e6f220">intensity</a>) {}</div>
+<div class="ttc" id="aclassLight_html_a1071eaa556f4bb2a9345fdfba7e6f220"><div class="ttname"><a href="classLight.html#a1071eaa556f4bb2a9345fdfba7e6f220">Light::intensity</a></div><div class="ttdeci">float intensity</div><div class="ttdef"><b>Definition:</b> <a href="Light_8hpp_source.html#l00023">Light.hpp:23</a></div></div>
+<div class="ttc" id="aclassLight_html_a6e8f7d2f1e8e8367763265abd6ce0947"><div class="ttname"><a href="classLight.html#a6e8f7d2f1e8e8367763265abd6ce0947">Light::position</a></div><div class="ttdeci">Vec3 position</div><div class="ttdef"><b>Definition:</b> <a href="Light_8hpp_source.html#l00022">Light.hpp:22</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ad0e59fad13bb6cfadc25b2c477e9ddc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0e59fad13bb6cfadc25b2c477e9ddc7">&#9670;&nbsp;</a></span>~Light()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Light::~Light </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Light_8cpp_source.html#l00012">12</a> of file <a class="el" href="Light_8cpp_source.html">Light.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ad1b6f563eab8f1c7d552e73e78a22686"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1b6f563eab8f1c7d552e73e78a22686">&#9670;&nbsp;</a></span>calculateLightDirection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classVec3.html">Vec3</a> Light::calculateLightDirection </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classVec3.html">Vec3</a> &amp;&#160;</td>
+          <td class="paramname"><em>point</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Light_8cpp_source.html#l00026">26</a> of file <a class="el" href="Light_8cpp_source.html">Light.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="Vec3_8hpp.html#a288c446d78e98483daf812cfb32d2f21">unit_vector</a>(<a class="code" href="classLight.html#a6e8f7d2f1e8e8367763265abd6ce0947">position</a> - point);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
+<div class="ttc" id="aVec3_8hpp_html_a288c446d78e98483daf812cfb32d2f21"><div class="ttname"><a href="Vec3_8hpp.html#a288c446d78e98483daf812cfb32d2f21">unit_vector</a></div><div class="ttdeci">Vec3 unit_vector(Vec3 v)</div><div class="ttdef"><b>Definition:</b> <a href="Vec3_8hpp_source.html#l00126">Vec3.hpp:126</a></div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="classLight.html#a6e8f7d2f1e8e8367763265abd6ce0947">position</a>, and <a class="el" href="Vec3_8hpp.html#a288c446d78e98483daf812cfb32d2f21">unit_vector()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classLight_ad1b6f563eab8f1c7d552e73e78a22686_cgraph.png" border="0" usemap="#aclassLight_ad1b6f563eab8f1c7d552e73e78a22686_cgraph" alt=""/></div>
+<map name="aclassLight_ad1b6f563eab8f1c7d552e73e78a22686_cgraph" id="aclassLight_ad1b6f563eab8f1c7d552e73e78a22686_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,196,32"/>
+<area shape="rect" href="Vec3_8hpp.html#a288c446d78e98483daf812cfb32d2f21" title=" " alt="" coords="244,5,331,32"/>
+<area shape="rect" href="classVec3.html#a54be9143adb871a478ea3de19ca23f3b" title=" " alt="" coords="379,5,473,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a68adeebbc8b6806213a0a7454251bb02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68adeebbc8b6806213a0a7454251bb02">&#9670;&nbsp;</a></span>getIntensity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Light::getIntensity </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Light_8cpp_source.html#l00021">21</a> of file <a class="el" href="Light_8cpp_source.html">Light.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classLight.html#a1071eaa556f4bb2a9345fdfba7e6f220">intensity</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="classLight.html#a1071eaa556f4bb2a9345fdfba7e6f220">intensity</a>.</p>
+
+</div>
+</div>
+<a id="ac8da620ced80e8b8ff2f689d94ba83d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8da620ced80e8b8ff2f689d94ba83d1">&#9670;&nbsp;</a></span>getPosition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classVec3.html">Vec3</a> Light::getPosition </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Light_8cpp_source.html#l00016">16</a> of file <a class="el" href="Light_8cpp_source.html">Light.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classLight.html#a6e8f7d2f1e8e8367763265abd6ce0947">position</a>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="classLight.html#a6e8f7d2f1e8e8367763265abd6ce0947">position</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a1071eaa556f4bb2a9345fdfba7e6f220"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1071eaa556f4bb2a9345fdfba7e6f220">&#9670;&nbsp;</a></span>intensity</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Light::intensity</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Light_8hpp_source.html#l00023">23</a> of file <a class="el" href="Light_8hpp_source.html">Light.hpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="classLight.html#a68adeebbc8b6806213a0a7454251bb02">getIntensity()</a>.</p>
+
+</div>
+</div>
+<a id="a6e8f7d2f1e8e8367763265abd6ce0947"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e8f7d2f1e8e8367763265abd6ce0947">&#9670;&nbsp;</a></span>position</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classVec3.html">Vec3</a> Light::position</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Light_8hpp_source.html#l00022">22</a> of file <a class="el" href="Light_8hpp_source.html">Light.hpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="classLight.html#ad1b6f563eab8f1c7d552e73e78a22686">calculateLightDirection()</a>, and <a class="el" href="classLight.html#ac8da620ced80e8b8ff2f689d94ba83d1">getPosition()</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>src/Light/<a class="el" href="Light_8hpp_source.html">Light.hpp</a></li>
-<li>src/Light/Light.cpp</li>
+<li>src/Light/<a class="el" href="Light_8cpp_source.html">Light.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

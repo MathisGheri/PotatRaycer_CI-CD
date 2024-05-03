@@ -1,0 +1,11 @@
+<map id="dot" name="dot">
+<area shape="rect" id="node1" title=" " alt="" coords="368,157,408,184"/>
+<area shape="rect" id="node2" href="$classSphere.html#ada19fc64131c5549dc6edffe4e4123ed" title=" " alt="" coords="207,5,292,32"/>
+<area shape="rect" id="node3" href="$classPlane.html#afa5a29728b158729621e08a673dd9d26" title=" " alt="" coords="211,56,288,83"/>
+<area shape="rect" id="node4" href="$Vec3_8hpp.html#aad4a2094d505ab19ae9d1d1051428443" title=" " alt="" coords="179,107,320,133"/>
+<area shape="rect" id="node6" href="$Vec3_8hpp.html#a43e74e58464123290e65b93de83ebe0e" title=" " alt="" coords="220,259,279,285"/>
+<area shape="rect" id="node7" href="$classDielectric.html#ac631cfb2dcc77569bfb1f16563dd0ff3" title=" " alt="" coords="5,208,131,235"/>
+<area shape="rect" id="node8" href="$classMetal.html#afa27170d3925a4856d86e35888de1cd4" title=" " alt="" coords="17,284,119,311"/>
+<area shape="rect" id="node9" href="$Vec3_8hpp.html#aabd634ca4a0d317d0933b9868e3f27da" title=" " alt="" coords="220,208,279,235"/>
+<area shape="rect" id="node5" href="$classCamera.html#a1d6756d625e61806d919a99aabaf8dce" title=" " alt="" coords="5,107,131,133"/>
+</map>

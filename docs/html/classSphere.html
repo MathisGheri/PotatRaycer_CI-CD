@@ -24,7 +24,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PotatRaycer
    </div>
-   <div id="projectbrief">A simple raytracer written in C++</div>
+   <div id="projectbrief">A simple raytracer in c++</div>
   </td>
  </tr>
  </tbody>
@@ -65,33 +65,301 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classSphere-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Sphere Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="Sphere_8hpp_source.html">Sphere.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for Sphere:</div>
 <div class="dyncontent">
- <div class="center">
-  <img src="classSphere.png" usemap="#Sphere_map" alt=""/>
-  <map id="Sphere_map" name="Sphere_map">
-<area href="classIHitable.html" alt="IHitable" shape="rect" coords="0,0,54,24"/>
-  </map>
-</div></div>
+<div class="center"><img src="classSphere__inherit__graph.png" border="0" usemap="#aSphere_inherit__map" alt="Inheritance graph"/></div>
+<map name="aSphere_inherit__map" id="aSphere_inherit__map">
+<area shape="rect" title=" " alt="" coords="7,80,70,107"/>
+<area shape="rect" href="classIHitable.html" title=" " alt="" coords="5,5,72,32"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for Sphere:</div>
+<div class="dyncontent">
+<div class="center"><img src="classSphere__coll__graph.png" border="0" usemap="#aSphere_coll__map" alt="Collaboration graph"/></div>
+<map name="aSphere_coll__map" id="aSphere_coll__map">
+<area shape="rect" title=" " alt="" coords="49,95,111,121"/>
+<area shape="rect" href="classIHitable.html" title=" " alt="" coords="5,5,72,32"/>
+<area shape="rect" href="classVec3.html" title=" " alt="" coords="96,5,147,32"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a5bdb84d3ef6df709d5c77ed1ab2d2078"><td class="memItemLeft" align="right" valign="top"><a id="a5bdb84d3ef6df709d5c77ed1ab2d2078"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Sphere</b> (<a class="el" href="classVec3.html">Vec3</a> cen, float r, std::unique_ptr&lt; <a class="el" href="classIMaterial.html">IMaterial</a> &gt; m)</td></tr>
+<tr class="memitem:a5bdb84d3ef6df709d5c77ed1ab2d2078"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSphere.html#a5bdb84d3ef6df709d5c77ed1ab2d2078">Sphere</a> (<a class="el" href="classVec3.html">Vec3</a> cen, float r, std::unique_ptr&lt; <a class="el" href="classIMaterial.html">IMaterial</a> &gt; m)</td></tr>
 <tr class="separator:a5bdb84d3ef6df709d5c77ed1ab2d2078"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada19fc64131c5549dc6edffe4e4123ed"><td class="memItemLeft" align="right" valign="top"><a id="ada19fc64131c5549dc6edffe4e4123ed"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>hit</b> (const <a class="el" href="classRay.html">Ray</a> &amp;r, float t_min, float t_max, <a class="el" href="structhit__record__s.html">hit_record_t</a> &amp;rec) const</td></tr>
+<tr class="memitem:a569c071e50a3e11f678630ee1a17737e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSphere.html#a569c071e50a3e11f678630ee1a17737e">~Sphere</a> ()</td></tr>
+<tr class="separator:a569c071e50a3e11f678630ee1a17737e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada19fc64131c5549dc6edffe4e4123ed"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSphere.html#ada19fc64131c5549dc6edffe4e4123ed">hit</a> (const <a class="el" href="classRay.html">Ray</a> &amp;r, float t_min, float t_max, <a class="el" href="struct_8h.html#aaf145a045b8acf3bedf3be121d64e390">hit_record_t</a> &amp;rec) const</td></tr>
 <tr class="separator:ada19fc64131c5549dc6edffe4e4123ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a561c182ccacf07313c1ef3a9a1a7c379"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVec3.html">Vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSphere.html#a561c182ccacf07313c1ef3a9a1a7c379">center</a></td></tr>
+<tr class="separator:a561c182ccacf07313c1ef3a9a1a7c379"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6f42f0da6679a2f0b4a22681ccccf38"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSphere.html#ae6f42f0da6679a2f0b4a22681ccccf38">radius</a></td></tr>
+<tr class="separator:ae6f42f0da6679a2f0b4a22681ccccf38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af97ff69b75b7e54b74e1a0acc4c09d3b"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classIMaterial.html">IMaterial</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSphere.html#af97ff69b75b7e54b74e1a0acc4c09d3b">mat_ptr</a></td></tr>
+<tr class="separator:af97ff69b75b7e54b74e1a0acc4c09d3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="Sphere_8hpp_source.html#l00016">16</a> of file <a class="el" href="Sphere_8hpp_source.html">Sphere.hpp</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a5bdb84d3ef6df709d5c77ed1ab2d2078"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5bdb84d3ef6df709d5c77ed1ab2d2078">&#9670;&nbsp;</a></span>Sphere()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Sphere::Sphere </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classVec3.html">Vec3</a>&#160;</td>
+          <td class="paramname"><em>cen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="classIMaterial.html">IMaterial</a> &gt;&#160;</td>
+          <td class="paramname"><em>m</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Sphere_8cpp_source.html#l00011">11</a> of file <a class="el" href="Sphere_8cpp_source.html">Sphere.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;: <a class="code" href="classSphere.html#a561c182ccacf07313c1ef3a9a1a7c379">center</a>(cen), <a class="code" href="classSphere.html#ae6f42f0da6679a2f0b4a22681ccccf38">radius</a>(r), <a class="code" href="classSphere.html#af97ff69b75b7e54b74e1a0acc4c09d3b">mat_ptr</a>(std::move(m)) {}</div>
+<div class="ttc" id="aclassSphere_html_a561c182ccacf07313c1ef3a9a1a7c379"><div class="ttname"><a href="classSphere.html#a561c182ccacf07313c1ef3a9a1a7c379">Sphere::center</a></div><div class="ttdeci">Vec3 center</div><div class="ttdef"><b>Definition:</b> <a href="Sphere_8hpp_source.html#l00022">Sphere.hpp:22</a></div></div>
+<div class="ttc" id="aclassSphere_html_ae6f42f0da6679a2f0b4a22681ccccf38"><div class="ttname"><a href="classSphere.html#ae6f42f0da6679a2f0b4a22681ccccf38">Sphere::radius</a></div><div class="ttdeci">float radius</div><div class="ttdef"><b>Definition:</b> <a href="Sphere_8hpp_source.html#l00023">Sphere.hpp:23</a></div></div>
+<div class="ttc" id="aclassSphere_html_af97ff69b75b7e54b74e1a0acc4c09d3b"><div class="ttname"><a href="classSphere.html#af97ff69b75b7e54b74e1a0acc4c09d3b">Sphere::mat_ptr</a></div><div class="ttdeci">std::unique_ptr&lt; IMaterial &gt; mat_ptr</div><div class="ttdef"><b>Definition:</b> <a href="Sphere_8hpp_source.html#l00024">Sphere.hpp:24</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a569c071e50a3e11f678630ee1a17737e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a569c071e50a3e11f678630ee1a17737e">&#9670;&nbsp;</a></span>~Sphere()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Sphere::~Sphere </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Sphere_8cpp_source.html#l00013">13</a> of file <a class="el" href="Sphere_8cpp_source.html">Sphere.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ada19fc64131c5549dc6edffe4e4123ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada19fc64131c5549dc6edffe4e4123ed">&#9670;&nbsp;</a></span>hit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Sphere::hit </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classRay.html">Ray</a> &amp;&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>t_min</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>t_max</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_8h.html#aaf145a045b8acf3bedf3be121d64e390">hit_record_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>rec</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classIHitable.html#af3d1a57560db315edd6e140b68e1cd9e">IHitable</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="Sphere_8cpp_source.html#l00015">15</a> of file <a class="el" href="Sphere_8cpp_source.html">Sphere.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="classVec3.html">Vec3</a> oc = r.<a class="code" href="classRay.html#a60de08f372d0cb87a37724132d589325">origin</a>() - <a class="code" href="classSphere.html#a561c182ccacf07313c1ef3a9a1a7c379">center</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordtype">float</span> a = <a class="code" href="Vec3_8hpp.html#a45f8afb934d90c5445ad67d3b2156563">dot</a>(r.<a class="code" href="classRay.html#a725a907d4c9b65c55930a3e4f5d01d48">direction</a>(), r.<a class="code" href="classRay.html#a725a907d4c9b65c55930a3e4f5d01d48">direction</a>());</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">float</span> b = <a class="code" href="Vec3_8hpp.html#a45f8afb934d90c5445ad67d3b2156563">dot</a>(oc, r.<a class="code" href="classRay.html#a725a907d4c9b65c55930a3e4f5d01d48">direction</a>());</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">float</span> c = <a class="code" href="Vec3_8hpp.html#a45f8afb934d90c5445ad67d3b2156563">dot</a>(oc, oc) - <a class="code" href="classSphere.html#ae6f42f0da6679a2f0b4a22681ccccf38">radius</a> * <a class="code" href="classSphere.html#ae6f42f0da6679a2f0b4a22681ccccf38">radius</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">float</span> discriminant = b * b - a * c;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordflow">if</span> (discriminant &gt; 0) {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keywordtype">float</span> temp = (-b - sqrt(discriminant)) / a;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keywordflow">if</span> (temp &lt; t_max &amp;&amp; temp &gt; t_min) {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            rec.<a class="code" href="structhit__record__s.html#acd8ec618acd0577e2cc1efdd997501ed">t</a> = temp;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            rec.<a class="code" href="structhit__record__s.html#aac284cd2782011cb2e6e7197ab607e1f">p</a> = r.<a class="code" href="classRay.html#a408ff62aaee9cbfccf1896e7bb11354b">point_at_parameter</a>(rec.<a class="code" href="structhit__record__s.html#acd8ec618acd0577e2cc1efdd997501ed">t</a>);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            rec.<a class="code" href="structhit__record__s.html#ae99ba2937e47036237f994111276cb1d">normal</a> = (rec.<a class="code" href="structhit__record__s.html#aac284cd2782011cb2e6e7197ab607e1f">p</a> - <a class="code" href="classSphere.html#a561c182ccacf07313c1ef3a9a1a7c379">center</a>) / <a class="code" href="classSphere.html#ae6f42f0da6679a2f0b4a22681ccccf38">radius</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            rec.<a class="code" href="structhit__record__s.html#a3d7f2ac0d0db3a78530b69c12ee280b1">mat_ptr</a> = <a class="code" href="classSphere.html#af97ff69b75b7e54b74e1a0acc4c09d3b">mat_ptr</a>.get();</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        }</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        temp = (-b + sqrt(discriminant)) / a;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordflow">if</span> (temp &lt; t_max &amp;&amp; temp &gt; t_min) {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            rec.<a class="code" href="structhit__record__s.html#acd8ec618acd0577e2cc1efdd997501ed">t</a> = temp;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            rec.<a class="code" href="structhit__record__s.html#aac284cd2782011cb2e6e7197ab607e1f">p</a> = r.<a class="code" href="classRay.html#a408ff62aaee9cbfccf1896e7bb11354b">point_at_parameter</a>(rec.<a class="code" href="structhit__record__s.html#acd8ec618acd0577e2cc1efdd997501ed">t</a>);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            rec.<a class="code" href="structhit__record__s.html#ae99ba2937e47036237f994111276cb1d">normal</a> = (rec.<a class="code" href="structhit__record__s.html#aac284cd2782011cb2e6e7197ab607e1f">p</a> - <a class="code" href="classSphere.html#a561c182ccacf07313c1ef3a9a1a7c379">center</a>) / <a class="code" href="classSphere.html#ae6f42f0da6679a2f0b4a22681ccccf38">radius</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            rec.<a class="code" href="structhit__record__s.html#a3d7f2ac0d0db3a78530b69c12ee280b1">mat_ptr</a> = <a class="code" href="classSphere.html#af97ff69b75b7e54b74e1a0acc4c09d3b">mat_ptr</a>.get();</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        }</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    }</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
+<div class="ttc" id="aVec3_8hpp_html_a45f8afb934d90c5445ad67d3b2156563"><div class="ttname"><a href="Vec3_8hpp.html#a45f8afb934d90c5445ad67d3b2156563">dot</a></div><div class="ttdeci">float dot(const Vec3 &amp;v1, const Vec3 &amp;v2)</div><div class="ttdef"><b>Definition:</b> <a href="Vec3_8hpp_source.html#l00085">Vec3.hpp:85</a></div></div>
+<div class="ttc" id="aclassRay_html_a408ff62aaee9cbfccf1896e7bb11354b"><div class="ttname"><a href="classRay.html#a408ff62aaee9cbfccf1896e7bb11354b">Ray::point_at_parameter</a></div><div class="ttdeci">Vec3 point_at_parameter(float t) const</div><div class="ttdef"><b>Definition:</b> <a href="Ray_8cpp_source.html#l00034">Ray.cpp:34</a></div></div>
+<div class="ttc" id="aclassRay_html_a60de08f372d0cb87a37724132d589325"><div class="ttname"><a href="classRay.html#a60de08f372d0cb87a37724132d589325">Ray::origin</a></div><div class="ttdeci">Vec3 origin() const</div><div class="ttdef"><b>Definition:</b> <a href="Ray_8cpp_source.html#l00024">Ray.cpp:24</a></div></div>
+<div class="ttc" id="aclassRay_html_a725a907d4c9b65c55930a3e4f5d01d48"><div class="ttname"><a href="classRay.html#a725a907d4c9b65c55930a3e4f5d01d48">Ray::direction</a></div><div class="ttdeci">Vec3 direction() const</div><div class="ttdef"><b>Definition:</b> <a href="Ray_8cpp_source.html#l00029">Ray.cpp:29</a></div></div>
+<div class="ttc" id="aclassVec3_html"><div class="ttname"><a href="classVec3.html">Vec3</a></div><div class="ttdef"><b>Definition:</b> <a href="Vec3_8hpp_source.html#l00013">Vec3.hpp:13</a></div></div>
+<div class="ttc" id="astructhit__record__s_html_a3d7f2ac0d0db3a78530b69c12ee280b1"><div class="ttname"><a href="structhit__record__s.html#a3d7f2ac0d0db3a78530b69c12ee280b1">hit_record_s::mat_ptr</a></div><div class="ttdeci">IMaterial * mat_ptr</div><div class="ttdef"><b>Definition:</b> <a href="struct_8h_source.html#l00017">struct.h:17</a></div></div>
+<div class="ttc" id="astructhit__record__s_html_aac284cd2782011cb2e6e7197ab607e1f"><div class="ttname"><a href="structhit__record__s.html#aac284cd2782011cb2e6e7197ab607e1f">hit_record_s::p</a></div><div class="ttdeci">Vec3 p</div><div class="ttdef"><b>Definition:</b> <a href="struct_8h_source.html#l00015">struct.h:15</a></div></div>
+<div class="ttc" id="astructhit__record__s_html_acd8ec618acd0577e2cc1efdd997501ed"><div class="ttname"><a href="structhit__record__s.html#acd8ec618acd0577e2cc1efdd997501ed">hit_record_s::t</a></div><div class="ttdeci">float t</div><div class="ttdef"><b>Definition:</b> <a href="struct_8h_source.html#l00014">struct.h:14</a></div></div>
+<div class="ttc" id="astructhit__record__s_html_ae99ba2937e47036237f994111276cb1d"><div class="ttname"><a href="structhit__record__s.html#ae99ba2937e47036237f994111276cb1d">hit_record_s::normal</a></div><div class="ttdeci">Vec3 normal</div><div class="ttdef"><b>Definition:</b> <a href="struct_8h_source.html#l00016">struct.h:16</a></div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="classSphere.html#a561c182ccacf07313c1ef3a9a1a7c379">center</a>, <a class="el" href="classRay.html#a725a907d4c9b65c55930a3e4f5d01d48">Ray::direction()</a>, <a class="el" href="Vec3_8hpp.html#a45f8afb934d90c5445ad67d3b2156563">dot()</a>, <a class="el" href="classSphere.html#af97ff69b75b7e54b74e1a0acc4c09d3b">mat_ptr</a>, <a class="el" href="structhit__record__s.html#a3d7f2ac0d0db3a78530b69c12ee280b1">hit_record_s::mat_ptr</a>, <a class="el" href="structhit__record__s.html#ae99ba2937e47036237f994111276cb1d">hit_record_s::normal</a>, <a class="el" href="classRay.html#a60de08f372d0cb87a37724132d589325">Ray::origin()</a>, <a class="el" href="structhit__record__s.html#aac284cd2782011cb2e6e7197ab607e1f">hit_record_s::p</a>, <a class="el" href="classRay.html#a408ff62aaee9cbfccf1896e7bb11354b">Ray::point_at_parameter()</a>, <a class="el" href="classSphere.html#ae6f42f0da6679a2f0b4a22681ccccf38">radius</a>, and <a class="el" href="structhit__record__s.html#acd8ec618acd0577e2cc1efdd997501ed">hit_record_s::t</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classSphere_ada19fc64131c5549dc6edffe4e4123ed_cgraph.png" border="0" usemap="#aclassSphere_ada19fc64131c5549dc6edffe4e4123ed_cgraph" alt=""/></div>
+<map name="aclassSphere_ada19fc64131c5549dc6edffe4e4123ed_cgraph" id="aclassSphere_ada19fc64131c5549dc6edffe4e4123ed_cgraph">
+<area shape="rect" title=" " alt="" coords="5,81,91,108"/>
+<area shape="rect" href="classRay.html#a725a907d4c9b65c55930a3e4f5d01d48" title=" " alt="" coords="170,5,273,32"/>
+<area shape="rect" href="Vec3_8hpp.html#a45f8afb934d90c5445ad67d3b2156563" title=" " alt="" coords="201,56,241,83"/>
+<area shape="rect" href="classRay.html#a60de08f372d0cb87a37724132d589325" title=" " alt="" coords="179,107,264,133"/>
+<area shape="rect" href="classRay.html#a408ff62aaee9cbfccf1896e7bb11354b" title=" " alt="" coords="139,157,304,184"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a561c182ccacf07313c1ef3a9a1a7c379"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a561c182ccacf07313c1ef3a9a1a7c379">&#9670;&nbsp;</a></span>center</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classVec3.html">Vec3</a> Sphere::center</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Sphere_8hpp_source.html#l00022">22</a> of file <a class="el" href="Sphere_8hpp_source.html">Sphere.hpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="classSphere.html#ada19fc64131c5549dc6edffe4e4123ed">hit()</a>.</p>
+
+</div>
+</div>
+<a id="af97ff69b75b7e54b74e1a0acc4c09d3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af97ff69b75b7e54b74e1a0acc4c09d3b">&#9670;&nbsp;</a></span>mat_ptr</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classIMaterial.html">IMaterial</a>&gt; Sphere::mat_ptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Sphere_8hpp_source.html#l00024">24</a> of file <a class="el" href="Sphere_8hpp_source.html">Sphere.hpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="classSphere.html#ada19fc64131c5549dc6edffe4e4123ed">hit()</a>.</p>
+
+</div>
+</div>
+<a id="ae6f42f0da6679a2f0b4a22681ccccf38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6f42f0da6679a2f0b4a22681ccccf38">&#9670;&nbsp;</a></span>radius</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Sphere::radius</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Sphere_8hpp_source.html#l00023">23</a> of file <a class="el" href="Sphere_8hpp_source.html">Sphere.hpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="classSphere.html#ada19fc64131c5549dc6edffe4e4123ed">hit()</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>src/Primitives/Sphere/<a class="el" href="Sphere_8hpp_source.html">Sphere.hpp</a></li>
-<li>src/Primitives/Sphere/Sphere.cpp</li>
+<li>src/Primitives/Sphere/<a class="el" href="Sphere_8cpp_source.html">Sphere.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

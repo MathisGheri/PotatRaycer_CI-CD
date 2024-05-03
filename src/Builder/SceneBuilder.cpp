@@ -5,6 +5,11 @@
 ** SceneBuilder
 */
 
+/**
+* @file SceneBuilder.cpp
+* @brief Implementation of the builder class to create scenes. 
+*/
+
 #include "SceneBuilder.hpp"
 #include "Vec3.hpp"
 #include "Light.hpp"

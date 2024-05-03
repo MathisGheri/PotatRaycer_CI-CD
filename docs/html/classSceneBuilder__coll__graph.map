@@ -1,0 +1,5 @@
+<map id="SceneBuilder" name="SceneBuilder">
+<area shape="rect" id="node1" title="Concrete implementation of the IBuilder interface for constructing scenes." alt="" coords="32,95,131,121"/>
+<area shape="rect" id="node2" href="$classIBuilder.html" title="Interface for the builder pattern to construct scene components." alt="" coords="5,5,72,32"/>
+<area shape="rect" id="node3" href="$classScene.html" title=" " alt="" coords="96,5,155,32"/>
+</map>

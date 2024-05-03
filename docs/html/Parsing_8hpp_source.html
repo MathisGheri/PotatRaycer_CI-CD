@@ -24,7 +24,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PotatRaycer
    </div>
-   <div id="projectbrief">A simple raytracer written in C++</div>
+   <div id="projectbrief">A simple raytracer in c++</div>
   </td>
  </tr>
  </tbody>
@@ -71,7 +71,7 @@ $(function() {
 <div class="title">Parsing.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<a href="Parsing_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">** EPITECH PROJECT, 2024</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">** PotatRaycer_CI-CD</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">** File description:</span></div>
@@ -84,57 +84,79 @@ $(function() {
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;../include.hpp&quot;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
 <div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="structvec3.html">   13</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structvec3.html">vec3</a> {</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordtype">float</span> x, y, z;</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="structvec3.html#a4ee2cfd5c2698031a47ab7f898d8d47b">   14</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="structvec3.html#a4ee2cfd5c2698031a47ab7f898d8d47b">x</a>, <a class="code" href="structvec3.html#a891379795a14c80936cde4170239a138">y</a>, <a class="code" href="structvec3.html#aa76213efcc5d656cc14b71db80a92162">z</a>;</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;};</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
 <div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="structMaterial.html">   17</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structMaterial.html">Material</a> {</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    std::string type;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="structvec3.html">vec3</a> vec;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">float</span> fuzz;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">float</span> ref_idx;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="structMaterial.html#a97efb5b3df1f11c422a82ab94535060a">   18</a></span>&#160;    std::string <a class="code" href="structMaterial.html#a97efb5b3df1f11c422a82ab94535060a">type</a>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="structMaterial.html#a6098f8aa6c0e4b87131d872b8bf80d02">   19</a></span>&#160;    <a class="code" href="structvec3.html">vec3</a> <a class="code" href="structMaterial.html#a6098f8aa6c0e4b87131d872b8bf80d02">vec</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="structMaterial.html#ad36f80852a33b4e7771a006c04eb2783">   20</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="structMaterial.html#ad36f80852a33b4e7771a006c04eb2783">fuzz</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="structMaterial.html#ac5f4cf0536ae22ec466f301fa2caeb61">   21</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="structMaterial.html#ac5f4cf0536ae22ec466f301fa2caeb61">ref_idx</a>;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;};</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="structPrimitive.html">   24</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structPrimitive.html">Primitive</a> {</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    std::string type;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="structvec3.html">vec3</a> points[2];</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="structMaterial.html">Material</a> material;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="structPrimitive.html#ae6fd23d8e8b9e1e3876c269f820d5aa2">   25</a></span>&#160;    std::string <a class="code" href="structPrimitive.html#ae6fd23d8e8b9e1e3876c269f820d5aa2">type</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="structPrimitive.html#aa6696369bc5d3c40f15e750401f964ff">   26</a></span>&#160;    <a class="code" href="structvec3.html">vec3</a> <a class="code" href="structPrimitive.html#aa6696369bc5d3c40f15e750401f964ff">points</a>[2];</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="structPrimitive.html#a48f8a9cd62efbe65c101877fd886b74c">   27</a></span>&#160;    <a class="code" href="structMaterial.html">Material</a> <a class="code" href="structPrimitive.html#a48f8a9cd62efbe65c101877fd886b74c">material</a>;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;};</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
 <div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classParsing.html">   30</a></span>&#160;<span class="keyword">class </span><a class="code" href="classParsing.html">Parsing</a> {</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <a class="code" href="classParsing.html">Parsing</a>(<span class="keyword">const</span> std::string &amp;file);</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        ~<a class="code" href="classParsing.html">Parsing</a>() {}</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        std::map&lt;std::string, std::tuple&lt;float, float, float&gt;&gt; GetCamera()</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <a class="code" href="classParsing.html#aff2c6802b3204d215941cdadf97d77e4">Parsing</a>(<span class="keyword">const</span> std::string &amp;file);</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classParsing.html#aa8177a741578150b599a9153e44da384">   33</a></span>&#160;        <a class="code" href="classParsing.html#aa8177a741578150b599a9153e44da384">~Parsing</a>() {}</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classParsing.html#a24ca4a26190d71a0f8d48d0f62aa2ea1">   34</a></span>&#160;        std::map&lt;std::string, std::tuple&lt;float, float, float&gt;&gt; <a class="code" href="classParsing.html#a24ca4a26190d71a0f8d48d0f62aa2ea1">GetCamera</a>()</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            <span class="keywordflow">return</span> _camera;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classParsing.html#a64a91adfbb9ea98881c342873fdfd488">_camera</a>;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        }</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        std::vector&lt;Primitive&gt; getPrimitives()</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classParsing.html#aa299c9cc408f2506f776a927ccef8ab1">   38</a></span>&#160;        std::vector&lt;Primitive&gt; <a class="code" href="classParsing.html#aa299c9cc408f2506f776a927ccef8ab1">getPrimitives</a>()</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            <span class="keywordflow">return</span> _primitives;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classParsing.html#a23a289ceac61a47d123f9edc01507a96">_primitives</a>;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        }</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        std::map&lt;std::string, std::tuple&lt;float, float, float&gt;&gt; getLights()</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classParsing.html#a335f29c631ee21a0401cf538b0dfb0aa">   42</a></span>&#160;        std::map&lt;std::string, std::tuple&lt;float, float, float&gt;&gt; <a class="code" href="classParsing.html#a335f29c631ee21a0401cf538b0dfb0aa">getLights</a>()</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            <span class="keywordflow">return</span> _light;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classParsing.html#abb0a8425d79167d24a5cb7aa8a8eee8a">_light</a>;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        }</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordtype">void</span> parseLights(libconfig::Setting&amp; setting);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keywordtype">void</span> parseCamera(libconfig::Setting&amp; setting);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classParsing.html#a0f5be128288789100d5ed85b36023f79">parseLights</a>(libconfig::Setting&amp; setting);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classParsing.html#a4d3b19100818f4cbde291f91a5b4d117">parseCamera</a>(libconfig::Setting&amp; setting);</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classParsing.html#aa3336c05be6cece06abb7760795ea4aa">parsePrimitives</a>(libconfig::Setting&amp; setting, <span class="keyword">const</span> std::string&amp; type);</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        </div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">protected</span>:</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keyword">const</span> std::string &amp;_filePath;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        libconfig::Config _cfg;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        std::map&lt;std::string, std::tuple&lt;float, float, float&gt;&gt; _light;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        std::map&lt;std::string, std::tuple&lt;float, float, float&gt;&gt; _camera;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        std::vector&lt;Primitive&gt; _primitives;</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="classParsing.html#a73967203f5001fb32627a330d954e2b5">   52</a></span>&#160;        <span class="keyword">const</span> std::string &amp;<a class="code" href="classParsing.html#a73967203f5001fb32627a330d954e2b5">_filePath</a>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="classParsing.html#ac10badc57d51576be95ccacc8ecea5f6">   53</a></span>&#160;        libconfig::Config <a class="code" href="classParsing.html#ac10badc57d51576be95ccacc8ecea5f6">_cfg</a>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="classParsing.html#abb0a8425d79167d24a5cb7aa8a8eee8a">   54</a></span>&#160;        std::map&lt;std::string, std::tuple&lt;float, float, float&gt;&gt; <a class="code" href="classParsing.html#abb0a8425d79167d24a5cb7aa8a8eee8a">_light</a>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classParsing.html#a64a91adfbb9ea98881c342873fdfd488">   55</a></span>&#160;        std::map&lt;std::string, std::tuple&lt;float, float, float&gt;&gt; <a class="code" href="classParsing.html#a64a91adfbb9ea98881c342873fdfd488">_camera</a>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="classParsing.html#a23a289ceac61a47d123f9edc01507a96">   56</a></span>&#160;        std::vector&lt;Primitive&gt; <a class="code" href="classParsing.html#a23a289ceac61a47d123f9edc01507a96">_primitives</a>;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;};</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !PARSING_HPP_ */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="aclassParsing_html"><div class="ttname"><a href="classParsing.html">Parsing</a></div><div class="ttdef"><b>Definition:</b> Parsing.hpp:30</div></div>
-<div class="ttc" id="aclassParsing_html_aa3336c05be6cece06abb7760795ea4aa"><div class="ttname"><a href="classParsing.html#aa3336c05be6cece06abb7760795ea4aa">Parsing::parsePrimitives</a></div><div class="ttdeci">void parsePrimitives(libconfig::Setting &amp;setting, const std::string &amp;type)</div><div class="ttdoc">Parse the primitive settings from the config file.</div><div class="ttdef"><b>Definition:</b> Parsing.cpp:38</div></div>
-<div class="ttc" id="astructMaterial_html"><div class="ttname"><a href="structMaterial.html">Material</a></div><div class="ttdef"><b>Definition:</b> Parsing.hpp:17</div></div>
-<div class="ttc" id="astructPrimitive_html"><div class="ttname"><a href="structPrimitive.html">Primitive</a></div><div class="ttdef"><b>Definition:</b> Parsing.hpp:24</div></div>
-<div class="ttc" id="astructvec3_html"><div class="ttname"><a href="structvec3.html">vec3</a></div><div class="ttdef"><b>Definition:</b> Parsing.hpp:13</div></div>
+<div class="ttc" id="aclassParsing_html"><div class="ttname"><a href="classParsing.html">Parsing</a></div><div class="ttdef"><b>Definition:</b> <a href="Parsing_8hpp_source.html#l00030">Parsing.hpp:30</a></div></div>
+<div class="ttc" id="aclassParsing_html_a0f5be128288789100d5ed85b36023f79"><div class="ttname"><a href="classParsing.html#a0f5be128288789100d5ed85b36023f79">Parsing::parseLights</a></div><div class="ttdeci">void parseLights(libconfig::Setting &amp;setting)</div><div class="ttdef"><b>Definition:</b> <a href="Parsing_8cpp_source.html#l00072">Parsing.cpp:72</a></div></div>
+<div class="ttc" id="aclassParsing_html_a23a289ceac61a47d123f9edc01507a96"><div class="ttname"><a href="classParsing.html#a23a289ceac61a47d123f9edc01507a96">Parsing::_primitives</a></div><div class="ttdeci">std::vector&lt; Primitive &gt; _primitives</div><div class="ttdef"><b>Definition:</b> <a href="Parsing_8hpp_source.html#l00056">Parsing.hpp:56</a></div></div>
+<div class="ttc" id="aclassParsing_html_a24ca4a26190d71a0f8d48d0f62aa2ea1"><div class="ttname"><a href="classParsing.html#a24ca4a26190d71a0f8d48d0f62aa2ea1">Parsing::GetCamera</a></div><div class="ttdeci">std::map&lt; std::string, std::tuple&lt; float, float, float &gt; &gt; GetCamera()</div><div class="ttdef"><b>Definition:</b> <a href="Parsing_8hpp_source.html#l00034">Parsing.hpp:34</a></div></div>
+<div class="ttc" id="aclassParsing_html_a335f29c631ee21a0401cf538b0dfb0aa"><div class="ttname"><a href="classParsing.html#a335f29c631ee21a0401cf538b0dfb0aa">Parsing::getLights</a></div><div class="ttdeci">std::map&lt; std::string, std::tuple&lt; float, float, float &gt; &gt; getLights()</div><div class="ttdef"><b>Definition:</b> <a href="Parsing_8hpp_source.html#l00042">Parsing.hpp:42</a></div></div>
+<div class="ttc" id="aclassParsing_html_a4d3b19100818f4cbde291f91a5b4d117"><div class="ttname"><a href="classParsing.html#a4d3b19100818f4cbde291f91a5b4d117">Parsing::parseCamera</a></div><div class="ttdeci">void parseCamera(libconfig::Setting &amp;setting)</div><div class="ttdef"><b>Definition:</b> <a href="Parsing_8cpp_source.html#l00086">Parsing.cpp:86</a></div></div>
+<div class="ttc" id="aclassParsing_html_a64a91adfbb9ea98881c342873fdfd488"><div class="ttname"><a href="classParsing.html#a64a91adfbb9ea98881c342873fdfd488">Parsing::_camera</a></div><div class="ttdeci">std::map&lt; std::string, std::tuple&lt; float, float, float &gt; &gt; _camera</div><div class="ttdef"><b>Definition:</b> <a href="Parsing_8hpp_source.html#l00055">Parsing.hpp:55</a></div></div>
+<div class="ttc" id="aclassParsing_html_a73967203f5001fb32627a330d954e2b5"><div class="ttname"><a href="classParsing.html#a73967203f5001fb32627a330d954e2b5">Parsing::_filePath</a></div><div class="ttdeci">const std::string &amp; _filePath</div><div class="ttdef"><b>Definition:</b> <a href="Parsing_8hpp_source.html#l00052">Parsing.hpp:52</a></div></div>
+<div class="ttc" id="aclassParsing_html_aa299c9cc408f2506f776a927ccef8ab1"><div class="ttname"><a href="classParsing.html#aa299c9cc408f2506f776a927ccef8ab1">Parsing::getPrimitives</a></div><div class="ttdeci">std::vector&lt; Primitive &gt; getPrimitives()</div><div class="ttdef"><b>Definition:</b> <a href="Parsing_8hpp_source.html#l00038">Parsing.hpp:38</a></div></div>
+<div class="ttc" id="aclassParsing_html_aa3336c05be6cece06abb7760795ea4aa"><div class="ttname"><a href="classParsing.html#aa3336c05be6cece06abb7760795ea4aa">Parsing::parsePrimitives</a></div><div class="ttdeci">void parsePrimitives(libconfig::Setting &amp;setting, const std::string &amp;type)</div><div class="ttdoc">Parse the primitive settings from the config file.</div><div class="ttdef"><b>Definition:</b> <a href="Parsing_8cpp_source.html#l00038">Parsing.cpp:38</a></div></div>
+<div class="ttc" id="aclassParsing_html_aa8177a741578150b599a9153e44da384"><div class="ttname"><a href="classParsing.html#aa8177a741578150b599a9153e44da384">Parsing::~Parsing</a></div><div class="ttdeci">~Parsing()</div><div class="ttdef"><b>Definition:</b> <a href="Parsing_8hpp_source.html#l00033">Parsing.hpp:33</a></div></div>
+<div class="ttc" id="aclassParsing_html_abb0a8425d79167d24a5cb7aa8a8eee8a"><div class="ttname"><a href="classParsing.html#abb0a8425d79167d24a5cb7aa8a8eee8a">Parsing::_light</a></div><div class="ttdeci">std::map&lt; std::string, std::tuple&lt; float, float, float &gt; &gt; _light</div><div class="ttdef"><b>Definition:</b> <a href="Parsing_8hpp_source.html#l00054">Parsing.hpp:54</a></div></div>
+<div class="ttc" id="aclassParsing_html_ac10badc57d51576be95ccacc8ecea5f6"><div class="ttname"><a href="classParsing.html#ac10badc57d51576be95ccacc8ecea5f6">Parsing::_cfg</a></div><div class="ttdeci">libconfig::Config _cfg</div><div class="ttdef"><b>Definition:</b> <a href="Parsing_8hpp_source.html#l00053">Parsing.hpp:53</a></div></div>
+<div class="ttc" id="aclassParsing_html_aff2c6802b3204d215941cdadf97d77e4"><div class="ttname"><a href="classParsing.html#aff2c6802b3204d215941cdadf97d77e4">Parsing::Parsing</a></div><div class="ttdeci">Parsing(const std::string &amp;file)</div><div class="ttdef"><b>Definition:</b> <a href="Parsing_8cpp_source.html#l00010">Parsing.cpp:10</a></div></div>
+<div class="ttc" id="astructMaterial_html"><div class="ttname"><a href="structMaterial.html">Material</a></div><div class="ttdef"><b>Definition:</b> <a href="Parsing_8hpp_source.html#l00017">Parsing.hpp:17</a></div></div>
+<div class="ttc" id="astructMaterial_html_a6098f8aa6c0e4b87131d872b8bf80d02"><div class="ttname"><a href="structMaterial.html#a6098f8aa6c0e4b87131d872b8bf80d02">Material::vec</a></div><div class="ttdeci">vec3 vec</div><div class="ttdef"><b>Definition:</b> <a href="Parsing_8hpp_source.html#l00019">Parsing.hpp:19</a></div></div>
+<div class="ttc" id="astructMaterial_html_a97efb5b3df1f11c422a82ab94535060a"><div class="ttname"><a href="structMaterial.html#a97efb5b3df1f11c422a82ab94535060a">Material::type</a></div><div class="ttdeci">std::string type</div><div class="ttdef"><b>Definition:</b> <a href="Parsing_8hpp_source.html#l00018">Parsing.hpp:18</a></div></div>
+<div class="ttc" id="astructMaterial_html_ac5f4cf0536ae22ec466f301fa2caeb61"><div class="ttname"><a href="structMaterial.html#ac5f4cf0536ae22ec466f301fa2caeb61">Material::ref_idx</a></div><div class="ttdeci">float ref_idx</div><div class="ttdef"><b>Definition:</b> <a href="Parsing_8hpp_source.html#l00021">Parsing.hpp:21</a></div></div>
+<div class="ttc" id="astructMaterial_html_ad36f80852a33b4e7771a006c04eb2783"><div class="ttname"><a href="structMaterial.html#ad36f80852a33b4e7771a006c04eb2783">Material::fuzz</a></div><div class="ttdeci">float fuzz</div><div class="ttdef"><b>Definition:</b> <a href="Parsing_8hpp_source.html#l00020">Parsing.hpp:20</a></div></div>
+<div class="ttc" id="astructPrimitive_html"><div class="ttname"><a href="structPrimitive.html">Primitive</a></div><div class="ttdef"><b>Definition:</b> <a href="Parsing_8hpp_source.html#l00024">Parsing.hpp:24</a></div></div>
+<div class="ttc" id="astructPrimitive_html_a48f8a9cd62efbe65c101877fd886b74c"><div class="ttname"><a href="structPrimitive.html#a48f8a9cd62efbe65c101877fd886b74c">Primitive::material</a></div><div class="ttdeci">Material material</div><div class="ttdef"><b>Definition:</b> <a href="Parsing_8hpp_source.html#l00027">Parsing.hpp:27</a></div></div>
+<div class="ttc" id="astructPrimitive_html_aa6696369bc5d3c40f15e750401f964ff"><div class="ttname"><a href="structPrimitive.html#aa6696369bc5d3c40f15e750401f964ff">Primitive::points</a></div><div class="ttdeci">vec3 points[2]</div><div class="ttdef"><b>Definition:</b> <a href="Parsing_8hpp_source.html#l00026">Parsing.hpp:26</a></div></div>
+<div class="ttc" id="astructPrimitive_html_ae6fd23d8e8b9e1e3876c269f820d5aa2"><div class="ttname"><a href="structPrimitive.html#ae6fd23d8e8b9e1e3876c269f820d5aa2">Primitive::type</a></div><div class="ttdeci">std::string type</div><div class="ttdef"><b>Definition:</b> <a href="Parsing_8hpp_source.html#l00025">Parsing.hpp:25</a></div></div>
+<div class="ttc" id="astructvec3_html"><div class="ttname"><a href="structvec3.html">vec3</a></div><div class="ttdef"><b>Definition:</b> <a href="Parsing_8hpp_source.html#l00013">Parsing.hpp:13</a></div></div>
+<div class="ttc" id="astructvec3_html_a4ee2cfd5c2698031a47ab7f898d8d47b"><div class="ttname"><a href="structvec3.html#a4ee2cfd5c2698031a47ab7f898d8d47b">vec3::x</a></div><div class="ttdeci">float x</div><div class="ttdef"><b>Definition:</b> <a href="Parsing_8hpp_source.html#l00014">Parsing.hpp:14</a></div></div>
+<div class="ttc" id="astructvec3_html_a891379795a14c80936cde4170239a138"><div class="ttname"><a href="structvec3.html#a891379795a14c80936cde4170239a138">vec3::y</a></div><div class="ttdeci">float y</div><div class="ttdef"><b>Definition:</b> <a href="Parsing_8hpp_source.html#l00014">Parsing.hpp:14</a></div></div>
+<div class="ttc" id="astructvec3_html_aa76213efcc5d656cc14b71db80a92162"><div class="ttname"><a href="structvec3.html#aa76213efcc5d656cc14b71db80a92162">vec3::z</a></div><div class="ttdeci">float z</div><div class="ttdef"><b>Definition:</b> <a href="Parsing_8hpp_source.html#l00014">Parsing.hpp:14</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

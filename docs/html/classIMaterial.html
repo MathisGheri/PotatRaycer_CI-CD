@@ -24,7 +24,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PotatRaycer
    </div>
-   <div id="projectbrief">A simple raytracer written in C++</div>
+   <div id="projectbrief">A simple raytracer in c++</div>
   </td>
  </tr>
  </tbody>
@@ -70,24 +70,107 @@ $(function() {
 <div class="title">IMaterial Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="IMaterial_8hpp_source.html">IMaterial.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for IMaterial:</div>
 <div class="dyncontent">
- <div class="center">
-  <img src="classIMaterial.png" usemap="#IMaterial_map" alt=""/>
-  <map id="IMaterial_map" name="IMaterial_map">
-<area href="classDielectric.html" alt="Dielectric" shape="rect" coords="0,56,74,80"/>
-<area href="classLambertian.html" alt="Lambertian" shape="rect" coords="84,56,158,80"/>
-<area href="classMetal.html" alt="Metal" shape="rect" coords="168,56,242,80"/>
-  </map>
-</div></div>
+<div class="center"><img src="classIMaterial__inherit__graph.png" border="0" usemap="#aIMaterial_inherit__map" alt="Inheritance graph"/></div>
+<map name="aIMaterial_inherit__map" id="aIMaterial_inherit__map">
+<area shape="rect" title=" " alt="" coords="115,5,187,32"/>
+<area shape="rect" href="classDielectric.html" title=" " alt="" coords="5,80,83,107"/>
+<area shape="rect" href="classLambertian.html" title=" " alt="" coords="107,80,194,107"/>
+<area shape="rect" href="classMetal.html" title=" " alt="" coords="218,80,273,107"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aec296356d2f6fa1e6cbbfef2da07d447"><td class="memItemLeft" align="right" valign="top"><a id="aec296356d2f6fa1e6cbbfef2da07d447"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>scatter</b> (const <a class="el" href="classRay.html">Ray</a> &amp;r_in, const <a class="el" href="structhit__record__s.html">hit_record_t</a> &amp;rec, <a class="el" href="classVec3.html">Vec3</a> &amp;attenuation, <a class="el" href="classRay.html">Ray</a> &amp;scattered) const =0</td></tr>
+<tr class="memitem:a43ad960a33ef87b199c1d8b28c364130"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIMaterial.html#a43ad960a33ef87b199c1d8b28c364130">~IMaterial</a> ()=default</td></tr>
+<tr class="separator:a43ad960a33ef87b199c1d8b28c364130"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec296356d2f6fa1e6cbbfef2da07d447"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIMaterial.html#aec296356d2f6fa1e6cbbfef2da07d447">scatter</a> (const <a class="el" href="classRay.html">Ray</a> &amp;r_in, const <a class="el" href="struct_8h.html#aaf145a045b8acf3bedf3be121d64e390">hit_record_t</a> &amp;rec, <a class="el" href="classVec3.html">Vec3</a> &amp;attenuation, <a class="el" href="classRay.html">Ray</a> &amp;scattered) const =0</td></tr>
 <tr class="separator:aec296356d2f6fa1e6cbbfef2da07d447"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="IMaterial_8hpp_source.html#l00019">19</a> of file <a class="el" href="IMaterial_8hpp_source.html">IMaterial.hpp</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a43ad960a33ef87b199c1d8b28c364130"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43ad960a33ef87b199c1d8b28c364130">&#9670;&nbsp;</a></span>~IMaterial()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual IMaterial::~IMaterial </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="aec296356d2f6fa1e6cbbfef2da07d447"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec296356d2f6fa1e6cbbfef2da07d447">&#9670;&nbsp;</a></span>scatter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool IMaterial::scatter </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classRay.html">Ray</a> &amp;&#160;</td>
+          <td class="paramname"><em>r_in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_8h.html#aaf145a045b8acf3bedf3be121d64e390">hit_record_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>rec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classVec3.html">Vec3</a> &amp;&#160;</td>
+          <td class="paramname"><em>attenuation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classRay.html">Ray</a> &amp;&#160;</td>
+          <td class="paramname"><em>scattered</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classMetal.html#afa27170d3925a4856d86e35888de1cd4">Metal</a>, <a class="el" href="classLambertian.html#a525c0140d9997d1233af898a03902121">Lambertian</a>, and <a class="el" href="classDielectric.html#ac631cfb2dcc77569bfb1f16563dd0ff3">Dielectric</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>src/Materials/<a class="el" href="IMaterial_8hpp_source.html">IMaterial.hpp</a></li>
 </ul>

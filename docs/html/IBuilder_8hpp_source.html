@@ -24,7 +24,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PotatRaycer
    </div>
-   <div id="projectbrief">A simple raytracer written in C++</div>
+   <div id="projectbrief">A simple raytracer in c++</div>
   </td>
  </tr>
  </tbody>
@@ -71,36 +71,46 @@ $(function() {
 <div class="title">IBuilder.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<a href="IBuilder_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">** EPITECH PROJECT, 2024</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">** PotatRaycer_CI-CD</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">** File description:</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">** IBuilder</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">*/</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef IBUILDER_HPP_</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define IBUILDER_HPP_</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;../include.hpp&quot;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;Scene.hpp&quot;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;Camera.hpp&quot;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;Parsing.hpp&quot;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="classIBuilder.html">   17</a></span>&#160;<span class="keyword">class </span><a class="code" href="classIBuilder.html">IBuilder</a> {</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keyword">virtual</span> ~<a class="code" href="classIBuilder.html">IBuilder</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> createCamera(std::map&lt;std::string,std::tuple&lt;float,float,float&gt;&gt;) = 0; <span class="comment">//implement better with return value</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> createLight(std::map&lt;std::string,std::tuple&lt;float,float,float&gt;&gt;) = 0; <span class="comment">//implement better with return value</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> createObjects(std::vector&lt;Primitive&gt;) = 0;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="classScene.html">Scene</a> *getScene() = 0;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;};</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#ifndef IBUILDER_HPP_</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#define IBUILDER_HPP_</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;../include.hpp&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Scene_8hpp.html">Scene.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Camera_8hpp.html">Camera.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Parsing_8hpp.html">Parsing.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">//reimplement totaly the createLight function</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">//get back the createCamera we have to understand code</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !IBUILDER_HPP_ */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="aclassIBuilder_html"><div class="ttname"><a href="classIBuilder.html">IBuilder</a></div><div class="ttdef"><b>Definition:</b> IBuilder.hpp:17</div></div>
-<div class="ttc" id="aclassScene_html"><div class="ttname"><a href="classScene.html">Scene</a></div><div class="ttdef"><b>Definition:</b> Scene.hpp:18</div></div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classIBuilder.html">   35</a></span>&#160;<span class="keyword">class </span><a class="code" href="classIBuilder.html">IBuilder</a> {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classIBuilder.html#a60781824daeb712214f9c5cbd996b760">   40</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="classIBuilder.html#a60781824daeb712214f9c5cbd996b760">~IBuilder</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classIBuilder.html#a2483e7360143df0f12b8f6b70c16d052">   47</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classIBuilder.html#a2483e7360143df0f12b8f6b70c16d052">createCamera</a>(std::map&lt;std::string,std::tuple&lt;float,float,float&gt;&gt; map) = 0;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="classIBuilder.html#af4f329260da7f7dbfbfe05756fce756c">   54</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classIBuilder.html#af4f329260da7f7dbfbfe05756fce756c">createLight</a>(std::map&lt;std::string,std::tuple&lt;float,float,float&gt;&gt; light) = 0;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="classIBuilder.html#a94b25088f4e98df374a138a502333b6f">   61</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classIBuilder.html#a94b25088f4e98df374a138a502333b6f">createObjects</a>(std::vector&lt;Primitive&gt; primitive) = 0;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="classIBuilder.html#ad3f81f4d1bedad5a56c34d4c1af18c93">   68</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="classScene.html">Scene</a> *<a class="code" href="classIBuilder.html#ad3f81f4d1bedad5a56c34d4c1af18c93">getScene</a>() = 0;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;};</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !IBUILDER_HPP_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="aCamera_8hpp_html"><div class="ttname"><a href="Camera_8hpp.html">Camera.hpp</a></div></div>
+<div class="ttc" id="aParsing_8hpp_html"><div class="ttname"><a href="Parsing_8hpp.html">Parsing.hpp</a></div></div>
+<div class="ttc" id="aScene_8hpp_html"><div class="ttname"><a href="Scene_8hpp.html">Scene.hpp</a></div></div>
+<div class="ttc" id="aclassIBuilder_html"><div class="ttname"><a href="classIBuilder.html">IBuilder</a></div><div class="ttdoc">Interface for the builder pattern to construct scene components.</div><div class="ttdef"><b>Definition:</b> <a href="IBuilder_8hpp_source.html#l00035">IBuilder.hpp:35</a></div></div>
+<div class="ttc" id="aclassIBuilder_html_a2483e7360143df0f12b8f6b70c16d052"><div class="ttname"><a href="classIBuilder.html#a2483e7360143df0f12b8f6b70c16d052">IBuilder::createCamera</a></div><div class="ttdeci">virtual void createCamera(std::map&lt; std::string, std::tuple&lt; float, float, float &gt;&gt; map)=0</div><div class="ttdoc">Create a camera in the scene.</div></div>
+<div class="ttc" id="aclassIBuilder_html_a60781824daeb712214f9c5cbd996b760"><div class="ttname"><a href="classIBuilder.html#a60781824daeb712214f9c5cbd996b760">IBuilder::~IBuilder</a></div><div class="ttdeci">virtual ~IBuilder()=default</div><div class="ttdoc">Virtual destructor.</div></div>
+<div class="ttc" id="aclassIBuilder_html_a94b25088f4e98df374a138a502333b6f"><div class="ttname"><a href="classIBuilder.html#a94b25088f4e98df374a138a502333b6f">IBuilder::createObjects</a></div><div class="ttdeci">virtual void createObjects(std::vector&lt; Primitive &gt; primitive)=0</div><div class="ttdoc">Create primitive objects in the scene.</div></div>
+<div class="ttc" id="aclassIBuilder_html_ad3f81f4d1bedad5a56c34d4c1af18c93"><div class="ttname"><a href="classIBuilder.html#ad3f81f4d1bedad5a56c34d4c1af18c93">IBuilder::getScene</a></div><div class="ttdeci">virtual Scene * getScene()=0</div><div class="ttdoc">Retrieve the constructed scene.</div></div>
+<div class="ttc" id="aclassIBuilder_html_af4f329260da7f7dbfbfe05756fce756c"><div class="ttname"><a href="classIBuilder.html#af4f329260da7f7dbfbfe05756fce756c">IBuilder::createLight</a></div><div class="ttdeci">virtual void createLight(std::map&lt; std::string, std::tuple&lt; float, float, float &gt;&gt; light)=0</div><div class="ttdoc">Create a light in the scene.</div></div>
+<div class="ttc" id="aclassScene_html"><div class="ttname"><a href="classScene.html">Scene</a></div><div class="ttdef"><b>Definition:</b> <a href="Scene_8hpp_source.html#l00018">Scene.hpp:18</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

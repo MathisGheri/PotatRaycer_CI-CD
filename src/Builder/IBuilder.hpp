@@ -5,6 +5,15 @@
 ** IBuilder
 */
 
+/**
+* @file IBuilder.hpp
+* @brief Interface for Builders used in the PotatRaycer project.
+* 
+* The IBuilder class provides the interface for building elements in the scene
+* such as cameras, lights, and other objects. It allows for a flexible
+* implementation of various building techniques.
+*/
+
 #ifndef IBUILDER_HPP_
 #define IBUILDER_HPP_
 
@@ -14,15 +23,49 @@
 #include "Camera.hpp"
 #include "Parsing.hpp"
 
+/**
+* @class IBuilder
+* @brief Interface for the builder pattern to construct scene components.
+*
+* This interface declares methods for creating cameras, lights, and other
+* primitive objects within a scene. It also provides a method to retrieve
+* the constructed scene.
+*/
+
 class IBuilder {
     public:
+        /**
+        * @brief Virtual destructor.
+        */
         virtual ~IBuilder() = default;
-        virtual void createCamera(std::map<std::string,std::tuple<float,float,float>>) = 0; //implement better with return value
-        virtual void createLight(std::map<std::string,std::tuple<float,float,float>>) = 0; //implement better with return value
-        virtual void createObjects(std::vector<Primitive>) = 0;
+
+        /**
+        * @brief Create a camera in the scene.
+        * @param map from string identifiers to tuples representing the camera specifications.
+        * @note This function does not return a value but configures the scene with a new camera.
+        */
+        virtual void createCamera(std::map<std::string,std::tuple<float,float,float>> map) = 0;
+
+        /**
+        * @brief Create a light in the scene.
+        * @param light Map from string identifiers to tuples representing the light specifications.
+        * @note This function does not return a value but adds a light to the scene.
+        */
+        virtual void createLight(std::map<std::string,std::tuple<float,float,float>> light) = 0;
+
+        /**
+        * @brief Create primitive objects in the scene.
+        * @param primitive A vector of Primitive objects to be added to the scene.
+        * @note This function does not return a value but populates the scene with primitives.
+        */
+        virtual void createObjects(std::vector<Primitive> primitive) = 0;
+
+        /**
+        * @note This function does not require any parameters since it allow user to get informations.
+        * @brief Retrieve the constructed scene.
+        * @return Pointer to the constructed Scene.
+        */
         virtual Scene *getScene() = 0;
 };
 
-//reimplement totaly the createLight function
-//get back the createCamera we have to understand code
 #endif /* !IBUILDER_HPP_ */

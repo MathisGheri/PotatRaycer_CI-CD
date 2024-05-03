@@ -24,7 +24,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PotatRaycer
    </div>
-   <div id="projectbrief">A simple raytracer written in C++</div>
+   <div id="projectbrief">A simple raytracer in c++</div>
   </td>
  </tr>
  </tbody>
@@ -71,7 +71,7 @@ $(function() {
 <div class="title">Scene.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<a href="Scene_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">** EPITECH PROJECT, 2024</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">** PotatRaycer_CI-CD</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">** File description:</span></div>
@@ -80,35 +80,50 @@ $(function() {
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef SCENE_HPP_</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#define SCENE_HPP_</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="Scene_8hpp.html#af4ceb329dd2e290342a0e287d7d93408">   10</a></span>&#160;<span class="preprocessor">#define SCENE_HPP_</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">//pedro pedro pedro</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;Light.hpp&quot;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;Camera.hpp&quot;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;IHitable.hpp&quot;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;include.hpp&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Light_8hpp.html">Light.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Camera_8hpp.html">Camera.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="IHitable_8hpp.html">IHitable.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="include_8hpp.html">include.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
 <div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classScene.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="classScene.html">Scene</a> {</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <a class="code" href="classScene.html">Scene</a>();</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        ~<a class="code" href="classScene.html">Scene</a>();</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keywordtype">void</span> setLight(std::unique_ptr&lt;Light&gt;l);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keywordtype">void</span> setCamera(std::unique_ptr&lt;Camera&gt; c);</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keywordtype">void</span> addObject(std::unique_ptr&lt;IHitable&gt; obj); <span class="comment">//juste mettre dans le tableau</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <a class="code" href="classScene.html#ad10176d75a9cc0da56626f682d083507">Scene</a>();</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <a class="code" href="classScene.html#a3b8cec2e32546713915f8c6303c951f1">~Scene</a>();</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classScene.html#a42865b2699674efede1e2234feacd0dd">setLight</a>(std::unique_ptr&lt;Light&gt;l);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classScene.html#af50135deb7bc899e0aef1bcc7130e4ce">setCamera</a>(std::unique_ptr&lt;Camera&gt; c);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classScene.html#aff2a0ad4c04e56496c65847ffb8654d7">addObject</a>(std::unique_ptr&lt;IHitable&gt; obj); <span class="comment">//juste mettre dans le tableau</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="comment">// mettre des consts</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        std::vector&lt;std::unique_ptr&lt;IHitable&gt;&gt;&amp; getObjects(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <a class="code" href="classLight.html">Light</a> *getLight(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <a class="code" href="classCamera.html">Camera</a> *getCamera(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        std::vector&lt;std::unique_ptr&lt;IHitable&gt;&gt;&amp; <a class="code" href="classScene.html#af7d526988220e9aaae1700ae0abdba89">getObjects</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <a class="code" href="classLight.html">Light</a> *<a class="code" href="classScene.html#a07f4c98a7d7b54f688558cb5a36aeb9d">getLight</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <a class="code" href="classCamera.html">Camera</a> *<a class="code" href="classScene.html#aaea035e6c2b70968c2a6668fbe26565a">getCamera</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        std::unique_ptr&lt;Light&gt; light;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        std::unique_ptr&lt;Camera&gt; camera;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        std::vector&lt;std::unique_ptr&lt;IHitable&gt;&gt; Objects; <span class="comment">// tableau de Hitable</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classScene.html#a7a525dc7392fc8e293db0b05f03b0c88">   30</a></span>&#160;        std::unique_ptr&lt;Light&gt; <a class="code" href="classScene.html#a7a525dc7392fc8e293db0b05f03b0c88">light</a>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classScene.html#a01a5fb63e810c9ccb301239c2aa0cfa6">   31</a></span>&#160;        std::unique_ptr&lt;Camera&gt; <a class="code" href="classScene.html#a01a5fb63e810c9ccb301239c2aa0cfa6">camera</a>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classScene.html#a188d725a2c0e4d604678150b2bb325b5">   32</a></span>&#160;        std::vector&lt;std::unique_ptr&lt;IHitable&gt;&gt; <a class="code" href="classScene.html#a188d725a2c0e4d604678150b2bb325b5">Objects</a>; <span class="comment">// tableau de Hitable</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;};</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !SCENE_HPP_ */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="aclassCamera_html"><div class="ttname"><a href="classCamera.html">Camera</a></div><div class="ttdef"><b>Definition:</b> Camera.hpp:15</div></div>
-<div class="ttc" id="aclassLight_html"><div class="ttname"><a href="classLight.html">Light</a></div><div class="ttdef"><b>Definition:</b> Light.hpp:14</div></div>
-<div class="ttc" id="aclassScene_html"><div class="ttname"><a href="classScene.html">Scene</a></div><div class="ttdef"><b>Definition:</b> Scene.hpp:18</div></div>
+<div class="ttc" id="aCamera_8hpp_html"><div class="ttname"><a href="Camera_8hpp.html">Camera.hpp</a></div></div>
+<div class="ttc" id="aIHitable_8hpp_html"><div class="ttname"><a href="IHitable_8hpp.html">IHitable.hpp</a></div></div>
+<div class="ttc" id="aLight_8hpp_html"><div class="ttname"><a href="Light_8hpp.html">Light.hpp</a></div></div>
+<div class="ttc" id="aclassCamera_html"><div class="ttname"><a href="classCamera.html">Camera</a></div><div class="ttdef"><b>Definition:</b> <a href="Camera_8hpp_source.html#l00015">Camera.hpp:15</a></div></div>
+<div class="ttc" id="aclassLight_html"><div class="ttname"><a href="classLight.html">Light</a></div><div class="ttdef"><b>Definition:</b> <a href="Light_8hpp_source.html#l00014">Light.hpp:14</a></div></div>
+<div class="ttc" id="aclassScene_html"><div class="ttname"><a href="classScene.html">Scene</a></div><div class="ttdef"><b>Definition:</b> <a href="Scene_8hpp_source.html#l00018">Scene.hpp:18</a></div></div>
+<div class="ttc" id="aclassScene_html_a01a5fb63e810c9ccb301239c2aa0cfa6"><div class="ttname"><a href="classScene.html#a01a5fb63e810c9ccb301239c2aa0cfa6">Scene::camera</a></div><div class="ttdeci">std::unique_ptr&lt; Camera &gt; camera</div><div class="ttdef"><b>Definition:</b> <a href="Scene_8hpp_source.html#l00031">Scene.hpp:31</a></div></div>
+<div class="ttc" id="aclassScene_html_a07f4c98a7d7b54f688558cb5a36aeb9d"><div class="ttname"><a href="classScene.html#a07f4c98a7d7b54f688558cb5a36aeb9d">Scene::getLight</a></div><div class="ttdeci">Light * getLight(void)</div><div class="ttdef"><b>Definition:</b> <a href="Scene_8cpp_source.html#l00041">Scene.cpp:41</a></div></div>
+<div class="ttc" id="aclassScene_html_a188d725a2c0e4d604678150b2bb325b5"><div class="ttname"><a href="classScene.html#a188d725a2c0e4d604678150b2bb325b5">Scene::Objects</a></div><div class="ttdeci">std::vector&lt; std::unique_ptr&lt; IHitable &gt; &gt; Objects</div><div class="ttdef"><b>Definition:</b> <a href="Scene_8hpp_source.html#l00032">Scene.hpp:32</a></div></div>
+<div class="ttc" id="aclassScene_html_a3b8cec2e32546713915f8c6303c951f1"><div class="ttname"><a href="classScene.html#a3b8cec2e32546713915f8c6303c951f1">Scene::~Scene</a></div><div class="ttdeci">~Scene()</div><div class="ttdef"><b>Definition:</b> <a href="Scene_8cpp_source.html#l00016">Scene.cpp:16</a></div></div>
+<div class="ttc" id="aclassScene_html_a42865b2699674efede1e2234feacd0dd"><div class="ttname"><a href="classScene.html#a42865b2699674efede1e2234feacd0dd">Scene::setLight</a></div><div class="ttdeci">void setLight(std::unique_ptr&lt; Light &gt;l)</div><div class="ttdef"><b>Definition:</b> <a href="Scene_8cpp_source.html#l00021">Scene.cpp:21</a></div></div>
+<div class="ttc" id="aclassScene_html_a7a525dc7392fc8e293db0b05f03b0c88"><div class="ttname"><a href="classScene.html#a7a525dc7392fc8e293db0b05f03b0c88">Scene::light</a></div><div class="ttdeci">std::unique_ptr&lt; Light &gt; light</div><div class="ttdef"><b>Definition:</b> <a href="Scene_8hpp_source.html#l00030">Scene.hpp:30</a></div></div>
+<div class="ttc" id="aclassScene_html_aaea035e6c2b70968c2a6668fbe26565a"><div class="ttname"><a href="classScene.html#aaea035e6c2b70968c2a6668fbe26565a">Scene::getCamera</a></div><div class="ttdeci">Camera * getCamera(void)</div><div class="ttdef"><b>Definition:</b> <a href="Scene_8cpp_source.html#l00046">Scene.cpp:46</a></div></div>
+<div class="ttc" id="aclassScene_html_ad10176d75a9cc0da56626f682d083507"><div class="ttname"><a href="classScene.html#ad10176d75a9cc0da56626f682d083507">Scene::Scene</a></div><div class="ttdeci">Scene()</div><div class="ttdef"><b>Definition:</b> <a href="Scene_8cpp_source.html#l00010">Scene.cpp:10</a></div></div>
+<div class="ttc" id="aclassScene_html_af50135deb7bc899e0aef1bcc7130e4ce"><div class="ttname"><a href="classScene.html#af50135deb7bc899e0aef1bcc7130e4ce">Scene::setCamera</a></div><div class="ttdeci">void setCamera(std::unique_ptr&lt; Camera &gt; c)</div><div class="ttdef"><b>Definition:</b> <a href="Scene_8cpp_source.html#l00026">Scene.cpp:26</a></div></div>
+<div class="ttc" id="aclassScene_html_af7d526988220e9aaae1700ae0abdba89"><div class="ttname"><a href="classScene.html#af7d526988220e9aaae1700ae0abdba89">Scene::getObjects</a></div><div class="ttdeci">std::vector&lt; std::unique_ptr&lt; IHitable &gt; &gt; &amp; getObjects(void)</div><div class="ttdef"><b>Definition:</b> <a href="Scene_8cpp_source.html#l00036">Scene.cpp:36</a></div></div>
+<div class="ttc" id="aclassScene_html_aff2a0ad4c04e56496c65847ffb8654d7"><div class="ttname"><a href="classScene.html#aff2a0ad4c04e56496c65847ffb8654d7">Scene::addObject</a></div><div class="ttdeci">void addObject(std::unique_ptr&lt; IHitable &gt; obj)</div><div class="ttdef"><b>Definition:</b> <a href="Scene_8cpp_source.html#l00031">Scene.cpp:31</a></div></div>
+<div class="ttc" id="ainclude_8hpp_html"><div class="ttname"><a href="include_8hpp.html">include.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -1,7 +1,4 @@
 var searchData=
 [
-  ['parseprimitives_11',['parsePrimitives',['../classParsing.html#aa3336c05be6cece06abb7760795ea4aa',1,'Parsing']]],
-  ['parsing_12',['Parsing',['../classParsing.html',1,'']]],
-  ['plane_13',['Plane',['../classPlane.html',1,'']]],
-  ['primitive_14',['Primitive',['../structPrimitive.html',1,'']]]
+  ['fuzz_33',['fuzz',['../classMetal.html#aec7d10011f0d6b8737aefa0386cd36d8',1,'Metal::fuzz()'],['../structMaterial.html#ad36f80852a33b4e7771a006c04eb2783',1,'Material::fuzz()']]]
 ];
