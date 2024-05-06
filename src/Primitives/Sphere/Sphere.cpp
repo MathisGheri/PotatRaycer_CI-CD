@@ -8,7 +8,7 @@
 #include "Sphere.hpp"
 #include "SingletonLogger.hpp"
 
-Sphere::Sphere(Vec3 cen, float r, std::unique_ptr<IMaterial> m) : center(cen), radius(r), mat_ptr(std::move(m))
+Sphere::Sphere(Vec3 cen, float r, std::shared_ptr<IMaterial> m) : center(cen), radius(r), mat_ptr(std::move(m))
 {
     Logger *logger = LoggerSingleton::getInstance();
 	std::ostringstream msg;

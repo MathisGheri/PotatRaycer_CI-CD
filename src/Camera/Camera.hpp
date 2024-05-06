@@ -15,6 +15,7 @@
 
 class Camera {
 	public:
+		Camera() = default;
 		Camera(Vec3 lookfrom, Vec3 lookat, Vec3 vup, float vfov, float aspect, float aperture, float focus_dist);
 		~Camera();
 		Ray get_Ray(float s, float t);

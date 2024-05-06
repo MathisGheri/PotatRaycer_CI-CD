@@ -8,7 +8,7 @@
 #include "Plane.hpp"
 #include "SingletonLogger.hpp"
 
-Plane::Plane(Vec3 p, Vec3 n, IMaterial *m) : point(p), normal(n), mat_ptr(m)
+Plane::Plane(Vec3 p, Vec3 n, std::shared_ptr<IMaterial> m) : point(p), normal(n), mat_ptr(m)
 {
     Logger *logger = LoggerSingleton::getInstance();
 	std::ostringstream msg;
@@ -30,7 +30,7 @@ bool Plane::hit(const Ray& r, float t_min, float t_max, hit_record_t &rec) const
             rec.t = t;
             rec.p = r.point_at_parameter(rec.t);
             rec.normal = normal;
-            rec.mat_ptr = mat_ptr;
+            rec.mat_ptr = mat_ptr.get();
             return true;
         }
     }
