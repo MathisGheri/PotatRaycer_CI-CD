@@ -9,7 +9,7 @@
 * @file SceneBuilder.hpp
 * @brief Builder class for constructing scenes
 * 
-* The SceneBuilder class provides a concrete implementation of the IBuilder
+* @details The SceneBuilder class provides a concrete implementation of the IBuilder
 * interface for constructing scenes. It allows for the creation of cameras,
 * lights, and other objects within the scene.
 */

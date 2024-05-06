@@ -9,7 +9,7 @@
 * @file IBuilder.hpp
 * @brief Interface for Builders used in the PotatRaycer project.
 * 
-* The IBuilder class provides the interface for building elements in the scene
+* @details The IBuilder class provides the interface for building elements in the scene
 * such as cameras, lights, and other objects. It allows for a flexible
 * implementation of various building techniques.
 */
@@ -27,7 +27,7 @@
 * @class IBuilder
 * @brief Interface for the builder pattern to construct scene components.
 *
-* This interface declares methods for creating cameras, lights, and other
+* @details This interface declares methods for creating cameras, lights, and other
 * primitive objects within a scene. It also provides a method to retrieve
 * the constructed scene.
 */

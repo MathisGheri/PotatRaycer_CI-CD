@@ -2,7 +2,7 @@
 <area shape="rect" id="node1" title="Interface for Builders used in the PotatRaycer project." alt="" coords="596,5,753,32"/>
 <area shape="rect" id="node2" href="$include_8hpp.html" title=" " alt="" coords="542,528,642,555"/>
 <area shape="rect" id="node17" href="$Scene_8hpp.html" title=" " alt="" coords="574,80,658,107"/>
-<area shape="rect" id="node22" href="$Camera_8hpp.html" title=" " alt="" coords="687,155,780,181"/>
+<area shape="rect" id="node22" href="$Camera_8hpp.html" title="Camera class header file." alt="" coords="687,155,780,181"/>
 <area shape="rect" id="node26" href="$Parsing_8hpp.html" title=" " alt="" coords="873,304,964,331"/>
 <area shape="rect" id="node3" title=" " alt="" coords="5,603,77,629"/>
 <area shape="rect" id="node4" title=" " alt="" coords="102,603,165,629"/>

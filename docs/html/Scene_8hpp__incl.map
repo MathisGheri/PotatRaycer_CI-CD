@@ -2,7 +2,7 @@
 <area shape="rect" id="node1" title=" " alt="" coords="424,5,571,32"/>
 <area shape="rect" id="node2" href="$Light_8hpp.html" title=" " alt="" coords="408,155,483,181"/>
 <area shape="rect" id="node4" href="$include_8hpp.html" title=" " alt="" coords="548,453,636,480"/>
-<area shape="rect" id="node21" href="$Camera_8hpp.html" title=" " alt="" coords="673,80,767,107"/>
+<area shape="rect" id="node21" href="$Camera_8hpp.html" title="Camera class header file." alt="" coords="673,80,767,107"/>
 <area shape="rect" id="node23" href="$IHitable_8hpp.html" title=" " alt="" coords="525,80,617,107"/>
 <area shape="rect" id="node3" href="$Vec3_8hpp.html" title=" " alt="" coords="609,229,685,256"/>
 <area shape="rect" id="node19" href="$SingletonLogger_8hpp.html" title=" " alt="" coords="630,304,770,331"/>

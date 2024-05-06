@@ -1,5 +1,5 @@
 <map id="Camera::Camera" name="Camera::Camera">
-<area shape="rect" id="node1" title=" " alt="" coords="5,81,128,108"/>
+<area shape="rect" id="node1" title="Constructor for the Camera class." alt="" coords="5,81,128,108"/>
 <area shape="rect" id="node2" href="$Vec3_8hpp.html#a0d0b4382341e3c8ccff0d43ac1282869" title=" " alt="" coords="244,5,299,32"/>
 <area shape="rect" id="node3" href="$classLoggerSingleton.html#a9722cb20d2fe85dc683a0e35fd1d2f67" title=" " alt="" coords="176,56,367,83"/>
 <area shape="rect" id="node4" href="$classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2" title=" " alt="" coords="228,107,315,133"/>

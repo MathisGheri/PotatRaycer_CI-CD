@@ -1,5 +1,5 @@
 <map id="Camera::get_Ray" name="Camera::get_Ray">
-<area shape="rect" id="node1" title=" " alt="" coords="5,56,131,83"/>
+<area shape="rect" id="node1" title="Get the ray from the camera." alt="" coords="5,56,131,83"/>
 <area shape="rect" id="node2" href="$Vec3_8hpp.html#aad4a2094d505ab19ae9d1d1051428443" title=" " alt="" coords="179,5,320,32"/>
 <area shape="rect" id="node4" href="$classVec3.html#a2036e8ba73a1f4eb34cec27e66274cac" title=" " alt="" coords="216,56,283,83"/>
 <area shape="rect" id="node5" href="$classVec3.html#a5636feef398a08a1014c03cb60cce2e8" title=" " alt="" coords="216,107,283,133"/>

@@ -1,6 +1,6 @@
 <map id="src/Camera/Camera.cpp" name="src/Camera/Camera.cpp">
-<area shape="rect" id="node1" title=" " alt="" coords="504,5,669,32"/>
-<area shape="rect" id="node2" href="$Camera_8hpp.html" title=" " alt="" coords="540,80,633,107"/>
+<area shape="rect" id="node1" title="Camera class implementation file." alt="" coords="504,5,669,32"/>
+<area shape="rect" id="node2" href="$Camera_8hpp.html" title="Camera class header file." alt="" coords="540,80,633,107"/>
 <area shape="rect" id="node3" href="$Vec3_8hpp.html" title=" " alt="" coords="530,229,606,256"/>
 <area shape="rect" id="node19" href="$SingletonLogger_8hpp.html" title=" " alt="" coords="590,304,730,331"/>
 <area shape="rect" id="node21" href="$Ray_8hpp.html" title=" " alt="" coords="551,155,622,181"/>
