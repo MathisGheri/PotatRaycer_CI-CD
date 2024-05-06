@@ -10,8 +10,6 @@
 
 Scene::Scene()
 {
-    this->camera = nullptr;
-    this->light = nullptr;
     Logger *logger = LoggerSingleton::getInstance();
 	std::ostringstream msg;
     msg << "LOG: Scene created.";
@@ -20,39 +18,35 @@ Scene::Scene()
 
 Scene::~Scene()
 {
-    this->Objects.clear();
+    this->objects.clear();
 }
 
-void Scene::setLight(std::unique_ptr<Light> l)
+void Scene::setLight(Light l)
 {
-    this->light = std::move(l);
+    this->light = l;
 }
 
-void Scene::setCamera(std::unique_ptr<Camera> c)
+void Scene::setCamera(Camera c)
 {
-    this->camera = std::move(c);
+    this->camera = c;
 }
 
-void Scene::addObject(std::unique_ptr<IHitable> obj)
+void Scene::addObject(std::shared_ptr<IHitable> obj)
 {
-    Objects.push_back(std::move(obj));
+    objects.push_back(obj);
 }
 
-std::vector<IHitable*>& Scene::getObjects()
+const std::vector<std::shared_ptr<IHitable>>& Scene::getObjects() const
 {
-    std::vector<IHitable*> objectRefs;
-    for(auto& obj : Objects) {
-        objectRefs.push_back(obj.get());
-    }
-    return objectRefs;
+    return objects;
 }
 
-Light *Scene::getLight(void)
+const Light &Scene::getLight(void) const
 {
-    return light.get();
+    return this->light;
 }
 
-Camera *Scene::getCamera(void)
+const Camera &Scene::getCamera(void) const
 {
-    return camera.get();
+    return this->camera;
 }

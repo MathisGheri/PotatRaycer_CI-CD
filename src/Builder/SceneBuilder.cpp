@@ -21,9 +21,7 @@
 
 SceneBuilder::SceneBuilder()
 {
-    if (scene != nullptr)
-        delete(scene);
-    scene = new Scene();
+    Scene();
     Logger* logger = LoggerSingleton::getInstance();
     logger->log(INFO, "SceneBuilder created.");
 }
@@ -53,8 +51,8 @@ void SceneBuilder::createCamera(std::map<std::string,std::tuple<float,float,floa
         exit(84);
     }
 
-    std::unique_ptr<Camera> camera = std::make_unique<Camera>(lookfrom, lookat, vup, vfov, aspect, aperture, focus_dist);
-    scene->setCamera(std::move(camera));
+    Camera camera = Camera(lookfrom, lookat, vup, vfov, aspect, aperture, focus_dist);
+    scene.setCamera(camera);
 }
 
 void SceneBuilder::createLight(std::map<std::string, std::tuple<float, float, float>> lightParams)
@@ -70,8 +68,8 @@ void SceneBuilder::createLight(std::map<std::string, std::tuple<float, float, fl
         throw("Light parameters not found.", Level::MIDDLE);
         exit(84);
     }
-    std::unique_ptr<Light> light = std::make_unique<Light>(pos, intensity);
-    scene->setLight(std::move(light));
+    Light light = Light(pos, intensity);
+    scene.setLight(light);
 }
 
 void SceneBuilder::createObjects(std::vector<Primitive> primitives)
@@ -79,7 +77,7 @@ void SceneBuilder::createObjects(std::vector<Primitive> primitives)
     for (const auto& prim : primitives) {
         /* Material creation */
         Vec3 materialVec(prim.material.vec.x, prim.material.vec.y, prim.material.vec.z);
-        std::unique_ptr<IMaterial> material;
+        std::shared_ptr<IMaterial> material;
         if (prim.material.type == "metal") {
             material = std::make_unique<Metal>(materialVec, prim.material.fuzz);
         } else if (prim.material.type == "lambertian") {
@@ -91,18 +89,18 @@ void SceneBuilder::createObjects(std::vector<Primitive> primitives)
         if (prim.type == "sphere") {
             Vec3 center(prim.points[0].x, prim.points[0].y, prim.points[0].z);
             float radius = prim.points[1].x;
-            std::unique_ptr<IHitable> object = std::make_unique<Sphere>(center, radius, std::move(material));
-            scene->addObject(std::move(object));
+            std::shared_ptr<IHitable> object = std::make_unique<Sphere>(center, radius, std::move(material));
+            scene.addObject(std::move(object));
         } else if (prim.type == "plane") {
             Vec3 point1(prim.points[0].x, prim.points[0].y, prim.points[0].z);
             Vec3 point2(prim.points[1].x, prim.points[1].y, prim.points[1].z);
-            std::unique_ptr<IHitable> object = std::make_unique<Plane>(point1, point2, material.release());
-            scene->addObject(std::move(object));
+            std::shared_ptr<IHitable> object = std::make_unique<Plane>(point1, point2, std::move(material));
+            scene.addObject(std::move(object));
         }
     }
 }
 
-Scene *SceneBuilder::getScene()
+const Scene &SceneBuilder::getScene() const
 {
     return this->scene;
 }

@@ -19,17 +19,17 @@ class Scene {
     public:
         Scene();
         ~Scene();
-        void setLight(std::unique_ptr<Light>l);
-        void setCamera(std::unique_ptr<Camera> c);
-        void addObject(std::unique_ptr<IHitable> obj); //juste mettre dans le tableau
+        void setLight(Light l);
+        void setCamera(Camera c);
+        void addObject(std::shared_ptr<IHitable> obj); //juste mettre dans le tableau
         // mettre des consts
-        std::vector<IHitable*>& getObjects();
-        Light *getLight(void);
-        Camera *getCamera(void);
+        const std::vector<std::shared_ptr<IHitable>>& getObjects(void) const;
+        const Light &getLight(void) const;
+        const Camera &getCamera(void) const;
     private:
-        std::unique_ptr<Light> light;
-        std::unique_ptr<Camera >camera;
-        std::vector<std::unique_ptr<IHitable>> Objects; // tableau de Hitable
+        Light light;
+        Camera camera;
+        std::vector<std::shared_ptr<IHitable>> objects; // tableau de Hitable
 };
 
 #endif /* !SCENE_HPP_ */

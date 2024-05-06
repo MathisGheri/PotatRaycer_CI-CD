@@ -13,6 +13,7 @@
 
 class Light {
     public:
+        Light() = default;
         Light(const Vec3& pos, float intensity);
         ~Light();
         Vec3 getPosition() const;

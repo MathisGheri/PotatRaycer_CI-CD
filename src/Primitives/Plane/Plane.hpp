@@ -15,13 +15,13 @@
 
 class Plane : public IHitable{
     public:
-        Plane(Vec3 p, Vec3 n, IMaterial *m);
+        Plane(Vec3 p, Vec3 n,  std::shared_ptr<IMaterial> mat);
         ~Plane();
         bool hit(const Ray& r, float t_min, float t_max, hit_record_t &rec) const override final;
     private:
         Vec3 point;
         Vec3 normal;
-        IMaterial *mat_ptr;
+        std::shared_ptr<IMaterial> mat_ptr;
 };
 
 #endif //PLANE_HPP_

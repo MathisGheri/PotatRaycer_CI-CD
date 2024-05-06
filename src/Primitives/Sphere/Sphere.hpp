@@ -15,13 +15,13 @@
 
 class Sphere : public IHitable {
     public:
-        Sphere(Vec3 cen, float r, std::unique_ptr<IMaterial> m);
+        Sphere(Vec3 cen, float r, std::shared_ptr<IMaterial> m);
         ~Sphere();
         bool hit(const Ray& r, float t_min, float t_max, hit_record_t& rec) const;
     private:
         Vec3 center;
         float radius;
-        std::unique_ptr<IMaterial> mat_ptr;
+        std::shared_ptr<IMaterial> mat_ptr;
 };
 
 #endif /* !SPHERE_HPP_ */

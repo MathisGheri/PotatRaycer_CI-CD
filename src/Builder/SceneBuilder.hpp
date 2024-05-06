@@ -20,9 +20,9 @@ class SceneBuilder : public IBuilder {
         void createCamera(std::map<std::string,std::tuple<float,float,float>>) override final;
         void createLight(std::map<std::string,std::tuple<float,float,float>>) override final;
         void createObjects(std::vector<Primitive>) override final;
-        Scene *getScene() override final;
+        const Scene &getScene() const override final;
     private:
-        Scene *scene = nullptr;
+        Scene scene;
 };
 
 #endif /* !SCENEBUILDER_HPP_ */

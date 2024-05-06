@@ -12,7 +12,7 @@
 
 Core::Core()
 {
-    this->scene = nullptr;
+    scene = Scene();
     Logger* logger = LoggerSingleton::getInstance();
     logger->log(INFO, "Core Created.");
 }
@@ -39,7 +39,7 @@ void Core::generatePPM()
     //calcul
 }
 
-Scene *Core::getScene()
+const Scene &Core::getScene() const
 {
     return this->scene;
 }

@@ -18,9 +18,9 @@ class Core {
         ~Core();
         void assembleScene(const std::string &filename);
         void generatePPM();
-        Scene *getScene();
+        const Scene &getScene() const;
     private:
-        Scene *scene;
+        Scene scene;
 };
 
 #endif /* !CORE_HPP_ */
