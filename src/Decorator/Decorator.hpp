@@ -19,6 +19,7 @@ public:
     ~Decorator();
     void loop(Scene scene);
     Vec3 colorloop(const Ray &r, const std::vector<std::shared_ptr<IHitable>> &_objects, Light _light);
+    bool hit(const Ray& r, float t_min, float t_max, hit_record_t& rec) const ;
 
 private:
     std::vector<std::shared_ptr<IHitable>> _world;
