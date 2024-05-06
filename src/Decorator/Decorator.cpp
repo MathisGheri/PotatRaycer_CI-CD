@@ -2,14 +2,18 @@
 ** EPITECH PROJECT, 2024
 ** PotatRaycer_CI-CD
 ** File description:
-** Calcdeco
+** Decorator
 */
 
-#include "CalcDecorator.hpp"
+#include "Decorator.hpp"
 #include "Camera.hpp"
 #include "Light.hpp"
+#include "SingletonLogger.hpp"
 
-Calcdeco::Calcdeco(Scene scene) {
+Decorator::Decorator(Scene scene)
+{
+    Logger* logger = LoggerSingleton::getInstance();
+    logger->log(INFO, "Decorator created.");
     _world = scene.getObjects();
     _light = scene.getLight();
     _cam = scene.getCamera();
@@ -17,9 +21,11 @@ Calcdeco::Calcdeco(Scene scene) {
     _height = 100;
 }
 
-Calcdeco::~Calcdeco() {}
+Decorator::~Decorator() {}
 
-void Calcdeco::loop(Scene scene) {
+void Decorator::loop(Scene scene)
+{
+    Logger* logger = LoggerSingleton::getInstance();
     for (int y = _height - 1; y >= 0; y--) {
         for (int x = 0; x < _width; x++) {
             Vec3 col(0, 0, 0);
@@ -38,12 +44,14 @@ void Calcdeco::loop(Scene scene) {
             std::cout << ir << " " << ig << " " << ib << "\n";
         }
     }
+    logger->log(DEBUG, "End of loop.");
 }
 
-Vec3 Calcdeco::colorloop(const Ray &r, const std::vector<std::shared_ptr<IHitable>> &_world, Light _light)
+Vec3 Decorator::colorloop(const Ray &r, const std::vector<std::shared_ptr<IHitable>> &_world, Light _light)
 {
+    Logger* logger = LoggerSingleton::getInstance();
     if (_world.empty()) {
-        // Aucun objet dans le monde
+        logger->log(WARNING, "No Primitives found.");
         return Vec3(0, 0, 0);
     }
 

@@ -53,7 +53,7 @@ public:
         logEntry << "[" << timestamp << "] "
                  << levelToString(level) << ": " << message << std::endl;
 
-        std::cout << logEntry.str();
+        //std::cout << logEntry.str();
 
         if (logFile.is_open()) {
             logFile << logEntry.str();

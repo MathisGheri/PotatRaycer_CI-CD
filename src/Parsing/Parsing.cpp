@@ -20,16 +20,16 @@ Parsing::Parsing(const std::string &file) : _filePath(file)
     parsePrimitives(root["primitives"]["spheres"], "sphere");
     parseLights(root["light"]);
     parseCamera(root["camera"]);
-    for (auto &p : _primitives) {
-        std::cout << "\tPrimitive: " << p.type << std::endl;
-        std::cout << "\tPoints: " << p.points[0].x << " " << p.points[0].y << " " << p.points[0].z << std::endl;
-        std::cout << "\tPoints: " << p.points[1].x << " " << p.points[1].y << " " << p.points[1].z << std::endl;
-        std::cout << "\tMaterial: " << p.material.type << std::endl;
-        std::cout << "\tVec: " << p.material.vec.x << " " << p.material.vec.y << " " << p.material.vec.z << std::endl;
-        std::cout << "\tFuzz: " << p.material.fuzz << std::endl;
-        std::cout << "\tRef_idx: " << p.material.ref_idx << std::endl;
-        printf("\n");
-    }
+    // for (auto &p : _primitives) {
+    //     std::cout << "\tPrimitive: " << p.type << std::endl;
+    //     std::cout << "\tPoints: " << p.points[0].x << " " << p.points[0].y << " " << p.points[0].z << std::endl;
+    //     std::cout << "\tPoints: " << p.points[1].x << " " << p.points[1].y << " " << p.points[1].z << std::endl;
+    //     std::cout << "\tMaterial: " << p.material.type << std::endl;
+    //     std::cout << "\tVec: " << p.material.vec.x << " " << p.material.vec.y << " " << p.material.vec.z << std::endl;
+    //     std::cout << "\tFuzz: " << p.material.fuzz << std::endl;
+    //     std::cout << "\tRef_idx: " << p.material.ref_idx << std::endl;
+    //     printf("\n");
+    // }
 }
 
 /**

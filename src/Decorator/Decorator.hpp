@@ -5,18 +5,18 @@
 ** calcs
 */
 
-#ifndef CALCDECORATOR_HPP_
-#define CALCDECORATOR_HPP_
+#ifndef DecoratorRATOR_HPP_
+#define DecoratorRATOR_HPP_
 
 #include "Scene.hpp"
 #include "IDecorator.hpp"
 #include "Ray.hpp"
 #include "IMaterial.hpp"
 
-class Calcdeco : public IDecorator {
+class Decorator : public IDecorator {
 public:
-    Calcdeco(Scene scene);
-    ~Calcdeco();
+    Decorator(Scene scene);
+    ~Decorator();
     void loop(Scene scene);
     Vec3 colorloop(const Ray &r, const std::vector<std::shared_ptr<IHitable>> &_objects, Light _light);
 

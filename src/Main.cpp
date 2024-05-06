@@ -26,6 +26,8 @@ int main(int argc, char **argv)
         const std::string &file = argv[1];
         Core core;
         core.assembleScene(file);
+        logger->log(INFO, "Initialisation ended.");
+        core.generatePPM();
         //Parser
         //SceneBuilder
         //Scene

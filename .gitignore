@@ -8,3 +8,6 @@ cmake-build-debug
 
 Makefile
 raytracer
+
+*.ppm
+logfile.txt

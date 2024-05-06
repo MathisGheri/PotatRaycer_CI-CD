@@ -42,6 +42,7 @@ target_include_directories(raytracer PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Observer
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Logger
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Exceptions
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/Decorator
 )
 
 find_package(SFML 2.5 COMPONENTS graphics window system REQUIRED)
