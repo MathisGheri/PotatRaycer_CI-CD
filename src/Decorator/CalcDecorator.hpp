@@ -13,25 +13,20 @@
 #include "Ray.hpp"
 #include "IMaterial.hpp"
 
-class calcdeco : public IDecorator {
-    public:
-        calcdeco(Scene *scene);
-        ~calcdeco();
-        void loop(Scene *scene);
-        Vec3 colorloop(const Ray &r, const std::vector<std::unique_ptr<IHitable>> & _world, std::unique_ptr<Light> _light);
+class Calcdeco : public IDecorator {
+public:
+    Calcdeco(Scene *scene);
+    ~Calcdeco();
+    void loop(Scene *scene);
+    Vec3 colorloop(const Ray &r, const std::vector<IHitable*> & _world, Light* _light);
 
-
-
-    private:
-        std::vector<std::unique_ptr<IHitable>> _world;
-        std::unique_ptr<Light> _light;
-        // Light _lig;
-        std::unique_ptr<Camera> _cam;
-        // Camera _camera;
-        int _width;
-        int _height;
-        int _ns = 200;
+private:
+    std::vector<IHitable*> _world;
+    Light* _light;
+    Camera* _cam;
+    int _width;
+    int _height;
+    int _ns = 200;
 };
-
 
 #endif

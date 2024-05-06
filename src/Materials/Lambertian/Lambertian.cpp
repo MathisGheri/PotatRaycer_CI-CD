@@ -19,8 +19,9 @@ Lambertian::Lambertian(const Vec3 &a) : albedo(a)
 Lambertian::~Lambertian()
 {
 }
-
-bool Lambertian::scatter(const Ray& r_in, const hit_record_t &rec, Vec3& attenuation, Ray& scattered, const Light& light, std::vector<std::unique_ptr<IHitable>> world) const {
+//rajouter light + objs
+bool Lambertian::scatter(const Ray& r_in, const hit_record_t &rec, Vec3& attenuation, Ray& scattered) const
+{
     Vec3 lightDir = light.calculateLightDirection(rec.p);
     float cos_theta = fabs(dot(rec.normal, lightDir));
     // Vérifie si le point peut voir la lumière directement

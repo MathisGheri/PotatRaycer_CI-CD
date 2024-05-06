@@ -23,12 +23,12 @@ class Scene {
         void setCamera(std::unique_ptr<Camera> c);
         void addObject(std::unique_ptr<IHitable> obj); //juste mettre dans le tableau
         // mettre des consts
-        std::vector<std::unique_ptr<IHitable>>& getObjects(void);
-        std::unique_ptr<Light> getLight(void);
-        std::unique_ptr<Camera> getCamera(void);
+        std::vector<IHitable*>& getObjects();
+        Light *getLight(void);
+        Camera *getCamera(void);
     private:
         std::unique_ptr<Light> light;
-        std::unique_ptr<Camera> camera;
+        std::unique_ptr<Camera >camera;
         std::vector<std::unique_ptr<IHitable>> Objects; // tableau de Hitable
 };
 

@@ -38,17 +38,21 @@ void Scene::addObject(std::unique_ptr<IHitable> obj)
     Objects.push_back(std::move(obj));
 }
 
-std::vector<std::unique_ptr<IHitable>>& Scene::getObjects(void)
+std::vector<IHitable*>& Scene::getObjects()
 {
-    return this->Objects;
+    std::vector<IHitable*> objectRefs;
+    for(auto& obj : Objects) {
+        objectRefs.push_back(obj.get());
+    }
+    return objectRefs;
 }
 
-std::unique_ptr<Light> Scene::getLight(void)
+Light *Scene::getLight(void)
 {
-    return std::move(light);
+    return light.get();
 }
 
-std::unique_ptr<Camera> Scene::getCamera(void)
+Camera *Scene::getCamera(void)
 {
-    return std::move(camera);
+    return camera.get();
 }
