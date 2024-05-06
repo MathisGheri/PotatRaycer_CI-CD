@@ -19,7 +19,7 @@ Dielectric::Dielectric(float ri) : ref_idx(ri)
 Dielectric::~Dielectric()
 {
 }
-bool Dielectric::scatter(const Ray& r_in, const hit_record_t &rec, Vec3& attenuation, Ray& scattered) const
+bool Dielectric::scatter(const Ray& r_in, const hit_record_t &rec, Vec3& attenuation, Ray& scattered, Light light, const std::vector<std::shared_ptr<IHitable>> &_obj) const
 {
     Vec3 outward_normal;
     Vec3 reflected = reflect(r_in.direction(), rec.normal);

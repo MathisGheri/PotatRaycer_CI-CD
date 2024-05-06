@@ -9,24 +9,24 @@
 #include "Camera.hpp"
 #include "Light.hpp"
 
-Calcdeco::Calcdeco(Scene *scene) {
-    _world = scene->getObjects();
-    _light = scene->getLight();
-    _cam = scene->getCamera();
+Calcdeco::Calcdeco(Scene scene) {
+    _world = scene.getObjects();
+    _light = scene.getLight();
+    _cam = scene.getCamera();
     _width = 200;
     _height = 100;
 }
 
 Calcdeco::~Calcdeco() {}
 
-void Calcdeco::loop(Scene *scene) {
+void Calcdeco::loop(Scene scene) {
     for (int y = _height - 1; y >= 0; y--) {
         for (int x = 0; x < _width; x++) {
             Vec3 col(0, 0, 0);
             for (int s = 0; s < _ns; s++) {
                 float u = float(x + drand48()) / float(_width);
                 float v = float(y + drand48()) / float(_height);
-                Ray r = _cam->get_Ray(u, v);
+                Ray r = _cam.get_Ray(u, v);
                 Vec3 p = r.point_at_parameter(2.0);
                 col += colorloop(r, _world, _light);
             }
@@ -40,7 +40,7 @@ void Calcdeco::loop(Scene *scene) {
     }
 }
 
-Vec3 Calcdeco::colorloop(const Ray &r, const std::vector<IHitable*> & _world, Light* _light)
+Vec3 Calcdeco::colorloop(const Ray &r, const std::vector<std::shared_ptr<IHitable>> &_world, Light _light)
 {
     if (_world.empty()) {
         // Aucun objet dans le monde
@@ -53,7 +53,7 @@ Vec3 Calcdeco::colorloop(const Ray &r, const std::vector<IHitable*> & _world, Li
     Vec3 attenuation, temp;
     if (_world[0]->hit(temp_r, 0.001, MAXFLOAT, rec)) {
         bool cond = false;
-        cond = rec.mat_ptr->scatter(temp_r, rec, attenuation, scattered);
+        cond = rec.mat_ptr->scatter(temp_r, rec, attenuation, scattered, _light, _world);
 
         depth++;
         temp = attenuation;
@@ -67,7 +67,7 @@ Vec3 Calcdeco::colorloop(const Ray &r, const std::vector<IHitable*> & _world, Li
             return temp;
         temp_r = scattered;
         while (depth < 50) {
-            cond = rec.mat_ptr->scatter(temp_r, rec, attenuation, scattered);
+            cond = rec.mat_ptr->scatter(temp_r, rec, attenuation, scattered, _light, _world);
 
             depth++;
             temp *= attenuation;

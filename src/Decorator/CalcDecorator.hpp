@@ -15,15 +15,15 @@
 
 class Calcdeco : public IDecorator {
 public:
-    Calcdeco(Scene *scene);
+    Calcdeco(Scene scene);
     ~Calcdeco();
-    void loop(Scene *scene);
-    Vec3 colorloop(const Ray &r, const std::vector<IHitable*> & _world, Light* _light);
+    void loop(Scene scene);
+    Vec3 colorloop(const Ray &r, const std::vector<std::shared_ptr<IHitable>> &_objects, Light _light);
 
 private:
-    std::vector<IHitable*> _world;
-    Light* _light;
-    Camera* _cam;
+    std::vector<std::shared_ptr<IHitable>> _world;
+    Light _light;
+    Camera _cam;
     int _width;
     int _height;
     int _ns = 200;

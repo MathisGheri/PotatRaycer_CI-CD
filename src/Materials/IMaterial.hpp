@@ -21,7 +21,7 @@ struct hit_record_s;
 class IMaterial {
     public:
         virtual ~IMaterial() = default;
-        virtual bool scatter(const Ray &r_in, const hit_record_t &rec, Vec3& attenuation, Ray& scattered) const = 0;
+        virtual bool scatter(const Ray &r_in, const hit_record_t &rec, Vec3 &attenuation, Ray &scattered, Light light, const std::vector<std::shared_ptr<IHitable>> &_obj) const = 0;
 };
 
 #endif /* !IMATERIAL_HPP_ */
