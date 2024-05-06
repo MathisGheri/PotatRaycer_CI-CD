@@ -24,8 +24,8 @@ class Scene {
         void addObject(std::unique_ptr<IHitable> obj); //juste mettre dans le tableau
         // mettre des consts
         std::vector<std::unique_ptr<IHitable>>& getObjects(void);
-        Light *getLight(void);
-        Camera *getCamera(void);
+        std::unique_ptr<Light> getLight(void);
+        std::unique_ptr<Camera> getCamera(void);
     private:
         std::unique_ptr<Light> light;
         std::unique_ptr<Camera> camera;

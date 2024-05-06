@@ -25,7 +25,7 @@ Metal::~Metal()
 {
 }
 
-bool Metal::scatter(const Ray& r_in, const hit_record_t &rec, Vec3& attenuation, Ray& scattered) const
+bool Metal::scatter(const Ray& r_in, const hit_record_t &rec, Vec3& attenuation, Ray& scattered, const Light& light, std::vector<std::unique_ptr<IHitable>> world) const
 {
     Vec3 reflected = reflect(unit_vector(r_in.direction()), rec.normal);
     scattered = Ray(rec.p, reflected + fuzz * random_in_unit_sphere());

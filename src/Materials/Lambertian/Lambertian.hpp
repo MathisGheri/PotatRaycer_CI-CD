@@ -14,7 +14,7 @@ class Lambertian : public IMaterial {
     public:
         Lambertian(const Vec3& a);
         ~Lambertian();
-        bool scatter(const Ray& r_in, const hit_record_t &rec, Vec3& attenuation, Ray& scattered) const override final;
+        bool scatter(const Ray& r_in, const hit_record_t &rec, Vec3& attenuation, Ray& scattered, const Light& light, std::vector<std::unique_ptr<IHitable>> world) const override final;
     private:
         Vec3 albedo;
 };

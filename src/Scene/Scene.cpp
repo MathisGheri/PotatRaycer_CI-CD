@@ -43,12 +43,12 @@ std::vector<std::unique_ptr<IHitable>>& Scene::getObjects(void)
     return this->Objects;
 }
 
-Light *Scene::getLight(void)
+std::unique_ptr<Light> Scene::getLight(void)
 {
-    return this->light.get();
+    return std::move(light);
 }
 
-Camera *Scene::getCamera(void)
+std::unique_ptr<Camera> Scene::getCamera(void)
 {
-    return this->camera.get();
+    return std::move(camera);
 }
