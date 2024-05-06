@@ -26,7 +26,7 @@ private:
     Camera _cam;
     int _width;
     int _height;
-    int _ns = 200;
+    int _ns;
 };
 
 #endif

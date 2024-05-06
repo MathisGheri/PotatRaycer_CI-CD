@@ -17,8 +17,9 @@ Decorator::Decorator(Scene scene)
     _world = scene.getObjects();
     _light = scene.getLight();
     _cam = scene.getCamera();
-    _width = 200;
-    _height = 100;
+    _width = 50;
+    _height = 50;
+    _ns = 50;
 }
 
 Decorator::~Decorator() {}
@@ -26,6 +27,8 @@ Decorator::~Decorator() {}
 void Decorator::loop(Scene scene)
 {
     Logger* logger = LoggerSingleton::getInstance();
+    #pragma omp parallel for collapse(2) schedule(dynamic, 1)
+    std::cout << "P3\n" << _width << " " << _height << "\n1023\n";
     for (int y = _height - 1; y >= 0; y--) {
         for (int x = 0; x < _width; x++) {
             Vec3 col(0, 0, 0);
@@ -33,7 +36,6 @@ void Decorator::loop(Scene scene)
                 float u = float(x + drand48()) / float(_width);
                 float v = float(y + drand48()) / float(_height);
                 Ray r = _cam.get_Ray(u, v);
-                Vec3 p = r.point_at_parameter(2.0);
                 col += colorloop(r, _world, _light);
             }
             col /= float(_ns);
@@ -41,6 +43,7 @@ void Decorator::loop(Scene scene)
             int ir = int(255.99 * col[0]);
             int ig = int(255.99 * col[1]);
             int ib = int(255.99 * col[2]);
+            #pragma omp critical
             std::cout << ir << " " << ig << " " << ib << "\n";
         }
     }
@@ -49,8 +52,8 @@ void Decorator::loop(Scene scene)
 
 Vec3 Decorator::colorloop(const Ray &r, const std::vector<std::shared_ptr<IHitable>> &_world, Light _light)
 {
-    Logger* logger = LoggerSingleton::getInstance();
     if (_world.empty()) {
+        Logger* logger = LoggerSingleton::getInstance();
         logger->log(WARNING, "No Primitives found.");
         return Vec3(0, 0, 0);
     }
