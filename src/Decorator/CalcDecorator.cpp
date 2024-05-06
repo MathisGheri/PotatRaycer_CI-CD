@@ -12,20 +12,18 @@
 calcdeco::calcdeco(Scene *scene)
 {
     auto hitable = std::move(scene->getObjects());
-    _world.reserve(hitable.size()); // Réserve de l'espace nécessaire
+    _world.reserve(hitable.size());
     for (auto& obj : hitable)
         _world.emplace_back(std::move(obj));
     _light = std::move(scene->getLight());
-    // _lig = _light.get();
     _cam = std::move(scene->getCamera());
-    // _camera = _cam.get();
     _width = 200;
     _height = 100;
 }
 
 calcdeco::~calcdeco() {}
 
-void calcdeco::loop()
+void calcdeco::loop(Scene *scene)
 {
     for (int y = _height - 1; y >= 0; y--) {
         for (int x = 0; x < _width; x++) {
@@ -33,27 +31,22 @@ void calcdeco::loop()
             for (int s = 0; s < _ns; s++) {
                 float u = float(x + drand48()) / float(_width);
                 float v = float(y + drand48()) / float(_height);
-                // Ray r = _cam.get_Ray(u, v);
-                Ray r = _cam.get()->get_Ray(u, v);
-                // Ray r = _cam.get();
+                Ray r = _cam->get_Ray(u, v);
                 Vec3 p = r.point_at_parameter(2.0);
-                col += colorloop(r, _world, _light);
-            }
+                col += colorloop(r, _world, scene->getLight());
+
+                }
             col /= float(_ns);
             col = Vec3(sqrt(col.r()), sqrt(col.g()), sqrt(col.b()));
             int ir = int(255.99 * col[0]);
             int ig = int(255.99 * col[1]);
             int ib = int(255.99 * col[2]);
             std::cout << ir << " " << ig << " " << ib << "\n";
-            // sdltemplate::setDrawColor(sdltemplate::createColor(ir, ig, ib, 255));
-            // sdltemplate::drawPoint(x, height - y);
         }
-        // if ((y % (height / 10)) == 0)
-        //     sdltemplate::loop();
     }
 }
 
-Vec3 calcdeco::colorloop(const Ray& r, std::vector<std::unique_ptr<IHitable>> _world, std::unique_ptr<Light> _light)
+Vec3 colorloop(const Ray &r, const std::vector<std::unique_ptr<IHitable>> & _world, std::unique_ptr<Light> _light)
 {
     if (_world.size() == 0) {
         // Aucun objet dans le monde
@@ -66,7 +59,8 @@ Vec3 calcdeco::colorloop(const Ray& r, std::vector<std::unique_ptr<IHitable>> _w
     Vec3 attenuation, temp;
     if (_world[0]->hit(r, 0.001, MAXFLOAT, rec)) {
         bool cond = false;
-        cond = rec.mat_ptr->scatter(temp_r, rec, attenuation, scattered, _light, _world);
+        cond = rec.mat_ptr->scatter(temp_r, rec, attenuation, scattered, *_light, _world);
+
         depth++;
         temp = attenuation;
         if (!(_world[0]->hit(temp_r, 0.001, MAXFLOAT, rec))) {
@@ -79,7 +73,8 @@ Vec3 calcdeco::colorloop(const Ray& r, std::vector<std::unique_ptr<IHitable>> _w
             return temp;
         temp_r = scattered;
         while (depth < 50) {
-            cond = rec.mat_ptr->scatter(temp_r, rec, attenuation, scattered, _light, _world);
+            cond = rec.mat_ptr->scatter(temp_r, rec, attenuation, scattered, *_light, _world);
+
             depth++;
             temp *= attenuation;
             if (!(_world[0]->hit(temp_r, 0.001, MAXFLOAT, rec))) {

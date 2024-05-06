@@ -17,8 +17,10 @@ class calcdeco : public IDecorator {
     public:
         calcdeco(Scene *scene);
         ~calcdeco();
-        void loop();
-        Vec3 colorloop(const Ray &r, std::vector<std::unique_ptr<IHitable>> _world, std::unique_ptr<Light> _light);
+        void loop(Scene *scene);
+        Vec3 colorloop(const Ray &r, const std::vector<std::unique_ptr<IHitable>> & _world, std::unique_ptr<Light> _light);
+
+
 
     private:
         std::vector<std::unique_ptr<IHitable>> _world;
