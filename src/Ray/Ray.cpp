@@ -19,10 +19,8 @@ Ray::~Ray()
 {
 }
 
-Ray::Ray(const Vec3 &a, const Vec3 &b)
+Ray::Ray(const Vec3 &a, const Vec3 &b) : A(a), B(b)
 {
-    this->A = a;
-    this->B = b;
     Logger *logger = LoggerSingleton::getInstance();
 	std::ostringstream msg;
     msg << "LOG: Ray created with these params. a = " << a << ", b = " << b << ".";

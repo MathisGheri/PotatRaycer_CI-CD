@@ -43,7 +43,6 @@ void Decorator::loop(Scene scene)
     Logger* logger = LoggerSingleton::getInstance();
     #pragma omp parallel for collapse(2) schedule(dynamic, 1)
     std::cout << "P3\n" << _width << " " << _height << "\n255\n";
-    // std::cout << _world[0].use_count() << " :: " << _cam.origin.e << " " << _cam.origin.g() << std::endl;
     for (int y = _height - 1; y >= 0; y--) {
         for (int x = 0; x < _width; x++) {
             Vec3 col(0, 0, 0);
@@ -51,6 +50,7 @@ void Decorator::loop(Scene scene)
                 float u = float(x + drand48()) / float(_width);
                 float v = float(y + drand48()) / float(_height);
                 Ray r = _cam.get_Ray(u, v);
+                // std::cout << "S S S " << r.direction() << " ::RAY:: " << r.origin() << std::endl;
                 col += colorloop(r, _world, _light);
             }
             col /= float(_ns);
