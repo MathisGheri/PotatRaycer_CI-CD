@@ -55,10 +55,10 @@ public:
 
         //std::cout << logEntry.str();
 
-        if (logFile.is_open()) {
-            logFile << logEntry.str();
-            logFile.flush();
-        }
+        // if (logFile.is_open()) {
+        //     logFile << logEntry.str();
+        //     logFile.flush();
+        // }
     }
 };
 

@@ -17,9 +17,9 @@ Decorator::Decorator(Scene scene)
     _world = scene.getObjects();
     _light = scene.getLight();
     _cam = scene.getCamera();
-    _width = 400;
-    _height = 200;
-    _ns = 10;
+    _width = 1440;
+    _height = 720;
+    _ns = 50;
 }
 
 Decorator::~Decorator() {}
@@ -38,29 +38,58 @@ bool Decorator::hit(const Ray& r, float t_min, float t_max, hit_record_t& rec) c
     return hit_anything;
 }
 
+#include <thread>
+
+void Decorator::colorThread(int x, int end_x, int y, int i, std::map<int, std::string>& maMap)
+{
+    std::string str;
+    while (x < end_x)
+    {
+        Vec3 col(0, 0, 0);
+        for (int s = 0; s < _ns; s++) {
+            float u = float(x + drand48()) / float(_width);
+            float v = float(y + drand48()) / float(_height);
+            Ray r = _cam.get_Ray(u, v);
+
+            col += colorloop(r, _world, _light);
+        }
+        col /= float(_ns);
+        col = Vec3(sqrt(col.r()), sqrt(col.g()), sqrt(col.b()));
+        int ir = int(255.99 * col[0]);
+        int ig = int(255.99 * col[1]);
+        int ib = int(255.99 * col[2]);
+
+        str.append(std::to_string(ir) + " " + std::to_string(ig) + " " + std::to_string(ib) + "\n");
+        x++;
+    }
+    maMap[i] = str;
+}
+
 void Decorator::loop(Scene scene)
 {
+    std::map<int, std::string> maMap;
+    int num_threads = std::thread::hardware_concurrency();
+    std::vector<std::thread> threads;
+
+
     Logger* logger = LoggerSingleton::getInstance();
-    #pragma omp parallel for collapse(2) schedule(dynamic, 1)
     std::cout << "P3\n" << _width << " " << _height << "\n255\n";
     for (int y = _height - 1; y >= 0; y--) {
-        for (int x = 0; x < _width; x++) {
-            Vec3 col(0, 0, 0);
-            for (int s = 0; s < _ns; s++) {
-                float u = float(x + drand48()) / float(_width);
-                float v = float(y + drand48()) / float(_height);
-                Ray r = _cam.get_Ray(u, v);
-                // std::cout << r.direction() << " :: R :: " << r.origin() << std::endl;
-                // std::cout << "S S S " << r.direction() << " ::RAY:: " << r.origin() << std::endl;
-                col += colorloop(r, _world, _light);
-            }
-            col /= float(_ns);
-            col = Vec3(sqrt(col.r()), sqrt(col.g()), sqrt(col.b()));
-            int ir = int(255.99 * col[0]);
-            int ig = int(255.99 * col[1]);
-            int ib = int(255.99 * col[2]);
-            #pragma omp critical
-            std::cout << ir << " " << ig << " " << ib << "\n";
+        int x = 0, end_x = _width / num_threads, end;
+        for (int i = 0; i < num_threads; i++) {
+            end = end_x * (i + 1);
+            if (i == num_threads - 1) end = _width;
+            threads.emplace_back([this, x, end, y, i, &maMap](){
+                this->colorThread(x, end, y, i, maMap);
+            });
+            x += end_x;
+        }
+        for (auto& t : threads) {
+            if (t.joinable())
+                t.join();
+        }
+        for (const auto& pair : maMap) {
+            std::cout << pair.second;
         }
     }
     logger->log(DEBUG, "End of loop.");
@@ -105,7 +134,6 @@ Vec3 Decorator::colorloop(const Ray &r, const std::vector<std::shared_ptr<IHitab
         }
         return temp;
     } else {
-        // std::cout << "ff" << std::endl;
         return Vec3(0, 0, 0);
     }
 }

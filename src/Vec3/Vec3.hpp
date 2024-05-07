@@ -15,17 +15,17 @@ class Vec3 {
 public:
 	Vec3()
 	{
-		Logger* logger = LoggerSingleton::getInstance();
-		logger->log(DEBUG, "Vec3 created without params.");
+		// Logger* logger = LoggerSingleton::getInstance();
+		// logger->log(DEBUG, "Vec3 created without params.");
 	}
 	Vec3(float e0, float e1, float e2)
 	{
 		e[0] = e0; e[1] = e1; e[2] = e2;
 
-		std::ostringstream msg;
-		msg << "Vec3 created with these params. x = " << e0 << ", y = " << e1 << ", z = " << e2 << ".";
-		Logger* logger = LoggerSingleton::getInstance();
-		logger->log(INFO, msg.str());
+		// std::ostringstream msg;
+		// msg << "Vec3 created with these params. x = " << e0 << ", y = " << e1 << ", z = " << e2 << ".";
+		// Logger* logger = LoggerSingleton::getInstance();
+		// logger->log(INFO, msg.str());
 	}
 	inline float x() const {return e[0];}
 	inline float y() const {return e[1];}
