@@ -17,9 +17,9 @@ Decorator::Decorator(Scene scene)
     _world = scene.getObjects();
     _light = scene.getLight();
     _cam = scene.getCamera();
-    _width = 200;
-    _height = 100;
-    _ns = 5;
+    _width = 400;
+    _height = 200;
+    _ns = 10;
 }
 
 Decorator::~Decorator() {}
@@ -50,6 +50,7 @@ void Decorator::loop(Scene scene)
                 float u = float(x + drand48()) / float(_width);
                 float v = float(y + drand48()) / float(_height);
                 Ray r = _cam.get_Ray(u, v);
+                // std::cout << r.direction() << " :: R :: " << r.origin() << std::endl;
                 // std::cout << "S S S " << r.direction() << " ::RAY:: " << r.origin() << std::endl;
                 col += colorloop(r, _world, _light);
             }
@@ -71,6 +72,7 @@ Vec3 Decorator::colorloop(const Ray &r, const std::vector<std::shared_ptr<IHitab
     hit_record_t rec;
     Ray scattered, temp_r = r;
     Vec3 attenuation, temp;
+    
     if (hit(temp_r, 0.001, MAXFLOAT, rec)) {
         bool cond = false;
         cond = rec.mat_ptr->scatter(temp_r, rec, attenuation, scattered, _light, _world);

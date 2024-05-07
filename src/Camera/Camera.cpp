@@ -9,6 +9,7 @@
 
 Camera::Camera(Vec3 lookfrom, Vec3 lookat, Vec3 vup, float vfov, float aspect, float aperture, float focus_dist)
 {
+	focus_dist = (lookfrom - lookat).length();
     lens_radius = aperture / 2;
  	float theta = vfov * M_PI/180;
  	float half_height = tan(theta/2);
