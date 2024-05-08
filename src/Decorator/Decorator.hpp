@@ -12,8 +12,9 @@
 #include "IDecorator.hpp"
 #include "Ray.hpp"
 #include "IMaterial.hpp"
+#include "FileWatcherSingleton.hpp"
 
-class Decorator : public IDecorator {
+class Decorator : public IObserver {
 public:
     Decorator(Scene scene);
     ~Decorator();
@@ -21,6 +22,7 @@ public:
     Vec3 colorloop(const Ray &r, const std::vector<std::shared_ptr<IHitable>> &_objects, Light _light);
     bool hit(const Ray& r, float t_min, float t_max, hit_record_t& rec) const ;
     void colorThread(int x, int end_x, int y, int i, std::map<int, std::string>& maMap);
+    void reset() override final;
 
 private:
     std::vector<std::shared_ptr<IHitable>> _world;
@@ -28,7 +30,8 @@ private:
     Camera _cam;
     int _width;
     int _height;
+    bool _tomato = false;
     int _ns;
 };
 
-#endif
+#endif /* DecoratorRATOR_HPP_ */
