@@ -22,9 +22,9 @@ Plane::~Plane()
 
 bool Plane::hit(const Ray& r, float t_min, float t_max, hit_record_t &rec) const
 {
-    float denom = dot(normal, r.direction());
+    float denom = dot(normal, r.getDirection());
     if (fabs(denom) > 1e-6) {
-        Vec3 p0l0 = point - r.origin();
+        Vec3 p0l0 = point - r.getOrigin();
         float t = dot(p0l0, normal) / denom;
         if (t < t_max && t > t_min) {
             rec.t = t;
