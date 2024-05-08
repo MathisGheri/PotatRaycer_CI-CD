@@ -40,7 +40,7 @@ bool Decorator::hit(const Ray& r, float t_min, float t_max, hit_record_t& rec) c
 
 #include <thread>
 
-void Decorator::colorThread(int x, int end_x, int y, int i, std::map<int, std::string>& maMap)
+void Decorator::colorThread(int x, int end_x, int y, int i, std::map<int, std::string>& maMap, sf::Image& image)
 {
     std::string str;
     while (x < end_x)
@@ -60,6 +60,8 @@ void Decorator::colorThread(int x, int end_x, int y, int i, std::map<int, std::s
         int ib = int(255.99 * col[2]);
 
         str.append(std::to_string(ir) + " " + std::to_string(ig) + " " + std::to_string(ib) + "\n");
+        sf::Color color(ir, ig, ib);
+        image.setPixel(x, _height - y - 1, color);
         x++;
     }
     maMap[i] = str;
@@ -71,16 +73,21 @@ void Decorator::loop(Scene scene)
     int num_threads = std::thread::hardware_concurrency();
     std::vector<std::thread> threads;
 
+    std::ofstream outFile("image.ppm");
+
+    sf::RenderWindow window(sf::VideoMode(_width, _height), "POTATX");
+    sf::Image image;
+    image.create(_width, _height, sf::Color::Black);
 
     Logger* logger = LoggerSingleton::getInstance();
-    std::cout << "P3\n" << _width << " " << _height << "\n255\n";
+    outFile << "P3\n" << _width << " " << _height << "\n255\n";
     for (int y = _height - 1; y >= 0; y--) {
         int x = 0, end_x = _width / num_threads, end;
         for (int i = 0; i < num_threads; i++) {
             end = end_x * (i + 1);
             if (i == num_threads - 1) end = _width;
-            threads.emplace_back([this, x, end, y, i, &maMap](){
-                this->colorThread(x, end, y, i, maMap);
+            threads.emplace_back([this, x, end, y, i, &maMap, &image](){
+                this->colorThread(x, end, y, i, maMap, image);
             });
             x += end_x;
         }
@@ -89,7 +96,22 @@ void Decorator::loop(Scene scene)
                 t.join();
         }
         for (const auto& pair : maMap) {
-            std::cout << pair.second;
+            outFile << pair.second;
+        }
+        sf::Texture texture;
+        texture.loadFromImage(image);
+        sf::Sprite sprite;
+        sprite.setTexture(texture);
+        window.clear();
+        window.draw(sprite);
+        window.display();
+    }
+    outFile.close();
+    while (window.isOpen()) {
+        sf::Event event;
+        while (window.pollEvent(event)) {
+            if (event.type == sf::Event::Closed)
+                window.close();
         }
     }
     logger->log(DEBUG, "End of loop.");
