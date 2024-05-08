@@ -11,3 +11,5 @@ raytracer
 
 *.ppm
 logfile.txt
+
+vgcore.*
