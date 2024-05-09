@@ -17,13 +17,13 @@ class Ray {
         Ray();
         ~Ray();
         Ray(const Vec3& a, const Vec3 &b);
-        Vec3 origin() const;
-        Vec3 direction() const;
+        Vec3 getOrigin() const;
+        Vec3 getDirection() const;
         Vec3 point_at_parameter(float t) const;
 
     private:
-        Vec3 A;
-        Vec3 B;
+        Vec3 origin;
+        Vec3 direction;
 };
 
 #endif /* !Ray_HPP_ */

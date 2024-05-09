@@ -74,11 +74,11 @@ bool Lambertian::scatter(const Ray& r_in, const hit_record_t &rec, Vec3& attenua
             Ray shadowRay(shadowRayOrigin, shadowRayDirection);
 
             // Ajout d'une marge d'erreur pour éviter que tout ne soit sombre
-            float epsilon = 0.001;
+
 
             // Vérification de l'intersection entre le rayon et les objets de la scène
             hit_record_t shadowRec;
-            if (hit(shadowRay, epsilon, MAXFLOAT, shadowRec, _obj)) {
+            if (hit(shadowRay, 0.001, MAXFLOAT, shadowRec, _obj)) {
                 // Le point est dans l'ombre
                 attenuation = Vec3(0, 0, 0);
                 return false;

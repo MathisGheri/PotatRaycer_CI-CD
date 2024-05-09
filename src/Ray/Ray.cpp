@@ -19,7 +19,7 @@ Ray::~Ray()
 {
 }
 
-Ray::Ray(const Vec3 &a, const Vec3 &b) : A(a), B(b)
+Ray::Ray(const Vec3 &a, const Vec3 &b) : origin(a), direction(b)
 {
     // Logger *logger = LoggerSingleton::getInstance();
 	// std::ostringstream msg;
@@ -27,17 +27,17 @@ Ray::Ray(const Vec3 &a, const Vec3 &b) : A(a), B(b)
 	// logger->log(INFO, msg.str());
 }
 
-Vec3 Ray::origin() const
+Vec3 Ray::getOrigin() const
 {
-    return A;
+    return origin;
 }
 
-Vec3 Ray::direction() const
+Vec3 Ray::getDirection() const
 {
-    return B;
+    return direction;
 }
 
 Vec3 Ray::point_at_parameter(float t) const
 {
-    return A + t * B; //va falloir implémenter cette op
+    return origin + (t * direction); //va falloir implémenter cette op
 }
