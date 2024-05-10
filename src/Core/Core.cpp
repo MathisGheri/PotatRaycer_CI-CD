@@ -34,6 +34,9 @@ void Core::assembleScene(const std::string &filename)
     sceneBuilder.createObjects(parser.getPrimitives());
     logger->log(DEBUG, "Primitives Created.");
     this->scene = sceneBuilder.getScene();
+    if (parser.isObj("cartoon_potato.obj")) {
+        this->scene.addObject(parser.getMesh());
+    }
 }
 
 void Core::generatePPM()

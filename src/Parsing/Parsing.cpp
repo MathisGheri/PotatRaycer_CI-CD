@@ -7,6 +7,10 @@
 
 #include "Parsing.hpp"
 #include "SingletonLogger.hpp"
+#include "FileWatcherSingleton.hpp"
+#include "Mesh.hpp"
+#include "Triangle.hpp"
+#include <algorithm> 
 
 Parsing::Parsing(const std::string &file) : _filePath(file)
 {
@@ -116,4 +120,57 @@ void Parsing::parseCamera(libconfig::Setting& camera)
         {"aspect", std::make_tuple(aspect, 0, 0)},
         {"aperture", std::make_tuple(aperture, 0, 0)}
     };
+}
+
+bool Parsing::parseObj(const std::string& filename)
+{
+    std::vector<Vec3> vertices;
+    std::vector<Triangle> triangles;
+
+    std::ifstream file(filename);
+    if (!file.is_open()) {
+        std::cerr << "Cannot open file: " << filename << std::endl;
+        return false;
+    }
+
+    std::string line;
+    while (std::getline(file, line)) {
+        std::istringstream iss(line);
+        std::string prefix;
+        iss >> prefix;
+        if (prefix == "v") {
+            Vec3 vertex;
+            iss >> vertex.e[0] >> vertex.e[1] >> vertex.e[2];
+            vertices.push_back(vertex);
+        } else if (prefix == "f") {
+            std::string token;
+            int idx[4];
+            int i = 0;
+
+            while (iss >> token && i < 4) {
+                std::replace(token.begin(), token.end(), '/', ' ');
+                std::istringstream tokenStream(token);
+                int vertexIndex, texIndex, normIndex;
+                tokenStream >> vertexIndex >> texIndex >> normIndex;
+                idx[i++] = vertexIndex;
+            }
+
+            printf("Indices: 1 = %d, 2 = %d, 3 = %d, 4 = %d\n", idx[0], idx[1], idx[2], idx[3]);
+            Triangle triangle(vertices[idx[0] - 1], vertices[idx[1] - 1], vertices[idx[2] - 1], vertices[idx[3] - 1]);
+            triangles.push_back(triangle);
+        }
+    }
+    _mesh = std::make_shared<Mesh>(triangles);  // Assuming Mesh has a constructor that accepts a std::vector<Triangle>
+    return true;
+}
+
+bool Parsing::isObj(const std::string& filename)
+{
+    if (parseObj("cartoon_potato.obj")) {
+        std::cout << "Loaded OBJ model with "  << " triangles." << std::endl;
+        return true;
+    } else {
+        std::cerr << "Failed to load OBJ model." << std::endl;
+        return false;
+    }
 }
