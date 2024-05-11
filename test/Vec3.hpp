@@ -152,6 +152,7 @@ inline Vec3& Vec3::operator*=(const float t) {
 }
 
 inline Vec3 unit_vector(Vec3 v) {
+	printf ("v.length() = %f\n", v.length());
 	return v / v.length();
 }
 

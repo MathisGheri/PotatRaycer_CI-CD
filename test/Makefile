@@ -1,6 +1,6 @@
 CC := g++
 CFLAGS := -std=c++11 -Wall -Wextra -I../src -I../include -MMD -MP
-LDFLAGS := -lm
+LDFLAGS := -lm -lconfig++
 
 TESTDIR := .
 BUILDDIR := .

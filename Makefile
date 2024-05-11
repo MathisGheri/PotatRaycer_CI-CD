@@ -17,6 +17,7 @@ re: clean
 
 clean:
 	@cd build && make clean
+	make -C test clean
 
 test:
 	make -C test
