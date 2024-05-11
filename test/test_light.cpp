@@ -35,7 +35,6 @@ Test(Light, CalculateLightDirBlop)
     Light light(position, 1.0f);
     Vec3 point(2.0f, 3.0f, 4.0f);
     Vec3 result_blop = light.calculateLightDirection(point);
-    printf("result_blop: %f %f %f\n", result_blop.x(), result_blop.y(), result_blop.z());
     double epsilon = 0.0001;
     cr_assert_float_eq(result_blop.x(), -0.577350f, epsilon);
     cr_assert_float_eq(result_blop.y(), -0.577350f, epsilon);
