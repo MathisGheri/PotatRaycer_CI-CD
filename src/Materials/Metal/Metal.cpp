@@ -8,7 +8,7 @@
 #include "Metal.hpp"
 #include "SingletonLogger.hpp"
 
-Metal::Metal(const Vec3& a, const float f) : albedo(a)
+Metal::Metal(const Vec3& albedo, const float f) : albedo(a)
 {
     if (f < 1)
         fuzz = f;
