@@ -59,16 +59,29 @@ Vec3 scaleVertex(const Vec3& vertex, const Vec3& scale)
 
 Vec3 rotateVertex(const Vec3& vertex, const Vec3& rotation)
 {
-    float rad = rotation.e[2] * M_PI / 180.0f;
+    // Conversion des angles de rotation en radians
+    float radX = rotation.e[0] * M_PI / 180.0f;
+    float radY = rotation.e[1] * M_PI / 180.0f;
+    float radZ = rotation.e[2] * M_PI / 180.0f;
 
-    float cosTheta = cos(rad);
-    float sinTheta = sin(rad);
+    // Calcul des sinus et cosinus pour chaque axe
+    float cosX = cos(radX), sinX = sin(radX);
+    float cosY = cos(radY), sinY = sin(radY);
+    float cosZ = cos(radZ), sinZ = sin(radZ);
 
-    return Vec3(
-        vertex.e[0] * cosTheta + vertex.e[2] * sinTheta,
-        vertex.e[1],
-        -vertex.e[0] * sinTheta + vertex.e[2] * cosTheta
-    );
+    // Rotation autour de l'axe X
+    float y1 = vertex.e[1] * cosX - vertex.e[2] * sinX;
+    float z1 = vertex.e[1] * sinX + vertex.e[2] * cosX;
+
+    // Rotation autour de l'axe Y
+    float x2 = vertex.e[0] * cosY + z1 * sinY;
+    float z2 = -vertex.e[0] * sinY + z1 * cosY;
+
+    // Rotation autour de l'axe Z
+    float x3 = x2 * cosZ - y1 * sinZ;
+    float y3 = x2 * sinZ + y1 * cosZ;
+
+    return Vec3(x3, y3, z2);
 }
 
 Vec3 translateVertex(const Vec3& vertex, const Vec3& position)

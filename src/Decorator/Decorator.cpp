@@ -19,8 +19,8 @@ Decorator::Decorator(Scene scene)
     _world = scene.getObjects();
     _light = scene.getLight();
     _cam = scene.getCamera();
-    _width = 1440;
-    _height = 720;
+    _width = 400;
+    _height = 200;
     _ns = 5;
 }
 

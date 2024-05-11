@@ -104,7 +104,7 @@ void SceneBuilder::createObjects(std::vector<Primitive> primitives)
         }
     }
     std::shared_ptr<IMaterial> cubeMaterial = std::make_shared<Lambertian>(Vec3(0.5, 0.3, 0.2));  // Par exemple
-    this->loadMeshFromOBJ("obj_files/Simple_Cube.obj", cubeMaterial);
+    this->loadMeshFromOBJ("obj_files/trute.obj", cubeMaterial);
     // std::vector<std::shared_ptr<IHitable>> triangles;
     // triangles.push_back(std::make_unique<Triangle>(vertex1, vertex2, vertex3, Vec3(1.0, 0.0, -0.1), std::make_unique<Lambertian>(Vec3(1.0, 0.5, 0.2))));
     // std::shared_ptr<IHitable> object = std::make_unique<Mesh>(triangles);
@@ -132,17 +132,30 @@ void SceneBuilder::loadMeshFromOBJ(const std::string& filename, const std::share
             ss >> x >> y >> z;
             vertices.emplace_back(x, y, z);
         } else if (type == "f") {
-            int idx0, idx1, idx2, idx3;
-            ss >> idx0 >> idx1 >> idx2 >> idx3;
-            // Create two triangles from a quad face
-            triangles.push_back(std::make_unique<Triangle>(vertices[idx0 - 1], vertices[idx1 - 1], vertices[idx2 - 1], material));
-            triangles.push_back(std::make_unique<Triangle>(vertices[idx0 - 1], vertices[idx2 - 1], vertices[idx3 - 1], material));
+            std::string vertexInfo;
+            std::vector<int> indices;
+            while (ss >> vertexInfo) {
+                size_t pos = vertexInfo.find('/');
+                if (pos != std::string::npos) {
+                    vertexInfo = vertexInfo.substr(0, pos);  // Get the part before the first '/'.
+                }
+                int index = std::stoi(vertexInfo);
+                indices.push_back(index - 1);  // Store 0-based index.
+            }
+            if (indices.size() >= 3) {
+                // Create triangles assuming the indices are valid.
+                triangles.push_back(std::make_unique<Triangle>(vertices[indices[0]], vertices[indices[1]], vertices[indices[2]], material));
+                if (indices.size() == 4) {
+                    // Create a second triangle if it's a quad.
+                    triangles.push_back(std::make_unique<Triangle>(vertices[indices[0]], vertices[indices[2]], vertices[indices[3]], material));
+                }
+            }
         }
     }
 
-    Vec3 position(0, 0, 0);
-    Vec3 rotation(0, 45, 0);
-    Vec3 scale(0.5, 0.5, 0.5);
+    Vec3 position(0, 0.3, 0);
+    Vec3 rotation(-90, 145, 0);
+    Vec3 scale(0.2, 0.2, 0.2);
 
     file.close();
     Mesh mesh(triangles, position, rotation, scale);

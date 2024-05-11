@@ -10,7 +10,9 @@
 #include "Triangle.hpp"
 
 Mesh::Mesh(const std::vector<std::shared_ptr<IHitable>>& tris, const Vec3& pos, const Vec3& rot, const Vec3& scl)
-    : _triangles(tris), _position(pos), _rotation(rot), _scale(scl) {}
+    : _triangles(tris), _position(pos), _rotation(rot), _scale(scl) {
+        printf("Position: %f %f %f\n", _rotation.e[0], _rotation.e[1], _rotation.e[2]);
+    }
 
 Mesh::~Mesh() {}
 
