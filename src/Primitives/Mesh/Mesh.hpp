@@ -1,29 +1,26 @@
 /*
-** EPITECH PROJECT, 2023
+** EPITECH PROJECT, 2024
 ** PotatRaycer_CI-CD
 ** File description:
-** Mesh.hpp
+** Mesh
 */
-
-#pragma once
 
 #ifndef MESH_HPP_
 #define MESH_HPP_
 
 #include "IHitable.hpp"
-#include "IMaterial.hpp"
-#include "Triangle.hpp"
 
-class Mesh : public IHitable {
-    std::vector<Triangle> triangles;
-public:
-    Mesh() = default;
-    Mesh(const std::vector<Triangle>& tris);
-    const std::vector<Triangle> &getTriangles()
-    {
-        return triangles;
-    }
-    virtual bool hit(const Ray& r, float t_min, float t_max, hit_record_t& rec) const override;
+class Mesh : public IHitable{
+    public:
+        Mesh(const std::vector<std::shared_ptr<IHitable>>& tris, const Vec3& pos, const Vec3& rot, const Vec3& scl);
+        ~Mesh();
+        bool hit(const Ray& r, float t_min, float t_max, hit_record_t& rec) const;
+        void transformVertices();
+    private:
+        Vec3 _position;
+        Vec3 _rotation; // Axes de rotation avec les angles
+        Vec3 _scale;
+        std::vector<std::shared_ptr<IHitable>> _triangles;
 };
 
 #endif /* !MESH_HPP_ */

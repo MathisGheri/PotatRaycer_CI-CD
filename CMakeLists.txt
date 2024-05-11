@@ -35,8 +35,8 @@ target_include_directories(raytracer PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Parsing
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Primitives
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Primitives/Sphere
-    ${CMAKE_CURRENT_SOURCE_DIR}/src/Primitives/Mesh
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Primitives/Triangle
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/Primitives/Mesh
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Primitives/Plane
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Ray
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Scene

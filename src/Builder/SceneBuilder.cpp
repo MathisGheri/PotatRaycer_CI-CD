@@ -12,11 +12,13 @@
 #include "IHitable.hpp"
 #include "Sphere.hpp"
 #include "Plane.hpp"
+#include "Triangle.hpp"
 #include "IMaterial.hpp"
 #include "Metal.hpp"
 #include "Lambertian.hpp"
 #include "Dielectric.hpp"
 #include "SingletonLogger.hpp"
+#include "Mesh.hpp"
 #include "Exception.hpp"
 
 SceneBuilder::SceneBuilder()
@@ -74,6 +76,9 @@ void SceneBuilder::createLight(std::map<std::string, std::tuple<float, float, fl
 
 void SceneBuilder::createObjects(std::vector<Primitive> primitives)
 {
+    // Vec3 vertex1(1.0, 0.0, 0.0);
+    // Vec3 vertex2(0.0, 1.0, 0.0);
+    // Vec3 vertex3(0.0, 0.0, 1.0);
     for (const auto& prim : primitives) {
         /* Material creation */
         Vec3 materialVec(prim.material.vec.x, prim.material.vec.y, prim.material.vec.z);
@@ -98,6 +103,53 @@ void SceneBuilder::createObjects(std::vector<Primitive> primitives)
             scene.addObject(std::move(object));
         }
     }
+    std::shared_ptr<IMaterial> cubeMaterial = std::make_shared<Lambertian>(Vec3(0.5, 0.3, 0.2));  // Par exemple
+    this->loadMeshFromOBJ("obj_files/Simple_Cube.obj", cubeMaterial);
+    // std::vector<std::shared_ptr<IHitable>> triangles;
+    // triangles.push_back(std::make_unique<Triangle>(vertex1, vertex2, vertex3, Vec3(1.0, 0.0, -0.1), std::make_unique<Lambertian>(Vec3(1.0, 0.5, 0.2))));
+    // std::shared_ptr<IHitable> object = std::make_unique<Mesh>(triangles);
+    // scene.addObject(std::move(object));
+}
+
+void SceneBuilder::loadMeshFromOBJ(const std::string& filename, const std::shared_ptr<IMaterial>& material)
+{
+    std::ifstream file(filename);
+    if (!file.is_open()) {
+        std::cerr << "Failed to open file: " << filename << std::endl;
+        return;
+    }
+
+    std::vector<Vec3> vertices;
+    std::vector<std::shared_ptr<IHitable>> triangles;
+    std::string line;
+
+    while (std::getline(file, line)) {
+        std::stringstream ss(line);
+        std::string type;
+        ss >> type;
+        if (type == "v") {
+            float x, y, z;
+            ss >> x >> y >> z;
+            vertices.emplace_back(x, y, z);
+        } else if (type == "f") {
+            int idx0, idx1, idx2, idx3;
+            ss >> idx0 >> idx1 >> idx2 >> idx3;
+            // Create two triangles from a quad face
+            triangles.push_back(std::make_unique<Triangle>(vertices[idx0 - 1], vertices[idx1 - 1], vertices[idx2 - 1], material));
+            triangles.push_back(std::make_unique<Triangle>(vertices[idx0 - 1], vertices[idx2 - 1], vertices[idx3 - 1], material));
+        }
+    }
+
+    Vec3 position(0, 0, 0);
+    Vec3 rotation(0, 45, 0);
+    Vec3 scale(0.5, 0.5, 0.5);
+
+    file.close();
+    Mesh mesh(triangles, position, rotation, scale);
+    // std::shared_ptr<IHitable> mesh = std::make_unique<Mesh>(triangles, position, rotation, scale);
+    mesh.transformVertices();
+    std::shared_ptr<IHitable> meshPtr = std::make_shared<Mesh>(mesh);
+    scene.addObject(std::move(meshPtr));
 }
 
 const Scene &SceneBuilder::getScene() const
