@@ -2,18 +2,18 @@
 ** EPITECH PROJECT, 2024
 ** PotatRaycer_CI-CD
 ** File description:
-** Decorator
+** Compute
 */
 
-#include "Decorator.hpp"
+#include "Computing.hpp"
 #include "Camera.hpp"
 #include "Light.hpp"
 #include "SingletonLogger.hpp"
 
-Decorator::Decorator(Scene scene)
+Compute::Compute(Scene scene)
 {
     Logger* logger = LoggerSingleton::getInstance();
-    logger->log(INFO, "Decorator created.");
+    logger->log(INFO, "Compute created.");
     _world = scene.getObjects();
     _light = scene.getLight();
     _cam = scene.getCamera();
@@ -22,9 +22,9 @@ Decorator::Decorator(Scene scene)
     _ns = scene.getNs();
 }
 
-Decorator::~Decorator() {}
+Compute::~Compute() {}
 
-bool Decorator::hit(const Ray& r, float t_min, float t_max, hit_record_t& rec) const {
+bool Compute::hit(const Ray& r, float t_min, float t_max, hit_record_t& rec) const {
     hit_record_t temp_rec;
     bool hit_anything = false;
     double closest_so_far = t_max;
@@ -40,7 +40,7 @@ bool Decorator::hit(const Ray& r, float t_min, float t_max, hit_record_t& rec) c
 
 #include <thread>
 
-void Decorator::colorThread(int x, int end_x, int y, int i, std::map<int, std::string>& maMap, sf::Image& image)
+void Compute::colorThread(int x, int end_x, int y, int i, std::map<int, std::string>& maMap, sf::Image& image)
 {
     std::string str;
     while (x < end_x)
@@ -67,7 +67,7 @@ void Decorator::colorThread(int x, int end_x, int y, int i, std::map<int, std::s
     maMap[i] = str;
 }
 
-void Decorator::loop(Scene scene)
+void Compute::loop(Scene scene)
 {
     std::map<int, std::string> maMap;
     int num_threads = std::thread::hardware_concurrency();
@@ -117,7 +117,7 @@ void Decorator::loop(Scene scene)
     logger->log(DEBUG, "End of loop.");
 }
 
-Vec3 Decorator::colorloop(const Ray &r, const std::vector<std::shared_ptr<IHitable>> &_world, Light _light)
+Vec3 Compute::colorloop(const Ray &r, const std::vector<std::shared_ptr<IHitable>> &_world, Light _light)
 {
     int depth = 0;
     hit_record_t rec;
