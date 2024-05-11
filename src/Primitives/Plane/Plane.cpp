@@ -8,6 +8,7 @@
 #include "Plane.hpp"
 #include "SingletonLogger.hpp"
 
+
 Plane::Plane(Vec3 p, Vec3 n, std::shared_ptr<IMaterial> m) : point(p), normal(n), mat_ptr(m)
 {
     Logger *logger = LoggerSingleton::getInstance();

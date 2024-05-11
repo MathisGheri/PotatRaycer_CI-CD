@@ -5,7 +5,7 @@
 ## Makefile
 ##
 
-all: 
+all:
 	@mkdir -p build && cd build && cmake .. && make && cd ..
 
 run: all
@@ -15,5 +15,10 @@ re: clean
 	rm -rf build
 	@mkdir -p build && cd build && cmake .. && make && cd ..
 
-clean: 
+clean:
 	@cd build && make clean
+
+test:
+	make -C test
+
+.PHONY: all run re clean test

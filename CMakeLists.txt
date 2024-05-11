@@ -46,3 +46,4 @@ target_include_directories(raytracer PRIVATE
 )
 
 find_package(SFML 2.5 COMPONENTS graphics window system REQUIRED)
+

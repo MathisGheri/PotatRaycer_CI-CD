@@ -69,4 +69,3 @@ Test(Vec3, test_vec3_division_by_scalar) {
     cr_assert_eq(vec3.y(), 1);
     cr_assert_eq(vec3.z(), 1.5);
 }
-

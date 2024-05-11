@@ -68,6 +68,7 @@ public:
 	float e[3];
 };
 
+
 inline std::istream& operator>>(std::istream &is, Vec3 &t)
 {
     is >> t.e[0] >> t.e[1] >> t.e[2];
@@ -118,7 +119,7 @@ inline Vec3 cross(const Vec3 &v1, const Vec3 &v2) {
 	-(v1.e[0]*v2.e[2] - v1.e[2]*v2[0]), 
 	v1.e[0]*v2.e[1] - v1.e[1]*v2[0]);
 }
-
+ 
 inline Vec3& Vec3::operator+=(const Vec3 &v) {
  e[0] += v.e[0];
  e[1] += v.e[1];

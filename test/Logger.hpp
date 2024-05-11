@@ -51,7 +51,7 @@ public:
         std::strftime(timestamp, sizeof(timestamp), "%Y-%m-%d %H:%M:%S", timeinfo);
         std::ostringstream logEntry;
         logEntry << "[" << timestamp << "] "
-                 << levelToString(level) << ": " << message << std::endl;
+                << levelToString(level) << ": " << message << std::endl;
 
         //std::cout << logEntry.str();
 
