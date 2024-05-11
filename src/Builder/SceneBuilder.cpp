@@ -46,6 +46,9 @@ void SceneBuilder::createCamera(std::map<std::string,std::tuple<float,float,floa
         aspect = std::get<0>(camParams["aspect"]);
         aperture = std::get<0>(camParams["aperture"]);
         focus_dist = std::get<0>(camParams["focus_dist"]);
+        scene.setConfigHeight(std::get<0>(camParams["height"]));
+        scene.setConfigWidth(std::get<0>(camParams["width"]));
+        scene.setConfigNs(std::get<0>(camParams["ns"]));
     } catch (const std::exception &e) {
         throw("Camera parameters not found.", Level::MIDDLE);
         exit(84);

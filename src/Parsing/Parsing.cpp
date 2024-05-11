@@ -107,6 +107,7 @@ void Parsing::parseCamera(libconfig::Setting& camera)
     float height = camera["height"]["x"];
     float aspect = width / height;
     float aperture = camera["aperture"]["x"];
+    float ns = camera["ns"]["x"];
 
     _camera = {
         {"lookfrom", std::make_tuple(lf_x, lf_y, lf_z)},
@@ -114,6 +115,9 @@ void Parsing::parseCamera(libconfig::Setting& camera)
         {"vup", std::make_tuple(vup_x, vup_y, vup_z)},
         {"vfov", std::make_tuple(vfov, 0, 0)},
         {"aspect", std::make_tuple(aspect, 0, 0)},
-        {"aperture", std::make_tuple(aperture, 0, 0)}
+        {"aperture", std::make_tuple(aperture, 0, 0)},
+        {"width", std::make_tuple(width, 0, 0)},
+        {"height", std::make_tuple(height, 0, 0)},
+        {"ns", std::make_tuple(ns, 0, 0)}
     };
 }
