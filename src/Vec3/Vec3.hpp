@@ -51,6 +51,7 @@ public:
 	inline float length() const {return sqrt(e[0]*e[0] + e[1]*e[1] + e[2]*e[2]);}
 	inline float length_squared() const {return e[0]*e[0] + e[1]*e[1] + e[2]*e[2];}
 	inline void make_unit_vector();
+	inline Vec3 normalize();
 	
 	float e[3];
 };
@@ -106,9 +107,9 @@ inline Vec3 cross(const Vec3 &v1, const Vec3 &v2) {
 	v1.e[0]*v2.e[1] - v1.e[1]*v2[0]);
 }
 
-inline Vec3 normalize(const Vec3& v) {
-    float length = sqrt(v.e[0] * v.e[0] + v.e[1] * v.e[1] + v.e[2] * v.e[2]);
-    return Vec3(v.e[0] / length, v.e[1] / length, v.e[2] / length);
+inline Vec3 Vec3::normalize() {
+    float length = sqrt(e[0] * e[0] + e[1] * e[1] + e[2] * e[2]);
+    return Vec3(e[0] / length, e[1] / length, e[2] / length);
 }
 
 inline Vec3& Vec3::operator+=(const Vec3 &v) {

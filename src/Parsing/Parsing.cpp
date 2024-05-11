@@ -11,6 +11,7 @@
 #include "Mesh.hpp"
 #include "Triangle.hpp"
 #include <algorithm> 
+#include "Metal.hpp"
 
 Parsing::Parsing(const std::string &file) : _filePath(file)
 {
@@ -112,13 +113,18 @@ void Parsing::parseCamera(libconfig::Setting& camera)
     float aspect = width / height;
     float aperture = camera["aperture"]["x"];
 
+    float ns = camera["ns"]["x"];
+
     _camera = {
         {"lookfrom", std::make_tuple(lf_x, lf_y, lf_z)},
         {"lookat", std::make_tuple(la_x, la_y, la_z)},
         {"vup", std::make_tuple(vup_x, vup_y, vup_z)},
         {"vfov", std::make_tuple(vfov, 0, 0)},
         {"aspect", std::make_tuple(aspect, 0, 0)},
-        {"aperture", std::make_tuple(aperture, 0, 0)}
+        {"aperture", std::make_tuple(aperture, 0, 0)},
+        {"width", std::make_tuple(width, 0, 0)},
+        {"height", std::make_tuple(height, 0, 0)},
+        {"ns", std::make_tuple(ns, 0, 0)}
     };
 }
 
@@ -135,6 +141,7 @@ bool Parsing::parseObj(const std::string& filename)
 
     std::string line;
     while (std::getline(file, line)) {
+        printf("line : %s\n", line.c_str());
         std::istringstream iss(line);
         std::string prefix;
         iss >> prefix;
@@ -143,31 +150,40 @@ bool Parsing::parseObj(const std::string& filename)
             iss >> vertex.e[0] >> vertex.e[1] >> vertex.e[2];
             vertices.push_back(vertex);
         } else if (prefix == "f") {
+            printf("f found\n");
             std::string token;
             int idx[4];
             int i = 0;
 
-            while (iss >> token && i < 4) {
-                std::replace(token.begin(), token.end(), '/', ' ');
-                std::istringstream tokenStream(token);
-                int vertexIndex, texIndex, normIndex;
-                tokenStream >> vertexIndex >> texIndex >> normIndex;
-                idx[i++] = vertexIndex;
-            }
+            iss >> idx[0] >> idx[1] >> idx[2] >> idx[3];
 
-            printf("Indices: 1 = %d, 2 = %d, 3 = %d, 4 = %d\n", idx[0], idx[1], idx[2], idx[3]);
-            Triangle triangle(vertices[idx[0] - 1], vertices[idx[1] - 1], vertices[idx[2] - 1], vertices[idx[3] - 1]);
+            // while (iss >> token && i < 4) {
+                
+            //     std::replace(token.begin(), token.end(), '/', ' ');
+            //     std::istringstream tokenStream(token);
+            //     int vertexIndex, texIndex, normIndex;
+            //     tokenStream >> vertexIndex >> texIndex >> normIndex;
+            //     printf("vertexIndex: %d, texIndex: %d, normIndex: %d\n", vertexIndex, texIndex, normIndex);
+            //     idx[i++] = vertexIndex;
+            // }
+            // print vertices and indices
+            printf("idx[0]: %d, idx[1]: %d, idx[2]: %d, idx[3]: %d\n", idx[0], idx[1], idx[2], idx[3]);
+            printf("vertices[0]: %f|%f|%f, vertices[1]: %f, vertices[2]: %f, vertices[3]: %f\n", vertices[idx[0] - 1].e[0], vertices[idx[0] - 1].e[1], vertices[idx[0] - 1].e[2], vertices[idx[1] - 1], vertices[idx[2] - 1], vertices[idx[3] - 1]);
+            Triangle triangle(vertices, vertices[idx[1] - 1], vertices[idx[2] - 1], vertices[idx[3] - 1]);
             triangles.push_back(triangle);
         }
     }
-    _mesh = std::make_shared<Mesh>(triangles);  // Assuming Mesh has a constructor that accepts a std::vector<Triangle>
+    Vec3 materialVec(1.0, 1.0, 1.0);
+    Vec3 pos(-1.0, 0.5, -1.0);
+    std::shared_ptr<IMaterial> material;
+    material = std::make_unique<Metal>(materialVec, 0.0);
+    _mesh = std::make_shared<Mesh>(triangles, material, pos);  // Assuming Mesh has a constructor that accepts a std::vector<Triangle>
     return true;
 }
 
 bool Parsing::isObj(const std::string& filename)
 {
-    if (parseObj("cartoon_potato.obj")) {
-        std::cout << "Loaded OBJ model with "  << " triangles." << std::endl;
+    if (parseObj("Simple_Cube.obj")) {
         return true;
     } else {
         std::cerr << "Failed to load OBJ model." << std::endl;

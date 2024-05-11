@@ -8,7 +8,18 @@
 #include "Triangle.hpp"
 #include <cmath>
 
-Triangle::Triangle(const Vec3 &a, const Vec3 &b, const Vec3 &c, const Vec3 &d) : v0(a), v1(b), v2(c), v3(d) {}
+Triangle::Triangle(const Vec3 &a, const Vec3 &b, const Vec3 &c, const Vec3 &d) : v0(a), v1(b), v2(c), v3(d)
+{
+    computeNormal();
+}
+
+void Triangle::computeNormal()
+{
+    Vec3 edge1 = v1 - v0;
+    Vec3 edge2 = v2 - v0;
+    normal = cross(edge1, edge2);
+    normal.normalize();
+}
 
 bool Triangle::hit(const Ray &r, float t_min, float t_max, hit_record_t &rec) const
 {
@@ -32,12 +43,8 @@ bool Triangle::hit(const Ray &r, float t_min, float t_max, hit_record_t &rec) co
 
         float t = f * dot(edge2, q);
         if (t > EPSILON && t < t_max && t < rec.t) { // Ray intersection
-            rec.t = t;
-            rec.p = r.point_at_parameter(t);
-            rec.normal = normalize(cross(edge1, edge2));  // Normale non interpolée
             return true;
         }
     }
-    printf("false\n");
     return false;  // Aucune intersection avec les deux triangles
 }
