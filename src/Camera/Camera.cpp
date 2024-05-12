@@ -12,13 +12,13 @@ Camera::Camera(Vec3 lookfrom, Vec3 lookat, Vec3 vup, float vfov, float aspect, f
 	focus_dist = (lookfrom - lookat).length();
     lens_radius = aperture / 2;
  	float theta = vfov * M_PI/180;
- 	float half_height = tan(theta/2);
+	float half_height = tan(theta/2);
  	float half_width = aspect * half_height;
 
- 	origin = lookfrom;
- 	w = unit_vector(lookfrom - lookat);
- 	u = unit_vector(cross(vup,w));
- 	v = cross(w,u);
+	origin = lookfrom;
+	w = unit_vector(lookfrom - lookat);
+	u = unit_vector(cross(vup,w));
+	v = cross(w,u);
  	lower_left_corner = origin - half_width * focus_dist * u - half_height * focus_dist * v - focus_dist * w;
 	horizontal = 2*half_width * u * focus_dist;
 	vertical = 2 * half_height * v * focus_dist;

@@ -8,15 +8,25 @@
 #include "Sphere.hpp"
 #include "SingletonLogger.hpp"
 
-Sphere::Sphere(Vec3 cen, float r, std::shared_ptr<IMaterial> m) : center(cen), radius(r), mat_ptr(std::move(m))
+Sphere::Sphere(Vec3 cen, float r) : center(cen), radius(r)
 {
     Logger *logger = LoggerSingleton::getInstance();
 	std::ostringstream msg;
-    msg << "LOG: Sphere created with these params. cen = " << cen << ", r = " << r << ", and material (find a way to print it).";
+    msg << "LOG: Sphere created with these params. cen = " << cen << ", r = " << r << ".";
 	logger->log(INFO, msg.str());
 }
 
 Sphere::~Sphere() {}
+
+void Sphere::setMaterial(std::shared_ptr<IMaterial> m)
+{
+    mat_ptr = std::move(m);
+}
+
+std::shared_ptr<IMaterial> Sphere::getMaterial()
+{
+    return mat_ptr;
+}
 
 bool Sphere::hit(const Ray& r, float t_min, float t_max, hit_record_t& rec) const
 {
@@ -32,7 +42,7 @@ bool Sphere::hit(const Ray& r, float t_min, float t_max, hit_record_t& rec) cons
             rec.t = temp;
             rec.p = r.point_at_parameter(rec.t);
             rec.normal = (rec.p - center) / radius;
-            rec.mat_ptr = mat_ptr.get();
+            rec.mat_ptr = mat_ptr;
             return true;
         }
         temp = (-b + sqrt(b * b - a * c)) / a;
@@ -40,7 +50,7 @@ bool Sphere::hit(const Ray& r, float t_min, float t_max, hit_record_t& rec) cons
 			rec.t = temp;
 			rec.p = r.point_at_parameter(rec.t);
 			rec.normal = (rec.p - center) / radius;
-			rec.mat_ptr = mat_ptr.get();
+			rec.mat_ptr = mat_ptr;
 			return true;
 		}
     }

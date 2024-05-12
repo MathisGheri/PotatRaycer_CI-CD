@@ -8,7 +8,7 @@
 #include <criterion/criterion.h>
 #include <criterion/redirect.h>
 #include <criterion/theories.h>
-#include "Sphere.hpp"
+//#include "Sphere.hpp"
 
 // Test(Sphere, Constructor) {
 //     Vec3 center(0.0f, 0.0f, 0.0f);

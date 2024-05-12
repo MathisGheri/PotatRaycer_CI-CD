@@ -7,6 +7,9 @@
 
 #include "Parsing.hpp"
 #include "SingletonLogger.hpp"
+#include "FileWatcherSingleton.hpp"
+#include <algorithm> 
+#include "Metal.hpp"
 
 Parsing::Parsing(const std::string &file) : _filePath(file)
 {
@@ -16,20 +19,19 @@ Parsing::Parsing(const std::string &file) : _filePath(file)
 	logger->log(INFO, msg.str());
     _cfg.readFile(_filePath.c_str());
     libconfig::Setting &root = _cfg.getRoot();
-    parsePrimitives(root["primitives"]["planes"], "plane");
-    parsePrimitives(root["primitives"]["spheres"], "sphere");
+        if (root.exists("primitives") && root["primitives"].exists("planes")) {
+        parsePrimitives(root["primitives"]["planes"], "plane");
+    } else {
+        logger->log(WARNING, "No planes found in configuration or planes section is empty.");
+    }
+    if (root.exists("primitives") && root["primitives"].exists("spheres")) {
+        parsePrimitives(root["primitives"]["spheres"], "sphere");
+    } else {
+        logger->log(WARNING, "No spheres found in configuration or spheres section is empty.");
+    }
     parseLights(root["light"]);
     parseCamera(root["camera"]);
-    // for (auto &p : _primitives) {
-    //     std::cout << "\tPrimitive: " << p.type << std::endl;
-    //     std::cout << "\tPoints: " << p.points[0].x << " " << p.points[0].y << " " << p.points[0].z << std::endl;
-    //     std::cout << "\tPoints: " << p.points[1].x << " " << p.points[1].y << " " << p.points[1].z << std::endl;
-    //     std::cout << "\tMaterial: " << p.material.type << std::endl;
-    //     std::cout << "\tVec: " << p.material.vec.x << " " << p.material.vec.y << " " << p.material.vec.z << std::endl;
-    //     std::cout << "\tFuzz: " << p.material.fuzz << std::endl;
-    //     std::cout << "\tRef_idx: " << p.material.ref_idx << std::endl;
-    //     printf("\n");
-    // }
+    
 }
 
 /**
@@ -42,6 +44,11 @@ Parsing::Parsing(const std::string &file) : _filePath(file)
  */
 void Parsing::parsePrimitives(libconfig::Setting& setting, const std::string& type)
 {
+    if (setting.getLength() == 0) {
+        Logger *logger = LoggerSingleton::getInstance();
+        logger->log(WARNING, "The section for " + type + " is empty.");
+        return;
+    }
     for (int i = 0; i < setting.getLength(); ++i) {
         Primitive p;
         p.type = type;
@@ -61,6 +68,7 @@ void Parsing::parsePrimitives(libconfig::Setting& setting, const std::string& ty
             primitive["radius"].lookupValue("y", p.points[1].y);
             primitive["radius"].lookupValue("z", p.points[1].z);
         }
+
         libconfig::Setting& mat = primitive["material"];
         mat.lookupValue("type", p.material.type);
         mat["vec"].lookupValue("x", p.material.vec.x);
@@ -70,6 +78,16 @@ void Parsing::parsePrimitives(libconfig::Setting& setting, const std::string& ty
             mat["fuzz"].lookupValue("x", p.material.fuzz);
         if (p.material.type == "dielectric")
             mat["ref_idx"].lookupValue("x", p.material.ref_idx);
+
+        if (primitive.exists("effect")) {
+            libconfig::Setting &eff = primitive["effect"];
+            eff.lookupValue("type", p.effect.type);
+            if (eff.exists("vec")) {
+                eff["vec"].lookupValue("x", p.effect.color.x);
+                eff["vec"].lookupValue("y", p.effect.color.y);
+                eff["vec"].lookupValue("z", p.effect.color.z);
+            }
+        }
         _primitives.push_back(p);
     }
 }
@@ -121,3 +139,66 @@ void Parsing::parseCamera(libconfig::Setting& camera)
         {"ns", std::make_tuple(ns, 0, 0)}
     };
 }
+
+// bool Parsing::parseObj(const std::string& filename)
+// {
+//     std::vector<Vec3> vertices;
+//     std::vector<Triangle> triangles;
+
+//     std::ifstream file(filename);
+//     if (!file.is_open()) {
+//         std::cerr << "Cannot open file: " << filename << std::endl;
+//         return false;
+//     }
+
+//     std::string line;
+//     while (std::getline(file, line)) {
+//         printf("line : %s\n", line.c_str());
+//         std::istringstream iss(line);
+//         std::string prefix;
+//         iss >> prefix;
+//         if (prefix == "v") {
+//             Vec3 vertex;
+//             iss >> vertex.e[0] >> vertex.e[1] >> vertex.e[2];
+//             vertices.push_back(vertex);
+//         } else if (prefix == "f") {
+//             printf("f found\n");
+//             std::string token;
+//             int idx[4];
+//             int i = 0;
+
+//             iss >> idx[0] >> idx[1] >> idx[2] >> idx[3];
+
+//             // while (iss >> token && i < 4) {
+                
+//             //     std::replace(token.begin(), token.end(), '/', ' ');
+//             //     std::istringstream tokenStream(token);
+//             //     int vertexIndex, texIndex, normIndex;
+//             //     tokenStream >> vertexIndex >> texIndex >> normIndex;
+//             //     printf("vertexIndex: %d, texIndex: %d, normIndex: %d\n", vertexIndex, texIndex, normIndex);
+//             //     idx[i++] = vertexIndex;
+//             // }
+//             // print vertices and indices
+//             printf("idx[0]: %d, idx[1]: %d, idx[2]: %d, idx[3]: %d\n", idx[0], idx[1], idx[2], idx[3]);
+//             printf("vertices[0]: %f|%f|%f, vertices[1]: %f, vertices[2]: %f, vertices[3]: %f\n", vertices[idx[0] - 1].e[0], vertices[idx[0] - 1].e[1], vertices[idx[0] - 1].e[2], vertices[idx[1] - 1], vertices[idx[2] - 1], vertices[idx[3] - 1]);
+//             Triangle triangle(vertices, vertices[idx[1] - 1], vertices[idx[2] - 1], vertices[idx[3] - 1]);
+//             triangles.push_back(triangle);
+//         }
+//     }
+//     Vec3 materialVec(1.0, 1.0, 1.0);
+//     Vec3 pos(-1.0, 0.5, -1.0);
+//     std::shared_ptr<IMaterial> material;
+//     material = std::make_unique<Metal>(materialVec, 0.0);
+//     _mesh = std::make_shared<Mesh>(triangles, material, pos);  // Assuming Mesh has a constructor that accepts a std::vector<Triangle>
+//     return true;
+// }
+
+// bool Parsing::isObj(const std::string& filename)
+// {
+//     if (parseObj("Simple_Cube.obj")) {
+//         return true;
+//     } else {
+//         std::cerr << "Failed to load OBJ model." << std::endl;
+//         return false;
+//     }
+// }

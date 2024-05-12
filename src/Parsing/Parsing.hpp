@@ -9,9 +9,15 @@
 #define PARSING_HPP_
 
 #include "../include.hpp"
+#include "IHitable.hpp"
 
 struct vec3 {
     float x, y, z;
+};
+
+struct Effect {
+    std::string type;
+    vec3 color;
 };
 
 struct Material {
@@ -25,6 +31,7 @@ struct Primitive {
     std::string type;
     vec3 points[2];
     Material material;
+    Effect effect;
 };
 
 class Parsing {
@@ -43,10 +50,15 @@ class Parsing {
         {
             return _light;
         }
+        // std::shared_ptr<IHitable> getMesh()
+        // {
+        //     return _mesh;
+        // }
         void parseLights(libconfig::Setting& setting);
         void parseCamera(libconfig::Setting& setting);
         void parsePrimitives(libconfig::Setting& setting, const std::string& type);
-        
+        // bool parseObj(const std::string& filename);
+        // bool isObj(const std::string& filename);
     protected:
     private:
         const std::string &_filePath;
