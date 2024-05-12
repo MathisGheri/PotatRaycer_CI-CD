@@ -18,6 +18,9 @@
 #include "Dielectric.hpp"
 #include "SingletonLogger.hpp"
 #include "Exception.hpp"
+#include "MatDecorator.hpp"
+#include "TintDecorator.hpp"
+#include "LightDecorator.hpp"
 
 SceneBuilder::SceneBuilder()
 {
@@ -75,30 +78,36 @@ void SceneBuilder::createLight(std::map<std::string, std::tuple<float, float, fl
     scene.setLight(light);
 }
 
-void SceneBuilder::createObjects(std::vector<Primitive> primitives)
-{
+void SceneBuilder::createObjects(std::vector<Primitive> primitives) {
     for (const auto& prim : primitives) {
-        /* Material creation */
         Vec3 materialVec(prim.material.vec.x, prim.material.vec.y, prim.material.vec.z);
         std::shared_ptr<IMaterial> material;
+
+        // Création du matériau de base
         if (prim.material.type == "metal") {
-            material = std::make_unique<Metal>(materialVec, prim.material.fuzz);
+            material = std::make_shared<Metal>(materialVec, prim.material.fuzz);
         } else if (prim.material.type == "lambertian") {
-            material = std::make_unique<Lambertian>(materialVec);
+            material = std::make_shared<Lambertian>(materialVec);
+            //material = std::make_shared<TintedMaterial>(material, Vec3(1.0, 0.2, 0.2));
         } else if (prim.material.type == "dielectric") {
-            material = std::make_unique<Dielectric>(prim.material.ref_idx);
+            material = std::make_shared<Dielectric>(prim.material.ref_idx);
         }
-        /* Primitive creation */
+        // Appliquer un décorateur
+        //material = std::make_shared<MatDecorator>(material);
+        // Création de la primitive avec le matériau décoré
         if (prim.type == "sphere") {
+            auto emissiveMaterial = std::make_shared<EmissiveMaterial>(material, Vec3(1.0, 0.8, 0.2), 0.5);
             Vec3 center(prim.points[0].x, prim.points[0].y, prim.points[0].z);
             float radius = prim.points[1].x;
-            std::shared_ptr<IHitable> object = std::make_unique<Sphere>(center, radius, std::move(material));
-            scene.addObject(std::move(object));
+            std::shared_ptr<IHitable> object = std::make_shared<Sphere>(center, radius);
+            object->setMaterial(emissiveMaterial);
+            scene.addObject(object);
         } else if (prim.type == "plane") {
             Vec3 point1(prim.points[0].x, prim.points[0].y, prim.points[0].z);
             Vec3 point2(prim.points[1].x, prim.points[1].y, prim.points[1].z);
-            std::shared_ptr<IHitable> object = std::make_unique<Plane>(point1, point2, std::move(material));
-            scene.addObject(std::move(object));
+            std::shared_ptr<IHitable> object = std::make_shared<Plane>(point1, point2);
+            object->setMaterial(material);
+            scene.addObject(object);
         }
     }
 }

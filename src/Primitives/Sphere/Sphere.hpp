@@ -15,9 +15,11 @@
 
 class Sphere : public IHitable {
     public:
-        Sphere(Vec3 cen, float r, std::shared_ptr<IMaterial> m);
+        Sphere(Vec3 cen, float r);
         ~Sphere();
         bool hit(const Ray& r, float t_min, float t_max, hit_record_t& rec) const;
+        void setMaterial(std::shared_ptr<IMaterial> m);
+        std::shared_ptr<IMaterial> getMaterial();
     private:
         Vec3 center;
         float radius;
