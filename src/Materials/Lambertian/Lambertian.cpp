@@ -26,7 +26,7 @@ bool Lambertian::hit(const Ray& r, float t_min, float t_max, hit_record_t& rec, 
     bool hit_anything = false;
     double closest_so_far = t_max;
     for(int i = 0; i < _world.size(); i++) {
-        if (_world[i]->hit(r,t_min,closest_so_far,temp_rec)) {
+        if (_world[i]->hit(r,t_min,closest_so_far,temp_rec) && _world[i]->getMaterial()->getName() != "LightTexture") {
             hit_anything = true;
             closest_so_far = temp_rec.t;
             rec = temp_rec;
@@ -120,4 +120,9 @@ bool Lambertian::scatter(const Ray& r_in, const hit_record_t &rec, Vec3& attenua
             return false;
         }
     }
+}
+
+std::string Lambertian::getName() const
+{
+    return "Lambertian";
 }

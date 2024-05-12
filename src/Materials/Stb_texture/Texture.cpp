@@ -42,3 +42,8 @@ bool Texture::scatter(const Ray &r_in, const hit_record_t &rec, Vec3 &attenuatio
     attenuation = textureColor;
     return (dot(scattered.getDirection(), rec.normal) > 0);
 }
+
+std::string Texture::getName() const
+{
+    return "Texture";
+}

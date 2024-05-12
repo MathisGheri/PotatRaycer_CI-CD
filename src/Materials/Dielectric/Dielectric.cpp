@@ -48,3 +48,8 @@ bool Dielectric::scatter(const Ray& r_in, const hit_record_t &rec, Vec3& attenua
         scattered = Ray(rec.p, refracted);
     return true;
 }
+
+std::string Dielectric::getName() const
+{
+    return "Dielectric";
+}

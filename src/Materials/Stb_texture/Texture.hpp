@@ -31,6 +31,7 @@ public:
     }
     Vec3 sample(float u, float v) const;
     bool scatter(const Ray &r_in, const hit_record_t &rec, Vec3 &attenuation, Ray &scattered, Light light, const std::vector<std::shared_ptr<IHitable>> &_obj) const override;
+    std::string getName() const override final;
 };
 
 #endif /* !Texture_HPP_ */

@@ -11,6 +11,8 @@
 #include "SingletonLogger.hpp"
 #include "Exception.hpp"
 #include <thread>
+#include "LightTexture.hpp"
+#include "Circle.hpp"
 
 Compute::Compute(Scene scene)
 {
@@ -22,6 +24,12 @@ Compute::Compute(Scene scene)
     _width = scene.getWidth();
     _height = scene.getHeight();
     _ns = scene.getNs();
+    if (_light.isDirec() && _light.getSize() > 0.0) {
+        std::shared_ptr<IMaterial> material = std::make_shared<LightTexture>(_light.getIntensity());
+        std::shared_ptr<IHitable> object = std::make_shared<Circle>(_light.getPosition(), _light.getNormal(), _light.getSize());
+        object->setMaterial(material);
+        _world.push_back(object);
+    }
 }
 
 Compute::~Compute() {}
