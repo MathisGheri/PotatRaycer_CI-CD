@@ -33,3 +33,4 @@ Test(Exception, GetLevelNone) {
     Exception ex("Test Exception", Level::NONE);
     cr_assert(ex.getLevel() == Level::NONE);
 }
+
