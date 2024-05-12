@@ -8,20 +8,8 @@
 #ifndef Vec3_HPP_
 #define Vec3_HPP_
 
-#include <iostream>
-#include <math.h>
-#include <string.h>
-#include <memory>
-#include <utility>
-#include <vector>
-#include <map>
-#include <tuple>
-#include <libconfig.h++>
-#include <list>
-#include <fstream>
-#include <sstream>
-#include <ctime>
-#include <exception>
+#include "include.hpp"
+#include "SingletonLogger.hpp"
 
 class Vec3 {
 public:
@@ -56,7 +44,6 @@ public:
 	inline Vec3& operator*=(const Vec3 &v2);
 	inline Vec3& operator/=(const Vec3 &v2);
 	inline Vec3& operator*=(const float t);
-
 	//inline Vec3& operator/=(const float t);
 	
 	inline Vec3& operator/=(const double t) {return *this *= 1/t;}
@@ -67,7 +54,6 @@ public:
 	
 	float e[3];
 };
-
 
 inline std::istream& operator>>(std::istream &is, Vec3 &t)
 {
@@ -119,7 +105,20 @@ inline Vec3 cross(const Vec3 &v1, const Vec3 &v2) {
 	-(v1.e[0]*v2.e[2] - v1.e[2]*v2[0]), 
 	v1.e[0]*v2.e[1] - v1.e[1]*v2[0]);
 }
- 
+
+inline bool operator==(Vec3 v, Vec3 u) {
+	int cpt = 0;
+	if (u.e[0] == v.e[0])
+		cpt++;
+	if (u.e[1] == v.e[1])
+		cpt++;
+	if (u.e[2] == v.e[2])
+		cpt++;
+	if (cpt == 3)
+		return true;
+ return false;
+}
+
 inline Vec3& Vec3::operator+=(const Vec3 &v) {
  e[0] += v.e[0];
  e[1] += v.e[1];
@@ -152,7 +151,6 @@ inline Vec3& Vec3::operator*=(const float t) {
 }
 
 inline Vec3 unit_vector(Vec3 v) {
-	printf ("v.length() = %f\n", v.length());
 	return v / v.length();
 }
 

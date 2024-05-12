@@ -9,7 +9,7 @@
 #include "SceneBuilder.hpp"
 #include "Parsing.hpp"
 #include "SingletonLogger.hpp"
-#include "Decorator.hpp"
+#include "Computing.hpp"
 
 Core::Core()
 {
@@ -37,7 +37,7 @@ void Core::assembleScene(const std::string &filename)
 
 void Core::generatePPM()
 {
-    Decorator deco = Decorator(this->getScene());
+    Compute deco = Compute(this->getScene());
     deco.loop(this->getScene());
     //calcul
 }

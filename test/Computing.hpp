@@ -5,19 +5,18 @@
 ** calcs
 */
 
-#ifndef DecoratorRATOR_HPP_
-#define DecoratorRATOR_HPP_
+#ifndef ComputeRATOR_HPP_
+#define ComputeRATOR_HPP_
 
 #include "Scene.hpp"
-#include "IDecorator.hpp"
 #include "Ray.hpp"
 #include "IMaterial.hpp"
 #include "SFML/Graphics.hpp"
 
-class Decorator : public IDecorator {
+class Compute {
 public:
-    Decorator(Scene scene);
-    ~Decorator();
+    Compute(Scene scene);
+    ~Compute();
     void loop(Scene scene);
     Vec3 colorloop(const Ray &r, const std::vector<std::shared_ptr<IHitable>> &_objects, Light _light);
     bool hit(const Ray& r, float t_min, float t_max, hit_record_t& rec) const ;

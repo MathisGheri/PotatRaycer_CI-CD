@@ -46,6 +46,9 @@ void SceneBuilder::createCamera(std::map<std::string,std::tuple<float,float,floa
         aspect = std::get<0>(camParams["aspect"]);
         aperture = std::get<0>(camParams["aperture"]);
         focus_dist = std::get<0>(camParams["focus_dist"]);
+        scene.setConfigHeight(std::get<0>(camParams["height"]));
+        scene.setConfigWidth(std::get<0>(camParams["width"]));
+        scene.setConfigNs(std::get<0>(camParams["ns"]));
     } catch (const std::exception &e) {
         throw("Camera parameters not found.", Level::MIDDLE);
         exit(84);
@@ -68,7 +71,7 @@ void SceneBuilder::createLight(std::map<std::string, std::tuple<float, float, fl
         throw("Light parameters not found.", Level::MIDDLE);
         exit(84);
     }
-    Light light = Light(pos, intensity);
+    Light light = Light(pos, intensity, Vec3(1.0, 0.1, -0.2), true); // light update vecteur normale + bool si directionnel ou non
     scene.setLight(light);
 }
 
