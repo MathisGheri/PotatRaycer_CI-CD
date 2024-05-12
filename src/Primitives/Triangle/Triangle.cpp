@@ -7,8 +7,8 @@
 
 #include "Triangle.hpp"
 
-Triangle::Triangle(const Vec3& v0, const Vec3& v1, const Vec3& v2/*, Vec3 position*/, std::shared_ptr<IMaterial> m)
-: _v0(v0/* + position*/), _v1(v1/* + position*/), _v2(v2/* + position*/), /*_pos(position),*/ _mat_ptr(m) {}
+Triangle::Triangle(const Vec3& v0, const Vec3& v1, const Vec3& v2, std::shared_ptr<IMaterial> m)
+: _v0(v0), _v1(v1), _v2(v2), _mat_ptr(m) {}
 
 Triangle::~Triangle() {}
 

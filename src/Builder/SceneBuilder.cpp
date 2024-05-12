@@ -104,7 +104,7 @@ void SceneBuilder::createObjects(std::vector<Primitive> primitives)
         }
     }
     std::shared_ptr<IMaterial> cubeMaterial = std::make_shared<Lambertian>(Vec3(0.5, 0.3, 0.2));  // Par exemple
-    this->loadMeshFromOBJ("obj_files/trute.obj", cubeMaterial);
+    this->loadMeshFromOBJ("obj_files/potato.obj", cubeMaterial);
     // std::vector<std::shared_ptr<IHitable>> triangles;
     // triangles.push_back(std::make_unique<Triangle>(vertex1, vertex2, vertex3, Vec3(1.0, 0.0, -0.1), std::make_unique<Lambertian>(Vec3(1.0, 0.5, 0.2))));
     // std::shared_ptr<IHitable> object = std::make_unique<Mesh>(triangles);
@@ -123,6 +123,8 @@ void SceneBuilder::loadMeshFromOBJ(const std::string& filename, const std::share
     std::vector<std::shared_ptr<IHitable>> triangles;
     std::string line;
 
+    std::vector<Vec3> texCoords;
+
     while (std::getline(file, line)) {
         std::stringstream ss(line);
         std::string type;
@@ -131,35 +133,49 @@ void SceneBuilder::loadMeshFromOBJ(const std::string& filename, const std::share
             float x, y, z;
             ss >> x >> y >> z;
             vertices.emplace_back(x, y, z);
+        } else if (type == "vt") {
+            float u, v;
+            ss >> u >> v;
+            texCoords.emplace_back(u, v, 0);
         } else if (type == "f") {
             std::string vertexInfo;
-            std::vector<int> indices;
+            std::vector<int> vertexIndices;
+            std::vector<int> textureIndices;
+
             while (ss >> vertexInfo) {
-                size_t pos = vertexInfo.find('/');
-                if (pos != std::string::npos) {
-                    vertexInfo = vertexInfo.substr(0, pos);  // Get the part before the first '/'.
+                size_t pos1 = vertexInfo.find('/');
+                size_t pos2 = vertexInfo.find('/', pos1 + 1);
+
+                // Récupérer l'indice du sommet
+                int vertexIndex = std::stoi(vertexInfo.substr(0, pos1)) - 1; // Conversion en indice basé sur zéro
+                vertexIndices.push_back(vertexIndex);
+
+                // Vérifier et récupérer l'indice de la coordonnée de texture, s'il existe
+                if (pos1 != std::string::npos && pos1 + 1 != pos2) {
+                    int textureIndex = std::stoi(vertexInfo.substr(pos1 + 1, pos2 - pos1 - 1)) - 1; // Conversion en indice basé sur zéro
+                    textureIndices.push_back(textureIndex);
                 }
-                int index = std::stoi(vertexInfo);
-                indices.push_back(index - 1);  // Store 0-based index.
             }
-            if (indices.size() >= 3) {
-                // Create triangles assuming the indices are valid.
-                triangles.push_back(std::make_unique<Triangle>(vertices[indices[0]], vertices[indices[1]], vertices[indices[2]], material));
-                if (indices.size() == 4) {
-                    // Create a second triangle if it's a quad.
-                    triangles.push_back(std::make_unique<Triangle>(vertices[indices[0]], vertices[indices[2]], vertices[indices[3]], material));
+            // Créer des triangles, en assumant que les indices sont valides et qu'il y a au moins trois sommets
+            if (vertexIndices.size() >= 3) {
+                for (int i = 0; i < vertexIndices.size() - 2; i++) {
+                    // Créer un triangle à partir de chaque triplet de sommets et de coordonnées de texture
+                    triangles.push_back(std::make_unique<Triangle>(
+                        vertices[vertexIndices[0]], vertices[vertexIndices[i + 1]], vertices[vertexIndices[i + 2]],/*
+                        texCoords[textureIndices[0]], texCoords[textureIndices[i + 1]], texCoords[textureIndices[i + 2]],*/
+                        material));
                 }
             }
         }
     }
 
     Vec3 position(0, 0.3, 0);
-    Vec3 rotation(-90, 145, 0);
-    Vec3 scale(0.2, 0.2, 0.2);
+    // Vec3 rotation(-90, 145, 0); // trute
+    Vec3 rotation(-90, 0, 0);
+    Vec3 scale(0.5, 0.5, 0.5);
 
     file.close();
     Mesh mesh(triangles, position, rotation, scale);
-    // std::shared_ptr<IHitable> mesh = std::make_unique<Mesh>(triangles, position, rotation, scale);
     mesh.transformVertices();
     std::shared_ptr<IHitable> meshPtr = std::make_shared<Mesh>(mesh);
     scene.addObject(std::move(meshPtr));

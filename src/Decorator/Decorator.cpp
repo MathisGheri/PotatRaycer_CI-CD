@@ -19,9 +19,9 @@ Decorator::Decorator(Scene scene)
     _world = scene.getObjects();
     _light = scene.getLight();
     _cam = scene.getCamera();
-    _width = 400;
-    _height = 200;
-    _ns = 5;
+    _width = 770;
+    _height = 385;
+    _ns = 10;
 }
 
 Decorator::~Decorator() {}
@@ -40,7 +40,7 @@ bool Decorator::hit(const Ray& r, float t_min, float t_max, hit_record_t& rec) c
     return hit_anything;
 }
 
-void Decorator::colorThread(int x, int end_x, int y, int i, std::map<int, std::string>& maMap)
+void Decorator::colorThread(int x, int end_x, int y, int i, std::map<int, std::string>& maMap, sf::Image &image)
 {
     std::string str;
     while (x < end_x)
@@ -60,6 +60,8 @@ void Decorator::colorThread(int x, int end_x, int y, int i, std::map<int, std::s
         int ib = int(255.99 * col[2]);
 
         str.append(std::to_string(ir) + " " + std::to_string(ig) + " " + std::to_string(ib) + "\n");
+        sf::Color color(ir, ig, ib);
+        image.setPixel(x, _height - y - 1, color);
         x++;
     }
     maMap[i] = str;
@@ -74,6 +76,10 @@ void Decorator::loop(Scene scene)
     std::ofstream outFile("image.ppm");
     watcher->addObserver(this);
 
+    sf::RenderWindow window(sf::VideoMode(_width, _height), "POTATX");
+    sf::Image image;
+    image.create(_width, _height, sf::Color::Black);
+
     Logger* logger = LoggerSingleton::getInstance();
     outFile << "P3\n" << _width << " " << _height << "\n255\n";
     for (int y = _height - 1; y >= 0; y--) {
@@ -81,8 +87,8 @@ void Decorator::loop(Scene scene)
         for (int i = 0; i < num_threads; i++) {
             end = end_x * (i + 1);
             if (i == num_threads - 1) end = _width;
-            threads.emplace_back([this, x, end, y, i, &maMap](){
-                this->colorThread(x, end, y, i, maMap);
+            threads.emplace_back([this, x, end, y, i, &maMap, &image](){
+                this->colorThread(x, end, y, i, maMap, image);
             });
             x += end_x;
         }
@@ -97,6 +103,20 @@ void Decorator::loop(Scene scene)
         }
         for (const auto& pair : maMap) {
             outFile << pair.second;
+        }
+        sf::Texture texture;
+        texture.loadFromImage(image);
+        sf::Sprite sprite;
+        sprite.setTexture(texture);
+        window.clear();
+        window.draw(sprite);
+        window.display();
+    }
+    while (window.isOpen()) {
+        sf::Event event;
+        while (window.pollEvent(event)) {
+            if (event.type == sf::Event::Closed)
+                window.close();
         }
     }
     outFile.close();

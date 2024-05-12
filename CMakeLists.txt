@@ -10,7 +10,7 @@ project(raytracer LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-set(CMAKE_CXX_FLAGS "-lconfig++")
+set(CMAKE_CXX_FLAGS "-lconfig++ -lsfml-graphics -lsfml-window -lsfml-system")
 
 file(GLOB_RECURSE SRC
     "src/*.cpp"
