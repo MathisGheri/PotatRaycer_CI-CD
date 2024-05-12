@@ -80,7 +80,7 @@ void SceneBuilder::createLight(std::map<std::string, std::tuple<float, float, fl
     scene.setLight(light);
 }
 
-void SceneBuilder::createObjects(std::vector<Primitive> primitives)
+void SceneBuilder::createPrimitives(std::vector<Primitive> primitives)
 {
     for (const auto& prim : primitives) {
         Vec3 materialVec(prim.material.vec.x, prim.material.vec.y, prim.material.vec.z);
@@ -111,9 +111,9 @@ void SceneBuilder::createObjects(std::vector<Primitive> primitives)
             scene.addObject(object);
         }
     }
-    //std::shared_ptr<IMaterial> cubeMaterial = std::make_shared<Texture>("trout.jpg");  // Par exemple
+    std::shared_ptr<IMaterial> cubeMaterial = std::make_shared<Texture>("trout.jpg");  // Par exemple
     // std::shared_ptr<IMaterial> cubeMaterial = std::make_shared<Lambertian>(Vec3(1.0, 0.5, 0.2));  // Par exemple
-    //this->loadMeshFromOBJ("obj_files/Trout.obj", cubeMaterial);
+    this->loadMeshFromOBJ("obj_files/Trout.obj", cubeMaterial);
     // std::vector<std::shared_ptr<IHitable>> triangles;
     // triangles.push_back(std::make_unique<Triangle>(vertex1, vertex2, vertex3, Vec3(1.0, 0.0, -0.1), std::make_unique<Lambertian>(Vec3(1.0, 0.5, 0.2))));
     // std::shared_ptr<IHitable> object = std::make_unique<Mesh>(triangles);
