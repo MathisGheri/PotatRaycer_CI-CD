@@ -18,7 +18,6 @@
 #include "Dielectric.hpp"
 #include "SingletonLogger.hpp"
 #include "Exception.hpp"
-#include "MatDecorator.hpp"
 #include "TintDecorator.hpp"
 #include "LightDecorator.hpp"
 
@@ -64,7 +63,7 @@ void SceneBuilder::createCamera(std::map<std::string,std::tuple<float,float,floa
 void SceneBuilder::createLight(std::map<std::string, std::tuple<float, float, float>> lightParams)
 {
     Vec3 pos;
-    float intensity; //modifier ce try catch
+    float intensity;
     try {
         pos = Vec3(std::get<0>(lightParams.at("position")),
                    std::get<1>(lightParams.at("position")),
@@ -74,7 +73,7 @@ void SceneBuilder::createLight(std::map<std::string, std::tuple<float, float, fl
         throw("Light parameters not found.", Level::MIDDLE);
         exit(84);
     }
-    Light light = Light(pos, intensity, Vec3(1.0, 0.1, -0.2), true); // light update vecteur normale + bool si directionnel ou non
+    Light light = Light(pos, intensity, Vec3(1.0, 0.1, -0.2), true);
     scene.setLight(light);
 }
 
@@ -83,20 +82,15 @@ void SceneBuilder::createObjects(std::vector<Primitive> primitives) {
         Vec3 materialVec(prim.material.vec.x, prim.material.vec.y, prim.material.vec.z);
         std::shared_ptr<IMaterial> material;
 
-        // Création du matériau de base
         if (prim.material.type == "metal") {
             material = std::make_shared<Metal>(materialVec, prim.material.fuzz);
         } else if (prim.material.type == "lambertian") {
             material = std::make_shared<Lambertian>(materialVec);
-            //material = std::make_shared<TintedMaterial>(material, Vec3(1.0, 0.2, 0.2));
         } else if (prim.material.type == "dielectric") {
             material = std::make_shared<Dielectric>(prim.material.ref_idx);
         }
-        // Appliquer un décorateur
-        //material = std::make_shared<MatDecorator>(material);
-        // Création de la primitive avec le matériau décoré
+        //DECORATOR
         if (prim.type == "sphere") {
-            auto emissiveMaterial = std::make_shared<EmissiveMaterial>(material, Vec3(1.0, 0.8, 0.2), 0.5);
             Vec3 center(prim.points[0].x, prim.points[0].y, prim.points[0].z);
             float radius = prim.points[1].x;
             std::shared_ptr<IHitable> object = std::make_shared<Sphere>(center, radius);
