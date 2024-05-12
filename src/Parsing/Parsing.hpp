@@ -14,6 +14,11 @@ struct vec3 {
     float x, y, z;
 };
 
+struct Effect {
+    std::string type;
+    vec3 color;
+};
+
 struct Material {
     std::string type;
     vec3 vec;
@@ -25,6 +30,7 @@ struct Primitive {
     std::string type;
     vec3 points[2];
     Material material;
+    Effect effect;
 };
 
 class Parsing {
@@ -53,7 +59,7 @@ class Parsing {
         libconfig::Config _cfg;
         std::map<std::string, std::tuple<float, float, float>> _light;
         std::map<std::string, std::tuple<float, float, float>> _camera;
-        std::vector<Primitive> _primitives;
+        std::vector<Primitive> _primitives;  
 };
 
 #endif /* !PARSING_HPP_ */

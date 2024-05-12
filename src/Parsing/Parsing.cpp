@@ -16,20 +16,19 @@ Parsing::Parsing(const std::string &file) : _filePath(file)
 	logger->log(INFO, msg.str());
     _cfg.readFile(_filePath.c_str());
     libconfig::Setting &root = _cfg.getRoot();
-    parsePrimitives(root["primitives"]["planes"], "plane");
-    parsePrimitives(root["primitives"]["spheres"], "sphere");
+        if (root.exists("primitives") && root["primitives"].exists("planes")) {
+        parsePrimitives(root["primitives"]["planes"], "plane");
+    } else {
+        logger->log(WARNING, "No planes found in configuration or planes section is empty.");
+    }
+    if (root.exists("primitives") && root["primitives"].exists("spheres")) {
+        parsePrimitives(root["primitives"]["spheres"], "sphere");
+    } else {
+        logger->log(WARNING, "No spheres found in configuration or spheres section is empty.");
+    }
     parseLights(root["light"]);
     parseCamera(root["camera"]);
-    // for (auto &p : _primitives) {
-    //     std::cout << "\tPrimitive: " << p.type << std::endl;
-    //     std::cout << "\tPoints: " << p.points[0].x << " " << p.points[0].y << " " << p.points[0].z << std::endl;
-    //     std::cout << "\tPoints: " << p.points[1].x << " " << p.points[1].y << " " << p.points[1].z << std::endl;
-    //     std::cout << "\tMaterial: " << p.material.type << std::endl;
-    //     std::cout << "\tVec: " << p.material.vec.x << " " << p.material.vec.y << " " << p.material.vec.z << std::endl;
-    //     std::cout << "\tFuzz: " << p.material.fuzz << std::endl;
-    //     std::cout << "\tRef_idx: " << p.material.ref_idx << std::endl;
-    //     printf("\n");
-    // }
+    
 }
 
 /**
@@ -42,6 +41,11 @@ Parsing::Parsing(const std::string &file) : _filePath(file)
  */
 void Parsing::parsePrimitives(libconfig::Setting& setting, const std::string& type)
 {
+    if (setting.getLength() == 0) {
+        Logger *logger = LoggerSingleton::getInstance();
+        logger->log(WARNING, "The section for " + type + " is empty.");
+        return;
+    }
     for (int i = 0; i < setting.getLength(); ++i) {
         Primitive p;
         p.type = type;
@@ -61,6 +65,7 @@ void Parsing::parsePrimitives(libconfig::Setting& setting, const std::string& ty
             primitive["radius"].lookupValue("y", p.points[1].y);
             primitive["radius"].lookupValue("z", p.points[1].z);
         }
+
         libconfig::Setting& mat = primitive["material"];
         mat.lookupValue("type", p.material.type);
         mat["vec"].lookupValue("x", p.material.vec.x);
@@ -70,6 +75,16 @@ void Parsing::parsePrimitives(libconfig::Setting& setting, const std::string& ty
             mat["fuzz"].lookupValue("x", p.material.fuzz);
         if (p.material.type == "dielectric")
             mat["ref_idx"].lookupValue("x", p.material.ref_idx);
+
+        if (primitive.exists("effect")) {
+            libconfig::Setting &eff = primitive["effect"];
+            eff.lookupValue("type", p.effect.type);
+            if (eff.exists("vec")) {
+                eff["vec"].lookupValue("x", p.effect.color.x);
+                eff["vec"].lookupValue("y", p.effect.color.y);
+                eff["vec"].lookupValue("z", p.effect.color.z);
+            }
+        }
         _primitives.push_back(p);
     }
 }

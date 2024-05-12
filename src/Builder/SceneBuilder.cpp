@@ -89,12 +89,15 @@ void SceneBuilder::createObjects(std::vector<Primitive> primitives) {
         } else if (prim.material.type == "dielectric") {
             material = std::make_shared<Dielectric>(prim.material.ref_idx);
         }
-        //DECORATOR
+        if (prim.effect.type == "tint") {
+            material = std::make_shared<TintedMaterial>(material, Vec3(prim.effect.color.x, prim.effect.color.y, prim.effect.color.z));
+        }
+
         if (prim.type == "sphere") {
             Vec3 center(prim.points[0].x, prim.points[0].y, prim.points[0].z);
             float radius = prim.points[1].x;
             std::shared_ptr<IHitable> object = std::make_shared<Sphere>(center, radius);
-            object->setMaterial(emissiveMaterial);
+            object->setMaterial(material);
             scene.addObject(object);
         } else if (prim.type == "plane") {
             Vec3 point1(prim.points[0].x, prim.points[0].y, prim.points[0].z);
