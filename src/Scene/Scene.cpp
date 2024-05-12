@@ -36,6 +36,19 @@ void Scene::addObject(std::shared_ptr<IHitable> obj)
     objects.push_back(obj);
 }
 
+void Scene::setConfigHeight(float height)
+{
+    this->height = height;
+}
+void Scene::setConfigWidth(float width)
+{
+    this->width = width;
+}
+void Scene::setConfigNs(float ns)
+{
+    this->ns = ns;
+}
+
 const std::vector<std::shared_ptr<IHitable>>& Scene::getObjects() const
 {
     return objects;
@@ -49,4 +62,18 @@ const Light &Scene::getLight(void) const
 const Camera &Scene::getCamera(void) const
 {
     return this->camera;
+}
+
+const float &Scene::getHeight(void) const
+{
+    return this->height;
+}
+const float &Scene::getWidth(void) const
+{
+    return this->width;
+}
+
+const float &Scene::getNs(void) const
+{
+    return this->ns;
 }

@@ -8,7 +8,7 @@
 #include "Metal.hpp"
 #include "SingletonLogger.hpp"
 
-Metal::Metal(const Vec3& a, const float f) : albedo(a)
+Metal::Metal(const Vec3& albedo, const float f) : albedo(albedo)
 {
     if (f < 1)
         fuzz = f;
@@ -16,7 +16,7 @@ Metal::Metal(const Vec3& a, const float f) : albedo(a)
         fuzz = 1;
     Logger *logger = LoggerSingleton::getInstance();
 	std::ostringstream msg;
-    msg << "LOG: Metal created with these parameters: a = " << a << ", f = " << f << ".";
+    msg << "LOG: Metal created with these parameters: a = " << albedo << ", f = " << f << ".";
 	logger->log(INFO, msg.str());
 
 }
