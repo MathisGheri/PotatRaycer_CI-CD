@@ -33,6 +33,8 @@ void Core::assembleScene(const std::string &filename)
     logger->log(DEBUG, "Light created.");
     sceneBuilder.createPrimitives(parser.getPrimitives());
     logger->log(DEBUG, "Primitives Created.");
+    sceneBuilder.createMeshFromObj(parser.getObj());
+    logger->log(DEBUG, "Meshes Created.");
     this->scene = sceneBuilder.getScene();
 }
 

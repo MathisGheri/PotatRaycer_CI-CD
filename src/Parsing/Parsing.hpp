@@ -34,6 +34,15 @@ struct Primitive {
     Effect effect;
 };
 
+struct ObjectProperties {
+    std::string pathFile;
+    std::string matType;
+    std::string pathTexture;
+    vec3 scale;
+    vec3 rotation;
+    vec3 position;
+};
+
 class Parsing {
     public:
         Parsing(const std::string &file);
@@ -50,22 +59,21 @@ class Parsing {
         {
             return _light;
         }
-        // std::shared_ptr<IHitable> getMesh()
-        // {
-        //     return _mesh;
-        // }
+        std::vector<ObjectProperties> getObj()
+        {
+            return _objects;
+        }
         void parseLights(libconfig::Setting& setting);
         void parseCamera(libconfig::Setting& setting);
         void parsePrimitives(libconfig::Setting& setting, const std::string& type);
-        // bool parseObj(const std::string& filename);
-        // bool isObj(const std::string& filename);
-    protected:
+        void parseObj(libconfig::Setting& setting);
     private:
         const std::string &_filePath;
         libconfig::Config _cfg;
         std::map<std::string, std::tuple<float, float, float>> _light;
         std::map<std::string, std::tuple<float, float, float>> _camera;
         std::vector<Primitive> _primitives;
+        std::vector<ObjectProperties> _objects;
 };
 
 #endif /* !PARSING_HPP_ */
