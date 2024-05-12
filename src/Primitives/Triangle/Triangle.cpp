@@ -7,8 +7,8 @@
 
 #include "Triangle.hpp"
 
-Triangle::Triangle(const Vec3& v0, const Vec3& v1, const Vec3& v2, std::shared_ptr<IMaterial> m)
-: _v0(v0), _v1(v1), _v2(v2), _mat_ptr(m) {}
+Triangle::Triangle(const Vec3& v0, const Vec3& v1, const Vec3& v2, const Vec2& uv0, const Vec2& uv1, const Vec2& uv2, std::shared_ptr<IMaterial> m)
+: _v0(v0), _v1(v1), _v2(v2), _uv0(uv0), _uv1(uv1), _uv2(uv2), _mat_ptr(m) {}
 
 Triangle::~Triangle() {}
 
@@ -35,12 +35,15 @@ bool Triangle::hit(const Ray& ray, float t_min, float t_max, hit_record_t& rec) 
 
     float t = f * dot(edge2, q);
     if (t > t_min && t < t_max) {
+        float w = 1.0f - u - v; // Coordonnée barycentrique pour le troisième sommet
+        rec.uv = _uv0 * w + _uv1 * u + _uv2 * v; // Interpolation des coordonnées UV
         rec.t = t;
         rec.p = ray.point_at_parameter(t);
         rec.normal = cross(edge1, edge2).normalize();
         rec.mat_ptr = _mat_ptr.get();
         return true;
     }
+
 
     return false;
 }

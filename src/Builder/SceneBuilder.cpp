@@ -20,6 +20,7 @@
 #include "SingletonLogger.hpp"
 #include "Mesh.hpp"
 #include "Exception.hpp"
+#include "Texture.hpp"
 
 SceneBuilder::SceneBuilder()
 {
@@ -95,7 +96,7 @@ void SceneBuilder::createObjects(std::vector<Primitive> primitives)
             Vec3 center(prim.points[0].x, prim.points[0].y, prim.points[0].z);
             float radius = prim.points[1].x;
             std::shared_ptr<IHitable> object = std::make_unique<Sphere>(center, radius, std::move(material));
-            scene.addObject(std::move(object));
+            // scene.addObject(std::move(object));
         } else if (prim.type == "plane") {
             Vec3 point1(prim.points[0].x, prim.points[0].y, prim.points[0].z);
             Vec3 point2(prim.points[1].x, prim.points[1].y, prim.points[1].z);
@@ -103,8 +104,9 @@ void SceneBuilder::createObjects(std::vector<Primitive> primitives)
             scene.addObject(std::move(object));
         }
     }
-    std::shared_ptr<IMaterial> cubeMaterial = std::make_shared<Lambertian>(Vec3(0.5, 0.3, 0.2));  // Par exemple
-    this->loadMeshFromOBJ("obj_files/potato.obj", cubeMaterial);
+    std::shared_ptr<IMaterial> cubeMaterial = std::make_shared<Texture>("trout.jpg");  // Par exemple
+    // std::shared_ptr<IMaterial> cubeMaterial = std::make_shared<Lambertian>(Vec3(1.0, 0.5, 0.2));  // Par exemple
+    this->loadMeshFromOBJ("obj_files/Trout.obj", cubeMaterial);
     // std::vector<std::shared_ptr<IHitable>> triangles;
     // triangles.push_back(std::make_unique<Triangle>(vertex1, vertex2, vertex3, Vec3(1.0, 0.0, -0.1), std::make_unique<Lambertian>(Vec3(1.0, 0.5, 0.2))));
     // std::shared_ptr<IHitable> object = std::make_unique<Mesh>(triangles);
@@ -123,7 +125,7 @@ void SceneBuilder::loadMeshFromOBJ(const std::string& filename, const std::share
     std::vector<std::shared_ptr<IHitable>> triangles;
     std::string line;
 
-    std::vector<Vec3> texCoords;
+    std::vector<Vec2> texCoords;
 
     while (std::getline(file, line)) {
         std::stringstream ss(line);
@@ -136,7 +138,7 @@ void SceneBuilder::loadMeshFromOBJ(const std::string& filename, const std::share
         } else if (type == "vt") {
             float u, v;
             ss >> u >> v;
-            texCoords.emplace_back(u, v, 0);
+            texCoords.emplace_back(u, v);
         } else if (type == "f") {
             std::string vertexInfo;
             std::vector<int> vertexIndices;
@@ -146,35 +148,34 @@ void SceneBuilder::loadMeshFromOBJ(const std::string& filename, const std::share
                 size_t pos1 = vertexInfo.find('/');
                 size_t pos2 = vertexInfo.find('/', pos1 + 1);
 
-                // Récupérer l'indice du sommet
                 int vertexIndex = std::stoi(vertexInfo.substr(0, pos1)) - 1; // Conversion en indice basé sur zéro
                 vertexIndices.push_back(vertexIndex);
 
-                // Vérifier et récupérer l'indice de la coordonnée de texture, s'il existe
                 if (pos1 != std::string::npos && pos1 + 1 != pos2) {
                     int textureIndex = std::stoi(vertexInfo.substr(pos1 + 1, pos2 - pos1 - 1)) - 1; // Conversion en indice basé sur zéro
                     textureIndices.push_back(textureIndex);
                 }
             }
-            // Créer des triangles, en assumant que les indices sont valides et qu'il y a au moins trois sommets
             if (vertexIndices.size() >= 3) {
                 for (int i = 0; i < vertexIndices.size() - 2; i++) {
-                    // Créer un triangle à partir de chaque triplet de sommets et de coordonnées de texture
                     triangles.push_back(std::make_unique<Triangle>(
-                        vertices[vertexIndices[0]], vertices[vertexIndices[i + 1]], vertices[vertexIndices[i + 2]],/*
-                        texCoords[textureIndices[0]], texCoords[textureIndices[i + 1]], texCoords[textureIndices[i + 2]],*/
+                        vertices[vertexIndices[0]], vertices[vertexIndices[i + 1]], vertices[vertexIndices[i + 2]],
+                        texCoords[textureIndices[0]], texCoords[textureIndices[i + 1]], texCoords[textureIndices[i + 2]],
                         material));
                 }
             }
         }
     }
 
-    Vec3 position(0, 0.3, 0);
-    // Vec3 rotation(-90, 145, 0); // trute
-    Vec3 rotation(-90, 0, 0);
-    Vec3 scale(0.5, 0.5, 0.5);
+    Vec3 position(0, 0.5, 0);
+    Vec3 rotation(0, 65, 0); // trute
+    // Vec3 rotation(-90, 0, 0); // potato
+    // Vec3 rotation(0, 0, 0); // potato1500
+    Vec3 scale(1, 1, 1);
 
     file.close();
+
+    printf("%lu triangles\n", vertices.size(), triangles.size());
     Mesh mesh(triangles, position, rotation, scale);
     mesh.transformVertices();
     std::shared_ptr<IHitable> meshPtr = std::make_shared<Mesh>(mesh);
