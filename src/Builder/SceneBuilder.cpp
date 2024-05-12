@@ -12,14 +12,17 @@
 #include "IHitable.hpp"
 #include "Sphere.hpp"
 #include "Plane.hpp"
+#include "Triangle.hpp"
 #include "IMaterial.hpp"
 #include "Metal.hpp"
 #include "Lambertian.hpp"
 #include "Dielectric.hpp"
 #include "SingletonLogger.hpp"
+#include "Mesh.hpp"
 #include "Exception.hpp"
 #include "TintDecorator.hpp"
 #include "LightDecorator.hpp"
+#include "Texture.hpp"
 
 SceneBuilder::SceneBuilder()
 {
@@ -77,7 +80,8 @@ void SceneBuilder::createLight(std::map<std::string, std::tuple<float, float, fl
     scene.setLight(light);
 }
 
-void SceneBuilder::createObjects(std::vector<Primitive> primitives) {
+void SceneBuilder::createObjects(std::vector<Primitive> primitives)
+{
     for (const auto& prim : primitives) {
         Vec3 materialVec(prim.material.vec.x, prim.material.vec.y, prim.material.vec.z);
         std::shared_ptr<IMaterial> material;
@@ -98,7 +102,7 @@ void SceneBuilder::createObjects(std::vector<Primitive> primitives) {
             float radius = prim.points[1].x;
             std::shared_ptr<IHitable> object = std::make_shared<Sphere>(center, radius);
             object->setMaterial(material);
-            scene.addObject(object);
+            scene.addObject(std::move(object));
         } else if (prim.type == "plane") {
             Vec3 point1(prim.points[0].x, prim.points[0].y, prim.points[0].z);
             Vec3 point2(prim.points[1].x, prim.points[1].y, prim.points[1].z);
@@ -107,6 +111,82 @@ void SceneBuilder::createObjects(std::vector<Primitive> primitives) {
             scene.addObject(object);
         }
     }
+    //std::shared_ptr<IMaterial> cubeMaterial = std::make_shared<Texture>("trout.jpg");  // Par exemple
+    // std::shared_ptr<IMaterial> cubeMaterial = std::make_shared<Lambertian>(Vec3(1.0, 0.5, 0.2));  // Par exemple
+    //this->loadMeshFromOBJ("obj_files/Trout.obj", cubeMaterial);
+    // std::vector<std::shared_ptr<IHitable>> triangles;
+    // triangles.push_back(std::make_unique<Triangle>(vertex1, vertex2, vertex3, Vec3(1.0, 0.0, -0.1), std::make_unique<Lambertian>(Vec3(1.0, 0.5, 0.2))));
+    // std::shared_ptr<IHitable> object = std::make_unique<Mesh>(triangles);
+    // scene.addObject(std::move(object));
+}
+
+void SceneBuilder::loadMeshFromOBJ(const std::string& filename, const std::shared_ptr<IMaterial>& material)
+{
+    std::ifstream file(filename);
+    if (!file.is_open()) {
+        std::cerr << "Failed to open file: " << filename << std::endl;
+        return;
+    }
+
+    std::vector<Vec3> vertices;
+    std::vector<std::shared_ptr<IHitable>> triangles;
+    std::string line;
+
+    std::vector<Vec2> texCoords;
+
+    while (std::getline(file, line)) {
+        std::stringstream ss(line);
+        std::string type;
+        ss >> type;
+        if (type == "v") {
+            float x, y, z;
+            ss >> x >> y >> z;
+            vertices.emplace_back(x, y, z);
+        } else if (type == "vt") {
+            float u, v;
+            ss >> u >> v;
+            texCoords.emplace_back(u, v);
+        } else if (type == "f") {
+            std::string vertexInfo;
+            std::vector<int> vertexIndices;
+            std::vector<int> textureIndices;
+
+            while (ss >> vertexInfo) {
+                size_t pos1 = vertexInfo.find('/');
+                size_t pos2 = vertexInfo.find('/', pos1 + 1);
+
+                int vertexIndex = std::stoi(vertexInfo.substr(0, pos1)) - 1; // Conversion en indice basé sur zéro
+                vertexIndices.push_back(vertexIndex);
+
+                if (pos1 != std::string::npos && pos1 + 1 != pos2) {
+                    int textureIndex = std::stoi(vertexInfo.substr(pos1 + 1, pos2 - pos1 - 1)) - 1; // Conversion en indice basé sur zéro
+                    textureIndices.push_back(textureIndex);
+                }
+            }
+            if (vertexIndices.size() >= 3) {
+                for (int i = 0; i < vertexIndices.size() - 2; i++) {
+                    triangles.push_back(std::make_unique<Triangle>(
+                        vertices[vertexIndices[0]], vertices[vertexIndices[i + 1]], vertices[vertexIndices[i + 2]],
+                        texCoords[textureIndices[0]], texCoords[textureIndices[i + 1]], texCoords[textureIndices[i + 2]]));
+                    triangles.back()->setMaterial(material);
+                }
+            }
+        }
+    }
+
+    Vec3 position(0, 0.5, 0);
+    Vec3 rotation(0, 65, 0); // trute
+    // Vec3 rotation(-90, 0, 0); // potato
+    // Vec3 rotation(0, 0, 0); // potato1500
+    Vec3 scale(1, 1, 1);
+
+    file.close();
+
+    printf("%lu triangles\n", vertices.size(), triangles.size());
+    Mesh mesh(triangles, position, rotation, scale);
+    mesh.transformVertices();
+    std::shared_ptr<IHitable> meshPtr = std::make_shared<Mesh>(mesh);
+    scene.addObject(std::move(meshPtr));
 }
 
 const Scene &SceneBuilder::getScene() const

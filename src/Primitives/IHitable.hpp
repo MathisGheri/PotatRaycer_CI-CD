@@ -11,6 +11,7 @@
 
 #include "Ray.hpp"
 #include "Vec3.hpp"
+#include "Vec2.hpp"
 #include "struct.h"
 
 class IHitable {

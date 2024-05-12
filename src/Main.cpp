@@ -9,6 +9,7 @@
 #include "Core.hpp"
 #include "SingletonLogger.hpp"
 #include "Exception.hpp"
+#include "FileWatcherSingleton.hpp"
 
 int main(int argc, char **argv)
 {
@@ -20,7 +21,9 @@ int main(int argc, char **argv)
         exit(84);
     }
     /**********************/
-    Logger* logger = LoggerSingleton::getInstance();
+    Logger *logger = LoggerSingleton::getInstance();
+    FileWatcher *watcher = FileWatcherSingleton::getInstance();
+    watcher->setFileToWatch(argv[1]);
     try {
         logger->log(INFO, "Application started.");
         const std::string &file = argv[1];

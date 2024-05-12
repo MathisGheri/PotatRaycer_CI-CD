@@ -9,6 +9,8 @@
 #include "Camera.hpp"
 #include "Light.hpp"
 #include "SingletonLogger.hpp"
+#include "Exception.hpp"
+#include <thread>
 
 Compute::Compute(Scene scene)
 {
@@ -38,7 +40,6 @@ bool Compute::hit(const Ray& r, float t_min, float t_max, hit_record_t& rec) con
     return hit_anything;
 }
 
-#include <thread>
 
 void Compute::colorThread(int x, int end_x, int y, int i, std::map<int, std::string>& maMap, sf::Image& image)
 {
@@ -69,11 +70,12 @@ void Compute::colorThread(int x, int end_x, int y, int i, std::map<int, std::str
 
 void Compute::loop(Scene scene)
 {
+    FileWatcher *watcher = FileWatcherSingleton::getInstance();
     std::map<int, std::string> maMap;
     int num_threads = std::thread::hardware_concurrency();
     std::vector<std::thread> threads;
-
     std::ofstream outFile("image.ppm");
+    watcher->addObserver(this);
 
     sf::RenderWindow window(sf::VideoMode(_width, _height), "POTATX");
     sf::Image image;
@@ -95,6 +97,11 @@ void Compute::loop(Scene scene)
             if (t.joinable())
                 t.join();
         }
+        watcher->startWatching();
+        if (_tomato == true) {
+            _tomato = false;
+            throw Exception("A modification has be detected generation will restart in 5 second", Level::LOW);
+        }
         for (const auto& pair : maMap) {
             outFile << pair.second;
         }
@@ -106,7 +113,7 @@ void Compute::loop(Scene scene)
         window.draw(sprite);
         window.display();
     }
-    outFile.close();
+
     while (window.isOpen()) {
         sf::Event event;
         while (window.pollEvent(event)) {
@@ -114,7 +121,13 @@ void Compute::loop(Scene scene)
                 window.close();
         }
     }
+    outFile.close();
     logger->log(DEBUG, "End of loop.");
+}
+
+void Compute::reset()
+{
+    _tomato = true;
 }
 
 Vec3 Compute::colorloop(const Ray &r, const std::vector<std::shared_ptr<IHitable>> &_world, Light _light)
