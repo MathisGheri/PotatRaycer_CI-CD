@@ -10,7 +10,7 @@
 #ifndef SCENEBUILDER_HPP_
 #define SCENEBUILDER_HPP_
 
-#include "../include.hpp"
+#include "include.hpp"
 #include "IBuilder.hpp"
 
 class SceneBuilder : public IBuilder {
