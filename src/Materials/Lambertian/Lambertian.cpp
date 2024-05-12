@@ -73,8 +73,6 @@ bool Lambertian::scatter(const Ray& r_in, const hit_record_t &rec, Vec3& attenua
             Vec3 shadowRayDirection = lightDir;
             Ray shadowRay(shadowRayOrigin, shadowRayDirection);
 
-            // Ajout d'une marge d'erreur pour éviter que tout ne soit sombre
-
 
             // Vérification de l'intersection entre le rayon et les objets de la scène
             hit_record_t shadowRec;
@@ -84,10 +82,35 @@ bool Lambertian::scatter(const Ray& r_in, const hit_record_t &rec, Vec3& attenua
                 return false;
             }
             else {
-                // Le point peut voir la lumière directement
-                scattered = Ray(rec.p, rec.normal + random_in_unit_sphere());
-                attenuation = albedo * light.getIntensity() * cos_theta;
-                return true;
+                float lightsize = light.getSize();
+                if (lightsize > 0.0) {
+                    Vec3 lightOriginToHit = rec.p - lightPos;
+                    Vec3 lightNormal = light.getNormal();
+
+                    // Projection du vecteur du point à la lumière sur le plan défini par la normale de la lumière
+                    Vec3 projectedHitToLight = lightOriginToHit - dot(lightOriginToHit, lightNormal) * lightNormal;
+
+                    // Calcul de la distance projetée entre le point à évaluer et l'origine de la lumière
+                    float projectedDistanceToLight = projectedHitToLight.length();
+
+                    // Vérification si la distance projetée est inférieure ou égale à la taille de la lumière
+                    if (projectedDistanceToLight < lightsize) {
+                        // Le point est sous le cercle formé par la lumière, donc il est éclairé
+                        scattered = Ray(rec.p, rec.normal + random_in_unit_sphere());
+                        attenuation = albedo * light.getIntensity() * cos_theta;
+                        return true;
+                    } else {
+                        // Le point est au-dessus ou sur le cercle formé par la lumière, donc il est dans l'ombre
+                        attenuation = Vec3(0, 0, 0);
+                        return false;
+                    }
+                } else {
+                    // La lumière n'a pas de taille définie, le point est considéré comme éclairé
+                    scattered = Ray(rec.p, rec.normal + random_in_unit_sphere());
+                    attenuation = albedo * light.getIntensity() * cos_theta;
+                    return true;
+                }
+
             }
         }
         else {

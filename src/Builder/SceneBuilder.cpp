@@ -68,7 +68,7 @@ void SceneBuilder::createLight(std::map<std::string, std::tuple<float, float, fl
         throw("Light parameters not found.", Level::MIDDLE);
         exit(84);
     }
-    Light light = Light(pos, intensity, Vec3(1.0, 0.1, -0.2), true); // light update vecteur normale + bool si directionnel ou non
+    Light light = Light(pos, intensity, Vec3(0.0, 1.0, 0.0), true, 1.0); // light update vecteur normale + bool si directionnel ou non + float pour le rayon du cercle qui sert de light dans la scene
     scene.setLight(light);
 }
 

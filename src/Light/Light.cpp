@@ -8,7 +8,7 @@
 #include "Light.hpp"
 #include "Logger.hpp"
 
-Light::Light(const Vec3& pos, float intensity, Vec3 n, bool d) : position(pos), intensity(intensity), normal(n), direc(d)
+Light::Light(const Vec3& pos, float intensity, Vec3 n, bool d, float f) : position(pos), intensity(intensity), normal(n), direc(d), size(f)
 {
     Logger *logger = LoggerSingleton::getInstance();
 	std::ostringstream msg;
@@ -43,4 +43,9 @@ bool Light::isDirec()
 Vec3 Light::getNormal()
 {
     return normal;
+}
+
+float Light::getSize()
+{
+    return size;
 }

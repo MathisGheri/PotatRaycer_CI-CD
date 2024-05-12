@@ -19,7 +19,7 @@ Decorator::Decorator(Scene scene)
     _cam = scene.getCamera();
     _width = 1920;
     _height = 1080;
-    _ns = 50;
+    _ns = 1;
 }
 
 Decorator::~Decorator() {}
