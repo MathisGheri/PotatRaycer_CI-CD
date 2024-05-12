@@ -14,18 +14,20 @@
 class Light {
     public:
         Light() = default;
-        Light(const Vec3& pos, float intensity, Vec3 n, bool d);
+        Light(const Vec3& pos, float intensity, Vec3 n, bool d, float f);
         ~Light();
         Vec3 getPosition() const;
         float getIntensity() const;
         Vec3 calculateLightDirection(const Vec3& point) const;
         bool isDirec();
         Vec3 getNormal();
+        float getSize();
     private:
         Vec3 position;
         float intensity;
         Vec3 normal;
         bool direc;
+        float size;
 };
 
 #endif /* !LIGHT_HPP_ */

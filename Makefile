@@ -15,5 +15,5 @@ re: clean
 	rm -rf build
 	@mkdir -p build && cd build && cmake .. && make && cd ..
 
-clean: 
+clean:
 	@cd build && make clean

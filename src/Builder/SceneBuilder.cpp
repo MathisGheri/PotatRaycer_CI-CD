@@ -69,14 +69,14 @@ void SceneBuilder::createLight(std::map<std::string, std::tuple<float, float, fl
     float intensity;
     try {
         pos = Vec3(std::get<0>(lightParams.at("position")),
-                   std::get<1>(lightParams.at("position")),
-                   std::get<2>(lightParams.at("position")));
+                    std::get<1>(lightParams.at("position")),
+                    std::get<2>(lightParams.at("position")));
         intensity = std::get<0>(lightParams.at("intensity"));
     } catch (const std::exception& e) {
         throw("Light parameters not found.", Level::MIDDLE);
         exit(84);
     }
-    Light light = Light(pos, intensity, Vec3(1.0, 0.1, -0.2), true);
+    Light light = Light(pos, intensity, Vec3(0.0, 1.0, 0.0), false, 1.0); // light update vecteur normale + bool si directionnel ou non + float pour le rayon du cercle qui sert de light dans la scene
     scene.setLight(light);
 }
 
@@ -178,7 +178,6 @@ void SceneBuilder::createMeshFromObj(std::vector<ObjectProperties> objects)
         std::shared_ptr<IHitable> meshPtr = std::make_shared<Mesh>(mesh);
         scene.addObject(std::move(meshPtr));
     }
-
 }
 
 const Scene &SceneBuilder::getScene() const
