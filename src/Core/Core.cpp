@@ -25,18 +25,33 @@ void Core::assembleScene(const std::string &filename)
 {
     Logger* logger = LoggerSingleton::getInstance();
     SceneBuilder sceneBuilder;
-    Parsing parser(filename);
-    logger->log(DEBUG, "Parsing done.");
-    sceneBuilder.createCamera(parser.GetCamera());
-    logger->log(DEBUG, "Camera created.");
-    sceneBuilder.createLight(parser.getLights());
-    logger->log(DEBUG, "Light created.");
-    sceneBuilder.createPrimitives(parser.getPrimitives());
-    logger->log(DEBUG, "Primitives Created.");
-    sceneBuilder.createMeshFromObj(parser.getObj());
-    logger->log(DEBUG, "Meshes Created.");
-    this->scene = sceneBuilder.getScene();
+
+    try {
+        Parsing parser(filename);
+
+        logger->log(DEBUG, "Parsing done.");
+
+        sceneBuilder.createCamera(parser.GetCamera());
+        logger->log(DEBUG, "Camera created.");
+
+        sceneBuilder.createLight(parser.getLights());
+        logger->log(DEBUG, "Light created.");
+
+        sceneBuilder.createPrimitives(parser.getPrimitives());
+        logger->log(DEBUG, "Primitives Created.");
+
+        sceneBuilder.createMeshFromObj(parser.getObj());
+        logger->log(DEBUG, "Meshes Created.");
+
+        this->scene = sceneBuilder.getScene();
+    }
+    catch(const Exception& e) {
+        std::cerr << e.what() << '\n';
+        logger->log(ERROR, "An error occurred during scene assembly: " + std::string(e.what()));
+        throw Exception("An error occurred during scene assembly: " + std::string(e.what()), Level::HIGH);
+    }
 }
+
 
 void Core::generatePPM()
 {
