@@ -9,6 +9,7 @@
 #define INCLUDE_HPP_
 
 #include <iostream>
+#define STB_IMAGE_IMPLEMENTATION
 #include <math.h>
 #include <string.h>
 #include <memory>

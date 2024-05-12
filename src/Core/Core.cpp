@@ -9,7 +9,8 @@
 #include "SceneBuilder.hpp"
 #include "Parsing.hpp"
 #include "SingletonLogger.hpp"
-#include "Decorator.hpp"
+#include "Computing.hpp"
+#include "Exception.hpp"
 
 Core::Core()
 {
@@ -30,16 +31,23 @@ void Core::assembleScene(const std::string &filename)
     logger->log(DEBUG, "Camera created.");
     sceneBuilder.createLight(parser.getLights());
     logger->log(DEBUG, "Light created.");
-    sceneBuilder.createObjects(parser.getPrimitives());
+    sceneBuilder.createPrimitives(parser.getPrimitives());
     logger->log(DEBUG, "Primitives Created.");
     this->scene = sceneBuilder.getScene();
 }
 
 void Core::generatePPM()
 {
-    Decorator deco = Decorator(this->getScene());
-    deco.loop(this->getScene());
-    //calcul
+    Compute deco = Compute(this->getScene());
+    try {
+        deco.loop(this->getScene());
+    } catch(const Exception& e) {
+        std::cout << e.what() << std::endl;
+        std::this_thread::sleep_for(std::chrono::seconds(5));
+        FileWatcher *watcher = FileWatcherSingleton::getInstance();
+        this->assembleScene(watcher->getFile());
+        this->generatePPM();
+    }
 }
 
 const Scene &Core::getScene() const

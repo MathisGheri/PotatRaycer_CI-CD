@@ -51,6 +51,13 @@ public:
 	inline float length() const {return sqrt(e[0]*e[0] + e[1]*e[1] + e[2]*e[2]);}
 	inline float length_squared() const {return e[0]*e[0] + e[1]*e[1] + e[2]*e[2];}
 	inline void make_unit_vector();
+	inline Vec3 normalize();
+	// Vec3 operator*(float scalar) const {
+    //     return Vec3(e[0] * scalar, e[1] * scalar, e[2] * scalar);
+    // }
+	static Vec3 fromRGB(unsigned char r, unsigned char g, unsigned char b) {
+        return Vec3(r / 255.0f, g / 255.0f, b / 255.0f);
+    }
 	
 	float e[3];
 };
@@ -106,6 +113,11 @@ inline Vec3 cross(const Vec3 &v1, const Vec3 &v2) {
 	v1.e[0]*v2.e[1] - v1.e[1]*v2[0]);
 }
 
+inline Vec3 Vec3::normalize() {
+    float length = sqrt(e[0] * e[0] + e[1] * e[1] + e[2] * e[2]);
+    return Vec3(e[0] / length, e[1] / length, e[2] / length);
+}
+
 inline Vec3& Vec3::operator+=(const Vec3 &v) {
  e[0] += v.e[0];
  e[1] += v.e[1];
@@ -153,7 +165,7 @@ inline bool refract(const Vec3& v, const Vec3& n, float ni_over_nt, Vec3& refrac
 		refracted = ni_over_nt*(uv - n*dt) - n*sqrt(discriminant);
 		return true;
 	}
-	return false;
+	return false;	
 }
 
 inline float schlick(float cosine, float ref_idx) {
