@@ -173,8 +173,8 @@ void Parsing::parseObj(libconfig::Setting& setting)
 
         libconfig::Setting& pos = obj["position"];
         pos.lookupValue("x", objProps.position.x);
-        pos.lookupValue("y", objProps.position.x);
-        pos.lookupValue("z", objProps.position.x);
+        pos.lookupValue("y", objProps.position.y);
+        pos.lookupValue("z", objProps.position.z);
 
         _objects.push_back(objProps);
     }
