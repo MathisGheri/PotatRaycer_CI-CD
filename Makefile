@@ -24,8 +24,9 @@ re: fclean all
 clean:
 	@cd tests/build && make clean || true
 	@rm -rf build
+	@rm -rf raytracer
 	@rm -rf tests/build
-	@ rm -rf tests/run_tests
+	@rm -rf tests/run_tests
 	@rm -rf tests/coverage*
 	@rm -f vgcore.*
 	@rm -f logfile.txt
