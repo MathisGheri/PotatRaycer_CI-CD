@@ -35,10 +35,6 @@ jobs:
           make
           sudo make install
 
-      - name: Check libconfig installation
-        run: |
-          dpkg -L libconfig-dev
-
       - name: DARIUS_SHINY
         run: |
           make test
