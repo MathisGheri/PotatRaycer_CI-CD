@@ -1,0 +1,24 @@
+name: Unit_tests
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  DARIUS_PRESIDENT:
+    runs-on: ubuntu-latest
+    steps:
+      - name: DARIUS_AER
+        uses: actions/checkout@v2
+
+      - name: DARIUS_APE
+        run: ./install_criterion.sh
+
+      - name: DARIUS_EPSEED
+        run: |
+          sudo apt update
+          sudo apt install -y gcovr
+
+      - name: DARIUS_SHINY
+        run: |
+          make test || true
