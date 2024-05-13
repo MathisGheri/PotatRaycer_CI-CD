@@ -21,7 +21,7 @@ enum class Level {
 
 class Exception {
     public:
-        Exception(const std::string& msg, Level lvl = Level::NONE) : message(msg) {}
+        Exception(const std::string& msg, Level lvl = Level::NONE) : message(msg), lvl(lvl) {}
         virtual const char* what() const noexcept
         {
             return message.c_str();
