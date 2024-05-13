@@ -1,0 +1,18 @@
+<map id="Texture::scatter" name="Texture::scatter">
+<area shape="rect" id="node1" title=" " alt="" coords="5,165,119,192"/>
+<area shape="rect" id="node2" href="$Vec3_8hpp.html#a45f8afb934d90c5445ad67d3b2156563" title=" " alt="" coords="431,89,471,116"/>
+<area shape="rect" id="node3" href="$classRay.html#af2d29df2d2fc6322876e4dd5446529de" title=" " alt="" coords="186,38,310,65"/>
+<area shape="rect" id="node4" href="$classTexture.html#a64ad2ff4e2ac09dfc0c515d48c7488af" title=" " alt="" coords="205,89,291,116"/>
+<area shape="rect" id="node5" href="$classVec3.html#a201ba2963d27e782dd46635c498680e4" title=" " alt="" coords="167,140,329,166"/>
+<area shape="rect" id="node6" href="$Vec3_8hpp.html#ac27c4dfd3b914900ee1bf2306b3913b9" title=" " alt="" coords="170,241,326,268"/>
+<area shape="rect" id="node8" href="$Vec3_8hpp.html#a43e74e58464123290e65b93de83ebe0e" title=" " alt="" coords="219,190,277,217"/>
+<area shape="rect" id="node9" href="$classTexture.html#a439d359f947ff309a9fb4f6eb5f6e1c7" title=" " alt="" coords="191,292,305,318"/>
+<area shape="rect" id="node15" href="$Vec3_8hpp.html#a288c446d78e98483daf812cfb32d2f21" title=" " alt="" coords="205,342,291,369"/>
+<area shape="rect" id="node7" href="$classVec3.html#a52729ddfe43ef4c9d01def60c4622c92" title=" " alt="" coords="377,241,524,268"/>
+<area shape="rect" id="node10" href="$classVec3.html#af5489870e9b632c4b0171d997259e6df" title=" " alt="" coords="393,292,508,318"/>
+<area shape="rect" id="node11" href="$classVec3.html#a0309a2455125001750a97e300f06b1bd" title=" " alt="" coords="583,216,649,242"/>
+<area shape="rect" id="node12" href="$classVec3.html#a873feca4434930113298010748e49795" title=" " alt="" coords="583,266,649,293"/>
+<area shape="rect" id="node13" href="$classVec3.html#a13ffa091253675e04970fe552f0d69ec" title=" " alt="" coords="585,317,647,344"/>
+<area shape="rect" id="node14" href="$classVec3.html#aae7a1ffaa1108a30c281da216d1cd312" title=" " alt="" coords="572,368,660,394"/>
+<area shape="rect" id="node16" href="$classVec3.html#a54be9143adb871a478ea3de19ca23f3b" title=" " alt="" coords="403,342,498,369"/>
+</map>

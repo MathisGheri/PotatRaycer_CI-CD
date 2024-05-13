@@ -1,0 +1,7 @@
+<map id="Ray::direction" name="Ray::direction">
+<area shape="rect" id="node1" title=" " alt="" coords="179,81,281,108"/>
+<area shape="rect" id="node2" href="$classSphere.html#ada19fc64131c5549dc6edffe4e4123ed" title=" " alt="" coords="25,5,111,32"/>
+<area shape="rect" id="node3" href="$classPlane.html#afa5a29728b158729621e08a673dd9d26" title=" " alt="" coords="29,56,107,83"/>
+<area shape="rect" id="node4" href="$classDielectric.html#ac631cfb2dcc77569bfb1f16563dd0ff3" title=" " alt="" coords="5,107,131,133"/>
+<area shape="rect" id="node5" href="$classMetal.html#afa27170d3925a4856d86e35888de1cd4" title=" " alt="" coords="17,157,119,184"/>
+</map>

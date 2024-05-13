@@ -1,0 +1,8 @@
+<map id="IHitable" name="IHitable">
+<area shape="rect" id="node1" title=" " alt="" coords="159,5,225,32"/>
+<area shape="rect" id="node2" href="$classCircle.html" title=" " alt="" coords="5,80,61,107"/>
+<area shape="rect" id="node3" href="$classMesh.html" title=" " alt="" coords="86,80,141,107"/>
+<area shape="rect" id="node4" href="$classPlane.html" title=" " alt="" coords="165,80,219,107"/>
+<area shape="rect" id="node5" href="$classSphere.html" title=" " alt="" coords="243,80,306,107"/>
+<area shape="rect" id="node6" href="$classTriangle.html" title=" " alt="" coords="330,80,398,107"/>
+</map>

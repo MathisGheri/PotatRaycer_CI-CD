@@ -1,0 +1,5 @@
+<map id="EmissiveMaterial" name="EmissiveMaterial">
+<area shape="rect" id="node1" title=" " alt="" coords="23,95,145,121"/>
+<area shape="rect" id="node2" href="$classIMaterial.html" title=" " alt="" coords="5,5,77,32"/>
+<area shape="rect" id="node3" href="$classVec3.html" title=" " alt="" coords="101,5,152,32"/>
+</map>

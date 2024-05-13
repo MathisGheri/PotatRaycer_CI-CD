@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['sample_551',['sample',['../classTexture.html#a439d359f947ff309a9fb4f6eb5f6e1c7',1,'Texture']]],
+  ['scalevertex_552',['scaleVertex',['../Triangle_8cpp.html#a65a86bfd3e28824f78b4655de101eefc',1,'Triangle.cpp']]],
+  ['scatter_553',['scatter',['../classEmissiveMaterial.html#a61a549a9c8b47b2a19c71604a0397366',1,'EmissiveMaterial::scatter()'],['../classTintedMaterial.html#ae7e3cef0a6e069448464c2d1b8f439f9',1,'TintedMaterial::scatter()'],['../classDielectric.html#a4709f41e9fa6418de8e6576dec8914c6',1,'Dielectric::scatter()'],['../classIMaterial.html#af77fa4ec535577942a1589d4eadd0959',1,'IMaterial::scatter()'],['../classLambertian.html#abac889cfb58f70314a42a56792e91a66',1,'Lambertian::scatter()'],['../classLightTexture.html#a229b82507c212c0791f8767eff04bab1',1,'LightTexture::scatter()'],['../classMetal.html#a7ce21d46a783e1b4af05ee1d44a06f8e',1,'Metal::scatter()'],['../classTexture.html#a36bbc7f17266cbba5affd340d8af259f',1,'Texture::scatter()']]],
+  ['scene_554',['Scene',['../classScene.html#ad10176d75a9cc0da56626f682d083507',1,'Scene']]],
+  ['scenebuilder_555',['SceneBuilder',['../classSceneBuilder.html#a91be5ca7f12e7493ed45333d55d3aaae',1,'SceneBuilder']]],
+  ['schlick_556',['schlick',['../Vec3_8hpp.html#a3ebe7935145018433e2fb6311820627d',1,'Vec3.hpp']]],
+  ['setcamera_557',['setCamera',['../classScene.html#a86ac4dec0c92de6b1a2fb9f1ba6971e5',1,'Scene']]],
+  ['setconfigheight_558',['setConfigHeight',['../classScene.html#a9beb0e1b0639b01b6dda991600f1b7c6',1,'Scene']]],
+  ['setconfigns_559',['setConfigNs',['../classScene.html#ad55540281b5005318ee162141b29b9ca',1,'Scene']]],
+  ['setconfigwidth_560',['setConfigWidth',['../classScene.html#a3d986728a9c72c4ea939ab8167e09689',1,'Scene']]],
+  ['setfiletowatch_561',['setFileToWatch',['../classFileWatcher.html#aaedcb1d32bd786757a2d5d0d1be7b47d',1,'FileWatcher']]],
+  ['setlight_562',['setLight',['../classScene.html#a9557c7bd1e51350b064b6d0e7cfca456',1,'Scene']]],
+  ['setmaterial_563',['setMaterial',['../classCircle.html#a2a34ff5bf5aa0a4a3b6f1982519ebaac',1,'Circle::setMaterial()'],['../classIHitable.html#a7226d47cda8d1004c3bd028d53e71c39',1,'IHitable::setMaterial()'],['../classMesh.html#a0549587571cdb94b867b2fdfec46b230',1,'Mesh::setMaterial()'],['../classPlane.html#a6120671207c193c4faef3a27ffbd9890',1,'Plane::setMaterial()'],['../classSphere.html#a402cfdf5a64a5633db035d965cf923d3',1,'Sphere::setMaterial()'],['../classTriangle.html#a39fdb4a304ea147b3108f8c5602149a7',1,'Triangle::setMaterial()']]],
+  ['setstate_564',['setState',['../classLogger.html#a7b8ca7aa853607f58ae151e422deef79',1,'Logger']]],
+  ['sphere_565',['Sphere',['../classSphere.html#ad3df4e7d01ce9a68ad47453535d0d6ca',1,'Sphere']]],
+  ['startwatching_566',['startWatching',['../classFileWatcher.html#a99d9e2e026727bd1213cf7c1836393ce',1,'FileWatcher']]]
+];
