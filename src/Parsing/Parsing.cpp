@@ -98,23 +98,33 @@ void Parsing::parsePrimitives(libconfig::Setting& setting, const std::string& ty
 
 void Parsing::parseLights(libconfig::Setting& light)
 {
+    std::string type = light["type"];
     float l_x = light["position"]["x"];
     float l_y = light["position"]["y"];
     float l_z = light["position"]["z"];
+    float intensity = light["intensity"]["x"];
+
+    if (type != "directional") {
+        _light = {
+            {"position", std::make_tuple(l_x, l_y, l_z)},
+            {"intensity", std::make_tuple(intensity, 0, 0)},
+            {"normal", std::make_tuple(0, 0, 0)},
+            {"direc", std::make_tuple(0, 0, 0)},
+            {"size", std::make_tuple(0, 0, 0)}
+        };
+        return;
+    }
 
     float ln_x = light["normal"]["x"];
     float ln_y = light["normal"]["y"];
     float ln_z = light["normal"]["z"];
-
-    float intensity = light["intensity"]["x"];
-    float direc = light["direc"]["x"];
     float size = light["size"]["x"];
 
     _light = {
         {"position", std::make_tuple(l_x, l_y, l_z)},
         {"intensity", std::make_tuple(intensity, 0, 0)},
         {"normal", std::make_tuple(ln_x, ln_y, ln_z)},
-        {"direc", std::make_tuple(direc, 0, 0)},
+        {"direc", std::make_tuple(1, 0, 0)},
         {"size", std::make_tuple(size, 0, 0)}
     };
 }

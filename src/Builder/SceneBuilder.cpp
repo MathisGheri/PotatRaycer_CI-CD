@@ -77,8 +77,13 @@ void SceneBuilder::createLight(std::map<std::string, std::tuple<float, float, fl
     } catch (const std::exception& e) {
         throw Exception("Light parameters not found.", Level::MIDDLE);
     }
-    Light light = Light(pos, intensity, normal, direc > 0.0, size);
-    scene.setLight(light);
+    if (direc == 0) {
+        Light light = Light(pos, intensity, normal, false, size);
+        scene.setLight(light);
+    } else {
+        Light light = Light(pos, intensity, normal, true, size);
+        scene.setLight(light);
+    }
 }
 
 void SceneBuilder::createPrimitives(std::vector<Primitive> primitives)
