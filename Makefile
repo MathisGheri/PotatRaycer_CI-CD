@@ -25,6 +25,7 @@ clean:
 	@cd build && make clean || true
 	@cd tests/build && make clean || true
 	@rm -rf build
+	@rm -rf raytracer
 	@rm -rf tests/build
 	@rm -rf tests/run_tests
 	@rm -rf tests/coverage*
