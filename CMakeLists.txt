@@ -28,16 +28,20 @@ target_include_directories(raytracer PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Core
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Parsing
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Light
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/Light/Ambiant
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/Light/Directional
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Materials
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Materials/Dielectric
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Materials/Lambertian
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Materials/Metal
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/Materials/LightTexture
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Parsing
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Primitives
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Primitives/Sphere
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Primitives/Triangle
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Primitives/Mesh
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Primitives/Plane
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/Primitives/Circle
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Ray
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Scene
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Vec3
@@ -52,10 +56,8 @@ target_include_directories(raytracer PRIVATE
 
 find_package(SFML 2.5 COMPONENTS graphics window system REQUIRED)
 
-# Add criterion for testing
 add_subdirectory(tests)
 
-# Include directories for tests
 target_include_directories(run_tests PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/src
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Builder

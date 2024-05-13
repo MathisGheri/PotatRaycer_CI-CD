@@ -34,15 +34,19 @@ private:
             default: return "UNKNOWN";
         }
     }
+    std::string _filename;
 public:
     Logger(const std::string& filename) {
-        logFile.open(filename, std::ios::app);
-        if (!logFile.is_open()) {
-            std::cerr << "Error opening log file." << std::endl;
-        }
+        logFile.open(filename, std::ios::trunc);
+        _filename = filename;
     }
     ~Logger() {
         logFile.close();
+    }
+    void setState(bool state) {
+        if (!state) {
+            logFile.close();
+        }
     }
     void log(LogLevel level, const std::string& message) {
         std::time_t now = std::time(0);
@@ -55,10 +59,10 @@ public:
 
         //std::cout << logEntry.str();
 
-        // if (logFile.is_open()) {
-        //     logFile << logEntry.str();
-        //     logFile.flush();
-        // }
+        if (logFile.is_open()) {
+            logFile << logEntry.str();
+            logFile.flush();
+        }
     }
 };
 

@@ -67,6 +67,7 @@ class Parsing {
         void parseCamera(libconfig::Setting& setting);
         void parsePrimitives(libconfig::Setting& setting, const std::string& type);
         void parseObj(libconfig::Setting& setting);
+        void parseLogger(libconfig::Setting& setting);
     private:
         const std::string &_filePath;
         libconfig::Config _cfg;

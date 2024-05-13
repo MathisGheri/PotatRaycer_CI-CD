@@ -18,3 +18,8 @@ re: clean
 
 clean:
 	@cd build && make clean
+	rm -rf build
+	rm -rf vgcore.*
+	rm -rf logfile.txt
+
+fclean: clean

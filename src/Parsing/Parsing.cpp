@@ -10,6 +10,7 @@
 #include "FileWatcherSingleton.hpp"
 #include <algorithm> 
 #include "Metal.hpp"
+#include "Exception.hpp"
 
 Parsing::Parsing(const std::string &file) : _filePath(file)
 {
@@ -19,7 +20,7 @@ Parsing::Parsing(const std::string &file) : _filePath(file)
 	logger->log(INFO, msg.str());
     _cfg.readFile(_filePath.c_str());
     libconfig::Setting &root = _cfg.getRoot();
-        if (root.exists("primitives") && root["primitives"].exists("planes")) {
+    if (root.exists("primitives") && root["primitives"].exists("planes")) {
         parsePrimitives(root["primitives"]["planes"], "plane");
     } else {
         logger->log(WARNING, "No planes found in configuration or planes section is empty.");
@@ -36,6 +37,7 @@ Parsing::Parsing(const std::string &file) : _filePath(file)
     }
     parseLights(root["light"]);
     parseCamera(root["camera"]);
+    parseLogger(root["logger"]);
 }
 
 /**
@@ -98,15 +100,34 @@ void Parsing::parsePrimitives(libconfig::Setting& setting, const std::string& ty
 
 void Parsing::parseLights(libconfig::Setting& light)
 {
+    std::string type = light["type"];
     float l_x = light["position"]["x"];
     float l_y = light["position"]["y"];
     float l_z = light["position"]["z"];
-
     float intensity = light["intensity"]["x"];
+
+    if (type != "directional") {
+        _light = {
+            {"position", std::make_tuple(l_x, l_y, l_z)},
+            {"intensity", std::make_tuple(intensity, 0, 0)},
+            {"normal", std::make_tuple(0, 0, 0)},
+            {"direc", std::make_tuple(0, 0, 0)},
+            {"size", std::make_tuple(0, 0, 0)}
+        };
+        return;
+    }
+
+    float ln_x = light["normal"]["x"];
+    float ln_y = light["normal"]["y"];
+    float ln_z = light["normal"]["z"];
+    float size = light["size"]["x"];
 
     _light = {
         {"position", std::make_tuple(l_x, l_y, l_z)},
-        {"intensity", std::make_tuple(intensity, 0, 0)}
+        {"intensity", std::make_tuple(intensity, 0, 0)},
+        {"normal", std::make_tuple(ln_x, ln_y, ln_z)},
+        {"direc", std::make_tuple(1, 0, 0)},
+        {"size", std::make_tuple(size, 0, 0)}
     };
 }
 
@@ -173,9 +194,26 @@ void Parsing::parseObj(libconfig::Setting& setting)
 
         libconfig::Setting& pos = obj["position"];
         pos.lookupValue("x", objProps.position.x);
-        pos.lookupValue("y", objProps.position.x);
-        pos.lookupValue("z", objProps.position.x);
+        pos.lookupValue("y", objProps.position.y);
+        pos.lookupValue("z", objProps.position.z);
 
         _objects.push_back(objProps);
+    }
+}
+
+void Parsing::parseLogger(libconfig::Setting& logger)
+{
+    std::string state = logger["state"];
+    if (state == "false") {
+        Logger *logger = LoggerSingleton::getInstance();
+        logger->log(WARNING, "Logger is disabled.");
+        logger->setState(false);
+        return;
+    } else if (state == "true") {
+        Logger *logger = LoggerSingleton::getInstance();
+        logger->setState(true);
+        logger->log(INFO, "Logger is enabled.");
+    } else {
+        throw Exception("Invalid state for logger.", Level::LOW);
     }
 }

@@ -10,7 +10,7 @@
 #define SCENE_HPP_
 //pedro pedro pedro
 
-#include "Light.hpp"
+#include "ILight.hpp"
 #include "Camera.hpp"
 #include "IHitable.hpp"
 #include "include.hpp"
@@ -19,7 +19,7 @@ class Scene {
     public:
         Scene();
         ~Scene();
-        void setLight(Light l);
+        void setLight(std::shared_ptr<ILight> l);
         void setCamera(Camera c);
         void addObject(std::shared_ptr<IHitable> obj); //juste mettre dans le tableau
         void setConfigHeight(float height);
@@ -27,13 +27,13 @@ class Scene {
         void setConfigNs(float ns);
         // mettre des consts
         const std::vector<std::shared_ptr<IHitable>>& getObjects(void) const;
-        const Light &getLight(void) const;
+        const std::shared_ptr<ILight> &getLight(void) const;
         const Camera &getCamera(void) const;
         const float &getHeight(void) const;
         const float &getWidth(void) const;
         const float &getNs(void) const;
     private:
-        Light light;
+        std::shared_ptr<ILight> light;
         Camera camera;
         std::vector<std::shared_ptr<IHitable>> objects; // tableau de Hitable
         float height;
