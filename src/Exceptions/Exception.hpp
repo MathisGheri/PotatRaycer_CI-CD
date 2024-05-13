@@ -40,7 +40,7 @@ class Exception {
         * @param msg The message of the exception.
         * @param lvl The level of the exception.
         */
-        Exception(const std::string& msg, Level lvl = Level::NONE) : message(msg) {}
+        Exception(const std::string& msg, Level lvl = Level::NONE) : message(msg), lvl(lvl) {}
 
         /**
         * @brief Get the message of the exception.
