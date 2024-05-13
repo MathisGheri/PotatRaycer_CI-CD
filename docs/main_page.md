@@ -22,7 +22,7 @@ Our source code is available in its entirety on GitHub. You can access it by fol
     2. Decorator
         - Applied to enhance objects by adding colors and materials, and to compute reflections.
     3. Observer
-        - Employed to monitor the state of our construction and facilitate the coordination of multithreading activities.
+        - Employed to monitor the state of our construction and restart it if a modification has been detected in the configuration file.
 
 - **Feature Overview**
     - Our raytracer offers a wide range of features, from advanced geometric modeling to realistic lighting. You can explore these features by examining the corresponding source code in our GitHub repository.
