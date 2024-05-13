@@ -70,7 +70,7 @@
 // Test(Light, return_direc_false)
 // {
 //     Vec3 position(1.0f, 2.0f, 3.0f);
-//     Light light(position, 1.0f, Vec3(0.0f, 0.0f, 0.0f), false);
+//     Light light(position, 1.0f, Vec3(0.0f, 0.0f, 0.0f), false); //il faut add a float
 //     bool result = light.isDirec();
 //     cr_assert_eq(result, false);
 // }

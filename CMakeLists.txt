@@ -56,10 +56,8 @@ target_include_directories(raytracer PRIVATE
 
 find_package(SFML 2.5 COMPONENTS graphics window system REQUIRED)
 
-# Add criterion for testing
 add_subdirectory(tests)
 
-# Include directories for tests
 target_include_directories(run_tests PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/src
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Builder
