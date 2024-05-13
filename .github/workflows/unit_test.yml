@@ -22,4 +22,4 @@ jobs:
 
       - name: DARIUS_SHINY
         run: |
-          make test || true
+          make test
