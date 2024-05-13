@@ -18,6 +18,8 @@ jobs:
         run: |
           sudo apt update
           sudo apt install -y gcovr
+          sudo apt-get install -y libconfig-dev
+          sudo apt-get install stb-dev
 
       - name: DARIUS_SHINY
         run: |
