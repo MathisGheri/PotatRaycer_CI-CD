@@ -21,6 +21,9 @@ class Camera {
 		Ray get_Ray(float s, float t);
 		Vec3 lower_left_corner, horizontal, vertical, origin;
 		float lens_radius;
+		Vec3 getU() const { return u; }
+		Vec3 getV() const { return v; }
+		Vec3 getW() const { return w; }
 	private:
 		Vec3 u;
 		Vec3 v;
