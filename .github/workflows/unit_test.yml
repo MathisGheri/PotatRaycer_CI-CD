@@ -20,6 +20,15 @@ jobs:
           sudo apt install -y gcovr
           sudo apt-get install -y libconfig-dev
 
+      - name: Debug include directories
+        run: |
+          ls /usr/include/libconfig
+
+      - name: Check libconfig installation
+        run: |
+          dpkg -L libconfig-dev
+          
       - name: DARIUS_SHINY
         run: |
           make test
+
