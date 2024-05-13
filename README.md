@@ -48,9 +48,6 @@ Where `<SCENE_FILE>` is the path to a scene configuration file. Example scene fi
 ## How to ?
 
 [How to add a new Primitive ?](docs/new_primitive.md)
-
 [How to configure a scene file ?](docs/scene_file.md)
-
 [How to use the logger ?](docs/logger.md)
-
 [How to use a .obj file to render an 3D Image](docs/obj_explain.md)
