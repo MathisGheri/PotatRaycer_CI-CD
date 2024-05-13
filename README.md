@@ -53,4 +53,4 @@ Where `<SCENE_FILE>` is the path to a scene configuration file. Example scene fi
 
 [How to use the logger ?](docs/logger.md)
 
-[How to use a .obj file to render an 3D Image](docs/obj_explain.md)
+[How to use a .obj file ?](docs/obj_explain.md)
