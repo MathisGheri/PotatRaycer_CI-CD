@@ -1,15 +1,16 @@
-##
-## EPITECH PROJECT, 2024
-## PotatRaycer_CI-CD
-## File description:
-## Makefile
-##
+# EPITECH PROJECT, 2024
+# PotatRaycer_CI-CD
+# File description:
+# Makefile
 
-all: 
+all:
 	@mkdir -p build && cd build && cmake .. && make && cd ..
 
 run: all
 	./raytracer config.cfg
+
+test:
+	@mkdir -p build && cd build && cmake .. && make run_tests && cd ..
 
 re: clean
 	rm -rf build
