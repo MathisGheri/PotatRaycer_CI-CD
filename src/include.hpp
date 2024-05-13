@@ -24,25 +24,4 @@
 #include <ctime>
 #include <exception>
 
-/*
-#pragma once
-#include "IBuilder.hpp"
-#include "SceneBuilder.hpp"
-#include "Physics.hpp"
-#include "Camera.hpp"
-#include "Core.hpp"
-#include "Light.hpp"
-#include "Dielectric.hpp"
-#include "Lambertian.hpp"
-#include "Metal.hpp"
-#include "IMaterial.hpp"
-#include "Parsing.hpp"
-#include "Plane.hpp"
-#include "Sphere.hpp"
-#include "IHitable.hpp"
-#include "Ray.hpp"
-#include "Scene.hpp"
-#include "Vec3.hpp"
-#include "struct.h"
-*/
 #endif /* !INCLUDE_HPP_ */

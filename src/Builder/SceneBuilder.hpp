@@ -21,7 +21,7 @@ class SceneBuilder : public IBuilder {
         void createLight(std::map<std::string,std::tuple<float,float,float>>) override final;
         void createPrimitives(std::vector<Primitive>) override final;
         const Scene &getScene() const override final;
-        void loadMeshFromOBJ(const std::string& filename, const std::shared_ptr<IMaterial>& material);
+        void createMeshFromObj(std::vector<ObjectProperties> obj);
     private:
         Scene scene;
 };

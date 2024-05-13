@@ -10,6 +10,7 @@
 #include "Light.hpp"
 #include "SingletonLogger.hpp"
 #include "Exception.hpp"
+#include "ObserverException.hpp"
 #include <thread>
 #include "LightTexture.hpp"
 #include "Circle.hpp"
@@ -18,23 +19,28 @@ Compute::Compute(Scene scene)
 {
     Logger* logger = LoggerSingleton::getInstance();
     logger->log(INFO, "Compute created.");
-    _world = scene.getObjects();
-    _light = scene.getLight();
-    _cam = scene.getCamera();
-    _width = scene.getWidth();
-    _height = scene.getHeight();
-    _ns = scene.getNs();
-    if (_light.isDirec() && _light.getSize() > 0.0) {
-        std::shared_ptr<IMaterial> material = std::make_shared<LightTexture>(_light.getIntensity());
-        std::shared_ptr<IHitable> object = std::make_shared<Circle>(_light.getPosition(), _light.getNormal(), _light.getSize());
-        object->setMaterial(material);
-        _world.push_back(object);
+    try {
+        _world = scene.getObjects();
+        _light = scene.getLight();
+        _cam = scene.getCamera();
+        _width = scene.getWidth();
+        _height = scene.getHeight();
+        _ns = scene.getNs();
+        if (_light.isDirec() && _light.getSize() > 0.0) {
+            std::shared_ptr<IMaterial> material = std::make_shared<LightTexture>(_light.getIntensity());
+            std::shared_ptr<IHitable> object = std::make_shared<Circle>(_light.getPosition(), _light.getNormal(), _light.getSize());
+            object->setMaterial(material);
+            _world.push_back(object);
+        }
+    } catch (const Exception& e) {
+        throw Exception("An error occurred during scene assembly: " + std::string(e.what()), Level::HIGH);
     }
 }
 
 Compute::~Compute() {}
 
-bool Compute::hit(const Ray& r, float t_min, float t_max, hit_record_t& rec) const {
+bool Compute::hit(const Ray& r, float t_min, float t_max, hit_record_t& rec) const
+{
     hit_record_t temp_rec;
     bool hit_anything = false;
     double closest_so_far = t_max;
@@ -106,9 +112,9 @@ void Compute::loop(Scene scene)
                 t.join();
         }
         watcher->startWatching();
-        if (_tomato == true) {
-            _tomato = false;
-            throw Exception("A modification has be detected generation will restart in 5 second", Level::LOW);
+        if (_change == true) {
+            _change = false;
+            throw ObserverException("A modification has be detected generation will restart in 5 second", Level::NONE);
         }
         for (const auto& pair : maMap) {
             outFile << pair.second;
@@ -135,7 +141,7 @@ void Compute::loop(Scene scene)
 
 void Compute::reset()
 {
-    _tomato = true;
+    _change = true;
 }
 
 Vec3 Compute::colorloop(const Ray &r, const std::vector<std::shared_ptr<IHitable>> &_world, Light _light)

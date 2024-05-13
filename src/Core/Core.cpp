@@ -11,6 +11,7 @@
 #include "SingletonLogger.hpp"
 #include "Computing.hpp"
 #include "Exception.hpp"
+#include "ObserverException.hpp"
 
 Core::Core()
 {
@@ -25,28 +26,50 @@ void Core::assembleScene(const std::string &filename)
 {
     Logger* logger = LoggerSingleton::getInstance();
     SceneBuilder sceneBuilder;
-    Parsing parser(filename);
-    logger->log(DEBUG, "Parsing done.");
-    sceneBuilder.createCamera(parser.GetCamera());
-    logger->log(DEBUG, "Camera created.");
-    sceneBuilder.createLight(parser.getLights());
-    logger->log(DEBUG, "Light created.");
-    sceneBuilder.createPrimitives(parser.getPrimitives());
-    logger->log(DEBUG, "Primitives Created.");
-    this->scene = sceneBuilder.getScene();
+
+    try {
+        Parsing parser(filename);
+
+        logger->log(DEBUG, "Parsing done.");
+
+        sceneBuilder.createCamera(parser.GetCamera());
+        logger->log(DEBUG, "Camera created.");
+
+        sceneBuilder.createLight(parser.getLights());
+        logger->log(DEBUG, "Light created.");
+
+        sceneBuilder.createPrimitives(parser.getPrimitives());
+        logger->log(DEBUG, "Primitives Created.");
+
+        sceneBuilder.createMeshFromObj(parser.getObj());
+        logger->log(DEBUG, "Meshes Created.");
+
+        this->scene = sceneBuilder.getScene();
+    }
+    catch(const Exception& e) {
+        std::cerr << e.what() << '\n';
+        logger->log(ERROR, "An error occurred during scene assembly: " + std::string(e.what()));
+        throw Exception("An error occurred during scene assembly: " + std::string(e.what()), Level::HIGH);
+    }
 }
+
 
 void Core::generatePPM()
 {
-    Compute deco = Compute(this->getScene());
+    Compute potatRaycer = Compute(this->getScene());
+    Logger* logger = LoggerSingleton::getInstance();
     try {
-        deco.loop(this->getScene());
-    } catch(const Exception& e) {
-        std::cout << e.what() << std::endl;
+        potatRaycer.loop(this->getScene());
+    } catch(const ObserverException& e) {
+        std::cout << "Config changed, reloading: " << e.what() << std::endl;
         std::this_thread::sleep_for(std::chrono::seconds(5));
         FileWatcher *watcher = FileWatcherSingleton::getInstance();
         this->assembleScene(watcher->getFile());
         this->generatePPM();
+    } catch(const Exception& e) {
+        std::cout << "Error: " << e.what() << std::endl;
+        logger->log(ERROR, "An error occurred during PPM generation: " + std::string(e.what()));
+        throw Exception("An error occurred during PPM generation: " + std::string(e.what()), Level::HIGH);
     }
 }
 
