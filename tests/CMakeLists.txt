@@ -1,5 +1,15 @@
 cmake_minimum_required(VERSION 3.14)
+project(RaytracerTests)  # Give your project a suitable name
+
+# Set the CMake module path to include the directory where FindCriterion.cmake is located
+list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}")
+
+
 file(GLOB TEST_SOURCES *.cpp)
+
+# Find Criterion using the custom find module
+find_package(Criterion REQUIRED)
+
 target_include_directories(raytracer PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/src
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Builder
@@ -30,8 +40,9 @@ target_include_directories(raytracer PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Computing
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Decorator
 )
+
+# Define the executable for running tests
 add_executable(run_tests ${TEST_SOURCES})
 
-target_include_directories(run_tests PRIVATE ${CRITERION_INCLUDE_DIRS})
+# Link the Criterion libraries
 target_link_libraries(run_tests PRIVATE ${CRITERION_LIBRARIES})
-
