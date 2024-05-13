@@ -64,15 +64,20 @@ void SceneBuilder::createCamera(std::map<std::string,std::tuple<float,float,floa
 
 void SceneBuilder::createLight(std::map<std::string, std::tuple<float, float, float>> lightParams)
 {
-    Vec3 pos;
-    float intensity;
+    Vec3 pos, normal;
+    float intensity, direc, size;
     try {
         pos = Vec3(std::get<0>(lightParams.at("position")), std::get<1>(lightParams.at("position")), std::get<2>(lightParams.at("position")));
         intensity = std::get<0>(lightParams.at("intensity"));
+        normal = Vec3(std::get<0>(lightParams.at("normal")),
+                      std::get<1>(lightParams.at("normal")),
+                      std::get<2>(lightParams.at("normal")));
+        direc = std::get<0>(lightParams.at("direc"));
+        size = std::get<0>(lightParams.at("size"));
     } catch (const std::exception& e) {
         throw Exception("Light parameters not found.", Level::MIDDLE);
     }
-    Light light = Light(pos, intensity, Vec3(0.0, 1.0, 0.0), false, 1.0);
+    Light light = Light(pos, intensity, normal, direc > 0.0, size);
     scene.setLight(light);
 }
 

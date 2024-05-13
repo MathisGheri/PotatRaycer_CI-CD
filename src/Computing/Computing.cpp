@@ -12,18 +12,26 @@
 #include "Exception.hpp"
 #include "ObserverException.hpp"
 #include <thread>
+#include "LightTexture.hpp"
+#include "Circle.hpp"
 
 Compute::Compute(Scene scene)
 {
     Logger* logger = LoggerSingleton::getInstance();
     logger->log(INFO, "Compute created.");
     try {
-    _world = scene.getObjects();
-    _light = scene.getLight();
-    _cam = scene.getCamera();
-    _width = scene.getWidth();
-    _height = scene.getHeight();
-    _ns = scene.getNs();
+        _world = scene.getObjects();
+        _light = scene.getLight();
+        _cam = scene.getCamera();
+        _width = scene.getWidth();
+        _height = scene.getHeight();
+        _ns = scene.getNs();
+        if (_light.isDirec() && _light.getSize() > 0.0) {
+            std::shared_ptr<IMaterial> material = std::make_shared<LightTexture>(_light.getIntensity());
+            std::shared_ptr<IHitable> object = std::make_shared<Circle>(_light.getPosition(), _light.getNormal(), _light.getSize());
+            object->setMaterial(material);
+            _world.push_back(object);
+        }
     } catch (const Exception& e) {
         throw Exception("An error occurred during scene assembly: " + std::string(e.what()), Level::HIGH);
     }

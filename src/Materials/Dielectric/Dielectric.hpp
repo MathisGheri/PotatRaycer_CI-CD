@@ -15,6 +15,7 @@ class Dielectric : public IMaterial {
         Dielectric(float ri);
         ~Dielectric();
         bool scatter(const Ray& r_in, const hit_record_t &rec, Vec3& attenuation, Ray& scattered, Light light, const std::vector<std::shared_ptr<IHitable>> &_obj) const override final;
+        std::string getName() const override final;
     private:
         float ref_idx;
 };

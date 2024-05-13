@@ -2,18 +2,18 @@
 ** EPITECH PROJECT, 2024
 ** PotatRaycer_CI-CD
 ** File description:
-** Lambertian
+** LightTexture
 */
 
-#ifndef LAMBERTIAN_HPP_
-#define LAMBERTIAN_HPP_
+#ifndef LIGHTTEXTURE_HPP_
+#define LIGHTTEXTURE_HPP_
 
 #include "IMaterial.hpp"
 
-class Lambertian : public IMaterial {
+class LightTexture : public IMaterial {
     public:
-        Lambertian(const Vec3& a);
-        ~Lambertian();
+        LightTexture(float a);
+        ~LightTexture();
         bool scatter(const Ray& r_in, const hit_record_t &rec, Vec3& attenuation, Ray& scattered, Light light, const std::vector<std::shared_ptr<IHitable>> &_obj) const override final;
         bool hit(const Ray& r, float t_min, float t_max, hit_record_t& rec, const std::vector<std::shared_ptr<IHitable>>& _obj) const;
         std::string getName() const override final;
@@ -21,4 +21,4 @@ class Lambertian : public IMaterial {
         Vec3 albedo;
 };
 
-#endif /* !LAMBERTIAN_HPP_ */
+#endif /* !LIGHTTEXTURE_HPP_ */

@@ -24,6 +24,7 @@ class TintedMaterial : public IMaterial {
             }
             return false;
         }
+        std::string getName() const override final { return "Tinted"; };
     private:
         std::shared_ptr<IMaterial> baseMaterial;
         Vec3 tint;

@@ -83,3 +83,8 @@ bool Texture::scatter(const Ray& r_in, const hit_record_t &rec, Vec3& attenuatio
         return true;
     }
 }
+
+std::string Texture::getName() const
+{
+    return "Texture";
+}

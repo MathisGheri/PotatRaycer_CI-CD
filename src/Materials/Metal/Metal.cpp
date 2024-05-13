@@ -32,3 +32,8 @@ bool Metal::scatter(const Ray& r_in, const hit_record_t &rec, Vec3& attenuation,
     attenuation = albedo;
     return false;
 }
+
+std::string Metal::getName() const
+{
+    return "Metal";
+}
