@@ -21,7 +21,7 @@ Scene::~Scene()
     this->objects.clear();
 }
 
-void Scene::setLight(Light l)
+void Scene::setLight(std::shared_ptr<ILight> l)
 {
     this->light = l;
 }
@@ -54,7 +54,7 @@ const std::vector<std::shared_ptr<IHitable>>& Scene::getObjects() const
     return objects;
 }
 
-const Light &Scene::getLight(void) const
+const std::shared_ptr<ILight> &Scene::getLight(void) const
 {
     return this->light;
 }

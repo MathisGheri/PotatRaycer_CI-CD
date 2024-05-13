@@ -13,23 +13,24 @@
 #include "IMaterial.hpp"
 #include "SFML/Graphics.hpp"
 #include "FileWatcherSingleton.hpp"
+#include "ILight.hpp"
 
 class Compute : public IObserver{
     public:
         Compute(Scene scene);
         ~Compute();
         void loop(Scene scene);
-        Vec3 colorloop(const Ray &r, const std::vector<std::shared_ptr<IHitable>> &_objects, Light _light);
+        Vec3 colorloop(const Ray &r, const std::vector<std::shared_ptr<IHitable>> &_objects, std::shared_ptr<ILight> _light);
         bool hit(const Ray& r, float t_min, float t_max, hit_record_t& rec) const ;
         void colorThread(int x, int end_x, int y, int i, std::map<int, std::string>& maMap, sf::Image &image);
         void reset() override final;
     private:
         std::vector<std::shared_ptr<IHitable>> _world;
-        Light _light;
+        std::shared_ptr<ILight> _light;
         Camera _cam;
         int _width;
         int _height;
-        bool _tomato = false;
+        bool _change = false;
         int _ns;
 };
 

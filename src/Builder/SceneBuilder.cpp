@@ -7,7 +7,7 @@
 
 #include "SceneBuilder.hpp"
 #include "Vec3.hpp"
-#include "Light.hpp"
+#include "ILight.hpp"
 #include "Camera.hpp"
 #include "IHitable.hpp"
 #include "Sphere.hpp"
@@ -23,6 +23,8 @@
 #include "TintDecorator.hpp"
 #include "LightDecorator.hpp"
 #include "Texture.hpp"
+#include "AmbiantLight.hpp"
+#include "DirectionalLight.hpp"
 
 SceneBuilder::SceneBuilder()
 {
@@ -55,8 +57,7 @@ void SceneBuilder::createCamera(std::map<std::string,std::tuple<float,float,floa
         scene.setConfigWidth(std::get<0>(camParams["width"]));
         scene.setConfigNs(std::get<0>(camParams["ns"]));
     } catch (const std::exception &e) {
-        throw("Camera parameters not found.", Level::MIDDLE);
-        exit(84);
+        throw Exception("Camera parameters not found.", Level::MIDDLE);
     }
 
     Camera camera = Camera(lookfrom, lookat, vup, vfov, aspect, aperture, focus_dist);
@@ -65,118 +66,134 @@ void SceneBuilder::createCamera(std::map<std::string,std::tuple<float,float,floa
 
 void SceneBuilder::createLight(std::map<std::string, std::tuple<float, float, float>> lightParams)
 {
-    Vec3 pos;
-    float intensity;
+    Vec3 pos, normal;
+    float intensity, direc, size;
     try {
-        pos = Vec3(std::get<0>(lightParams.at("position")),
-                    std::get<1>(lightParams.at("position")),
-                    std::get<2>(lightParams.at("position")));
+        pos = Vec3(std::get<0>(lightParams.at("position")), std::get<1>(lightParams.at("position")), std::get<2>(lightParams.at("position")));
         intensity = std::get<0>(lightParams.at("intensity"));
+        normal = Vec3(std::get<0>(lightParams.at("normal")),
+                      std::get<1>(lightParams.at("normal")),
+                      std::get<2>(lightParams.at("normal")));
+        direc = std::get<0>(lightParams.at("direc"));
+        size = std::get<0>(lightParams.at("size"));
     } catch (const std::exception& e) {
-        throw("Light parameters not found.", Level::MIDDLE);
-        exit(84);
+        throw Exception("Light parameters not found.", Level::MIDDLE);
     }
-    Light light = Light(pos, intensity, Vec3(0.0, 1.0, 0.0), false, 1.0); // light update vecteur normale + bool si directionnel ou non + float pour le rayon du cercle qui sert de light dans la scene
-    scene.setLight(light);
+    if (direc == 0) {
+        std::shared_ptr<ILight> light = std::make_shared<AmbiantLight>(pos, intensity);
+        scene.setLight(light);
+    } else {
+        std::shared_ptr<ILight> light = std::make_shared<DirectionalLight>(pos, intensity, normal, size);
+        scene.setLight(light);
+    }
 }
 
 void SceneBuilder::createPrimitives(std::vector<Primitive> primitives)
 {
-    for (const auto& prim : primitives) {
-        Vec3 materialVec(prim.material.vec.x, prim.material.vec.y, prim.material.vec.z);
-        std::shared_ptr<IMaterial> material;
+    try {
+        for (const auto& prim : primitives) {
+            Vec3 materialVec(prim.material.vec.x, prim.material.vec.y, prim.material.vec.z);
+            std::shared_ptr<IMaterial> material;
+        
+            if (prim.material.type == "metal") {
+                material = std::make_shared<Metal>(materialVec, prim.material.fuzz);
+            } else if (prim.material.type == "lambertian") {
+                material = std::make_shared<Lambertian>(materialVec);
+            } else if (prim.material.type == "dielectric") {
+                material = std::make_shared<Dielectric>(prim.material.ref_idx);
+            }
+            /* Add effect */
+            if (!prim.effect.type.empty() && prim.effect.type == "tint") {
+                material = std::make_shared<TintedMaterial>(material, Vec3(prim.effect.color.x, prim.effect.color.y, prim.effect.color.z));
+            }
 
-        if (prim.material.type == "metal") {
-            material = std::make_shared<Metal>(materialVec, prim.material.fuzz);
-        } else if (prim.material.type == "lambertian") {
-            material = std::make_shared<Lambertian>(materialVec);
-        } else if (prim.material.type == "dielectric") {
-            material = std::make_shared<Dielectric>(prim.material.ref_idx);
+            if (prim.type == "sphere") {
+                Vec3 center(prim.points[0].x, prim.points[0].y, prim.points[0].z);
+                float radius = prim.points[1].x;
+                std::shared_ptr<IHitable> object = std::make_shared<Sphere>(center, radius);
+                object->setMaterial(material);
+                scene.addObject(std::move(object));
+            } else if (prim.type == "plane") {
+                Vec3 point1(prim.points[0].x, prim.points[0].y, prim.points[0].z);
+                Vec3 point2(prim.points[1].x, prim.points[1].y, prim.points[1].z);
+                std::shared_ptr<IHitable> object = std::make_shared<Plane>(point1, point2);
+                object->setMaterial(material);
+                scene.addObject(object);
+            }
         }
-        if (prim.effect.type == "tint") {
-            material = std::make_shared<TintedMaterial>(material, Vec3(prim.effect.color.x, prim.effect.color.y, prim.effect.color.z));
-        }
-
-        if (prim.type == "sphere") {
-            Vec3 center(prim.points[0].x, prim.points[0].y, prim.points[0].z);
-            float radius = prim.points[1].x;
-            std::shared_ptr<IHitable> object = std::make_shared<Sphere>(center, radius);
-            object->setMaterial(material);
-            scene.addObject(std::move(object));
-        } else if (prim.type == "plane") {
-            Vec3 point1(prim.points[0].x, prim.points[0].y, prim.points[0].z);
-            Vec3 point2(prim.points[1].x, prim.points[1].y, prim.points[1].z);
-            std::shared_ptr<IHitable> object = std::make_shared<Plane>(point1, point2);
-            object->setMaterial(material);
-            scene.addObject(object);
-        }
+    } catch (const std::exception& e) {
+        throw Exception("Error creating primitives: " + std::string(e.what()), Level::MIDDLE);
     }
 }
 
 void SceneBuilder::createMeshFromObj(std::vector<ObjectProperties> objects)
 {
-    for (const auto& obj : objects) {
-        std::shared_ptr<IMaterial> material = std::make_shared<Texture>(obj.pathTexture);
-        std::ifstream file(obj.pathFile);
-        if (!file.is_open()) {
-            std::cerr << "Failed to open file: " << obj.pathFile << std::endl;
-            return;
-        }
+    try {
+        for (const auto& obj : objects) {
+            std::shared_ptr<IMaterial> material = std::make_shared<Texture>(obj.pathTexture);
+            std::ifstream file(obj.pathFile);
+            if (!file.is_open()) {
+                throw Exception("Failed to open file: " + obj.pathFile, Level::LOW);
+            }
 
-        std::vector<Vec3> vertices;
-        std::vector<std::shared_ptr<IHitable>> triangles;
-        std::string line;
-        std::vector<Vec2> texCoords;
+            std::vector<Vec3> vertices;
+            std::vector<std::shared_ptr<IHitable>> triangles;
+            std::string line;
+            std::vector<Vec2> texCoords;
 
-        while (std::getline(file, line)) {
-            std::stringstream ss(line);
-            std::string type;
-            ss >> type;
-            if (type == "v") {
-                float x, y, z;
-                ss >> x >> y >> z;
-                vertices.emplace_back(x, y, z);
-            } else if (type == "vt") {
-                float u, v;
-                ss >> u >> v;
-                texCoords.emplace_back(u, v);
-            } else if (type == "f") {
-                std::string vertexInfo;
-                std::vector<int> vertexIndices;
-                std::vector<int> textureIndices;
+            while (std::getline(file, line)) {
+                std::stringstream ss(line);
+                std::string type;
+                ss >> type;
+                if (type == "v") {
+                    float x, y, z;
+                    ss >> x >> y >> z;
+                    vertices.emplace_back(x, y, z);
+                } else if (type == "vt") {
+                    float u, v;
+                    ss >> u >> v;
+                    texCoords.emplace_back(u, v);
+                } else if (type == "f") {
+                    std::string vertexInfo;
+                    std::vector<int> vertexIndices;
+                    std::vector<int> textureIndices;
 
-                while (ss >> vertexInfo) {
-                    size_t pos1 = vertexInfo.find('/');
-                    size_t pos2 = vertexInfo.find('/', pos1 + 1);
+                    while (ss >> vertexInfo) {
+                        size_t pos1 = vertexInfo.find('/');
+                        size_t pos2 = vertexInfo.find('/', pos1 + 1);
 
-                    int vertexIndex = std::stoi(vertexInfo.substr(0, pos1)) - 1;
-                    vertexIndices.push_back(vertexIndex);
+                        int vertexIndex = std::stoi(vertexInfo.substr(0, pos1)) - 1;
+                        vertexIndices.push_back(vertexIndex);
 
-                    if (pos1 != std::string::npos && pos1 + 1 != pos2) {
-                        int textureIndex = std::stoi(vertexInfo.substr(pos1 + 1, pos2 - pos1 - 1)) - 1;
-                        textureIndices.push_back(textureIndex);
+                        if (pos1 != std::string::npos && pos1 + 1 != pos2) {
+                            int textureIndex = std::stoi(vertexInfo.substr(pos1 + 1, pos2 - pos1 - 1)) - 1;
+                            textureIndices.push_back(textureIndex);
+                        }
                     }
-                }
-                if (vertexIndices.size() >= 3) {
-                    for (int i = 0; i < vertexIndices.size() - 2; i++) {
-                        triangles.push_back(std::make_unique<Triangle>(
-                            vertices[vertexIndices[0]], vertices[vertexIndices[i + 1]], vertices[vertexIndices[i + 2]],
-                            texCoords[textureIndices[0]], texCoords[textureIndices[i + 1]], texCoords[textureIndices[i + 2]]));
-                        triangles.back()->setMaterial(material);
+                    if (vertexIndices.size() >= 3) {
+                        for (int i = 0; i < vertexIndices.size() - 2; i++) {
+                            triangles.push_back(std::make_shared<Triangle>(
+                                vertices[vertexIndices[0]], vertices[vertexIndices[i + 1]], vertices[vertexIndices[i + 2]],
+                                texCoords[textureIndices[0]], texCoords[textureIndices[i + 1]], texCoords[textureIndices[i + 2]]
+                            ));
+                            triangles.back()->setMaterial(material);
+                        }
                     }
                 }
             }
+
+            Vec3 position(obj.position.x, obj.position.y, obj.position.z);
+            Vec3 rotation(obj.rotation.x, obj.rotation.y, obj.rotation.z);
+            Vec3 scale(obj.scale.x, obj.scale.y, obj.scale.z);
+
+            file.close();
+            Mesh mesh(triangles, position, rotation, scale);
+            mesh.transformVertices();
+            std::shared_ptr<IHitable> meshPtr = std::make_shared<Mesh>(mesh);
+            scene.addObject(std::move(meshPtr));
         }
-
-        Vec3 position(obj.position.x, obj.position.y, obj.position.z);
-        Vec3 rotation(obj.rotation.x, obj.rotation.y, obj.rotation.z);
-        Vec3 scale(obj.scale.x, obj.scale.y, obj.scale.z);
-
-        file.close();
-        Mesh mesh(triangles, position, rotation, scale);
-        mesh.transformVertices();
-        std::shared_ptr<IHitable> meshPtr = std::make_shared<Mesh>(mesh);
-        scene.addObject(std::move(meshPtr));
+    } catch (const std::exception& e) {
+        throw Exception("Error creating mesh objects: " + std::string(e.what()), Level::MIDDLE);
     }
 }
 
