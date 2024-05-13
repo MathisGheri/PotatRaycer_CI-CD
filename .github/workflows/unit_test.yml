@@ -20,6 +20,10 @@ jobs:
           sudo apt install -y gcovr
           sudo apt-get install -y libconfig-dev
 
+      - name: install_cmake
+        run: |
+          sudo apt-get install -y cmake
+
       - name: Install libconfig from source
         run: |
           sudo apt update
