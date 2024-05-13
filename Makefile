@@ -3,23 +3,31 @@
 # File description:
 # Makefile
 
-all:
-	@mkdir -p build && cd build && cmake .. && make && cd ..
+.PHONY: all run test re clean fclean
+
+all: build/raytracer
+
+build/raytracer:
+	@mkdir -p build && cd build && cmake .. && make
 
 run: all
-	./raytracer config.cfg
+	@./build/raytracer config.cfg
 
 test:
-	@mkdir -p build && cd build && cmake .. && make run_tests && cd ..
+	@echo "Running tests..."
+	@cd tests && mkdir -p build && cd build && cmake .. && make
+	mv tests/build/run_tests tests
+	@echo "Tests completed."
 
-re: clean
-	rm -rf build
-	@mkdir -p build && cd build && cmake .. && make && cd ..
+re: fclean all
 
 clean:
-	@cd build && make clean
-	rm -rf build
-	rm -rf vgcore.*
-	rm -rf logfile.txt
+	@cd tests/build && make clean || true
+	@rm -rf build
+	@rm -rf tests/build
+	@ rm -rf tests/run_tests
+	@rm -rf tests/coverage*
+	@rm -f vgcore.*
+	@rm -f logfile.txt
 
 fclean: clean
