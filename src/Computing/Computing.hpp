@@ -29,7 +29,7 @@ class Compute : public IObserver{
         Camera _cam;
         int _width;
         int _height;
-        bool _tomato = false;
+        bool _change = false;
         int _ns;
 };
 
