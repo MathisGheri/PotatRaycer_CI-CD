@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['mat_5fptr_387',['mat_ptr',['../classPlane.html#a5b8899b395388da54d6dcb45c0dcd351',1,'Plane::mat_ptr()'],['../classSphere.html#af97ff69b75b7e54b74e1a0acc4c09d3b',1,'Sphere::mat_ptr()'],['../structhit__record__s.html#a3d7f2ac0d0db3a78530b69c12ee280b1',1,'hit_record_s::mat_ptr()']]],
-  ['material_388',['material',['../structPrimitive.html#a48f8a9cd62efbe65c101877fd886b74c',1,'Primitive']]],
-  ['message_389',['message',['../classException.html#a80bf622a8fc3c48fa6ab1a3fc024ff91',1,'Exception']]]
+  ['mat_5fptr_399',['mat_ptr',['../classPlane.html#a5b8899b395388da54d6dcb45c0dcd351',1,'Plane::mat_ptr()'],['../classSphere.html#af97ff69b75b7e54b74e1a0acc4c09d3b',1,'Sphere::mat_ptr()'],['../structhit__record__s.html#a3d7f2ac0d0db3a78530b69c12ee280b1',1,'hit_record_s::mat_ptr()']]],
+  ['material_400',['material',['../structPrimitive.html#a48f8a9cd62efbe65c101877fd886b74c',1,'Primitive']]],
+  ['message_401',['message',['../classException.html#a80bf622a8fc3c48fa6ab1a3fc024ff91',1,'Exception']]]
 ];

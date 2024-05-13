@@ -7,7 +7,7 @@ In `src/Primitives/` add a new folder which will contain your cpp/hpp files.
 The class you will create, will need to inheirit from the **IHitable** class.
 You will have to add the following include:
 ```bash
-#include "include.hpp"
+#include "IHitable.hpp"
 ```
 Your class implementation should look like this:
 ```bash
