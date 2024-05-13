@@ -20,14 +20,21 @@ jobs:
           sudo apt install -y gcovr
           sudo apt-get install -y libconfig-dev
 
-      - name: Debug include directories
+      - name: Install libconfig from source
         run: |
-          ls /usr/include/libconfig
+          sudo apt update
+          sudo apt install -y build-essential
+          wget https://hyperrealm.github.io/libconfig/dist/libconfig-1.7.2.tar.gz
+          tar -xvzf libconfig-1.7.2.tar.gz
+          cd libconfig-1.7.2
+          ./configure
+          make
+          sudo make install
 
       - name: Check libconfig installation
         run: |
           dpkg -L libconfig-dev
-          
+
       - name: DARIUS_SHINY
         run: |
           make test
