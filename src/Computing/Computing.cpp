@@ -7,7 +7,7 @@
 
 #include "Computing.hpp"
 #include "Camera.hpp"
-#include "Light.hpp"
+#include "ILight.hpp"
 #include "SingletonLogger.hpp"
 #include "Exception.hpp"
 #include "ObserverException.hpp"
@@ -26,9 +26,10 @@ Compute::Compute(Scene scene)
         _width = scene.getWidth();
         _height = scene.getHeight();
         _ns = scene.getNs();
-        if (_light.isDirec() && _light.getSize() > 0.0) {
-            std::shared_ptr<IMaterial> material = std::make_shared<LightTexture>(_light.getIntensity());
-            std::shared_ptr<IHitable> object = std::make_shared<Circle>(_light.getPosition(), _light.getNormal(), _light.getSize());
+        if (_light->getType() == "directional") {
+
+            std::shared_ptr<IMaterial> material = std::make_shared<LightTexture>(_light->getIntensity());
+            std::shared_ptr<IHitable> object = std::make_shared<Circle>(_light->getPosition(), _light->getNormal(), _light->getSize());
             object->setMaterial(material);
             _world.push_back(object);
         }
@@ -144,7 +145,7 @@ void Compute::reset()
     _change = true;
 }
 
-Vec3 Compute::colorloop(const Ray &r, const std::vector<std::shared_ptr<IHitable>> &_world, Light _light)
+Vec3 Compute::colorloop(const Ray &r, const std::vector<std::shared_ptr<IHitable>> &_world, std::shared_ptr<ILight> _light)
 {
     int depth = 0;
     hit_record_t rec;

@@ -28,6 +28,8 @@ target_include_directories(raytracer PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Core
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Parsing
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Light
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/Light/Ambiant
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/Light/Directional
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Materials
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Materials/Dielectric
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Materials/Lambertian

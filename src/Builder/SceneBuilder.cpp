@@ -7,7 +7,7 @@
 
 #include "SceneBuilder.hpp"
 #include "Vec3.hpp"
-#include "Light.hpp"
+#include "ILight.hpp"
 #include "Camera.hpp"
 #include "IHitable.hpp"
 #include "Sphere.hpp"
@@ -23,6 +23,8 @@
 #include "TintDecorator.hpp"
 #include "LightDecorator.hpp"
 #include "Texture.hpp"
+#include "AmbiantLight.hpp"
+#include "DirectionalLight.hpp"
 
 SceneBuilder::SceneBuilder()
 {
@@ -78,10 +80,10 @@ void SceneBuilder::createLight(std::map<std::string, std::tuple<float, float, fl
         throw Exception("Light parameters not found.", Level::MIDDLE);
     }
     if (direc == 0) {
-        Light light = Light(pos, intensity, normal, false, size);
+        std::shared_ptr<ILight> light = std::make_shared<AmbiantLight>(pos, intensity);
         scene.setLight(light);
     } else {
-        Light light = Light(pos, intensity, normal, true, size);
+        std::shared_ptr<ILight> light = std::make_shared<DirectionalLight>(pos, intensity, normal, size);
         scene.setLight(light);
     }
 }

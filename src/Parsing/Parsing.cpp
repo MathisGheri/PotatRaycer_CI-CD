@@ -10,6 +10,7 @@
 #include "FileWatcherSingleton.hpp"
 #include <algorithm> 
 #include "Metal.hpp"
+#include "Exception.hpp"
 
 Parsing::Parsing(const std::string &file) : _filePath(file)
 {
@@ -19,7 +20,7 @@ Parsing::Parsing(const std::string &file) : _filePath(file)
 	logger->log(INFO, msg.str());
     _cfg.readFile(_filePath.c_str());
     libconfig::Setting &root = _cfg.getRoot();
-        if (root.exists("primitives") && root["primitives"].exists("planes")) {
+    if (root.exists("primitives") && root["primitives"].exists("planes")) {
         parsePrimitives(root["primitives"]["planes"], "plane");
     } else {
         logger->log(WARNING, "No planes found in configuration or planes section is empty.");
@@ -36,6 +37,7 @@ Parsing::Parsing(const std::string &file) : _filePath(file)
     }
     parseLights(root["light"]);
     parseCamera(root["camera"]);
+    parseLogger(root["logger"]);
 }
 
 /**
@@ -196,5 +198,22 @@ void Parsing::parseObj(libconfig::Setting& setting)
         pos.lookupValue("z", objProps.position.z);
 
         _objects.push_back(objProps);
+    }
+}
+
+void Parsing::parseLogger(libconfig::Setting& logger)
+{
+    std::string state = logger["state"];
+    if (state == "false") {
+        Logger *logger = LoggerSingleton::getInstance();
+        logger->log(WARNING, "Logger is disabled.");
+        logger->setState(false);
+        return;
+    } else if (state == "true") {
+        Logger *logger = LoggerSingleton::getInstance();
+        logger->setState(true);
+        logger->log(INFO, "Logger is enabled.");
+    } else {
+        throw Exception("Invalid state for logger.", Level::LOW);
     }
 }

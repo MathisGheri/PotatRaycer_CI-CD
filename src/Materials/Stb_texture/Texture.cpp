@@ -56,13 +56,13 @@ bool Texture::hit(const Ray& r, float t_min, float t_max, hit_record_t& rec, con
 //     return (dot(scattered.getDirection(), rec.normal) > 0);
 // }
 
-bool Texture::scatter(const Ray& r_in, const hit_record_t &rec, Vec3& attenuation, Ray& scattered, Light light, const std::vector<std::shared_ptr<IHitable>>& _obj) const
+bool Texture::scatter(const Ray& r_in, const hit_record_t &rec, Vec3& attenuation, Ray& scattered, std::shared_ptr<ILight> light, const std::vector<std::shared_ptr<IHitable>>& _obj) const
 {
     Vec3 lightDir;
-    if (!light.isDirec()) {
-        lightDir = light.calculateLightDirection(rec.p);
+    if (!light->getType().compare("Directional")) {
+        lightDir = light->calculateLightDirection(rec.p);
     } else {
-        lightDir = light.getNormal();
+        lightDir = light->getNormal();
         lightDir.make_unit_vector();
     }
 

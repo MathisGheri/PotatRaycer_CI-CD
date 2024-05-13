@@ -36,7 +36,7 @@ bool LightTexture::hit(const Ray& r, float t_min, float t_max, hit_record_t& rec
     return hit_anything;
 }
 
-bool LightTexture::scatter(const Ray& r_in, const hit_record_t &rec, Vec3& attenuation, Ray& scattered, Light light, const std::vector<std::shared_ptr<IHitable>>& _obj) const
+bool LightTexture::scatter(const Ray& r_in, const hit_record_t &rec, Vec3& attenuation, Ray& scattered, std::shared_ptr<ILight> light, const std::vector<std::shared_ptr<IHitable>>& _obj) const
 {
     scattered = Ray(rec.p, rec.normal);
     attenuation = albedo;
