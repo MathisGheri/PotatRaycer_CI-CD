@@ -5,6 +5,11 @@
 ** FileWatcher
 */
 
+/**
+* @file FileWatcher.cpp
+* @brief Class for watching changes in configuration files.
+*/
+
 #include "FileWatcher.hpp"
 
 FileWatcher::~FileWatcher()

@@ -72,14 +72,17 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Class for handling circles.  
+ <a href="classCircle.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="Circle_8hpp_source.html">Circle.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for Circle:</div>
 <div class="dyncontent">
 <div class="center"><img src="classCircle__inherit__graph.png" border="0" usemap="#aCircle_inherit__map" alt="Inheritance graph"/></div>
 <map name="aCircle_inherit__map" id="aCircle_inherit__map">
-<area shape="rect" title=" " alt="" coords="11,80,67,107"/>
-<area shape="rect" href="classIHitable.html" title=" " alt="" coords="5,5,72,32"/>
+<area shape="rect" title="Class for handling circles." alt="" coords="11,80,67,107"/>
+<area shape="rect" href="classIHitable.html" title="Interface for objects that can be hit by rays." alt="" coords="5,5,72,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
@@ -87,9 +90,9 @@ Collaboration diagram for Circle:</div>
 <div class="dyncontent">
 <div class="center"><img src="classCircle__coll__graph.png" border="0" usemap="#aCircle_coll__map" alt="Collaboration graph"/></div>
 <map name="aCircle_coll__map" id="aCircle_coll__map">
-<area shape="rect" title=" " alt="" coords="52,109,108,136"/>
-<area shape="rect" href="classIHitable.html" title=" " alt="" coords="5,5,72,32"/>
-<area shape="rect" href="classVec3.html" title=" " alt="" coords="96,5,147,32"/>
+<area shape="rect" title="Class for handling circles." alt="" coords="52,109,108,136"/>
+<area shape="rect" href="classIHitable.html" title="Interface for objects that can be hit by rays." alt="" coords="5,5,72,32"/>
+<area shape="rect" href="classVec3.html" title="Class for representing a 3D vector." alt="" coords="96,5,147,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -99,12 +102,19 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a85e0984338488200d3bdebc09cb057b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3f30436e645d73e368e8ee55f8d1650"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCircle.html#ae3f30436e645d73e368e8ee55f8d1650">~Circle</a> ()</td></tr>
 <tr class="separator:ae3f30436e645d73e368e8ee55f8d1650"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca14c9f3e92ffb012ce34d2a3c05c8b0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCircle.html#aca14c9f3e92ffb012ce34d2a3c05c8b0">hit</a> (const <a class="el" href="classRay.html">Ray</a> &amp;r, float t_min, float t_max, <a class="el" href="struct_8h.html#aaf145a045b8acf3bedf3be121d64e390">hit_record_t</a> &amp;rec) const</td></tr>
+<tr class="memitem:aca14c9f3e92ffb012ce34d2a3c05c8b0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCircle.html#aca14c9f3e92ffb012ce34d2a3c05c8b0">hit</a> (const <a class="el" href="classRay.html">Ray</a> &amp;r, float t_min, float t_max, <a class="el" href="structhit__record__t.html">hit_record_t</a> &amp;rec) const</td></tr>
+<tr class="memdesc:aca14c9f3e92ffb012ce34d2a3c05c8b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if a ray hits the object.  <a href="classCircle.html#aca14c9f3e92ffb012ce34d2a3c05c8b0">More...</a><br /></td></tr>
 <tr class="separator:aca14c9f3e92ffb012ce34d2a3c05c8b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a34ff5bf5aa0a4a3b6f1982519ebaac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCircle.html#a2a34ff5bf5aa0a4a3b6f1982519ebaac">setMaterial</a> (std::shared_ptr&lt; <a class="el" href="classIMaterial.html">IMaterial</a> &gt; m)</td></tr>
+<tr class="memdesc:a2a34ff5bf5aa0a4a3b6f1982519ebaac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the material of the object.  <a href="classCircle.html#a2a34ff5bf5aa0a4a3b6f1982519ebaac">More...</a><br /></td></tr>
 <tr class="separator:a2a34ff5bf5aa0a4a3b6f1982519ebaac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9eec1cae08efd26677799888b7b785be"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classIMaterial.html">IMaterial</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCircle.html#a9eec1cae08efd26677799888b7b785be">getMaterial</a> ()</td></tr>
+<tr class="memdesc:a9eec1cae08efd26677799888b7b785be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the material of the object.  <a href="classCircle.html#a9eec1cae08efd26677799888b7b785be">More...</a><br /></td></tr>
 <tr class="separator:a9eec1cae08efd26677799888b7b785be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classIHitable"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classIHitable')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classIHitable.html">IHitable</a></td></tr>
+<tr class="memitem:a8eb7f9af8165ed9e2bd628ced769f77f inherit pub_methods_classIHitable"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIHitable.html#a8eb7f9af8165ed9e2bd628ced769f77f">~IHitable</a> ()=default</td></tr>
+<tr class="memdesc:a8eb7f9af8165ed9e2bd628ced769f77f inherit pub_methods_classIHitable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor for <a class="el" href="classIHitable.html" title="Interface for objects that can be hit by rays.">IHitable</a>.  <a href="classIHitable.html#a8eb7f9af8165ed9e2bd628ced769f77f">More...</a><br /></td></tr>
+<tr class="separator:a8eb7f9af8165ed9e2bd628ced769f77f inherit pub_methods_classIHitable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -118,8 +128,9 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a24f2ba0d64b7fd11e83b41a15a28099f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="Circle_8hpp_source.html#l00010">10</a> of file <a class="el" href="Circle_8hpp_source.html">Circle.hpp</a>.</p>
+<div class="textblock"><p>Class for handling circles. </p>
+
+<p class="definition">Definition at line <a class="el" href="Circle_8hpp_source.html#l00027">27</a> of file <a class="el" href="Circle_8hpp_source.html">Circle.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a85e0984338488200d3bdebc09cb057b6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a85e0984338488200d3bdebc09cb057b6">&#9670;&nbsp;</a></span>Circle()</h2>
@@ -153,20 +164,20 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Circle_8cpp_source.html#l00004">4</a> of file <a class="el" href="Circle_8cpp_source.html">Circle.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;                                           : <a class="code" href="classCircle.html#a09bff231dc57dc3d3576bc2d48a6a618">position</a>(pos), <a class="code" href="classCircle.html#a2cc11d479e410eef5296eefbdc00fc11">normal</a>(norm), <a class="code" href="classCircle.html#a47644132ec8bec0f3a4e8d0e15bcd5d3">radius</a>(r) {</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;    <a class="code" href="classLogger.html">Logger</a> *logger = <a class="code" href="classLoggerSingleton.html#a9722cb20d2fe85dc683a0e35fd1d2f67">LoggerSingleton::getInstance</a>();</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    std::ostringstream msg;</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    msg &lt;&lt; <span class="stringliteral">&quot;LOG: Circle created with these params. pos = &quot;</span> &lt;&lt; pos &lt;&lt; <span class="stringliteral">&quot;, normal = &quot;</span> &lt;&lt; norm &lt;&lt; <span class="stringliteral">&quot;, r = &quot;</span> &lt;&lt; r &lt;&lt; <span class="stringliteral">&quot;.&quot;</span>;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    logger-&gt;<a class="code" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a748005382152808a72b1a9177d9dc806">INFO</a>, msg.str());</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;}</div>
-<div class="ttc" id="aLogger_8hpp_html_aca1fd1d8935433e6ba2e3918214e07f9a748005382152808a72b1a9177d9dc806"><div class="ttname"><a href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a748005382152808a72b1a9177d9dc806">INFO</a></div><div class="ttdeci">@ INFO</div><div class="ttdef"><b>Definition:</b> <a href="Logger_8hpp_source.html#l00017">Logger.hpp:17</a></div></div>
-<div class="ttc" id="aclassCircle_html_a09bff231dc57dc3d3576bc2d48a6a618"><div class="ttname"><a href="classCircle.html#a09bff231dc57dc3d3576bc2d48a6a618">Circle::position</a></div><div class="ttdeci">Vec3 position</div><div class="ttdef"><b>Definition:</b> <a href="Circle_8hpp_source.html#l00019">Circle.hpp:19</a></div></div>
-<div class="ttc" id="aclassCircle_html_a2cc11d479e410eef5296eefbdc00fc11"><div class="ttname"><a href="classCircle.html#a2cc11d479e410eef5296eefbdc00fc11">Circle::normal</a></div><div class="ttdeci">Vec3 normal</div><div class="ttdef"><b>Definition:</b> <a href="Circle_8hpp_source.html#l00020">Circle.hpp:20</a></div></div>
-<div class="ttc" id="aclassCircle_html_a47644132ec8bec0f3a4e8d0e15bcd5d3"><div class="ttname"><a href="classCircle.html#a47644132ec8bec0f3a4e8d0e15bcd5d3">Circle::radius</a></div><div class="ttdeci">float radius</div><div class="ttdef"><b>Definition:</b> <a href="Circle_8hpp_source.html#l00021">Circle.hpp:21</a></div></div>
-<div class="ttc" id="aclassLoggerSingleton_html_a9722cb20d2fe85dc683a0e35fd1d2f67"><div class="ttname"><a href="classLoggerSingleton.html#a9722cb20d2fe85dc683a0e35fd1d2f67">LoggerSingleton::getInstance</a></div><div class="ttdeci">static Logger * getInstance()</div><div class="ttdef"><b>Definition:</b> <a href="SingletonLogger_8cpp_source.html#l00012">SingletonLogger.cpp:12</a></div></div>
-<div class="ttc" id="aclassLogger_html"><div class="ttname"><a href="classLogger.html">Logger</a></div><div class="ttdef"><b>Definition:</b> <a href="Logger_8hpp_source.html#l00023">Logger.hpp:23</a></div></div>
-<div class="ttc" id="aclassLogger_html_a3d3f0801eeaf39b33a906ea8569c19b2"><div class="ttname"><a href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">Logger::log</a></div><div class="ttdeci">void log(LogLevel level, const std::string &amp;message)</div><div class="ttdef"><b>Definition:</b> <a href="Logger_8hpp_source.html#l00051">Logger.hpp:51</a></div></div>
+<p class="definition">Definition at line <a class="el" href="Circle_8cpp_source.html#l00016">16</a> of file <a class="el" href="Circle_8cpp_source.html">Circle.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;                                           : <a class="code" href="classCircle.html#a09bff231dc57dc3d3576bc2d48a6a618">position</a>(pos), <a class="code" href="classCircle.html#a2cc11d479e410eef5296eefbdc00fc11">normal</a>(norm), <a class="code" href="classCircle.html#a47644132ec8bec0f3a4e8d0e15bcd5d3">radius</a>(r) {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="classLogger.html">Logger</a> *logger = <a class="code" href="classLoggerSingleton.html#a9722cb20d2fe85dc683a0e35fd1d2f67">LoggerSingleton::getInstance</a>();</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    std::ostringstream msg;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    msg &lt;&lt; <span class="stringliteral">&quot;LOG: Circle created with these params. pos = &quot;</span> &lt;&lt; pos &lt;&lt; <span class="stringliteral">&quot;, normal = &quot;</span> &lt;&lt; norm &lt;&lt; <span class="stringliteral">&quot;, r = &quot;</span> &lt;&lt; r &lt;&lt; <span class="stringliteral">&quot;.&quot;</span>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    logger-&gt;<a class="code" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a748005382152808a72b1a9177d9dc806">INFO</a>, msg.str());</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;}</div>
+<div class="ttc" id="aLogger_8hpp_html_aca1fd1d8935433e6ba2e3918214e07f9a748005382152808a72b1a9177d9dc806"><div class="ttname"><a href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a748005382152808a72b1a9177d9dc806">INFO</a></div><div class="ttdeci">@ INFO</div><div class="ttdef"><b>Definition:</b> <a href="Logger_8hpp_source.html#l00027">Logger.hpp:27</a></div></div>
+<div class="ttc" id="aclassCircle_html_a09bff231dc57dc3d3576bc2d48a6a618"><div class="ttname"><a href="classCircle.html#a09bff231dc57dc3d3576bc2d48a6a618">Circle::position</a></div><div class="ttdeci">Vec3 position</div><div class="ttdef"><b>Definition:</b> <a href="Circle_8hpp_source.html#l00036">Circle.hpp:36</a></div></div>
+<div class="ttc" id="aclassCircle_html_a2cc11d479e410eef5296eefbdc00fc11"><div class="ttname"><a href="classCircle.html#a2cc11d479e410eef5296eefbdc00fc11">Circle::normal</a></div><div class="ttdeci">Vec3 normal</div><div class="ttdef"><b>Definition:</b> <a href="Circle_8hpp_source.html#l00037">Circle.hpp:37</a></div></div>
+<div class="ttc" id="aclassCircle_html_a47644132ec8bec0f3a4e8d0e15bcd5d3"><div class="ttname"><a href="classCircle.html#a47644132ec8bec0f3a4e8d0e15bcd5d3">Circle::radius</a></div><div class="ttdeci">float radius</div><div class="ttdef"><b>Definition:</b> <a href="Circle_8hpp_source.html#l00038">Circle.hpp:38</a></div></div>
+<div class="ttc" id="aclassLoggerSingleton_html_a9722cb20d2fe85dc683a0e35fd1d2f67"><div class="ttname"><a href="classLoggerSingleton.html#a9722cb20d2fe85dc683a0e35fd1d2f67">LoggerSingleton::getInstance</a></div><div class="ttdeci">static Logger * getInstance()</div><div class="ttdoc">Get the instance of the Logger.</div><div class="ttdef"><b>Definition:</b> <a href="SingletonLogger_8cpp_source.html#l00017">SingletonLogger.cpp:17</a></div></div>
+<div class="ttc" id="aclassLogger_html"><div class="ttname"><a href="classLogger.html">Logger</a></div><div class="ttdoc">Class used to create the Logger.</div><div class="ttdef"><b>Definition:</b> <a href="Logger_8hpp_source.html#l00038">Logger.hpp:38</a></div></div>
+<div class="ttc" id="aclassLogger_html_a3d3f0801eeaf39b33a906ea8569c19b2"><div class="ttname"><a href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">Logger::log</a></div><div class="ttdeci">void log(LogLevel level, const std::string &amp;message)</div><div class="ttdoc">Log a message.</div><div class="ttdef"><b>Definition:</b> <a href="Logger_8hpp_source.html#l00083">Logger.hpp:83</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="classLoggerSingleton.html#a9722cb20d2fe85dc683a0e35fd1d2f67">LoggerSingleton::getInstance()</a>, <a class="el" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a748005382152808a72b1a9177d9dc806">INFO</a>, and <a class="el" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">Logger::log()</a>.</p>
 <div class="dynheader">
@@ -175,9 +186,9 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="classCircle_a85e0984338488200d3bdebc09cb057b6_cgraph.png" border="0" usemap="#aclassCircle_a85e0984338488200d3bdebc09cb057b6_cgraph" alt=""/></div>
 <map name="aclassCircle_a85e0984338488200d3bdebc09cb057b6_cgraph" id="aclassCircle_a85e0984338488200d3bdebc09cb057b6_cgraph">
 <area shape="rect" title=" " alt="" coords="5,31,104,57"/>
-<area shape="rect" href="classLoggerSingleton.html#a9722cb20d2fe85dc683a0e35fd1d2f67" title=" " alt="" coords="152,5,343,32"/>
-<area shape="rect" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2" title=" " alt="" coords="204,56,291,83"/>
-<area shape="rect" href="classLogger.html#acfb794ab842c63396ad1c6a771f43483" title=" " alt="" coords="391,56,535,83"/>
+<area shape="rect" href="classLoggerSingleton.html#a9722cb20d2fe85dc683a0e35fd1d2f67" title="Get the instance of the Logger." alt="" coords="152,5,343,32"/>
+<area shape="rect" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2" title="Log a message." alt="" coords="204,56,291,83"/>
+<area shape="rect" href="classLogger.html#acfb794ab842c63396ad1c6a771f43483" title="Convert the log level to a string." alt="" coords="391,56,535,83"/>
 </map>
 </div>
 
@@ -198,8 +209,8 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Circle_8cpp_source.html#l00011">11</a> of file <a class="el" href="Circle_8cpp_source.html">Circle.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{}</div>
+<p class="definition">Definition at line <a class="el" href="Circle_8cpp_source.html#l00023">23</a> of file <a class="el" href="Circle_8cpp_source.html">Circle.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -227,13 +238,17 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Get the material of the object. </p>
+<p>This method retrieves the material of the object.</p>
+<dl class="section return"><dt>Returns</dt><dd>A shared pointer to the material of the object. </dd></dl>
+
 <p>Implements <a class="el" href="classIHitable.html#a9b24c25a86adb96ea60f9397e78b71f2">IHitable</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="Circle_8cpp_source.html#l00017">17</a> of file <a class="el" href="Circle_8cpp_source.html">Circle.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;                                             {</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classCircle.html#a24f2ba0d64b7fd11e83b41a15a28099f">mat_ptr</a>;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}</div>
-<div class="ttc" id="aclassCircle_html_a24f2ba0d64b7fd11e83b41a15a28099f"><div class="ttname"><a href="classCircle.html#a24f2ba0d64b7fd11e83b41a15a28099f">Circle::mat_ptr</a></div><div class="ttdeci">std::shared_ptr&lt; IMaterial &gt; mat_ptr</div><div class="ttdef"><b>Definition:</b> <a href="Circle_8hpp_source.html#l00022">Circle.hpp:22</a></div></div>
+<p class="definition">Definition at line <a class="el" href="Circle_8cpp_source.html#l00029">29</a> of file <a class="el" href="Circle_8cpp_source.html">Circle.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                                             {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classCircle.html#a24f2ba0d64b7fd11e83b41a15a28099f">mat_ptr</a>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
+<div class="ttc" id="aclassCircle_html_a24f2ba0d64b7fd11e83b41a15a28099f"><div class="ttname"><a href="classCircle.html#a24f2ba0d64b7fd11e83b41a15a28099f">Circle::mat_ptr</a></div><div class="ttdeci">std::shared_ptr&lt; IMaterial &gt; mat_ptr</div><div class="ttdef"><b>Definition:</b> <a href="Circle_8hpp_source.html#l00039">Circle.hpp:39</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="classCircle.html#a24f2ba0d64b7fd11e83b41a15a28099f">mat_ptr</a>.</p>
 
@@ -269,7 +284,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_8h.html#aaf145a045b8acf3bedf3be121d64e390">hit_record_t</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="structhit__record__t.html">hit_record_t</a> &amp;&#160;</td>
           <td class="paramname"><em>rec</em>&#160;</td>
         </tr>
         <tr>
@@ -285,51 +300,60 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Determine if a ray hits the object. </p>
+<p>This method checks if a given ray intersects with the object within a specified range. If an intersection occurs, it populates the hit record with details about the intersection.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">r</td><td>The ray to check for intersection. </td></tr>
+    <tr><td class="paramname">t_min</td><td>The minimum value of the parameter t to consider. </td></tr>
+    <tr><td class="paramname">t_max</td><td>The maximum value of the parameter t to consider. </td></tr>
+    <tr><td class="paramname">rec</td><td>The hit record to populate with intersection details. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the ray intersects the object, false otherwise. </dd></dl>
+
 <p>Implements <a class="el" href="classIHitable.html#af3d1a57560db315edd6e140b68e1cd9e">IHitable</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="Circle_8cpp_source.html#l00021">21</a> of file <a class="el" href="Circle_8cpp_source.html">Circle.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                                                                                {</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="comment">// Vérifier si le rayon intersecte le plan du cercle</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">float</span> denom = <a class="code" href="Vec3_8hpp.html#a45f8afb934d90c5445ad67d3b2156563">dot</a>(<a class="code" href="classCircle.html#a2cc11d479e410eef5296eefbdc00fc11">normal</a>, r.<a class="code" href="classRay.html#af2d29df2d2fc6322876e4dd5446529de">getDirection</a>());</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordflow">if</span> (fabs(denom) &lt; 1e-6) <span class="comment">// Rayon parallèle au plan</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">float</span> t = <a class="code" href="Vec3_8hpp.html#a45f8afb934d90c5445ad67d3b2156563">dot</a>(<a class="code" href="classCircle.html#a09bff231dc57dc3d3576bc2d48a6a618">position</a> - r.<a class="code" href="classRay.html#aa6fede4b50dc18d7bc31abe1284401bf">getOrigin</a>(), <a class="code" href="classCircle.html#a2cc11d479e410eef5296eefbdc00fc11">normal</a>) / denom;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordflow">if</span> (t &lt; t_min || t &gt; t_max)</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="classVec3.html">Vec3</a> hit_point = r.<a class="code" href="classRay.html#a408ff62aaee9cbfccf1896e7bb11354b">point_at_parameter</a>(t);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">float</span> distance_squared = (hit_point - <a class="code" href="classCircle.html#a09bff231dc57dc3d3576bc2d48a6a618">position</a>).length_squared();</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">if</span> (distance_squared &gt; <a class="code" href="classCircle.html#a47644132ec8bec0f3a4e8d0e15bcd5d3">radius</a> * <a class="code" href="classCircle.html#a47644132ec8bec0f3a4e8d0e15bcd5d3">radius</a>)</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    rec.<a class="code" href="structhit__record__s.html#acd8ec618acd0577e2cc1efdd997501ed">t</a> = t;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    rec.<a class="code" href="structhit__record__s.html#aac284cd2782011cb2e6e7197ab607e1f">p</a> = hit_point;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    rec.<a class="code" href="structhit__record__s.html#ae99ba2937e47036237f994111276cb1d">normal</a> = <a class="code" href="classCircle.html#a2cc11d479e410eef5296eefbdc00fc11">normal</a>;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    rec.<a class="code" href="structhit__record__s.html#a06efdaa92a3f602d5205cc4e7469d0d7">mat_ptr</a> = <a class="code" href="classCircle.html#a24f2ba0d64b7fd11e83b41a15a28099f">mat_ptr</a>;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
-<div class="ttc" id="aVec3_8hpp_html_a45f8afb934d90c5445ad67d3b2156563"><div class="ttname"><a href="Vec3_8hpp.html#a45f8afb934d90c5445ad67d3b2156563">dot</a></div><div class="ttdeci">float dot(const Vec3 &amp;v1, const Vec3 &amp;v2)</div><div class="ttdef"><b>Definition:</b> <a href="Vec3_8hpp_source.html#l00106">Vec3.hpp:106</a></div></div>
-<div class="ttc" id="aclassRay_html_a408ff62aaee9cbfccf1896e7bb11354b"><div class="ttname"><a href="classRay.html#a408ff62aaee9cbfccf1896e7bb11354b">Ray::point_at_parameter</a></div><div class="ttdeci">Vec3 point_at_parameter(float t) const</div><div class="ttdef"><b>Definition:</b> <a href="Ray_8cpp_source.html#l00040">Ray.cpp:40</a></div></div>
-<div class="ttc" id="aclassRay_html_aa6fede4b50dc18d7bc31abe1284401bf"><div class="ttname"><a href="classRay.html#aa6fede4b50dc18d7bc31abe1284401bf">Ray::getOrigin</a></div><div class="ttdeci">Vec3 getOrigin() const</div><div class="ttdef"><b>Definition:</b> <a href="Ray_8cpp_source.html#l00030">Ray.cpp:30</a></div></div>
-<div class="ttc" id="aclassRay_html_af2d29df2d2fc6322876e4dd5446529de"><div class="ttname"><a href="classRay.html#af2d29df2d2fc6322876e4dd5446529de">Ray::getDirection</a></div><div class="ttdeci">Vec3 getDirection() const</div><div class="ttdef"><b>Definition:</b> <a href="Ray_8cpp_source.html#l00035">Ray.cpp:35</a></div></div>
-<div class="ttc" id="aclassVec3_html"><div class="ttname"><a href="classVec3.html">Vec3</a></div><div class="ttdef"><b>Definition:</b> <a href="Vec3_8hpp_source.html#l00014">Vec3.hpp:14</a></div></div>
-<div class="ttc" id="astructhit__record__s_html_a06efdaa92a3f602d5205cc4e7469d0d7"><div class="ttname"><a href="structhit__record__s.html#a06efdaa92a3f602d5205cc4e7469d0d7">hit_record_s::mat_ptr</a></div><div class="ttdeci">std::shared_ptr&lt; IMaterial &gt; mat_ptr</div><div class="ttdef"><b>Definition:</b> <a href="struct_8h_source.html#l00018">struct.h:18</a></div></div>
-<div class="ttc" id="astructhit__record__s_html_aac284cd2782011cb2e6e7197ab607e1f"><div class="ttname"><a href="structhit__record__s.html#aac284cd2782011cb2e6e7197ab607e1f">hit_record_s::p</a></div><div class="ttdeci">Vec3 p</div><div class="ttdef"><b>Definition:</b> <a href="struct_8h_source.html#l00016">struct.h:16</a></div></div>
-<div class="ttc" id="astructhit__record__s_html_acd8ec618acd0577e2cc1efdd997501ed"><div class="ttname"><a href="structhit__record__s.html#acd8ec618acd0577e2cc1efdd997501ed">hit_record_s::t</a></div><div class="ttdeci">float t</div><div class="ttdef"><b>Definition:</b> <a href="struct_8h_source.html#l00015">struct.h:15</a></div></div>
-<div class="ttc" id="astructhit__record__s_html_ae99ba2937e47036237f994111276cb1d"><div class="ttname"><a href="structhit__record__s.html#ae99ba2937e47036237f994111276cb1d">hit_record_s::normal</a></div><div class="ttdeci">Vec3 normal</div><div class="ttdef"><b>Definition:</b> <a href="struct_8h_source.html#l00017">struct.h:17</a></div></div>
+<p class="definition">Definition at line <a class="el" href="Circle_8cpp_source.html#l00033">33</a> of file <a class="el" href="Circle_8cpp_source.html">Circle.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                                                                                {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="comment">// Vérifier si le rayon intersecte le plan du cercle</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">float</span> denom = <a class="code" href="Vec3_8hpp.html#a45f8afb934d90c5445ad67d3b2156563">dot</a>(<a class="code" href="classCircle.html#a2cc11d479e410eef5296eefbdc00fc11">normal</a>, r.<a class="code" href="classRay.html#af2d29df2d2fc6322876e4dd5446529de">getDirection</a>());</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordflow">if</span> (fabs(denom) &lt; 1e-6) <span class="comment">// Rayon parallèle au plan</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">float</span> t = <a class="code" href="Vec3_8hpp.html#a45f8afb934d90c5445ad67d3b2156563">dot</a>(<a class="code" href="classCircle.html#a09bff231dc57dc3d3576bc2d48a6a618">position</a> - r.<a class="code" href="classRay.html#aa6fede4b50dc18d7bc31abe1284401bf">getOrigin</a>(), <a class="code" href="classCircle.html#a2cc11d479e410eef5296eefbdc00fc11">normal</a>) / denom;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordflow">if</span> (t &lt; t_min || t &gt; t_max)</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="classVec3.html">Vec3</a> hit_point = r.<a class="code" href="classRay.html#a408ff62aaee9cbfccf1896e7bb11354b">point_at_parameter</a>(t);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">float</span> distance_squared = (hit_point - <a class="code" href="classCircle.html#a09bff231dc57dc3d3576bc2d48a6a618">position</a>).length_squared();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">if</span> (distance_squared &gt; <a class="code" href="classCircle.html#a47644132ec8bec0f3a4e8d0e15bcd5d3">radius</a> * <a class="code" href="classCircle.html#a47644132ec8bec0f3a4e8d0e15bcd5d3">radius</a>)</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    rec.t = t;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    rec.p = hit_point;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    rec.normal = <a class="code" href="classCircle.html#a2cc11d479e410eef5296eefbdc00fc11">normal</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    rec.mat_ptr = <a class="code" href="classCircle.html#a24f2ba0d64b7fd11e83b41a15a28099f">mat_ptr</a>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
+<div class="ttc" id="aVec3_8hpp_html_a45f8afb934d90c5445ad67d3b2156563"><div class="ttname"><a href="Vec3_8hpp.html#a45f8afb934d90c5445ad67d3b2156563">dot</a></div><div class="ttdeci">float dot(const Vec3 &amp;v1, const Vec3 &amp;v2)</div><div class="ttdef"><b>Definition:</b> <a href="Vec3_8hpp_source.html#l00215">Vec3.hpp:215</a></div></div>
+<div class="ttc" id="aclassRay_html_a408ff62aaee9cbfccf1896e7bb11354b"><div class="ttname"><a href="classRay.html#a408ff62aaee9cbfccf1896e7bb11354b">Ray::point_at_parameter</a></div><div class="ttdeci">Vec3 point_at_parameter(float t) const</div><div class="ttdoc">Get the Point At Parameter object.</div><div class="ttdef"><b>Definition:</b> <a href="Ray_8cpp_source.html#l00045">Ray.cpp:45</a></div></div>
+<div class="ttc" id="aclassRay_html_aa6fede4b50dc18d7bc31abe1284401bf"><div class="ttname"><a href="classRay.html#aa6fede4b50dc18d7bc31abe1284401bf">Ray::getOrigin</a></div><div class="ttdeci">Vec3 getOrigin() const</div><div class="ttdoc">Get the Origin object.</div><div class="ttdef"><b>Definition:</b> <a href="Ray_8cpp_source.html#l00035">Ray.cpp:35</a></div></div>
+<div class="ttc" id="aclassRay_html_af2d29df2d2fc6322876e4dd5446529de"><div class="ttname"><a href="classRay.html#af2d29df2d2fc6322876e4dd5446529de">Ray::getDirection</a></div><div class="ttdeci">Vec3 getDirection() const</div><div class="ttdoc">Get the Direction object.</div><div class="ttdef"><b>Definition:</b> <a href="Ray_8cpp_source.html#l00040">Ray.cpp:40</a></div></div>
+<div class="ttc" id="aclassVec3_html"><div class="ttname"><a href="classVec3.html">Vec3</a></div><div class="ttdoc">Class for representing a 3D vector.</div><div class="ttdef"><b>Definition:</b> <a href="Vec3_8hpp_source.html#l00026">Vec3.hpp:26</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="Vec3_8hpp.html#a45f8afb934d90c5445ad67d3b2156563">dot()</a>, <a class="el" href="classRay.html#af2d29df2d2fc6322876e4dd5446529de">Ray::getDirection()</a>, <a class="el" href="classRay.html#aa6fede4b50dc18d7bc31abe1284401bf">Ray::getOrigin()</a>, <a class="el" href="classCircle.html#a24f2ba0d64b7fd11e83b41a15a28099f">mat_ptr</a>, <a class="el" href="structhit__record__s.html#a06efdaa92a3f602d5205cc4e7469d0d7">hit_record_s::mat_ptr</a>, <a class="el" href="classCircle.html#a2cc11d479e410eef5296eefbdc00fc11">normal</a>, <a class="el" href="structhit__record__s.html#ae99ba2937e47036237f994111276cb1d">hit_record_s::normal</a>, <a class="el" href="structhit__record__s.html#aac284cd2782011cb2e6e7197ab607e1f">hit_record_s::p</a>, <a class="el" href="classRay.html#a408ff62aaee9cbfccf1896e7bb11354b">Ray::point_at_parameter()</a>, <a class="el" href="classCircle.html#a09bff231dc57dc3d3576bc2d48a6a618">position</a>, <a class="el" href="classCircle.html#a47644132ec8bec0f3a4e8d0e15bcd5d3">radius</a>, and <a class="el" href="structhit__record__s.html#acd8ec618acd0577e2cc1efdd997501ed">hit_record_s::t</a>.</p>
+<p class="reference">References <a class="el" href="Vec3_8hpp.html#a45f8afb934d90c5445ad67d3b2156563">dot()</a>, <a class="el" href="classRay.html#af2d29df2d2fc6322876e4dd5446529de">Ray::getDirection()</a>, <a class="el" href="classRay.html#aa6fede4b50dc18d7bc31abe1284401bf">Ray::getOrigin()</a>, <a class="el" href="classCircle.html#a24f2ba0d64b7fd11e83b41a15a28099f">mat_ptr</a>, <a class="el" href="classCircle.html#a2cc11d479e410eef5296eefbdc00fc11">normal</a>, <a class="el" href="classRay.html#a408ff62aaee9cbfccf1896e7bb11354b">Ray::point_at_parameter()</a>, <a class="el" href="classCircle.html#a09bff231dc57dc3d3576bc2d48a6a618">position</a>, and <a class="el" href="classCircle.html#a47644132ec8bec0f3a4e8d0e15bcd5d3">radius</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classCircle_aca14c9f3e92ffb012ce34d2a3c05c8b0_cgraph.png" border="0" usemap="#aclassCircle_aca14c9f3e92ffb012ce34d2a3c05c8b0_cgraph" alt=""/></div>
 <map name="aclassCircle_aca14c9f3e92ffb012ce34d2a3c05c8b0_cgraph" id="aclassCircle_aca14c9f3e92ffb012ce34d2a3c05c8b0_cgraph">
-<area shape="rect" title=" " alt="" coords="5,81,84,108"/>
+<area shape="rect" title="Determine if a ray hits the object." alt="" coords="5,81,84,108"/>
 <area shape="rect" href="Vec3_8hpp.html#a45f8afb934d90c5445ad67d3b2156563" title=" " alt="" coords="195,5,235,32"/>
-<area shape="rect" href="classRay.html#af2d29df2d2fc6322876e4dd5446529de" title=" " alt="" coords="153,56,277,83"/>
-<area shape="rect" href="classRay.html#aa6fede4b50dc18d7bc31abe1284401bf" title=" " alt="" coords="161,107,268,133"/>
-<area shape="rect" href="classRay.html#a408ff62aaee9cbfccf1896e7bb11354b" title=" " alt="" coords="132,157,297,184"/>
+<area shape="rect" href="classRay.html#af2d29df2d2fc6322876e4dd5446529de" title="Get the Direction object." alt="" coords="153,56,277,83"/>
+<area shape="rect" href="classRay.html#aa6fede4b50dc18d7bc31abe1284401bf" title="Get the Origin object." alt="" coords="161,107,268,133"/>
+<area shape="rect" href="classRay.html#a408ff62aaee9cbfccf1896e7bb11354b" title="Get the Point At Parameter object." alt="" coords="132,157,297,184"/>
 </map>
 </div>
 
@@ -359,12 +383,21 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Set the material of the object. </p>
+<p>This method sets the material of the object to the provided material.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">m</td><td>A shared pointer to the material to set. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p>Implements <a class="el" href="classIHitable.html#a7226d47cda8d1004c3bd028d53e71c39">IHitable</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="Circle_8cpp_source.html#l00013">13</a> of file <a class="el" href="Circle_8cpp_source.html">Circle.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;                                                   {</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="classCircle.html#a24f2ba0d64b7fd11e83b41a15a28099f">mat_ptr</a> = std::move(m);</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="Circle_8cpp_source.html#l00025">25</a> of file <a class="el" href="Circle_8cpp_source.html">Circle.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                                                   {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="classCircle.html#a24f2ba0d64b7fd11e83b41a15a28099f">mat_ptr</a> = std::move(m);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="classCircle.html#a24f2ba0d64b7fd11e83b41a15a28099f">mat_ptr</a>.</p>
 
@@ -391,7 +424,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Circle_8hpp_source.html#l00022">22</a> of file <a class="el" href="Circle_8hpp_source.html">Circle.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Circle_8hpp_source.html#l00039">39</a> of file <a class="el" href="Circle_8hpp_source.html">Circle.hpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="classCircle.html#a9eec1cae08efd26677799888b7b785be">getMaterial()</a>, <a class="el" href="classCircle.html#aca14c9f3e92ffb012ce34d2a3c05c8b0">hit()</a>, and <a class="el" href="classCircle.html#a2a34ff5bf5aa0a4a3b6f1982519ebaac">setMaterial()</a>.</p>
 
@@ -417,7 +450,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Circle_8hpp_source.html#l00020">20</a> of file <a class="el" href="Circle_8hpp_source.html">Circle.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Circle_8hpp_source.html#l00037">37</a> of file <a class="el" href="Circle_8hpp_source.html">Circle.hpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="classCircle.html#aca14c9f3e92ffb012ce34d2a3c05c8b0">hit()</a>.</p>
 
@@ -443,7 +476,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Circle_8hpp_source.html#l00019">19</a> of file <a class="el" href="Circle_8hpp_source.html">Circle.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Circle_8hpp_source.html#l00036">36</a> of file <a class="el" href="Circle_8hpp_source.html">Circle.hpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="classCircle.html#aca14c9f3e92ffb012ce34d2a3c05c8b0">hit()</a>.</p>
 
@@ -469,7 +502,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Circle_8hpp_source.html#l00021">21</a> of file <a class="el" href="Circle_8hpp_source.html">Circle.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Circle_8hpp_source.html#l00038">38</a> of file <a class="el" href="Circle_8hpp_source.html">Circle.hpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="classCircle.html#aca14c9f3e92ffb012ce34d2a3c05c8b0">hit()</a>.</p>
 

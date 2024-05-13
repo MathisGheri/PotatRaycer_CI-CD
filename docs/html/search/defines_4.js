@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['observerexception_5fhpp_5f_709',['OBSERVEREXCEPTION_HPP_',['../ObserverException_8hpp.html#a1f449eabe00904094efa496226c0a05c',1,'ObserverException.hpp']]]
+  ['logger_5fhpp_5f_714',['LOGGER_HPP_',['../Logger_8hpp.html#a64cb21deecffa0751ded23eb2bbf556f',1,'Logger.hpp']]]
 ];

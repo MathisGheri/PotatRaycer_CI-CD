@@ -1,4 +1,4 @@
 <map id="SceneBuilder::createLight" name="SceneBuilder::createLight">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,176,32"/>
-<area shape="rect" id="node2" href="$classScene.html#a9557c7bd1e51350b064b6d0e7cfca456" title=" " alt="" coords="224,5,337,32"/>
+<area shape="rect" id="node1" title="Create a light in the scene." alt="" coords="5,5,176,32"/>
+<area shape="rect" id="node2" href="$classScene.html#a9557c7bd1e51350b064b6d0e7cfca456" title="Set the light for the scene." alt="" coords="224,5,337,32"/>
 </map>

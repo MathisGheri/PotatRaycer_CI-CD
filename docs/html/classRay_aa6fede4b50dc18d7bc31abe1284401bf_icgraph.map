@@ -1,7 +1,7 @@
 <map id="Ray::getOrigin" name="Ray::getOrigin">
-<area shape="rect" id="node1" title=" " alt="" coords="144,81,251,108"/>
-<area shape="rect" id="node2" href="$classCircle.html#aca14c9f3e92ffb012ce34d2a3c05c8b0" title=" " alt="" coords="11,5,90,32"/>
-<area shape="rect" id="node3" href="$classSphere.html#ada19fc64131c5549dc6edffe4e4123ed" title=" " alt="" coords="8,56,93,83"/>
-<area shape="rect" id="node4" href="$classTriangle.html#ab80d0e93bb39edbc3c667596329fbeb3" title=" " alt="" coords="5,107,96,133"/>
-<area shape="rect" id="node5" href="$classPlane.html#afa5a29728b158729621e08a673dd9d26" title=" " alt="" coords="12,157,89,184"/>
+<area shape="rect" id="node1" title="Get the Origin object." alt="" coords="144,81,251,108"/>
+<area shape="rect" id="node2" href="$classCircle.html#aca14c9f3e92ffb012ce34d2a3c05c8b0" title="Determine if a ray hits the object." alt="" coords="11,5,90,32"/>
+<area shape="rect" id="node3" href="$classSphere.html#ada19fc64131c5549dc6edffe4e4123ed" title="Determine if a ray hits the object." alt="" coords="8,56,93,83"/>
+<area shape="rect" id="node4" href="$classTriangle.html#ab80d0e93bb39edbc3c667596329fbeb3" title="Determine if a ray hits the object." alt="" coords="5,107,96,133"/>
+<area shape="rect" id="node5" href="$classPlane.html#afa5a29728b158729621e08a673dd9d26" title="Determine if a ray hits the object." alt="" coords="12,157,89,184"/>
 </map>

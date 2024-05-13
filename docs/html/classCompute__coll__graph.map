@@ -1,6 +1,6 @@
 <map id="Compute" name="Compute">
-<area shape="rect" id="node1" title=" " alt="" coords="42,272,117,299"/>
-<area shape="rect" id="node2" href="$classIObserver.html" title=" " alt="" coords="5,183,84,209"/>
-<area shape="rect" id="node3" href="$classCamera.html" title=" " alt="" coords="108,183,176,209"/>
-<area shape="rect" id="node4" href="$classVec3.html" title=" " alt="" coords="117,5,167,32"/>
+<area shape="rect" id="node1" title="Class used to compute the image." alt="" coords="42,272,117,299"/>
+<area shape="rect" id="node2" href="$classIObserver.html" title="Interface for Observers used to monitor changes in configuration files." alt="" coords="5,183,84,209"/>
+<area shape="rect" id="node3" href="$classCamera.html" title="Class for creating a camera object in the scene." alt="" coords="108,183,176,209"/>
+<area shape="rect" id="node4" href="$classVec3.html" title="Class for representing a 3D vector." alt="" coords="117,5,167,32"/>
 </map>

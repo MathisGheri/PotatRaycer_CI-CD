@@ -1,8 +1,8 @@
 <map id="src/Logger/SingletonLogger.cpp" name="src/Logger/SingletonLogger.cpp">
-<area shape="rect" id="node1" title=" " alt="" coords="489,5,695,32"/>
-<area shape="rect" id="node2" href="$SingletonLogger_8hpp.html" title=" " alt="" coords="522,80,662,107"/>
-<area shape="rect" id="node3" href="$Logger_8hpp.html" title=" " alt="" coords="549,155,635,181"/>
-<area shape="rect" id="node4" href="$include_8hpp.html" title=" " alt="" coords="548,229,636,256"/>
+<area shape="rect" id="node1" title="File for the SingletonLogger class." alt="" coords="489,5,695,32"/>
+<area shape="rect" id="node2" href="$SingletonLogger_8hpp.html" title="File for the SingletonLogger class." alt="" coords="522,80,662,107"/>
+<area shape="rect" id="node3" href="$Logger_8hpp.html" title="File for the Logger class." alt="" coords="549,155,635,181"/>
+<area shape="rect" id="node4" href="$include_8hpp.html" title="Include all the libraries and headers needed." alt="" coords="548,229,636,256"/>
 <area shape="rect" id="node5" title=" " alt="" coords="5,304,77,331"/>
 <area shape="rect" id="node6" title=" " alt="" coords="102,304,165,331"/>
 <area shape="rect" id="node7" title=" " alt="" coords="189,304,254,331"/>

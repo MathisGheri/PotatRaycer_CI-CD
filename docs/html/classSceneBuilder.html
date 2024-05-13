@@ -72,14 +72,17 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Concrete implementation of the <a class="el" href="classIBuilder.html" title="Interface for the builder pattern to construct scene components.">IBuilder</a> interface for constructing scenes.  
+ <a href="classSceneBuilder.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="SceneBuilder_8hpp_source.html">SceneBuilder.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for SceneBuilder:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSceneBuilder__inherit__graph.png" border="0" usemap="#aSceneBuilder_inherit__map" alt="Inheritance graph"/></div>
 <map name="aSceneBuilder_inherit__map" id="aSceneBuilder_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,80,104,107"/>
-<area shape="rect" href="classIBuilder.html" title=" " alt="" coords="21,5,88,32"/>
+<area shape="rect" title="Concrete implementation of the IBuilder interface for constructing scenes." alt="" coords="5,80,104,107"/>
+<area shape="rect" href="classIBuilder.html" title="Interface for the builder pattern to construct scene components." alt="" coords="21,5,88,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
@@ -87,11 +90,11 @@ Collaboration diagram for SceneBuilder:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSceneBuilder__coll__graph.png" border="0" usemap="#aSceneBuilder_coll__map" alt="Collaboration graph"/></div>
 <map name="aSceneBuilder_coll__map" id="aSceneBuilder_coll__map">
-<area shape="rect" title=" " alt="" coords="21,361,120,388"/>
-<area shape="rect" href="classIBuilder.html" title=" " alt="" coords="5,272,72,299"/>
-<area shape="rect" href="classScene.html" title=" " alt="" coords="96,272,155,299"/>
-<area shape="rect" href="classCamera.html" title=" " alt="" coords="91,183,159,209"/>
-<area shape="rect" href="classVec3.html" title=" " alt="" coords="100,5,151,32"/>
+<area shape="rect" title="Concrete implementation of the IBuilder interface for constructing scenes." alt="" coords="21,361,120,388"/>
+<area shape="rect" href="classIBuilder.html" title="Interface for the builder pattern to construct scene components." alt="" coords="5,272,72,299"/>
+<area shape="rect" href="classScene.html" title="Class for representing a scene in the ray tracing application." alt="" coords="96,272,155,299"/>
+<area shape="rect" href="classCamera.html" title="Class for creating a camera object in the scene." alt="" coords="91,183,159,209"/>
+<area shape="rect" href="classVec3.html" title="Class for representing a 3D vector." alt="" coords="100,5,151,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -102,14 +105,19 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a84e7b441149726f6cb48550328a82df1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSceneBuilder.html#a84e7b441149726f6cb48550328a82df1">~SceneBuilder</a> ()</td></tr>
 <tr class="separator:a84e7b441149726f6cb48550328a82df1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a858400b8fa979ff12e72cbb0924dacf8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSceneBuilder.html#a858400b8fa979ff12e72cbb0924dacf8">createCamera</a> (std::map&lt; std::string, std::tuple&lt; float, float, float &gt;&gt;) override final</td></tr>
+<tr class="memdesc:a858400b8fa979ff12e72cbb0924dacf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a camera in the scene.  <a href="classSceneBuilder.html#a858400b8fa979ff12e72cbb0924dacf8">More...</a><br /></td></tr>
 <tr class="separator:a858400b8fa979ff12e72cbb0924dacf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc5c6aa9cc749216e534c2c6254ed0ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSceneBuilder.html#adc5c6aa9cc749216e534c2c6254ed0ec">createLight</a> (std::map&lt; std::string, std::tuple&lt; float, float, float &gt;&gt;) override final</td></tr>
+<tr class="memdesc:adc5c6aa9cc749216e534c2c6254ed0ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a light in the scene.  <a href="classSceneBuilder.html#adc5c6aa9cc749216e534c2c6254ed0ec">More...</a><br /></td></tr>
 <tr class="separator:adc5c6aa9cc749216e534c2c6254ed0ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14f770fe70c3ec71b0045207113d477d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSceneBuilder.html#a14f770fe70c3ec71b0045207113d477d">createPrimitives</a> (std::vector&lt; <a class="el" href="structPrimitive.html">Primitive</a> &gt;) override final</td></tr>
+<tr class="memdesc:a14f770fe70c3ec71b0045207113d477d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create primitive objects in the scene.  <a href="classSceneBuilder.html#a14f770fe70c3ec71b0045207113d477d">More...</a><br /></td></tr>
 <tr class="separator:a14f770fe70c3ec71b0045207113d477d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10eb94ac2d1f997b95f00cdf7b04d522"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classScene.html">Scene</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSceneBuilder.html#a10eb94ac2d1f997b95f00cdf7b04d522">getScene</a> () const override final</td></tr>
+<tr class="memdesc:a10eb94ac2d1f997b95f00cdf7b04d522"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the constructed scene.  <a href="classSceneBuilder.html#a10eb94ac2d1f997b95f00cdf7b04d522">More...</a><br /></td></tr>
 <tr class="separator:a10eb94ac2d1f997b95f00cdf7b04d522"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5cdf7416f99d5b730fe72177fc4c68ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSceneBuilder.html#a5cdf7416f99d5b730fe72177fc4c68ea">createMeshFromObj</a> (std::vector&lt; <a class="el" href="structObjectProperties.html">ObjectProperties</a> &gt; obj)</td></tr>
+<tr class="memdesc:a5cdf7416f99d5b730fe72177fc4c68ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create <a class="el" href="classMesh.html" title="Class for handling meshes.">Mesh</a> objects in the scene.  <a href="classSceneBuilder.html#a5cdf7416f99d5b730fe72177fc4c68ea">More...</a><br /></td></tr>
 <tr class="separator:a5cdf7416f99d5b730fe72177fc4c68ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classIBuilder"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classIBuilder')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classIBuilder.html">IBuilder</a></td></tr>
 <tr class="memitem:a60781824daeb712214f9c5cbd996b760 inherit pub_methods_classIBuilder"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIBuilder.html#a60781824daeb712214f9c5cbd996b760">~IBuilder</a> ()=default</td></tr>
@@ -121,8 +129,10 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a6b7126dbf0ea58e9144913bce3f2c822"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="SceneBuilder_8hpp_source.html#l00016">16</a> of file <a class="el" href="SceneBuilder_8hpp_source.html">SceneBuilder.hpp</a>.</p>
+<div class="textblock"><p>Concrete implementation of the <a class="el" href="classIBuilder.html" title="Interface for the builder pattern to construct scene components.">IBuilder</a> interface for constructing scenes. </p>
+<p>This interface declares methods for creating cameras, lights, and other primitive objects within a scene. It also provides a method to retrieve the constructed scene. </p>
+
+<p class="definition">Definition at line <a class="el" href="SceneBuilder_8hpp_source.html#l00034">34</a> of file <a class="el" href="SceneBuilder_8hpp_source.html">SceneBuilder.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a91be5ca7f12e7493ed45333d55d3aaae"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a91be5ca7f12e7493ed45333d55d3aaae">&#9670;&nbsp;</a></span>SceneBuilder()</h2>
@@ -139,17 +149,17 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SceneBuilder_8cpp_source.html#l00029">29</a> of file <a class="el" href="SceneBuilder_8cpp_source.html">SceneBuilder.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="classScene.html">Scene</a>();</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="classLogger.html">Logger</a>* logger = <a class="code" href="classLoggerSingleton.html#a9722cb20d2fe85dc683a0e35fd1d2f67">LoggerSingleton::getInstance</a>();</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    logger-&gt;<a class="code" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a748005382152808a72b1a9177d9dc806">INFO</a>, <span class="stringliteral">&quot;SceneBuilder created.&quot;</span>);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div>
-<div class="ttc" id="aLogger_8hpp_html_aca1fd1d8935433e6ba2e3918214e07f9a748005382152808a72b1a9177d9dc806"><div class="ttname"><a href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a748005382152808a72b1a9177d9dc806">INFO</a></div><div class="ttdeci">@ INFO</div><div class="ttdef"><b>Definition:</b> <a href="Logger_8hpp_source.html#l00017">Logger.hpp:17</a></div></div>
-<div class="ttc" id="aclassLoggerSingleton_html_a9722cb20d2fe85dc683a0e35fd1d2f67"><div class="ttname"><a href="classLoggerSingleton.html#a9722cb20d2fe85dc683a0e35fd1d2f67">LoggerSingleton::getInstance</a></div><div class="ttdeci">static Logger * getInstance()</div><div class="ttdef"><b>Definition:</b> <a href="SingletonLogger_8cpp_source.html#l00012">SingletonLogger.cpp:12</a></div></div>
-<div class="ttc" id="aclassLogger_html"><div class="ttname"><a href="classLogger.html">Logger</a></div><div class="ttdef"><b>Definition:</b> <a href="Logger_8hpp_source.html#l00023">Logger.hpp:23</a></div></div>
-<div class="ttc" id="aclassLogger_html_a3d3f0801eeaf39b33a906ea8569c19b2"><div class="ttname"><a href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">Logger::log</a></div><div class="ttdeci">void log(LogLevel level, const std::string &amp;message)</div><div class="ttdef"><b>Definition:</b> <a href="Logger_8hpp_source.html#l00051">Logger.hpp:51</a></div></div>
-<div class="ttc" id="aclassScene_html"><div class="ttname"><a href="classScene.html">Scene</a></div><div class="ttdef"><b>Definition:</b> <a href="Scene_8hpp_source.html#l00018">Scene.hpp:18</a></div></div>
+<p class="definition">Definition at line <a class="el" href="SceneBuilder_8cpp_source.html#l00034">34</a> of file <a class="el" href="SceneBuilder_8cpp_source.html">SceneBuilder.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="classScene.html">Scene</a>();</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="classLogger.html">Logger</a>* logger = <a class="code" href="classLoggerSingleton.html#a9722cb20d2fe85dc683a0e35fd1d2f67">LoggerSingleton::getInstance</a>();</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    logger-&gt;<a class="code" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a748005382152808a72b1a9177d9dc806">INFO</a>, <span class="stringliteral">&quot;SceneBuilder created.&quot;</span>);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
+<div class="ttc" id="aLogger_8hpp_html_aca1fd1d8935433e6ba2e3918214e07f9a748005382152808a72b1a9177d9dc806"><div class="ttname"><a href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a748005382152808a72b1a9177d9dc806">INFO</a></div><div class="ttdeci">@ INFO</div><div class="ttdef"><b>Definition:</b> <a href="Logger_8hpp_source.html#l00027">Logger.hpp:27</a></div></div>
+<div class="ttc" id="aclassLoggerSingleton_html_a9722cb20d2fe85dc683a0e35fd1d2f67"><div class="ttname"><a href="classLoggerSingleton.html#a9722cb20d2fe85dc683a0e35fd1d2f67">LoggerSingleton::getInstance</a></div><div class="ttdeci">static Logger * getInstance()</div><div class="ttdoc">Get the instance of the Logger.</div><div class="ttdef"><b>Definition:</b> <a href="SingletonLogger_8cpp_source.html#l00017">SingletonLogger.cpp:17</a></div></div>
+<div class="ttc" id="aclassLogger_html"><div class="ttname"><a href="classLogger.html">Logger</a></div><div class="ttdoc">Class used to create the Logger.</div><div class="ttdef"><b>Definition:</b> <a href="Logger_8hpp_source.html#l00038">Logger.hpp:38</a></div></div>
+<div class="ttc" id="aclassLogger_html_a3d3f0801eeaf39b33a906ea8569c19b2"><div class="ttname"><a href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">Logger::log</a></div><div class="ttdeci">void log(LogLevel level, const std::string &amp;message)</div><div class="ttdoc">Log a message.</div><div class="ttdef"><b>Definition:</b> <a href="Logger_8hpp_source.html#l00083">Logger.hpp:83</a></div></div>
+<div class="ttc" id="aclassScene_html"><div class="ttname"><a href="classScene.html">Scene</a></div><div class="ttdoc">Class for representing a scene in the ray tracing application.</div><div class="ttdef"><b>Definition:</b> <a href="Scene_8hpp_source.html#l00031">Scene.hpp:31</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="classLoggerSingleton.html#a9722cb20d2fe85dc683a0e35fd1d2f67">LoggerSingleton::getInstance()</a>, <a class="el" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a748005382152808a72b1a9177d9dc806">INFO</a>, and <a class="el" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">Logger::log()</a>.</p>
 <div class="dynheader">
@@ -158,9 +168,9 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="classSceneBuilder_a91be5ca7f12e7493ed45333d55d3aaae_cgraph.png" border="0" usemap="#aclassSceneBuilder_a91be5ca7f12e7493ed45333d55d3aaae_cgraph" alt=""/></div>
 <map name="aclassSceneBuilder_a91be5ca7f12e7493ed45333d55d3aaae_cgraph" id="aclassSceneBuilder_a91be5ca7f12e7493ed45333d55d3aaae_cgraph">
 <area shape="rect" title=" " alt="" coords="5,31,189,57"/>
-<area shape="rect" href="classLoggerSingleton.html#a9722cb20d2fe85dc683a0e35fd1d2f67" title=" " alt="" coords="237,5,428,32"/>
-<area shape="rect" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2" title=" " alt="" coords="289,56,376,83"/>
-<area shape="rect" href="classLogger.html#acfb794ab842c63396ad1c6a771f43483" title=" " alt="" coords="476,56,620,83"/>
+<area shape="rect" href="classLoggerSingleton.html#a9722cb20d2fe85dc683a0e35fd1d2f67" title="Get the instance of the Logger." alt="" coords="237,5,428,32"/>
+<area shape="rect" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2" title="Log a message." alt="" coords="289,56,376,83"/>
+<area shape="rect" href="classLogger.html#acfb794ab842c63396ad1c6a771f43483" title="Convert the log level to a string." alt="" coords="476,56,620,83"/>
 </map>
 </div>
 
@@ -181,8 +191,8 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SceneBuilder_8cpp_source.html#l00036">36</a> of file <a class="el" href="SceneBuilder_8cpp_source.html">SceneBuilder.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{}</div>
+<p class="definition">Definition at line <a class="el" href="SceneBuilder_8cpp_source.html#l00041">41</a> of file <a class="el" href="SceneBuilder_8cpp_source.html">SceneBuilder.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -211,45 +221,54 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="classIBuilder.html#a86328b8427326fac899a9e1b8ab2be9f">IBuilder</a>.</p>
+<p>Create a camera in the scene. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">camParams</td><td>from string identifiers to tuples representing the camera specifications. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>This function does not return a value but configures the scene with a new camera. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="SceneBuilder_8cpp_source.html#l00038">38</a> of file <a class="el" href="SceneBuilder_8cpp_source.html">SceneBuilder.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="classVec3.html">Vec3</a> lookfrom;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="classVec3.html">Vec3</a> lookat;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="classVec3.html">Vec3</a> vup;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">float</span> vfov;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">float</span> aspect;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">float</span> aperture;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">float</span> focus_dist;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">try</span> {</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        lookfrom = <a class="code" href="classVec3.html">Vec3</a>(std::get&lt;0&gt;(camParams[<span class="stringliteral">&quot;lookfrom&quot;</span>]), std::get&lt;1&gt;(camParams[<span class="stringliteral">&quot;lookfrom&quot;</span>]), std::get&lt;2&gt;(camParams[<span class="stringliteral">&quot;lookfrom&quot;</span>]));</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        lookat = <a class="code" href="classVec3.html">Vec3</a>(std::get&lt;0&gt;(camParams[<span class="stringliteral">&quot;lookat&quot;</span>]), std::get&lt;1&gt;(camParams[<span class="stringliteral">&quot;lookat&quot;</span>]), std::get&lt;2&gt;(camParams[<span class="stringliteral">&quot;lookat&quot;</span>]));</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        vup = <a class="code" href="classVec3.html">Vec3</a>(std::get&lt;0&gt;(camParams[<span class="stringliteral">&quot;vup&quot;</span>]), std::get&lt;1&gt;(camParams[<span class="stringliteral">&quot;vup&quot;</span>]), std::get&lt;2&gt;(camParams[<span class="stringliteral">&quot;vup&quot;</span>]));</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        vfov = std::get&lt;0&gt;(camParams[<span class="stringliteral">&quot;vfov&quot;</span>]);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        aspect = std::get&lt;0&gt;(camParams[<span class="stringliteral">&quot;aspect&quot;</span>]);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        aperture = std::get&lt;0&gt;(camParams[<span class="stringliteral">&quot;aperture&quot;</span>]);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        focus_dist = std::get&lt;0&gt;(camParams[<span class="stringliteral">&quot;focus_dist&quot;</span>]);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <a class="code" href="classSceneBuilder.html#a6b7126dbf0ea58e9144913bce3f2c822">scene</a>.<a class="code" href="classScene.html#a9beb0e1b0639b01b6dda991600f1b7c6">setConfigHeight</a>(std::get&lt;0&gt;(camParams[<span class="stringliteral">&quot;height&quot;</span>]));</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <a class="code" href="classSceneBuilder.html#a6b7126dbf0ea58e9144913bce3f2c822">scene</a>.<a class="code" href="classScene.html#a3d986728a9c72c4ea939ab8167e09689">setConfigWidth</a>(std::get&lt;0&gt;(camParams[<span class="stringliteral">&quot;width&quot;</span>]));</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <a class="code" href="classSceneBuilder.html#a6b7126dbf0ea58e9144913bce3f2c822">scene</a>.<a class="code" href="classScene.html#ad55540281b5005318ee162141b29b9ca">setConfigNs</a>(std::get&lt;0&gt;(camParams[<span class="stringliteral">&quot;ns&quot;</span>]));</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    } <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception &amp;e) {</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordflow">throw</span> <a class="code" href="classException.html">Exception</a>(<span class="stringliteral">&quot;Camera parameters not found.&quot;</span>, <a class="code" href="Exception_8hpp.html#a221b779e6bb7b8d40677d7642bfefac5a43eedd8685eb86592022f8da962e3474">Level::MIDDLE</a>);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    }</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="code" href="classCamera.html">Camera</a> camera = <a class="code" href="classCamera.html">Camera</a>(lookfrom, lookat, vup, vfov, aspect, aperture, focus_dist);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="classSceneBuilder.html#a6b7126dbf0ea58e9144913bce3f2c822">scene</a>.<a class="code" href="classScene.html#a86ac4dec0c92de6b1a2fb9f1ba6971e5">setCamera</a>(camera);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}</div>
+<p>Implements <a class="el" href="classIBuilder.html#ab936322dbcac00119840c9e596f92b90">IBuilder</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="SceneBuilder_8cpp_source.html#l00043">43</a> of file <a class="el" href="SceneBuilder_8cpp_source.html">SceneBuilder.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="classVec3.html">Vec3</a> lookfrom;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="classVec3.html">Vec3</a> lookat;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="classVec3.html">Vec3</a> vup;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">float</span> vfov;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">float</span> aspect;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">float</span> aperture;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">float</span> focus_dist;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">try</span> {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        lookfrom = <a class="code" href="classVec3.html">Vec3</a>(std::get&lt;0&gt;(camParams[<span class="stringliteral">&quot;lookfrom&quot;</span>]), std::get&lt;1&gt;(camParams[<span class="stringliteral">&quot;lookfrom&quot;</span>]), std::get&lt;2&gt;(camParams[<span class="stringliteral">&quot;lookfrom&quot;</span>]));</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        lookat = <a class="code" href="classVec3.html">Vec3</a>(std::get&lt;0&gt;(camParams[<span class="stringliteral">&quot;lookat&quot;</span>]), std::get&lt;1&gt;(camParams[<span class="stringliteral">&quot;lookat&quot;</span>]), std::get&lt;2&gt;(camParams[<span class="stringliteral">&quot;lookat&quot;</span>]));</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        vup = <a class="code" href="classVec3.html">Vec3</a>(std::get&lt;0&gt;(camParams[<span class="stringliteral">&quot;vup&quot;</span>]), std::get&lt;1&gt;(camParams[<span class="stringliteral">&quot;vup&quot;</span>]), std::get&lt;2&gt;(camParams[<span class="stringliteral">&quot;vup&quot;</span>]));</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        vfov = std::get&lt;0&gt;(camParams[<span class="stringliteral">&quot;vfov&quot;</span>]);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        aspect = std::get&lt;0&gt;(camParams[<span class="stringliteral">&quot;aspect&quot;</span>]);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        aperture = std::get&lt;0&gt;(camParams[<span class="stringliteral">&quot;aperture&quot;</span>]);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        focus_dist = std::get&lt;0&gt;(camParams[<span class="stringliteral">&quot;focus_dist&quot;</span>]);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <a class="code" href="classSceneBuilder.html#a6b7126dbf0ea58e9144913bce3f2c822">scene</a>.<a class="code" href="classScene.html#a9beb0e1b0639b01b6dda991600f1b7c6">setConfigHeight</a>(std::get&lt;0&gt;(camParams[<span class="stringliteral">&quot;height&quot;</span>]));</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <a class="code" href="classSceneBuilder.html#a6b7126dbf0ea58e9144913bce3f2c822">scene</a>.<a class="code" href="classScene.html#a3d986728a9c72c4ea939ab8167e09689">setConfigWidth</a>(std::get&lt;0&gt;(camParams[<span class="stringliteral">&quot;width&quot;</span>]));</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <a class="code" href="classSceneBuilder.html#a6b7126dbf0ea58e9144913bce3f2c822">scene</a>.<a class="code" href="classScene.html#ad55540281b5005318ee162141b29b9ca">setConfigNs</a>(std::get&lt;0&gt;(camParams[<span class="stringliteral">&quot;ns&quot;</span>]));</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    } <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception &amp;e) {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keywordflow">throw</span> <a class="code" href="classException.html">Exception</a>(<span class="stringliteral">&quot;Camera parameters not found.&quot;</span>, <a class="code" href="Exception_8hpp.html#a221b779e6bb7b8d40677d7642bfefac5a43eedd8685eb86592022f8da962e3474">Level::MIDDLE</a>);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    }</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <a class="code" href="classCamera.html">Camera</a> camera = <a class="code" href="classCamera.html">Camera</a>(lookfrom, lookat, vup, vfov, aspect, aperture, focus_dist);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <a class="code" href="classSceneBuilder.html#a6b7126dbf0ea58e9144913bce3f2c822">scene</a>.<a class="code" href="classScene.html#a86ac4dec0c92de6b1a2fb9f1ba6971e5">setCamera</a>(camera);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div>
 <div class="ttc" id="aException_8hpp_html_a221b779e6bb7b8d40677d7642bfefac5a43eedd8685eb86592022f8da962e3474"><div class="ttname"><a href="Exception_8hpp.html#a221b779e6bb7b8d40677d7642bfefac5a43eedd8685eb86592022f8da962e3474">Level::MIDDLE</a></div><div class="ttdeci">@ MIDDLE</div></div>
-<div class="ttc" id="aclassCamera_html"><div class="ttname"><a href="classCamera.html">Camera</a></div><div class="ttdef"><b>Definition:</b> <a href="Camera_8hpp_source.html#l00016">Camera.hpp:16</a></div></div>
-<div class="ttc" id="aclassException_html"><div class="ttname"><a href="classException.html">Exception</a></div><div class="ttdef"><b>Definition:</b> <a href="Exception_8hpp_source.html#l00022">Exception.hpp:22</a></div></div>
-<div class="ttc" id="aclassSceneBuilder_html_a6b7126dbf0ea58e9144913bce3f2c822"><div class="ttname"><a href="classSceneBuilder.html#a6b7126dbf0ea58e9144913bce3f2c822">SceneBuilder::scene</a></div><div class="ttdeci">Scene scene</div><div class="ttdef"><b>Definition:</b> <a href="SceneBuilder_8hpp_source.html#l00026">SceneBuilder.hpp:26</a></div></div>
-<div class="ttc" id="aclassScene_html_a3d986728a9c72c4ea939ab8167e09689"><div class="ttname"><a href="classScene.html#a3d986728a9c72c4ea939ab8167e09689">Scene::setConfigWidth</a></div><div class="ttdeci">void setConfigWidth(float width)</div><div class="ttdef"><b>Definition:</b> <a href="Scene_8cpp_source.html#l00043">Scene.cpp:43</a></div></div>
-<div class="ttc" id="aclassScene_html_a86ac4dec0c92de6b1a2fb9f1ba6971e5"><div class="ttname"><a href="classScene.html#a86ac4dec0c92de6b1a2fb9f1ba6971e5">Scene::setCamera</a></div><div class="ttdeci">void setCamera(Camera c)</div><div class="ttdef"><b>Definition:</b> <a href="Scene_8cpp_source.html#l00029">Scene.cpp:29</a></div></div>
-<div class="ttc" id="aclassScene_html_a9beb0e1b0639b01b6dda991600f1b7c6"><div class="ttname"><a href="classScene.html#a9beb0e1b0639b01b6dda991600f1b7c6">Scene::setConfigHeight</a></div><div class="ttdeci">void setConfigHeight(float height)</div><div class="ttdef"><b>Definition:</b> <a href="Scene_8cpp_source.html#l00039">Scene.cpp:39</a></div></div>
-<div class="ttc" id="aclassScene_html_ad55540281b5005318ee162141b29b9ca"><div class="ttname"><a href="classScene.html#ad55540281b5005318ee162141b29b9ca">Scene::setConfigNs</a></div><div class="ttdeci">void setConfigNs(float ns)</div><div class="ttdef"><b>Definition:</b> <a href="Scene_8cpp_source.html#l00047">Scene.cpp:47</a></div></div>
-<div class="ttc" id="aclassVec3_html"><div class="ttname"><a href="classVec3.html">Vec3</a></div><div class="ttdef"><b>Definition:</b> <a href="Vec3_8hpp_source.html#l00014">Vec3.hpp:14</a></div></div>
+<div class="ttc" id="aclassCamera_html"><div class="ttname"><a href="classCamera.html">Camera</a></div><div class="ttdoc">Class for creating a camera object in the scene.</div><div class="ttdef"><b>Definition:</b> <a href="Camera_8hpp_source.html#l00030">Camera.hpp:30</a></div></div>
+<div class="ttc" id="aclassException_html"><div class="ttname"><a href="classException.html">Exception</a></div><div class="ttdoc">Class used to create the Exception.</div><div class="ttdef"><b>Definition:</b> <a href="Exception_8hpp_source.html#l00036">Exception.hpp:36</a></div></div>
+<div class="ttc" id="aclassSceneBuilder_html_a6b7126dbf0ea58e9144913bce3f2c822"><div class="ttname"><a href="classSceneBuilder.html#a6b7126dbf0ea58e9144913bce3f2c822">SceneBuilder::scene</a></div><div class="ttdeci">Scene scene</div><div class="ttdef"><b>Definition:</b> <a href="SceneBuilder_8hpp_source.html#l00050">SceneBuilder.hpp:50</a></div></div>
+<div class="ttc" id="aclassScene_html_a3d986728a9c72c4ea939ab8167e09689"><div class="ttname"><a href="classScene.html#a3d986728a9c72c4ea939ab8167e09689">Scene::setConfigWidth</a></div><div class="ttdeci">void setConfigWidth(float width)</div><div class="ttdoc">Set the configuration width of the scene.</div><div class="ttdef"><b>Definition:</b> <a href="Scene_8cpp_source.html#l00048">Scene.cpp:48</a></div></div>
+<div class="ttc" id="aclassScene_html_a86ac4dec0c92de6b1a2fb9f1ba6971e5"><div class="ttname"><a href="classScene.html#a86ac4dec0c92de6b1a2fb9f1ba6971e5">Scene::setCamera</a></div><div class="ttdeci">void setCamera(Camera c)</div><div class="ttdoc">Set the camera for the scene.</div><div class="ttdef"><b>Definition:</b> <a href="Scene_8cpp_source.html#l00034">Scene.cpp:34</a></div></div>
+<div class="ttc" id="aclassScene_html_a9beb0e1b0639b01b6dda991600f1b7c6"><div class="ttname"><a href="classScene.html#a9beb0e1b0639b01b6dda991600f1b7c6">Scene::setConfigHeight</a></div><div class="ttdeci">void setConfigHeight(float height)</div><div class="ttdoc">Set the configuration height of the scene.</div><div class="ttdef"><b>Definition:</b> <a href="Scene_8cpp_source.html#l00044">Scene.cpp:44</a></div></div>
+<div class="ttc" id="aclassScene_html_ad55540281b5005318ee162141b29b9ca"><div class="ttname"><a href="classScene.html#ad55540281b5005318ee162141b29b9ca">Scene::setConfigNs</a></div><div class="ttdeci">void setConfigNs(float ns)</div><div class="ttdoc">Set the configuration Ns value of the scene.</div><div class="ttdef"><b>Definition:</b> <a href="Scene_8cpp_source.html#l00052">Scene.cpp:52</a></div></div>
+<div class="ttc" id="aclassVec3_html"><div class="ttname"><a href="classVec3.html">Vec3</a></div><div class="ttdoc">Class for representing a 3D vector.</div><div class="ttdef"><b>Definition:</b> <a href="Vec3_8hpp_source.html#l00026">Vec3.hpp:26</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="Exception_8hpp.html#a221b779e6bb7b8d40677d7642bfefac5a43eedd8685eb86592022f8da962e3474">MIDDLE</a>, <a class="el" href="classSceneBuilder.html#a6b7126dbf0ea58e9144913bce3f2c822">scene</a>, <a class="el" href="classScene.html#a86ac4dec0c92de6b1a2fb9f1ba6971e5">Scene::setCamera()</a>, <a class="el" href="classScene.html#a9beb0e1b0639b01b6dda991600f1b7c6">Scene::setConfigHeight()</a>, <a class="el" href="classScene.html#ad55540281b5005318ee162141b29b9ca">Scene::setConfigNs()</a>, and <a class="el" href="classScene.html#a3d986728a9c72c4ea939ab8167e09689">Scene::setConfigWidth()</a>.</p>
 
@@ -259,11 +278,11 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSceneBuilder_a858400b8fa979ff12e72cbb0924dacf8_cgraph.png" border="0" usemap="#aclassSceneBuilder_a858400b8fa979ff12e72cbb0924dacf8_cgraph" alt=""/></div>
 <map name="aclassSceneBuilder_a858400b8fa979ff12e72cbb0924dacf8_cgraph" id="aclassSceneBuilder_a858400b8fa979ff12e72cbb0924dacf8_cgraph">
-<area shape="rect" title=" " alt="" coords="5,81,195,108"/>
-<area shape="rect" href="classScene.html#a86ac4dec0c92de6b1a2fb9f1ba6971e5" title=" " alt="" coords="258,5,389,32"/>
-<area shape="rect" href="classScene.html#a9beb0e1b0639b01b6dda991600f1b7c6" title=" " alt="" coords="243,56,404,83"/>
-<area shape="rect" href="classScene.html#ad55540281b5005318ee162141b29b9ca" title=" " alt="" coords="253,107,393,133"/>
-<area shape="rect" href="classScene.html#a3d986728a9c72c4ea939ab8167e09689" title=" " alt="" coords="245,157,402,184"/>
+<area shape="rect" title="Create a camera in the scene." alt="" coords="5,81,195,108"/>
+<area shape="rect" href="classScene.html#a86ac4dec0c92de6b1a2fb9f1ba6971e5" title="Set the camera for the scene." alt="" coords="258,5,389,32"/>
+<area shape="rect" href="classScene.html#a9beb0e1b0639b01b6dda991600f1b7c6" title="Set the configuration height of the scene." alt="" coords="243,56,404,83"/>
+<area shape="rect" href="classScene.html#ad55540281b5005318ee162141b29b9ca" title="Set the configuration Ns value of the scene." alt="" coords="253,107,393,133"/>
+<area shape="rect" href="classScene.html#a3d986728a9c72c4ea939ab8167e09689" title="Set the configuration width of the scene." alt="" coords="245,157,402,184"/>
 </map>
 </div>
 <div class="dynheader">
@@ -271,9 +290,9 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSceneBuilder_a858400b8fa979ff12e72cbb0924dacf8_icgraph.png" border="0" usemap="#aclassSceneBuilder_a858400b8fa979ff12e72cbb0924dacf8_icgraph" alt=""/></div>
 <map name="aclassSceneBuilder_a858400b8fa979ff12e72cbb0924dacf8_icgraph" id="aclassSceneBuilder_a858400b8fa979ff12e72cbb0924dacf8_icgraph">
-<area shape="rect" title=" " alt="" coords="488,31,677,57"/>
-<area shape="rect" href="classCore.html#a8c45134f4e917fb1e2aa2848697f376f" title=" " alt="" coords="289,31,440,57"/>
-<area shape="rect" href="classCore.html#afdfd60c50da96c795184b83678195724" title=" " alt="" coords="104,5,241,32"/>
+<area shape="rect" title="Create a camera in the scene." alt="" coords="488,31,677,57"/>
+<area shape="rect" href="classCore.html#a8c45134f4e917fb1e2aa2848697f376f" title="Function to assemble the scene." alt="" coords="289,31,440,57"/>
+<area shape="rect" href="classCore.html#afdfd60c50da96c795184b83678195724" title="Function to generate the PPM file." alt="" coords="104,5,241,32"/>
 <area shape="rect" href="Main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,31,56,57"/>
 </map>
 </div>
@@ -304,32 +323,41 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="classIBuilder.html#a7a99d716bc6b01c310bdadbbde452070">IBuilder</a>.</p>
+<p>Create a light in the scene. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lightParams</td><td>Map from string identifiers to tuples representing the light specifications. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>This function does not return a value but adds a light to the scene. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="SceneBuilder_8cpp_source.html#l00067">67</a> of file <a class="el" href="SceneBuilder_8cpp_source.html">SceneBuilder.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;{</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <a class="code" href="classVec3.html">Vec3</a> pos, normal;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">float</span> intensity, direc, size;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordflow">try</span> {</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        pos = <a class="code" href="classVec3.html">Vec3</a>(std::get&lt;0&gt;(lightParams.at(<span class="stringliteral">&quot;position&quot;</span>)), std::get&lt;1&gt;(lightParams.at(<span class="stringliteral">&quot;position&quot;</span>)), std::get&lt;2&gt;(lightParams.at(<span class="stringliteral">&quot;position&quot;</span>)));</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        intensity = std::get&lt;0&gt;(lightParams.at(<span class="stringliteral">&quot;intensity&quot;</span>));</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        normal = <a class="code" href="classVec3.html">Vec3</a>(std::get&lt;0&gt;(lightParams.at(<span class="stringliteral">&quot;normal&quot;</span>)),</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                      std::get&lt;1&gt;(lightParams.at(<span class="stringliteral">&quot;normal&quot;</span>)),</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                      std::get&lt;2&gt;(lightParams.at(<span class="stringliteral">&quot;normal&quot;</span>)));</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        direc = std::get&lt;0&gt;(lightParams.at(<span class="stringliteral">&quot;direc&quot;</span>));</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        size = std::get&lt;0&gt;(lightParams.at(<span class="stringliteral">&quot;size&quot;</span>));</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    } <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception&amp; e) {</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keywordflow">throw</span> <a class="code" href="classException.html">Exception</a>(<span class="stringliteral">&quot;Light parameters not found.&quot;</span>, <a class="code" href="Exception_8hpp.html#a221b779e6bb7b8d40677d7642bfefac5a43eedd8685eb86592022f8da962e3474">Level::MIDDLE</a>);</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    }</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordflow">if</span> (direc == 0) {</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        std::shared_ptr&lt;ILight&gt; light = std::make_shared&lt;AmbiantLight&gt;(pos, intensity);</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <a class="code" href="classSceneBuilder.html#a6b7126dbf0ea58e9144913bce3f2c822">scene</a>.<a class="code" href="classScene.html#a9557c7bd1e51350b064b6d0e7cfca456">setLight</a>(light);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        std::shared_ptr&lt;ILight&gt; light = std::make_shared&lt;DirectionalLight&gt;(pos, intensity, normal, size);</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <a class="code" href="classSceneBuilder.html#a6b7126dbf0ea58e9144913bce3f2c822">scene</a>.<a class="code" href="classScene.html#a9557c7bd1e51350b064b6d0e7cfca456">setLight</a>(light);</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    }</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;}</div>
-<div class="ttc" id="aclassScene_html_a9557c7bd1e51350b064b6d0e7cfca456"><div class="ttname"><a href="classScene.html#a9557c7bd1e51350b064b6d0e7cfca456">Scene::setLight</a></div><div class="ttdeci">void setLight(std::shared_ptr&lt; ILight &gt; l)</div><div class="ttdef"><b>Definition:</b> <a href="Scene_8cpp_source.html#l00024">Scene.cpp:24</a></div></div>
+<p>Implements <a class="el" href="classIBuilder.html#a511c12f06b3b17ec2a70778dee2ba115">IBuilder</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="SceneBuilder_8cpp_source.html#l00072">72</a> of file <a class="el" href="SceneBuilder_8cpp_source.html">SceneBuilder.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;{</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <a class="code" href="classVec3.html">Vec3</a> pos, normal;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">float</span> intensity, direc, size;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">try</span> {</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        pos = <a class="code" href="classVec3.html">Vec3</a>(std::get&lt;0&gt;(lightParams.at(<span class="stringliteral">&quot;position&quot;</span>)), std::get&lt;1&gt;(lightParams.at(<span class="stringliteral">&quot;position&quot;</span>)), std::get&lt;2&gt;(lightParams.at(<span class="stringliteral">&quot;position&quot;</span>)));</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        intensity = std::get&lt;0&gt;(lightParams.at(<span class="stringliteral">&quot;intensity&quot;</span>));</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        normal = <a class="code" href="classVec3.html">Vec3</a>(std::get&lt;0&gt;(lightParams.at(<span class="stringliteral">&quot;normal&quot;</span>)),</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                      std::get&lt;1&gt;(lightParams.at(<span class="stringliteral">&quot;normal&quot;</span>)),</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                      std::get&lt;2&gt;(lightParams.at(<span class="stringliteral">&quot;normal&quot;</span>)));</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        direc = std::get&lt;0&gt;(lightParams.at(<span class="stringliteral">&quot;direc&quot;</span>));</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        size = std::get&lt;0&gt;(lightParams.at(<span class="stringliteral">&quot;size&quot;</span>));</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    } <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception&amp; e) {</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keywordflow">throw</span> <a class="code" href="classException.html">Exception</a>(<span class="stringliteral">&quot;Light parameters not found.&quot;</span>, <a class="code" href="Exception_8hpp.html#a221b779e6bb7b8d40677d7642bfefac5a43eedd8685eb86592022f8da962e3474">Level::MIDDLE</a>);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    }</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordflow">if</span> (direc == 0) {</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        std::shared_ptr&lt;ILight&gt; light = std::make_shared&lt;AmbiantLight&gt;(pos, intensity);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <a class="code" href="classSceneBuilder.html#a6b7126dbf0ea58e9144913bce3f2c822">scene</a>.<a class="code" href="classScene.html#a9557c7bd1e51350b064b6d0e7cfca456">setLight</a>(light);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        std::shared_ptr&lt;ILight&gt; light = std::make_shared&lt;DirectionalLight&gt;(pos, intensity, normal, size);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <a class="code" href="classSceneBuilder.html#a6b7126dbf0ea58e9144913bce3f2c822">scene</a>.<a class="code" href="classScene.html#a9557c7bd1e51350b064b6d0e7cfca456">setLight</a>(light);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    }</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;}</div>
+<div class="ttc" id="aclassScene_html_a9557c7bd1e51350b064b6d0e7cfca456"><div class="ttname"><a href="classScene.html#a9557c7bd1e51350b064b6d0e7cfca456">Scene::setLight</a></div><div class="ttdeci">void setLight(std::shared_ptr&lt; ILight &gt; l)</div><div class="ttdoc">Set the light for the scene.</div><div class="ttdef"><b>Definition:</b> <a href="Scene_8cpp_source.html#l00029">Scene.cpp:29</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="Exception_8hpp.html#a221b779e6bb7b8d40677d7642bfefac5a43eedd8685eb86592022f8da962e3474">MIDDLE</a>, <a class="el" href="classSceneBuilder.html#a6b7126dbf0ea58e9144913bce3f2c822">scene</a>, and <a class="el" href="classScene.html#a9557c7bd1e51350b064b6d0e7cfca456">Scene::setLight()</a>.</p>
 
@@ -339,8 +367,8 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSceneBuilder_adc5c6aa9cc749216e534c2c6254ed0ec_cgraph.png" border="0" usemap="#aclassSceneBuilder_adc5c6aa9cc749216e534c2c6254ed0ec_cgraph" alt=""/></div>
 <map name="aclassSceneBuilder_adc5c6aa9cc749216e534c2c6254ed0ec_cgraph" id="aclassSceneBuilder_adc5c6aa9cc749216e534c2c6254ed0ec_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,176,32"/>
-<area shape="rect" href="classScene.html#a9557c7bd1e51350b064b6d0e7cfca456" title=" " alt="" coords="224,5,337,32"/>
+<area shape="rect" title="Create a light in the scene." alt="" coords="5,5,176,32"/>
+<area shape="rect" href="classScene.html#a9557c7bd1e51350b064b6d0e7cfca456" title="Set the light for the scene." alt="" coords="224,5,337,32"/>
 </map>
 </div>
 <div class="dynheader">
@@ -348,9 +376,9 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSceneBuilder_adc5c6aa9cc749216e534c2c6254ed0ec_icgraph.png" border="0" usemap="#aclassSceneBuilder_adc5c6aa9cc749216e534c2c6254ed0ec_icgraph" alt=""/></div>
 <map name="aclassSceneBuilder_adc5c6aa9cc749216e534c2c6254ed0ec_icgraph" id="aclassSceneBuilder_adc5c6aa9cc749216e534c2c6254ed0ec_icgraph">
-<area shape="rect" title=" " alt="" coords="488,31,659,57"/>
-<area shape="rect" href="classCore.html#a8c45134f4e917fb1e2aa2848697f376f" title=" " alt="" coords="289,31,440,57"/>
-<area shape="rect" href="classCore.html#afdfd60c50da96c795184b83678195724" title=" " alt="" coords="104,5,241,32"/>
+<area shape="rect" title="Create a light in the scene." alt="" coords="488,31,659,57"/>
+<area shape="rect" href="classCore.html#a8c45134f4e917fb1e2aa2848697f376f" title="Function to assemble the scene." alt="" coords="289,31,440,57"/>
+<area shape="rect" href="classCore.html#afdfd60c50da96c795184b83678195724" title="Function to generate the PPM file." alt="" coords="104,5,241,32"/>
 <area shape="rect" href="Main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,31,56,57"/>
 </map>
 </div>
@@ -373,79 +401,88 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SceneBuilder_8cpp_source.html#l00129">129</a> of file <a class="el" href="SceneBuilder_8cpp_source.html">SceneBuilder.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;{</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keywordflow">try</span> {</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; obj : objects) {</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;            std::shared_ptr&lt;IMaterial&gt; material = std::make_shared&lt;Texture&gt;(obj.pathTexture);</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;            std::ifstream file(obj.pathFile);</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;            <span class="keywordflow">if</span> (!file.is_open()) {</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;                <span class="keywordflow">throw</span> <a class="code" href="classException.html">Exception</a>(<span class="stringliteral">&quot;Failed to open file: &quot;</span> + obj.pathFile, <a class="code" href="Exception_8hpp.html#a221b779e6bb7b8d40677d7642bfefac5a41bc94cbd8eebea13ce0491b2ac11b88">Level::LOW</a>);</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;            }</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;            std::vector&lt;Vec3&gt; vertices;</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;            std::vector&lt;std::shared_ptr&lt;IHitable&gt;&gt; triangles;</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;            std::string line;</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;            std::vector&lt;Vec2&gt; texCoords;</div>
+<p>Create <a class="el" href="classMesh.html" title="Class for handling meshes.">Mesh</a> objects in the scene. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">obj</td><td>A vector of <a class="el" href="structObjectProperties.html" title="Structure to store .obj properties.">ObjectProperties</a> that contain .obj informations. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>This function does not return a value but populates the scene with <a class="el" href="classMesh.html" title="Class for handling meshes.">Mesh</a>. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="SceneBuilder_8cpp_source.html#l00134">134</a> of file <a class="el" href="SceneBuilder_8cpp_source.html">SceneBuilder.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;{</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="keywordflow">try</span> {</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; obj : objects) {</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;            std::shared_ptr&lt;IMaterial&gt; material = std::make_shared&lt;Texture&gt;(obj.pathTexture);</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;            std::ifstream file(obj.pathFile);</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;            <span class="keywordflow">if</span> (!file.is_open()) {</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;                <span class="keywordflow">throw</span> <a class="code" href="classException.html">Exception</a>(<span class="stringliteral">&quot;Failed to open file: &quot;</span> + obj.pathFile, <a class="code" href="Exception_8hpp.html#a221b779e6bb7b8d40677d7642bfefac5a41bc94cbd8eebea13ce0491b2ac11b88">Level::LOW</a>);</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;            }</div>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160; </div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;            <span class="keywordflow">while</span> (std::getline(file, line)) {</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;                std::stringstream ss(line);</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;                std::string type;</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;                ss &gt;&gt; type;</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;                <span class="keywordflow">if</span> (type == <span class="stringliteral">&quot;v&quot;</span>) {</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;                    <span class="keywordtype">float</span> x, y, z;</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;                    ss &gt;&gt; x &gt;&gt; y &gt;&gt; z;</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;                    vertices.emplace_back(x, y, z);</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;                } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (type == <span class="stringliteral">&quot;vt&quot;</span>) {</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;                    <span class="keywordtype">float</span> u, v;</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;                    ss &gt;&gt; u &gt;&gt; v;</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;                    texCoords.emplace_back(u, v);</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;                } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (type == <span class="stringliteral">&quot;f&quot;</span>) {</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;                    std::string vertexInfo;</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;                    std::vector&lt;int&gt; vertexIndices;</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;                    std::vector&lt;int&gt; textureIndices;</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160; </div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;                    <span class="keywordflow">while</span> (ss &gt;&gt; vertexInfo) {</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;                        <span class="keywordtype">size_t</span> pos1 = vertexInfo.find(<span class="charliteral">&#39;/&#39;</span>);</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;                        <span class="keywordtype">size_t</span> pos2 = vertexInfo.find(<span class="charliteral">&#39;/&#39;</span>, pos1 + 1);</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160; </div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;                        <span class="keywordtype">int</span> vertexIndex = std::stoi(vertexInfo.substr(0, pos1)) - 1;</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;                        vertexIndices.push_back(vertexIndex);</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160; </div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                        <span class="keywordflow">if</span> (pos1 != std::string::npos &amp;&amp; pos1 + 1 != pos2) {</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;                            <span class="keywordtype">int</span> textureIndex = std::stoi(vertexInfo.substr(pos1 + 1, pos2 - pos1 - 1)) - 1;</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;                            textureIndices.push_back(textureIndex);</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;                        }</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;                    }</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;                    <span class="keywordflow">if</span> (vertexIndices.size() &gt;= 3) {</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;                        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; vertexIndices.size() - 2; i++) {</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;                            triangles.push_back(std::make_shared&lt;Triangle&gt;(</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;                                vertices[vertexIndices[0]], vertices[vertexIndices[i + 1]], vertices[vertexIndices[i + 2]],</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;                                texCoords[textureIndices[0]], texCoords[textureIndices[i + 1]], texCoords[textureIndices[i + 2]]</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                            ));</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;                            triangles.back()-&gt;setMaterial(material);</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;                        }</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;                    }</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;                }</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;            }</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160; </div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;            <a class="code" href="classVec3.html">Vec3</a> position(obj.position.x, obj.position.y, obj.position.z);</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;            <a class="code" href="classVec3.html">Vec3</a> rotation(obj.rotation.x, obj.rotation.y, obj.rotation.z);</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;            <a class="code" href="classVec3.html">Vec3</a> scale(obj.scale.x, obj.scale.y, obj.scale.z);</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160; </div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;            file.close();</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;            <a class="code" href="classMesh.html">Mesh</a> mesh(triangles, position, rotation, scale);</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;            mesh.transformVertices();</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;            std::shared_ptr&lt;IHitable&gt; meshPtr = std::make_shared&lt;Mesh&gt;(mesh);</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;            <a class="code" href="classSceneBuilder.html#a6b7126dbf0ea58e9144913bce3f2c822">scene</a>.<a class="code" href="classScene.html#aae7e47b6a0986b2e1a9a74102dc77fd3">addObject</a>(std::move(meshPtr));</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        }</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    } <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception&amp; e) {</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        <span class="keywordflow">throw</span> <a class="code" href="classException.html">Exception</a>(<span class="stringliteral">&quot;Error creating mesh objects: &quot;</span> + std::string(e.what()), <a class="code" href="Exception_8hpp.html#a221b779e6bb7b8d40677d7642bfefac5a43eedd8685eb86592022f8da962e3474">Level::MIDDLE</a>);</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    }</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;}</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;            std::vector&lt;Vec3&gt; vertices;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;            std::vector&lt;std::shared_ptr&lt;IHitable&gt;&gt; triangles;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;            std::string line;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            std::vector&lt;Vec2&gt; texCoords;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160; </div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;            <span class="keywordflow">while</span> (std::getline(file, line)) {</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;                std::stringstream ss(line);</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;                std::string type;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;                ss &gt;&gt; type;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;                <span class="keywordflow">if</span> (type == <span class="stringliteral">&quot;v&quot;</span>) {</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;                    <span class="keywordtype">float</span> x, y, z;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;                    ss &gt;&gt; x &gt;&gt; y &gt;&gt; z;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;                    vertices.emplace_back(x, y, z);</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;                } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (type == <span class="stringliteral">&quot;vt&quot;</span>) {</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;                    <span class="keywordtype">float</span> u, v;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;                    ss &gt;&gt; u &gt;&gt; v;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;                    texCoords.emplace_back(u, v);</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;                } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (type == <span class="stringliteral">&quot;f&quot;</span>) {</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;                    std::string vertexInfo;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;                    std::vector&lt;int&gt; vertexIndices;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;                    std::vector&lt;int&gt; textureIndices;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160; </div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;                    <span class="keywordflow">while</span> (ss &gt;&gt; vertexInfo) {</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;                        <span class="keywordtype">size_t</span> pos1 = vertexInfo.find(<span class="charliteral">&#39;/&#39;</span>);</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                        <span class="keywordtype">size_t</span> pos2 = vertexInfo.find(<span class="charliteral">&#39;/&#39;</span>, pos1 + 1);</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160; </div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;                        <span class="keywordtype">int</span> vertexIndex = std::stoi(vertexInfo.substr(0, pos1)) - 1;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;                        vertexIndices.push_back(vertexIndex);</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160; </div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;                        <span class="keywordflow">if</span> (pos1 != std::string::npos &amp;&amp; pos1 + 1 != pos2) {</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;                            <span class="keywordtype">int</span> textureIndex = std::stoi(vertexInfo.substr(pos1 + 1, pos2 - pos1 - 1)) - 1;</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;                            textureIndices.push_back(textureIndex);</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;                        }</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;                    }</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                    <span class="keywordflow">if</span> (vertexIndices.size() &gt;= 3) {</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;                        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; vertexIndices.size() - 2; i++) {</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;                            triangles.push_back(std::make_shared&lt;Triangle&gt;(</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;                                vertices[vertexIndices[0]], vertices[vertexIndices[i + 1]], vertices[vertexIndices[i + 2]],</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;                                texCoords[textureIndices[0]], texCoords[textureIndices[i + 1]], texCoords[textureIndices[i + 2]]</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;                            ));</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;                            triangles.back()-&gt;setMaterial(material);</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;                        }</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;                    }</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;                }</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;            }</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160; </div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;            <a class="code" href="classVec3.html">Vec3</a> position(obj.position.x, obj.position.y, obj.position.z);</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;            <a class="code" href="classVec3.html">Vec3</a> rotation(obj.rotation.x, obj.rotation.y, obj.rotation.z);</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;            <a class="code" href="classVec3.html">Vec3</a> scale(obj.scale.x, obj.scale.y, obj.scale.z);</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160; </div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;            file.close();</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;            <a class="code" href="classMesh.html">Mesh</a> mesh(triangles, position, rotation, scale);</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;            mesh.transformVertices();</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;            std::shared_ptr&lt;IHitable&gt; meshPtr = std::make_shared&lt;Mesh&gt;(mesh);</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;            <a class="code" href="classSceneBuilder.html#a6b7126dbf0ea58e9144913bce3f2c822">scene</a>.<a class="code" href="classScene.html#aae7e47b6a0986b2e1a9a74102dc77fd3">addObject</a>(std::move(meshPtr));</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        }</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    } <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception&amp; e) {</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        <span class="keywordflow">throw</span> <a class="code" href="classException.html">Exception</a>(<span class="stringliteral">&quot;Error creating mesh objects: &quot;</span> + std::string(e.what()), <a class="code" href="Exception_8hpp.html#a221b779e6bb7b8d40677d7642bfefac5a43eedd8685eb86592022f8da962e3474">Level::MIDDLE</a>);</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    }</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;}</div>
 <div class="ttc" id="aException_8hpp_html_a221b779e6bb7b8d40677d7642bfefac5a41bc94cbd8eebea13ce0491b2ac11b88"><div class="ttname"><a href="Exception_8hpp.html#a221b779e6bb7b8d40677d7642bfefac5a41bc94cbd8eebea13ce0491b2ac11b88">Level::LOW</a></div><div class="ttdeci">@ LOW</div></div>
-<div class="ttc" id="aclassMesh_html"><div class="ttname"><a href="classMesh.html">Mesh</a></div><div class="ttdef"><b>Definition:</b> <a href="Mesh_8hpp_source.html#l00013">Mesh.hpp:13</a></div></div>
-<div class="ttc" id="aclassScene_html_aae7e47b6a0986b2e1a9a74102dc77fd3"><div class="ttname"><a href="classScene.html#aae7e47b6a0986b2e1a9a74102dc77fd3">Scene::addObject</a></div><div class="ttdeci">void addObject(std::shared_ptr&lt; IHitable &gt; obj)</div><div class="ttdef"><b>Definition:</b> <a href="Scene_8cpp_source.html#l00034">Scene.cpp:34</a></div></div>
+<div class="ttc" id="aclassMesh_html"><div class="ttname"><a href="classMesh.html">Mesh</a></div><div class="ttdoc">Class for handling meshes.</div><div class="ttdef"><b>Definition:</b> <a href="Mesh_8hpp_source.html#l00023">Mesh.hpp:23</a></div></div>
+<div class="ttc" id="aclassScene_html_aae7e47b6a0986b2e1a9a74102dc77fd3"><div class="ttname"><a href="classScene.html#aae7e47b6a0986b2e1a9a74102dc77fd3">Scene::addObject</a></div><div class="ttdeci">void addObject(std::shared_ptr&lt; IHitable &gt; obj)</div><div class="ttdoc">Add an object to the scene.</div><div class="ttdef"><b>Definition:</b> <a href="Scene_8cpp_source.html#l00039">Scene.cpp:39</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="classScene.html#aae7e47b6a0986b2e1a9a74102dc77fd3">Scene::addObject()</a>, <a class="el" href="Exception_8hpp.html#a221b779e6bb7b8d40677d7642bfefac5a41bc94cbd8eebea13ce0491b2ac11b88">LOW</a>, <a class="el" href="Exception_8hpp.html#a221b779e6bb7b8d40677d7642bfefac5a43eedd8685eb86592022f8da962e3474">MIDDLE</a>, <a class="el" href="classSceneBuilder.html#a6b7126dbf0ea58e9144913bce3f2c822">scene</a>, and <a class="el" href="classMesh.html#acfa7b7131185af02743f0e0794a75e70">Mesh::transformVertices()</a>.</p>
 
@@ -455,9 +492,9 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSceneBuilder_a5cdf7416f99d5b730fe72177fc4c68ea_cgraph.png" border="0" usemap="#aclassSceneBuilder_a5cdf7416f99d5b730fe72177fc4c68ea_cgraph" alt=""/></div>
 <map name="aclassSceneBuilder_a5cdf7416f99d5b730fe72177fc4c68ea_cgraph" id="aclassSceneBuilder_a5cdf7416f99d5b730fe72177fc4c68ea_cgraph">
-<area shape="rect" title=" " alt="" coords="5,23,180,65"/>
-<area shape="rect" href="classScene.html#aae7e47b6a0986b2e1a9a74102dc77fd3" title=" " alt="" coords="247,5,373,32"/>
-<area shape="rect" href="classMesh.html#acfa7b7131185af02743f0e0794a75e70" title=" " alt="" coords="228,56,392,83"/>
+<area shape="rect" title="Create Mesh objects in the scene." alt="" coords="5,23,180,65"/>
+<area shape="rect" href="classScene.html#aae7e47b6a0986b2e1a9a74102dc77fd3" title="Add an object to the scene." alt="" coords="247,5,373,32"/>
+<area shape="rect" href="classMesh.html#acfa7b7131185af02743f0e0794a75e70" title="Transform the triangle inside the mesh based on the values given." alt="" coords="228,56,392,83"/>
 </map>
 </div>
 <div class="dynheader">
@@ -465,9 +502,9 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSceneBuilder_a5cdf7416f99d5b730fe72177fc4c68ea_icgraph.png" border="0" usemap="#aclassSceneBuilder_a5cdf7416f99d5b730fe72177fc4c68ea_icgraph" alt=""/></div>
 <map name="aclassSceneBuilder_a5cdf7416f99d5b730fe72177fc4c68ea_icgraph" id="aclassSceneBuilder_a5cdf7416f99d5b730fe72177fc4c68ea_icgraph">
-<area shape="rect" title=" " alt="" coords="488,23,663,65"/>
-<area shape="rect" href="classCore.html#a8c45134f4e917fb1e2aa2848697f376f" title=" " alt="" coords="289,31,440,57"/>
-<area shape="rect" href="classCore.html#afdfd60c50da96c795184b83678195724" title=" " alt="" coords="104,5,241,32"/>
+<area shape="rect" title="Create Mesh objects in the scene." alt="" coords="488,23,663,65"/>
+<area shape="rect" href="classCore.html#a8c45134f4e917fb1e2aa2848697f376f" title="Function to assemble the scene." alt="" coords="289,31,440,57"/>
+<area shape="rect" href="classCore.html#afdfd60c50da96c795184b83678195724" title="Function to generate the PPM file." alt="" coords="104,5,241,32"/>
 <area shape="rect" href="Main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,31,56,57"/>
 </map>
 </div>
@@ -498,45 +535,54 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="classIBuilder.html#a2332b135e13306ad3a96bf110370ab12">IBuilder</a>.</p>
+<p>Create primitive objects in the scene. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">primitives</td><td>A vector of <a class="el" href="structPrimitive.html" title="Structure to store primitives.">Primitive</a> objects to be added to the scene. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>This function does not return a value but populates the scene with primitives. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="SceneBuilder_8cpp_source.html#l00091">91</a> of file <a class="el" href="SceneBuilder_8cpp_source.html">SceneBuilder.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;{</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordflow">try</span> {</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; prim : primitives) {</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            <a class="code" href="classVec3.html">Vec3</a> materialVec(prim.material.vec.x, prim.material.vec.y, prim.material.vec.z);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            std::shared_ptr&lt;IMaterial&gt; material;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        </div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            <span class="keywordflow">if</span> (prim.material.type == <span class="stringliteral">&quot;metal&quot;</span>) {</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                material = std::make_shared&lt;Metal&gt;(materialVec, prim.material.fuzz);</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (prim.material.type == <span class="stringliteral">&quot;lambertian&quot;</span>) {</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                material = std::make_shared&lt;Lambertian&gt;(materialVec);</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (prim.material.type == <span class="stringliteral">&quot;dielectric&quot;</span>) {</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                material = std::make_shared&lt;Dielectric&gt;(prim.material.ref_idx);</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            }</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            <span class="comment">/* Add effect */</span></div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            <span class="keywordflow">if</span> (!prim.effect.type.empty() &amp;&amp; prim.effect.type == <span class="stringliteral">&quot;tint&quot;</span>) {</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                material = std::make_shared&lt;TintedMaterial&gt;(material, <a class="code" href="classVec3.html">Vec3</a>(prim.effect.color.x, prim.effect.color.y, prim.effect.color.z));</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            }</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            <span class="keywordflow">if</span> (prim.type == <span class="stringliteral">&quot;sphere&quot;</span>) {</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                <a class="code" href="classVec3.html">Vec3</a> center(prim.points[0].x, prim.points[0].y, prim.points[0].z);</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                <span class="keywordtype">float</span> radius = prim.points[1].x;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                std::shared_ptr&lt;IHitable&gt; <span class="keywordtype">object</span> = std::make_shared&lt;Sphere&gt;(center, radius);</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                <span class="keywordtype">object</span>-&gt;setMaterial(material);</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                <a class="code" href="classSceneBuilder.html#a6b7126dbf0ea58e9144913bce3f2c822">scene</a>.<a class="code" href="classScene.html#aae7e47b6a0986b2e1a9a74102dc77fd3">addObject</a>(std::move(<span class="keywordtype">object</span>));</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (prim.type == <span class="stringliteral">&quot;plane&quot;</span>) {</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                <a class="code" href="classVec3.html">Vec3</a> point1(prim.points[0].x, prim.points[0].y, prim.points[0].z);</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                <a class="code" href="classVec3.html">Vec3</a> point2(prim.points[1].x, prim.points[1].y, prim.points[1].z);</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                std::shared_ptr&lt;IHitable&gt; <span class="keywordtype">object</span> = std::make_shared&lt;Plane&gt;(point1, point2);</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                <span class="keywordtype">object</span>-&gt;setMaterial(material);</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                <a class="code" href="classSceneBuilder.html#a6b7126dbf0ea58e9144913bce3f2c822">scene</a>.<a class="code" href="classScene.html#aae7e47b6a0986b2e1a9a74102dc77fd3">addObject</a>(<span class="keywordtype">object</span>);</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            }</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        }</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    } <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception&amp; e) {</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <span class="keywordflow">throw</span> <a class="code" href="classException.html">Exception</a>(<span class="stringliteral">&quot;Error creating primitives: &quot;</span> + std::string(e.what()), <a class="code" href="Exception_8hpp.html#a221b779e6bb7b8d40677d7642bfefac5a43eedd8685eb86592022f8da962e3474">Level::MIDDLE</a>);</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    }</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;}</div>
+<p>Implements <a class="el" href="classIBuilder.html#a3cb75d67f26ce20abc3ce9b4761dc5b8">IBuilder</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="SceneBuilder_8cpp_source.html#l00096">96</a> of file <a class="el" href="SceneBuilder_8cpp_source.html">SceneBuilder.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;{</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordflow">try</span> {</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; prim : primitives) {</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            <a class="code" href="classVec3.html">Vec3</a> materialVec(prim.material.vec.x, prim.material.vec.y, prim.material.vec.z);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            std::shared_ptr&lt;IMaterial&gt; material;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            <span class="keywordflow">if</span> (prim.material.type == <span class="stringliteral">&quot;metal&quot;</span>) {</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                material = std::make_shared&lt;Metal&gt;(materialVec, prim.material.fuzz);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (prim.material.type == <span class="stringliteral">&quot;lambertian&quot;</span>) {</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                material = std::make_shared&lt;Lambertian&gt;(materialVec);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (prim.material.type == <span class="stringliteral">&quot;dielectric&quot;</span>) {</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                material = std::make_shared&lt;Dielectric&gt;(prim.material.ref_idx);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            }</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            <span class="comment">/* Add effect */</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            <span class="keywordflow">if</span> (!prim.effect.type.empty() &amp;&amp; prim.effect.type == <span class="stringliteral">&quot;tint&quot;</span>) {</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                material = std::make_shared&lt;TintedMaterial&gt;(material, <a class="code" href="classVec3.html">Vec3</a>(prim.effect.color.x, prim.effect.color.y, prim.effect.color.z));</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            }</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            <span class="keywordflow">if</span> (prim.type == <span class="stringliteral">&quot;sphere&quot;</span>) {</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                <a class="code" href="classVec3.html">Vec3</a> center(prim.points[0].x, prim.points[0].y, prim.points[0].z);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                <span class="keywordtype">float</span> radius = prim.points[1].x;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                std::shared_ptr&lt;IHitable&gt; <span class="keywordtype">object</span> = std::make_shared&lt;Sphere&gt;(center, radius);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                <span class="keywordtype">object</span>-&gt;setMaterial(material);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                <a class="code" href="classSceneBuilder.html#a6b7126dbf0ea58e9144913bce3f2c822">scene</a>.<a class="code" href="classScene.html#aae7e47b6a0986b2e1a9a74102dc77fd3">addObject</a>(std::move(<span class="keywordtype">object</span>));</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (prim.type == <span class="stringliteral">&quot;plane&quot;</span>) {</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                <a class="code" href="classVec3.html">Vec3</a> point1(prim.points[0].x, prim.points[0].y, prim.points[0].z);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                <a class="code" href="classVec3.html">Vec3</a> point2(prim.points[1].x, prim.points[1].y, prim.points[1].z);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                std::shared_ptr&lt;IHitable&gt; <span class="keywordtype">object</span> = std::make_shared&lt;Plane&gt;(point1, point2);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                <span class="keywordtype">object</span>-&gt;setMaterial(material);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                <a class="code" href="classSceneBuilder.html#a6b7126dbf0ea58e9144913bce3f2c822">scene</a>.<a class="code" href="classScene.html#aae7e47b6a0986b2e1a9a74102dc77fd3">addObject</a>(<span class="keywordtype">object</span>);</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;            }</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        }</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    } <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception&amp; e) {</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        <span class="keywordflow">throw</span> <a class="code" href="classException.html">Exception</a>(<span class="stringliteral">&quot;Error creating primitives: &quot;</span> + std::string(e.what()), <a class="code" href="Exception_8hpp.html#a221b779e6bb7b8d40677d7642bfefac5a43eedd8685eb86592022f8da962e3474">Level::MIDDLE</a>);</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    }</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="classScene.html#aae7e47b6a0986b2e1a9a74102dc77fd3">Scene::addObject()</a>, <a class="el" href="Exception_8hpp.html#a221b779e6bb7b8d40677d7642bfefac5a43eedd8685eb86592022f8da962e3474">MIDDLE</a>, and <a class="el" href="classSceneBuilder.html#a6b7126dbf0ea58e9144913bce3f2c822">scene</a>.</p>
 
@@ -546,8 +592,8 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSceneBuilder_a14f770fe70c3ec71b0045207113d477d_cgraph.png" border="0" usemap="#aclassSceneBuilder_a14f770fe70c3ec71b0045207113d477d_cgraph" alt=""/></div>
 <map name="aclassSceneBuilder_a14f770fe70c3ec71b0045207113d477d_cgraph" id="aclassSceneBuilder_a14f770fe70c3ec71b0045207113d477d_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,207,32"/>
-<area shape="rect" href="classScene.html#aae7e47b6a0986b2e1a9a74102dc77fd3" title=" " alt="" coords="255,5,381,32"/>
+<area shape="rect" title="Create primitive objects in the scene." alt="" coords="5,5,207,32"/>
+<area shape="rect" href="classScene.html#aae7e47b6a0986b2e1a9a74102dc77fd3" title="Add an object to the scene." alt="" coords="255,5,381,32"/>
 </map>
 </div>
 <div class="dynheader">
@@ -555,9 +601,9 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSceneBuilder_a14f770fe70c3ec71b0045207113d477d_icgraph.png" border="0" usemap="#aclassSceneBuilder_a14f770fe70c3ec71b0045207113d477d_icgraph" alt=""/></div>
 <map name="aclassSceneBuilder_a14f770fe70c3ec71b0045207113d477d_icgraph" id="aclassSceneBuilder_a14f770fe70c3ec71b0045207113d477d_icgraph">
-<area shape="rect" title=" " alt="" coords="488,31,689,57"/>
-<area shape="rect" href="classCore.html#a8c45134f4e917fb1e2aa2848697f376f" title=" " alt="" coords="289,31,440,57"/>
-<area shape="rect" href="classCore.html#afdfd60c50da96c795184b83678195724" title=" " alt="" coords="104,5,241,32"/>
+<area shape="rect" title="Create primitive objects in the scene." alt="" coords="488,31,689,57"/>
+<area shape="rect" href="classCore.html#a8c45134f4e917fb1e2aa2848697f376f" title="Function to assemble the scene." alt="" coords="289,31,440,57"/>
+<area shape="rect" href="classCore.html#afdfd60c50da96c795184b83678195724" title="Function to generate the PPM file." alt="" coords="104,5,241,32"/>
 <area shape="rect" href="Main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,31,56,57"/>
 </map>
 </div>
@@ -587,12 +633,16 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Retrieve the constructed scene. </p>
+<dl class="section note"><dt>Note</dt><dd>This function does not require any parameters since it allow user to get informations. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to the constructed <a class="el" href="classScene.html" title="Class for representing a scene in the ray tracing application.">Scene</a>. </dd></dl>
+
 <p>Implements <a class="el" href="classIBuilder.html#a8559f87ac335270319687810863af672">IBuilder</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="SceneBuilder_8cpp_source.html#l00200">200</a> of file <a class="el" href="SceneBuilder_8cpp_source.html">SceneBuilder.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;{</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="classSceneBuilder.html#a6b7126dbf0ea58e9144913bce3f2c822">scene</a>;</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="SceneBuilder_8cpp_source.html#l00205">205</a> of file <a class="el" href="SceneBuilder_8cpp_source.html">SceneBuilder.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;{</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="classSceneBuilder.html#a6b7126dbf0ea58e9144913bce3f2c822">scene</a>;</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="classSceneBuilder.html#a6b7126dbf0ea58e9144913bce3f2c822">scene</a>.</p>
 
@@ -602,9 +652,9 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSceneBuilder_a10eb94ac2d1f997b95f00cdf7b04d522_icgraph.png" border="0" usemap="#aclassSceneBuilder_a10eb94ac2d1f997b95f00cdf7b04d522_icgraph" alt=""/></div>
 <map name="aclassSceneBuilder_a10eb94ac2d1f997b95f00cdf7b04d522_icgraph" id="aclassSceneBuilder_a10eb94ac2d1f997b95f00cdf7b04d522_icgraph">
-<area shape="rect" title=" " alt="" coords="488,31,651,57"/>
-<area shape="rect" href="classCore.html#a8c45134f4e917fb1e2aa2848697f376f" title=" " alt="" coords="289,31,440,57"/>
-<area shape="rect" href="classCore.html#afdfd60c50da96c795184b83678195724" title=" " alt="" coords="104,5,241,32"/>
+<area shape="rect" title="Retrieve the constructed scene." alt="" coords="488,31,651,57"/>
+<area shape="rect" href="classCore.html#a8c45134f4e917fb1e2aa2848697f376f" title="Function to assemble the scene." alt="" coords="289,31,440,57"/>
+<area shape="rect" href="classCore.html#afdfd60c50da96c795184b83678195724" title="Function to generate the PPM file." alt="" coords="104,5,241,32"/>
 <area shape="rect" href="Main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,31,56,57"/>
 </map>
 </div>
@@ -632,7 +682,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SceneBuilder_8hpp_source.html#l00026">26</a> of file <a class="el" href="SceneBuilder_8hpp_source.html">SceneBuilder.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SceneBuilder_8hpp_source.html#l00050">50</a> of file <a class="el" href="SceneBuilder_8hpp_source.html">SceneBuilder.hpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="classSceneBuilder.html#a858400b8fa979ff12e72cbb0924dacf8">createCamera()</a>, <a class="el" href="classSceneBuilder.html#adc5c6aa9cc749216e534c2c6254ed0ec">createLight()</a>, <a class="el" href="classSceneBuilder.html#a5cdf7416f99d5b730fe72177fc4c68ea">createMeshFromObj()</a>, <a class="el" href="classSceneBuilder.html#a14f770fe70c3ec71b0045207113d477d">createPrimitives()</a>, and <a class="el" href="classSceneBuilder.html#a10eb94ac2d1f997b95f00cdf7b04d522">getScene()</a>.</p>
 

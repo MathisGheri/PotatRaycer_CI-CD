@@ -1,4 +1,4 @@
 <map id="schlick" name="schlick">
-<area shape="rect" id="node1" title=" " alt="" coords="179,5,241,32"/>
-<area shape="rect" id="node2" href="$classDielectric.html#a4709f41e9fa6418de8e6576dec8914c6" title=" " alt="" coords="5,5,131,32"/>
+<area shape="rect" id="node1" title="Compute the Schlick approximation for reflectance." alt="" coords="179,5,241,32"/>
+<area shape="rect" id="node2" href="$classDielectric.html#a4709f41e9fa6418de8e6576dec8914c6" title="Function to scatter the ray." alt="" coords="5,5,131,32"/>
 </map>

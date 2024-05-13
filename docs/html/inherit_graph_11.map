@@ -1,4 +1,10 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classIObserver.html" title=" " alt="" coords="5,5,84,32"/>
-<area shape="rect" id="node2" href="$classCompute.html" title=" " alt="" coords="132,5,207,32"/>
+<area shape="rect" id="node1" href="$classIMaterial.html" title="Class used to create the Material." alt="" coords="5,157,77,184"/>
+<area shape="rect" id="node2" href="$classDielectric.html" title="Class used to create the Dielectric." alt="" coords="148,5,225,32"/>
+<area shape="rect" id="node3" href="$classEmissiveMaterial.html" title="Class used to decorate the light in the scene." alt="" coords="125,56,248,83"/>
+<area shape="rect" id="node4" href="$classLambertian.html" title="Class used to create the Lambertian." alt="" coords="143,107,230,133"/>
+<area shape="rect" id="node5" href="$classLightTexture.html" title="Class used to create the LightTexture." alt="" coords="140,157,233,184"/>
+<area shape="rect" id="node6" href="$classMetal.html" title="Class used to create a Metal." alt="" coords="159,208,214,235"/>
+<area shape="rect" id="node7" href="$classTexture.html" title="Class used to create a Texture." alt="" coords="154,259,219,285"/>
+<area shape="rect" id="node8" href="$classTintedMaterial.html" title="Class used to tint the material." alt="" coords="135,309,239,336"/>
 </map>

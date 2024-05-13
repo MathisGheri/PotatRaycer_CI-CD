@@ -1,4 +1,4 @@
 <map id="Plane" name="Plane">
-<area shape="rect" id="node1" title=" " alt="" coords="11,80,66,107"/>
-<area shape="rect" id="node2" href="$classIHitable.html" title=" " alt="" coords="5,5,72,32"/>
+<area shape="rect" id="node1" title="Class for handling planes." alt="" coords="11,80,66,107"/>
+<area shape="rect" id="node2" href="$classIHitable.html" title="Interface for objects that can be hit by rays." alt="" coords="5,5,72,32"/>
 </map>

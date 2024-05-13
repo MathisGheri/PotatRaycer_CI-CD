@@ -1,6 +1,6 @@
 <map id="src/Observer/FileWatcher.hpp" name="src/Observer/FileWatcher.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="254,5,449,32"/>
-<area shape="rect" id="node2" href="$IObserver_8hpp.html" title=" " alt="" coords="299,80,403,107"/>
+<area shape="rect" id="node1" title="Class for watching changes in configuration files." alt="" coords="254,5,449,32"/>
+<area shape="rect" id="node2" href="$IObserver_8hpp.html" title="Interface for Observers used to monitor changes in configuration files." alt="" coords="299,80,403,107"/>
 <area shape="rect" id="node3" title=" " alt="" coords="5,155,97,181"/>
 <area shape="rect" id="node4" title=" " alt="" coords="121,155,189,181"/>
 <area shape="rect" id="node5" title=" " alt="" coords="214,155,307,181"/>

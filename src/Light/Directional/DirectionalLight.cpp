@@ -5,6 +5,11 @@
 ** DirectionalLight
 */
 
+/**
+* @file DirectionalLight.cpp
+* @brief File for the DirectionalLight class. 
+*/
+
 #include "DirectionalLight.hpp"
 
 DirectionalLight::~DirectionalLight()

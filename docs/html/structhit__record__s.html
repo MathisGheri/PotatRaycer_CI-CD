@@ -71,34 +71,44 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Structure for storing hit record information.  
+ <a href="structhit__record__s.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="struct_8h_source.html">struct.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for hit_record_s:</div>
 <div class="dyncontent">
 <div class="center"><img src="structhit__record__s__coll__graph.png" border="0" usemap="#ahit__record__s_coll__map" alt="Collaboration graph"/></div>
 <map name="ahit__record__s_coll__map" id="ahit__record__s_coll__map">
-<area shape="rect" title=" " alt="" coords="21,109,115,136"/>
-<area shape="rect" href="classVec2.html" title=" " alt="" coords="5,5,56,32"/>
-<area shape="rect" href="classVec3.html" title=" " alt="" coords="80,5,131,32"/>
+<area shape="rect" title="Structure for storing hit record information." alt="" coords="21,109,115,136"/>
+<area shape="rect" href="classVec2.html" title="Class for representing a 2D vector." alt="" coords="5,5,56,32"/>
+<area shape="rect" href="classVec3.html" title="Class for representing a 3D vector." alt="" coords="80,5,131,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:acd8ec618acd0577e2cc1efdd997501ed"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structhit__record__s.html#acd8ec618acd0577e2cc1efdd997501ed">t</a></td></tr>
+<tr class="memdesc:acd8ec618acd0577e2cc1efdd997501ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">The parameter value at which the intersection occurs.  <a href="structhit__record__s.html#acd8ec618acd0577e2cc1efdd997501ed">More...</a><br /></td></tr>
 <tr class="separator:acd8ec618acd0577e2cc1efdd997501ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac284cd2782011cb2e6e7197ab607e1f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVec3.html">Vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structhit__record__s.html#aac284cd2782011cb2e6e7197ab607e1f">p</a></td></tr>
+<tr class="memdesc:aac284cd2782011cb2e6e7197ab607e1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The intersection point in 3D space.  <a href="structhit__record__s.html#aac284cd2782011cb2e6e7197ab607e1f">More...</a><br /></td></tr>
 <tr class="separator:aac284cd2782011cb2e6e7197ab607e1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae99ba2937e47036237f994111276cb1d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVec3.html">Vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structhit__record__s.html#ae99ba2937e47036237f994111276cb1d">normal</a></td></tr>
+<tr class="memdesc:ae99ba2937e47036237f994111276cb1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The normal vector at the intersection point.  <a href="structhit__record__s.html#ae99ba2937e47036237f994111276cb1d">More...</a><br /></td></tr>
 <tr class="separator:ae99ba2937e47036237f994111276cb1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06efdaa92a3f602d5205cc4e7469d0d7"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classIMaterial.html">IMaterial</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structhit__record__s.html#a06efdaa92a3f602d5205cc4e7469d0d7">mat_ptr</a></td></tr>
+<tr class="memdesc:a06efdaa92a3f602d5205cc4e7469d0d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the material of the intersected object.  <a href="structhit__record__s.html#a06efdaa92a3f602d5205cc4e7469d0d7">More...</a><br /></td></tr>
 <tr class="separator:a06efdaa92a3f602d5205cc4e7469d0d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2704e9b96217e632318dd7023fc2a465"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVec2.html">Vec2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structhit__record__s.html#a2704e9b96217e632318dd7023fc2a465">uv</a></td></tr>
+<tr class="memdesc:a2704e9b96217e632318dd7023fc2a465"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classTexture.html" title="Class used to create a Texture.">Texture</a> coordinates at the intersection point.  <a href="structhit__record__s.html#a2704e9b96217e632318dd7023fc2a465">More...</a><br /></td></tr>
 <tr class="separator:a2704e9b96217e632318dd7023fc2a465"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="struct_8h_source.html#l00014">14</a> of file <a class="el" href="struct_8h_source.html">struct.h</a>.</p>
+<div class="textblock"><p>Structure for storing hit record information. </p>
+<p>The <a class="el" href="structhit__record__t.html" title="Structure for storing hit record information.">hit_record_t</a> structure is used to store information about a ray-object intersection. It includes the intersection point, the normal at the intersection, the material of the intersected object, and other relevant data. </p>
+
+<p class="definition">Definition at line <a class="el" href="struct_8h_source.html#l00035">35</a> of file <a class="el" href="struct_8h_source.html">struct.h</a>.</p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
 <a id="a06efdaa92a3f602d5205cc4e7469d0d7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a06efdaa92a3f602d5205cc4e7469d0d7">&#9670;&nbsp;</a></span>mat_ptr</h2>
@@ -112,9 +122,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="struct_8h_source.html#l00018">18</a> of file <a class="el" href="struct_8h_source.html">struct.h</a>.</p>
+<p>Pointer to the material of the intersected object. </p>
 
-<p class="reference">Referenced by <a class="el" href="classCompute.html#a919a19e2c73ecbe847b9c9b50c1c6ed2">Compute::colorloop()</a>, <a class="el" href="classCircle.html#aca14c9f3e92ffb012ce34d2a3c05c8b0">Circle::hit()</a>, <a class="el" href="classSphere.html#ada19fc64131c5549dc6edffe4e4123ed">Sphere::hit()</a>, <a class="el" href="classTriangle.html#ab80d0e93bb39edbc3c667596329fbeb3">Triangle::hit()</a>, and <a class="el" href="classPlane.html#afa5a29728b158729621e08a673dd9d26">Plane::hit()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="struct_8h_source.html#l00039">39</a> of file <a class="el" href="struct_8h_source.html">struct.h</a>.</p>
 
 </div>
 </div>
@@ -130,9 +140,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="struct_8h_source.html#l00017">17</a> of file <a class="el" href="struct_8h_source.html">struct.h</a>.</p>
+<p>The normal vector at the intersection point. </p>
 
-<p class="reference">Referenced by <a class="el" href="classCircle.html#aca14c9f3e92ffb012ce34d2a3c05c8b0">Circle::hit()</a>, <a class="el" href="classSphere.html#ada19fc64131c5549dc6edffe4e4123ed">Sphere::hit()</a>, <a class="el" href="classTriangle.html#ab80d0e93bb39edbc3c667596329fbeb3">Triangle::hit()</a>, <a class="el" href="classPlane.html#afa5a29728b158729621e08a673dd9d26">Plane::hit()</a>, <a class="el" href="classTexture.html#a36bbc7f17266cbba5affd340d8af259f">Texture::scatter()</a>, <a class="el" href="classDielectric.html#a4709f41e9fa6418de8e6576dec8914c6">Dielectric::scatter()</a>, <a class="el" href="classLambertian.html#abac889cfb58f70314a42a56792e91a66">Lambertian::scatter()</a>, <a class="el" href="classLightTexture.html#a229b82507c212c0791f8767eff04bab1">LightTexture::scatter()</a>, and <a class="el" href="classMetal.html#a7ce21d46a783e1b4af05ee1d44a06f8e">Metal::scatter()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="struct_8h_source.html#l00038">38</a> of file <a class="el" href="struct_8h_source.html">struct.h</a>.</p>
 
 </div>
 </div>
@@ -148,9 +158,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="struct_8h_source.html#l00016">16</a> of file <a class="el" href="struct_8h_source.html">struct.h</a>.</p>
+<p>The intersection point in 3D space. </p>
 
-<p class="reference">Referenced by <a class="el" href="classCircle.html#aca14c9f3e92ffb012ce34d2a3c05c8b0">Circle::hit()</a>, <a class="el" href="classSphere.html#ada19fc64131c5549dc6edffe4e4123ed">Sphere::hit()</a>, <a class="el" href="classTriangle.html#ab80d0e93bb39edbc3c667596329fbeb3">Triangle::hit()</a>, <a class="el" href="classPlane.html#afa5a29728b158729621e08a673dd9d26">Plane::hit()</a>, <a class="el" href="classTexture.html#a36bbc7f17266cbba5affd340d8af259f">Texture::scatter()</a>, <a class="el" href="classDielectric.html#a4709f41e9fa6418de8e6576dec8914c6">Dielectric::scatter()</a>, <a class="el" href="classLambertian.html#abac889cfb58f70314a42a56792e91a66">Lambertian::scatter()</a>, <a class="el" href="classLightTexture.html#a229b82507c212c0791f8767eff04bab1">LightTexture::scatter()</a>, and <a class="el" href="classMetal.html#a7ce21d46a783e1b4af05ee1d44a06f8e">Metal::scatter()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="struct_8h_source.html#l00037">37</a> of file <a class="el" href="struct_8h_source.html">struct.h</a>.</p>
 
 </div>
 </div>
@@ -166,9 +176,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="struct_8h_source.html#l00015">15</a> of file <a class="el" href="struct_8h_source.html">struct.h</a>.</p>
+<p>The parameter value at which the intersection occurs. </p>
 
-<p class="reference">Referenced by <a class="el" href="classCompute.html#a06be3416d4a01148ac034b2bf23a6dd1">Compute::hit()</a>, <a class="el" href="classCircle.html#aca14c9f3e92ffb012ce34d2a3c05c8b0">Circle::hit()</a>, <a class="el" href="classMesh.html#a8a0c7f567cb921e70c573e723b9ee6c5">Mesh::hit()</a>, <a class="el" href="classSphere.html#ada19fc64131c5549dc6edffe4e4123ed">Sphere::hit()</a>, <a class="el" href="classTriangle.html#ab80d0e93bb39edbc3c667596329fbeb3">Triangle::hit()</a>, <a class="el" href="classPlane.html#afa5a29728b158729621e08a673dd9d26">Plane::hit()</a>, <a class="el" href="classLambertian.html#a2ec0252498bf0e19fc361521615c587c">Lambertian::hit()</a>, <a class="el" href="classLightTexture.html#af2e152605f851a8e1210ca28f00704c9">LightTexture::hit()</a>, and <a class="el" href="classTexture.html#a64ad2ff4e2ac09dfc0c515d48c7488af">Texture::hit()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="struct_8h_source.html#l00036">36</a> of file <a class="el" href="struct_8h_source.html">struct.h</a>.</p>
 
 </div>
 </div>
@@ -184,9 +194,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="struct_8h_source.html#l00019">19</a> of file <a class="el" href="struct_8h_source.html">struct.h</a>.</p>
+<p><a class="el" href="classTexture.html" title="Class used to create a Texture.">Texture</a> coordinates at the intersection point. </p>
 
-<p class="reference">Referenced by <a class="el" href="classTriangle.html#ab80d0e93bb39edbc3c667596329fbeb3">Triangle::hit()</a>, and <a class="el" href="classTexture.html#a36bbc7f17266cbba5affd340d8af259f">Texture::scatter()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="struct_8h_source.html#l00040">40</a> of file <a class="el" href="struct_8h_source.html">struct.h</a>.</p>
 
 </div>
 </div>

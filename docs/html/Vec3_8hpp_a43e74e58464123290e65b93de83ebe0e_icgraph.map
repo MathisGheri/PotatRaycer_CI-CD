@@ -1,6 +1,6 @@
 <map id="reflect" name="reflect">
-<area shape="rect" id="node1" title=" " alt="" coords="179,56,237,83"/>
-<area shape="rect" id="node2" href="$classTexture.html#a36bbc7f17266cbba5affd340d8af259f" title=" " alt="" coords="11,5,125,32"/>
-<area shape="rect" id="node3" href="$classDielectric.html#a4709f41e9fa6418de8e6576dec8914c6" title=" " alt="" coords="5,56,131,83"/>
-<area shape="rect" id="node4" href="$classMetal.html#a7ce21d46a783e1b4af05ee1d44a06f8e" title=" " alt="" coords="17,107,119,133"/>
+<area shape="rect" id="node1" title="Reflect a vector off a surface with a given normal." alt="" coords="179,56,237,83"/>
+<area shape="rect" id="node2" href="$classTexture.html#a36bbc7f17266cbba5affd340d8af259f" title="Function to scatter the ray." alt="" coords="11,5,125,32"/>
+<area shape="rect" id="node3" href="$classDielectric.html#a4709f41e9fa6418de8e6576dec8914c6" title="Function to scatter the ray." alt="" coords="5,56,131,83"/>
+<area shape="rect" id="node4" href="$classMetal.html#a7ce21d46a783e1b4af05ee1d44a06f8e" title="Function to scatter the ray." alt="" coords="17,107,119,133"/>
 </map>

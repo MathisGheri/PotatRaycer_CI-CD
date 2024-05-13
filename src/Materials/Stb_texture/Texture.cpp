@@ -5,6 +5,11 @@
 ** Texture.cpp
 */
 
+/**
+* @file Texture.cpp
+* @brief File for the Texture class.
+*/
+
 #include "Texture.hpp"
 
 Vec3 Texture::sample(float u, float v) const

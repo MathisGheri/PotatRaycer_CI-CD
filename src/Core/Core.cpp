@@ -5,6 +5,11 @@
 ** Core
 */
 
+/**
+* @file Core.cpp
+* @brief Core class implementation.
+*/
+
 #include "Core.hpp"
 #include "SceneBuilder.hpp"
 #include "Parsing.hpp"

@@ -1,12 +1,12 @@
 <map id="src/Scene/Scene.cpp" name="src/Scene/Scene.cpp">
-<area shape="rect" id="node1" title=" " alt="" coords="396,5,543,32"/>
-<area shape="rect" id="node2" href="$Scene_8hpp.html" title=" " alt="" coords="530,80,614,107"/>
-<area shape="rect" id="node20" href="$SingletonLogger_8hpp.html" title=" " alt="" coords="455,379,595,405"/>
-<area shape="rect" id="node3" href="$ILight_8hpp.html" title=" " alt="" coords="405,229,483,256"/>
-<area shape="rect" id="node5" href="$include_8hpp.html" title=" " alt="" coords="548,528,636,555"/>
-<area shape="rect" id="node22" href="$Camera_8hpp.html" title=" " alt="" coords="525,155,619,181"/>
-<area shape="rect" id="node24" href="$IHitable_8hpp.html" title=" " alt="" coords="673,155,765,181"/>
-<area shape="rect" id="node4" href="$Vec3_8hpp.html" title=" " alt="" coords="578,304,654,331"/>
+<area shape="rect" id="node1" title="Class for handling the scene." alt="" coords="396,5,543,32"/>
+<area shape="rect" id="node2" href="$Scene_8hpp.html" title="Scene class header file." alt="" coords="530,80,614,107"/>
+<area shape="rect" id="node20" href="$SingletonLogger_8hpp.html" title="File for the SingletonLogger class." alt="" coords="455,379,595,405"/>
+<area shape="rect" id="node3" href="$ILight_8hpp.html" title="ILight class header file." alt="" coords="405,229,483,256"/>
+<area shape="rect" id="node5" href="$include_8hpp.html" title="Include all the libraries and headers needed." alt="" coords="548,528,636,555"/>
+<area shape="rect" id="node22" href="$Camera_8hpp.html" title="Header file for the Camera class." alt="" coords="525,155,619,181"/>
+<area shape="rect" id="node24" href="$IHitable_8hpp.html" title="IHitable interface header file." alt="" coords="673,155,765,181"/>
+<area shape="rect" id="node4" href="$Vec3_8hpp.html" title="Vec3 class header file." alt="" coords="578,304,654,331"/>
 <area shape="rect" id="node6" title=" " alt="" coords="5,603,77,629"/>
 <area shape="rect" id="node7" title=" " alt="" coords="102,603,165,629"/>
 <area shape="rect" id="node8" title=" " alt="" coords="189,603,254,629"/>
@@ -21,8 +21,8 @@
 <area shape="rect" id="node17" title=" " alt="" coords="955,603,1024,629"/>
 <area shape="rect" id="node18" title=" " alt="" coords="1049,603,1103,629"/>
 <area shape="rect" id="node19" title=" " alt="" coords="1127,603,1206,629"/>
-<area shape="rect" id="node21" href="$Logger_8hpp.html" title=" " alt="" coords="495,453,582,480"/>
-<area shape="rect" id="node23" href="$Ray_8hpp.html" title=" " alt="" coords="610,229,681,256"/>
-<area shape="rect" id="node25" href="$Vec2_8hpp.html" title=" " alt="" coords="763,304,839,331"/>
-<area shape="rect" id="node26" href="$struct_8h.html" title=" " alt="" coords="807,229,873,256"/>
+<area shape="rect" id="node21" href="$Logger_8hpp.html" title="File for the Logger class." alt="" coords="495,453,582,480"/>
+<area shape="rect" id="node23" href="$Ray_8hpp.html" title="Class for handling rays." alt="" coords="610,229,681,256"/>
+<area shape="rect" id="node25" href="$Vec2_8hpp.html" title="Vec2 class header file." alt="" coords="763,304,839,331"/>
+<area shape="rect" id="node26" href="$struct_8h.html" title="Struct for hit record." alt="" coords="807,229,873,256"/>
 </map>

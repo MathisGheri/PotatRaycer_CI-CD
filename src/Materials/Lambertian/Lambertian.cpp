@@ -5,6 +5,11 @@
 ** Lambertian
 */
 
+/**
+* @file Lambertian.cpp
+* @brief File for the Lambertian class.
+*/
+
 #include "Lambertian.hpp"
 #include "SingletonLogger.hpp"
 

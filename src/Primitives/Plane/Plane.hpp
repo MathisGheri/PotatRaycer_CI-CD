@@ -4,6 +4,12 @@
 ** File description:
 ** Plane
 */
+
+/**
+* @file Plane.hpp
+* @brief File for the Plane class.
+*/
+
 #pragma once
 
 #ifndef PLANE_HPP_
@@ -13,7 +19,12 @@
 #include "include.hpp"
 #include "struct.h"
 
-class Plane : public IHitable{
+/**
+* @class Plane
+* @brief Class for handling planes.
+*/
+
+class Plane : public IHitable {
     public:
         Plane(Vec3 p, Vec3 n);
         ~Plane();
@@ -21,9 +32,9 @@ class Plane : public IHitable{
         void setMaterial(std::shared_ptr<IMaterial> m);
         std::shared_ptr<IMaterial> getMaterial();
     private:
-        Vec3 point;
-        Vec3 normal;
-        std::shared_ptr<IMaterial> mat_ptr;
+        Vec3 point; ///< Point on the plane.
+        Vec3 normal; ///< Normal of the plane.
+        std::shared_ptr<IMaterial> mat_ptr; ///< Pointer to the material of the intersected object.
 };
 
 #endif //PLANE_HPP_

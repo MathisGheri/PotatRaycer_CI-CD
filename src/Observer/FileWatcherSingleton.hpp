@@ -5,17 +5,31 @@
 ** FileWatcherSingleton
 */
 
+/**
+* @file FileWatcherSingleton.hpp
+* @brief Singleton for the FileWatcher class.
+*/
+
 #ifndef FILEWATCHERSINGLETON_HPP_
 #define FILEWATCHERSINGLETON_HPP_
 
 #include "FileWatcher.hpp"
 
+/**
+* @class FileWatcherSingleton
+* @brief Singleton for the FileWatcher class.
+*/
+
 class FileWatcherSingleton {
     public:
         FileWatcherSingleton(const FileWatcherSingleton&) = delete;
         FileWatcherSingleton& operator=(const FileWatcherSingleton&) = delete;
-        static FileWatcher* getInstance();
 
+        /**
+        * @brief Get the instance of the singleton.
+        * @return The instance of the singleton.
+        */
+        static FileWatcher* getInstance();
         static void destroyInstance();
 
     private:

@@ -1,4 +1,4 @@
 <map id="reflect" name="reflect">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,64,32"/>
+<area shape="rect" id="node1" title="Reflect a vector off a surface with a given normal." alt="" coords="5,5,64,32"/>
 <area shape="rect" id="node2" href="$Vec3_8hpp.html#a45f8afb934d90c5445ad67d3b2156563" title=" " alt="" coords="112,5,152,32"/>
 </map>

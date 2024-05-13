@@ -5,6 +5,11 @@
 ** LightTexture
 */
 
+/**
+* @file LightTexture.cpp
+* @brief File for the LightTexture class. 
+*/
+
 #include "LightTexture.hpp"
 #include "SingletonLogger.hpp"
 

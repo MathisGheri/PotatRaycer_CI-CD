@@ -5,6 +5,11 @@
 ** AmbiantLight
 */
 
+/**
+* @file AmbiantLight.cpp
+* @brief File for the AmbiantLight class.
+*/
+
 #include "AmbiantLight.hpp"
 
 AmbiantLight::~AmbiantLight()

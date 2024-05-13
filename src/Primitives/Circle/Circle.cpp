@@ -1,3 +1,15 @@
+/*
+** EPITECH PROJECT, 2024
+** PotatRaycer_CI-CD
+** File description:
+** Circle
+*/
+
+/**
+* @file Circle.cpp
+* @brief File for the Circle class.
+*/
+
 #include "Circle.hpp"
 #include "SingletonLogger.hpp"
 

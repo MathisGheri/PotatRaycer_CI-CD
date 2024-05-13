@@ -5,6 +5,11 @@
 ** Mesh
 */
 
+/**
+* @file Mesh.cpp
+* @brief File for the Mesh class.
+*/
+
 #include "Mesh.hpp"
 #include <memory>
 #include "Triangle.hpp"

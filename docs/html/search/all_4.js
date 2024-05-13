@@ -6,9 +6,10 @@ var searchData=
   ['dielectric_71',['Dielectric',['../classDielectric.html',1,'Dielectric'],['../classDielectric.html#a04d2540e21be3247f2861ced18e0a611',1,'Dielectric::Dielectric()']]],
   ['dielectric_2ecpp_72',['Dielectric.cpp',['../Dielectric_8cpp.html',1,'']]],
   ['dielectric_2ehpp_73',['Dielectric.hpp',['../Dielectric_8hpp.html',1,'']]],
-  ['direction_74',['direction',['../classRay.html#a51f09a191b84f30d0e3891811b6513fc',1,'Ray']]],
-  ['directionallight_75',['DirectionalLight',['../classDirectionalLight.html',1,'DirectionalLight'],['../classDirectionalLight.html#a55af51e7b69dc805c63ea895e298b348',1,'DirectionalLight::DirectionalLight()']]],
-  ['directionallight_2ecpp_76',['DirectionalLight.cpp',['../DirectionalLight_8cpp.html',1,'']]],
-  ['directionallight_2ehpp_77',['DirectionalLight.hpp',['../DirectionalLight_8hpp.html',1,'']]],
-  ['dot_78',['dot',['../Vec3_8hpp.html#a45f8afb934d90c5445ad67d3b2156563',1,'Vec3.hpp']]]
+  ['dielectric_5fhpp_5f_74',['DIELECTRIC_HPP_',['../Dielectric_8hpp.html#ac9bacc4ea684b6cd12ad73782654fabc',1,'Dielectric.hpp']]],
+  ['direction_75',['direction',['../classRay.html#a51f09a191b84f30d0e3891811b6513fc',1,'Ray']]],
+  ['directionallight_76',['DirectionalLight',['../classDirectionalLight.html',1,'DirectionalLight'],['../classDirectionalLight.html#a55af51e7b69dc805c63ea895e298b348',1,'DirectionalLight::DirectionalLight()']]],
+  ['directionallight_2ecpp_77',['DirectionalLight.cpp',['../DirectionalLight_8cpp.html',1,'']]],
+  ['directionallight_2ehpp_78',['DirectionalLight.hpp',['../DirectionalLight_8hpp.html',1,'']]],
+  ['dot_79',['dot',['../Vec3_8hpp.html#a45f8afb934d90c5445ad67d3b2156563',1,'Vec3.hpp']]]
 ];

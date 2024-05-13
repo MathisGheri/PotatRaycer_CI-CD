@@ -5,6 +5,11 @@
 ** FileWatcherSingleton
 */
 
+/**
+* @file FileWatcherSingleton.cpp
+* @brief Singleton for the FileWatcher class.
+*/
+
 #include "FileWatcherSingleton.hpp"
 
 FileWatcher* FileWatcherSingleton::instance = nullptr;

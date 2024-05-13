@@ -5,6 +5,11 @@
 ** Dielectric
 */
 
+/**
+* @file Dielectric.cpp
+* @brief File for the Dielectric class.
+*/
+
 #include "Dielectric.hpp"
 #include "SingletonLogger.hpp"
 

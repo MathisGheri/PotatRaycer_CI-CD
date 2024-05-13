@@ -72,67 +72,92 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Class for representing a scene in the ray tracing application.  
+ <a href="classScene.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="Scene_8hpp_source.html">Scene.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for Scene:</div>
 <div class="dyncontent">
 <div class="center"><img src="classScene__coll__graph.png" border="0" usemap="#aScene_coll__map" alt="Collaboration graph"/></div>
 <map name="aScene_coll__map" id="aScene_coll__map">
-<area shape="rect" title=" " alt="" coords="10,272,69,299"/>
-<area shape="rect" href="classCamera.html" title=" " alt="" coords="5,183,73,209"/>
-<area shape="rect" href="classVec3.html" title=" " alt="" coords="14,5,65,32"/>
+<area shape="rect" title="Class for representing a scene in the ray tracing application." alt="" coords="10,272,69,299"/>
+<area shape="rect" href="classCamera.html" title="Class for creating a camera object in the scene." alt="" coords="5,183,73,209"/>
+<area shape="rect" href="classVec3.html" title="Class for representing a 3D vector." alt="" coords="14,5,65,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ad10176d75a9cc0da56626f682d083507"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScene.html#ad10176d75a9cc0da56626f682d083507">Scene</a> ()</td></tr>
+<tr class="memdesc:ad10176d75a9cc0da56626f682d083507"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor for <a class="el" href="classScene.html" title="Class for representing a scene in the ray tracing application.">Scene</a>.  <a href="classScene.html#ad10176d75a9cc0da56626f682d083507">More...</a><br /></td></tr>
 <tr class="separator:ad10176d75a9cc0da56626f682d083507"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b8cec2e32546713915f8c6303c951f1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScene.html#a3b8cec2e32546713915f8c6303c951f1">~Scene</a> ()</td></tr>
+<tr class="memdesc:a3b8cec2e32546713915f8c6303c951f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor for <a class="el" href="classScene.html" title="Class for representing a scene in the ray tracing application.">Scene</a>.  <a href="classScene.html#a3b8cec2e32546713915f8c6303c951f1">More...</a><br /></td></tr>
 <tr class="separator:a3b8cec2e32546713915f8c6303c951f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9557c7bd1e51350b064b6d0e7cfca456"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScene.html#a9557c7bd1e51350b064b6d0e7cfca456">setLight</a> (std::shared_ptr&lt; <a class="el" href="classILight.html">ILight</a> &gt; l)</td></tr>
+<tr class="memdesc:a9557c7bd1e51350b064b6d0e7cfca456"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the light for the scene.  <a href="classScene.html#a9557c7bd1e51350b064b6d0e7cfca456">More...</a><br /></td></tr>
 <tr class="separator:a9557c7bd1e51350b064b6d0e7cfca456"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86ac4dec0c92de6b1a2fb9f1ba6971e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScene.html#a86ac4dec0c92de6b1a2fb9f1ba6971e5">setCamera</a> (<a class="el" href="classCamera.html">Camera</a> c)</td></tr>
+<tr class="memdesc:a86ac4dec0c92de6b1a2fb9f1ba6971e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the camera for the scene.  <a href="classScene.html#a86ac4dec0c92de6b1a2fb9f1ba6971e5">More...</a><br /></td></tr>
 <tr class="separator:a86ac4dec0c92de6b1a2fb9f1ba6971e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae7e47b6a0986b2e1a9a74102dc77fd3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScene.html#aae7e47b6a0986b2e1a9a74102dc77fd3">addObject</a> (std::shared_ptr&lt; <a class="el" href="classIHitable.html">IHitable</a> &gt; obj)</td></tr>
+<tr class="memdesc:aae7e47b6a0986b2e1a9a74102dc77fd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add an object to the scene.  <a href="classScene.html#aae7e47b6a0986b2e1a9a74102dc77fd3">More...</a><br /></td></tr>
 <tr class="separator:aae7e47b6a0986b2e1a9a74102dc77fd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9beb0e1b0639b01b6dda991600f1b7c6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScene.html#a9beb0e1b0639b01b6dda991600f1b7c6">setConfigHeight</a> (float <a class="el" href="classScene.html#abecbbfa55f996c4f88b3abd99b286079">height</a>)</td></tr>
+<tr class="memdesc:a9beb0e1b0639b01b6dda991600f1b7c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the configuration height of the scene.  <a href="classScene.html#a9beb0e1b0639b01b6dda991600f1b7c6">More...</a><br /></td></tr>
 <tr class="separator:a9beb0e1b0639b01b6dda991600f1b7c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d986728a9c72c4ea939ab8167e09689"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScene.html#a3d986728a9c72c4ea939ab8167e09689">setConfigWidth</a> (float <a class="el" href="classScene.html#af2c29c5cf6ce204a5095121953723488">width</a>)</td></tr>
+<tr class="memdesc:a3d986728a9c72c4ea939ab8167e09689"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the configuration width of the scene.  <a href="classScene.html#a3d986728a9c72c4ea939ab8167e09689">More...</a><br /></td></tr>
 <tr class="separator:a3d986728a9c72c4ea939ab8167e09689"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad55540281b5005318ee162141b29b9ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScene.html#ad55540281b5005318ee162141b29b9ca">setConfigNs</a> (float <a class="el" href="classScene.html#af1f3e0ae4294a81c9408c3df47798c2c">ns</a>)</td></tr>
+<tr class="memdesc:ad55540281b5005318ee162141b29b9ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the configuration Ns value of the scene.  <a href="classScene.html#ad55540281b5005318ee162141b29b9ca">More...</a><br /></td></tr>
 <tr class="separator:ad55540281b5005318ee162141b29b9ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25d420e8d28c5ad73820690b30162626"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; std::shared_ptr&lt; <a class="el" href="classIHitable.html">IHitable</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScene.html#a25d420e8d28c5ad73820690b30162626">getObjects</a> (void) const</td></tr>
+<tr class="memdesc:a25d420e8d28c5ad73820690b30162626"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the objects in the scene.  <a href="classScene.html#a25d420e8d28c5ad73820690b30162626">More...</a><br /></td></tr>
 <tr class="separator:a25d420e8d28c5ad73820690b30162626"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a885e93db59c89e0bee1582c7810e396e"><td class="memItemLeft" align="right" valign="top">const std::shared_ptr&lt; <a class="el" href="classILight.html">ILight</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScene.html#a885e93db59c89e0bee1582c7810e396e">getLight</a> (void) const</td></tr>
+<tr class="memdesc:a885e93db59c89e0bee1582c7810e396e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the light in the scene.  <a href="classScene.html#a885e93db59c89e0bee1582c7810e396e">More...</a><br /></td></tr>
 <tr class="separator:a885e93db59c89e0bee1582c7810e396e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a053d245ecafdb8f605db2de342a31cbb"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classCamera.html">Camera</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScene.html#a053d245ecafdb8f605db2de342a31cbb">getCamera</a> (void) const</td></tr>
+<tr class="memdesc:a053d245ecafdb8f605db2de342a31cbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the camera in the scene.  <a href="classScene.html#a053d245ecafdb8f605db2de342a31cbb">More...</a><br /></td></tr>
 <tr class="separator:a053d245ecafdb8f605db2de342a31cbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a479d0a24bf2d84b7706643bbedaf8d0c"><td class="memItemLeft" align="right" valign="top">const float &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScene.html#a479d0a24bf2d84b7706643bbedaf8d0c">getHeight</a> (void) const</td></tr>
+<tr class="memdesc:a479d0a24bf2d84b7706643bbedaf8d0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the configuration height of the scene.  <a href="classScene.html#a479d0a24bf2d84b7706643bbedaf8d0c">More...</a><br /></td></tr>
 <tr class="separator:a479d0a24bf2d84b7706643bbedaf8d0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09ecae74b480b80dcbb481aa8843e4ed"><td class="memItemLeft" align="right" valign="top">const float &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScene.html#a09ecae74b480b80dcbb481aa8843e4ed">getWidth</a> (void) const</td></tr>
+<tr class="memdesc:a09ecae74b480b80dcbb481aa8843e4ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the configuration width of the scene.  <a href="classScene.html#a09ecae74b480b80dcbb481aa8843e4ed">More...</a><br /></td></tr>
 <tr class="separator:a09ecae74b480b80dcbb481aa8843e4ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1284108b924aa36975911459b4ef7a85"><td class="memItemLeft" align="right" valign="top">const float &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScene.html#a1284108b924aa36975911459b4ef7a85">getNs</a> (void) const</td></tr>
+<tr class="memdesc:a1284108b924aa36975911459b4ef7a85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the configuration Ns value of the scene.  <a href="classScene.html#a1284108b924aa36975911459b4ef7a85">More...</a><br /></td></tr>
 <tr class="separator:a1284108b924aa36975911459b4ef7a85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a242b72ba68e09af517c8003262c1ccf9"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classILight.html">ILight</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScene.html#a242b72ba68e09af517c8003262c1ccf9">light</a></td></tr>
+<tr class="memdesc:a242b72ba68e09af517c8003262c1ccf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shared pointer to the light in the scene.  <a href="classScene.html#a242b72ba68e09af517c8003262c1ccf9">More...</a><br /></td></tr>
 <tr class="separator:a242b72ba68e09af517c8003262c1ccf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afed13ec4ba2d7ab75b273d507911b498"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCamera.html">Camera</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScene.html#afed13ec4ba2d7ab75b273d507911b498">camera</a></td></tr>
+<tr class="memdesc:afed13ec4ba2d7ab75b273d507911b498"><td class="mdescLeft">&#160;</td><td class="mdescRight">The camera of the scene.  <a href="classScene.html#afed13ec4ba2d7ab75b273d507911b498">More...</a><br /></td></tr>
 <tr class="separator:afed13ec4ba2d7ab75b273d507911b498"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4407abfb940df38113b131cee425ad15"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::shared_ptr&lt; <a class="el" href="classIHitable.html">IHitable</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScene.html#a4407abfb940df38113b131cee425ad15">objects</a></td></tr>
+<tr class="memdesc:a4407abfb940df38113b131cee425ad15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector of shared pointers to the objects in the scene.  <a href="classScene.html#a4407abfb940df38113b131cee425ad15">More...</a><br /></td></tr>
 <tr class="separator:a4407abfb940df38113b131cee425ad15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abecbbfa55f996c4f88b3abd99b286079"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScene.html#abecbbfa55f996c4f88b3abd99b286079">height</a></td></tr>
+<tr class="memdesc:abecbbfa55f996c4f88b3abd99b286079"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configuration height of the scene.  <a href="classScene.html#abecbbfa55f996c4f88b3abd99b286079">More...</a><br /></td></tr>
 <tr class="separator:abecbbfa55f996c4f88b3abd99b286079"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2c29c5cf6ce204a5095121953723488"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScene.html#af2c29c5cf6ce204a5095121953723488">width</a></td></tr>
+<tr class="memdesc:af2c29c5cf6ce204a5095121953723488"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configuration width of the scene.  <a href="classScene.html#af2c29c5cf6ce204a5095121953723488">More...</a><br /></td></tr>
 <tr class="separator:af2c29c5cf6ce204a5095121953723488"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1f3e0ae4294a81c9408c3df47798c2c"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScene.html#af1f3e0ae4294a81c9408c3df47798c2c">ns</a></td></tr>
+<tr class="memdesc:af1f3e0ae4294a81c9408c3df47798c2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configuration Ns value of the scene.  <a href="classScene.html#af1f3e0ae4294a81c9408c3df47798c2c">More...</a><br /></td></tr>
 <tr class="separator:af1f3e0ae4294a81c9408c3df47798c2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="Scene_8hpp_source.html#l00018">18</a> of file <a class="el" href="Scene_8hpp_source.html">Scene.hpp</a>.</p>
+<div class="textblock"><p>Class for representing a scene in the ray tracing application. </p>
+<p>The <a class="el" href="classScene.html" title="Class for representing a scene in the ray tracing application.">Scene</a> class encapsulates the components of a 3D scene, including lighting, camera, and objects. It provides methods to set up the scene and retrieve its components. </p>
+
+<p class="definition">Definition at line <a class="el" href="Scene_8hpp_source.html#l00031">31</a> of file <a class="el" href="Scene_8hpp_source.html">Scene.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ad10176d75a9cc0da56626f682d083507"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad10176d75a9cc0da56626f682d083507">&#9670;&nbsp;</a></span>Scene()</h2>
@@ -149,17 +174,20 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Scene_8cpp_source.html#l00011">11</a> of file <a class="el" href="Scene_8cpp_source.html">Scene.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="classLogger.html">Logger</a> *logger = <a class="code" href="classLoggerSingleton.html#a9722cb20d2fe85dc683a0e35fd1d2f67">LoggerSingleton::getInstance</a>();</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    std::ostringstream msg;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    msg &lt;&lt; <span class="stringliteral">&quot;LOG: Scene created.&quot;</span>;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    logger-&gt;<a class="code" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a748005382152808a72b1a9177d9dc806">INFO</a>, msg.str());</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;}</div>
-<div class="ttc" id="aLogger_8hpp_html_aca1fd1d8935433e6ba2e3918214e07f9a748005382152808a72b1a9177d9dc806"><div class="ttname"><a href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a748005382152808a72b1a9177d9dc806">INFO</a></div><div class="ttdeci">@ INFO</div><div class="ttdef"><b>Definition:</b> <a href="Logger_8hpp_source.html#l00017">Logger.hpp:17</a></div></div>
-<div class="ttc" id="aclassLoggerSingleton_html_a9722cb20d2fe85dc683a0e35fd1d2f67"><div class="ttname"><a href="classLoggerSingleton.html#a9722cb20d2fe85dc683a0e35fd1d2f67">LoggerSingleton::getInstance</a></div><div class="ttdeci">static Logger * getInstance()</div><div class="ttdef"><b>Definition:</b> <a href="SingletonLogger_8cpp_source.html#l00012">SingletonLogger.cpp:12</a></div></div>
-<div class="ttc" id="aclassLogger_html"><div class="ttname"><a href="classLogger.html">Logger</a></div><div class="ttdef"><b>Definition:</b> <a href="Logger_8hpp_source.html#l00023">Logger.hpp:23</a></div></div>
-<div class="ttc" id="aclassLogger_html_a3d3f0801eeaf39b33a906ea8569c19b2"><div class="ttname"><a href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">Logger::log</a></div><div class="ttdeci">void log(LogLevel level, const std::string &amp;message)</div><div class="ttdef"><b>Definition:</b> <a href="Logger_8hpp_source.html#l00051">Logger.hpp:51</a></div></div>
+<p>Default constructor for <a class="el" href="classScene.html" title="Class for representing a scene in the ray tracing application.">Scene</a>. </p>
+<p>Initializes an empty scene with no light, camera, or objects. </p>
+
+<p class="definition">Definition at line <a class="el" href="Scene_8cpp_source.html#l00016">16</a> of file <a class="el" href="Scene_8cpp_source.html">Scene.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="classLogger.html">Logger</a> *logger = <a class="code" href="classLoggerSingleton.html#a9722cb20d2fe85dc683a0e35fd1d2f67">LoggerSingleton::getInstance</a>();</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    std::ostringstream msg;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    msg &lt;&lt; <span class="stringliteral">&quot;LOG: Scene created.&quot;</span>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    logger-&gt;<a class="code" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a748005382152808a72b1a9177d9dc806">INFO</a>, msg.str());</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;}</div>
+<div class="ttc" id="aLogger_8hpp_html_aca1fd1d8935433e6ba2e3918214e07f9a748005382152808a72b1a9177d9dc806"><div class="ttname"><a href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a748005382152808a72b1a9177d9dc806">INFO</a></div><div class="ttdeci">@ INFO</div><div class="ttdef"><b>Definition:</b> <a href="Logger_8hpp_source.html#l00027">Logger.hpp:27</a></div></div>
+<div class="ttc" id="aclassLoggerSingleton_html_a9722cb20d2fe85dc683a0e35fd1d2f67"><div class="ttname"><a href="classLoggerSingleton.html#a9722cb20d2fe85dc683a0e35fd1d2f67">LoggerSingleton::getInstance</a></div><div class="ttdeci">static Logger * getInstance()</div><div class="ttdoc">Get the instance of the Logger.</div><div class="ttdef"><b>Definition:</b> <a href="SingletonLogger_8cpp_source.html#l00017">SingletonLogger.cpp:17</a></div></div>
+<div class="ttc" id="aclassLogger_html"><div class="ttname"><a href="classLogger.html">Logger</a></div><div class="ttdoc">Class used to create the Logger.</div><div class="ttdef"><b>Definition:</b> <a href="Logger_8hpp_source.html#l00038">Logger.hpp:38</a></div></div>
+<div class="ttc" id="aclassLogger_html_a3d3f0801eeaf39b33a906ea8569c19b2"><div class="ttname"><a href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">Logger::log</a></div><div class="ttdeci">void log(LogLevel level, const std::string &amp;message)</div><div class="ttdoc">Log a message.</div><div class="ttdef"><b>Definition:</b> <a href="Logger_8hpp_source.html#l00083">Logger.hpp:83</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="classLoggerSingleton.html#a9722cb20d2fe85dc683a0e35fd1d2f67">LoggerSingleton::getInstance()</a>, <a class="el" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a748005382152808a72b1a9177d9dc806">INFO</a>, and <a class="el" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">Logger::log()</a>.</p>
 <div class="dynheader">
@@ -167,10 +195,10 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classScene_ad10176d75a9cc0da56626f682d083507_cgraph.png" border="0" usemap="#aclassScene_ad10176d75a9cc0da56626f682d083507_cgraph" alt=""/></div>
 <map name="aclassScene_ad10176d75a9cc0da56626f682d083507_cgraph" id="aclassScene_ad10176d75a9cc0da56626f682d083507_cgraph">
-<area shape="rect" title=" " alt="" coords="5,31,109,57"/>
-<area shape="rect" href="classLoggerSingleton.html#a9722cb20d2fe85dc683a0e35fd1d2f67" title=" " alt="" coords="157,5,348,32"/>
-<area shape="rect" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2" title=" " alt="" coords="209,56,296,83"/>
-<area shape="rect" href="classLogger.html#acfb794ab842c63396ad1c6a771f43483" title=" " alt="" coords="396,56,540,83"/>
+<area shape="rect" title="Default constructor for Scene." alt="" coords="5,31,109,57"/>
+<area shape="rect" href="classLoggerSingleton.html#a9722cb20d2fe85dc683a0e35fd1d2f67" title="Get the instance of the Logger." alt="" coords="157,5,348,32"/>
+<area shape="rect" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2" title="Log a message." alt="" coords="209,56,296,83"/>
+<area shape="rect" href="classLogger.html#acfb794ab842c63396ad1c6a771f43483" title="Convert the log level to a string." alt="" coords="396,56,540,83"/>
 </map>
 </div>
 
@@ -191,11 +219,14 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Scene_8cpp_source.html#l00019">19</a> of file <a class="el" href="Scene_8cpp_source.html">Scene.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    this-&gt;<a class="code" href="classScene.html#a4407abfb940df38113b131cee425ad15">objects</a>.clear();</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;}</div>
-<div class="ttc" id="aclassScene_html_a4407abfb940df38113b131cee425ad15"><div class="ttname"><a href="classScene.html#a4407abfb940df38113b131cee425ad15">Scene::objects</a></div><div class="ttdeci">std::vector&lt; std::shared_ptr&lt; IHitable &gt; &gt; objects</div><div class="ttdef"><b>Definition:</b> <a href="Scene_8hpp_source.html#l00038">Scene.hpp:38</a></div></div>
+<p>Destructor for <a class="el" href="classScene.html" title="Class for representing a scene in the ray tracing application.">Scene</a>. </p>
+<p>Cleans up the resources used by the scene. </p>
+
+<p class="definition">Definition at line <a class="el" href="Scene_8cpp_source.html#l00024">24</a> of file <a class="el" href="Scene_8cpp_source.html">Scene.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    this-&gt;<a class="code" href="classScene.html#a4407abfb940df38113b131cee425ad15">objects</a>.clear();</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div>
+<div class="ttc" id="aclassScene_html_a4407abfb940df38113b131cee425ad15"><div class="ttname"><a href="classScene.html#a4407abfb940df38113b131cee425ad15">Scene::objects</a></div><div class="ttdeci">std::vector&lt; std::shared_ptr&lt; IHitable &gt; &gt; objects</div><div class="ttdoc">Vector of shared pointers to the objects in the scene.</div><div class="ttdef"><b>Definition:</b> <a href="Scene_8hpp_source.html#l00134">Scene.hpp:134</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="classScene.html#a4407abfb940df38113b131cee425ad15">objects</a>.</p>
 
@@ -218,10 +249,18 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Scene_8cpp_source.html#l00034">34</a> of file <a class="el" href="Scene_8cpp_source.html">Scene.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="classScene.html#a4407abfb940df38113b131cee425ad15">objects</a>.push_back(obj);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
+<p>Add an object to the scene. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">obj</td><td>A shared pointer to an <a class="el" href="classIHitable.html" title="Interface for objects that can be hit by rays.">IHitable</a> object representing the object to be added. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="Scene_8cpp_source.html#l00039">39</a> of file <a class="el" href="Scene_8cpp_source.html">Scene.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="classScene.html#a4407abfb940df38113b131cee425ad15">objects</a>.push_back(obj);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="classScene.html#a4407abfb940df38113b131cee425ad15">objects</a>.</p>
 
@@ -231,11 +270,11 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classScene_aae7e47b6a0986b2e1a9a74102dc77fd3_icgraph.png" border="0" usemap="#aclassScene_aae7e47b6a0986b2e1a9a74102dc77fd3_icgraph" alt=""/></div>
 <map name="aclassScene_aae7e47b6a0986b2e1a9a74102dc77fd3_icgraph" id="aclassScene_aae7e47b6a0986b2e1a9a74102dc77fd3_icgraph">
-<area shape="rect" title=" " alt="" coords="737,42,864,69"/>
-<area shape="rect" href="classSceneBuilder.html#a5cdf7416f99d5b730fe72177fc4c68ea" title=" " alt="" coords="501,5,676,47"/>
-<area shape="rect" href="classSceneBuilder.html#a14f770fe70c3ec71b0045207113d477d" title=" " alt="" coords="488,71,689,98"/>
-<area shape="rect" href="classCore.html#a8c45134f4e917fb1e2aa2848697f376f" title=" " alt="" coords="289,42,440,69"/>
-<area shape="rect" href="classCore.html#afdfd60c50da96c795184b83678195724" title=" " alt="" coords="104,17,241,43"/>
+<area shape="rect" title="Add an object to the scene." alt="" coords="737,42,864,69"/>
+<area shape="rect" href="classSceneBuilder.html#a5cdf7416f99d5b730fe72177fc4c68ea" title="Create Mesh objects in the scene." alt="" coords="501,5,676,47"/>
+<area shape="rect" href="classSceneBuilder.html#a14f770fe70c3ec71b0045207113d477d" title="Create primitive objects in the scene." alt="" coords="488,71,689,98"/>
+<area shape="rect" href="classCore.html#a8c45134f4e917fb1e2aa2848697f376f" title="Function to assemble the scene." alt="" coords="289,42,440,69"/>
+<area shape="rect" href="classCore.html#afdfd60c50da96c795184b83678195724" title="Function to generate the PPM file." alt="" coords="104,17,241,43"/>
 <area shape="rect" href="Main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,42,56,69"/>
 </map>
 </div>
@@ -258,11 +297,14 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Scene_8cpp_source.html#l00062">62</a> of file <a class="el" href="Scene_8cpp_source.html">Scene.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;{</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="classScene.html#afed13ec4ba2d7ab75b273d507911b498">camera</a>;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}</div>
-<div class="ttc" id="aclassScene_html_afed13ec4ba2d7ab75b273d507911b498"><div class="ttname"><a href="classScene.html#afed13ec4ba2d7ab75b273d507911b498">Scene::camera</a></div><div class="ttdeci">Camera camera</div><div class="ttdef"><b>Definition:</b> <a href="Scene_8hpp_source.html#l00037">Scene.hpp:37</a></div></div>
+<p>Get the camera in the scene. </p>
+<dl class="section return"><dt>Returns</dt><dd>A constant reference to a <a class="el" href="classCamera.html" title="Class for creating a camera object in the scene.">Camera</a> object. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="Scene_8cpp_source.html#l00067">67</a> of file <a class="el" href="Scene_8cpp_source.html">Scene.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;{</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="classScene.html#afed13ec4ba2d7ab75b273d507911b498">camera</a>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div>
+<div class="ttc" id="aclassScene_html_afed13ec4ba2d7ab75b273d507911b498"><div class="ttname"><a href="classScene.html#afed13ec4ba2d7ab75b273d507911b498">Scene::camera</a></div><div class="ttdeci">Camera camera</div><div class="ttdoc">The camera of the scene.</div><div class="ttdef"><b>Definition:</b> <a href="Scene_8hpp_source.html#l00133">Scene.hpp:133</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="classScene.html#afed13ec4ba2d7ab75b273d507911b498">camera</a>.</p>
 
@@ -272,7 +314,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classScene_a053d245ecafdb8f605db2de342a31cbb_icgraph.png" border="0" usemap="#aclassScene_a053d245ecafdb8f605db2de342a31cbb_icgraph" alt=""/></div>
 <map name="aclassScene_a053d245ecafdb8f605db2de342a31cbb_icgraph" id="aclassScene_a053d245ecafdb8f605db2de342a31cbb_icgraph">
-<area shape="rect" title=" " alt="" coords="189,5,320,32"/>
+<area shape="rect" title="Get the camera in the scene." alt="" coords="189,5,320,32"/>
 <area shape="rect" href="classCompute.html#a3fb12d5019c3b51c88acdba9f5b2643d" title=" " alt="" coords="5,5,141,32"/>
 </map>
 </div>
@@ -295,11 +337,14 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Scene_8cpp_source.html#l00067">67</a> of file <a class="el" href="Scene_8cpp_source.html">Scene.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;{</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="classScene.html#abecbbfa55f996c4f88b3abd99b286079">height</a>;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div>
-<div class="ttc" id="aclassScene_html_abecbbfa55f996c4f88b3abd99b286079"><div class="ttname"><a href="classScene.html#abecbbfa55f996c4f88b3abd99b286079">Scene::height</a></div><div class="ttdeci">float height</div><div class="ttdef"><b>Definition:</b> <a href="Scene_8hpp_source.html#l00039">Scene.hpp:39</a></div></div>
+<p>Get the configuration height of the scene. </p>
+<dl class="section return"><dt>Returns</dt><dd>A constant reference to the height value. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="Scene_8cpp_source.html#l00072">72</a> of file <a class="el" href="Scene_8cpp_source.html">Scene.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;{</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="classScene.html#abecbbfa55f996c4f88b3abd99b286079">height</a>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;}</div>
+<div class="ttc" id="aclassScene_html_abecbbfa55f996c4f88b3abd99b286079"><div class="ttname"><a href="classScene.html#abecbbfa55f996c4f88b3abd99b286079">Scene::height</a></div><div class="ttdeci">float height</div><div class="ttdoc">Configuration height of the scene.</div><div class="ttdef"><b>Definition:</b> <a href="Scene_8hpp_source.html#l00135">Scene.hpp:135</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="classScene.html#abecbbfa55f996c4f88b3abd99b286079">height</a>.</p>
 
@@ -309,7 +354,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classScene_a479d0a24bf2d84b7706643bbedaf8d0c_icgraph.png" border="0" usemap="#aclassScene_a479d0a24bf2d84b7706643bbedaf8d0c_icgraph" alt=""/></div>
 <map name="aclassScene_a479d0a24bf2d84b7706643bbedaf8d0c_icgraph" id="aclassScene_a479d0a24bf2d84b7706643bbedaf8d0c_icgraph">
-<area shape="rect" title=" " alt="" coords="189,5,312,32"/>
+<area shape="rect" title="Get the configuration height of the scene." alt="" coords="189,5,312,32"/>
 <area shape="rect" href="classCompute.html#a3fb12d5019c3b51c88acdba9f5b2643d" title=" " alt="" coords="5,5,141,32"/>
 </map>
 </div>
@@ -332,11 +377,14 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Scene_8cpp_source.html#l00057">57</a> of file <a class="el" href="Scene_8cpp_source.html">Scene.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;{</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="classScene.html#a242b72ba68e09af517c8003262c1ccf9">light</a>;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}</div>
-<div class="ttc" id="aclassScene_html_a242b72ba68e09af517c8003262c1ccf9"><div class="ttname"><a href="classScene.html#a242b72ba68e09af517c8003262c1ccf9">Scene::light</a></div><div class="ttdeci">std::shared_ptr&lt; ILight &gt; light</div><div class="ttdef"><b>Definition:</b> <a href="Scene_8hpp_source.html#l00036">Scene.hpp:36</a></div></div>
+<p>Get the light in the scene. </p>
+<dl class="section return"><dt>Returns</dt><dd>A constant reference to a shared pointer to an <a class="el" href="classILight.html" title="Interface for the Light class.">ILight</a> object. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="Scene_8cpp_source.html#l00062">62</a> of file <a class="el" href="Scene_8cpp_source.html">Scene.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;{</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="classScene.html#a242b72ba68e09af517c8003262c1ccf9">light</a>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}</div>
+<div class="ttc" id="aclassScene_html_a242b72ba68e09af517c8003262c1ccf9"><div class="ttname"><a href="classScene.html#a242b72ba68e09af517c8003262c1ccf9">Scene::light</a></div><div class="ttdeci">std::shared_ptr&lt; ILight &gt; light</div><div class="ttdoc">Shared pointer to the light in the scene.</div><div class="ttdef"><b>Definition:</b> <a href="Scene_8hpp_source.html#l00132">Scene.hpp:132</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="classScene.html#a242b72ba68e09af517c8003262c1ccf9">light</a>.</p>
 
@@ -346,7 +394,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classScene_a885e93db59c89e0bee1582c7810e396e_icgraph.png" border="0" usemap="#aclassScene_a885e93db59c89e0bee1582c7810e396e_icgraph" alt=""/></div>
 <map name="aclassScene_a885e93db59c89e0bee1582c7810e396e_icgraph" id="aclassScene_a885e93db59c89e0bee1582c7810e396e_icgraph">
-<area shape="rect" title=" " alt="" coords="189,5,303,32"/>
+<area shape="rect" title="Get the light in the scene." alt="" coords="189,5,303,32"/>
 <area shape="rect" href="classCompute.html#a3fb12d5019c3b51c88acdba9f5b2643d" title=" " alt="" coords="5,5,141,32"/>
 </map>
 </div>
@@ -369,11 +417,14 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Scene_8cpp_source.html#l00076">76</a> of file <a class="el" href="Scene_8cpp_source.html">Scene.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;{</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="classScene.html#af1f3e0ae4294a81c9408c3df47798c2c">ns</a>;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div>
-<div class="ttc" id="aclassScene_html_af1f3e0ae4294a81c9408c3df47798c2c"><div class="ttname"><a href="classScene.html#af1f3e0ae4294a81c9408c3df47798c2c">Scene::ns</a></div><div class="ttdeci">float ns</div><div class="ttdef"><b>Definition:</b> <a href="Scene_8hpp_source.html#l00041">Scene.hpp:41</a></div></div>
+<p>Get the configuration Ns value of the scene. </p>
+<dl class="section return"><dt>Returns</dt><dd>A constant reference to the Ns value. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="Scene_8cpp_source.html#l00081">81</a> of file <a class="el" href="Scene_8cpp_source.html">Scene.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;{</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="classScene.html#af1f3e0ae4294a81c9408c3df47798c2c">ns</a>;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div>
+<div class="ttc" id="aclassScene_html_af1f3e0ae4294a81c9408c3df47798c2c"><div class="ttname"><a href="classScene.html#af1f3e0ae4294a81c9408c3df47798c2c">Scene::ns</a></div><div class="ttdeci">float ns</div><div class="ttdoc">Configuration Ns value of the scene.</div><div class="ttdef"><b>Definition:</b> <a href="Scene_8hpp_source.html#l00137">Scene.hpp:137</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="classScene.html#af1f3e0ae4294a81c9408c3df47798c2c">ns</a>.</p>
 
@@ -383,7 +434,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classScene_a1284108b924aa36975911459b4ef7a85_icgraph.png" border="0" usemap="#aclassScene_a1284108b924aa36975911459b4ef7a85_icgraph" alt=""/></div>
 <map name="aclassScene_a1284108b924aa36975911459b4ef7a85_icgraph" id="aclassScene_a1284108b924aa36975911459b4ef7a85_icgraph">
-<area shape="rect" title=" " alt="" coords="189,5,292,32"/>
+<area shape="rect" title="Get the configuration Ns value of the scene." alt="" coords="189,5,292,32"/>
 <area shape="rect" href="classCompute.html#a3fb12d5019c3b51c88acdba9f5b2643d" title=" " alt="" coords="5,5,141,32"/>
 </map>
 </div>
@@ -406,10 +457,13 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Scene_8cpp_source.html#l00052">52</a> of file <a class="el" href="Scene_8cpp_source.html">Scene.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;{</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classScene.html#a4407abfb940df38113b131cee425ad15">objects</a>;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}</div>
+<p>Get the objects in the scene. </p>
+<dl class="section return"><dt>Returns</dt><dd>A constant reference to a vector of shared pointers to <a class="el" href="classIHitable.html" title="Interface for objects that can be hit by rays.">IHitable</a> objects. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="Scene_8cpp_source.html#l00057">57</a> of file <a class="el" href="Scene_8cpp_source.html">Scene.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;{</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classScene.html#a4407abfb940df38113b131cee425ad15">objects</a>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="classScene.html#a4407abfb940df38113b131cee425ad15">objects</a>.</p>
 
@@ -419,7 +473,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classScene_a25d420e8d28c5ad73820690b30162626_icgraph.png" border="0" usemap="#aclassScene_a25d420e8d28c5ad73820690b30162626_icgraph" alt=""/></div>
 <map name="aclassScene_a25d420e8d28c5ad73820690b30162626_icgraph" id="aclassScene_a25d420e8d28c5ad73820690b30162626_icgraph">
-<area shape="rect" title=" " alt="" coords="189,5,320,32"/>
+<area shape="rect" title="Get the objects in the scene." alt="" coords="189,5,320,32"/>
 <area shape="rect" href="classCompute.html#a3fb12d5019c3b51c88acdba9f5b2643d" title=" " alt="" coords="5,5,141,32"/>
 </map>
 </div>
@@ -442,11 +496,14 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Scene_8cpp_source.html#l00071">71</a> of file <a class="el" href="Scene_8cpp_source.html">Scene.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;{</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="classScene.html#af2c29c5cf6ce204a5095121953723488">width</a>;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}</div>
-<div class="ttc" id="aclassScene_html_af2c29c5cf6ce204a5095121953723488"><div class="ttname"><a href="classScene.html#af2c29c5cf6ce204a5095121953723488">Scene::width</a></div><div class="ttdeci">float width</div><div class="ttdef"><b>Definition:</b> <a href="Scene_8hpp_source.html#l00040">Scene.hpp:40</a></div></div>
+<p>Get the configuration width of the scene. </p>
+<dl class="section return"><dt>Returns</dt><dd>A constant reference to the width value. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="Scene_8cpp_source.html#l00076">76</a> of file <a class="el" href="Scene_8cpp_source.html">Scene.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;{</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="classScene.html#af2c29c5cf6ce204a5095121953723488">width</a>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div>
+<div class="ttc" id="aclassScene_html_af2c29c5cf6ce204a5095121953723488"><div class="ttname"><a href="classScene.html#af2c29c5cf6ce204a5095121953723488">Scene::width</a></div><div class="ttdeci">float width</div><div class="ttdoc">Configuration width of the scene.</div><div class="ttdef"><b>Definition:</b> <a href="Scene_8hpp_source.html#l00136">Scene.hpp:136</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="classScene.html#af2c29c5cf6ce204a5095121953723488">width</a>.</p>
 
@@ -456,7 +513,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classScene_a09ecae74b480b80dcbb481aa8843e4ed_icgraph.png" border="0" usemap="#aclassScene_a09ecae74b480b80dcbb481aa8843e4ed_icgraph" alt=""/></div>
 <map name="aclassScene_a09ecae74b480b80dcbb481aa8843e4ed_icgraph" id="aclassScene_a09ecae74b480b80dcbb481aa8843e4ed_icgraph">
-<area shape="rect" title=" " alt="" coords="189,5,308,32"/>
+<area shape="rect" title="Get the configuration width of the scene." alt="" coords="189,5,308,32"/>
 <area shape="rect" href="classCompute.html#a3fb12d5019c3b51c88acdba9f5b2643d" title=" " alt="" coords="5,5,141,32"/>
 </map>
 </div>
@@ -479,10 +536,18 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Scene_8cpp_source.html#l00029">29</a> of file <a class="el" href="Scene_8cpp_source.html">Scene.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    this-&gt;<a class="code" href="classScene.html#afed13ec4ba2d7ab75b273d507911b498">camera</a> = c;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div>
+<p>Set the camera for the scene. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">c</td><td>A <a class="el" href="classCamera.html" title="Class for creating a camera object in the scene.">Camera</a> object representing the scene's camera. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="Scene_8cpp_source.html#l00034">34</a> of file <a class="el" href="Scene_8cpp_source.html">Scene.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    this-&gt;<a class="code" href="classScene.html#afed13ec4ba2d7ab75b273d507911b498">camera</a> = c;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="classScene.html#afed13ec4ba2d7ab75b273d507911b498">camera</a>.</p>
 
@@ -492,10 +557,10 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classScene_a86ac4dec0c92de6b1a2fb9f1ba6971e5_icgraph.png" border="0" usemap="#aclassScene_a86ac4dec0c92de6b1a2fb9f1ba6971e5_icgraph" alt=""/></div>
 <map name="aclassScene_a86ac4dec0c92de6b1a2fb9f1ba6971e5_icgraph" id="aclassScene_a86ac4dec0c92de6b1a2fb9f1ba6971e5_icgraph">
-<area shape="rect" title=" " alt="" coords="725,31,856,57"/>
-<area shape="rect" href="classSceneBuilder.html#a858400b8fa979ff12e72cbb0924dacf8" title=" " alt="" coords="488,31,677,57"/>
-<area shape="rect" href="classCore.html#a8c45134f4e917fb1e2aa2848697f376f" title=" " alt="" coords="289,31,440,57"/>
-<area shape="rect" href="classCore.html#afdfd60c50da96c795184b83678195724" title=" " alt="" coords="104,5,241,32"/>
+<area shape="rect" title="Set the camera for the scene." alt="" coords="725,31,856,57"/>
+<area shape="rect" href="classSceneBuilder.html#a858400b8fa979ff12e72cbb0924dacf8" title="Create a camera in the scene." alt="" coords="488,31,677,57"/>
+<area shape="rect" href="classCore.html#a8c45134f4e917fb1e2aa2848697f376f" title="Function to assemble the scene." alt="" coords="289,31,440,57"/>
+<area shape="rect" href="classCore.html#afdfd60c50da96c795184b83678195724" title="Function to generate the PPM file." alt="" coords="104,5,241,32"/>
 <area shape="rect" href="Main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,31,56,57"/>
 </map>
 </div>
@@ -518,10 +583,18 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Scene_8cpp_source.html#l00039">39</a> of file <a class="el" href="Scene_8cpp_source.html">Scene.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    this-&gt;<a class="code" href="classScene.html#abecbbfa55f996c4f88b3abd99b286079">height</a> = <a class="code" href="classScene.html#abecbbfa55f996c4f88b3abd99b286079">height</a>;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
+<p>Set the configuration height of the scene. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">height</td><td>The height of the scene configuration. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="Scene_8cpp_source.html#l00044">44</a> of file <a class="el" href="Scene_8cpp_source.html">Scene.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    this-&gt;<a class="code" href="classScene.html#abecbbfa55f996c4f88b3abd99b286079">height</a> = <a class="code" href="classScene.html#abecbbfa55f996c4f88b3abd99b286079">height</a>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="classScene.html#abecbbfa55f996c4f88b3abd99b286079">height</a>.</p>
 
@@ -531,10 +604,10 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classScene_a9beb0e1b0639b01b6dda991600f1b7c6_icgraph.png" border="0" usemap="#aclassScene_a9beb0e1b0639b01b6dda991600f1b7c6_icgraph" alt=""/></div>
 <map name="aclassScene_a9beb0e1b0639b01b6dda991600f1b7c6_icgraph" id="aclassScene_a9beb0e1b0639b01b6dda991600f1b7c6_icgraph">
-<area shape="rect" title=" " alt="" coords="725,31,887,57"/>
-<area shape="rect" href="classSceneBuilder.html#a858400b8fa979ff12e72cbb0924dacf8" title=" " alt="" coords="488,31,677,57"/>
-<area shape="rect" href="classCore.html#a8c45134f4e917fb1e2aa2848697f376f" title=" " alt="" coords="289,31,440,57"/>
-<area shape="rect" href="classCore.html#afdfd60c50da96c795184b83678195724" title=" " alt="" coords="104,5,241,32"/>
+<area shape="rect" title="Set the configuration height of the scene." alt="" coords="725,31,887,57"/>
+<area shape="rect" href="classSceneBuilder.html#a858400b8fa979ff12e72cbb0924dacf8" title="Create a camera in the scene." alt="" coords="488,31,677,57"/>
+<area shape="rect" href="classCore.html#a8c45134f4e917fb1e2aa2848697f376f" title="Function to assemble the scene." alt="" coords="289,31,440,57"/>
+<area shape="rect" href="classCore.html#afdfd60c50da96c795184b83678195724" title="Function to generate the PPM file." alt="" coords="104,5,241,32"/>
 <area shape="rect" href="Main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,31,56,57"/>
 </map>
 </div>
@@ -557,10 +630,18 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Scene_8cpp_source.html#l00047">47</a> of file <a class="el" href="Scene_8cpp_source.html">Scene.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;{</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    this-&gt;<a class="code" href="classScene.html#af1f3e0ae4294a81c9408c3df47798c2c">ns</a> = <a class="code" href="classScene.html#af1f3e0ae4294a81c9408c3df47798c2c">ns</a>;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
+<p>Set the configuration Ns value of the scene. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ns</td><td>The Ns value of the scene configuration. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="Scene_8cpp_source.html#l00052">52</a> of file <a class="el" href="Scene_8cpp_source.html">Scene.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;{</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    this-&gt;<a class="code" href="classScene.html#af1f3e0ae4294a81c9408c3df47798c2c">ns</a> = <a class="code" href="classScene.html#af1f3e0ae4294a81c9408c3df47798c2c">ns</a>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="classScene.html#af1f3e0ae4294a81c9408c3df47798c2c">ns</a>.</p>
 
@@ -570,10 +651,10 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classScene_ad55540281b5005318ee162141b29b9ca_icgraph.png" border="0" usemap="#aclassScene_ad55540281b5005318ee162141b29b9ca_icgraph" alt=""/></div>
 <map name="aclassScene_ad55540281b5005318ee162141b29b9ca_icgraph" id="aclassScene_ad55540281b5005318ee162141b29b9ca_icgraph">
-<area shape="rect" title=" " alt="" coords="725,31,865,57"/>
-<area shape="rect" href="classSceneBuilder.html#a858400b8fa979ff12e72cbb0924dacf8" title=" " alt="" coords="488,31,677,57"/>
-<area shape="rect" href="classCore.html#a8c45134f4e917fb1e2aa2848697f376f" title=" " alt="" coords="289,31,440,57"/>
-<area shape="rect" href="classCore.html#afdfd60c50da96c795184b83678195724" title=" " alt="" coords="104,5,241,32"/>
+<area shape="rect" title="Set the configuration Ns value of the scene." alt="" coords="725,31,865,57"/>
+<area shape="rect" href="classSceneBuilder.html#a858400b8fa979ff12e72cbb0924dacf8" title="Create a camera in the scene." alt="" coords="488,31,677,57"/>
+<area shape="rect" href="classCore.html#a8c45134f4e917fb1e2aa2848697f376f" title="Function to assemble the scene." alt="" coords="289,31,440,57"/>
+<area shape="rect" href="classCore.html#afdfd60c50da96c795184b83678195724" title="Function to generate the PPM file." alt="" coords="104,5,241,32"/>
 <area shape="rect" href="Main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,31,56,57"/>
 </map>
 </div>
@@ -596,10 +677,18 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Scene_8cpp_source.html#l00043">43</a> of file <a class="el" href="Scene_8cpp_source.html">Scene.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    this-&gt;<a class="code" href="classScene.html#af2c29c5cf6ce204a5095121953723488">width</a> = <a class="code" href="classScene.html#af2c29c5cf6ce204a5095121953723488">width</a>;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div>
+<p>Set the configuration width of the scene. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">width</td><td>The width of the scene configuration. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="Scene_8cpp_source.html#l00048">48</a> of file <a class="el" href="Scene_8cpp_source.html">Scene.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;{</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    this-&gt;<a class="code" href="classScene.html#af2c29c5cf6ce204a5095121953723488">width</a> = <a class="code" href="classScene.html#af2c29c5cf6ce204a5095121953723488">width</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="classScene.html#af2c29c5cf6ce204a5095121953723488">width</a>.</p>
 
@@ -609,10 +698,10 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classScene_a3d986728a9c72c4ea939ab8167e09689_icgraph.png" border="0" usemap="#aclassScene_a3d986728a9c72c4ea939ab8167e09689_icgraph" alt=""/></div>
 <map name="aclassScene_a3d986728a9c72c4ea939ab8167e09689_icgraph" id="aclassScene_a3d986728a9c72c4ea939ab8167e09689_icgraph">
-<area shape="rect" title=" " alt="" coords="725,31,883,57"/>
-<area shape="rect" href="classSceneBuilder.html#a858400b8fa979ff12e72cbb0924dacf8" title=" " alt="" coords="488,31,677,57"/>
-<area shape="rect" href="classCore.html#a8c45134f4e917fb1e2aa2848697f376f" title=" " alt="" coords="289,31,440,57"/>
-<area shape="rect" href="classCore.html#afdfd60c50da96c795184b83678195724" title=" " alt="" coords="104,5,241,32"/>
+<area shape="rect" title="Set the configuration width of the scene." alt="" coords="725,31,883,57"/>
+<area shape="rect" href="classSceneBuilder.html#a858400b8fa979ff12e72cbb0924dacf8" title="Create a camera in the scene." alt="" coords="488,31,677,57"/>
+<area shape="rect" href="classCore.html#a8c45134f4e917fb1e2aa2848697f376f" title="Function to assemble the scene." alt="" coords="289,31,440,57"/>
+<area shape="rect" href="classCore.html#afdfd60c50da96c795184b83678195724" title="Function to generate the PPM file." alt="" coords="104,5,241,32"/>
 <area shape="rect" href="Main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,31,56,57"/>
 </map>
 </div>
@@ -635,10 +724,18 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Scene_8cpp_source.html#l00024">24</a> of file <a class="el" href="Scene_8cpp_source.html">Scene.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    this-&gt;<a class="code" href="classScene.html#a242b72ba68e09af517c8003262c1ccf9">light</a> = l;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div>
+<p>Set the light for the scene. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">l</td><td>A shared pointer to an <a class="el" href="classILight.html" title="Interface for the Light class.">ILight</a> object representing the scene's light. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="Scene_8cpp_source.html#l00029">29</a> of file <a class="el" href="Scene_8cpp_source.html">Scene.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    this-&gt;<a class="code" href="classScene.html#a242b72ba68e09af517c8003262c1ccf9">light</a> = l;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="classScene.html#a242b72ba68e09af517c8003262c1ccf9">light</a>.</p>
 
@@ -648,10 +745,10 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classScene_a9557c7bd1e51350b064b6d0e7cfca456_icgraph.png" border="0" usemap="#aclassScene_a9557c7bd1e51350b064b6d0e7cfca456_icgraph" alt=""/></div>
 <map name="aclassScene_a9557c7bd1e51350b064b6d0e7cfca456_icgraph" id="aclassScene_a9557c7bd1e51350b064b6d0e7cfca456_icgraph">
-<area shape="rect" title=" " alt="" coords="707,31,820,57"/>
-<area shape="rect" href="classSceneBuilder.html#adc5c6aa9cc749216e534c2c6254ed0ec" title=" " alt="" coords="488,31,659,57"/>
-<area shape="rect" href="classCore.html#a8c45134f4e917fb1e2aa2848697f376f" title=" " alt="" coords="289,31,440,57"/>
-<area shape="rect" href="classCore.html#afdfd60c50da96c795184b83678195724" title=" " alt="" coords="104,5,241,32"/>
+<area shape="rect" title="Set the light for the scene." alt="" coords="707,31,820,57"/>
+<area shape="rect" href="classSceneBuilder.html#adc5c6aa9cc749216e534c2c6254ed0ec" title="Create a light in the scene." alt="" coords="488,31,659,57"/>
+<area shape="rect" href="classCore.html#a8c45134f4e917fb1e2aa2848697f376f" title="Function to assemble the scene." alt="" coords="289,31,440,57"/>
+<area shape="rect" href="classCore.html#afdfd60c50da96c795184b83678195724" title="Function to generate the PPM file." alt="" coords="104,5,241,32"/>
 <area shape="rect" href="Main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,31,56,57"/>
 </map>
 </div>
@@ -679,7 +776,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Scene_8hpp_source.html#l00037">37</a> of file <a class="el" href="Scene_8hpp_source.html">Scene.hpp</a>.</p>
+<p>The camera of the scene. </p>
+
+<p class="definition">Definition at line <a class="el" href="Scene_8hpp_source.html#l00133">133</a> of file <a class="el" href="Scene_8hpp_source.html">Scene.hpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="classScene.html#a053d245ecafdb8f605db2de342a31cbb">getCamera()</a>, and <a class="el" href="classScene.html#a86ac4dec0c92de6b1a2fb9f1ba6971e5">setCamera()</a>.</p>
 
@@ -705,7 +804,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Scene_8hpp_source.html#l00039">39</a> of file <a class="el" href="Scene_8hpp_source.html">Scene.hpp</a>.</p>
+<p>Configuration height of the scene. </p>
+
+<p class="definition">Definition at line <a class="el" href="Scene_8hpp_source.html#l00135">135</a> of file <a class="el" href="Scene_8hpp_source.html">Scene.hpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="classScene.html#a479d0a24bf2d84b7706643bbedaf8d0c">getHeight()</a>, and <a class="el" href="classScene.html#a9beb0e1b0639b01b6dda991600f1b7c6">setConfigHeight()</a>.</p>
 
@@ -731,7 +832,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Scene_8hpp_source.html#l00036">36</a> of file <a class="el" href="Scene_8hpp_source.html">Scene.hpp</a>.</p>
+<p>Shared pointer to the light in the scene. </p>
+
+<p class="definition">Definition at line <a class="el" href="Scene_8hpp_source.html#l00132">132</a> of file <a class="el" href="Scene_8hpp_source.html">Scene.hpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="classScene.html#a885e93db59c89e0bee1582c7810e396e">getLight()</a>, and <a class="el" href="classScene.html#a9557c7bd1e51350b064b6d0e7cfca456">setLight()</a>.</p>
 
@@ -757,7 +860,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Scene_8hpp_source.html#l00041">41</a> of file <a class="el" href="Scene_8hpp_source.html">Scene.hpp</a>.</p>
+<p>Configuration Ns value of the scene. </p>
+
+<p class="definition">Definition at line <a class="el" href="Scene_8hpp_source.html#l00137">137</a> of file <a class="el" href="Scene_8hpp_source.html">Scene.hpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="classScene.html#a1284108b924aa36975911459b4ef7a85">getNs()</a>, and <a class="el" href="classScene.html#ad55540281b5005318ee162141b29b9ca">setConfigNs()</a>.</p>
 
@@ -783,7 +888,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Scene_8hpp_source.html#l00038">38</a> of file <a class="el" href="Scene_8hpp_source.html">Scene.hpp</a>.</p>
+<p>Vector of shared pointers to the objects in the scene. </p>
+
+<p class="definition">Definition at line <a class="el" href="Scene_8hpp_source.html#l00134">134</a> of file <a class="el" href="Scene_8hpp_source.html">Scene.hpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="classScene.html#aae7e47b6a0986b2e1a9a74102dc77fd3">addObject()</a>, <a class="el" href="classScene.html#a25d420e8d28c5ad73820690b30162626">getObjects()</a>, and <a class="el" href="classScene.html#a3b8cec2e32546713915f8c6303c951f1">~Scene()</a>.</p>
 
@@ -809,7 +916,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Scene_8hpp_source.html#l00040">40</a> of file <a class="el" href="Scene_8hpp_source.html">Scene.hpp</a>.</p>
+<p>Configuration width of the scene. </p>
+
+<p class="definition">Definition at line <a class="el" href="Scene_8hpp_source.html#l00136">136</a> of file <a class="el" href="Scene_8hpp_source.html">Scene.hpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="classScene.html#a09ecae74b480b80dcbb481aa8843e4ed">getWidth()</a>, and <a class="el" href="classScene.html#a3d986728a9c72c4ea939ab8167e09689">setConfigWidth()</a>.</p>
 

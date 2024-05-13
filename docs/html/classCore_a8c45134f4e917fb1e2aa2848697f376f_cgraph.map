@@ -1,23 +1,23 @@
 <map id="Core::assembleScene" name="Core::assembleScene">
-<area shape="rect" id="node1" title=" " alt="" coords="5,449,156,476"/>
-<area shape="rect" id="node2" href="$classSceneBuilder.html#a858400b8fa979ff12e72cbb0924dacf8" title=" " alt="" coords="210,107,399,133"/>
-<area shape="rect" id="node7" href="$classSceneBuilder.html#adc5c6aa9cc749216e534c2c6254ed0ec" title=" " alt="" coords="219,205,390,232"/>
-<area shape="rect" id="node9" href="$classSceneBuilder.html#a5cdf7416f99d5b730fe72177fc4c68ea" title=" " alt="" coords="217,307,392,349"/>
-<area shape="rect" id="node12" href="$classSceneBuilder.html#a14f770fe70c3ec71b0045207113d477d" title=" " alt="" coords="204,256,405,283"/>
-<area shape="rect" id="node13" href="$classParsing.html#a24ca4a26190d71a0f8d48d0f62aa2ea1" title=" " alt="" coords="234,373,375,400"/>
-<area shape="rect" id="node14" href="$classLoggerSingleton.html#a9722cb20d2fe85dc683a0e35fd1d2f67" title=" " alt="" coords="209,424,400,451"/>
-<area shape="rect" id="node15" href="$classParsing.html#a335f29c631ee21a0401cf538b0dfb0aa" title=" " alt="" coords="241,475,368,501"/>
-<area shape="rect" id="node16" href="$classParsing.html#ab53b1412faa00768b353a8000a5057c2" title=" " alt="" coords="249,525,361,552"/>
-<area shape="rect" id="node17" href="$classParsing.html#aa299c9cc408f2506f776a927ccef8ab1" title=" " alt="" coords="229,576,380,603"/>
-<area shape="rect" id="node18" href="$classSceneBuilder.html#a10eb94ac2d1f997b95f00cdf7b04d522" title=" " alt="" coords="223,627,386,653"/>
-<area shape="rect" id="node19" href="$classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2" title=" " alt="" coords="261,677,348,704"/>
-<area shape="rect" id="node21" href="$classException.html#a33c519915abe89051992264170c1656e" title=" " alt="" coords="247,728,363,755"/>
-<area shape="rect" id="node3" href="$classScene.html#a86ac4dec0c92de6b1a2fb9f1ba6971e5" title=" " alt="" coords="470,5,601,32"/>
-<area shape="rect" id="node4" href="$classScene.html#a9beb0e1b0639b01b6dda991600f1b7c6" title=" " alt="" coords="455,56,616,83"/>
-<area shape="rect" id="node5" href="$classScene.html#ad55540281b5005318ee162141b29b9ca" title=" " alt="" coords="465,107,605,133"/>
-<area shape="rect" id="node6" href="$classScene.html#a3d986728a9c72c4ea939ab8167e09689" title=" " alt="" coords="457,157,614,184"/>
-<area shape="rect" id="node8" href="$classScene.html#a9557c7bd1e51350b064b6d0e7cfca456" title=" " alt="" coords="479,208,592,235"/>
-<area shape="rect" id="node10" href="$classScene.html#aae7e47b6a0986b2e1a9a74102dc77fd3" title=" " alt="" coords="472,260,599,287"/>
-<area shape="rect" id="node11" href="$classMesh.html#acfa7b7131185af02743f0e0794a75e70" title=" " alt="" coords="453,315,617,341"/>
-<area shape="rect" id="node20" href="$classLogger.html#acfb794ab842c63396ad1c6a771f43483" title=" " alt="" coords="463,677,607,704"/>
+<area shape="rect" id="node1" title="Function to assemble the scene." alt="" coords="5,449,156,476"/>
+<area shape="rect" id="node2" href="$classSceneBuilder.html#a858400b8fa979ff12e72cbb0924dacf8" title="Create a camera in the scene." alt="" coords="210,107,399,133"/>
+<area shape="rect" id="node7" href="$classSceneBuilder.html#adc5c6aa9cc749216e534c2c6254ed0ec" title="Create a light in the scene." alt="" coords="219,205,390,232"/>
+<area shape="rect" id="node9" href="$classSceneBuilder.html#a5cdf7416f99d5b730fe72177fc4c68ea" title="Create Mesh objects in the scene." alt="" coords="217,307,392,349"/>
+<area shape="rect" id="node12" href="$classSceneBuilder.html#a14f770fe70c3ec71b0045207113d477d" title="Create primitive objects in the scene." alt="" coords="204,256,405,283"/>
+<area shape="rect" id="node13" href="$classParsing.html#a24ca4a26190d71a0f8d48d0f62aa2ea1" title="Get the camera." alt="" coords="234,373,375,400"/>
+<area shape="rect" id="node14" href="$classLoggerSingleton.html#a9722cb20d2fe85dc683a0e35fd1d2f67" title="Get the instance of the Logger." alt="" coords="209,424,400,451"/>
+<area shape="rect" id="node15" href="$classParsing.html#a335f29c631ee21a0401cf538b0dfb0aa" title="Get the objects." alt="" coords="241,475,368,501"/>
+<area shape="rect" id="node16" href="$classParsing.html#ab53b1412faa00768b353a8000a5057c2" title="Get the objects." alt="" coords="249,525,361,552"/>
+<area shape="rect" id="node17" href="$classParsing.html#aa299c9cc408f2506f776a927ccef8ab1" title="Get the lights." alt="" coords="229,576,380,603"/>
+<area shape="rect" id="node18" href="$classSceneBuilder.html#a10eb94ac2d1f997b95f00cdf7b04d522" title="Retrieve the constructed scene." alt="" coords="223,627,386,653"/>
+<area shape="rect" id="node19" href="$classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2" title="Log a message." alt="" coords="261,677,348,704"/>
+<area shape="rect" id="node21" href="$classException.html#a841dac603bf42fc2ebcb13eedf717e06" title="Get the message of the exception." alt="" coords="247,728,363,755"/>
+<area shape="rect" id="node3" href="$classScene.html#a86ac4dec0c92de6b1a2fb9f1ba6971e5" title="Set the camera for the scene." alt="" coords="470,5,601,32"/>
+<area shape="rect" id="node4" href="$classScene.html#a9beb0e1b0639b01b6dda991600f1b7c6" title="Set the configuration height of the scene." alt="" coords="455,56,616,83"/>
+<area shape="rect" id="node5" href="$classScene.html#ad55540281b5005318ee162141b29b9ca" title="Set the configuration Ns value of the scene." alt="" coords="465,107,605,133"/>
+<area shape="rect" id="node6" href="$classScene.html#a3d986728a9c72c4ea939ab8167e09689" title="Set the configuration width of the scene." alt="" coords="457,157,614,184"/>
+<area shape="rect" id="node8" href="$classScene.html#a9557c7bd1e51350b064b6d0e7cfca456" title="Set the light for the scene." alt="" coords="479,208,592,235"/>
+<area shape="rect" id="node10" href="$classScene.html#aae7e47b6a0986b2e1a9a74102dc77fd3" title="Add an object to the scene." alt="" coords="472,260,599,287"/>
+<area shape="rect" id="node11" href="$classMesh.html#acfa7b7131185af02743f0e0794a75e70" title="Transform the triangle inside the mesh based on the values given." alt="" coords="453,315,617,341"/>
+<area shape="rect" id="node20" href="$classLogger.html#acfb794ab842c63396ad1c6a771f43483" title="Convert the log level to a string." alt="" coords="463,677,607,704"/>
 </map>

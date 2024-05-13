@@ -1,10 +1,10 @@
 <map id="IMaterial" name="IMaterial">
-<area shape="rect" id="node1" title=" " alt="" coords="376,5,448,32"/>
-<area shape="rect" id="node2" href="$classDielectric.html" title=" " alt="" coords="5,80,83,107"/>
-<area shape="rect" id="node3" href="$classEmissiveMaterial.html" title=" " alt="" coords="107,80,229,107"/>
-<area shape="rect" id="node4" href="$classLambertian.html" title=" " alt="" coords="254,80,341,107"/>
-<area shape="rect" id="node5" href="$classLightTexture.html" title=" " alt="" coords="365,80,459,107"/>
-<area shape="rect" id="node6" href="$classMetal.html" title=" " alt="" coords="483,80,538,107"/>
-<area shape="rect" id="node7" href="$classTexture.html" title=" " alt="" coords="562,80,627,107"/>
-<area shape="rect" id="node8" href="$classTintedMaterial.html" title=" " alt="" coords="652,80,756,107"/>
+<area shape="rect" id="node1" title="Class used to create the Material." alt="" coords="376,5,448,32"/>
+<area shape="rect" id="node2" href="$classDielectric.html" title="Class used to create the Dielectric." alt="" coords="5,80,83,107"/>
+<area shape="rect" id="node3" href="$classEmissiveMaterial.html" title="Class used to decorate the light in the scene." alt="" coords="107,80,229,107"/>
+<area shape="rect" id="node4" href="$classLambertian.html" title="Class used to create the Lambertian." alt="" coords="254,80,341,107"/>
+<area shape="rect" id="node5" href="$classLightTexture.html" title="Class used to create the LightTexture." alt="" coords="365,80,459,107"/>
+<area shape="rect" id="node6" href="$classMetal.html" title="Class used to create a Metal." alt="" coords="483,80,538,107"/>
+<area shape="rect" id="node7" href="$classTexture.html" title="Class used to create a Texture." alt="" coords="562,80,627,107"/>
+<area shape="rect" id="node8" href="$classTintedMaterial.html" title="Class used to tint the material." alt="" coords="652,80,756,107"/>
 </map>

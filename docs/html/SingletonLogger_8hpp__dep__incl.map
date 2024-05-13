@@ -1,50 +1,50 @@
 <map id="src/Logger/SingletonLogger.hpp" name="src/Logger/SingletonLogger.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="2123,5,2328,32"/>
-<area shape="rect" id="node2" href="$SceneBuilder_8cpp.html" title=" " alt="" coords="1661,572,1851,599"/>
-<area shape="rect" id="node3" href="$Camera_8hpp.html" title=" " alt="" coords="2855,229,3020,256"/>
-<area shape="rect" id="node6" href="$Core_8cpp.html" title=" " alt="" coords="3921,572,4050,599"/>
-<area shape="rect" id="node8" href="$Computing_8cpp.html" title=" " alt="" coords="2083,490,2282,517"/>
-<area shape="rect" id="node12" href="$Main_8cpp.html" title=" " alt="" coords="4110,490,4207,517"/>
-<area shape="rect" id="node13" href="$Scene_8cpp.html" title=" " alt="" coords="3593,401,3740,427"/>
-<area shape="rect" id="node14" href="$ILight_8hpp.html" title=" " alt="" coords="1713,229,1847,256"/>
-<area shape="rect" id="node23" href="$Dielectric_8cpp.html" title=" " alt="" coords="923,483,1079,524"/>
-<area shape="rect" id="node25" href="$Lambertian_8cpp.html" title=" " alt="" coords="683,483,848,524"/>
-<area shape="rect" id="node27" href="$LightTexture_8cpp.html" title=" " alt="" coords="1389,483,1561,524"/>
-<area shape="rect" id="node29" href="$Metal_8cpp.html" title=" " alt="" coords="1585,483,1719,524"/>
-<area shape="rect" id="node30" href="$Parsing_8cpp.html" title=" " alt="" coords="3615,490,3777,517"/>
-<area shape="rect" id="node34" href="$Circle_8cpp.html" title=" " alt="" coords="2306,483,2446,524"/>
-<area shape="rect" id="node36" href="$Sphere_8cpp.html" title=" " alt="" coords="3801,483,3948,524"/>
-<area shape="rect" id="node37" href="$SingletonLogger_8cpp.html" title=" " alt="" coords="3916,80,4121,107"/>
-<area shape="rect" id="node38" href="$Plane_8cpp.html" title=" " alt="" coords="3249,393,3388,435"/>
-<area shape="rect" id="node39" href="$Vec3_8hpp.html" title=" " alt="" coords="1817,80,1948,107"/>
-<area shape="rect" id="node4" href="$IBuilder_8hpp.html" title=" " alt="" coords="3412,401,3569,427"/>
-<area shape="rect" id="node7" href="$Camera_8cpp.html" title=" " alt="" coords="3524,311,3689,338"/>
-<area shape="rect" id="node9" href="$Scene_8hpp.html" title=" " alt="" coords="3116,311,3263,338"/>
-<area shape="rect" id="node5" href="$SceneBuilder_8hpp.html" title=" " alt="" coords="3395,490,3586,517"/>
-<area shape="rect" id="node10" href="$Computing_8hpp.html" title=" " alt="" coords="2925,401,3123,427"/>
-<area shape="rect" id="node11" href="$Core_8hpp.html" title=" " alt="" coords="3917,401,4046,427"/>
-<area shape="rect" id="node15" href="$AmbiantLight_8hpp.html" title=" " alt="" coords="68,304,244,345"/>
-<area shape="rect" id="node17" href="$DirectionalLight_8hpp.html" title=" " alt="" coords="649,304,791,345"/>
-<area shape="rect" id="node19" href="$IMaterial_8hpp.html" title=" " alt="" coords="1695,311,1871,338"/>
-<area shape="rect" id="node16" href="$AmbiantLight_8cpp.html" title=" " alt="" coords="93,393,269,435"/>
-<area shape="rect" id="node18" href="$DirectionalLight_8cpp.html" title=" " alt="" coords="649,393,791,435"/>
-<area shape="rect" id="node20" href="$LightDecorator_8hpp.html" title=" " alt="" coords="1845,490,2059,517"/>
-<area shape="rect" id="node21" href="$TintDecorator_8hpp.html" title=" " alt="" coords="1155,490,1365,517"/>
-<area shape="rect" id="node22" href="$Dielectric_8hpp.html" title=" " alt="" coords="1106,393,1262,435"/>
-<area shape="rect" id="node24" href="$Lambertian_8hpp.html" title=" " alt="" coords="865,393,1031,435"/>
-<area shape="rect" id="node26" href="$LightTexture_8hpp.html" title=" " alt="" coords="1439,393,1611,435"/>
-<area shape="rect" id="node28" href="$Metal_8hpp.html" title=" " alt="" coords="1636,393,1769,435"/>
-<area shape="rect" id="node31" href="$Texture_8hpp.html" title=" " alt="" coords="403,393,571,435"/>
-<area shape="rect" id="node33" href="$Circle_8hpp.html" title=" " alt="" coords="1997,393,2137,435"/>
-<area shape="rect" id="node35" href="$Sphere_8hpp.html" title=" " alt="" coords="2753,393,2900,435"/>
-<area shape="rect" id="node32" href="$Texture_8cpp.html" title=" " alt="" coords="440,483,608,524"/>
-<area shape="rect" id="node40" href="$IHitable_8hpp.html" title=" " alt="" coords="2405,229,2581,256"/>
-<area shape="rect" id="node47" href="$Ray_8hpp.html" title=" " alt="" coords="2520,155,2640,181"/>
-<area shape="rect" id="node41" href="$Parsing_8hpp.html" title=" " alt="" coords="3338,311,3499,338"/>
-<area shape="rect" id="node42" href="$Mesh_8hpp.html" title=" " alt="" coords="2540,304,2679,345"/>
-<area shape="rect" id="node44" href="$Plane_8hpp.html" title=" " alt="" coords="2953,304,3092,345"/>
+<area shape="rect" id="node1" title="File for the SingletonLogger class." alt="" coords="2123,5,2328,32"/>
+<area shape="rect" id="node2" href="$SceneBuilder_8cpp.html" title="Implementation of the builder class to create scenes." alt="" coords="1661,572,1851,599"/>
+<area shape="rect" id="node3" href="$Camera_8hpp.html" title="Header file for the Camera class." alt="" coords="2855,229,3020,256"/>
+<area shape="rect" id="node6" href="$Core_8cpp.html" title="Core class implementation." alt="" coords="3921,572,4050,599"/>
+<area shape="rect" id="node8" href="$Computing_8cpp.html" title="File for the Compute class." alt="" coords="2083,490,2282,517"/>
+<area shape="rect" id="node12" href="$Main_8cpp.html" title="Main file." alt="" coords="4110,490,4207,517"/>
+<area shape="rect" id="node13" href="$Scene_8cpp.html" title="Class for handling the scene." alt="" coords="3593,401,3740,427"/>
+<area shape="rect" id="node14" href="$ILight_8hpp.html" title="ILight class header file." alt="" coords="1713,229,1847,256"/>
+<area shape="rect" id="node23" href="$Dielectric_8cpp.html" title="File for the Dielectric class." alt="" coords="923,483,1079,524"/>
+<area shape="rect" id="node25" href="$Lambertian_8cpp.html" title="File for the Lambertian class." alt="" coords="683,483,848,524"/>
+<area shape="rect" id="node27" href="$LightTexture_8cpp.html" title="File for the LightTexture class." alt="" coords="1389,483,1561,524"/>
+<area shape="rect" id="node29" href="$Metal_8cpp.html" title="File for the Metal class." alt="" coords="1585,483,1719,524"/>
+<area shape="rect" id="node30" href="$Parsing_8cpp.html" title="Class for parsing the configuration file." alt="" coords="3615,490,3777,517"/>
+<area shape="rect" id="node34" href="$Circle_8cpp.html" title="File for the Circle class." alt="" coords="2306,483,2446,524"/>
+<area shape="rect" id="node36" href="$Sphere_8cpp.html" title="File for the Sphere class." alt="" coords="3801,483,3948,524"/>
+<area shape="rect" id="node37" href="$SingletonLogger_8cpp.html" title="File for the SingletonLogger class." alt="" coords="3916,80,4121,107"/>
+<area shape="rect" id="node38" href="$Plane_8cpp.html" title="File for the Plane class." alt="" coords="3249,393,3388,435"/>
+<area shape="rect" id="node39" href="$Vec3_8hpp.html" title="Vec3 class header file." alt="" coords="1817,80,1948,107"/>
+<area shape="rect" id="node4" href="$IBuilder_8hpp.html" title="Interface for Builders used in the PotatRaycer project." alt="" coords="3412,401,3569,427"/>
+<area shape="rect" id="node7" href="$Camera_8cpp.html" title="Implementation of the Camera class." alt="" coords="3524,311,3689,338"/>
+<area shape="rect" id="node9" href="$Scene_8hpp.html" title="Scene class header file." alt="" coords="3116,311,3263,338"/>
+<area shape="rect" id="node5" href="$SceneBuilder_8hpp.html" title="Builder class for constructing scenes." alt="" coords="3395,490,3586,517"/>
+<area shape="rect" id="node10" href="$Computing_8hpp.html" title="Header file for the Compute class." alt="" coords="2925,401,3123,427"/>
+<area shape="rect" id="node11" href="$Core_8hpp.html" title="Core class header file." alt="" coords="3917,401,4046,427"/>
+<area shape="rect" id="node15" href="$AmbiantLight_8hpp.html" title="AmbiantLight class header file." alt="" coords="68,304,244,345"/>
+<area shape="rect" id="node17" href="$DirectionalLight_8hpp.html" title="File for the DirectionalLight class." alt="" coords="649,304,791,345"/>
+<area shape="rect" id="node19" href="$IMaterial_8hpp.html" title="File for the IMaterial class." alt="" coords="1695,311,1871,338"/>
+<area shape="rect" id="node16" href="$AmbiantLight_8cpp.html" title="File for the AmbiantLight class." alt="" coords="93,393,269,435"/>
+<area shape="rect" id="node18" href="$DirectionalLight_8cpp.html" title="File for the DirectionalLight class." alt="" coords="649,393,791,435"/>
+<area shape="rect" id="node20" href="$LightDecorator_8hpp.html" title="File for the LightDecorator class." alt="" coords="1845,490,2059,517"/>
+<area shape="rect" id="node21" href="$TintDecorator_8hpp.html" title="File for the TintDecorator class." alt="" coords="1155,490,1365,517"/>
+<area shape="rect" id="node22" href="$Dielectric_8hpp.html" title="File for the Dielectric class." alt="" coords="1106,393,1262,435"/>
+<area shape="rect" id="node24" href="$Lambertian_8hpp.html" title="File for the Lambertian class." alt="" coords="865,393,1031,435"/>
+<area shape="rect" id="node26" href="$LightTexture_8hpp.html" title="File for the LightTexture class." alt="" coords="1439,393,1611,435"/>
+<area shape="rect" id="node28" href="$Metal_8hpp.html" title="File for the Metal class." alt="" coords="1636,393,1769,435"/>
+<area shape="rect" id="node31" href="$Texture_8hpp.html" title="File for the Texture class." alt="" coords="403,393,571,435"/>
+<area shape="rect" id="node33" href="$Circle_8hpp.html" title="File for the Circle class." alt="" coords="1997,393,2137,435"/>
+<area shape="rect" id="node35" href="$Sphere_8hpp.html" title="File for the Sphere class." alt="" coords="2753,393,2900,435"/>
+<area shape="rect" id="node32" href="$Texture_8cpp.html" title="File for the Texture class." alt="" coords="440,483,608,524"/>
+<area shape="rect" id="node40" href="$IHitable_8hpp.html" title="IHitable interface header file." alt="" coords="2405,229,2581,256"/>
+<area shape="rect" id="node47" href="$Ray_8hpp.html" title="Class for handling rays." alt="" coords="2520,155,2640,181"/>
+<area shape="rect" id="node41" href="$Parsing_8hpp.html" title="Class for parsing the configuration file." alt="" coords="3338,311,3499,338"/>
+<area shape="rect" id="node42" href="$Mesh_8hpp.html" title="Class for handling meshes." alt="" coords="2540,304,2679,345"/>
+<area shape="rect" id="node44" href="$Plane_8hpp.html" title="File for the Plane class." alt="" coords="2953,304,3092,345"/>
 <area shape="rect" id="node45" href="$Triangle_8hpp.html" title=" " alt="" coords="2364,304,2516,345"/>
-<area shape="rect" id="node43" href="$Mesh_8cpp.html" title=" " alt="" coords="2540,393,2679,435"/>
-<area shape="rect" id="node46" href="$Triangle_8cpp.html" title=" " alt="" coords="2313,393,2465,435"/>
-<area shape="rect" id="node48" href="$Ray_8cpp.html" title=" " alt="" coords="2605,229,2725,256"/>
+<area shape="rect" id="node43" href="$Mesh_8cpp.html" title="File for the Mesh class." alt="" coords="2540,393,2679,435"/>
+<area shape="rect" id="node46" href="$Triangle_8cpp.html" title="File for the Triangle class." alt="" coords="2313,393,2465,435"/>
+<area shape="rect" id="node48" href="$Ray_8cpp.html" title="Class for handling rays." alt="" coords="2605,229,2725,256"/>
 </map>

@@ -1,7 +1,7 @@
 <map id="Vec3::fromRGB" name="Vec3::fromRGB">
-<area shape="rect" id="node1" title=" " alt="" coords="5,81,120,108"/>
-<area shape="rect" id="node2" href="$classVec3.html#a0309a2455125001750a97e300f06b1bd" title=" " alt="" coords="179,5,245,32"/>
-<area shape="rect" id="node3" href="$classVec3.html#a873feca4434930113298010748e49795" title=" " alt="" coords="179,56,245,83"/>
-<area shape="rect" id="node4" href="$classVec3.html#a13ffa091253675e04970fe552f0d69ec" title=" " alt="" coords="181,107,243,133"/>
-<area shape="rect" id="node5" href="$classVec3.html#aae7a1ffaa1108a30c281da216d1cd312" title=" " alt="" coords="168,157,256,184"/>
+<area shape="rect" id="node1" title="Create a Vec3 from RGB values." alt="" coords="5,81,120,108"/>
+<area shape="rect" id="node2" href="$classVec3.html#a0309a2455125001750a97e300f06b1bd" title="Get the blue component (same as z&#45;coordinate)." alt="" coords="179,5,245,32"/>
+<area shape="rect" id="node3" href="$classVec3.html#a873feca4434930113298010748e49795" title="Get the green component (same as y&#45;coordinate)." alt="" coords="179,56,245,83"/>
+<area shape="rect" id="node4" href="$classVec3.html#a13ffa091253675e04970fe552f0d69ec" title="Get the red component (same as x&#45;coordinate)." alt="" coords="181,107,243,133"/>
+<area shape="rect" id="node5" href="$classVec3.html#aae7a1ffaa1108a30c281da216d1cd312" title="Default constructor for Vec3." alt="" coords="168,157,256,184"/>
 </map>

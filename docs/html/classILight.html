@@ -71,15 +71,18 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Interface for the Light class.  
+ <a href="classILight.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="ILight_8hpp_source.html">ILight.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for ILight:</div>
 <div class="dyncontent">
 <div class="center"><img src="classILight__inherit__graph.png" border="0" usemap="#aILight_inherit__map" alt="Inheritance graph"/></div>
 <map name="aILight_inherit__map" id="aILight_inherit__map">
-<area shape="rect" title=" " alt="" coords="91,5,146,32"/>
-<area shape="rect" href="classAmbiantLight.html" title=" " alt="" coords="5,80,104,107"/>
-<area shape="rect" href="classDirectionalLight.html" title=" " alt="" coords="128,80,240,107"/>
+<area shape="rect" title="Interface for the Light class." alt="" coords="91,5,146,32"/>
+<area shape="rect" href="classAmbiantLight.html" title="Class used to create the AmbiantLight." alt="" coords="5,80,104,107"/>
+<area shape="rect" href="classDirectionalLight.html" title="Class used to create the DirectionalLight." alt="" coords="128,80,240,107"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -88,21 +91,28 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a13040cea55cb2d4ba287572567bbb57e"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classILight.html#a13040cea55cb2d4ba287572567bbb57e">~ILight</a> ()=default</td></tr>
 <tr class="separator:a13040cea55cb2d4ba287572567bbb57e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a772b9eaedddc1d70ba934ca15479a2d9"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classILight.html#a772b9eaedddc1d70ba934ca15479a2d9">getType</a> ()=0</td></tr>
+<tr class="memdesc:a772b9eaedddc1d70ba934ca15479a2d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the type of the light.  <a href="classILight.html#a772b9eaedddc1d70ba934ca15479a2d9">More...</a><br /></td></tr>
 <tr class="separator:a772b9eaedddc1d70ba934ca15479a2d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac362fd42c6e153a1aea41f7a855b066a"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classVec3.html">Vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classILight.html#ac362fd42c6e153a1aea41f7a855b066a">getPosition</a> () const =0</td></tr>
+<tr class="memdesc:ac362fd42c6e153a1aea41f7a855b066a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the position of the light.  <a href="classILight.html#ac362fd42c6e153a1aea41f7a855b066a">More...</a><br /></td></tr>
 <tr class="separator:ac362fd42c6e153a1aea41f7a855b066a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04d4fe23a07d67e21480631659a85fa3"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classILight.html#a04d4fe23a07d67e21480631659a85fa3">getIntensity</a> () const =0</td></tr>
+<tr class="memdesc:a04d4fe23a07d67e21480631659a85fa3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the intensity of the light.  <a href="classILight.html#a04d4fe23a07d67e21480631659a85fa3">More...</a><br /></td></tr>
 <tr class="separator:a04d4fe23a07d67e21480631659a85fa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6021ef7ec882982fbf4521377c23bfc"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classVec3.html">Vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classILight.html#ac6021ef7ec882982fbf4521377c23bfc">calculateLightDirection</a> (const <a class="el" href="classVec3.html">Vec3</a> &amp;point) const =0</td></tr>
+<tr class="memdesc:ac6021ef7ec882982fbf4521377c23bfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to calculate the light direction.  <a href="classILight.html#ac6021ef7ec882982fbf4521377c23bfc">More...</a><br /></td></tr>
 <tr class="separator:ac6021ef7ec882982fbf4521377c23bfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aace0da1056f5f004f335a4245888317f"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classVec3.html">Vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classILight.html#aace0da1056f5f004f335a4245888317f">getNormal</a> ()=0</td></tr>
+<tr class="memdesc:aace0da1056f5f004f335a4245888317f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to get the normal of the light.  <a href="classILight.html#aace0da1056f5f004f335a4245888317f">More...</a><br /></td></tr>
 <tr class="separator:aace0da1056f5f004f335a4245888317f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a107a24266a3f5282a077ec64b6eb7ebc"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classILight.html#a107a24266a3f5282a077ec64b6eb7ebc">getSize</a> ()=0</td></tr>
+<tr class="memdesc:a107a24266a3f5282a077ec64b6eb7ebc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to get the size of the light.  <a href="classILight.html#a107a24266a3f5282a077ec64b6eb7ebc">More...</a><br /></td></tr>
 <tr class="separator:a107a24266a3f5282a077ec64b6eb7ebc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="ILight_8hpp_source.html#l00017">17</a> of file <a class="el" href="ILight_8hpp_source.html">ILight.hpp</a>.</p>
+<div class="textblock"><p>Interface for the Light class. </p>
+
+<p class="definition">Definition at line <a class="el" href="ILight_8hpp_source.html#l00027">27</a> of file <a class="el" href="ILight_8hpp_source.html">ILight.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a13040cea55cb2d4ba287572567bbb57e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a13040cea55cb2d4ba287572567bbb57e">&#9670;&nbsp;</a></span>~ILight()</h2>
@@ -154,6 +164,15 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Function to calculate the light direction. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">point</td><td>The point. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The light direction. </dd></dl>
+
 <p>Implemented in <a class="el" href="classDirectionalLight.html#ad02401b6cf7313fc3f316035e0f89d9f">DirectionalLight</a>, and <a class="el" href="classAmbiantLight.html#ad37f4c5204bfa14b59af195f8b9b73a2">AmbiantLight</a>.</p>
 
 </div>
@@ -180,6 +199,9 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Get the intensity of the light. </p>
+<dl class="section return"><dt>Returns</dt><dd>The intensity of the light. </dd></dl>
 
 <p>Implemented in <a class="el" href="classDirectionalLight.html#abb39ede9fc60cc89cbfc0e961263dea8">DirectionalLight</a>, and <a class="el" href="classAmbiantLight.html#a596361b16eb5291a0be057813b4da1b2">AmbiantLight</a>.</p>
 
@@ -208,6 +230,9 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Function to get the normal of the light. </p>
+<dl class="section return"><dt>Returns</dt><dd>The normal of the light. </dd></dl>
+
 <p>Implemented in <a class="el" href="classDirectionalLight.html#ac1dff4a4bc57a357ba493978dbc6cdd6">DirectionalLight</a>, and <a class="el" href="classAmbiantLight.html#a00924f8311d18dd9d283436c6cd9f69b">AmbiantLight</a>.</p>
 
 </div>
@@ -234,6 +259,9 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Get the position of the light. </p>
+<dl class="section return"><dt>Returns</dt><dd>The position of the light. </dd></dl>
 
 <p>Implemented in <a class="el" href="classDirectionalLight.html#a974d00a7d2184671cbb9a9dfb77e617d">DirectionalLight</a>, and <a class="el" href="classAmbiantLight.html#a474bc4bbaca2c80617488b5df43bc42e">AmbiantLight</a>.</p>
 
@@ -262,6 +290,9 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Function to get the size of the light. </p>
+<dl class="section return"><dt>Returns</dt><dd>The size of the light. </dd></dl>
+
 <p>Implemented in <a class="el" href="classDirectionalLight.html#a70b6647ae8588b37ef77b04028a65b3d">DirectionalLight</a>, and <a class="el" href="classAmbiantLight.html#a3b7d07fa945f9ba03146a0abed7ae8bf">AmbiantLight</a>.</p>
 
 </div>
@@ -288,6 +319,9 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Get the type of the light. </p>
+<dl class="section return"><dt>Returns</dt><dd>The type of the light. </dd></dl>
 
 <p>Implemented in <a class="el" href="classDirectionalLight.html#ae4439a7055c1ce119e938ec566dc6ddc">DirectionalLight</a>, and <a class="el" href="classAmbiantLight.html#ab068ea64fe7fe451edada571f13a9d83">AmbiantLight</a>.</p>
 

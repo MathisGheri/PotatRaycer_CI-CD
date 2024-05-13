@@ -1,6 +1,6 @@
 <map id="FileWatcherSingleton::getInstance" name="FileWatcherSingleton::getInstance">
-<area shape="rect" id="node1" title=" " alt="" coords="444,14,589,55"/>
-<area shape="rect" id="node2" href="$classCore.html#afdfd60c50da96c795184b83678195724" title=" " alt="" coords="104,21,241,48"/>
+<area shape="rect" id="node1" title="Get the instance of the singleton." alt="" coords="444,14,589,55"/>
+<area shape="rect" id="node2" href="$classCore.html#afdfd60c50da96c795184b83678195724" title="Function to generate the PPM file." alt="" coords="104,21,241,48"/>
 <area shape="rect" id="node3" href="$Main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,46,56,73"/>
-<area shape="rect" id="node4" href="$classCompute.html#ae697501b970a1eb1fbde44f2eeb5fd26" title=" " alt="" coords="289,21,396,48"/>
+<area shape="rect" id="node4" href="$classCompute.html#ae697501b970a1eb1fbde44f2eeb5fd26" title="Loop function to compute the image." alt="" coords="289,21,396,48"/>
 </map>

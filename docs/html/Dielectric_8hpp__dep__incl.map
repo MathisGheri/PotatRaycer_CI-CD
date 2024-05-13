@@ -1,5 +1,5 @@
 <map id="src/Materials/Dielectric/Dielectric.hpp" name="src/Materials/Dielectric/Dielectric.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="121,5,277,47"/>
-<area shape="rect" id="node2" href="$SceneBuilder_8cpp.html" title=" " alt="" coords="5,102,196,129"/>
-<area shape="rect" id="node3" href="$Dielectric_8cpp.html" title=" " alt="" coords="220,95,376,136"/>
+<area shape="rect" id="node1" title="File for the Dielectric class." alt="" coords="121,5,277,47"/>
+<area shape="rect" id="node2" href="$SceneBuilder_8cpp.html" title="Implementation of the builder class to create scenes." alt="" coords="5,102,196,129"/>
+<area shape="rect" id="node3" href="$Dielectric_8cpp.html" title="File for the Dielectric class." alt="" coords="220,95,376,136"/>
 </map>

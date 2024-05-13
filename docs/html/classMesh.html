@@ -72,14 +72,17 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Class for handling meshes.  
+ <a href="classMesh.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="Mesh_8hpp_source.html">Mesh.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for Mesh:</div>
 <div class="dyncontent">
 <div class="center"><img src="classMesh__inherit__graph.png" border="0" usemap="#aMesh_inherit__map" alt="Inheritance graph"/></div>
 <map name="aMesh_inherit__map" id="aMesh_inherit__map">
-<area shape="rect" title=" " alt="" coords="11,80,66,107"/>
-<area shape="rect" href="classIHitable.html" title=" " alt="" coords="5,5,72,32"/>
+<area shape="rect" title="Class for handling meshes." alt="" coords="11,80,66,107"/>
+<area shape="rect" href="classIHitable.html" title="Interface for objects that can be hit by rays." alt="" coords="5,5,72,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
@@ -87,9 +90,9 @@ Collaboration diagram for Mesh:</div>
 <div class="dyncontent">
 <div class="center"><img src="classMesh__coll__graph.png" border="0" usemap="#aMesh_coll__map" alt="Collaboration graph"/></div>
 <map name="aMesh_coll__map" id="aMesh_coll__map">
-<area shape="rect" title=" " alt="" coords="53,124,107,151"/>
-<area shape="rect" href="classIHitable.html" title=" " alt="" coords="5,5,72,32"/>
-<area shape="rect" href="classVec3.html" title=" " alt="" coords="96,5,147,32"/>
+<area shape="rect" title="Class for handling meshes." alt="" coords="53,124,107,151"/>
+<area shape="rect" href="classIHitable.html" title="Interface for objects that can be hit by rays." alt="" coords="5,5,72,32"/>
+<area shape="rect" href="classVec3.html" title="Class for representing a 3D vector." alt="" coords="96,5,147,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -99,29 +102,42 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a60a273be8b7e2f9c94150677f59d2e4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5efe4da1a4c0971cfb037bd70304c303"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMesh.html#a5efe4da1a4c0971cfb037bd70304c303">~Mesh</a> ()</td></tr>
 <tr class="separator:a5efe4da1a4c0971cfb037bd70304c303"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a0c7f567cb921e70c573e723b9ee6c5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMesh.html#a8a0c7f567cb921e70c573e723b9ee6c5">hit</a> (const <a class="el" href="classRay.html">Ray</a> &amp;r, float t_min, float t_max, <a class="el" href="struct_8h.html#aaf145a045b8acf3bedf3be121d64e390">hit_record_t</a> &amp;rec) const</td></tr>
+<tr class="memitem:a8a0c7f567cb921e70c573e723b9ee6c5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMesh.html#a8a0c7f567cb921e70c573e723b9ee6c5">hit</a> (const <a class="el" href="classRay.html">Ray</a> &amp;r, float t_min, float t_max, <a class="el" href="structhit__record__t.html">hit_record_t</a> &amp;rec) const</td></tr>
+<tr class="memdesc:a8a0c7f567cb921e70c573e723b9ee6c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if a ray hits the object.  <a href="classMesh.html#a8a0c7f567cb921e70c573e723b9ee6c5">More...</a><br /></td></tr>
 <tr class="separator:a8a0c7f567cb921e70c573e723b9ee6c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0549587571cdb94b867b2fdfec46b230"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMesh.html#a0549587571cdb94b867b2fdfec46b230">setMaterial</a> (std::shared_ptr&lt; <a class="el" href="classIMaterial.html">IMaterial</a> &gt; m)</td></tr>
+<tr class="memdesc:a0549587571cdb94b867b2fdfec46b230"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the material of the object.  <a href="classMesh.html#a0549587571cdb94b867b2fdfec46b230">More...</a><br /></td></tr>
 <tr class="separator:a0549587571cdb94b867b2fdfec46b230"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4d7b3c16adae59048586e4e2654c81c"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classIMaterial.html">IMaterial</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMesh.html#ab4d7b3c16adae59048586e4e2654c81c">getMaterial</a> ()</td></tr>
+<tr class="memdesc:ab4d7b3c16adae59048586e4e2654c81c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the material of the object.  <a href="classMesh.html#ab4d7b3c16adae59048586e4e2654c81c">More...</a><br /></td></tr>
 <tr class="separator:ab4d7b3c16adae59048586e4e2654c81c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acfa7b7131185af02743f0e0794a75e70"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMesh.html#acfa7b7131185af02743f0e0794a75e70">transformVertices</a> ()</td></tr>
+<tr class="memdesc:acfa7b7131185af02743f0e0794a75e70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transform the triangle inside the mesh based on the values given.  <a href="classMesh.html#acfa7b7131185af02743f0e0794a75e70">More...</a><br /></td></tr>
 <tr class="separator:acfa7b7131185af02743f0e0794a75e70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classIHitable"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classIHitable')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classIHitable.html">IHitable</a></td></tr>
+<tr class="memitem:a8eb7f9af8165ed9e2bd628ced769f77f inherit pub_methods_classIHitable"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIHitable.html#a8eb7f9af8165ed9e2bd628ced769f77f">~IHitable</a> ()=default</td></tr>
+<tr class="memdesc:a8eb7f9af8165ed9e2bd628ced769f77f inherit pub_methods_classIHitable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor for <a class="el" href="classIHitable.html" title="Interface for objects that can be hit by rays.">IHitable</a>.  <a href="classIHitable.html#a8eb7f9af8165ed9e2bd628ced769f77f">More...</a><br /></td></tr>
+<tr class="separator:a8eb7f9af8165ed9e2bd628ced769f77f inherit pub_methods_classIHitable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:aaf4696581a1d0cb3157c46b16b29038a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVec3.html">Vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMesh.html#aaf4696581a1d0cb3157c46b16b29038a">_position</a></td></tr>
+<tr class="memdesc:aaf4696581a1d0cb3157c46b16b29038a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Position of the mesh.  <a href="classMesh.html#aaf4696581a1d0cb3157c46b16b29038a">More...</a><br /></td></tr>
 <tr class="separator:aaf4696581a1d0cb3157c46b16b29038a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac7aa6c72b602b59b2bcac0dc9b326fa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVec3.html">Vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMesh.html#aac7aa6c72b602b59b2bcac0dc9b326fa">_rotation</a></td></tr>
+<tr class="memdesc:aac7aa6c72b602b59b2bcac0dc9b326fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotation of the mesh.  <a href="classMesh.html#aac7aa6c72b602b59b2bcac0dc9b326fa">More...</a><br /></td></tr>
 <tr class="separator:aac7aa6c72b602b59b2bcac0dc9b326fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9f415c6b35c7857b2b2deb5ee89f79e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVec3.html">Vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMesh.html#aa9f415c6b35c7857b2b2deb5ee89f79e">_scale</a></td></tr>
+<tr class="memdesc:aa9f415c6b35c7857b2b2deb5ee89f79e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scale of the mesh.  <a href="classMesh.html#aa9f415c6b35c7857b2b2deb5ee89f79e">More...</a><br /></td></tr>
 <tr class="separator:aa9f415c6b35c7857b2b2deb5ee89f79e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc8cfe67c8254d9789d127a63458b140"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::shared_ptr&lt; <a class="el" href="classIHitable.html">IHitable</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMesh.html#afc8cfe67c8254d9789d127a63458b140">_triangles</a></td></tr>
+<tr class="memdesc:afc8cfe67c8254d9789d127a63458b140"><td class="mdescLeft">&#160;</td><td class="mdescRight">Triangles of the mesh.  <a href="classMesh.html#afc8cfe67c8254d9789d127a63458b140">More...</a><br /></td></tr>
 <tr class="separator:afc8cfe67c8254d9789d127a63458b140"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="Mesh_8hpp_source.html#l00013">13</a> of file <a class="el" href="Mesh_8hpp_source.html">Mesh.hpp</a>.</p>
+<div class="textblock"><p>Class for handling meshes. </p>
+
+<p class="definition">Definition at line <a class="el" href="Mesh_8hpp_source.html#l00023">23</a> of file <a class="el" href="Mesh_8hpp_source.html">Mesh.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a60a273be8b7e2f9c94150677f59d2e4a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a60a273be8b7e2f9c94150677f59d2e4a">&#9670;&nbsp;</a></span>Mesh()</h2>
@@ -161,12 +177,12 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Mesh_8cpp_source.html#l00012">12</a> of file <a class="el" href="Mesh_8cpp_source.html">Mesh.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    : <a class="code" href="classMesh.html#afc8cfe67c8254d9789d127a63458b140">_triangles</a>(tris), <a class="code" href="classMesh.html#aaf4696581a1d0cb3157c46b16b29038a">_position</a>(pos), <a class="code" href="classMesh.html#aac7aa6c72b602b59b2bcac0dc9b326fa">_rotation</a>(rot), <a class="code" href="classMesh.html#aa9f415c6b35c7857b2b2deb5ee89f79e">_scale</a>(scl) {}</div>
-<div class="ttc" id="aclassMesh_html_aa9f415c6b35c7857b2b2deb5ee89f79e"><div class="ttname"><a href="classMesh.html#aa9f415c6b35c7857b2b2deb5ee89f79e">Mesh::_scale</a></div><div class="ttdeci">Vec3 _scale</div><div class="ttdef"><b>Definition:</b> <a href="Mesh_8hpp_source.html#l00024">Mesh.hpp:24</a></div></div>
-<div class="ttc" id="aclassMesh_html_aac7aa6c72b602b59b2bcac0dc9b326fa"><div class="ttname"><a href="classMesh.html#aac7aa6c72b602b59b2bcac0dc9b326fa">Mesh::_rotation</a></div><div class="ttdeci">Vec3 _rotation</div><div class="ttdef"><b>Definition:</b> <a href="Mesh_8hpp_source.html#l00023">Mesh.hpp:23</a></div></div>
-<div class="ttc" id="aclassMesh_html_aaf4696581a1d0cb3157c46b16b29038a"><div class="ttname"><a href="classMesh.html#aaf4696581a1d0cb3157c46b16b29038a">Mesh::_position</a></div><div class="ttdeci">Vec3 _position</div><div class="ttdef"><b>Definition:</b> <a href="Mesh_8hpp_source.html#l00022">Mesh.hpp:22</a></div></div>
-<div class="ttc" id="aclassMesh_html_afc8cfe67c8254d9789d127a63458b140"><div class="ttname"><a href="classMesh.html#afc8cfe67c8254d9789d127a63458b140">Mesh::_triangles</a></div><div class="ttdeci">std::vector&lt; std::shared_ptr&lt; IHitable &gt; &gt; _triangles</div><div class="ttdef"><b>Definition:</b> <a href="Mesh_8hpp_source.html#l00025">Mesh.hpp:25</a></div></div>
+<p class="definition">Definition at line <a class="el" href="Mesh_8cpp_source.html#l00017">17</a> of file <a class="el" href="Mesh_8cpp_source.html">Mesh.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    : <a class="code" href="classMesh.html#afc8cfe67c8254d9789d127a63458b140">_triangles</a>(tris), <a class="code" href="classMesh.html#aaf4696581a1d0cb3157c46b16b29038a">_position</a>(pos), <a class="code" href="classMesh.html#aac7aa6c72b602b59b2bcac0dc9b326fa">_rotation</a>(rot), <a class="code" href="classMesh.html#aa9f415c6b35c7857b2b2deb5ee89f79e">_scale</a>(scl) {}</div>
+<div class="ttc" id="aclassMesh_html_aa9f415c6b35c7857b2b2deb5ee89f79e"><div class="ttname"><a href="classMesh.html#aa9f415c6b35c7857b2b2deb5ee89f79e">Mesh::_scale</a></div><div class="ttdeci">Vec3 _scale</div><div class="ttdoc">Scale of the mesh.</div><div class="ttdef"><b>Definition:</b> <a href="Mesh_8hpp_source.html#l00038">Mesh.hpp:38</a></div></div>
+<div class="ttc" id="aclassMesh_html_aac7aa6c72b602b59b2bcac0dc9b326fa"><div class="ttname"><a href="classMesh.html#aac7aa6c72b602b59b2bcac0dc9b326fa">Mesh::_rotation</a></div><div class="ttdeci">Vec3 _rotation</div><div class="ttdoc">Rotation of the mesh.</div><div class="ttdef"><b>Definition:</b> <a href="Mesh_8hpp_source.html#l00037">Mesh.hpp:37</a></div></div>
+<div class="ttc" id="aclassMesh_html_aaf4696581a1d0cb3157c46b16b29038a"><div class="ttname"><a href="classMesh.html#aaf4696581a1d0cb3157c46b16b29038a">Mesh::_position</a></div><div class="ttdeci">Vec3 _position</div><div class="ttdoc">Position of the mesh.</div><div class="ttdef"><b>Definition:</b> <a href="Mesh_8hpp_source.html#l00036">Mesh.hpp:36</a></div></div>
+<div class="ttc" id="aclassMesh_html_afc8cfe67c8254d9789d127a63458b140"><div class="ttname"><a href="classMesh.html#afc8cfe67c8254d9789d127a63458b140">Mesh::_triangles</a></div><div class="ttdeci">std::vector&lt; std::shared_ptr&lt; IHitable &gt; &gt; _triangles</div><div class="ttdoc">Triangles of the mesh.</div><div class="ttdef"><b>Definition:</b> <a href="Mesh_8hpp_source.html#l00039">Mesh.hpp:39</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -185,8 +201,8 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Mesh_8cpp_source.html#l00015">15</a> of file <a class="el" href="Mesh_8cpp_source.html">Mesh.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{}</div>
+<p class="definition">Definition at line <a class="el" href="Mesh_8cpp_source.html#l00020">20</a> of file <a class="el" href="Mesh_8cpp_source.html">Mesh.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -214,10 +230,14 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Get the material of the object. </p>
+<p>This method retrieves the material of the object.</p>
+<dl class="section return"><dt>Returns</dt><dd>A shared pointer to the material of the object. </dd></dl>
+
 <p>Implements <a class="el" href="classIHitable.html#a9b24c25a86adb96ea60f9397e78b71f2">IHitable</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="Mesh_8hpp_source.html#l00019">19</a> of file <a class="el" href="Mesh_8hpp_source.html">Mesh.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{ <span class="keywordflow">return</span> <span class="keyword">nullptr</span>; };</div>
+<p class="definition">Definition at line <a class="el" href="Mesh_8hpp_source.html#l00029">29</a> of file <a class="el" href="Mesh_8hpp_source.html">Mesh.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{ <span class="keywordflow">return</span> <span class="keyword">nullptr</span>; };</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -251,7 +271,7 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_8h.html#aaf145a045b8acf3bedf3be121d64e390">hit_record_t</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="structhit__record__t.html">hit_record_t</a> &amp;&#160;</td>
           <td class="paramname"><em>rec</em>&#160;</td>
         </tr>
         <tr>
@@ -267,26 +287,38 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Determine if a ray hits the object. </p>
+<p>This method checks if a given ray intersects with the object within a specified range. If an intersection occurs, it populates the hit record with details about the intersection.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">r</td><td>The ray to check for intersection. </td></tr>
+    <tr><td class="paramname">t_min</td><td>The minimum value of the parameter t to consider. </td></tr>
+    <tr><td class="paramname">t_max</td><td>The maximum value of the parameter t to consider. </td></tr>
+    <tr><td class="paramname">rec</td><td>The hit record to populate with intersection details. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the ray intersects the object, false otherwise. </dd></dl>
+
 <p>Implements <a class="el" href="classIHitable.html#af3d1a57560db315edd6e140b68e1cd9e">IHitable</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="Mesh_8cpp_source.html#l00017">17</a> of file <a class="el" href="Mesh_8cpp_source.html">Mesh.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="structhit__record__s.html">hit_record_t</a> temp_rec;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">bool</span> hit_anything = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">float</span> closest_so_far = t_max;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; triangle : <a class="code" href="classMesh.html#afc8cfe67c8254d9789d127a63458b140">_triangles</a>) {</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keywordflow">if</span> (triangle-&gt;hit(r, t_min, closest_so_far, temp_rec)) {</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            hit_anything = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            closest_so_far = temp_rec.<a class="code" href="structhit__record__s.html#acd8ec618acd0577e2cc1efdd997501ed">t</a>;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            rec = temp_rec;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        }</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    }</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordflow">return</span> hit_anything;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div>
-<div class="ttc" id="astructhit__record__s_html"><div class="ttname"><a href="structhit__record__s.html">hit_record_s</a></div><div class="ttdef"><b>Definition:</b> <a href="struct_8h_source.html#l00014">struct.h:14</a></div></div>
-<div class="ttc" id="astructhit__record__s_html_acd8ec618acd0577e2cc1efdd997501ed"><div class="ttname"><a href="structhit__record__s.html#acd8ec618acd0577e2cc1efdd997501ed">hit_record_s::t</a></div><div class="ttdeci">float t</div><div class="ttdef"><b>Definition:</b> <a href="struct_8h_source.html#l00015">struct.h:15</a></div></div>
+<p class="definition">Definition at line <a class="el" href="Mesh_8cpp_source.html#l00022">22</a> of file <a class="el" href="Mesh_8cpp_source.html">Mesh.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="structhit__record__t.html">hit_record_t</a> temp_rec;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">bool</span> hit_anything = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">float</span> closest_so_far = t_max;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; triangle : <a class="code" href="classMesh.html#afc8cfe67c8254d9789d127a63458b140">_triangles</a>) {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keywordflow">if</span> (triangle-&gt;hit(r, t_min, closest_so_far, temp_rec)) {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            hit_anything = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            closest_so_far = temp_rec.t;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            rec = temp_rec;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        }</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    }</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordflow">return</span> hit_anything;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}</div>
+<div class="ttc" id="astructhit__record__t_html"><div class="ttname"><a href="structhit__record__t.html">hit_record_t</a></div><div class="ttdoc">Structure for storing hit record information.</div><div class="ttdef"><b>Definition:</b> <a href="struct_8h_source.html#l00020">struct.h:17</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="classMesh.html#afc8cfe67c8254d9789d127a63458b140">_triangles</a>, and <a class="el" href="structhit__record__s.html#acd8ec618acd0577e2cc1efdd997501ed">hit_record_s::t</a>.</p>
+<p class="reference">References <a class="el" href="classMesh.html#afc8cfe67c8254d9789d127a63458b140">_triangles</a>.</p>
 
 </div>
 </div>
@@ -314,10 +346,19 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Set the material of the object. </p>
+<p>This method sets the material of the object to the provided material.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">m</td><td>A shared pointer to the material to set. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p>Implements <a class="el" href="classIHitable.html#a7226d47cda8d1004c3bd028d53e71c39">IHitable</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="Mesh_8hpp_source.html#l00018">18</a> of file <a class="el" href="Mesh_8hpp_source.html">Mesh.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{ return ; };</div>
+<p class="definition">Definition at line <a class="el" href="Mesh_8hpp_source.html#l00028">28</a> of file <a class="el" href="Mesh_8hpp_source.html">Mesh.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{ return ; };</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -336,13 +377,15 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Mesh_8cpp_source.html#l00032">32</a> of file <a class="el" href="Mesh_8cpp_source.html">Mesh.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; tri : <a class="code" href="classMesh.html#afc8cfe67c8254d9789d127a63458b140">_triangles</a>) {</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        std::shared_ptr&lt;Triangle&gt; triangle_ptr = std::dynamic_pointer_cast&lt;Triangle&gt;(tri);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        triangle_ptr-&gt;transform(<a class="code" href="classMesh.html#aa9f415c6b35c7857b2b2deb5ee89f79e">_scale</a>, <a class="code" href="classMesh.html#aac7aa6c72b602b59b2bcac0dc9b326fa">_rotation</a>, <a class="code" href="classMesh.html#aaf4696581a1d0cb3157c46b16b29038a">_position</a>);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    }</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div>
+<p>Transform the triangle inside the mesh based on the values given. </p>
+
+<p class="definition">Definition at line <a class="el" href="Mesh_8cpp_source.html#l00037">37</a> of file <a class="el" href="Mesh_8cpp_source.html">Mesh.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; tri : <a class="code" href="classMesh.html#afc8cfe67c8254d9789d127a63458b140">_triangles</a>) {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        std::shared_ptr&lt;Triangle&gt; triangle_ptr = std::dynamic_pointer_cast&lt;Triangle&gt;(tri);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        triangle_ptr-&gt;transform(<a class="code" href="classMesh.html#aa9f415c6b35c7857b2b2deb5ee89f79e">_scale</a>, <a class="code" href="classMesh.html#aac7aa6c72b602b59b2bcac0dc9b326fa">_rotation</a>, <a class="code" href="classMesh.html#aaf4696581a1d0cb3157c46b16b29038a">_position</a>);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    }</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="classMesh.html#aaf4696581a1d0cb3157c46b16b29038a">_position</a>, <a class="el" href="classMesh.html#aac7aa6c72b602b59b2bcac0dc9b326fa">_rotation</a>, <a class="el" href="classMesh.html#aa9f415c6b35c7857b2b2deb5ee89f79e">_scale</a>, and <a class="el" href="classMesh.html#afc8cfe67c8254d9789d127a63458b140">_triangles</a>.</p>
 
@@ -352,10 +395,10 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classMesh_acfa7b7131185af02743f0e0794a75e70_icgraph.png" border="0" usemap="#aclassMesh_acfa7b7131185af02743f0e0794a75e70_icgraph" alt=""/></div>
 <map name="aclassMesh_acfa7b7131185af02743f0e0794a75e70_icgraph" id="aclassMesh_acfa7b7131185af02743f0e0794a75e70_icgraph">
-<area shape="rect" title=" " alt="" coords="711,31,875,57"/>
-<area shape="rect" href="classSceneBuilder.html#a5cdf7416f99d5b730fe72177fc4c68ea" title=" " alt="" coords="488,23,663,65"/>
-<area shape="rect" href="classCore.html#a8c45134f4e917fb1e2aa2848697f376f" title=" " alt="" coords="289,31,440,57"/>
-<area shape="rect" href="classCore.html#afdfd60c50da96c795184b83678195724" title=" " alt="" coords="104,5,241,32"/>
+<area shape="rect" title="Transform the triangle inside the mesh based on the values given." alt="" coords="711,31,875,57"/>
+<area shape="rect" href="classSceneBuilder.html#a5cdf7416f99d5b730fe72177fc4c68ea" title="Create Mesh objects in the scene." alt="" coords="488,23,663,65"/>
+<area shape="rect" href="classCore.html#a8c45134f4e917fb1e2aa2848697f376f" title="Function to assemble the scene." alt="" coords="289,31,440,57"/>
+<area shape="rect" href="classCore.html#afdfd60c50da96c795184b83678195724" title="Function to generate the PPM file." alt="" coords="104,5,241,32"/>
 <area shape="rect" href="Main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,31,56,57"/>
 </map>
 </div>
@@ -383,7 +426,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Mesh_8hpp_source.html#l00022">22</a> of file <a class="el" href="Mesh_8hpp_source.html">Mesh.hpp</a>.</p>
+<p>Position of the mesh. </p>
+
+<p class="definition">Definition at line <a class="el" href="Mesh_8hpp_source.html#l00036">36</a> of file <a class="el" href="Mesh_8hpp_source.html">Mesh.hpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="classMesh.html#acfa7b7131185af02743f0e0794a75e70">transformVertices()</a>.</p>
 
@@ -409,7 +454,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Mesh_8hpp_source.html#l00023">23</a> of file <a class="el" href="Mesh_8hpp_source.html">Mesh.hpp</a>.</p>
+<p>Rotation of the mesh. </p>
+
+<p class="definition">Definition at line <a class="el" href="Mesh_8hpp_source.html#l00037">37</a> of file <a class="el" href="Mesh_8hpp_source.html">Mesh.hpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="classMesh.html#acfa7b7131185af02743f0e0794a75e70">transformVertices()</a>.</p>
 
@@ -435,7 +482,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Mesh_8hpp_source.html#l00024">24</a> of file <a class="el" href="Mesh_8hpp_source.html">Mesh.hpp</a>.</p>
+<p>Scale of the mesh. </p>
+
+<p class="definition">Definition at line <a class="el" href="Mesh_8hpp_source.html#l00038">38</a> of file <a class="el" href="Mesh_8hpp_source.html">Mesh.hpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="classMesh.html#acfa7b7131185af02743f0e0794a75e70">transformVertices()</a>.</p>
 
@@ -461,7 +510,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Mesh_8hpp_source.html#l00025">25</a> of file <a class="el" href="Mesh_8hpp_source.html">Mesh.hpp</a>.</p>
+<p>Triangles of the mesh. </p>
+
+<p class="definition">Definition at line <a class="el" href="Mesh_8hpp_source.html#l00039">39</a> of file <a class="el" href="Mesh_8hpp_source.html">Mesh.hpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="classMesh.html#a8a0c7f567cb921e70c573e723b9ee6c5">hit()</a>, and <a class="el" href="classMesh.html#acfa7b7131185af02743f0e0794a75e70">transformVertices()</a>.</p>
 

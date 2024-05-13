@@ -4,6 +4,13 @@ The scene file is a `.cfg` file, used to execute the program after his compilati
 All the values inside this files **must be float** and respect the same syntax of the following exemples.\
 It contains the following configuration :
 
+## logger configuration :
+```bash
+logger : {
+    state : "false" // or, true
+}
+```
+
 ## Camera configuration :
 ```bash
 camera : {
@@ -21,11 +28,11 @@ camera : {
 ## Light configuration :
 ```bash
 light : {
+    type : "directional", // or, ambiant
     position : { x = 0.0; y = 0.0; z = 0.0; },
     intensity : { x = 0.0; },
-    normal : { x = 0.0; y = 0.0; z = 0.0; },
-    direc : { x = 0.0; },
-    size : { x = 0.0; }
+    normal : { x = 0.0; y = 0.0; z = 0.0; }, // only for directional light
+    size : { x = 0.0; } // only for directional light
 }
 ```
 

@@ -24,10 +24,10 @@ var searchData=
   ['core_2ecpp_59',['Core.cpp',['../Core_8cpp.html',1,'']]],
   ['core_2ehpp_60',['Core.hpp',['../Core_8hpp.html',1,'']]],
   ['core_5fhpp_5f_61',['CORE_HPP_',['../Core_8hpp.html#a7486f5f3dec55fb89bc1add18bbabb21',1,'Core.hpp']]],
-  ['createcamera_62',['createCamera',['../classIBuilder.html#a86328b8427326fac899a9e1b8ab2be9f',1,'IBuilder::createCamera()'],['../classSceneBuilder.html#a858400b8fa979ff12e72cbb0924dacf8',1,'SceneBuilder::createCamera()']]],
-  ['createlight_63',['createLight',['../classIBuilder.html#a7a99d716bc6b01c310bdadbbde452070',1,'IBuilder::createLight()'],['../classSceneBuilder.html#adc5c6aa9cc749216e534c2c6254ed0ec',1,'SceneBuilder::createLight(std::map&lt; std::string, std::tuple&lt; float, float, float &gt;&gt;) override final']]],
+  ['createcamera_62',['createCamera',['../classIBuilder.html#ab936322dbcac00119840c9e596f92b90',1,'IBuilder::createCamera()'],['../classSceneBuilder.html#a858400b8fa979ff12e72cbb0924dacf8',1,'SceneBuilder::createCamera()']]],
+  ['createlight_63',['createLight',['../classIBuilder.html#a511c12f06b3b17ec2a70778dee2ba115',1,'IBuilder::createLight()'],['../classSceneBuilder.html#adc5c6aa9cc749216e534c2c6254ed0ec',1,'SceneBuilder::createLight(std::map&lt; std::string, std::tuple&lt; float, float, float &gt;&gt;) override final']]],
   ['createmeshfromobj_64',['createMeshFromObj',['../classSceneBuilder.html#a5cdf7416f99d5b730fe72177fc4c68ea',1,'SceneBuilder']]],
-  ['createprimitives_65',['createPrimitives',['../classIBuilder.html#a2332b135e13306ad3a96bf110370ab12',1,'IBuilder::createPrimitives()'],['../classSceneBuilder.html#a14f770fe70c3ec71b0045207113d477d',1,'SceneBuilder::createPrimitives()']]],
+  ['createprimitives_65',['createPrimitives',['../classIBuilder.html#a3cb75d67f26ce20abc3ce9b4761dc5b8',1,'IBuilder::createPrimitives()'],['../classSceneBuilder.html#a14f770fe70c3ec71b0045207113d477d',1,'SceneBuilder::createPrimitives()']]],
   ['critical_66',['CRITICAL',['../Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9acda21a4a072f2261f6d4ab596599f8b0',1,'Logger.hpp']]],
   ['cross_67',['cross',['../Vec3_8hpp.html#a0d0b4382341e3c8ccff0d43ac1282869',1,'Vec3.hpp']]]
 ];

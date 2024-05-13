@@ -1,4 +1,4 @@
 <map id="Lambertian::hit" name="Lambertian::hit">
-<area shape="rect" id="node1" title=" " alt="" coords="188,5,296,32"/>
-<area shape="rect" id="node2" href="$classLambertian.html#abac889cfb58f70314a42a56792e91a66" title=" " alt="" coords="5,5,140,32"/>
+<area shape="rect" id="node1" title="Function to check if the ray has hit the object." alt="" coords="188,5,296,32"/>
+<area shape="rect" id="node2" href="$classLambertian.html#abac889cfb58f70314a42a56792e91a66" title="Function to scatter the ray." alt="" coords="5,5,140,32"/>
 </map>

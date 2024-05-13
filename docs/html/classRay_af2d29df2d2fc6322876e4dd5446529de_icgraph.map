@@ -1,10 +1,10 @@
 <map id="Ray::getDirection" name="Ray::getDirection">
-<area shape="rect" id="node1" title=" " alt="" coords="179,157,303,184"/>
-<area shape="rect" id="node2" href="$classCircle.html#aca14c9f3e92ffb012ce34d2a3c05c8b0" title=" " alt="" coords="29,5,107,32"/>
-<area shape="rect" id="node3" href="$classSphere.html#ada19fc64131c5549dc6edffe4e4123ed" title=" " alt="" coords="25,56,111,83"/>
-<area shape="rect" id="node4" href="$classTriangle.html#ab80d0e93bb39edbc3c667596329fbeb3" title=" " alt="" coords="23,107,113,133"/>
-<area shape="rect" id="node5" href="$classPlane.html#afa5a29728b158729621e08a673dd9d26" title=" " alt="" coords="29,157,107,184"/>
-<area shape="rect" id="node6" href="$classTexture.html#a36bbc7f17266cbba5affd340d8af259f" title=" " alt="" coords="11,208,125,235"/>
-<area shape="rect" id="node7" href="$classDielectric.html#a4709f41e9fa6418de8e6576dec8914c6" title=" " alt="" coords="5,259,131,285"/>
-<area shape="rect" id="node8" href="$classMetal.html#a7ce21d46a783e1b4af05ee1d44a06f8e" title=" " alt="" coords="17,309,119,336"/>
+<area shape="rect" id="node1" title="Get the Direction object." alt="" coords="179,157,303,184"/>
+<area shape="rect" id="node2" href="$classCircle.html#aca14c9f3e92ffb012ce34d2a3c05c8b0" title="Determine if a ray hits the object." alt="" coords="29,5,107,32"/>
+<area shape="rect" id="node3" href="$classSphere.html#ada19fc64131c5549dc6edffe4e4123ed" title="Determine if a ray hits the object." alt="" coords="25,56,111,83"/>
+<area shape="rect" id="node4" href="$classTriangle.html#ab80d0e93bb39edbc3c667596329fbeb3" title="Determine if a ray hits the object." alt="" coords="23,107,113,133"/>
+<area shape="rect" id="node5" href="$classPlane.html#afa5a29728b158729621e08a673dd9d26" title="Determine if a ray hits the object." alt="" coords="29,157,107,184"/>
+<area shape="rect" id="node6" href="$classTexture.html#a36bbc7f17266cbba5affd340d8af259f" title="Function to scatter the ray." alt="" coords="11,208,125,235"/>
+<area shape="rect" id="node7" href="$classDielectric.html#a4709f41e9fa6418de8e6576dec8914c6" title="Function to scatter the ray." alt="" coords="5,259,131,285"/>
+<area shape="rect" id="node8" href="$classMetal.html#a7ce21d46a783e1b4af05ee1d44a06f8e" title="Function to scatter the ray." alt="" coords="17,309,119,336"/>
 </map>

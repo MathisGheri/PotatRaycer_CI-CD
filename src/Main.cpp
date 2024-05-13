@@ -5,6 +5,11 @@
 ** Main
 */
 
+/**
+* @file Main.cpp
+* @brief Main file.
+*/
+
 #include "include.hpp"
 #include "Core.hpp"
 #include "SingletonLogger.hpp"

@@ -1,5 +1,5 @@
 <map id="src/Materials/LightTexture/LightTexture.hpp" name="src/Materials/LightTexture/LightTexture.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="123,5,295,47"/>
-<area shape="rect" id="node2" href="$Computing_8cpp.html" title=" " alt="" coords="5,102,204,129"/>
-<area shape="rect" id="node3" href="$LightTexture_8cpp.html" title=" " alt="" coords="228,95,400,136"/>
+<area shape="rect" id="node1" title="File for the LightTexture class." alt="" coords="123,5,295,47"/>
+<area shape="rect" id="node2" href="$Computing_8cpp.html" title="File for the Compute class." alt="" coords="5,102,204,129"/>
+<area shape="rect" id="node3" href="$LightTexture_8cpp.html" title="File for the LightTexture class." alt="" coords="228,95,400,136"/>
 </map>

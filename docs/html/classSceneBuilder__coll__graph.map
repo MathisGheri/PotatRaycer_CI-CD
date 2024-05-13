@@ -1,7 +1,7 @@
 <map id="SceneBuilder" name="SceneBuilder">
-<area shape="rect" id="node1" title=" " alt="" coords="21,361,120,388"/>
-<area shape="rect" id="node2" href="$classIBuilder.html" title=" " alt="" coords="5,272,72,299"/>
-<area shape="rect" id="node3" href="$classScene.html" title=" " alt="" coords="96,272,155,299"/>
-<area shape="rect" id="node4" href="$classCamera.html" title=" " alt="" coords="91,183,159,209"/>
-<area shape="rect" id="node5" href="$classVec3.html" title=" " alt="" coords="100,5,151,32"/>
+<area shape="rect" id="node1" title="Concrete implementation of the IBuilder interface for constructing scenes." alt="" coords="21,361,120,388"/>
+<area shape="rect" id="node2" href="$classIBuilder.html" title="Interface for the builder pattern to construct scene components." alt="" coords="5,272,72,299"/>
+<area shape="rect" id="node3" href="$classScene.html" title="Class for representing a scene in the ray tracing application." alt="" coords="96,272,155,299"/>
+<area shape="rect" id="node4" href="$classCamera.html" title="Class for creating a camera object in the scene." alt="" coords="91,183,159,209"/>
+<area shape="rect" id="node5" href="$classVec3.html" title="Class for representing a 3D vector." alt="" coords="100,5,151,32"/>
 </map>

@@ -1,5 +1,5 @@
 <map id="FileWatcher::startWatching" name="FileWatcher::startWatching">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,184,32"/>
+<area shape="rect" id="node1" title="Start watching the file." alt="" coords="5,5,184,32"/>
 <area shape="rect" id="node2" href="$classFileWatcher.html#adfafec534ffab0c6722b89e9a40a2b17" title=" " alt="" coords="232,5,411,32"/>
-<area shape="rect" id="node3" href="$classFileWatcher.html#aa6127b4ce107e910106f09f442ed2814" title=" " alt="" coords="459,5,649,32"/>
+<area shape="rect" id="node3" href="$classFileWatcher.html#aa6127b4ce107e910106f09f442ed2814" title="Notify all observers." alt="" coords="459,5,649,32"/>
 </map>

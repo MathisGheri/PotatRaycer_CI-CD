@@ -1,12 +1,12 @@
 <map id="Parsing::Parsing" name="Parsing::Parsing">
 <area shape="rect" id="node1" title=" " alt="" coords="5,157,124,184"/>
-<area shape="rect" id="node2" href="$classLoggerSingleton.html#a9722cb20d2fe85dc683a0e35fd1d2f67" title=" " alt="" coords="384,56,575,83"/>
-<area shape="rect" id="node3" href="$classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2" title=" " alt="" coords="436,107,523,133"/>
-<area shape="rect" id="node5" href="$classParsing.html#a4d3b19100818f4cbde291f91a5b4d117" title=" " alt="" coords="178,208,330,235"/>
-<area shape="rect" id="node6" href="$classParsing.html#a0f5be128288789100d5ed85b36023f79" title=" " alt="" coords="183,259,325,285"/>
-<area shape="rect" id="node7" href="$classParsing.html#aae5ad793f9cf6070d5611b56eff77831" title=" " alt="" coords="181,56,327,83"/>
-<area shape="rect" id="node9" href="$classParsing.html#a838b463a117bf8aa31a340ea925d3405" title=" " alt="" coords="191,309,317,336"/>
-<area shape="rect" id="node10" href="$classParsing.html#aa3336c05be6cece06abb7760795ea4aa" title="Parse the primitive settings from the config file." alt="" coords="172,107,336,133"/>
-<area shape="rect" id="node4" href="$classLogger.html#acfb794ab842c63396ad1c6a771f43483" title=" " alt="" coords="623,107,767,133"/>
-<area shape="rect" id="node8" href="$classLogger.html#a7b8ca7aa853607f58ae151e422deef79" title=" " alt="" coords="420,5,539,32"/>
+<area shape="rect" id="node2" href="$classLoggerSingleton.html#a9722cb20d2fe85dc683a0e35fd1d2f67" title="Get the instance of the Logger." alt="" coords="384,56,575,83"/>
+<area shape="rect" id="node3" href="$classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2" title="Log a message." alt="" coords="436,107,523,133"/>
+<area shape="rect" id="node5" href="$classParsing.html#a4d3b19100818f4cbde291f91a5b4d117" title="Parse the configuration file to fill the camera map." alt="" coords="178,208,330,235"/>
+<area shape="rect" id="node6" href="$classParsing.html#a0f5be128288789100d5ed85b36023f79" title="Parse the configuration file to fill the light map." alt="" coords="183,259,325,285"/>
+<area shape="rect" id="node7" href="$classParsing.html#aae5ad793f9cf6070d5611b56eff77831" title="Parse the configuration file to fill the logger." alt="" coords="181,56,327,83"/>
+<area shape="rect" id="node9" href="$classParsing.html#a838b463a117bf8aa31a340ea925d3405" title="Parse the configuration file to fill the objects vector." alt="" coords="191,309,317,336"/>
+<area shape="rect" id="node10" href="$classParsing.html#aa3336c05be6cece06abb7760795ea4aa" title="Parse the configuration file to fill the primitives vector." alt="" coords="172,107,336,133"/>
+<area shape="rect" id="node4" href="$classLogger.html#acfb794ab842c63396ad1c6a771f43483" title="Convert the log level to a string." alt="" coords="623,107,767,133"/>
+<area shape="rect" id="node8" href="$classLogger.html#a7b8ca7aa853607f58ae151e422deef79" title="Set the state of the logger." alt="" coords="420,5,539,32"/>
 </map>

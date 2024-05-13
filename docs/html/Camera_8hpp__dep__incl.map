@@ -1,14 +1,14 @@
 <map id="src/Camera/Camera.hpp" name="src/Camera/Camera.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="346,5,511,32"/>
-<area shape="rect" id="node2" href="$IBuilder_8hpp.html" title=" " alt="" coords="89,155,246,181"/>
-<area shape="rect" id="node4" href="$SceneBuilder_8cpp.html" title=" " alt="" coords="5,304,196,331"/>
-<area shape="rect" id="node6" href="$Camera_8cpp.html" title=" " alt="" coords="869,80,1034,107"/>
-<area shape="rect" id="node7" href="$Computing_8cpp.html" title=" " alt="" coords="633,229,832,256"/>
-<area shape="rect" id="node8" href="$Scene_8hpp.html" title=" " alt="" coords="355,80,502,107"/>
-<area shape="rect" id="node3" href="$SceneBuilder_8hpp.html" title=" " alt="" coords="72,229,263,256"/>
-<area shape="rect" id="node5" href="$Core_8cpp.html" title=" " alt="" coords="357,304,487,331"/>
-<area shape="rect" id="node9" href="$Computing_8hpp.html" title=" " alt="" coords="424,155,623,181"/>
-<area shape="rect" id="node10" href="$Core_8hpp.html" title=" " alt="" coords="271,155,400,181"/>
-<area shape="rect" id="node12" href="$Scene_8cpp.html" title=" " alt="" coords="647,155,794,181"/>
-<area shape="rect" id="node11" href="$Main_8cpp.html" title=" " alt="" coords="287,229,384,256"/>
+<area shape="rect" id="node1" title="Header file for the Camera class." alt="" coords="346,5,511,32"/>
+<area shape="rect" id="node2" href="$IBuilder_8hpp.html" title="Interface for Builders used in the PotatRaycer project." alt="" coords="89,155,246,181"/>
+<area shape="rect" id="node4" href="$SceneBuilder_8cpp.html" title="Implementation of the builder class to create scenes." alt="" coords="5,304,196,331"/>
+<area shape="rect" id="node6" href="$Camera_8cpp.html" title="Implementation of the Camera class." alt="" coords="869,80,1034,107"/>
+<area shape="rect" id="node7" href="$Computing_8cpp.html" title="File for the Compute class." alt="" coords="633,229,832,256"/>
+<area shape="rect" id="node8" href="$Scene_8hpp.html" title="Scene class header file." alt="" coords="355,80,502,107"/>
+<area shape="rect" id="node3" href="$SceneBuilder_8hpp.html" title="Builder class for constructing scenes." alt="" coords="72,229,263,256"/>
+<area shape="rect" id="node5" href="$Core_8cpp.html" title="Core class implementation." alt="" coords="357,304,487,331"/>
+<area shape="rect" id="node9" href="$Computing_8hpp.html" title="Header file for the Compute class." alt="" coords="424,155,623,181"/>
+<area shape="rect" id="node10" href="$Core_8hpp.html" title="Core class header file." alt="" coords="271,155,400,181"/>
+<area shape="rect" id="node12" href="$Scene_8cpp.html" title="Class for handling the scene." alt="" coords="647,155,794,181"/>
+<area shape="rect" id="node11" href="$Main_8cpp.html" title="Main file." alt="" coords="287,229,384,256"/>
 </map>

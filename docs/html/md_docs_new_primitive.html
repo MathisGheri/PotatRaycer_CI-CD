@@ -69,9 +69,9 @@ $(function() {
 <div class="contents">
 <div class="textblock"><h1>Create file .hpp/cpp</h1>
 <p>In <code>src/Primitives/</code> add a new folder which will contain your cpp/hpp files.</p>
-<p>The class you will create, will need to inheirit from the <b><a class="el" href="classIHitable.html">IHitable</a></b> class. You will have to add the following include: </p><div class="fragment"><div class="line">#include &quot;IHitable.hpp&quot;</div>
+<p>The class you will create, will need to inheirit from the <b><a class="el" href="classIHitable.html" title="Interface for objects that can be hit by rays.">IHitable</a></b> class. You will have to add the following include: </p><div class="fragment"><div class="line">#include &quot;IHitable.hpp&quot;</div>
 </div><!-- fragment --><p> Your class implementation should look like this: </p><div class="fragment"><div class="line">class [NewForm] : public IHitable {</div>
-</div><!-- fragment --><p> You will then have to implement in your .cpp file the following methodes inheirited by <a class="el" href="classIHitable.html">IHitable</a>: </p><div class="fragment"><div class="line">virtual bool hit(const Ray &amp;r, float t_min, float t_max, hit_record_t &amp;rec) const = 0;</div>
+</div><!-- fragment --><p> You will then have to implement in your .cpp file the following methodes inheirited by <a class="el" href="classIHitable.html" title="Interface for objects that can be hit by rays.">IHitable</a>: </p><div class="fragment"><div class="line">virtual bool hit(const Ray &amp;r, float t_min, float t_max, hit_record_t &amp;rec) const = 0;</div>
 <div class="line">virtual void setMaterial(std::shared_ptr&lt;IMaterial&gt; m) = 0;</div>
 <div class="line">virtual std::shared_ptr&lt;IMaterial&gt; getMaterial() = 0;</div>
 </div><!-- fragment --><p> It should look like this: </p><div class="fragment"><div class="line">bool hit(const Ray&amp; r, float t_min, float t_max, hit_record_t&amp; rec) const;</div>
@@ -79,8 +79,8 @@ $(function() {
 <div class="line">std::shared_ptr&lt;IMaterial&gt; getMaterial();</div>
 </div><!-- fragment --><p> Once you've done all the implementation you can now add it to the scene.</p>
 <h1>Add the new primitive to the scene</h1>
-<p>In <code><a class="el" href="SceneBuilder_8cpp.html">src/Builder/SceneBuilder.cpp</a></code> you will find the following function: </p><div class="fragment"><div class="line">void SceneBuilder::createPrimitives(std::vector&lt;Primitive&gt; primitives)</div>
-</div><!-- fragment --><p> In which you will be able to call the constructor of the new <a class="el" href="structPrimitive.html">Primitive</a>: </p><div class="fragment"><div class="line">std::shared_ptr&lt;IHitable&gt; object = std::make_shared&lt;[NewForm]&gt;([constructor]);</div>
+<p>In <code><a class="el" href="SceneBuilder_8cpp.html" title="Implementation of the builder class to create scenes.">src/Builder/SceneBuilder.cpp</a></code> you will find the following function: </p><div class="fragment"><div class="line">void SceneBuilder::createPrimitives(std::vector&lt;Primitive&gt; primitives)</div>
+</div><!-- fragment --><p> In which you will be able to call the constructor of the new <a class="el" href="structPrimitive.html" title="Structure to store primitives.">Primitive</a>: </p><div class="fragment"><div class="line">std::shared_ptr&lt;IHitable&gt; object = std::make_shared&lt;[NewForm]&gt;([constructor]);</div>
 </div><!-- fragment --><p> Then add his material: </p><div class="fragment"><div class="line">// Lambertian material for exemple</div>
 <div class="line">std::shared_ptr&lt;IMaterial&gt; material = std::make_shared&lt;Lambertian&gt;(Vec3(0.7, 0.7, 0.7));</div>
 <div class="line">object-&gt;setMaterial(material);</div>

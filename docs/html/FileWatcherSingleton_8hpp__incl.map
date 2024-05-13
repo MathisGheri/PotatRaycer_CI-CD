@@ -1,7 +1,7 @@
 <map id="src/Observer/FileWatcherSingleton.hpp" name="src/Observer/FileWatcherSingleton.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="266,5,437,47"/>
-<area shape="rect" id="node2" href="$FileWatcher_8hpp.html" title=" " alt="" coords="293,95,409,121"/>
-<area shape="rect" id="node3" href="$IObserver_8hpp.html" title=" " alt="" coords="299,169,403,196"/>
+<area shape="rect" id="node1" title="Singleton for the FileWatcher class." alt="" coords="266,5,437,47"/>
+<area shape="rect" id="node2" href="$FileWatcher_8hpp.html" title="Class for watching changes in configuration files." alt="" coords="293,95,409,121"/>
+<area shape="rect" id="node3" href="$IObserver_8hpp.html" title="Interface for Observers used to monitor changes in configuration files." alt="" coords="299,169,403,196"/>
 <area shape="rect" id="node4" title=" " alt="" coords="5,244,97,271"/>
 <area shape="rect" id="node5" title=" " alt="" coords="121,244,189,271"/>
 <area shape="rect" id="node6" title=" " alt="" coords="214,244,307,271"/>

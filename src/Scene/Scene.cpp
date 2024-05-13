@@ -5,6 +5,11 @@
 ** Scene
 */
 
+/**
+* @file Scene.cpp
+* @brief Class for handling the scene.
+*/
+
 #include "Scene.hpp"
 #include "SingletonLogger.hpp"
 

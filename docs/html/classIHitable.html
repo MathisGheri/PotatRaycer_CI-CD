@@ -71,34 +71,74 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Interface for objects that can be hit by rays.  
+ <a href="classIHitable.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="IHitable_8hpp_source.html">IHitable.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for IHitable:</div>
 <div class="dyncontent">
 <div class="center"><img src="classIHitable__inherit__graph.png" border="0" usemap="#aIHitable_inherit__map" alt="Inheritance graph"/></div>
 <map name="aIHitable_inherit__map" id="aIHitable_inherit__map">
-<area shape="rect" title=" " alt="" coords="159,5,225,32"/>
-<area shape="rect" href="classCircle.html" title=" " alt="" coords="5,80,61,107"/>
-<area shape="rect" href="classMesh.html" title=" " alt="" coords="86,80,141,107"/>
-<area shape="rect" href="classPlane.html" title=" " alt="" coords="165,80,219,107"/>
-<area shape="rect" href="classSphere.html" title=" " alt="" coords="243,80,306,107"/>
-<area shape="rect" href="classTriangle.html" title=" " alt="" coords="330,80,398,107"/>
+<area shape="rect" title="Interface for objects that can be hit by rays." alt="" coords="159,5,225,32"/>
+<area shape="rect" href="classCircle.html" title="Class for handling circles." alt="" coords="5,80,61,107"/>
+<area shape="rect" href="classMesh.html" title="Class for handling meshes." alt="" coords="86,80,141,107"/>
+<area shape="rect" href="classPlane.html" title="Class for handling planes." alt="" coords="165,80,219,107"/>
+<area shape="rect" href="classSphere.html" title="Class for handling spheres." alt="" coords="243,80,306,107"/>
+<area shape="rect" href="classTriangle.html" title="Class for handling triangles." alt="" coords="330,80,398,107"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af3d1a57560db315edd6e140b68e1cd9e"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIHitable.html#af3d1a57560db315edd6e140b68e1cd9e">hit</a> (const <a class="el" href="classRay.html">Ray</a> &amp;r, float t_min, float t_max, <a class="el" href="struct_8h.html#aaf145a045b8acf3bedf3be121d64e390">hit_record_t</a> &amp;rec) const =0</td></tr>
+<tr class="memitem:af3d1a57560db315edd6e140b68e1cd9e"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIHitable.html#af3d1a57560db315edd6e140b68e1cd9e">hit</a> (const <a class="el" href="classRay.html">Ray</a> &amp;r, float t_min, float t_max, <a class="el" href="structhit__record__t.html">hit_record_t</a> &amp;rec) const =0</td></tr>
+<tr class="memdesc:af3d1a57560db315edd6e140b68e1cd9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if a ray hits the object.  <a href="classIHitable.html#af3d1a57560db315edd6e140b68e1cd9e">More...</a><br /></td></tr>
 <tr class="separator:af3d1a57560db315edd6e140b68e1cd9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7226d47cda8d1004c3bd028d53e71c39"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIHitable.html#a7226d47cda8d1004c3bd028d53e71c39">setMaterial</a> (std::shared_ptr&lt; <a class="el" href="classIMaterial.html">IMaterial</a> &gt; m)=0</td></tr>
+<tr class="memdesc:a7226d47cda8d1004c3bd028d53e71c39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the material of the object.  <a href="classIHitable.html#a7226d47cda8d1004c3bd028d53e71c39">More...</a><br /></td></tr>
 <tr class="separator:a7226d47cda8d1004c3bd028d53e71c39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b24c25a86adb96ea60f9397e78b71f2"><td class="memItemLeft" align="right" valign="top">virtual std::shared_ptr&lt; <a class="el" href="classIMaterial.html">IMaterial</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIHitable.html#a9b24c25a86adb96ea60f9397e78b71f2">getMaterial</a> ()=0</td></tr>
+<tr class="memdesc:a9b24c25a86adb96ea60f9397e78b71f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the material of the object.  <a href="classIHitable.html#a9b24c25a86adb96ea60f9397e78b71f2">More...</a><br /></td></tr>
 <tr class="separator:a9b24c25a86adb96ea60f9397e78b71f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8eb7f9af8165ed9e2bd628ced769f77f"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIHitable.html#a8eb7f9af8165ed9e2bd628ced769f77f">~IHitable</a> ()=default</td></tr>
+<tr class="memdesc:a8eb7f9af8165ed9e2bd628ced769f77f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor for <a class="el" href="classIHitable.html" title="Interface for objects that can be hit by rays.">IHitable</a>.  <a href="classIHitable.html#a8eb7f9af8165ed9e2bd628ced769f77f">More...</a><br /></td></tr>
+<tr class="separator:a8eb7f9af8165ed9e2bd628ced769f77f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="IHitable_8hpp_source.html#l00017">17</a> of file <a class="el" href="IHitable_8hpp_source.html">IHitable.hpp</a>.</p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+<div class="textblock"><p>Interface for objects that can be hit by rays. </p>
+<p>The <a class="el" href="classIHitable.html" title="Interface for objects that can be hit by rays.">IHitable</a> interface defines the methods required for any object that can be intersected by a ray in the ray tracing system. Implementing classes must provide methods to handle ray intersections and manage materials. </p>
+
+<p class="definition">Definition at line <a class="el" href="IHitable_8hpp_source.html#l00031">31</a> of file <a class="el" href="IHitable_8hpp_source.html">IHitable.hpp</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a8eb7f9af8165ed9e2bd628ced769f77f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8eb7f9af8165ed9e2bd628ced769f77f">&#9670;&nbsp;</a></span>~IHitable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual IHitable::~IHitable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Virtual destructor for <a class="el" href="classIHitable.html" title="Interface for objects that can be hit by rays.">IHitable</a>. </p>
+<p>Ensures derived class destructors are called correctly. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="a9b24c25a86adb96ea60f9397e78b71f2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9b24c25a86adb96ea60f9397e78b71f2">&#9670;&nbsp;</a></span>getMaterial()</h2>
 
@@ -121,6 +161,10 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Get the material of the object. </p>
+<p>This method retrieves the material of the object.</p>
+<dl class="section return"><dt>Returns</dt><dd>A shared pointer to the material of the object. </dd></dl>
 
 <p>Implemented in <a class="el" href="classTriangle.html#a77e330ab8a6f0f2c34dc53c07c4f32f6">Triangle</a>, <a class="el" href="classSphere.html#ab6ed09d5deb07b89d37ed09061e202ed">Sphere</a>, <a class="el" href="classPlane.html#a5e41fc028f9ea1e1c6aa18275e3a65a7">Plane</a>, <a class="el" href="classMesh.html#ab4d7b3c16adae59048586e4e2654c81c">Mesh</a>, and <a class="el" href="classCircle.html#a9eec1cae08efd26677799888b7b785be">Circle</a>.</p>
 
@@ -156,7 +200,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_8h.html#aaf145a045b8acf3bedf3be121d64e390">hit_record_t</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="structhit__record__t.html">hit_record_t</a> &amp;&#160;</td>
           <td class="paramname"><em>rec</em>&#160;</td>
         </tr>
         <tr>
@@ -171,6 +215,19 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Determine if a ray hits the object. </p>
+<p>This method checks if a given ray intersects with the object within a specified range. If an intersection occurs, it populates the hit record with details about the intersection.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">r</td><td>The ray to check for intersection. </td></tr>
+    <tr><td class="paramname">t_min</td><td>The minimum value of the parameter t to consider. </td></tr>
+    <tr><td class="paramname">t_max</td><td>The maximum value of the parameter t to consider. </td></tr>
+    <tr><td class="paramname">rec</td><td>The hit record to populate with intersection details. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the ray intersects the object, false otherwise. </dd></dl>
 
 <p>Implemented in <a class="el" href="classPlane.html#afa5a29728b158729621e08a673dd9d26">Plane</a>, <a class="el" href="classTriangle.html#ab80d0e93bb39edbc3c667596329fbeb3">Triangle</a>, <a class="el" href="classSphere.html#ada19fc64131c5549dc6edffe4e4123ed">Sphere</a>, <a class="el" href="classMesh.html#a8a0c7f567cb921e70c573e723b9ee6c5">Mesh</a>, and <a class="el" href="classCircle.html#aca14c9f3e92ffb012ce34d2a3c05c8b0">Circle</a>.</p>
 
@@ -199,6 +256,15 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Set the material of the object. </p>
+<p>This method sets the material of the object to the provided material.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">m</td><td>A shared pointer to the material to set. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implemented in <a class="el" href="classTriangle.html#a39fdb4a304ea147b3108f8c5602149a7">Triangle</a>, <a class="el" href="classSphere.html#a402cfdf5a64a5633db035d965cf923d3">Sphere</a>, <a class="el" href="classPlane.html#a6120671207c193c4faef3a27ffbd9890">Plane</a>, <a class="el" href="classMesh.html#a0549587571cdb94b867b2fdfec46b230">Mesh</a>, and <a class="el" href="classCircle.html#a2a34ff5bf5aa0a4a3b6f1982519ebaac">Circle</a>.</p>
 

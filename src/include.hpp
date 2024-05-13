@@ -5,6 +5,11 @@
 ** include
 */
 
+/**
+* @file include.hpp
+* @brief Include all the libraries and headers needed.
+*/
+
 #ifndef INCLUDE_HPP_
 #define INCLUDE_HPP_
 

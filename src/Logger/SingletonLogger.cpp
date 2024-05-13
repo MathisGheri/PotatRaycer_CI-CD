@@ -5,6 +5,11 @@
 ** SingletonLogger
 */
 
+/**
+* @file SingletonLogger.cpp
+* @brief File for the SingletonLogger class.
+*/
+
 #include "SingletonLogger.hpp"
 
 Logger* LoggerSingleton::instance = nullptr;

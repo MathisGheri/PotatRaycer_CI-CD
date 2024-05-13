@@ -5,6 +5,11 @@
 ** Triangle
 */
 
+/**
+* @file Triangle.cpp
+* @brief File for the Triangle class.
+*/
+
 #include "Triangle.hpp"
 
 Triangle::Triangle(const Vec3& v0, const Vec3& v1, const Vec3& v2, const Vec2& uv0, const Vec2& uv1, const Vec2& uv2)

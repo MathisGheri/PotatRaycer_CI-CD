@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['objectproperties_372',['ObjectProperties',['../structObjectProperties.html',1,'']]],
-  ['observerexception_373',['ObserverException',['../classObserverException.html',1,'']]]
+  ['objectproperties_376',['ObjectProperties',['../structObjectProperties.html',1,'']]],
+  ['observerexception_377',['ObserverException',['../classObserverException.html',1,'']]]
 ];

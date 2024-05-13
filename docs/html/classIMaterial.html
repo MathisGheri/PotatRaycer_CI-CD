@@ -71,20 +71,23 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Class used to create the <a class="el" href="structMaterial.html" title="Structure to store a material.">Material</a>.  
+ <a href="classIMaterial.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="IMaterial_8hpp_source.html">IMaterial.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for IMaterial:</div>
 <div class="dyncontent">
 <div class="center"><img src="classIMaterial__inherit__graph.png" border="0" usemap="#aIMaterial_inherit__map" alt="Inheritance graph"/></div>
 <map name="aIMaterial_inherit__map" id="aIMaterial_inherit__map">
-<area shape="rect" title=" " alt="" coords="376,5,448,32"/>
-<area shape="rect" href="classDielectric.html" title=" " alt="" coords="5,80,83,107"/>
-<area shape="rect" href="classEmissiveMaterial.html" title=" " alt="" coords="107,80,229,107"/>
-<area shape="rect" href="classLambertian.html" title=" " alt="" coords="254,80,341,107"/>
-<area shape="rect" href="classLightTexture.html" title=" " alt="" coords="365,80,459,107"/>
-<area shape="rect" href="classMetal.html" title=" " alt="" coords="483,80,538,107"/>
-<area shape="rect" href="classTexture.html" title=" " alt="" coords="562,80,627,107"/>
-<area shape="rect" href="classTintedMaterial.html" title=" " alt="" coords="652,80,756,107"/>
+<area shape="rect" title="Class used to create the Material." alt="" coords="376,5,448,32"/>
+<area shape="rect" href="classDielectric.html" title="Class used to create the Dielectric." alt="" coords="5,80,83,107"/>
+<area shape="rect" href="classEmissiveMaterial.html" title="Class used to decorate the light in the scene." alt="" coords="107,80,229,107"/>
+<area shape="rect" href="classLambertian.html" title="Class used to create the Lambertian." alt="" coords="254,80,341,107"/>
+<area shape="rect" href="classLightTexture.html" title="Class used to create the LightTexture." alt="" coords="365,80,459,107"/>
+<area shape="rect" href="classMetal.html" title="Class used to create a Metal." alt="" coords="483,80,538,107"/>
+<area shape="rect" href="classTexture.html" title="Class used to create a Texture." alt="" coords="562,80,627,107"/>
+<area shape="rect" href="classTintedMaterial.html" title="Class used to tint the material." alt="" coords="652,80,756,107"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -92,14 +95,17 @@ Inheritance diagram for IMaterial:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a43ad960a33ef87b199c1d8b28c364130"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIMaterial.html#a43ad960a33ef87b199c1d8b28c364130">~IMaterial</a> ()=default</td></tr>
 <tr class="separator:a43ad960a33ef87b199c1d8b28c364130"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af77fa4ec535577942a1589d4eadd0959"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIMaterial.html#af77fa4ec535577942a1589d4eadd0959">scatter</a> (const <a class="el" href="classRay.html">Ray</a> &amp;r_in, const <a class="el" href="struct_8h.html#aaf145a045b8acf3bedf3be121d64e390">hit_record_t</a> &amp;rec, <a class="el" href="classVec3.html">Vec3</a> &amp;attenuation, <a class="el" href="classRay.html">Ray</a> &amp;scattered, std::shared_ptr&lt; <a class="el" href="classILight.html">ILight</a> &gt; light, const std::vector&lt; std::shared_ptr&lt; <a class="el" href="classIHitable.html">IHitable</a> &gt;&gt; &amp;_obj) const =0</td></tr>
+<tr class="memitem:af77fa4ec535577942a1589d4eadd0959"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIMaterial.html#af77fa4ec535577942a1589d4eadd0959">scatter</a> (const <a class="el" href="classRay.html">Ray</a> &amp;r_in, const <a class="el" href="structhit__record__t.html">hit_record_t</a> &amp;rec, <a class="el" href="classVec3.html">Vec3</a> &amp;attenuation, <a class="el" href="classRay.html">Ray</a> &amp;scattered, std::shared_ptr&lt; <a class="el" href="classILight.html">ILight</a> &gt; light, const std::vector&lt; std::shared_ptr&lt; <a class="el" href="classIHitable.html">IHitable</a> &gt;&gt; &amp;_obj) const =0</td></tr>
+<tr class="memdesc:af77fa4ec535577942a1589d4eadd0959"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to scatter the ray.  <a href="classIMaterial.html#af77fa4ec535577942a1589d4eadd0959">More...</a><br /></td></tr>
 <tr class="separator:af77fa4ec535577942a1589d4eadd0959"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9d38bee10aab7c1a05fb59c6b2045f9"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIMaterial.html#ae9d38bee10aab7c1a05fb59c6b2045f9">getName</a> () const =0</td></tr>
+<tr class="memdesc:ae9d38bee10aab7c1a05fb59c6b2045f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to get the name of the material.  <a href="classIMaterial.html#ae9d38bee10aab7c1a05fb59c6b2045f9">More...</a><br /></td></tr>
 <tr class="separator:ae9d38bee10aab7c1a05fb59c6b2045f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="IMaterial_8hpp_source.html#l00021">21</a> of file <a class="el" href="IMaterial_8hpp_source.html">IMaterial.hpp</a>.</p>
+<div class="textblock"><p>Class used to create the <a class="el" href="structMaterial.html" title="Structure to store a material.">Material</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="IMaterial_8hpp_source.html#l00031">31</a> of file <a class="el" href="IMaterial_8hpp_source.html">IMaterial.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a43ad960a33ef87b199c1d8b28c364130"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a43ad960a33ef87b199c1d8b28c364130">&#9670;&nbsp;</a></span>~IMaterial()</h2>
@@ -150,6 +156,9 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Function to get the name of the material. </p>
+<dl class="section return"><dt>Returns</dt><dd>The name of the material. </dd></dl>
+
 <p>Implemented in <a class="el" href="classTexture.html#a0235f01d14ee8bbfe772a8574b0da1e8">Texture</a>, <a class="el" href="classMetal.html#a92cbddc1f50816d52ffb7a764d919b70">Metal</a>, <a class="el" href="classLightTexture.html#a370e2cca031cd834b87c624c5fc93fa8">LightTexture</a>, <a class="el" href="classLambertian.html#a88a84e53d4e782b90356221af485181a">Lambertian</a>, <a class="el" href="classDielectric.html#a279e9db94944c71da2c0031ae3afd96f">Dielectric</a>, and <a class="el" href="classTintedMaterial.html#a22364565570a995b4edada248820f4b0">TintedMaterial</a>.</p>
 
 </div>
@@ -172,7 +181,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="struct_8h.html#aaf145a045b8acf3bedf3be121d64e390">hit_record_t</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structhit__record__t.html">hit_record_t</a> &amp;&#160;</td>
           <td class="paramname"><em>rec</em>, </td>
         </tr>
         <tr>
@@ -211,6 +220,20 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Function to scatter the ray. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">r_in</td><td>The ray. </td></tr>
+    <tr><td class="paramname">rec</td><td>The hit record. </td></tr>
+    <tr><td class="paramname">attenuation</td><td>The attenuation. </td></tr>
+    <tr><td class="paramname">scattered</td><td>The scattered ray. </td></tr>
+    <tr><td class="paramname">light</td><td>The light. </td></tr>
+    <tr><td class="paramname">_obj</td><td>The objects in the scene. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the ray has been scattered, false otherwise. </dd></dl>
 
 <p>Implemented in <a class="el" href="classMetal.html#a7ce21d46a783e1b4af05ee1d44a06f8e">Metal</a>, <a class="el" href="classLightTexture.html#a229b82507c212c0791f8767eff04bab1">LightTexture</a>, <a class="el" href="classLambertian.html#abac889cfb58f70314a42a56792e91a66">Lambertian</a>, <a class="el" href="classDielectric.html#a4709f41e9fa6418de8e6576dec8914c6">Dielectric</a>, <a class="el" href="classTexture.html#a36bbc7f17266cbba5affd340d8af259f">Texture</a>, <a class="el" href="classTintedMaterial.html#ae7e3cef0a6e069448464c2d1b8f439f9">TintedMaterial</a>, and <a class="el" href="classEmissiveMaterial.html#a61a549a9c8b47b2a19c71604a0397366">EmissiveMaterial</a>.</p>
 

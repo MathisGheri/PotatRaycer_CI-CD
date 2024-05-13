@@ -5,6 +5,11 @@
 ** Ray
 */
 
+/**
+* @file Ray.cpp
+* @brief Class for handling rays.
+*/
+
 #include "Ray.hpp"
 
 Ray::Ray()

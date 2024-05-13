@@ -5,6 +5,11 @@
 ** Compute
 */
 
+/**
+* @file Computing.cpp
+* @brief File for the Compute class.
+*/
+
 #include "Computing.hpp"
 #include "Camera.hpp"
 #include "ILight.hpp"

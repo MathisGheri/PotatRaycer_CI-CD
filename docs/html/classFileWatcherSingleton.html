@@ -74,14 +74,17 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Singleton for the <a class="el" href="classFileWatcher.html" title="Class for watching changes in configuration files.">FileWatcher</a> class.  
+ <a href="classFileWatcherSingleton.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="FileWatcherSingleton_8hpp_source.html">FileWatcherSingleton.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for FileWatcherSingleton:</div>
 <div class="dyncontent">
 <div class="center"><img src="classFileWatcherSingleton__coll__graph.png" border="0" usemap="#aFileWatcherSingleton_coll__map" alt="Collaboration graph"/></div>
 <map name="aFileWatcherSingleton_coll__map" id="aFileWatcherSingleton_coll__map">
-<area shape="rect" title=" " alt="" coords="5,95,151,121"/>
-<area shape="rect" href="classFileWatcher.html" title=" " alt="" coords="33,5,123,32"/>
+<area shape="rect" title="Singleton for the FileWatcher class." alt="" coords="5,95,151,121"/>
+<area shape="rect" href="classFileWatcher.html" title="Class for watching changes in configuration files." alt="" coords="33,5,123,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -95,6 +98,7 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a406d6d4a9e5123c1ff0836f4371f99e7"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classFileWatcher.html">FileWatcher</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFileWatcherSingleton.html#a406d6d4a9e5123c1ff0836f4371f99e7">getInstance</a> ()</td></tr>
+<tr class="memdesc:a406d6d4a9e5123c1ff0836f4371f99e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the instance of the singleton.  <a href="classFileWatcherSingleton.html#a406d6d4a9e5123c1ff0836f4371f99e7">More...</a><br /></td></tr>
 <tr class="separator:a406d6d4a9e5123c1ff0836f4371f99e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa30cade838cfeb500a4e55e33ce066cd"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFileWatcherSingleton.html#aa30cade838cfeb500a4e55e33ce066cd">destroyInstance</a> ()</td></tr>
 <tr class="separator:aa30cade838cfeb500a4e55e33ce066cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -110,8 +114,9 @@ Static Private Attributes</h2></td></tr>
 <tr class="separator:acec040ab7bdf5714dde5b0fdcfe01204"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="FileWatcherSingleton_8hpp_source.html#l00013">13</a> of file <a class="el" href="FileWatcherSingleton_8hpp_source.html">FileWatcherSingleton.hpp</a>.</p>
+<div class="textblock"><p>Singleton for the <a class="el" href="classFileWatcher.html" title="Class for watching changes in configuration files.">FileWatcher</a> class. </p>
+
+<p class="definition">Definition at line <a class="el" href="FileWatcherSingleton_8hpp_source.html#l00023">23</a> of file <a class="el" href="FileWatcherSingleton_8hpp_source.html">FileWatcherSingleton.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae43596b8001eb058562bd8405fe8dae4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae43596b8001eb058562bd8405fe8dae4">&#9670;&nbsp;</a></span>FileWatcherSingleton() <span class="overload">[1/2]</span></h2>
@@ -162,8 +167,8 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="FileWatcherSingleton_8hpp_source.html#l00023">23</a> of file <a class="el" href="FileWatcherSingleton_8hpp_source.html">FileWatcherSingleton.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{}</div>
+<p class="definition">Definition at line <a class="el" href="FileWatcherSingleton_8hpp_source.html#l00037">37</a> of file <a class="el" href="FileWatcherSingleton_8hpp_source.html">FileWatcherSingleton.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -191,14 +196,14 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="FileWatcherSingleton_8cpp_source.html#l00020">20</a> of file <a class="el" href="FileWatcherSingleton_8cpp_source.html">FileWatcherSingleton.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classFileWatcherSingleton.html#acec040ab7bdf5714dde5b0fdcfe01204">instance</a> != <span class="keyword">nullptr</span>) {</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keyword">delete</span> <a class="code" href="classFileWatcherSingleton.html#acec040ab7bdf5714dde5b0fdcfe01204">instance</a>;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <a class="code" href="classFileWatcherSingleton.html#acec040ab7bdf5714dde5b0fdcfe01204">instance</a> = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    }</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div>
-<div class="ttc" id="aclassFileWatcherSingleton_html_acec040ab7bdf5714dde5b0fdcfe01204"><div class="ttname"><a href="classFileWatcherSingleton.html#acec040ab7bdf5714dde5b0fdcfe01204">FileWatcherSingleton::instance</a></div><div class="ttdeci">static FileWatcher * instance</div><div class="ttdef"><b>Definition:</b> <a href="FileWatcherSingleton_8hpp_source.html#l00022">FileWatcherSingleton.hpp:22</a></div></div>
+<p class="definition">Definition at line <a class="el" href="FileWatcherSingleton_8cpp_source.html#l00025">25</a> of file <a class="el" href="FileWatcherSingleton_8cpp_source.html">FileWatcherSingleton.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classFileWatcherSingleton.html#acec040ab7bdf5714dde5b0fdcfe01204">instance</a> != <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keyword">delete</span> <a class="code" href="classFileWatcherSingleton.html#acec040ab7bdf5714dde5b0fdcfe01204">instance</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <a class="code" href="classFileWatcherSingleton.html#acec040ab7bdf5714dde5b0fdcfe01204">instance</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    }</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
+<div class="ttc" id="aclassFileWatcherSingleton_html_acec040ab7bdf5714dde5b0fdcfe01204"><div class="ttname"><a href="classFileWatcherSingleton.html#acec040ab7bdf5714dde5b0fdcfe01204">FileWatcherSingleton::instance</a></div><div class="ttdeci">static FileWatcher * instance</div><div class="ttdef"><b>Definition:</b> <a href="FileWatcherSingleton_8hpp_source.html#l00036">FileWatcherSingleton.hpp:36</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="classFileWatcherSingleton.html#acec040ab7bdf5714dde5b0fdcfe01204">instance</a>.</p>
 
@@ -227,14 +232,17 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="FileWatcherSingleton_8cpp_source.html#l00012">12</a> of file <a class="el" href="FileWatcherSingleton_8cpp_source.html">FileWatcherSingleton.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classFileWatcherSingleton.html#acec040ab7bdf5714dde5b0fdcfe01204">instance</a> == <span class="keyword">nullptr</span>) {</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <a class="code" href="classFileWatcherSingleton.html#acec040ab7bdf5714dde5b0fdcfe01204">instance</a> = <span class="keyword">new</span> <a class="code" href="classFileWatcher.html">FileWatcher</a>();</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    }</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classFileWatcherSingleton.html#acec040ab7bdf5714dde5b0fdcfe01204">instance</a>;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}</div>
-<div class="ttc" id="aclassFileWatcher_html"><div class="ttname"><a href="classFileWatcher.html">FileWatcher</a></div><div class="ttdef"><b>Definition:</b> <a href="FileWatcher_8hpp_source.html#l00013">FileWatcher.hpp:13</a></div></div>
+<p>Get the instance of the singleton. </p>
+<dl class="section return"><dt>Returns</dt><dd>The instance of the singleton. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="FileWatcherSingleton_8cpp_source.html#l00017">17</a> of file <a class="el" href="FileWatcherSingleton_8cpp_source.html">FileWatcherSingleton.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classFileWatcherSingleton.html#acec040ab7bdf5714dde5b0fdcfe01204">instance</a> == <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <a class="code" href="classFileWatcherSingleton.html#acec040ab7bdf5714dde5b0fdcfe01204">instance</a> = <span class="keyword">new</span> <a class="code" href="classFileWatcher.html">FileWatcher</a>();</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    }</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classFileWatcherSingleton.html#acec040ab7bdf5714dde5b0fdcfe01204">instance</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;}</div>
+<div class="ttc" id="aclassFileWatcher_html"><div class="ttname"><a href="classFileWatcher.html">FileWatcher</a></div><div class="ttdoc">Class for watching changes in configuration files.</div><div class="ttdef"><b>Definition:</b> <a href="FileWatcher_8hpp_source.html#l00023">FileWatcher.hpp:23</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="classFileWatcherSingleton.html#acec040ab7bdf5714dde5b0fdcfe01204">instance</a>.</p>
 
@@ -244,10 +252,10 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classFileWatcherSingleton_a406d6d4a9e5123c1ff0836f4371f99e7_icgraph.png" border="0" usemap="#aclassFileWatcherSingleton_a406d6d4a9e5123c1ff0836f4371f99e7_icgraph" alt=""/></div>
 <map name="aclassFileWatcherSingleton_a406d6d4a9e5123c1ff0836f4371f99e7_icgraph" id="aclassFileWatcherSingleton_a406d6d4a9e5123c1ff0836f4371f99e7_icgraph">
-<area shape="rect" title=" " alt="" coords="444,14,589,55"/>
-<area shape="rect" href="classCore.html#afdfd60c50da96c795184b83678195724" title=" " alt="" coords="104,21,241,48"/>
+<area shape="rect" title="Get the instance of the singleton." alt="" coords="444,14,589,55"/>
+<area shape="rect" href="classCore.html#afdfd60c50da96c795184b83678195724" title="Function to generate the PPM file." alt="" coords="104,21,241,48"/>
 <area shape="rect" href="Main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,46,56,73"/>
-<area shape="rect" href="classCompute.html#ae697501b970a1eb1fbde44f2eeb5fd26" title=" " alt="" coords="289,21,396,48"/>
+<area shape="rect" href="classCompute.html#ae697501b970a1eb1fbde44f2eeb5fd26" title="Loop function to compute the image." alt="" coords="289,21,396,48"/>
 </map>
 </div>
 
@@ -300,7 +308,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="FileWatcherSingleton_8hpp_source.html#l00022">22</a> of file <a class="el" href="FileWatcherSingleton_8hpp_source.html">FileWatcherSingleton.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="FileWatcherSingleton_8hpp_source.html#l00036">36</a> of file <a class="el" href="FileWatcherSingleton_8hpp_source.html">FileWatcherSingleton.hpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="classFileWatcherSingleton.html#aa30cade838cfeb500a4e55e33ce066cd">destroyInstance()</a>, and <a class="el" href="classFileWatcherSingleton.html#a406d6d4a9e5123c1ff0836f4371f99e7">getInstance()</a>.</p>
 

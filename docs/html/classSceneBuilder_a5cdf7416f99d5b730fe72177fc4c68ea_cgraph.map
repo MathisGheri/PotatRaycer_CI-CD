@@ -1,5 +1,5 @@
 <map id="SceneBuilder::createMeshFromObj" name="SceneBuilder::createMeshFromObj">
-<area shape="rect" id="node1" title=" " alt="" coords="5,23,180,65"/>
-<area shape="rect" id="node2" href="$classScene.html#aae7e47b6a0986b2e1a9a74102dc77fd3" title=" " alt="" coords="247,5,373,32"/>
-<area shape="rect" id="node3" href="$classMesh.html#acfa7b7131185af02743f0e0794a75e70" title=" " alt="" coords="228,56,392,83"/>
+<area shape="rect" id="node1" title="Create Mesh objects in the scene." alt="" coords="5,23,180,65"/>
+<area shape="rect" id="node2" href="$classScene.html#aae7e47b6a0986b2e1a9a74102dc77fd3" title="Add an object to the scene." alt="" coords="247,5,373,32"/>
+<area shape="rect" id="node3" href="$classMesh.html#acfa7b7131185af02743f0e0794a75e70" title="Transform the triangle inside the mesh based on the values given." alt="" coords="228,56,392,83"/>
 </map>

@@ -1,4 +1,4 @@
 <map id="Triangle" name="Triangle">
-<area shape="rect" id="node1" title=" " alt="" coords="5,80,73,107"/>
-<area shape="rect" id="node2" href="$classIHitable.html" title=" " alt="" coords="6,5,73,32"/>
+<area shape="rect" id="node1" title="Class for handling triangles." alt="" coords="5,80,73,107"/>
+<area shape="rect" id="node2" href="$classIHitable.html" title="Interface for objects that can be hit by rays." alt="" coords="6,5,73,32"/>
 </map>

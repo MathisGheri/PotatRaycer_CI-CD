@@ -1,5 +1,5 @@
 <map id="cross" name="cross">
 <area shape="rect" id="node1" title=" " alt="" coords="176,31,231,57"/>
-<area shape="rect" id="node2" href="$classCamera.html#a2434c4e126f5bb6b38426b4e3e8c7cc1" title=" " alt="" coords="5,5,128,32"/>
-<area shape="rect" id="node3" href="$classTriangle.html#ab80d0e93bb39edbc3c667596329fbeb3" title=" " alt="" coords="21,56,112,83"/>
+<area shape="rect" id="node2" href="$classCamera.html#a2434c4e126f5bb6b38426b4e3e8c7cc1" title="Camera constructor." alt="" coords="5,5,128,32"/>
+<area shape="rect" id="node3" href="$classTriangle.html#ab80d0e93bb39edbc3c667596329fbeb3" title="Determine if a ray hits the object." alt="" coords="21,56,112,83"/>
 </map>

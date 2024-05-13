@@ -5,13 +5,29 @@
 ** ILight
 */
 
+/**
+* @file AmbiantLight.hpp
+* @brief AmbiantLight class header file.
+*/
+
 #ifndef AMBIANTLIGHT_HPP_
 #define AMBIANTLIGHT_HPP_
 
 #include "ILight.hpp"
 
+/**
+* @class AmbiantLight
+* @brief Class used to create the AmbiantLight.
+*/
+
 class AmbiantLight : public ILight {
     public:
+
+        /**
+        * @brief Construct a new Ambiant Light object
+        * @param position The position of the light.
+        * @param intensity The intensity of the light.
+        */
         AmbiantLight(Vec3 position, float intensity);
         ~AmbiantLight();
         std::string getType() override final;

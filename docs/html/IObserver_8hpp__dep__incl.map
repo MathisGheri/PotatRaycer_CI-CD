@@ -1,12 +1,12 @@
 <map id="src/Observer/IObserver.hpp" name="src/Observer/IObserver.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="253,5,436,32"/>
-<area shape="rect" id="node2" href="$FileWatcher_8hpp.html" title=" " alt="" coords="247,80,442,107"/>
-<area shape="rect" id="node3" href="$FileWatcher_8cpp.html" title=" " alt="" coords="145,162,339,189"/>
-<area shape="rect" id="node4" href="$FileWatcherSingleton_8hpp.html" title=" " alt="" coords="363,155,534,196"/>
-<area shape="rect" id="node5" href="$Computing_8hpp.html" title=" " alt="" coords="99,251,297,278"/>
-<area shape="rect" id="node8" href="$Main_8cpp.html" title=" " alt="" coords="321,251,419,278"/>
-<area shape="rect" id="node9" href="$FileWatcherSingleton_8cpp.html" title=" " alt="" coords="443,244,614,285"/>
-<area shape="rect" id="node10" href="$Parsing_8cpp.html" title=" " alt="" coords="639,251,800,278"/>
-<area shape="rect" id="node6" href="$Computing_8cpp.html" title=" " alt="" coords="5,333,204,360"/>
-<area shape="rect" id="node7" href="$Core_8cpp.html" title=" " alt="" coords="228,333,357,360"/>
+<area shape="rect" id="node1" title="Interface for Observers used to monitor changes in configuration files." alt="" coords="253,5,436,32"/>
+<area shape="rect" id="node2" href="$FileWatcher_8hpp.html" title="Class for watching changes in configuration files." alt="" coords="247,80,442,107"/>
+<area shape="rect" id="node3" href="$FileWatcher_8cpp.html" title="Class for watching changes in configuration files." alt="" coords="145,162,339,189"/>
+<area shape="rect" id="node4" href="$FileWatcherSingleton_8hpp.html" title="Singleton for the FileWatcher class." alt="" coords="363,155,534,196"/>
+<area shape="rect" id="node5" href="$Computing_8hpp.html" title="Header file for the Compute class." alt="" coords="99,251,297,278"/>
+<area shape="rect" id="node8" href="$Main_8cpp.html" title="Main file." alt="" coords="321,251,419,278"/>
+<area shape="rect" id="node9" href="$FileWatcherSingleton_8cpp.html" title="Singleton for the FileWatcher class." alt="" coords="443,244,614,285"/>
+<area shape="rect" id="node10" href="$Parsing_8cpp.html" title="Class for parsing the configuration file." alt="" coords="639,251,800,278"/>
+<area shape="rect" id="node6" href="$Computing_8cpp.html" title="File for the Compute class." alt="" coords="5,333,204,360"/>
+<area shape="rect" id="node7" href="$Core_8cpp.html" title="Core class implementation." alt="" coords="228,333,357,360"/>
 </map>

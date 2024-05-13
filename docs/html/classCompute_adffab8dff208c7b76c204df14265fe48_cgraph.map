@@ -1,13 +1,13 @@
 <map id="Compute::colorThread" name="Compute::colorThread">
-<area shape="rect" id="node1" title=" " alt="" coords="5,107,156,133"/>
-<area shape="rect" id="node2" href="$classVec3.html#a0309a2455125001750a97e300f06b1bd" title=" " alt="" coords="238,5,305,32"/>
-<area shape="rect" id="node3" href="$classCompute.html#a919a19e2c73ecbe847b9c9b50c1c6ed2" title=" " alt="" coords="204,56,339,83"/>
-<area shape="rect" id="node5" href="$classVec3.html#a873feca4434930113298010748e49795" title=" " alt="" coords="238,107,305,133"/>
-<area shape="rect" id="node6" href="$classCamera.html#a1d6756d625e61806d919a99aabaf8dce" title=" " alt="" coords="209,157,334,184"/>
-<area shape="rect" id="node11" href="$classVec3.html#a13ffa091253675e04970fe552f0d69ec" title=" " alt="" coords="240,208,303,235"/>
-<area shape="rect" id="node4" href="$classCompute.html#a06be3416d4a01148ac034b2bf23a6dd1" title=" " alt="" coords="409,56,506,83"/>
-<area shape="rect" id="node7" href="$Vec3_8hpp.html#aad4a2094d505ab19ae9d1d1051428443" title=" " alt="" coords="387,107,528,133"/>
-<area shape="rect" id="node9" href="$classVec3.html#a2036e8ba73a1f4eb34cec27e66274cac" title=" " alt="" coords="424,157,491,184"/>
-<area shape="rect" id="node10" href="$classVec3.html#a5636feef398a08a1014c03cb60cce2e8" title=" " alt="" coords="424,208,491,235"/>
+<area shape="rect" id="node1" title="Function to compute the color of the pixel." alt="" coords="5,107,156,133"/>
+<area shape="rect" id="node2" href="$classVec3.html#a0309a2455125001750a97e300f06b1bd" title="Get the blue component (same as z&#45;coordinate)." alt="" coords="238,5,305,32"/>
+<area shape="rect" id="node3" href="$classCompute.html#a919a19e2c73ecbe847b9c9b50c1c6ed2" title="Function to compute the color of the pixel." alt="" coords="204,56,339,83"/>
+<area shape="rect" id="node5" href="$classVec3.html#a873feca4434930113298010748e49795" title="Get the green component (same as y&#45;coordinate)." alt="" coords="238,107,305,133"/>
+<area shape="rect" id="node6" href="$classCamera.html#a1d6756d625e61806d919a99aabaf8dce" title="Get the Ray object." alt="" coords="209,157,334,184"/>
+<area shape="rect" id="node11" href="$classVec3.html#a13ffa091253675e04970fe552f0d69ec" title="Get the red component (same as x&#45;coordinate)." alt="" coords="240,208,303,235"/>
+<area shape="rect" id="node4" href="$classCompute.html#a06be3416d4a01148ac034b2bf23a6dd1" title="Function to check if the object has been hit by the Ray." alt="" coords="409,56,506,83"/>
+<area shape="rect" id="node7" href="$Vec3_8hpp.html#aad4a2094d505ab19ae9d1d1051428443" title="Generate a random vector inside a unit disk." alt="" coords="387,107,528,133"/>
+<area shape="rect" id="node9" href="$classVec3.html#a2036e8ba73a1f4eb34cec27e66274cac" title="Get the x&#45;coordinate of the vector." alt="" coords="424,157,491,184"/>
+<area shape="rect" id="node10" href="$classVec3.html#a5636feef398a08a1014c03cb60cce2e8" title="Get the y&#45;coordinate of the vector." alt="" coords="424,208,491,235"/>
 <area shape="rect" id="node8" href="$Vec3_8hpp.html#a45f8afb934d90c5445ad67d3b2156563" title=" " alt="" coords="576,107,616,133"/>
 </map>

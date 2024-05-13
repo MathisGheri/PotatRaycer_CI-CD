@@ -5,6 +5,11 @@
 ** Sphere
 */
 
+/**
+* @file Sphere.cpp
+* @brief File for the Sphere class.
+*/
+
 #include "Sphere.hpp"
 #include "SingletonLogger.hpp"
 

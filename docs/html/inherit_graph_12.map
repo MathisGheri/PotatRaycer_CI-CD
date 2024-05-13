@@ -1,3 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classLogger.html" title=" " alt="" coords="5,5,67,32"/>
+<area shape="rect" id="node1" href="$classIObserver.html" title="Interface for Observers used to monitor changes in configuration files." alt="" coords="5,5,84,32"/>
+<area shape="rect" id="node2" href="$classCompute.html" title="Class used to compute the image." alt="" coords="132,5,207,32"/>
 </map>

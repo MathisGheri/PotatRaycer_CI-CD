@@ -72,14 +72,17 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Class used to tint the material.  
+ <a href="classTintedMaterial.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="TintDecorator_8hpp_source.html">TintDecorator.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for TintedMaterial:</div>
 <div class="dyncontent">
 <div class="center"><img src="classTintedMaterial__inherit__graph.png" border="0" usemap="#aTintedMaterial_inherit__map" alt="Inheritance graph"/></div>
 <map name="aTintedMaterial_inherit__map" id="aTintedMaterial_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,80,109,107"/>
-<area shape="rect" href="classIMaterial.html" title=" " alt="" coords="21,5,93,32"/>
+<area shape="rect" title="Class used to tint the material." alt="" coords="5,80,109,107"/>
+<area shape="rect" href="classIMaterial.html" title="Class used to create the Material." alt="" coords="21,5,93,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
@@ -87,19 +90,22 @@ Collaboration diagram for TintedMaterial:</div>
 <div class="dyncontent">
 <div class="center"><img src="classTintedMaterial__coll__graph.png" border="0" usemap="#aTintedMaterial_coll__map" alt="Collaboration graph"/></div>
 <map name="aTintedMaterial_coll__map" id="aTintedMaterial_coll__map">
-<area shape="rect" title=" " alt="" coords="32,95,136,121"/>
-<area shape="rect" href="classIMaterial.html" title=" " alt="" coords="5,5,77,32"/>
-<area shape="rect" href="classVec3.html" title=" " alt="" coords="101,5,152,32"/>
+<area shape="rect" title="Class used to tint the material." alt="" coords="32,95,136,121"/>
+<area shape="rect" href="classIMaterial.html" title="Class used to create the Material." alt="" coords="5,5,77,32"/>
+<area shape="rect" href="classVec3.html" title="Class for representing a 3D vector." alt="" coords="101,5,152,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ad9eaac1a0c3f814f3b508a0fe0a85452"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTintedMaterial.html#ad9eaac1a0c3f814f3b508a0fe0a85452">TintedMaterial</a> (std::shared_ptr&lt; <a class="el" href="classIMaterial.html">IMaterial</a> &gt; material, <a class="el" href="classVec3.html">Vec3</a> <a class="el" href="classTintedMaterial.html#a64c2b9d3de8752d9eaf22c017b15f7aa">tint</a>)</td></tr>
+<tr class="memdesc:ad9eaac1a0c3f814f3b508a0fe0a85452"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new Tinted <a class="el" href="structMaterial.html" title="Structure to store a material.">Material</a> object.  <a href="classTintedMaterial.html#ad9eaac1a0c3f814f3b508a0fe0a85452">More...</a><br /></td></tr>
 <tr class="separator:ad9eaac1a0c3f814f3b508a0fe0a85452"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7e3cef0a6e069448464c2d1b8f439f9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTintedMaterial.html#ae7e3cef0a6e069448464c2d1b8f439f9">scatter</a> (const <a class="el" href="classRay.html">Ray</a> &amp;r_in, const <a class="el" href="struct_8h.html#aaf145a045b8acf3bedf3be121d64e390">hit_record_t</a> &amp;rec, <a class="el" href="classVec3.html">Vec3</a> &amp;attenuation, <a class="el" href="classRay.html">Ray</a> &amp;scattered, std::shared_ptr&lt; <a class="el" href="classILight.html">ILight</a> &gt; light, const std::vector&lt; std::shared_ptr&lt; <a class="el" href="classIHitable.html">IHitable</a> &gt;&gt; &amp;_obj) const override</td></tr>
+<tr class="memitem:ae7e3cef0a6e069448464c2d1b8f439f9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTintedMaterial.html#ae7e3cef0a6e069448464c2d1b8f439f9">scatter</a> (const <a class="el" href="classRay.html">Ray</a> &amp;r_in, const <a class="el" href="structhit__record__t.html">hit_record_t</a> &amp;rec, <a class="el" href="classVec3.html">Vec3</a> &amp;attenuation, <a class="el" href="classRay.html">Ray</a> &amp;scattered, std::shared_ptr&lt; <a class="el" href="classILight.html">ILight</a> &gt; light, const std::vector&lt; std::shared_ptr&lt; <a class="el" href="classIHitable.html">IHitable</a> &gt;&gt; &amp;_obj) const override</td></tr>
+<tr class="memdesc:ae7e3cef0a6e069448464c2d1b8f439f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to scatter the ray.  <a href="classTintedMaterial.html#ae7e3cef0a6e069448464c2d1b8f439f9">More...</a><br /></td></tr>
 <tr class="separator:ae7e3cef0a6e069448464c2d1b8f439f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22364565570a995b4edada248820f4b0"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTintedMaterial.html#a22364565570a995b4edada248820f4b0">getName</a> () const override final</td></tr>
+<tr class="memdesc:a22364565570a995b4edada248820f4b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to get the name of the material.  <a href="classTintedMaterial.html#a22364565570a995b4edada248820f4b0">More...</a><br /></td></tr>
 <tr class="separator:a22364565570a995b4edada248820f4b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classIMaterial"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classIMaterial')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classIMaterial.html">IMaterial</a></td></tr>
 <tr class="memitem:a43ad960a33ef87b199c1d8b28c364130 inherit pub_methods_classIMaterial"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIMaterial.html#a43ad960a33ef87b199c1d8b28c364130">~IMaterial</a> ()=default</td></tr>
@@ -113,8 +119,9 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a64c2b9d3de8752d9eaf22c017b15f7aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="TintDecorator_8hpp_source.html#l00016">16</a> of file <a class="el" href="TintDecorator_8hpp_source.html">TintDecorator.hpp</a>.</p>
+<div class="textblock"><p>Class used to tint the material. </p>
+
+<p class="definition">Definition at line <a class="el" href="TintDecorator_8hpp_source.html#l00026">26</a> of file <a class="el" href="TintDecorator_8hpp_source.html">TintDecorator.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ad9eaac1a0c3f814f3b508a0fe0a85452"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad9eaac1a0c3f814f3b508a0fe0a85452">&#9670;&nbsp;</a></span>TintedMaterial()</h2>
@@ -150,10 +157,19 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TintDecorator_8hpp_source.html#l00018">18</a> of file <a class="el" href="TintDecorator_8hpp_source.html">TintDecorator.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;: <a class="code" href="classTintedMaterial.html#a9bfade7c079054755270194bf3c1c4ef">baseMaterial</a>(material), <a class="code" href="classTintedMaterial.html#a64c2b9d3de8752d9eaf22c017b15f7aa">tint</a>(<a class="code" href="classTintedMaterial.html#a64c2b9d3de8752d9eaf22c017b15f7aa">tint</a>) {}</div>
-<div class="ttc" id="aclassTintedMaterial_html_a64c2b9d3de8752d9eaf22c017b15f7aa"><div class="ttname"><a href="classTintedMaterial.html#a64c2b9d3de8752d9eaf22c017b15f7aa">TintedMaterial::tint</a></div><div class="ttdeci">Vec3 tint</div><div class="ttdef"><b>Definition:</b> <a href="TintDecorator_8hpp_source.html#l00030">TintDecorator.hpp:30</a></div></div>
-<div class="ttc" id="aclassTintedMaterial_html_a9bfade7c079054755270194bf3c1c4ef"><div class="ttname"><a href="classTintedMaterial.html#a9bfade7c079054755270194bf3c1c4ef">TintedMaterial::baseMaterial</a></div><div class="ttdeci">std::shared_ptr&lt; IMaterial &gt; baseMaterial</div><div class="ttdef"><b>Definition:</b> <a href="TintDecorator_8hpp_source.html#l00029">TintDecorator.hpp:27</a></div></div>
+<p>Construct a new Tinted <a class="el" href="structMaterial.html" title="Structure to store a material.">Material</a> object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">material</td><td>The material. </td></tr>
+    <tr><td class="paramname">tint</td><td>The tint. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="TintDecorator_8hpp_source.html#l00034">34</a> of file <a class="el" href="TintDecorator_8hpp_source.html">TintDecorator.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;: <a class="code" href="classTintedMaterial.html#a9bfade7c079054755270194bf3c1c4ef">baseMaterial</a>(material), <a class="code" href="classTintedMaterial.html#a64c2b9d3de8752d9eaf22c017b15f7aa">tint</a>(<a class="code" href="classTintedMaterial.html#a64c2b9d3de8752d9eaf22c017b15f7aa">tint</a>) {}</div>
+<div class="ttc" id="aclassTintedMaterial_html_a64c2b9d3de8752d9eaf22c017b15f7aa"><div class="ttname"><a href="classTintedMaterial.html#a64c2b9d3de8752d9eaf22c017b15f7aa">TintedMaterial::tint</a></div><div class="ttdeci">Vec3 tint</div><div class="ttdef"><b>Definition:</b> <a href="TintDecorator_8hpp_source.html#l00046">TintDecorator.hpp:46</a></div></div>
+<div class="ttc" id="aclassTintedMaterial_html_a9bfade7c079054755270194bf3c1c4ef"><div class="ttname"><a href="classTintedMaterial.html#a9bfade7c079054755270194bf3c1c4ef">TintedMaterial::baseMaterial</a></div><div class="ttdeci">std::shared_ptr&lt; IMaterial &gt; baseMaterial</div><div class="ttdef"><b>Definition:</b> <a href="TintDecorator_8hpp_source.html#l00045">TintDecorator.hpp:43</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -181,10 +197,13 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Function to get the name of the material. </p>
+<dl class="section return"><dt>Returns</dt><dd>The name of the material. </dd></dl>
+
 <p>Implements <a class="el" href="classIMaterial.html#ae9d38bee10aab7c1a05fb59c6b2045f9">IMaterial</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="TintDecorator_8hpp_source.html#l00027">27</a> of file <a class="el" href="TintDecorator_8hpp_source.html">TintDecorator.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;Tinted&quot;</span>; };</div>
+<p class="definition">Definition at line <a class="el" href="TintDecorator_8hpp_source.html#l00043">43</a> of file <a class="el" href="TintDecorator_8hpp_source.html">TintDecorator.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;Tinted&quot;</span>; };</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -206,7 +225,7 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="struct_8h.html#aaf145a045b8acf3bedf3be121d64e390">hit_record_t</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structhit__record__t.html">hit_record_t</a> &amp;&#160;</td>
           <td class="paramname"><em>rec</em>, </td>
         </tr>
         <tr>
@@ -246,16 +265,30 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Function to scatter the ray. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">r_in</td><td>The ray. </td></tr>
+    <tr><td class="paramname">rec</td><td>The hit record. </td></tr>
+    <tr><td class="paramname">attenuation</td><td>The attenuation. </td></tr>
+    <tr><td class="paramname">scattered</td><td>The scattered ray. </td></tr>
+    <tr><td class="paramname">light</td><td>The light. </td></tr>
+    <tr><td class="paramname">_obj</td><td>The objects in the scene. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the ray has been scattered, false otherwise. </dd></dl>
+
 <p>Implements <a class="el" href="classIMaterial.html#af77fa4ec535577942a1589d4eadd0959">IMaterial</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="TintDecorator_8hpp_source.html#l00020">20</a> of file <a class="el" href="TintDecorator_8hpp_source.html">TintDecorator.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                                                                                                                                                                                              {</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="classTintedMaterial.html#a9bfade7c079054755270194bf3c1c4ef">baseMaterial</a>-&gt;scatter(r_in, rec, attenuation, scattered, light, _obj)) {</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                attenuation *= <a class="code" href="classTintedMaterial.html#a64c2b9d3de8752d9eaf22c017b15f7aa">tint</a>;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            }</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        }</div>
+<p class="definition">Definition at line <a class="el" href="TintDecorator_8hpp_source.html#l00036">36</a> of file <a class="el" href="TintDecorator_8hpp_source.html">TintDecorator.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                                                                                                                                                                                              {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="classTintedMaterial.html#a9bfade7c079054755270194bf3c1c4ef">baseMaterial</a>-&gt;scatter(r_in, rec, attenuation, scattered, light, _obj)) {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                attenuation *= <a class="code" href="classTintedMaterial.html#a64c2b9d3de8752d9eaf22c017b15f7aa">tint</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            }</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        }</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="classTintedMaterial.html#a9bfade7c079054755270194bf3c1c4ef">baseMaterial</a>, and <a class="el" href="classTintedMaterial.html#a64c2b9d3de8752d9eaf22c017b15f7aa">tint</a>.</p>
 
@@ -282,7 +315,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TintDecorator_8hpp_source.html#l00029">29</a> of file <a class="el" href="TintDecorator_8hpp_source.html">TintDecorator.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TintDecorator_8hpp_source.html#l00045">45</a> of file <a class="el" href="TintDecorator_8hpp_source.html">TintDecorator.hpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="classTintedMaterial.html#ae7e3cef0a6e069448464c2d1b8f439f9">scatter()</a>.</p>
 
@@ -308,7 +341,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TintDecorator_8hpp_source.html#l00030">30</a> of file <a class="el" href="TintDecorator_8hpp_source.html">TintDecorator.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TintDecorator_8hpp_source.html#l00046">46</a> of file <a class="el" href="TintDecorator_8hpp_source.html">TintDecorator.hpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="classTintedMaterial.html#ae7e3cef0a6e069448464c2d1b8f439f9">scatter()</a>.</p>
 

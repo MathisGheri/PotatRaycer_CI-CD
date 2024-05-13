@@ -5,6 +5,11 @@
 ** Metal
 */
 
+/**
+* @file Metal.cpp
+* @brief File for the Metal class.
+*/
+
 #include "Metal.hpp"
 #include "SingletonLogger.hpp"
 

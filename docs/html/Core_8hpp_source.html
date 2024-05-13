@@ -77,36 +77,40 @@ $(function() {
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">** File description:</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">** Core</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">*/</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef CORE_HPP_</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="Core_8hpp.html#a7486f5f3dec55fb89bc1add18bbabb21">   10</a></span>&#160;<span class="preprocessor">#define CORE_HPP_</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="include_8hpp.html">include.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Scene_8hpp.html">Scene.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classCore.html">   15</a></span>&#160;<span class="keyword">class </span><a class="code" href="classCore.html">Core</a> {</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <a class="code" href="classCore.html#a14e63188e0aa7c4a6f72d5501384d1f9">Core</a>();</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <a class="code" href="classCore.html#a776f8c46504b14183883c6273f93eaed">~Core</a>();</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classCore.html#a8c45134f4e917fb1e2aa2848697f376f">assembleScene</a>(<span class="keyword">const</span> std::string &amp;filename);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classCore.html#afdfd60c50da96c795184b83678195724">generatePPM</a>();</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keyword">const</span> <a class="code" href="classScene.html">Scene</a> &amp;<a class="code" href="classCore.html#ac95813cfb9b1f04817f4ef15270980fd">getScene</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classCore.html#adc4a4ddfab1d75a3e78a4ef23224d327">   23</a></span>&#160;        <a class="code" href="classScene.html">Scene</a> <a class="code" href="classCore.html#adc4a4ddfab1d75a3e78a4ef23224d327">scene</a>;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;};</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !CORE_HPP_ */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="aScene_8hpp_html"><div class="ttname"><a href="Scene_8hpp.html">Scene.hpp</a></div></div>
-<div class="ttc" id="aclassCore_html"><div class="ttname"><a href="classCore.html">Core</a></div><div class="ttdef"><b>Definition:</b> <a href="Core_8hpp_source.html#l00015">Core.hpp:15</a></div></div>
-<div class="ttc" id="aclassCore_html_a14e63188e0aa7c4a6f72d5501384d1f9"><div class="ttname"><a href="classCore.html#a14e63188e0aa7c4a6f72d5501384d1f9">Core::Core</a></div><div class="ttdeci">Core()</div><div class="ttdef"><b>Definition:</b> <a href="Core_8cpp_source.html#l00016">Core.cpp:16</a></div></div>
-<div class="ttc" id="aclassCore_html_a776f8c46504b14183883c6273f93eaed"><div class="ttname"><a href="classCore.html#a776f8c46504b14183883c6273f93eaed">Core::~Core</a></div><div class="ttdeci">~Core()</div><div class="ttdef"><b>Definition:</b> <a href="Core_8cpp_source.html#l00023">Core.cpp:23</a></div></div>
-<div class="ttc" id="aclassCore_html_a8c45134f4e917fb1e2aa2848697f376f"><div class="ttname"><a href="classCore.html#a8c45134f4e917fb1e2aa2848697f376f">Core::assembleScene</a></div><div class="ttdeci">void assembleScene(const std::string &amp;filename)</div><div class="ttdef"><b>Definition:</b> <a href="Core_8cpp_source.html#l00025">Core.cpp:25</a></div></div>
-<div class="ttc" id="aclassCore_html_ac95813cfb9b1f04817f4ef15270980fd"><div class="ttname"><a href="classCore.html#ac95813cfb9b1f04817f4ef15270980fd">Core::getScene</a></div><div class="ttdeci">const Scene &amp; getScene() const</div><div class="ttdef"><b>Definition:</b> <a href="Core_8cpp_source.html#l00076">Core.cpp:76</a></div></div>
-<div class="ttc" id="aclassCore_html_adc4a4ddfab1d75a3e78a4ef23224d327"><div class="ttname"><a href="classCore.html#adc4a4ddfab1d75a3e78a4ef23224d327">Core::scene</a></div><div class="ttdeci">Scene scene</div><div class="ttdef"><b>Definition:</b> <a href="Core_8hpp_source.html#l00023">Core.hpp:23</a></div></div>
-<div class="ttc" id="aclassCore_html_afdfd60c50da96c795184b83678195724"><div class="ttname"><a href="classCore.html#afdfd60c50da96c795184b83678195724">Core::generatePPM</a></div><div class="ttdeci">void generatePPM()</div><div class="ttdef"><b>Definition:</b> <a href="Core_8cpp_source.html#l00057">Core.cpp:57</a></div></div>
-<div class="ttc" id="aclassScene_html"><div class="ttname"><a href="classScene.html">Scene</a></div><div class="ttdef"><b>Definition:</b> <a href="Scene_8hpp_source.html#l00018">Scene.hpp:18</a></div></div>
-<div class="ttc" id="ainclude_8hpp_html"><div class="ttname"><a href="include_8hpp.html">include.hpp</a></div></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#ifndef CORE_HPP_</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="Core_8hpp.html#a7486f5f3dec55fb89bc1add18bbabb21">   16</a></span>&#160;<span class="preprocessor">#define CORE_HPP_</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="include_8hpp.html">include.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Scene_8hpp.html">Scene.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classCore.html">   26</a></span>&#160;<span class="keyword">class </span><a class="code" href="classCore.html">Core</a> {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <a class="code" href="classCore.html#a14e63188e0aa7c4a6f72d5501384d1f9">Core</a>();</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <a class="code" href="classCore.html#a776f8c46504b14183883c6273f93eaed">~Core</a>();</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classCore.html#a8c45134f4e917fb1e2aa2848697f376f">assembleScene</a>(<span class="keyword">const</span> std::string &amp;filename);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classCore.html#afdfd60c50da96c795184b83678195724">generatePPM</a>();</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keyword">const</span> <a class="code" href="classScene.html">Scene</a> &amp;<a class="code" href="classCore.html#ac95813cfb9b1f04817f4ef15270980fd">getScene</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classCore.html#adc4a4ddfab1d75a3e78a4ef23224d327">   49</a></span>&#160;        <a class="code" href="classScene.html">Scene</a> <a class="code" href="classCore.html#adc4a4ddfab1d75a3e78a4ef23224d327">scene</a>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;};</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !CORE_HPP_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="aScene_8hpp_html"><div class="ttname"><a href="Scene_8hpp.html">Scene.hpp</a></div><div class="ttdoc">Scene class header file.</div></div>
+<div class="ttc" id="aclassCore_html"><div class="ttname"><a href="classCore.html">Core</a></div><div class="ttdoc">Class used to assemble the scene and generate the PPM file.</div><div class="ttdef"><b>Definition:</b> <a href="Core_8hpp_source.html#l00026">Core.hpp:26</a></div></div>
+<div class="ttc" id="aclassCore_html_a14e63188e0aa7c4a6f72d5501384d1f9"><div class="ttname"><a href="classCore.html#a14e63188e0aa7c4a6f72d5501384d1f9">Core::Core</a></div><div class="ttdeci">Core()</div><div class="ttdef"><b>Definition:</b> <a href="Core_8cpp_source.html#l00021">Core.cpp:21</a></div></div>
+<div class="ttc" id="aclassCore_html_a776f8c46504b14183883c6273f93eaed"><div class="ttname"><a href="classCore.html#a776f8c46504b14183883c6273f93eaed">Core::~Core</a></div><div class="ttdeci">~Core()</div><div class="ttdef"><b>Definition:</b> <a href="Core_8cpp_source.html#l00028">Core.cpp:28</a></div></div>
+<div class="ttc" id="aclassCore_html_a8c45134f4e917fb1e2aa2848697f376f"><div class="ttname"><a href="classCore.html#a8c45134f4e917fb1e2aa2848697f376f">Core::assembleScene</a></div><div class="ttdeci">void assembleScene(const std::string &amp;filename)</div><div class="ttdoc">Function to assemble the scene.</div><div class="ttdef"><b>Definition:</b> <a href="Core_8cpp_source.html#l00030">Core.cpp:30</a></div></div>
+<div class="ttc" id="aclassCore_html_ac95813cfb9b1f04817f4ef15270980fd"><div class="ttname"><a href="classCore.html#ac95813cfb9b1f04817f4ef15270980fd">Core::getScene</a></div><div class="ttdeci">const Scene &amp; getScene() const</div><div class="ttdoc">Function to get the scene.</div><div class="ttdef"><b>Definition:</b> <a href="Core_8cpp_source.html#l00081">Core.cpp:81</a></div></div>
+<div class="ttc" id="aclassCore_html_adc4a4ddfab1d75a3e78a4ef23224d327"><div class="ttname"><a href="classCore.html#adc4a4ddfab1d75a3e78a4ef23224d327">Core::scene</a></div><div class="ttdeci">Scene scene</div><div class="ttdef"><b>Definition:</b> <a href="Core_8hpp_source.html#l00049">Core.hpp:49</a></div></div>
+<div class="ttc" id="aclassCore_html_afdfd60c50da96c795184b83678195724"><div class="ttname"><a href="classCore.html#afdfd60c50da96c795184b83678195724">Core::generatePPM</a></div><div class="ttdeci">void generatePPM()</div><div class="ttdoc">Function to generate the PPM file.</div><div class="ttdef"><b>Definition:</b> <a href="Core_8cpp_source.html#l00062">Core.cpp:62</a></div></div>
+<div class="ttc" id="aclassScene_html"><div class="ttname"><a href="classScene.html">Scene</a></div><div class="ttdoc">Class for representing a scene in the ray tracing application.</div><div class="ttdef"><b>Definition:</b> <a href="Scene_8hpp_source.html#l00031">Scene.hpp:31</a></div></div>
+<div class="ttc" id="ainclude_8hpp_html"><div class="ttname"><a href="include_8hpp.html">include.hpp</a></div><div class="ttdoc">Include all the libraries and headers needed.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

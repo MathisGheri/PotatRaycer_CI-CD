@@ -1,4 +1,4 @@
 <map id="Parsing::parsePrimitives" name="Parsing::parsePrimitives">
-<area shape="rect" id="node1" title="Parse the primitive settings from the config file." alt="" coords="172,5,336,32"/>
+<area shape="rect" id="node1" title="Parse the configuration file to fill the primitives vector." alt="" coords="172,5,336,32"/>
 <area shape="rect" id="node2" href="$classParsing.html#aff2c6802b3204d215941cdadf97d77e4" title=" " alt="" coords="5,5,124,32"/>
 </map>

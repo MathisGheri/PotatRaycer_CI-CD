@@ -5,6 +5,11 @@
 ** Parsing
 */
 
+/**
+* @file Parsing.cpp
+* @brief Class for parsing the configuration file.
+*/
+
 #include "Parsing.hpp"
 #include "SingletonLogger.hpp"
 #include "FileWatcherSingleton.hpp"
@@ -40,14 +45,6 @@ Parsing::Parsing(const std::string &file) : _filePath(file)
     parseLogger(root["logger"]);
 }
 
-/**
- * \brief Parse the primitive settings from the config file.
- *
- * Une description plus détaillée.
- *
- * \param param1 Description du premier paramètre.
- * \return Description de ce que retourne la fonction.
- */
 void Parsing::parsePrimitives(libconfig::Setting& setting, const std::string& type)
 {
     if (setting.getLength() == 0) {

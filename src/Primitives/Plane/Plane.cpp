@@ -5,6 +5,11 @@
 ** Plane
 */
 
+/**
+* @file Plane.cpp
+* @brief File for the Plane class.
+*/
+
 #include "Plane.hpp"
 #include "SingletonLogger.hpp"
 

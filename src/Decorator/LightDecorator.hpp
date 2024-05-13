@@ -5,11 +5,21 @@
 ** LightDecorator
 */
 
+/**
+* @file LightDecorator.hpp
+* @brief File for the LightDecorator class.
+*/
+
 #ifndef LIGHTDECORATOR_HPP_
 #define LIGHTDECORATOR_HPP_
 
 #include "include.hpp"
 #include "IMaterial.hpp"
+
+/**
+* @class EmissiveMaterial
+* @brief Class used to decorate the light in the scene.
+*/
 
 class EmissiveMaterial : public IMaterial {
     private:
@@ -17,6 +27,13 @@ class EmissiveMaterial : public IMaterial {
         Vec3 emitColor;
         float intensity;
     public:
+
+        /**
+        * @brief Construct a new Emissive Material object
+        * @param material The material.
+        * @param emitColor The color of the light.
+        * @param intensity The intensity of the light.
+        */
         EmissiveMaterial(std::shared_ptr<IMaterial> material, Vec3 emitColor, float intensity)
             : baseMaterial(material), emitColor(emitColor), intensity(intensity) {}
 

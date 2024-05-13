@@ -1,5 +1,5 @@
 <map id="TintedMaterial" name="TintedMaterial">
-<area shape="rect" id="node1" title=" " alt="" coords="32,95,136,121"/>
-<area shape="rect" id="node2" href="$classIMaterial.html" title=" " alt="" coords="5,5,77,32"/>
-<area shape="rect" id="node3" href="$classVec3.html" title=" " alt="" coords="101,5,152,32"/>
+<area shape="rect" id="node1" title="Class used to tint the material." alt="" coords="32,95,136,121"/>
+<area shape="rect" id="node2" href="$classIMaterial.html" title="Class used to create the Material." alt="" coords="5,5,77,32"/>
+<area shape="rect" id="node3" href="$classVec3.html" title="Class for representing a 3D vector." alt="" coords="101,5,152,32"/>
 </map>

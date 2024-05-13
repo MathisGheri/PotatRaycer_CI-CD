@@ -1,4 +1,4 @@
 <map id="Logger::log" name="Logger::log">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,92,32"/>
-<area shape="rect" id="node2" href="$classLogger.html#acfb794ab842c63396ad1c6a771f43483" title=" " alt="" coords="140,5,284,32"/>
+<area shape="rect" id="node1" title="Log a message." alt="" coords="5,5,92,32"/>
+<area shape="rect" id="node2" href="$classLogger.html#acfb794ab842c63396ad1c6a771f43483" title="Convert the log level to a string." alt="" coords="140,5,284,32"/>
 </map>

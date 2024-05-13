@@ -5,6 +5,11 @@
 ** Camera
 */
 
+/**
+* @file Camera.cpp
+* @brief Implementation of the Camera class. 
+*/
+
 #include "Camera.hpp"
 
 Camera::Camera(Vec3 lookfrom, Vec3 lookat, Vec3 vup, float vfov, float aspect, float aperture, float focus_dist)

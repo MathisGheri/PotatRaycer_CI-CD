@@ -1,6 +1,6 @@
 <map id="Core" name="Core">
-<area shape="rect" id="node1" title=" " alt="" coords="14,361,65,388"/>
-<area shape="rect" id="node2" href="$classScene.html" title=" " alt="" coords="10,272,69,299"/>
-<area shape="rect" id="node3" href="$classCamera.html" title=" " alt="" coords="5,183,73,209"/>
-<area shape="rect" id="node4" href="$classVec3.html" title=" " alt="" coords="14,5,65,32"/>
+<area shape="rect" id="node1" title="Class used to assemble the scene and generate the PPM file." alt="" coords="14,361,65,388"/>
+<area shape="rect" id="node2" href="$classScene.html" title="Class for representing a scene in the ray tracing application." alt="" coords="10,272,69,299"/>
+<area shape="rect" id="node3" href="$classCamera.html" title="Class for creating a camera object in the scene." alt="" coords="5,183,73,209"/>
+<area shape="rect" id="node4" href="$classVec3.html" title="Class for representing a 3D vector." alt="" coords="14,5,65,32"/>
 </map>

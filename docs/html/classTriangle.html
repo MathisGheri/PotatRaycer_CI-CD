@@ -72,14 +72,17 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Class for handling triangles.  
+ <a href="classTriangle.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="Triangle_8hpp_source.html">Triangle.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for Triangle:</div>
 <div class="dyncontent">
 <div class="center"><img src="classTriangle__inherit__graph.png" border="0" usemap="#aTriangle_inherit__map" alt="Inheritance graph"/></div>
 <map name="aTriangle_inherit__map" id="aTriangle_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,80,73,107"/>
-<area shape="rect" href="classIHitable.html" title=" " alt="" coords="6,5,73,32"/>
+<area shape="rect" title="Class for handling triangles." alt="" coords="5,80,73,107"/>
+<area shape="rect" href="classIHitable.html" title="Interface for objects that can be hit by rays." alt="" coords="6,5,73,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
@@ -87,10 +90,10 @@ Collaboration diagram for Triangle:</div>
 <div class="dyncontent">
 <div class="center"><img src="classTriangle__coll__graph.png" border="0" usemap="#aTriangle_coll__map" alt="Collaboration graph"/></div>
 <map name="aTriangle_coll__map" id="aTriangle_coll__map">
-<area shape="rect" title=" " alt="" coords="87,139,155,165"/>
-<area shape="rect" href="classIHitable.html" title=" " alt="" coords="5,5,72,32"/>
-<area shape="rect" href="classVec2.html" title=" " alt="" coords="96,5,147,32"/>
-<area shape="rect" href="classVec3.html" title=" " alt="" coords="171,5,221,32"/>
+<area shape="rect" title="Class for handling triangles." alt="" coords="87,139,155,165"/>
+<area shape="rect" href="classIHitable.html" title="Interface for objects that can be hit by rays." alt="" coords="5,5,72,32"/>
+<area shape="rect" href="classVec2.html" title="Class for representing a 2D vector." alt="" coords="96,5,147,32"/>
+<area shape="rect" href="classVec3.html" title="Class for representing a 3D vector." alt="" coords="171,5,221,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -100,16 +103,25 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a34e75463ad08cb5c77e1f5111f99e061"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5199760a17454f4dc94c855a57e3a152"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTriangle.html#a5199760a17454f4dc94c855a57e3a152">~Triangle</a> ()</td></tr>
 <tr class="separator:a5199760a17454f4dc94c855a57e3a152"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab80d0e93bb39edbc3c667596329fbeb3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTriangle.html#ab80d0e93bb39edbc3c667596329fbeb3">hit</a> (const <a class="el" href="classRay.html">Ray</a> &amp;r, float t_min, float t_max, <a class="el" href="struct_8h.html#aaf145a045b8acf3bedf3be121d64e390">hit_record_t</a> &amp;rec) const</td></tr>
+<tr class="memitem:ab80d0e93bb39edbc3c667596329fbeb3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTriangle.html#ab80d0e93bb39edbc3c667596329fbeb3">hit</a> (const <a class="el" href="classRay.html">Ray</a> &amp;r, float t_min, float t_max, <a class="el" href="structhit__record__t.html">hit_record_t</a> &amp;rec) const</td></tr>
+<tr class="memdesc:ab80d0e93bb39edbc3c667596329fbeb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if a ray hits the object.  <a href="classTriangle.html#ab80d0e93bb39edbc3c667596329fbeb3">More...</a><br /></td></tr>
 <tr class="separator:ab80d0e93bb39edbc3c667596329fbeb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77e330ab8a6f0f2c34dc53c07c4f32f6"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classIMaterial.html">IMaterial</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTriangle.html#a77e330ab8a6f0f2c34dc53c07c4f32f6">getMaterial</a> ()</td></tr>
+<tr class="memdesc:a77e330ab8a6f0f2c34dc53c07c4f32f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the material of the object.  <a href="classTriangle.html#a77e330ab8a6f0f2c34dc53c07c4f32f6">More...</a><br /></td></tr>
 <tr class="separator:a77e330ab8a6f0f2c34dc53c07c4f32f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1583c065b0081c4368a863febef1dafe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTriangle.html#a1583c065b0081c4368a863febef1dafe">transform</a> (const <a class="el" href="classVec3.html">Vec3</a> &amp;scale, const <a class="el" href="classVec3.html">Vec3</a> &amp;rotation, const <a class="el" href="classVec3.html">Vec3</a> &amp;position)</td></tr>
+<tr class="memdesc:a1583c065b0081c4368a863febef1dafe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transform the vectors of triangle based on the value given.  <a href="classTriangle.html#a1583c065b0081c4368a863febef1dafe">More...</a><br /></td></tr>
 <tr class="separator:a1583c065b0081c4368a863febef1dafe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42efcec69367bece5ec0c7de7cb45b13"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVec3.html">Vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTriangle.html#a42efcec69367bece5ec0c7de7cb45b13">applyTransform</a> (const <a class="el" href="classVec3.html">Vec3</a> &amp;vertex, const <a class="el" href="classVec3.html">Vec3</a> &amp;scale, const <a class="el" href="classVec3.html">Vec3</a> &amp;rotation, const <a class="el" href="classVec3.html">Vec3</a> &amp;position)</td></tr>
+<tr class="memdesc:a42efcec69367bece5ec0c7de7cb45b13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply the transformation to a vertex.  <a href="classTriangle.html#a42efcec69367bece5ec0c7de7cb45b13">More...</a><br /></td></tr>
 <tr class="separator:a42efcec69367bece5ec0c7de7cb45b13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39fdb4a304ea147b3108f8c5602149a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTriangle.html#a39fdb4a304ea147b3108f8c5602149a7">setMaterial</a> (std::shared_ptr&lt; <a class="el" href="classIMaterial.html">IMaterial</a> &gt; m)</td></tr>
+<tr class="memdesc:a39fdb4a304ea147b3108f8c5602149a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the material of the object.  <a href="classTriangle.html#a39fdb4a304ea147b3108f8c5602149a7">More...</a><br /></td></tr>
 <tr class="separator:a39fdb4a304ea147b3108f8c5602149a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classIHitable"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classIHitable')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classIHitable.html">IHitable</a></td></tr>
+<tr class="memitem:a8eb7f9af8165ed9e2bd628ced769f77f inherit pub_methods_classIHitable"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIHitable.html#a8eb7f9af8165ed9e2bd628ced769f77f">~IHitable</a> ()=default</td></tr>
+<tr class="memdesc:a8eb7f9af8165ed9e2bd628ced769f77f inherit pub_methods_classIHitable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor for <a class="el" href="classIHitable.html" title="Interface for objects that can be hit by rays.">IHitable</a>.  <a href="classIHitable.html#a8eb7f9af8165ed9e2bd628ced769f77f">More...</a><br /></td></tr>
+<tr class="separator:a8eb7f9af8165ed9e2bd628ced769f77f inherit pub_methods_classIHitable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -118,21 +130,26 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:abd277e8c5c42385505a929fd842d2f79"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVec3.html">Vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTriangle.html#abd277e8c5c42385505a929fd842d2f79">_v1</a></td></tr>
 <tr class="separator:abd277e8c5c42385505a929fd842d2f79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a007563e59408d6907d986936830a154a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVec3.html">Vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTriangle.html#a007563e59408d6907d986936830a154a">_v2</a></td></tr>
+<tr class="memdesc:a007563e59408d6907d986936830a154a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vertices of the triangle.  <a href="classTriangle.html#a007563e59408d6907d986936830a154a">More...</a><br /></td></tr>
 <tr class="separator:a007563e59408d6907d986936830a154a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b7628c48525d32763d8f2960093ba79"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVec2.html">Vec2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTriangle.html#a9b7628c48525d32763d8f2960093ba79">_uv0</a></td></tr>
 <tr class="separator:a9b7628c48525d32763d8f2960093ba79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f5d903295894c15d6cb5a420417e458"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVec2.html">Vec2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTriangle.html#a3f5d903295894c15d6cb5a420417e458">_uv1</a></td></tr>
 <tr class="separator:a3f5d903295894c15d6cb5a420417e458"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8431a0a09d979c41092d0105bf71a66e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVec2.html">Vec2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTriangle.html#a8431a0a09d979c41092d0105bf71a66e">_uv2</a></td></tr>
+<tr class="memdesc:a8431a0a09d979c41092d0105bf71a66e"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classTexture.html" title="Class used to create a Texture.">Texture</a> coordinates of the texture.  <a href="classTriangle.html#a8431a0a09d979c41092d0105bf71a66e">More...</a><br /></td></tr>
 <tr class="separator:a8431a0a09d979c41092d0105bf71a66e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4587e5158862f2f93fc81dcf54212e8e"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classIMaterial.html">IMaterial</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTriangle.html#a4587e5158862f2f93fc81dcf54212e8e">_mat_ptr</a></td></tr>
+<tr class="memdesc:a4587e5158862f2f93fc81dcf54212e8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the material of the intersected object.  <a href="classTriangle.html#a4587e5158862f2f93fc81dcf54212e8e">More...</a><br /></td></tr>
 <tr class="separator:a4587e5158862f2f93fc81dcf54212e8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ea91706e236e39d525dc5308cca9519"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVec3.html">Vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTriangle.html#a9ea91706e236e39d525dc5308cca9519">_pos</a></td></tr>
+<tr class="memdesc:a9ea91706e236e39d525dc5308cca9519"><td class="mdescLeft">&#160;</td><td class="mdescRight">Position of the triangle.  <a href="classTriangle.html#a9ea91706e236e39d525dc5308cca9519">More...</a><br /></td></tr>
 <tr class="separator:a9ea91706e236e39d525dc5308cca9519"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="Triangle_8hpp_source.html#l00013">13</a> of file <a class="el" href="Triangle_8hpp_source.html">Triangle.hpp</a>.</p>
+<div class="textblock"><p>Class for handling triangles. </p>
+
+<p class="definition">Definition at line <a class="el" href="Triangle_8hpp_source.html#l00018">18</a> of file <a class="el" href="Triangle_8hpp_source.html">Triangle.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a34e75463ad08cb5c77e1f5111f99e061"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a34e75463ad08cb5c77e1f5111f99e061">&#9670;&nbsp;</a></span>Triangle()</h2>
@@ -184,14 +201,14 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Triangle_8cpp_source.html#l00010">10</a> of file <a class="el" href="Triangle_8cpp_source.html">Triangle.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;: <a class="code" href="classTriangle.html#a785273767ae7a260a7ad17dfe4079fa4">_v0</a>(v0), <a class="code" href="classTriangle.html#abd277e8c5c42385505a929fd842d2f79">_v1</a>(v1), <a class="code" href="classTriangle.html#a007563e59408d6907d986936830a154a">_v2</a>(v2), <a class="code" href="classTriangle.html#a9b7628c48525d32763d8f2960093ba79">_uv0</a>(uv0), <a class="code" href="classTriangle.html#a3f5d903295894c15d6cb5a420417e458">_uv1</a>(uv1), <a class="code" href="classTriangle.html#a8431a0a09d979c41092d0105bf71a66e">_uv2</a>(uv2) {}</div>
-<div class="ttc" id="aclassTriangle_html_a007563e59408d6907d986936830a154a"><div class="ttname"><a href="classTriangle.html#a007563e59408d6907d986936830a154a">Triangle::_v2</a></div><div class="ttdeci">Vec3 _v2</div><div class="ttdef"><b>Definition:</b> <a href="Triangle_8hpp_source.html#l00023">Triangle.hpp:23</a></div></div>
-<div class="ttc" id="aclassTriangle_html_a3f5d903295894c15d6cb5a420417e458"><div class="ttname"><a href="classTriangle.html#a3f5d903295894c15d6cb5a420417e458">Triangle::_uv1</a></div><div class="ttdeci">Vec2 _uv1</div><div class="ttdef"><b>Definition:</b> <a href="Triangle_8hpp_source.html#l00024">Triangle.hpp:24</a></div></div>
-<div class="ttc" id="aclassTriangle_html_a785273767ae7a260a7ad17dfe4079fa4"><div class="ttname"><a href="classTriangle.html#a785273767ae7a260a7ad17dfe4079fa4">Triangle::_v0</a></div><div class="ttdeci">Vec3 _v0</div><div class="ttdef"><b>Definition:</b> <a href="Triangle_8hpp_source.html#l00023">Triangle.hpp:21</a></div></div>
-<div class="ttc" id="aclassTriangle_html_a8431a0a09d979c41092d0105bf71a66e"><div class="ttname"><a href="classTriangle.html#a8431a0a09d979c41092d0105bf71a66e">Triangle::_uv2</a></div><div class="ttdeci">Vec2 _uv2</div><div class="ttdef"><b>Definition:</b> <a href="Triangle_8hpp_source.html#l00024">Triangle.hpp:24</a></div></div>
-<div class="ttc" id="aclassTriangle_html_a9b7628c48525d32763d8f2960093ba79"><div class="ttname"><a href="classTriangle.html#a9b7628c48525d32763d8f2960093ba79">Triangle::_uv0</a></div><div class="ttdeci">Vec2 _uv0</div><div class="ttdef"><b>Definition:</b> <a href="Triangle_8hpp_source.html#l00024">Triangle.hpp:24</a></div></div>
-<div class="ttc" id="aclassTriangle_html_abd277e8c5c42385505a929fd842d2f79"><div class="ttname"><a href="classTriangle.html#abd277e8c5c42385505a929fd842d2f79">Triangle::_v1</a></div><div class="ttdeci">Vec3 _v1</div><div class="ttdef"><b>Definition:</b> <a href="Triangle_8hpp_source.html#l00023">Triangle.hpp:23</a></div></div>
+<p class="definition">Definition at line <a class="el" href="Triangle_8cpp_source.html#l00015">15</a> of file <a class="el" href="Triangle_8cpp_source.html">Triangle.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;: <a class="code" href="classTriangle.html#a785273767ae7a260a7ad17dfe4079fa4">_v0</a>(v0), <a class="code" href="classTriangle.html#abd277e8c5c42385505a929fd842d2f79">_v1</a>(v1), <a class="code" href="classTriangle.html#a007563e59408d6907d986936830a154a">_v2</a>(v2), <a class="code" href="classTriangle.html#a9b7628c48525d32763d8f2960093ba79">_uv0</a>(uv0), <a class="code" href="classTriangle.html#a3f5d903295894c15d6cb5a420417e458">_uv1</a>(uv1), <a class="code" href="classTriangle.html#a8431a0a09d979c41092d0105bf71a66e">_uv2</a>(uv2) {}</div>
+<div class="ttc" id="aclassTriangle_html_a007563e59408d6907d986936830a154a"><div class="ttname"><a href="classTriangle.html#a007563e59408d6907d986936830a154a">Triangle::_v2</a></div><div class="ttdeci">Vec3 _v2</div><div class="ttdoc">Vertices of the triangle.</div><div class="ttdef"><b>Definition:</b> <a href="Triangle_8hpp_source.html#l00044">Triangle.hpp:44</a></div></div>
+<div class="ttc" id="aclassTriangle_html_a3f5d903295894c15d6cb5a420417e458"><div class="ttname"><a href="classTriangle.html#a3f5d903295894c15d6cb5a420417e458">Triangle::_uv1</a></div><div class="ttdeci">Vec2 _uv1</div><div class="ttdef"><b>Definition:</b> <a href="Triangle_8hpp_source.html#l00045">Triangle.hpp:45</a></div></div>
+<div class="ttc" id="aclassTriangle_html_a785273767ae7a260a7ad17dfe4079fa4"><div class="ttname"><a href="classTriangle.html#a785273767ae7a260a7ad17dfe4079fa4">Triangle::_v0</a></div><div class="ttdeci">Vec3 _v0</div><div class="ttdef"><b>Definition:</b> <a href="Triangle_8hpp_source.html#l00044">Triangle.hpp:42</a></div></div>
+<div class="ttc" id="aclassTriangle_html_a8431a0a09d979c41092d0105bf71a66e"><div class="ttname"><a href="classTriangle.html#a8431a0a09d979c41092d0105bf71a66e">Triangle::_uv2</a></div><div class="ttdeci">Vec2 _uv2</div><div class="ttdoc">Texture coordinates of the texture.</div><div class="ttdef"><b>Definition:</b> <a href="Triangle_8hpp_source.html#l00045">Triangle.hpp:45</a></div></div>
+<div class="ttc" id="aclassTriangle_html_a9b7628c48525d32763d8f2960093ba79"><div class="ttname"><a href="classTriangle.html#a9b7628c48525d32763d8f2960093ba79">Triangle::_uv0</a></div><div class="ttdeci">Vec2 _uv0</div><div class="ttdef"><b>Definition:</b> <a href="Triangle_8hpp_source.html#l00045">Triangle.hpp:45</a></div></div>
+<div class="ttc" id="aclassTriangle_html_abd277e8c5c42385505a929fd842d2f79"><div class="ttname"><a href="classTriangle.html#abd277e8c5c42385505a929fd842d2f79">Triangle::_v1</a></div><div class="ttdeci">Vec3 _v1</div><div class="ttdef"><b>Definition:</b> <a href="Triangle_8hpp_source.html#l00044">Triangle.hpp:44</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -210,8 +227,8 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Triangle_8cpp_source.html#l00013">13</a> of file <a class="el" href="Triangle_8cpp_source.html">Triangle.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{}</div>
+<p class="definition">Definition at line <a class="el" href="Triangle_8cpp_source.html#l00018">18</a> of file <a class="el" href="Triangle_8cpp_source.html">Triangle.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -254,16 +271,28 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Triangle_8cpp_source.html#l00095">95</a> of file <a class="el" href="Triangle_8cpp_source.html">Triangle.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                                                                                                               {</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <a class="code" href="classVec3.html">Vec3</a> scaled = <a class="code" href="Triangle_8cpp.html#a65a86bfd3e28824f78b4655de101eefc">scaleVertex</a>(vertex, scale);</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <a class="code" href="classVec3.html">Vec3</a> rotated = <a class="code" href="Triangle_8cpp.html#a0626a689c37f806582b5b8fca8d628ad">rotateVertex</a>(scaled, rotation);</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="Triangle_8cpp.html#a04284e2ba182ea240fea30d4766f6576">translateVertex</a>(rotated, position);</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;}</div>
-<div class="ttc" id="aTriangle_8cpp_html_a04284e2ba182ea240fea30d4766f6576"><div class="ttname"><a href="Triangle_8cpp.html#a04284e2ba182ea240fea30d4766f6576">translateVertex</a></div><div class="ttdeci">Vec3 translateVertex(const Vec3 &amp;vertex, const Vec3 &amp;position)</div><div class="ttdef"><b>Definition:</b> <a href="Triangle_8cpp_source.html#l00090">Triangle.cpp:90</a></div></div>
-<div class="ttc" id="aTriangle_8cpp_html_a0626a689c37f806582b5b8fca8d628ad"><div class="ttname"><a href="Triangle_8cpp.html#a0626a689c37f806582b5b8fca8d628ad">rotateVertex</a></div><div class="ttdeci">Vec3 rotateVertex(const Vec3 &amp;vertex, const Vec3 &amp;rotation)</div><div class="ttdef"><b>Definition:</b> <a href="Triangle_8cpp_source.html#l00063">Triangle.cpp:63</a></div></div>
-<div class="ttc" id="aTriangle_8cpp_html_a65a86bfd3e28824f78b4655de101eefc"><div class="ttname"><a href="Triangle_8cpp.html#a65a86bfd3e28824f78b4655de101eefc">scaleVertex</a></div><div class="ttdeci">Vec3 scaleVertex(const Vec3 &amp;vertex, const Vec3 &amp;scale)</div><div class="ttdef"><b>Definition:</b> <a href="Triangle_8cpp_source.html#l00058">Triangle.cpp:58</a></div></div>
-<div class="ttc" id="aclassVec3_html"><div class="ttname"><a href="classVec3.html">Vec3</a></div><div class="ttdef"><b>Definition:</b> <a href="Vec3_8hpp_source.html#l00014">Vec3.hpp:14</a></div></div>
+<p>Apply the transformation to a vertex. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vertex</td><td>The vertex to transform. </td></tr>
+    <tr><td class="paramname">scale</td><td>The scale value. </td></tr>
+    <tr><td class="paramname">rotation</td><td>The rotation value. </td></tr>
+    <tr><td class="paramname">position</td><td>The position value. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classVec3.html" title="Class for representing a 3D vector.">Vec3</a> The transformed vertex. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="Triangle_8cpp_source.html#l00100">100</a> of file <a class="el" href="Triangle_8cpp_source.html">Triangle.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                                                                                                               {</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <a class="code" href="classVec3.html">Vec3</a> scaled = <a class="code" href="Triangle_8cpp.html#a65a86bfd3e28824f78b4655de101eefc">scaleVertex</a>(vertex, scale);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <a class="code" href="classVec3.html">Vec3</a> rotated = <a class="code" href="Triangle_8cpp.html#a0626a689c37f806582b5b8fca8d628ad">rotateVertex</a>(scaled, rotation);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="Triangle_8cpp.html#a04284e2ba182ea240fea30d4766f6576">translateVertex</a>(rotated, position);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;}</div>
+<div class="ttc" id="aTriangle_8cpp_html_a04284e2ba182ea240fea30d4766f6576"><div class="ttname"><a href="Triangle_8cpp.html#a04284e2ba182ea240fea30d4766f6576">translateVertex</a></div><div class="ttdeci">Vec3 translateVertex(const Vec3 &amp;vertex, const Vec3 &amp;position)</div><div class="ttdef"><b>Definition:</b> <a href="Triangle_8cpp_source.html#l00095">Triangle.cpp:95</a></div></div>
+<div class="ttc" id="aTriangle_8cpp_html_a0626a689c37f806582b5b8fca8d628ad"><div class="ttname"><a href="Triangle_8cpp.html#a0626a689c37f806582b5b8fca8d628ad">rotateVertex</a></div><div class="ttdeci">Vec3 rotateVertex(const Vec3 &amp;vertex, const Vec3 &amp;rotation)</div><div class="ttdef"><b>Definition:</b> <a href="Triangle_8cpp_source.html#l00068">Triangle.cpp:68</a></div></div>
+<div class="ttc" id="aTriangle_8cpp_html_a65a86bfd3e28824f78b4655de101eefc"><div class="ttname"><a href="Triangle_8cpp.html#a65a86bfd3e28824f78b4655de101eefc">scaleVertex</a></div><div class="ttdeci">Vec3 scaleVertex(const Vec3 &amp;vertex, const Vec3 &amp;scale)</div><div class="ttdef"><b>Definition:</b> <a href="Triangle_8cpp_source.html#l00063">Triangle.cpp:63</a></div></div>
+<div class="ttc" id="aclassVec3_html"><div class="ttname"><a href="classVec3.html">Vec3</a></div><div class="ttdoc">Class for representing a 3D vector.</div><div class="ttdef"><b>Definition:</b> <a href="Vec3_8hpp_source.html#l00026">Vec3.hpp:26</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="Triangle_8cpp.html#a0626a689c37f806582b5b8fca8d628ad">rotateVertex()</a>, <a class="el" href="Triangle_8cpp.html#a65a86bfd3e28824f78b4655de101eefc">scaleVertex()</a>, and <a class="el" href="Triangle_8cpp.html#a04284e2ba182ea240fea30d4766f6576">translateVertex()</a>.</p>
 
@@ -273,7 +302,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classTriangle_a42efcec69367bece5ec0c7de7cb45b13_cgraph.png" border="0" usemap="#aclassTriangle_a42efcec69367bece5ec0c7de7cb45b13_cgraph" alt=""/></div>
 <map name="aclassTriangle_a42efcec69367bece5ec0c7de7cb45b13_cgraph" id="aclassTriangle_a42efcec69367bece5ec0c7de7cb45b13_cgraph">
-<area shape="rect" title=" " alt="" coords="5,56,172,83"/>
+<area shape="rect" title="Apply the transformation to a vertex." alt="" coords="5,56,172,83"/>
 <area shape="rect" href="Triangle_8cpp.html#a0626a689c37f806582b5b8fca8d628ad" title=" " alt="" coords="229,5,321,32"/>
 <area shape="rect" href="Triangle_8cpp.html#a65a86bfd3e28824f78b4655de101eefc" title=" " alt="" coords="229,56,320,83"/>
 <area shape="rect" href="Triangle_8cpp.html#a04284e2ba182ea240fea30d4766f6576" title=" " alt="" coords="220,107,329,133"/>
@@ -284,8 +313,8 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classTriangle_a42efcec69367bece5ec0c7de7cb45b13_icgraph.png" border="0" usemap="#aclassTriangle_a42efcec69367bece5ec0c7de7cb45b13_icgraph" alt=""/></div>
 <map name="aclassTriangle_a42efcec69367bece5ec0c7de7cb45b13_icgraph" id="aclassTriangle_a42efcec69367bece5ec0c7de7cb45b13_icgraph">
-<area shape="rect" title=" " alt="" coords="184,5,351,32"/>
-<area shape="rect" href="classTriangle.html#a1583c065b0081c4368a863febef1dafe" title=" " alt="" coords="5,5,136,32"/>
+<area shape="rect" title="Apply the transformation to a vertex." alt="" coords="184,5,351,32"/>
+<area shape="rect" href="classTriangle.html#a1583c065b0081c4368a863febef1dafe" title="Transform the vectors of triangle based on the value given." alt="" coords="5,5,136,32"/>
 </map>
 </div>
 
@@ -314,11 +343,15 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Get the material of the object. </p>
+<p>This method retrieves the material of the object.</p>
+<dl class="section return"><dt>Returns</dt><dd>A shared pointer to the material of the object. </dd></dl>
+
 <p>Implements <a class="el" href="classIHitable.html#a9b24c25a86adb96ea60f9397e78b71f2">IHitable</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="Triangle_8hpp_source.html#l00018">18</a> of file <a class="el" href="Triangle_8hpp_source.html">Triangle.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classTriangle.html#a4587e5158862f2f93fc81dcf54212e8e">_mat_ptr</a>; }</div>
-<div class="ttc" id="aclassTriangle_html_a4587e5158862f2f93fc81dcf54212e8e"><div class="ttname"><a href="classTriangle.html#a4587e5158862f2f93fc81dcf54212e8e">Triangle::_mat_ptr</a></div><div class="ttdeci">std::shared_ptr&lt; IMaterial &gt; _mat_ptr</div><div class="ttdef"><b>Definition:</b> <a href="Triangle_8hpp_source.html#l00025">Triangle.hpp:25</a></div></div>
+<p class="definition">Definition at line <a class="el" href="Triangle_8hpp_source.html#l00023">23</a> of file <a class="el" href="Triangle_8hpp_source.html">Triangle.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classTriangle.html#a4587e5158862f2f93fc81dcf54212e8e">_mat_ptr</a>; }</div>
+<div class="ttc" id="aclassTriangle_html_a4587e5158862f2f93fc81dcf54212e8e"><div class="ttname"><a href="classTriangle.html#a4587e5158862f2f93fc81dcf54212e8e">Triangle::_mat_ptr</a></div><div class="ttdeci">std::shared_ptr&lt; IMaterial &gt; _mat_ptr</div><div class="ttdoc">Pointer to the material of the intersected object.</div><div class="ttdef"><b>Definition:</b> <a href="Triangle_8hpp_source.html#l00046">Triangle.hpp:46</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="classTriangle.html#a4587e5158862f2f93fc81dcf54212e8e">_mat_ptr</a>.</p>
 
@@ -354,7 +387,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_8h.html#aaf145a045b8acf3bedf3be121d64e390">hit_record_t</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="structhit__record__t.html">hit_record_t</a> &amp;&#160;</td>
           <td class="paramname"><em>rec</em>&#160;</td>
         </tr>
         <tr>
@@ -370,67 +403,75 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Determine if a ray hits the object. </p>
+<p>This method checks if a given ray intersects with the object within a specified range. If an intersection occurs, it populates the hit record with details about the intersection.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">r</td><td>The ray to check for intersection. </td></tr>
+    <tr><td class="paramname">t_min</td><td>The minimum value of the parameter t to consider. </td></tr>
+    <tr><td class="paramname">t_max</td><td>The maximum value of the parameter t to consider. </td></tr>
+    <tr><td class="paramname">rec</td><td>The hit record to populate with intersection details. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the ray intersects the object, false otherwise. </dd></dl>
+
 <p>Implements <a class="el" href="classIHitable.html#af3d1a57560db315edd6e140b68e1cd9e">IHitable</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="Triangle_8cpp_source.html#l00015">15</a> of file <a class="el" href="Triangle_8cpp_source.html">Triangle.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="classVec3.html">Vec3</a> edge1 = <a class="code" href="classTriangle.html#abd277e8c5c42385505a929fd842d2f79">_v1</a> - <a class="code" href="classTriangle.html#a785273767ae7a260a7ad17dfe4079fa4">_v0</a>;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="classVec3.html">Vec3</a> edge2 = <a class="code" href="classTriangle.html#a007563e59408d6907d986936830a154a">_v2</a> - <a class="code" href="classTriangle.html#a785273767ae7a260a7ad17dfe4079fa4">_v0</a>;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="classVec3.html">Vec3</a> h = <a class="code" href="Vec3_8hpp.html#a0d0b4382341e3c8ccff0d43ac1282869">cross</a>(ray.getDirection(), edge2);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">float</span> a = <a class="code" href="Vec3_8hpp.html#a45f8afb934d90c5445ad67d3b2156563">dot</a>(edge1, h);</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordflow">if</span> (a &gt; -0.0001f &amp;&amp; a &lt; 0.0001f)</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">float</span> f = 1.0 / a;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="classVec3.html">Vec3</a> s = ray.getOrigin() - <a class="code" href="classTriangle.html#a785273767ae7a260a7ad17dfe4079fa4">_v0</a>;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">float</span> u = f * <a class="code" href="Vec3_8hpp.html#a45f8afb934d90c5445ad67d3b2156563">dot</a>(s, h);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordflow">if</span> (u &lt; 0.0 || u &gt; 1.0)</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="classVec3.html">Vec3</a> q = <a class="code" href="Vec3_8hpp.html#a0d0b4382341e3c8ccff0d43ac1282869">cross</a>(s, edge1);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">float</span> v = f * <a class="code" href="Vec3_8hpp.html#a45f8afb934d90c5445ad67d3b2156563">dot</a>(ray.getDirection(), q);</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">if</span> (v &lt; 0.0 || u + v &gt; 1.0)</div>
+<p class="definition">Definition at line <a class="el" href="Triangle_8cpp_source.html#l00020">20</a> of file <a class="el" href="Triangle_8cpp_source.html">Triangle.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="classVec3.html">Vec3</a> edge1 = <a class="code" href="classTriangle.html#abd277e8c5c42385505a929fd842d2f79">_v1</a> - <a class="code" href="classTriangle.html#a785273767ae7a260a7ad17dfe4079fa4">_v0</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="classVec3.html">Vec3</a> edge2 = <a class="code" href="classTriangle.html#a007563e59408d6907d986936830a154a">_v2</a> - <a class="code" href="classTriangle.html#a785273767ae7a260a7ad17dfe4079fa4">_v0</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="classVec3.html">Vec3</a> h = <a class="code" href="Vec3_8hpp.html#a0d0b4382341e3c8ccff0d43ac1282869">cross</a>(ray.getDirection(), edge2);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">float</span> a = <a class="code" href="Vec3_8hpp.html#a45f8afb934d90c5445ad67d3b2156563">dot</a>(edge1, h);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordflow">if</span> (a &gt; -0.0001f &amp;&amp; a &lt; 0.0001f)</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">float</span> f = 1.0 / a;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="classVec3.html">Vec3</a> s = ray.getOrigin() - <a class="code" href="classTriangle.html#a785273767ae7a260a7ad17dfe4079fa4">_v0</a>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">float</span> u = f * <a class="code" href="Vec3_8hpp.html#a45f8afb934d90c5445ad67d3b2156563">dot</a>(s, h);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">if</span> (u &lt; 0.0 || u &gt; 1.0)</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">float</span> t = f * <a class="code" href="Vec3_8hpp.html#a45f8afb934d90c5445ad67d3b2156563">dot</a>(edge2, q);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordflow">if</span> (t &gt; t_min &amp;&amp; t &lt; t_max) {</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keywordtype">float</span> w = 1.0f - u - v; <span class="comment">// Coordonnée barycentrique pour le troisième sommet</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        rec.<a class="code" href="structhit__record__s.html#a2704e9b96217e632318dd7023fc2a465">uv</a> = <a class="code" href="classTriangle.html#a9b7628c48525d32763d8f2960093ba79">_uv0</a> * w + <a class="code" href="classTriangle.html#a3f5d903295894c15d6cb5a420417e458">_uv1</a> * u + <a class="code" href="classTriangle.html#a8431a0a09d979c41092d0105bf71a66e">_uv2</a> * v; <span class="comment">// Interpolation des coordonnées UV</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        rec.<a class="code" href="structhit__record__s.html#acd8ec618acd0577e2cc1efdd997501ed">t</a> = t;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        rec.<a class="code" href="structhit__record__s.html#aac284cd2782011cb2e6e7197ab607e1f">p</a> = ray.point_at_parameter(t);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        rec.<a class="code" href="structhit__record__s.html#ae99ba2937e47036237f994111276cb1d">normal</a> = <a class="code" href="Vec3_8hpp.html#a0d0b4382341e3c8ccff0d43ac1282869">cross</a>(edge1, edge2).<a class="code" href="classVec3.html#addb4fc8b8f3a27a0b95d0a07fbb98a7a">normalize</a>();</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        rec.<a class="code" href="structhit__record__s.html#a06efdaa92a3f602d5205cc4e7469d0d7">mat_ptr</a> = <a class="code" href="classTriangle.html#a4587e5158862f2f93fc81dcf54212e8e">_mat_ptr</a>;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    }</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
-<div class="ttc" id="aVec3_8hpp_html_a0d0b4382341e3c8ccff0d43ac1282869"><div class="ttname"><a href="Vec3_8hpp.html#a0d0b4382341e3c8ccff0d43ac1282869">cross</a></div><div class="ttdeci">Vec3 cross(const Vec3 &amp;v1, const Vec3 &amp;v2)</div><div class="ttdef"><b>Definition:</b> <a href="Vec3_8hpp_source.html#l00110">Vec3.hpp:110</a></div></div>
-<div class="ttc" id="aVec3_8hpp_html_a45f8afb934d90c5445ad67d3b2156563"><div class="ttname"><a href="Vec3_8hpp.html#a45f8afb934d90c5445ad67d3b2156563">dot</a></div><div class="ttdeci">float dot(const Vec3 &amp;v1, const Vec3 &amp;v2)</div><div class="ttdef"><b>Definition:</b> <a href="Vec3_8hpp_source.html#l00106">Vec3.hpp:106</a></div></div>
-<div class="ttc" id="aclassVec3_html_addb4fc8b8f3a27a0b95d0a07fbb98a7a"><div class="ttname"><a href="classVec3.html#addb4fc8b8f3a27a0b95d0a07fbb98a7a">Vec3::normalize</a></div><div class="ttdeci">Vec3 normalize()</div><div class="ttdef"><b>Definition:</b> <a href="Vec3_8hpp_source.html#l00116">Vec3.hpp:116</a></div></div>
-<div class="ttc" id="astructhit__record__s_html_a06efdaa92a3f602d5205cc4e7469d0d7"><div class="ttname"><a href="structhit__record__s.html#a06efdaa92a3f602d5205cc4e7469d0d7">hit_record_s::mat_ptr</a></div><div class="ttdeci">std::shared_ptr&lt; IMaterial &gt; mat_ptr</div><div class="ttdef"><b>Definition:</b> <a href="struct_8h_source.html#l00018">struct.h:18</a></div></div>
-<div class="ttc" id="astructhit__record__s_html_a2704e9b96217e632318dd7023fc2a465"><div class="ttname"><a href="structhit__record__s.html#a2704e9b96217e632318dd7023fc2a465">hit_record_s::uv</a></div><div class="ttdeci">Vec2 uv</div><div class="ttdef"><b>Definition:</b> <a href="struct_8h_source.html#l00019">struct.h:19</a></div></div>
-<div class="ttc" id="astructhit__record__s_html_aac284cd2782011cb2e6e7197ab607e1f"><div class="ttname"><a href="structhit__record__s.html#aac284cd2782011cb2e6e7197ab607e1f">hit_record_s::p</a></div><div class="ttdeci">Vec3 p</div><div class="ttdef"><b>Definition:</b> <a href="struct_8h_source.html#l00016">struct.h:16</a></div></div>
-<div class="ttc" id="astructhit__record__s_html_acd8ec618acd0577e2cc1efdd997501ed"><div class="ttname"><a href="structhit__record__s.html#acd8ec618acd0577e2cc1efdd997501ed">hit_record_s::t</a></div><div class="ttdeci">float t</div><div class="ttdef"><b>Definition:</b> <a href="struct_8h_source.html#l00015">struct.h:15</a></div></div>
-<div class="ttc" id="astructhit__record__s_html_ae99ba2937e47036237f994111276cb1d"><div class="ttname"><a href="structhit__record__s.html#ae99ba2937e47036237f994111276cb1d">hit_record_s::normal</a></div><div class="ttdeci">Vec3 normal</div><div class="ttdef"><b>Definition:</b> <a href="struct_8h_source.html#l00017">struct.h:17</a></div></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="classVec3.html">Vec3</a> q = <a class="code" href="Vec3_8hpp.html#a0d0b4382341e3c8ccff0d43ac1282869">cross</a>(s, edge1);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">float</span> v = f * <a class="code" href="Vec3_8hpp.html#a45f8afb934d90c5445ad67d3b2156563">dot</a>(ray.getDirection(), q);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordflow">if</span> (v &lt; 0.0 || u + v &gt; 1.0)</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">float</span> t = f * <a class="code" href="Vec3_8hpp.html#a45f8afb934d90c5445ad67d3b2156563">dot</a>(edge2, q);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">if</span> (t &gt; t_min &amp;&amp; t &lt; t_max) {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordtype">float</span> w = 1.0f - u - v; <span class="comment">// Coordonnée barycentrique pour le troisième sommet</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        rec.uv = <a class="code" href="classTriangle.html#a9b7628c48525d32763d8f2960093ba79">_uv0</a> * w + <a class="code" href="classTriangle.html#a3f5d903295894c15d6cb5a420417e458">_uv1</a> * u + <a class="code" href="classTriangle.html#a8431a0a09d979c41092d0105bf71a66e">_uv2</a> * v; <span class="comment">// Interpolation des coordonnées UV</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        rec.t = t;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        rec.p = ray.point_at_parameter(t);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        rec.normal = <a class="code" href="Vec3_8hpp.html#a0d0b4382341e3c8ccff0d43ac1282869">cross</a>(edge1, edge2).<a class="code" href="classVec3.html#addb4fc8b8f3a27a0b95d0a07fbb98a7a">normalize</a>();</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        rec.mat_ptr = <a class="code" href="classTriangle.html#a4587e5158862f2f93fc81dcf54212e8e">_mat_ptr</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div>
+<div class="ttc" id="aVec3_8hpp_html_a0d0b4382341e3c8ccff0d43ac1282869"><div class="ttname"><a href="Vec3_8hpp.html#a0d0b4382341e3c8ccff0d43ac1282869">cross</a></div><div class="ttdeci">Vec3 cross(const Vec3 &amp;v1, const Vec3 &amp;v2)</div><div class="ttdef"><b>Definition:</b> <a href="Vec3_8hpp_source.html#l00219">Vec3.hpp:219</a></div></div>
+<div class="ttc" id="aVec3_8hpp_html_a45f8afb934d90c5445ad67d3b2156563"><div class="ttname"><a href="Vec3_8hpp.html#a45f8afb934d90c5445ad67d3b2156563">dot</a></div><div class="ttdeci">float dot(const Vec3 &amp;v1, const Vec3 &amp;v2)</div><div class="ttdef"><b>Definition:</b> <a href="Vec3_8hpp_source.html#l00215">Vec3.hpp:215</a></div></div>
+<div class="ttc" id="aclassVec3_html_addb4fc8b8f3a27a0b95d0a07fbb98a7a"><div class="ttname"><a href="classVec3.html#addb4fc8b8f3a27a0b95d0a07fbb98a7a">Vec3::normalize</a></div><div class="ttdeci">Vec3 normalize()</div><div class="ttdoc">Return a normalized version of the vector.</div><div class="ttdef"><b>Definition:</b> <a href="Vec3_8hpp_source.html#l00225">Vec3.hpp:225</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="classTriangle.html#a4587e5158862f2f93fc81dcf54212e8e">_mat_ptr</a>, <a class="el" href="classTriangle.html#a9b7628c48525d32763d8f2960093ba79">_uv0</a>, <a class="el" href="classTriangle.html#a3f5d903295894c15d6cb5a420417e458">_uv1</a>, <a class="el" href="classTriangle.html#a8431a0a09d979c41092d0105bf71a66e">_uv2</a>, <a class="el" href="classTriangle.html#a785273767ae7a260a7ad17dfe4079fa4">_v0</a>, <a class="el" href="classTriangle.html#abd277e8c5c42385505a929fd842d2f79">_v1</a>, <a class="el" href="classTriangle.html#a007563e59408d6907d986936830a154a">_v2</a>, <a class="el" href="Vec3_8hpp.html#a0d0b4382341e3c8ccff0d43ac1282869">cross()</a>, <a class="el" href="Vec3_8hpp.html#a45f8afb934d90c5445ad67d3b2156563">dot()</a>, <a class="el" href="classRay.html#af2d29df2d2fc6322876e4dd5446529de">Ray::getDirection()</a>, <a class="el" href="classRay.html#aa6fede4b50dc18d7bc31abe1284401bf">Ray::getOrigin()</a>, <a class="el" href="structhit__record__s.html#a06efdaa92a3f602d5205cc4e7469d0d7">hit_record_s::mat_ptr</a>, <a class="el" href="structhit__record__s.html#ae99ba2937e47036237f994111276cb1d">hit_record_s::normal</a>, <a class="el" href="classVec3.html#addb4fc8b8f3a27a0b95d0a07fbb98a7a">Vec3::normalize()</a>, <a class="el" href="structhit__record__s.html#aac284cd2782011cb2e6e7197ab607e1f">hit_record_s::p</a>, <a class="el" href="classRay.html#a408ff62aaee9cbfccf1896e7bb11354b">Ray::point_at_parameter()</a>, <a class="el" href="structhit__record__s.html#acd8ec618acd0577e2cc1efdd997501ed">hit_record_s::t</a>, and <a class="el" href="structhit__record__s.html#a2704e9b96217e632318dd7023fc2a465">hit_record_s::uv</a>.</p>
+<p class="reference">References <a class="el" href="classTriangle.html#a4587e5158862f2f93fc81dcf54212e8e">_mat_ptr</a>, <a class="el" href="classTriangle.html#a9b7628c48525d32763d8f2960093ba79">_uv0</a>, <a class="el" href="classTriangle.html#a3f5d903295894c15d6cb5a420417e458">_uv1</a>, <a class="el" href="classTriangle.html#a8431a0a09d979c41092d0105bf71a66e">_uv2</a>, <a class="el" href="classTriangle.html#a785273767ae7a260a7ad17dfe4079fa4">_v0</a>, <a class="el" href="classTriangle.html#abd277e8c5c42385505a929fd842d2f79">_v1</a>, <a class="el" href="classTriangle.html#a007563e59408d6907d986936830a154a">_v2</a>, <a class="el" href="Vec3_8hpp.html#a0d0b4382341e3c8ccff0d43ac1282869">cross()</a>, <a class="el" href="Vec3_8hpp.html#a45f8afb934d90c5445ad67d3b2156563">dot()</a>, <a class="el" href="classRay.html#af2d29df2d2fc6322876e4dd5446529de">Ray::getDirection()</a>, <a class="el" href="classRay.html#aa6fede4b50dc18d7bc31abe1284401bf">Ray::getOrigin()</a>, <a class="el" href="classVec3.html#addb4fc8b8f3a27a0b95d0a07fbb98a7a">Vec3::normalize()</a>, and <a class="el" href="classRay.html#a408ff62aaee9cbfccf1896e7bb11354b">Ray::point_at_parameter()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classTriangle_ab80d0e93bb39edbc3c667596329fbeb3_cgraph.png" border="0" usemap="#aclassTriangle_ab80d0e93bb39edbc3c667596329fbeb3_cgraph" alt=""/></div>
 <map name="aclassTriangle_ab80d0e93bb39edbc3c667596329fbeb3_cgraph" id="aclassTriangle_ab80d0e93bb39edbc3c667596329fbeb3_cgraph">
-<area shape="rect" title=" " alt="" coords="5,132,96,159"/>
+<area shape="rect" title="Determine if a ray hits the object." alt="" coords="5,132,96,159"/>
 <area shape="rect" href="Vec3_8hpp.html#a0d0b4382341e3c8ccff0d43ac1282869" title=" " alt="" coords="199,5,254,32"/>
 <area shape="rect" href="Vec3_8hpp.html#a45f8afb934d90c5445ad67d3b2156563" title=" " alt="" coords="207,56,247,83"/>
-<area shape="rect" href="classRay.html#af2d29df2d2fc6322876e4dd5446529de" title=" " alt="" coords="165,107,289,133"/>
-<area shape="rect" href="classRay.html#aa6fede4b50dc18d7bc31abe1284401bf" title=" " alt="" coords="173,157,280,184"/>
-<area shape="rect" href="classVec3.html#addb4fc8b8f3a27a0b95d0a07fbb98a7a" title=" " alt="" coords="169,208,284,235"/>
-<area shape="rect" href="classRay.html#a408ff62aaee9cbfccf1896e7bb11354b" title=" " alt="" coords="144,259,309,285"/>
-<area shape="rect" href="classVec3.html#a54be9143adb871a478ea3de19ca23f3b" title=" " alt="" coords="357,183,452,209"/>
-<area shape="rect" href="classVec3.html#aae7a1ffaa1108a30c281da216d1cd312" title=" " alt="" coords="361,233,449,260"/>
+<area shape="rect" href="classRay.html#af2d29df2d2fc6322876e4dd5446529de" title="Get the Direction object." alt="" coords="165,107,289,133"/>
+<area shape="rect" href="classRay.html#aa6fede4b50dc18d7bc31abe1284401bf" title="Get the Origin object." alt="" coords="173,157,280,184"/>
+<area shape="rect" href="classVec3.html#addb4fc8b8f3a27a0b95d0a07fbb98a7a" title="Return a normalized version of the vector." alt="" coords="169,208,284,235"/>
+<area shape="rect" href="classRay.html#a408ff62aaee9cbfccf1896e7bb11354b" title="Get the Point At Parameter object." alt="" coords="144,259,309,285"/>
+<area shape="rect" href="classVec3.html#a54be9143adb871a478ea3de19ca23f3b" title="Compute the length of the vector." alt="" coords="357,183,452,209"/>
+<area shape="rect" href="classVec3.html#aae7a1ffaa1108a30c281da216d1cd312" title="Default constructor for Vec3." alt="" coords="361,233,449,260"/>
 </map>
 </div>
 
@@ -460,10 +501,19 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Set the material of the object. </p>
+<p>This method sets the material of the object to the provided material.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">m</td><td>A shared pointer to the material to set. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p>Implements <a class="el" href="classIHitable.html#a7226d47cda8d1004c3bd028d53e71c39">IHitable</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="Triangle_8hpp_source.html#l00021">21</a> of file <a class="el" href="Triangle_8hpp_source.html">Triangle.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{ <a class="code" href="classTriangle.html#a4587e5158862f2f93fc81dcf54212e8e">_mat_ptr</a> = m; };</div>
+<p class="definition">Definition at line <a class="el" href="Triangle_8hpp_source.html#l00042">42</a> of file <a class="el" href="Triangle_8hpp_source.html">Triangle.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{ <a class="code" href="classTriangle.html#a4587e5158862f2f93fc81dcf54212e8e">_mat_ptr</a> = m; };</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="classTriangle.html#a4587e5158862f2f93fc81dcf54212e8e">_mat_ptr</a>.</p>
 
@@ -501,13 +551,23 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Triangle_8cpp_source.html#l00051">51</a> of file <a class="el" href="Triangle_8cpp_source.html">Triangle.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;{</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="classTriangle.html#a785273767ae7a260a7ad17dfe4079fa4">_v0</a> = <a class="code" href="classTriangle.html#a42efcec69367bece5ec0c7de7cb45b13">applyTransform</a>(<a class="code" href="classTriangle.html#a785273767ae7a260a7ad17dfe4079fa4">_v0</a>, scale, rotation, position);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="classTriangle.html#abd277e8c5c42385505a929fd842d2f79">_v1</a> = <a class="code" href="classTriangle.html#a42efcec69367bece5ec0c7de7cb45b13">applyTransform</a>(<a class="code" href="classTriangle.html#abd277e8c5c42385505a929fd842d2f79">_v1</a>, scale, rotation, position);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="classTriangle.html#a007563e59408d6907d986936830a154a">_v2</a> = <a class="code" href="classTriangle.html#a42efcec69367bece5ec0c7de7cb45b13">applyTransform</a>(<a class="code" href="classTriangle.html#a007563e59408d6907d986936830a154a">_v2</a>, scale, rotation, position);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
-<div class="ttc" id="aclassTriangle_html_a42efcec69367bece5ec0c7de7cb45b13"><div class="ttname"><a href="classTriangle.html#a42efcec69367bece5ec0c7de7cb45b13">Triangle::applyTransform</a></div><div class="ttdeci">Vec3 applyTransform(const Vec3 &amp;vertex, const Vec3 &amp;scale, const Vec3 &amp;rotation, const Vec3 &amp;position)</div><div class="ttdef"><b>Definition:</b> <a href="Triangle_8cpp_source.html#l00095">Triangle.cpp:95</a></div></div>
+<p>Transform the vectors of triangle based on the value given. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">scale</td><td>The scale value. </td></tr>
+    <tr><td class="paramname">rotation</td><td>The rotation value. </td></tr>
+    <tr><td class="paramname">position</td><td>The position value. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="Triangle_8cpp_source.html#l00056">56</a> of file <a class="el" href="Triangle_8cpp_source.html">Triangle.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="code" href="classTriangle.html#a785273767ae7a260a7ad17dfe4079fa4">_v0</a> = <a class="code" href="classTriangle.html#a42efcec69367bece5ec0c7de7cb45b13">applyTransform</a>(<a class="code" href="classTriangle.html#a785273767ae7a260a7ad17dfe4079fa4">_v0</a>, scale, rotation, position);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="classTriangle.html#abd277e8c5c42385505a929fd842d2f79">_v1</a> = <a class="code" href="classTriangle.html#a42efcec69367bece5ec0c7de7cb45b13">applyTransform</a>(<a class="code" href="classTriangle.html#abd277e8c5c42385505a929fd842d2f79">_v1</a>, scale, rotation, position);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="code" href="classTriangle.html#a007563e59408d6907d986936830a154a">_v2</a> = <a class="code" href="classTriangle.html#a42efcec69367bece5ec0c7de7cb45b13">applyTransform</a>(<a class="code" href="classTriangle.html#a007563e59408d6907d986936830a154a">_v2</a>, scale, rotation, position);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}</div>
+<div class="ttc" id="aclassTriangle_html_a42efcec69367bece5ec0c7de7cb45b13"><div class="ttname"><a href="classTriangle.html#a42efcec69367bece5ec0c7de7cb45b13">Triangle::applyTransform</a></div><div class="ttdeci">Vec3 applyTransform(const Vec3 &amp;vertex, const Vec3 &amp;scale, const Vec3 &amp;rotation, const Vec3 &amp;position)</div><div class="ttdoc">Apply the transformation to a vertex.</div><div class="ttdef"><b>Definition:</b> <a href="Triangle_8cpp_source.html#l00100">Triangle.cpp:100</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="classTriangle.html#a785273767ae7a260a7ad17dfe4079fa4">_v0</a>, <a class="el" href="classTriangle.html#abd277e8c5c42385505a929fd842d2f79">_v1</a>, <a class="el" href="classTriangle.html#a007563e59408d6907d986936830a154a">_v2</a>, and <a class="el" href="classTriangle.html#a42efcec69367bece5ec0c7de7cb45b13">applyTransform()</a>.</p>
 <div class="dynheader">
@@ -515,8 +575,8 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classTriangle_a1583c065b0081c4368a863febef1dafe_cgraph.png" border="0" usemap="#aclassTriangle_a1583c065b0081c4368a863febef1dafe_cgraph" alt=""/></div>
 <map name="aclassTriangle_a1583c065b0081c4368a863febef1dafe_cgraph" id="aclassTriangle_a1583c065b0081c4368a863febef1dafe_cgraph">
-<area shape="rect" title=" " alt="" coords="5,56,136,83"/>
-<area shape="rect" href="classTriangle.html#a42efcec69367bece5ec0c7de7cb45b13" title=" " alt="" coords="184,56,351,83"/>
+<area shape="rect" title="Transform the vectors of triangle based on the value given." alt="" coords="5,56,136,83"/>
+<area shape="rect" href="classTriangle.html#a42efcec69367bece5ec0c7de7cb45b13" title="Apply the transformation to a vertex." alt="" coords="184,56,351,83"/>
 <area shape="rect" href="Triangle_8cpp.html#a0626a689c37f806582b5b8fca8d628ad" title=" " alt="" coords="407,5,499,32"/>
 <area shape="rect" href="Triangle_8cpp.html#a65a86bfd3e28824f78b4655de101eefc" title=" " alt="" coords="408,56,499,83"/>
 <area shape="rect" href="Triangle_8cpp.html#a04284e2ba182ea240fea30d4766f6576" title=" " alt="" coords="399,107,508,133"/>
@@ -546,7 +606,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Triangle_8hpp_source.html#l00025">25</a> of file <a class="el" href="Triangle_8hpp_source.html">Triangle.hpp</a>.</p>
+<p>Pointer to the material of the intersected object. </p>
+
+<p class="definition">Definition at line <a class="el" href="Triangle_8hpp_source.html#l00046">46</a> of file <a class="el" href="Triangle_8hpp_source.html">Triangle.hpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="classTriangle.html#a77e330ab8a6f0f2c34dc53c07c4f32f6">getMaterial()</a>, <a class="el" href="classTriangle.html#ab80d0e93bb39edbc3c667596329fbeb3">hit()</a>, and <a class="el" href="classTriangle.html#a39fdb4a304ea147b3108f8c5602149a7">setMaterial()</a>.</p>
 
@@ -572,7 +634,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Triangle_8hpp_source.html#l00026">26</a> of file <a class="el" href="Triangle_8hpp_source.html">Triangle.hpp</a>.</p>
+<p>Position of the triangle. </p>
+
+<p class="definition">Definition at line <a class="el" href="Triangle_8hpp_source.html#l00047">47</a> of file <a class="el" href="Triangle_8hpp_source.html">Triangle.hpp</a>.</p>
 
 </div>
 </div>
@@ -596,7 +660,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Triangle_8hpp_source.html#l00024">24</a> of file <a class="el" href="Triangle_8hpp_source.html">Triangle.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Triangle_8hpp_source.html#l00045">45</a> of file <a class="el" href="Triangle_8hpp_source.html">Triangle.hpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="classTriangle.html#ab80d0e93bb39edbc3c667596329fbeb3">hit()</a>.</p>
 
@@ -622,7 +686,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Triangle_8hpp_source.html#l00024">24</a> of file <a class="el" href="Triangle_8hpp_source.html">Triangle.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Triangle_8hpp_source.html#l00045">45</a> of file <a class="el" href="Triangle_8hpp_source.html">Triangle.hpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="classTriangle.html#ab80d0e93bb39edbc3c667596329fbeb3">hit()</a>.</p>
 
@@ -648,7 +712,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Triangle_8hpp_source.html#l00024">24</a> of file <a class="el" href="Triangle_8hpp_source.html">Triangle.hpp</a>.</p>
+<p><a class="el" href="classTexture.html" title="Class used to create a Texture.">Texture</a> coordinates of the texture. </p>
+
+<p class="definition">Definition at line <a class="el" href="Triangle_8hpp_source.html#l00045">45</a> of file <a class="el" href="Triangle_8hpp_source.html">Triangle.hpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="classTriangle.html#ab80d0e93bb39edbc3c667596329fbeb3">hit()</a>.</p>
 
@@ -674,7 +740,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Triangle_8hpp_source.html#l00023">23</a> of file <a class="el" href="Triangle_8hpp_source.html">Triangle.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Triangle_8hpp_source.html#l00044">44</a> of file <a class="el" href="Triangle_8hpp_source.html">Triangle.hpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="classTriangle.html#ab80d0e93bb39edbc3c667596329fbeb3">hit()</a>, and <a class="el" href="classTriangle.html#a1583c065b0081c4368a863febef1dafe">transform()</a>.</p>
 
@@ -700,7 +766,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Triangle_8hpp_source.html#l00023">23</a> of file <a class="el" href="Triangle_8hpp_source.html">Triangle.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Triangle_8hpp_source.html#l00044">44</a> of file <a class="el" href="Triangle_8hpp_source.html">Triangle.hpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="classTriangle.html#ab80d0e93bb39edbc3c667596329fbeb3">hit()</a>, and <a class="el" href="classTriangle.html#a1583c065b0081c4368a863febef1dafe">transform()</a>.</p>
 
@@ -726,7 +792,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Triangle_8hpp_source.html#l00023">23</a> of file <a class="el" href="Triangle_8hpp_source.html">Triangle.hpp</a>.</p>
+<p>Vertices of the triangle. </p>
+
+<p class="definition">Definition at line <a class="el" href="Triangle_8hpp_source.html#l00044">44</a> of file <a class="el" href="Triangle_8hpp_source.html">Triangle.hpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="classTriangle.html#ab80d0e93bb39edbc3c667596329fbeb3">hit()</a>, and <a class="el" href="classTriangle.html#a1583c065b0081c4368a863febef1dafe">transform()</a>.</p>
 

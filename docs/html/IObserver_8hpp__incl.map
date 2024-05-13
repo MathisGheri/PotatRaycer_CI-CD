@@ -1,5 +1,5 @@
 <map id="src/Observer/IObserver.hpp" name="src/Observer/IObserver.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="260,5,443,32"/>
+<area shape="rect" id="node1" title="Interface for Observers used to monitor changes in configuration files." alt="" coords="260,5,443,32"/>
 <area shape="rect" id="node2" title=" " alt="" coords="5,80,97,107"/>
 <area shape="rect" id="node3" title=" " alt="" coords="121,80,189,107"/>
 <area shape="rect" id="node4" title=" " alt="" coords="214,80,307,107"/>

@@ -1,15 +1,15 @@
 <map id="src/Primitives/Mesh/Mesh.cpp" name="src/Primitives/Mesh/Mesh.cpp">
-<area shape="rect" id="node1" title=" " alt="" coords="784,5,923,47"/>
-<area shape="rect" id="node2" href="$Mesh_8hpp.html" title=" " alt="" coords="703,95,782,121"/>
+<area shape="rect" id="node1" title="File for the Mesh class." alt="" coords="784,5,923,47"/>
+<area shape="rect" id="node2" href="$Mesh_8hpp.html" title="Class for handling meshes." alt="" coords="703,95,782,121"/>
 <area shape="rect" id="node10" title=" " alt="" coords="1137,617,1207,644"/>
 <area shape="rect" id="node25" href="$Triangle_8hpp.html" title=" " alt="" coords="807,95,900,121"/>
-<area shape="rect" id="node3" href="$IHitable_8hpp.html" title=" " alt="" coords="697,169,789,196"/>
-<area shape="rect" id="node4" href="$Ray_8hpp.html" title=" " alt="" coords="781,244,851,271"/>
-<area shape="rect" id="node5" href="$Vec3_8hpp.html" title=" " alt="" coords="705,319,781,345"/>
-<area shape="rect" id="node23" href="$Vec2_8hpp.html" title=" " alt="" coords="585,319,661,345"/>
-<area shape="rect" id="node24" href="$struct_8h.html" title=" " alt="" coords="639,244,705,271"/>
-<area shape="rect" id="node6" href="$include_8hpp.html" title=" " alt="" coords="591,543,679,569"/>
-<area shape="rect" id="node21" href="$SingletonLogger_8hpp.html" title=" " alt="" coords="565,393,705,420"/>
+<area shape="rect" id="node3" href="$IHitable_8hpp.html" title="IHitable interface header file." alt="" coords="697,169,789,196"/>
+<area shape="rect" id="node4" href="$Ray_8hpp.html" title="Class for handling rays." alt="" coords="781,244,851,271"/>
+<area shape="rect" id="node5" href="$Vec3_8hpp.html" title="Vec3 class header file." alt="" coords="705,319,781,345"/>
+<area shape="rect" id="node23" href="$Vec2_8hpp.html" title="Vec2 class header file." alt="" coords="585,319,661,345"/>
+<area shape="rect" id="node24" href="$struct_8h.html" title="Struct for hit record." alt="" coords="639,244,705,271"/>
+<area shape="rect" id="node6" href="$include_8hpp.html" title="Include all the libraries and headers needed." alt="" coords="591,543,679,569"/>
+<area shape="rect" id="node21" href="$SingletonLogger_8hpp.html" title="File for the SingletonLogger class." alt="" coords="565,393,705,420"/>
 <area shape="rect" id="node7" title=" " alt="" coords="5,617,77,644"/>
 <area shape="rect" id="node8" title=" " alt="" coords="102,617,165,644"/>
 <area shape="rect" id="node9" title=" " alt="" coords="189,617,254,644"/>
@@ -23,5 +23,5 @@
 <area shape="rect" id="node18" title=" " alt="" coords="861,617,931,644"/>
 <area shape="rect" id="node19" title=" " alt="" coords="955,617,1010,644"/>
 <area shape="rect" id="node20" title=" " alt="" coords="1034,617,1113,644"/>
-<area shape="rect" id="node22" href="$Logger_8hpp.html" title=" " alt="" coords="591,468,678,495"/>
+<area shape="rect" id="node22" href="$Logger_8hpp.html" title="File for the Logger class." alt="" coords="591,468,678,495"/>
 </map>

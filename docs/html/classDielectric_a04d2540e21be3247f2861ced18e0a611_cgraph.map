@@ -1,6 +1,6 @@
 <map id="Dielectric::Dielectric" name="Dielectric::Dielectric">
-<area shape="rect" id="node1" title=" " alt="" coords="5,31,145,57"/>
-<area shape="rect" id="node2" href="$classLoggerSingleton.html#a9722cb20d2fe85dc683a0e35fd1d2f67" title=" " alt="" coords="193,5,384,32"/>
-<area shape="rect" id="node3" href="$classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2" title=" " alt="" coords="245,56,332,83"/>
-<area shape="rect" id="node4" href="$classLogger.html#acfb794ab842c63396ad1c6a771f43483" title=" " alt="" coords="432,56,576,83"/>
+<area shape="rect" id="node1" title="Construct a new Dielectric object." alt="" coords="5,31,145,57"/>
+<area shape="rect" id="node2" href="$classLoggerSingleton.html#a9722cb20d2fe85dc683a0e35fd1d2f67" title="Get the instance of the Logger." alt="" coords="193,5,384,32"/>
+<area shape="rect" id="node3" href="$classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2" title="Log a message." alt="" coords="245,56,332,83"/>
+<area shape="rect" id="node4" href="$classLogger.html#acfb794ab842c63396ad1c6a771f43483" title="Convert the log level to a string." alt="" coords="432,56,576,83"/>
 </map>
