@@ -68,7 +68,11 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p>The scene file is a <code>.cfg</code> file, used to execute the program after his compilation.\ All the values inside this files <b>must be float</b> and respect the same syntax of the following exemples.\ It contains the following configuration :</p>
-<h1><a class="el" href="classCamera.html" title="Class for creating a camera object in the scene.">Camera</a> configuration :</h1>
+<h1>logger configuration :</h1>
+<div class="fragment"><div class="line">logger : {</div>
+<div class="line">    state : &quot;false&quot; // or, true</div>
+<div class="line">}</div>
+</div><!-- fragment --><h1><a class="el" href="classCamera.html" title="Class for creating a camera object in the scene.">Camera</a> configuration :</h1>
 <div class="fragment"><div class="line">camera : {</div>
 <div class="line">    lookfrom : { x = 0.0; y = 0.0; z = 0.0; },</div>
 <div class="line">    lookat : { x = 0.0; y = 0.0; z = 0.0; },</div>
@@ -81,11 +85,11 @@ $(function() {
 <div class="line">}</div>
 </div><!-- fragment --><h1>Light configuration :</h1>
 <div class="fragment"><div class="line">light : {</div>
+<div class="line">    type : &quot;directional&quot;, // or, ambiant</div>
 <div class="line">    position : { x = 0.0; y = 0.0; z = 0.0; },</div>
 <div class="line">    intensity : { x = 0.0; },</div>
-<div class="line">    normal : { x = 0.0; y = 0.0; z = 0.0; },</div>
-<div class="line">    direc : { x = 0.0; },</div>
-<div class="line">    size : { x = 0.0; }</div>
+<div class="line">    normal : { x = 0.0; y = 0.0; z = 0.0; }, // only for directional light</div>
+<div class="line">    size : { x = 0.0; } // only for directional light</div>
 <div class="line">}</div>
 </div><!-- fragment --><h1>Primitives configuration :</h1>
 <div class="fragment"><div class="line">primitives : {</div>
