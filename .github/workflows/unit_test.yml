@@ -38,6 +38,5 @@ jobs:
       - name: DARIUS_SHINY
         run: |
           make test
-          ./tests/run_tests || true
-          gcovr -r . --xml -o coverage.xml || true
+          ./tests/run_tests
 
