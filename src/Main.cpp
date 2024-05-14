@@ -18,11 +18,14 @@
 
 int main(int argc, char **argv)
 {
-    if (argc >= 2 && (strcmp(argv[1], "-h") == 0 || strcmp(argv[1], "-potat") == 0)) { //changer pour du cpp
-        printf("./Raytracer --help\nUSAGE: ./Raytracer <SCENE_FILE>\nSCENE_FILE: scene configuration\n");
-        exit(0);
+    if (argc >= 2) {
+        std::string arg1 = argv[1];
+        if (arg1 == "-h" || arg1 == "-potat") {
+            std::cout << "./Raytracer --help\nUSAGE: ./Raytracer <SCENE_FILE>\nSCENE_FILE: scene configuration\n";
+            std::exit(0);
+        }
     } else if (argc > 2) {
-        exit(84);
+        std::exit(84);
     }
     /**********************/
     Logger *logger = LoggerSingleton::getInstance();
