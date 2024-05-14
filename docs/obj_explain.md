@@ -46,3 +46,4 @@ obj : (
 )
 ```
 Where yes allow the .obj to be in the scene.
+Click here : main read.me[menu](../README.md)
