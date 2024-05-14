@@ -31,5 +31,6 @@ clean:
 	@rm -rf tests/coverage*
 	@rm -f vgcore.*
 	@rm -f logfile.txt
+	@rm -rf run_tests
 
 fclean: clean
