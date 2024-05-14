@@ -26,4 +26,4 @@ CRITICAL
 You can choose the level of the log based on the code where it is used.\
 For exemple, if a log is used in an place where it must not pass throughout, use the **CRITICAL** enum.
 
-Click here : main read.me[menu](../README.md)
+Click here to go main menu (read.me): [menu](../README.md)

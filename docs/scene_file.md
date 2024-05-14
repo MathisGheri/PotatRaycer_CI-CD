@@ -121,4 +121,4 @@ primitives : {
 ```
 You can have as many primitives you want, in fact you can also have none (but the result will be empty).
 
-Click here : main read.me[menu](../README.md)
+Click here to go main menu (read.me): [menu](../README.md)
