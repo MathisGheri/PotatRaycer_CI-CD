@@ -43,7 +43,7 @@ bool Texture::hit(const Ray& r, float t_min, float t_max, hit_record_t& rec, con
     bool hit_anything = false;
     double closest_so_far = t_max;
     for(int i = 0; i < _world.size(); i++) {
-        if (_world[i]->hit(r,t_min,closest_so_far,temp_rec)) {
+        if (_world[i]->hit(r,t_min,closest_so_far,temp_rec) && _world[i]->getMaterial()->getName() != "LightTexture") {
             hit_anything = true;
             closest_so_far = temp_rec.t;
             rec = temp_rec;
@@ -55,12 +55,7 @@ bool Texture::hit(const Ray& r, float t_min, float t_max, hit_record_t& rec, con
 bool Texture::scatter(const Ray& r_in, const hit_record_t &rec, Vec3& attenuation, Ray& scattered, std::shared_ptr<ILight> light, const std::vector<std::shared_ptr<IHitable>>& _obj) const
 {
     Vec3 lightDir;
-    if (light->getType().compare("Directional")) {
-        lightDir = light->calculateLightDirection(rec.p);
-    } else {
-        lightDir = light->getNormal();
-        lightDir.make_unit_vector();
-    }
+    lightDir = light->calculateLightDirection(rec.p);
     Vec3 shadowRayOrigin = rec.p;
     Vec3 shadowRayDirection = lightDir;
     Ray shadowRay(shadowRayOrigin, shadowRayDirection);
