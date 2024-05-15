@@ -14,6 +14,7 @@
 #define MESH_HPP_
 
 #include "IHitable.hpp"
+#include "Triangle.hpp"
 
 /**
 * @class Mesh
@@ -26,7 +27,13 @@ class Mesh : public IHitable{
         ~Mesh();
         bool hit(const Ray& r, float t_min, float t_max, hit_record_t& rec) const;
         void setMaterial(std::shared_ptr<IMaterial> m) { return ; };
-        std::shared_ptr<IMaterial> getMaterial() { return nullptr; };
+        std::shared_ptr<IMaterial> getMaterial() {
+            for (auto& tri : _triangles) {
+                std::shared_ptr<Triangle> triangle_ptr = std::dynamic_pointer_cast<Triangle>(tri);
+                return triangle_ptr->getMaterial();
+            }
+            return nullptr;
+        };
 
         /**
         * @brief Transform the triangle inside the mesh based on the values given.

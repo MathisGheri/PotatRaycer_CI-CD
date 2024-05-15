@@ -12,7 +12,6 @@
 
 #include "Mesh.hpp"
 #include <memory>
-#include "Triangle.hpp"
 
 Mesh::Mesh(const std::vector<std::shared_ptr<IHitable>>& tris, const Vec3& pos, const Vec3& rot, const Vec3& scl)
     : _triangles(tris), _position(pos), _rotation(rot), _scale(scl) {}
